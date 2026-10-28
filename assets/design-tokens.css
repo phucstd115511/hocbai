@@ -1,0 +1,41 @@
+/* Design Tokens - Auto-generated */
+/* Do not edit directly - modify tokens.json instead */
+
+/* === PRIMITIVES === */
+:root {
+  --primitive-color-yellow-base: #ffe17c;
+  --primitive-color-yellow-hover: #ffd84d;
+  --primitive-color-charcoal-dark: #171e19;
+  --primitive-color-charcoal-light: #272727;
+  --primitive-color-sage-base: #b7c6c2;
+  --primitive-color-sage-light: #d8e2df;
+  --primitive-color-black: #000000;
+  --primitive-color-white: #ffffff;
+  --primitive-color-emerald: #10b981;
+  --primitive-color-rose: #f43f5e;
+  --primitive-border-width: 2px;
+  --primitive-shadow-sm: 2px 2px 0px 0px #000000;
+  --primitive-shadow-md: 4px 4px 0px 0px #000000;
+  --primitive-shadow-lg: 8px 8px 0px 0px #000000;
+  --primitive-shadow-xl: 12px 12px 0px 0px #000000;
+}
+
+/* === SEMANTIC === */
+:root {
+  --color-primary: #ffe17c;
+  --color-on-primary: #000000;
+  --color-background: #ffe17c;
+  --color-surface-dark: #171e19;
+  --color-surface-sage: #b7c6c2;
+  --color-text-primary: #000000;
+  --color-text-inverted: #ffffff;
+}
+
+/* === COMPONENTS === */
+:root {
+  --button-bg: #171e19;
+  --button-text: #ffffff;
+  --button-shadow: 4px 4px 0px 0px #000000;
+  --card-bg: #ffffff;
+  --card-shadow: 4px 4px 0px 0px #000000;
+}

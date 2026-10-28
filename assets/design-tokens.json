@@ -1,0 +1,54 @@
+{
+  "$schema": "https://design-tokens.org/schema.json",
+  "primitive": {
+    "color": {
+      "yellow": {
+        "base": { "$value": "#ffe17c", "$type": "color" },
+        "hover": { "$value": "#ffd84d", "$type": "color" }
+      },
+      "charcoal": {
+        "dark": { "$value": "#171e19", "$type": "color" },
+        "light": { "$value": "#272727", "$type": "color" }
+      },
+      "sage": {
+        "base": { "$value": "#b7c6c2", "$type": "color" },
+        "light": { "$value": "#d8e2df", "$type": "color" }
+      },
+      "black": { "$value": "#000000", "$type": "color" },
+      "white": { "$value": "#ffffff", "$type": "color" },
+      "emerald": { "$value": "#10b981", "$type": "color" },
+      "rose": { "$value": "#f43f5e", "$type": "color" }
+    },
+    "border": {
+      "width": { "$value": "2px", "$type": "dimension" }
+    },
+    "shadow": {
+      "sm": { "$value": "2px 2px 0px 0px #000000", "$type": "shadow" },
+      "md": { "$value": "4px 4px 0px 0px #000000", "$type": "shadow" },
+      "lg": { "$value": "8px 8px 0px 0px #000000", "$type": "shadow" },
+      "xl": { "$value": "12px 12px 0px 0px #000000", "$type": "shadow" }
+    }
+  },
+  "semantic": {
+    "color": {
+      "primary": { "$value": "{primitive.color.yellow.base}", "$type": "color" },
+      "on-primary": { "$value": "{primitive.color.black}", "$type": "color" },
+      "background": { "$value": "{primitive.color.yellow.base}", "$type": "color" },
+      "surface-dark": { "$value": "{primitive.color.charcoal.dark}", "$type": "color" },
+      "surface-sage": { "$value": "{primitive.color.sage.base}", "$type": "color" },
+      "text-primary": { "$value": "{primitive.color.black}", "$type": "color" },
+      "text-inverted": { "$value": "{primitive.color.white}", "$type": "color" }
+    }
+  },
+  "component": {
+    "button": {
+      "bg": { "$value": "{semantic.color.surface-dark}", "$type": "color" },
+      "text": { "$value": "{semantic.color.text-inverted}", "$type": "color" },
+      "shadow": { "$value": "{primitive.shadow.md}", "$type": "shadow" }
+    },
+    "card": {
+      "bg": { "$value": "{primitive.color.white}", "$type": "color" },
+      "shadow": { "$value": "{primitive.shadow.md}", "$type": "shadow" }
+    }
+  }
+}
