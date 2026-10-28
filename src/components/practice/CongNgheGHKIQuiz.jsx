@@ -39,6 +39,7 @@ export default function CongNgheGHKIQuiz({
     if (initialSubjectId && initialSubjectId !== activeSubjectId) {
       setActiveSubjectId(initialSubjectId);
       setUserAnswers({});
+      setLockedShortAnswers({});
       setIsSubmitted(false);
       setRevealedSingleQuestions({});
       setSeconds(0);
@@ -110,7 +111,7 @@ export default function CongNgheGHKIQuiz({
     return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
   };
 
-  // Chuyển đổi giữa 2 môn học
+  // Chuyển đổi giữa các môn học
   const handleSwitchSubject = (newSubId) => {
     if (newSubId === activeSubjectId) return;
     if (answeredCount > 0 && !isSubmitted) {
@@ -120,6 +121,7 @@ export default function CongNgheGHKIQuiz({
     }
     setActiveSubjectId(newSubId);
     setUserAnswers({});
+    setLockedShortAnswers({});
     setIsSubmitted(false);
     setRevealedSingleQuestions({});
     setSeconds(0);
@@ -129,24 +131,27 @@ export default function CongNgheGHKIQuiz({
     onSwitchSubject?.(newSubId);
   };
 
-  // Chọn phương án MCQ
+  // Chọn phương án MCQ (Khóa đáp án sau khi đã chọn)
   const handleSelectMCQ = (qId, optIdx) => {
     if (isSubmitted) return;
+    if (userAnswers[qId] !== undefined) return; // Đã chọn rồi thì khóa không cho chọn lại
     setUserAnswers(prev => ({
       ...prev,
       [qId]: optIdx
     }));
   };
 
-  // Chọn Đúng / Sai
+  // Chọn Đúng / Sai (Khóa từng ý a, b, c, d sau khi đã chọn)
   const handleSelectTF = (qId, stmtLabel, value) => {
     if (isSubmitted) return;
+    const current = userAnswers[qId] || {};
+    if (current[stmtLabel] !== undefined) return; // Ý này đã chọn rồi thì khóa không cho đổi
     setUserAnswers(prev => {
-      const current = prev[qId] || {};
+      const cur = prev[qId] || {};
       return {
         ...prev,
         [qId]: {
-          ...current,
+          ...cur,
           [stmtLabel]: value
         }
       };
@@ -156,10 +161,21 @@ export default function CongNgheGHKIQuiz({
   // Trả lời ngắn / Điền số
   const handleSelectShortAnswer = (qId, val) => {
     if (isSubmitted) return;
+    if (lockedShortAnswers[qId]) return; // Đã xác nhận khóa đáp án thì không cho sửa
     setUserAnswers(prev => ({
       ...prev,
       [qId]: val
     }));
+  };
+
+  // Khóa câu trả lời ngắn khi người dùng bấm "Xác nhận"
+  const [lockedShortAnswers, setLockedShortAnswers] = useState({});
+  const handleLockShortAnswer = (qId) => {
+    if (isSubmitted) return;
+    const val = userAnswers[qId];
+    if (val !== undefined && String(val).trim() !== '') {
+      setLockedShortAnswers(prev => ({ ...prev, [qId]: true }));
+    }
   };
 
   // Đếm số câu đã trả lời
@@ -179,21 +195,105 @@ export default function CongNgheGHKIQuiz({
     return count;
   }, [questionsToTest, userAnswers]);
 
-  // Nộp bài
+  // Nộp bài -> Tự động tính điểm, lưu lịch sử, và Reset trạng thái làm bài để làm lại từ đầu
   const handleSubmit = () => {
     if (answeredCount < questionsToTest.length) {
-      const confirmSubmit = confirm(`Bạn mới làm ${answeredCount}/${questionsToTest.length} câu. Bạn có chắc chắn muốn nộp bài để chấm điểm ngay không?`);
+      const confirmSubmit = confirm(`Bạn mới làm ${answeredCount}/${questionsToTest.length} câu. Bạn có chắc chắn muốn nộp bài để xem điểm và đặt lại để luyện tập lại không?`);
       if (!confirmSubmit) return;
     }
-    setIsTimerActive(false);
-    setIsSubmitted(true);
+
+    // Tính điểm ngay trước khi reset
+    let totalPoints = 0;
+    let maxPoints = questionsToTest.length;
+    let correctCount = 0;
+
+    questionsToTest.forEach(q => {
+      if (q.type === 'mcq') {
+        const choice = userAnswers[q.id];
+        if (choice === q.correct) {
+          totalPoints += 1;
+          correctCount++;
+        }
+      } else if (q.type === 'truefalse') {
+        const userTf = userAnswers[q.id] || {};
+        const res = scoreTrueFalseQuestion(q.statements, userTf, 'standard_thpt');
+        totalPoints += res.score;
+        if (res.isFullyCorrect) correctCount++;
+      } else if (q.type === 'short_answer') {
+        const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
+        const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+        if (userVal !== '' && userVal === correctVal) {
+          totalPoints += 1;
+          correctCount++;
+        }
+      }
+    });
+
+    const percent = maxPoints > 0 ? Math.round((totalPoints / maxPoints) * 100) : 0;
+    const finalScore = Math.round(totalPoints * 100) / 100;
+
+    // Lưu kết quả vào lịch sử
+    if (onSaveAttempt) {
+      const wrongQuestionIds = questionsToTest
+        .filter(q => {
+          if (q.type === 'mcq') return userAnswers[q.id] !== q.correct;
+          if (q.type === 'truefalse') {
+            const res = scoreTrueFalseQuestion(q.statements, userAnswers[q.id] || {}, 'standard_thpt');
+            return !res.isFullyCorrect;
+          }
+          if (q.type === 'short_answer') {
+            const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
+            const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+            return userVal !== correctVal;
+          }
+          return false;
+        })
+        .map(q => q.id);
+
+      let examId = 'exam_congnghe_ghki';
+      let examName = 'Công Nghệ GHKI';
+      if (isGdqp) {
+        examId = 'exam_gdqp11_ghki';
+        examName = 'GDQP&AN 11 GHKI';
+      } else if (isDia) {
+        examId = 'exam_dia11_ghki';
+        examName = 'Địa Lí 11 GHKI';
+      }
+
+      onSaveAttempt({
+        id: `att_${Date.now()}`,
+        examId,
+        examName,
+        answers: userAnswers,
+        score: finalScore,
+        totalMaxScore: maxPoints,
+        percentage: percent,
+        wrongQuestionIds,
+        date: new Date().toISOString(),
+        durationSeconds: seconds
+      });
+    }
+
+    // Hiển thị thông báo kết quả chi tiết
+    alert(`🎉 ĐÃ NỘP BÀI THÀNH CÔNG!\n\n• Điểm số: ${finalScore}/${maxPoints} điểm\n• Số câu đúng: ${correctCount}/${maxPoints} câu (${percent}%)\n• Thời gian: ${formatTimer(seconds)}\n\nToàn bộ đề thi sẽ được RESET sạch sẽ để bạn bắt đầu lượt làm mới!`);
+
+    // Reset toàn bộ trạng thái đáp án về ban đầu
+    setUserAnswers({});
+    setLockedShortAnswers({});
+    setIsSubmitted(false);
+    setRevealedSingleQuestions({});
+    setSeconds(0);
+    setCurrentIndex(0);
+    setIsTimerActive(true);
+    hasSavedAttemptRef.current = false;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Làm lại đề
+  // Làm lại đề thủ công
   const handleReset = () => {
     if (confirm('Làm lại từ đầu? Tất cả các đáp án bạn vừa chọn sẽ được đặt lại.')) {
       setUserAnswers({});
+      setLockedShortAnswers({});
       setIsSubmitted(false);
       setRevealedSingleQuestions({});
       setSeconds(0);
@@ -683,12 +783,17 @@ export default function CongNgheGHKIQuiz({
                           badgeStyle = 'bg-emerald-600 text-white border-black';
                         }
 
+                        const isLocked = userAnswers[q.id] !== undefined;
+
                         return (
                           <button
                             key={optIdx}
                             type="button"
+                            disabled={isLocked}
                             onClick={() => handleSelectMCQ(q.id, optIdx)}
-                            className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition cursor-pointer ${itemStyle}`}
+                            className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition ${
+                              isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                            } ${itemStyle}`}
                           >
                             <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
                               {letter}
@@ -820,8 +925,11 @@ export default function CongNgheGHKIQuiz({
                             <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
                               <button
                                 type="button"
+                                disabled={isAnsweredThisStmt}
                                 onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                  isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                                } ${
                                   userVal === true
                                     ? isCorrect
                                       ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
@@ -834,8 +942,11 @@ export default function CongNgheGHKIQuiz({
 
                               <button
                                 type="button"
+                                disabled={isAnsweredThisStmt}
                                 onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                  isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                                } ${
                                   userVal === false
                                     ? isCorrect
                                       ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
@@ -892,12 +1003,12 @@ export default function CongNgheGHKIQuiz({
               {saQuestions.map((q, idx) => {
                 const questionNumber = mcqQuestions.length + tfQuestions.length + idx + 1;
                 const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
-                const isUserAnswered = userVal.trim() !== '';
+                const isLocked = lockedShortAnswers[q.id] || isSubmitted;
 
                 const normUser = userVal.trim().replace(/,/g, '.');
                 const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
-                const isCorrect = isUserAnswered ? normUser !== '' && normUser === normCorrect : null;
-                const showFeedback = isRevealed || isUserAnswered;
+                const isCorrect = isLocked ? normUser !== '' && normUser === normCorrect : null;
+                const showFeedback = isRevealed || isLocked;
 
                 return (
                   <div
@@ -906,7 +1017,7 @@ export default function CongNgheGHKIQuiz({
                     className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-2xl border-2 border-black transition ${
                       isSubmitted
                         ? 'shadow-[4px_4px_0px_0px_#000]'
-                        : isUserAnswered
+                        : isLocked
                         ? 'shadow-[4px_4px_0px_0px_#000] ring-2 ring-[#ffe17c]'
                         : 'shadow-[4px_4px_0px_0px_#000]'
                     }`}
@@ -946,18 +1057,31 @@ export default function CongNgheGHKIQuiz({
                         </label>
                         <input
                           type="text"
-                          disabled={isSubmitted}
+                          disabled={isLocked}
                           value={userVal}
                           onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === 'Enter') handleLockShortAnswer(q.id);
+                          }}
                           placeholder="Ví dụ: 351 hoặc 23,4"
                           className={`w-full sm:w-64 px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
-                            showFeedback
+                            isLocked
                               ? isCorrect
                                 ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
                                 : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
                               : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
                           }`}
                         />
+                        {!isLocked && (
+                          <button
+                            type="button"
+                            onClick={() => handleLockShortAnswer(q.id)}
+                            disabled={!userVal.trim()}
+                            className="neo-btn bg-black text-[#ffe17c] px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase disabled:opacity-40 cursor-pointer"
+                          >
+                            Xác nhận & Khóa
+                          </button>
+                        )}
                         {showFeedback && (
                           <div className="flex items-center gap-2">
                             <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
@@ -1066,12 +1190,17 @@ export default function CongNgheGHKIQuiz({
                         badgeStyle = 'bg-emerald-600 text-white border-black';
                       }
 
+                      const isLocked = userAnswers[q.id] !== undefined;
+
                       return (
                         <button
                           key={optIdx}
                           type="button"
+                          disabled={isLocked}
                           onClick={() => handleSelectMCQ(q.id, optIdx)}
-                          className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition cursor-pointer ${itemStyle}`}
+                          className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition ${
+                            isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                          } ${itemStyle}`}
                         >
                           <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
                             {letter}
@@ -1123,8 +1252,11 @@ export default function CongNgheGHKIQuiz({
                           <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
                             <button
                               type="button"
+                              disabled={isAnsweredThisStmt}
                               onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                              } ${
                                 userVal === true
                                   ? isCorrect
                                     ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
@@ -1136,8 +1268,11 @@ export default function CongNgheGHKIQuiz({
                             </button>
                             <button
                               type="button"
+                              disabled={isAnsweredThisStmt}
                               onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
+                              } ${
                                 userVal === false
                                   ? isCorrect
                                     ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
@@ -1167,28 +1302,43 @@ export default function CongNgheGHKIQuiz({
                     </label>
                     {(() => {
                       const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
-                      const isUserAnswered = userVal.trim() !== '';
+                      const isLocked = lockedShortAnswers[q.id] || isSubmitted;
                       const normUser = userVal.trim().replace(/,/g, '.');
                       const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
-                      const isCorrect = isUserAnswered ? normUser !== '' && normUser === normCorrect : null;
-                      const showFeedback = isRevealed || isUserAnswered;
+                      const isCorrect = isLocked ? normUser !== '' && normUser === normCorrect : null;
+                      const showFeedback = isRevealed || isLocked;
 
                       return (
                         <div className="space-y-3">
-                          <input
-                            type="text"
-                            disabled={isSubmitted}
-                            value={userVal}
-                            onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
-                            placeholder="Ví dụ: 351 hoặc 23,4"
-                            className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
-                              showFeedback
-                                ? isCorrect
-                                  ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
-                                  : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
-                                : 'bg-white dark:bg-slate-900 border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
-                            }`}
-                          />
+                          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                            <input
+                              type="text"
+                              disabled={isLocked}
+                              value={userVal}
+                              onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
+                              onKeyDown={(e) => {
+                                if (e.key === 'Enter') handleLockShortAnswer(q.id);
+                              }}
+                              placeholder="Ví dụ: 351 hoặc 23,4"
+                              className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
+                                isLocked
+                                  ? isCorrect
+                                    ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
+                                    : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
+                                  : 'bg-white dark:bg-slate-900 border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
+                              }`}
+                            />
+                            {!isLocked && (
+                              <button
+                                type="button"
+                                onClick={() => handleLockShortAnswer(q.id)}
+                                disabled={!userVal.trim()}
+                                className="neo-btn bg-black text-[#ffe17c] px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase disabled:opacity-40 cursor-pointer"
+                              >
+                                Xác nhận & Khóa
+                              </button>
+                            )}
+                          </div>
                           {showFeedback && (
                             <div className="flex items-center gap-2">
                               <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
