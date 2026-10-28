@@ -1,0 +1,354 @@
+000: TRƯỜNG THPT NGUYỄN TRÃI         ĐÁP ÁN CƯƠNG ÔN TẬP GIỮA HỌC KÌ I
+001: TỔ: LÍ - CÔNG NGHỆ                          MÔN: CÔNG NGHỆ 11
+002: Năm học: 2026-2027
+004: BÀI 1: KHÁI QUÁT VỀ CƠ KHÍ CHẾ TẠO
+006: Câu 1: Cơ khí chế tạo nghiên cứu và thực hiện những quá trình nào?
+007: <u>A.</u> Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người
+008: B. Thiết kế, thi công, vận hành, sửa chữa các chi tiết phục vụ cho sản xuất và cho đời sống của con người
+009: C. Thiết kế, lắp đặt, sửa chữa, bảo dưỡng các thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người
+010: D. Chế tạo, vận hành, bảo dưỡng, sửa chữa các máy móc phục vụ cho sản xuất và cho đời sống của con người.
+011: Câu 2: Cơ khí chế tạo là ngành kĩ thuật công nghệ sử dụng các kiến thức số liệu của bộ môn nào?
+012: A. Vật lí B. Hóa học <u>C.</u> Toán học D. Công nghệ
+013: Câu 3: Cơ khí chế tạo là ngành kĩ thuật công nghệ ứng dụng nguyên lí của bộ môn nào ?
+014: <u>A.</u> Vật lí B. Hóa học C. Toán học D. Công nghệ
+015: Câu 4: Vai trò chủ yếu của cơ khí chế tạo trong sản xuất là gì?
+016: A. Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.<u>B.</u> Chế tạo công cụ, máy phục vụ các ngành sản xuất.C. Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.D. Sản xuất vật liệu phục vụ xây dựng các công trình.
+017: Câu 5: Cơ khí chế tạo sử dụng kiến thức và kết quả nghiên cứu nào để thực hiện các nhiệm vụ kĩ thuật?
+018: <u>A.</u> Toán học, nguyên lí Vật lí và công nghệ vật liệu.B. Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.C. Địa lí, nguyên lí Sinh học và công nghệ môi trường.D. Hoá học, nguyên lí Địa lí và công nghệ sinh học.
+019: Câu 6: Cơ khí chế tạo góp phần phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ thông qua hoạt động nào?A. Khai thác nguồn nhiên liệu có sẵn trong tự nhiên.<u>B.</u> Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.C. Tổ chức vận chuyển và phân phối sản phẩm tiêu dùng.D. Xây dựng các chương trình quảng bá kết quả nghiên cứu.
+020: Câu 7: Việc sử dụng máy giặt giúp con người giảm công sức giặt quần áo và có thêm thời gian nghỉ ngơi. Ví dụ này thể hiện vai trò nào của cơ khí chế tạo trong đời sống?A. Tạo ra thiết bị phục vụ nghiên cứu và khám phá vũ trụ.B. Tạo ra công cụ giúp nâng cao năng suất trong sản xuất.<u>C.</u> Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.D. Tạo ra máy móc phục vụ nghiên cứu và chinh phục thiên nhiên.
+021: Câu 8 : Các nhà khoa học sử dụng robot thám hiểm để khảo sát bề mặt một hành tinh. Trường hợp này thể hiện vai trò nào của cơ khí chế tạo?
+022: <u>A</u>. Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.B. Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.C. Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.D. Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất.
+023: Câu 9:  Nhóm nào sau đây thuộc máy, công cụ lao động của ngành cơ khí chế tạo?
+024: <u>A.</u> Máy tiện, máy phay, máy bào, máy hàn.B. Sắt, thép, đồng, nhôm và các hợp kim.C. Bản vẽ, quy trình và hồ sơ kĩ thuật.D. Chi tiết, cụm máy và sản phẩm cơ khí.
+025: Câu 10: Trong chế tạo sản phẩm cơ khí, bản vẽ kĩ thuật và quy trình gia công được sử dụng nhằm mục đích nào?
+026: A. Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.B. Xác định số lượng công nhân và tính tiền công sản xuất.<u>C.</u> Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.D. Xác định thời gian giao hàng và lựa chọn cách vận chuyển.
+027: Câu 11: Một chi tiết máy đạt yêu cầu về độ bền nhưng có kích thước sai lệch quá mức cho phép. Đánh giá nào sau đây phù hợp?
+028: A. Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thước.<u>B.</u> Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.C. Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.D. Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp.
+029: Câu 12: Đối tượng lao động của ngành cơ khí chế tạo là gì?
+030: A. Vật liệu kim loại và hợp kim B. Vật liệu phi kim loại
+031: <u>C.</u> Các vật liệu cơ khí D. Vật liệu kim loại và phi kim loại
+032: Câu 13: Phương án nào sau đây mô tả đúng trình tự chế tạo một chiếc kìm nguội?
+033: <u>A.</u> Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh.
+034: B. Thép (nhiệt luyện) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (rèn hoặc đập) → Chiếc kìm hoàn chỉnh.
+035: C. Thép (nhiệt luyện) → Phôi kìm (rèn hoặc đập) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh.
+036: D. Thép (rèn hoặc dập) → Phôi kìm (Nhiệt luyện) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh.
+037: Câu 14: Trong quy trình chế tạo cơ khí, công đoạn làm giảm mài mòn cho sản phẩm được thực hiện ở bước nào?A. Lựa chọn phương pháp và chế tạo phôi.B. Thực hiện gia công các chi tiết máy.<u>C.</u> Xử lí và bảo vệ bề mặt sản phẩm.D. Lắp ráp các chi tiết thành sản phẩm.
+038: Câu 15: Việc chọn phương pháp chế tạo phôi và xác định kích thước phôi phù hợp thuộc bước nào trong quy trình chế tạo cơ khí?<u>A.</u> Chế tạo phôi cho các chi tiết máy.B. Gia công các chi tiết của sản phẩm.C. Xử lí và bảo vệ bề mặt sản phẩm.D. Lắp ráp các chi tiết của sản phẩm.
+039: Câu 16: Bước nào trong quy trình chế tạo cơ khí giúp chi tiết đạt hình dạng, kích thước và độ chính xác theo yêu cầu?A. Lắp ráp các chi tiết thành sản phẩm.B. Xử lí và bảo vệ bề mặt sản phẩm.C. Lựa chọn phương pháp và chế tạo phôi.<u>D.</u> Thực hiện gia công các chi tiết máy
+040: Câu 17: Yếu tố nào là quan trọng nhất để đánh giá chất lượng của một lô vòng bi trước khi xuất xưởng?
+041: A. Bề mặt sản phẩm phải thật sáng bóng, không có bất kì vết trầy xước nào để đảm bảo tính thẩm mĩ khi xuất bán.
+042: B. Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.
+043: C. Thời gian kiểm tra chất lượng cần được rút ngắn tối đa để đẩy nhanh tiến độ sản xuất mà không cần quá khắt khe.
+044: D. Sản phẩm chỉ cần đạt tiêu chuẩn về kích thước tổng thể bao ngoài, bỏ qua việc đo kiểm chi tiết từng thông số.
+045: Câu 18: Khi trao đổi về nội dung, mục đích và trình tự các bước trong quy trình chế tạo cơ khí, một nhóm học sinh đưa ra các ý kiến sau:
+046: <u>a)</u> Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết.
+047: b) Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ.
+048: <u>c)</u> Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp
+049: d) Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm.
+050: Câu 19: Một bạn đưa ra nhận định về đặc điểm của ngành cơ khí chế tạo?
+051: <u>a.</u> Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác
+052: b. Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,...
+053: <u>c.</u> Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm
+054: <u>d.</u> Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất
+055: BÀI 2: NGÀNH NGHỀ TRONG LĨNH VỰC CƠ KHÍ CHẾ TẠO
+057: Câu 1: Công việc chính của thiết kế sản phẩm cơ khí ?
+058: <u>A.</u> Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+059: B. Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.
+060: C. Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.
+061: <u>D.</u> Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+062: Câu 2: Công việc chính của bảo dưỡng, sửa chữa thiết bị cơ khí ?
+063: A. Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+064: B. Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.
+065: C. Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.
+066: <u>D.</u> Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+067: Câu 3: Công việc chính của lắp ráp sản phẩm cơ khí ?
+068: A. Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.
+069: B. Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.
+070: <u>C.</u>  Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra..
+071: D. Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+072: Câu 4: Công việc chính của gia công cơ khí ?
+073: A. Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.
+074: <u>B.</u> Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.
+075: C. Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.
+076: D. Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.
+077: Câu 5: Những nghề nghiệp nào sau đây đảm nhận công việc thiết kế sản phẩm cơ khí??
+078: <u>A.</u> Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.
+079: B. Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.
+080: C. Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.
+081: D. Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí.
+082: Câu 6: Những nghề nghiệp nào sau đây đảm nhận công việc gia công cơ khí ?
+083: A. Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.
+084: B. Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.
+085: <u>C.</u> Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.
+086: D. Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí.
+087: Câu 7: Người làm công việc bảo dưỡng, sửa chữa thiết bị cơ khí thực hiện nhiệm vụ chính nào sau đây?
+088: A. Lắp ghép các chi tiết thành sản phẩm hoàn chỉnh, bảo đảm yêu cầu kĩ thuật theo bản vẽ lắp.
+089: B. Chế tạo các sản phẩm máy móc mới, kiểm tra và thử nghiệm theo yêu cầu của bản thiết kế.
+090: C. Phân tích nhu cầu của khách hàng, tư vấn và bán các sản phẩm máy móc phù hợp với nhu cầu.
+091: <u>D.</u> Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy móc.
+092: Câu 8: Nghề nghiệp nào sau đây không thuộc nhóm công việc gia công cơ khí?
+093: A. Thợ cắt gọt kim loại    B. Thợ hàn       <u>C</u>. Thợ mỏ   D. Thợ rèn, dập
+094: <u>A.</u> nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết
+095: Câu 9: Quá trình sử dụng máy móc, công cụ và công nghệ để biến đổi vật liệu ban đầu thành sản phẩm cơ khí được gọi là gì??
+096: A. Quá trình thiết kế sản phẩm cơ khí <u>B.</u> Quá trình gia công cơ khí
+097: C. Quá trình lắp ráp sản phẩm cơ khí D. Quá trình bảo dưỡng, sửa chữa thiết bị cơ khí
+098: Câu 10: Quá trình tạo ra một sản phẩm cơ khí diễn ra theo trình tự?
+099: <u>A.</u> Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.
+100: B. Thiết kế sản phẩm → Gia công cơ khí → Bảo dưỡng thiết bị.
+101: C. Gia công cơ khí → Thiết kế sản phẩm → Lắp ráp sản phẩm.
+102: D. Thiết kế sản phẩm → Lắp ráp sản phẩm → Gia công cơ khí.
+103: Câu 11: Môi trường làm việc trong ngành cơ khí có thể khắc nghiệt và tiềm ẩn nguy cơ tai nạn lao động. Khi tìm hiểu những yêu cầu đối với người lao động trong ngành này, một học sinh đưa ra các nhận định sau:
+104: <u>a)</u> Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật.
+105: b) Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việc.
+106: <u>c)</u> Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động..
+107: d) Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ.
+108: Câu 12: Trong giờ học nhóm học sinh trao đổi các ý kiến về các ngành nghề trong lĩnh vực cơ khí chế tạo như sau.
+109: a)  Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu.
+110: <u>b)</u> Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm.
+111: c) Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp
+112: <u>d)</u> Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu.
+114: BÀI 3: TỔNG QUAN VỀ VẬT LIỆU CƠ KHÍ
+115: Câu 1: Vật liệu cơ khí là?
+116: A. Các kim loại được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.
+117: <u>B.</u> Vật liệu được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.
+118: C. Chất được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.
+119: D. Dụng cụ được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.
+120: Câu 2: Vật liệu cơ khí cần đáp ứng yêu cầu về?
+121: <u>A.</u> Tính sử dụng, tính công nghệ và tính kinh tế.
+122: B. Tính cơ học, tính công nghệ và tính kinh tế.
+123: C. Tính lý học, tính công nghệ và tính kinh tế.
+124: D. Tính hóa học, tính công nghệ và tính kinh tế.
+125: Câu 3: Vật liệu có tính chất :Cách điện ,cách nhiệt, không bị oxi hóa, ít mài mòn..là nhóm vật liệu ?
+126: <u>A.</u> Phi kim loại.B. Kim loại .   C. Hợp kim.D. Kim loại và vật liệu mới.
+127: Câu 4: Căn cứ vào  tính chất, vật liệu cơ khí được chia thành?
+128: A. Vật liệu kim loại, vật liệu phi kim loại.
+129: <u>B.</u> Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.
+130: C. Vật liệu kim loại, vật liệu phi kim loại, vật liệu mới.
+131: D. Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu đàn hồi, vật liệu mới.
+132: Câu 5: Nhóm vật liệu được dùng chủ yếu trong sản xuất cơ khí ?
+133: <u>A.</u> Vật liệu kim loại và hợp kim.B. Vật liệu phi kim loại.
+134: C. Vật liệu mới và hợp kim .D. Kim loại đen và kim loại màu.
+135: Câu 6: Tính chất nào sau đây thuộc nhóm tính chất cơ học của vật liệu cơ khí?
+136: A. Khả năng chịu nhiệt độ cao mà không bị biến dạng.
+137: B. Khả năng chống lại các phản ứng hoá học với môi trường xung quanh.
+138: <u>C.</u> Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.
+139: D. Khả năng dẫn điện và dẫn nhiệt hiệu quả.
+140: Câu 7: Vật liệu mới là?
+141: A. hợp kim, polymer nhớ hình, nano, gang, thép, vật liệu có cơ tính biến thiên
+142: <u>B.</u> nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên
+143: C. cao su, gỗ, composite, nhựa nhiệt rắn, hợp kim đồng, vật liệu phi kim loại.
+144: D. nano, composite, hợp kim, cao su tổng hợp, gốm sứ kĩ thuật, nhựa nhiệt dẻo.
+145: Câu 8: Tại sao trong sản xuất cơ khí phải biết được tính công nghệ của vật liệu?
+146: <u>A.</u> Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.
+147: B. Để xác định và chọn đúng loại vật liệu phù hợp nhất với yêu cầu kĩ thuật đặt ra.
+148: C. Để ưu tiên tìm kiếm các vật liệu có giá thành thấp nhằm tối ưu hóa chi phí sản xuất.
+149: D. Để tạo ra những chi tiết cơ khí đạt được độ chính xác cao nhất cho quá trình lắp ráp.
+150: Câu 9: Trong một buổi học, học sinh được phát các tấm thẻ ghi tên nhiều loại vật liệu khác nhau như gang, thép, hợp kim đồng, nhựa nhiệt dẻo, cao su, composite,... Giáo viên yêu cầu học sinh phân loại các vật liệu này vào từng nhóm dựa trên các đặc điểm chung.
+151: <u>a</u><u>)</u> Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim<u> </u>
+152: <u>b</u><u>)</u> Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép.
+153: c) Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép..
+154: d) Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng.
+157: BÀI 4. VẬT LIỆU KIM LOẠI VÀ HỢP KIM
+158: Câu 1: Vật liệu kim loại và hợp kim được chia ra thành những loại nào?
+159: <u>A.</u> Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu
+160: B. Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim đen
+161: C. Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim màu
+162: D. Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim đen
+163: Câu 2: Sắt và hợp kim của sắt gồm những loại nào?
+164: A. Gang, thép carbon, thép hợp kim, nhômB. Gang, thép carbon, nhôm, nickel
+165: C. Thép hợp kim, nhôm và hợp kim của nhôm<u>D.</u> Gang, thép carbon, thép hợp kim
+166: Câu 3: Vật liệu nào sau đây thuộc nhóm kim loại và hợp kim màu?
+167: A. Gang và hợp kim gàn<u>B.</u> Nhôm và hợp kim nhôm
+168: C. Sắt và hợp kim sắtD. Thép và hợp kim thép
+169: Câu 4: Vật liệu nào sau đây thuộc nhóm sắt và hợp kim của sắt
+170: A. Nhôm<u>B.</u> GangC. ĐồngD. Nickel
+171: Câu 5: Đâu là tính chất cơ học của kim loại và hợp kim ?
+172: <u>A.</u> Độ bền, độ dẻo, độ cứng, độ nén
+173: B. Tính dẫn điện, tính dẫn nhiệt, tính giãn nở.
+174: C. Tính chịu axit, tính chống ăn mòn hóa học.
+175: D. Tính đúc, tính hàn, tính rèn và khả năng gia công cắt gọt.
+176: Câu 6: Hợp kim của sắt và carbon được gọi là gang khi có hàm lượng carbon trong khoảng nào?
+177: <u>A.</u> Từ 2,14% đến 4,3%. B. Từ 0,02% đến 2,14%.
+178: C. Từ 4,3% đến 6,67%. D. Trên 6,67%.
+179: Câu 7: So với thép carbon, thép hợp kim có ưu điểm nào sau đây về nhiệt luyện và độ bền ở nhiệt độ cao?A. Có tính nhiệt luyện kém hơn, giữ được độ bền cao hơn ở nhiệt độ cao.B. Có tính nhiệt luyện tốt hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.C. Có tính nhiệt luyện kém hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.
+180: <u>D</u><u>.</u> Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao.
+181: Câu 8: Vật liệu hợp kim được ứng dụng làm vỏ máy bay, tên lửa và tàu vũ trụ cần phải đáp ứng trọn vẹn những yêu cầu kỹ thuật nào dưới đây?
+182: <u>A.</u> Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.
+183: B. Kháng oxy hóa tuyệt đối, chống ăn mòn bề mặt và sở hữu tính dẻo dai vượt trội.
+184: C. Đạt độ cứng cơ học tối đa, chống mài mòn và chịu lực va đập cường độ cao.
+185: D. Sở hữu khả năng truyền dẫn điện năng và tản nhiệt ưu việt trong mọi điều kiện.
+186: Câu 9: Một cơ sở cơ khí có hai mẫu hợp kim của sắt và carbon: mẫu X chứa 1,0% carbon, mẫu Y chứa 3,0% carbon. Cơ sở đang lựa chọn vật liệu để đúc vỏ máy và chế tạo chi tiết chịu lực ở nhiệt độ cao.
+187: a̲) Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt.
+188: b) Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép.
+189: c̲) Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt.
+190: d) Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim.
+191: Câu 10: Gang và thép là hai hợp kim của sắt với carbon, được dùng rất phổ biến trong ngành cơ khí. Nhận xét về gang, thép và hợp kim nói chung:
+192: <u>a)</u> Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim).
+193: b) Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%.
+194: <u>c)</u> Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy.
+195: <u>d)</u> Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn.
+196: Câu 11:  Đồng, nhôm và hợp kim của chúng là các kim loại màu được dùng rộng rãi trong đời sống và sản xuất. Nhận xét về việc sử dụng các vật liệu này:
+197: <u>a)</u> Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay.
+198: b) Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép.
+199: <u>c)</u> Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi.
+200: d) Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm.
+202: BÀI 5: VẬT LIỆU PHI KIM LOẠI
+204: Câu 1: Vật liệu phi kim loại bao gồm?
+205: A. Nhựa nhiệt dẻo, kim loại, cao su, hợp kim nhớ hình
+206: <u>B</u>. Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su
+207: C. Nhựa nhiệt rắn ,vật liệu vô cơ, vật liệu hữu cơ
+208: D. Kim loại, vật liệu vô cơ, các vật liệu mới
+209: Câu 2: Phi kim loại ở thể lỏng ở nhiệt độ phòng ?
+210: A. Thủy ngân<u>B</u>. BromC. NitơD. Cao su
+211: Câu 3: Tính chất vật lí của vật liệu phi kim loại?
+212: A. Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp.
+213: <u>B</u>. Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp
+214: C. Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao
+215: D. Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao.
+216: Câu 4: Vật liệu phi kim loại không bị oxi hóa, không bị ăn mòn trong các môi trường   acid, muối,. thuộc tính chất?
+217: A. Cơ học.<u>B</u>. Hóa học.C. Vật lý.D. Công nghệ.
+218: Câu 5: Vật liệu phi kim loại được gia công bằng nhiều phương pháp khác nhau như đùn, đúc, phun, thổi, ép…tùy theo từng loại vật liệu thuộc tính chất?
+219: A. Cơ học.B. Hóa học.C. Vật lý.<u>D</u>. Công nghệ
+220: Câu 6: Cao su không có tính chất nào sau đây?
+221: A. Tính đàn hồi caoB. Tính cách nhiệt
+222: C. Tính cách âm cao<u>D</u>. Tính dẫn điện
+223: Câu 7: Ưu điểm của vật liệu phi kim loại so với vật liệu kim loại và hợp kim là:
+224: A. Tính dẫn điện, dẫn nhiệt, nhẹ, chịu ăn mòn hóa học tốt
+225: <u>B.</u> Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt
+226: C. Tính cứng, dẻo, dễ rèn dập, dẫn điện, dẫn nhiệt, chịu ăn mòn hóa học tốt
+227: D. Tính Tính cơ học, vật lí, hóa học, công nghệ nổi trội hơn
+228: Câu 8: Vật liệu khi gia nhiệt sẽ rắn cứng, không có khả năng tái chế ?
+229: A. GangB. Nhựa nhiệt dẻo<u>C</u>. Nhựa nhiệt rắnD. Cao su
+230: Câu 9: Cao su được dùng làm săm, lốp xe vì ?
+231: A. Độ cứng cao và chịu được nhiệt độ cao, chống ăn mòn tốt, dẻo.
+232: B. Tính dẫn nhiệt, dẫn điện cao, chống ăn mòn tốt, dẻo.
+233: C. Độ bền nhiệt, nhẹ, chống ăn mòn, chịu va đập tốt, ma sát tốt.
+234: <u>D</u>. Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt.
+235: Câu 10: Đặc điểm của nhựa nhiệt dẻo?
+236: A. Nhẹ, không dẫn điện, không có khả năng tái sinh
+237: <u>B</u>. Nhẹ, không dẫn điện, có khả năng chế biến lại
+238: C. Nhẹ, có nhiệt độ nóng chảy thấp, không có khả năng tái sinh
+239: D. Nhẹ, có nhiệt độ nóng chảy cao, có khả năng chế biến lại
+240: Câu 11: Nguồn gốc của cao su nhân tạo được chế biến từ ?
+241: A. Than đáB. Dầu mỏ
+242: C. Cây cao su và than đá.<u>D</u>. Than đá và dầu mỏ.
+243: Câu 12: Công nghệ đùn thường dùng cho loại vật liệu?
+244: <u>A</u>. Nhựa nhiệt dẻo, cao su.B. Nhựa nhiệt rắn, cao su
+245: C. Nhựa nhiệt dẻo.D. Nhựa nhiệt rắn.
+246: Câu 13: Trong ngành cơ khí, nhựa nhiệt rắn được dùng để làm?
+247: A. Chế tạo bu lông, ốc vít nhựa trong một số máy móc<u>B</u>. Chế tạo vỏ tàu thuyền, ô tô
+248: C. Sản xuất dụng cụ cắt, khuôn dậpD. Dùng làm săm lốp, ống dẫn
+249: Câu 14: Sản phẩm nào dưới đây được làm bằng vật liệu nhựa nhiệt dẻo?
+250: A. Vỏ tàuB. Vỏ công tắc điện
+251: C. Săm xe đạp<u>D</u>. Cốc nhựa uống nước
+252: Câu 15: Một cơ sở sản xuất sử dụng nhựa nhiệt dẻo và nhựa nhiệt rắn để chế tạo đồ dùng, đồng thời tìm cách tận dụng vật liệu thừa sau gia công.
+253: <u>a)</u> Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn
+254: b) Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau.
+255: <u>c)</u> Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới.
+256: d) Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất.
+257: BÀI 6: VẬT LIỆU MỚI
+258: Câu 1: Vật liệu mới là?
+259: <u>A.</u> Vật liệu không nằm trong danh mục vật liệu truyền thống.
+260: B. Vật liệu truyền thống đang được sử dụng để sản xuất.
+261: C. Vật liệu thuộc danh mục truyền thống nhưng không còn sử dụng.
+262: D. Vật liệu có sẵn trong tự nhiên, chưa qua xử lý công nghiệp
+263: Câu 3: Vật liệu nano là?
+264: <u>A.</u> Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.
+265: B. Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ micrômét
+266: C. Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ milimét.
+267: D. Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ centimét.
+268: Câu 4: Vật liệu composite là?
+269: <u>A</u><u>.</u> Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.
+270: B. Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần giống nhau, gồm vật liệu cốt và vật liệu nền.
+271: C. Vật liệu được tạo thành bằng cách nấu chảy hai hay nhiều loại kim loại hoặc phi kim với nhau.
+272: D. Vật liệu được tạo ra từ một loại vật liệu cơ bản duy nhất thông qua các phương pháp xử lý nhiệt.
+273: Câu 5: Vật liệu có cơ tính biến thiên là?
+274: A. Loại vật liệu siêu cấu trúc, có các hạt tinh thể cấu tạo nên vật liệu đạt tới kích thước vô cùng nhỏ ở mức nanomet.
+275: B. Là tổ hợp của hai hay nhiểu vật liệu thành phần khác nhau bao gồm vật liệu cốt và vật liệu nền.
+276: <u>C.</u> Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.
+277: D. Loại vật liệu thông minh, sở hữu đặc tính cơ học ưu việt là khả năng tự động ghi nhớ và phục hồi lại hình dạng gốc..
+278: Câu 6: Nhận định sau đây “ Vật liệu có được chất lượng tốt nhất từ các vật liệu thành phần , tránh được ăn mòn, mỏi, đứt gãy và bong tách do sự chuyển đổi đột ngột về tính chất vật liệu trên bề mặt phân cách giữa các vật liệu khác nhau” là đang chỉ loại vật liệu nào ?
+279: A. Vật liệu nano.B. Vật liệu composite.
+280: <u>C.</u> Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.
+281: Câu 7: Trong vật liệu composite thì vật liệu cốt có tác dụng gì ?
+282: A. Liên kết các vật liệu.B. Truyền ứng suất.<u>C.</u> Tăng độ bền.D. Tách điện.
+283: Câu 8: Trong vật liệu composite thì vật liệu nền có tác dụng gì ?
+284: <u>A.</u> Liên kết các vật liệu cốtB. Chịu ứng suất tập trung.
+285: C. Truyền nhiệt.D. Kháng hoá chất môi trường và nhiệt độ.
+286: Câu 9: Vật liệu được dùng trong may mặc. Có khả năng diệt vi khuẩn gây mùi hôi khó chịu ?
+287: <u>A.</u> Vật liệu nano.B. Vật liệu composite.
+288: C. Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.
+289: Câu 10: Tính chất của vật liệu nano?
+290: A. Cứng, nặng, cách điện, cách nhiệt và hấp thụ ánh sáng kém.
+291: B. Giòn, xốp, cách điện, giữ nhiệt và chống chịu ăn mòn kém.
+292: C. Mềm, dẻo, dẫn điện, truyền nhiệt và chống lại mài mòn kém
+293: <u>D.</u> Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt.
+294: Câu 11: Vật liệu được sử dụng để chế tạo cánh quạt máy bay thông minh?
+295: A. Vật liệu composite.B. Vật liệu có cơ tính biến thiên.
+296: <u>C.</u><u> </u>Hợp kim nhớ hình.D. Vật liệu nano.
+297: Câu 12: Chuồn chuồn robot được dùng bởi vật liệu chế tạo?
+298: A. Vật liệu nano.B. Vật liệu composite.
+299: C. Vật liệu có cơ tính biến thiên.<u>D.</u> Hợp kim nhớ hình.
+300: Câu 13: Trong lĩnh vực điện tử người ta dùng vật liệu nào để chế tạo loại robot mini?
+301: <u>A.</u> Vật liệu nano.B. Vật liệu composite.
+302: C. Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.
+303: Câu 14: Ưu điểm nào sau đây không phải là đặc tính nổi bật của vật liệu composite được nêu trong bài học?
+304: A. Độ cứng và độ bền cao, chịu nhiệt tốtB. Khả năng chống mài mòn và ăn mòn tốt
+305: C. Khối lượng riêng nhỏ (nhẹ)<u>D.</u> Khối lượng riêng rất lớn và nặng
+306: Câu 15: Vật liệu composite được ứng dụng để chế tạo cánh tay robot, cánh quạt tua bin gió nhờ vào tính chất chính nào?
+307: A. Dẫn điện tốt và giá thành rẻ<u>B.</u> Chịu lực, chịu áp suất tốt và có khối lượng nhẹ
+308: C. Dễ bị nóng chảy để tái chếD. Khả năng phân hủy sinh học nhanh
+309: Câu 16: Vật liệu có cơ tính biến thiên (FGM) còn được gọi bằng tên nào khác?
+310: A. Vật liệu composite thông thường.<u>B.</u> Vật liệu phân lớp chức năng.
+311: C. Vật liệu đồng nhất.D. Vật liệu đẳng hướng.
+312: Câu 17: Trong quá trình chế tạo, sự thay đổi tính chất của vật liệu FGM đạt được bằng cách nào?
+313: A. Phủ thêm một lớp vật liệu hoàn toàn khác lên bề mặt.
+314: B. Trộn lẫn ngẫu nhiên các loại vật liệu với nhau.
+315: C. Nung chảy ở nhiệt độ cao trong thời gian dài.
+316: <u>D.</u> Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành.
+317: Câu 18: Các vật liệu cấu thành cho vật liệu có cơ tính biến thiên được chọn dựa trên tiêu chí chính nào?
+318: A. Dựa trên màu sắc và giá thành của vật liệu.
+319: <u>B.</u> Dựa trên yêu cầu về tính năng sử dụng của vật liệu.
+320: C. Dựa trên độ hiếm có của vật liệu trong tự nhiên.
+321: D. Dựa trên tính dễ gia công của từng vật liệu độc lập.
+322: Câu 19: Đặc tính cơ bản làm nên tên gọi của "hợp kim nhớ hình" là gì?
+323: A. Khả năng chống ăn mòn cực tốt.<u>B.</u> Khả năng ghi nhớ hình dạng ban đầu.
+324: C. Khả năng dẫn điện ở nhiệt độ thấp.D. Khả năng chịu nhiệt độ cao.
+325: Câu 20: Các chi tiết làm bằng hợp kim nhớ hình thường bị biến dạng do nguyên nhân nào?
+326: <u>A.</u> Tác động của ngoại lực.B. Tác động của nhiệt độ phòng.
+327: C. Phản ứng hóa học với oxy.D. Tác động của từ trường.
+328: Câu 21: Điều kiện nào giúp hợp kim nhớ hình khôi phục lại hình dạng ban đầu sau khi bị biến dạng?
+329: A. Nhúng vào dung dịch axit.B. Làm lạnh đột ngột.
+330: <u>C.</u> Quá trình cơ nhiệt thích hợp.D. Phơi dưới ánh sáng Mặt Trời.
+331: Câu 22: Loại hợp kim nhớ hình nào được xem là điển hình và phổ biến nhất hiện nay?
+332: A. Thép không gỉ.B. Hợp kim đồng - kẽm.
+333: C. Hợp kim nhôm siêu nhẹ.<u>D.</u> Hợp kim nitinol.
+334: Câu 23: Nitinol là hợp kim được tạo thành từ hai kim loại nào?
+335: <u>A.</u> Nickel và titanium.  B. Sắt và carbon.C. Đồng và thiếc.D. Nhôm và magie.
+336: Câu 24: Khi tham quan một trung tâm nghiên cứu vật liệu mới, học sinh được giới thiệu về các loại vật liệu tiên tiến đang được ứng dụng trong ngành công nghiệp. Một số vật liệu có thể chịu nhiệt độ cao, một số khác chống ăn mòn tốt hoặc có tính chất vượt trội so với vật liệu truyền thống.
+337: <u>a)</u> Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình.
+338: b) Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau.
+339: c) Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại.
+340: <u>d)</u> Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống.
+342: BÀI 5. VẬT LIỆU PHI KIM LOẠI
+343: Câu 1 (Thông hiểu). So sánh điểm giống và khác nhau giữa nhựa nhiệt rắn và nhựa nhiệt dẻo.
+344: * Giống: đều là vật liệu cao phân tử, cách điện, cách nhiệt, không oxh..
+345: * Khác nhau:
+346: - Nhựa nhiệt dẻo:nhiệt độ nóng chảy thấp, có thể tái chế
+347: - Nhựa nhiệt rắn: nhiệt độ nóng chảy cao, không tái chế
+348: Câu 2 (Vận dụng). Một cơ sở cần lựa chọn vật liệu làm đệm để giảm rung cho máy khi hoạt động. Trong ba loại vật liệu: cao su, nhựa nhiệt dẻo và nhựa nhiệt rắn, em chọn loại nào? Giải thích lựa chọn dựa trên tính chất của vật liệu.
+349: Đáp án:
+350: - Chọn cao su.
+351: - Cao su có tính đàn hồi cao, có thể biến dạng khi chịu lực và phục hồi hình dạng khi thôi tác dụng lực.
+352: - Cao su còn có khả năng hấp thụ và tiêu hao một phần năng lượng dao động, giúp giảm rung truyền từ máy xuống nền.
+353: BÀI 6. VẬT LIỆU MỚI
+354: Câu 3 (Thông hiểu). Giải thích tính “nhớ hình” của hợp kim nhớ hình. Nêu một ứng dụng của loại vật liệu này.
+355: Đáp án:
+356: - Tính “nhớ hình” là khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp, sau khi bị biến dạng trong giới hạn cho phép.
+357: - Ứng dụng: Chế tạo bộ phận chấp hành điều khiển bằng nhiệt. Khi được nung nóng, bộ phận bằng hợp kim nhớ hình khôi phục hình dạng định trước, tạo chuyển động cho cơ cấu.
+358: Câu 4 (Vận dụng). Một chi tiết cần có bề mặt chịu nhiệt tốt, bên trong có độ bền cơ học cao và thành phần vật liệu thay đổi dần từ ngoài vào trong. Em hãy lựa chọn loại vật liệu mới đã học phù hợp với yêu cầu trên và giải thích lí do.
+359: Đáp án:
+360: - Chọn vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng – FGM).
+361: - Vật liệu này gồm hai hoặc nhiều thành phần, có tỉ lệ thành phần thay đổi dần theo vị trí, giúp tạo ra tính chất phù hợp tại từng vùng của chi tiết.
+362: - Để đáp ứng yêu cầu, có thể thiết kế thành phần chịu nhiệt chiếm ưu thế ở bề mặt và thành phần có độ bền cơ học cao chiếm ưu thế ở bên trong.
