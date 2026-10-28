@@ -112,6 +112,67 @@ export const SEED_DATA = {
       ]
     },
     {
+      "id": "sub_gdqp11",
+      "name": "GDQP&AN 11",
+      "chapters": [
+        {
+          "id": "gdqp11_b1",
+          "name": "Bài 1: Bảo vệ chủ quyền lãnh thổ, biên giới quốc gia nước CHXHCN Việt Nam",
+          "sections": [
+            {
+              "id": "gdqp11_b1_s1",
+              "name": "Chủ quyền lãnh thổ và biên giới quốc gia",
+              "content": "Theo Luật Biên giới quốc gia năm 2003 và Luật Biển Việt Nam năm 2012.",
+              "points": [
+                "Biên giới quốc gia xác định giới hạn lãnh thổ đất liền, các đảo, quần đảo, vùng biển, lòng đất và vùng trời.",
+                "Nội thủy: vùng nước phía trong đường cơ sở, là bộ phận lãnh thổ của Việt Nam.",
+                "Lãnh hải: rộng 12 hải lí tính từ đường cơ sở.",
+                "Tiếp giáp lãnh hải: rộng 12 hải lí tính từ ranh giới ngoài của lãnh hải.",
+                "Vùng đặc quyền kinh tế: rộng 200 hải lí tính từ đường cơ sở.",
+                "Thềm lục địa: ranh giới ngoài không vượt quá 350 hải lí tính từ đường cơ sở."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gdqp11_b2",
+          "name": "Bài 2: Luật Nghĩa vụ quân sự và trách nhiệm của học sinh",
+          "sections": [
+            {
+              "id": "gdqp11_b2_s1",
+              "name": "Luật Nghĩa vụ quân sự 2015",
+              "content": "Quy định về độ tuổi, thời hạn phục vụ, tạm hoãn và miễn nghĩa vụ quân sự.",
+              "points": [
+                "Đăng kí NVQS lần đầu: công dân nam đủ 17 tuổi trở lên vào tháng 4 hằng năm.",
+                "Độ tuổi gọi nhập ngũ: đủ 18 đến hết 25 tuổi; học CĐ, ĐH kéo dài đến hết 27 tuổi.",
+                "Thời hạn phục vụ tại ngũ trong thời bình: 24 tháng.",
+                "Thực hiện nghĩa vụ tham gia CAND là thực hiện NVQS tại ngũ.",
+                "Tạm hoãn: chưa đủ sức khỏe, học sinh THPT, sinh viên ĐH chính quy...",
+                "Miễn: con liệt sĩ, con thương binh hạng một..."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "gdqp11_b3",
+          "name": "Bài 3: Phòng chống tệ nạn xã hội ở Việt Nam trong thời kì hội nhập quốc tế",
+          "sections": [
+            {
+              "id": "gdqp11_b3_s1",
+              "name": "Phòng chống tệ nạn xã hội và tội phạm công nghệ cao",
+              "content": "Quy định về tội phạm, tệ nạn xã hội, an toàn không gian mạng và trách nhiệm của học sinh.",
+              "points": [
+                "Tội phạm: hành vi nguy hiểm cho xã hội được quy định trong Bộ luật Hình sự (gồm 13 chương quy định về các tội phạm).",
+                "Tội phạm công nghệ cao: tác động trái phép vào thông tin số, mạng máy tính, viễn thông để lừa đảo, phát tán mã độc...",
+                "Đánh bạc trái phép dưới mọi hình thức (lô đề, cá độ trực tuyến) đều bị xử lý nghiêm minh.",
+                "Trách nhiệm của học sinh: không tham gia tệ nạn, không chia sẻ tin giả, bảo vệ dữ liệu cá nhân, báo cáo vi phạm kịp thời."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "sub_tinhoc12",
       "name": "Tin học 12 - Khoa học máy tính",
       "chapters": [
@@ -2753,6 +2814,1306 @@ export const SEED_DATA = {
       "favorite": false,
       "createdAt": "2026-10-25T09:00:00.000Z",
       "updatedAt": "2026-10-25T09:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c01",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Theo Luật Biên giới quốc gia năm 2003, biên giới quốc gia của nước Cộng hoá xã hội chủ nghĩa Việt Nam xác định giới hạn lãnh thổ đối với vùng nào dưới đây?",
+      "options": [
+        "Chỉ phần đất liền và hải đảo.",
+        "Đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất, vùng trời.",
+        "Chỉ vùng đất liền và vùng trời trên đất liền.",
+        "Vùng biển và vùng trời quốc gia."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 5 Luật Biên giới quốc gia 2003, biên giới quốc gia xác định giới hạn lãnh thổ đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất và vùng trời của Tổ quốc.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c02",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Theo Luật Biển Việt Nam năm 2012, vùng biển nào nằm ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam?",
+      "options": [
+        "Vùng lãnh hải.",
+        "Vùng nội thủy.",
+        "Vùng tiếp giáp lãnh hải.",
+        "Vùng thềm lục địa."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 9 Luật Biển Việt Nam 2012, nội thủy là vùng nước tiếp giáp với bờ biển, ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c03",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Vùng tiếp giáp lãnh hải là vùng biển có chiều rộng bao nhiêu hải lí?",
+      "options": [
+        "12 hải lí.",
+        "24 hải lí.",
+        "100 hải lí.",
+        "200 hải lí."
+      ],
+      "correct": 0,
+      "explanation": "Theo Điều 13 Luật Biển Việt Nam 2012, vùng tiếp giáp lãnh hải có chiều rộng 12 hải lí tính từ ranh giới ngoài của lãnh hải.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c04",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Hành vi nào dưới đây bị nghiêm cấm theo Luật Biên giới quốc gia?",
+      "options": [
+        "Xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
+        "Tổ chức tuyên truyền pháp luật về biên giới cho nhân dân.",
+        "Trồng cây bảo vệ hệ sinh thái dọc tuyến biên giới.",
+        "Tuần tra bảo vệ chủ quyền biên giới theo phân công."
+      ],
+      "correct": 0,
+      "explanation": "Theo Điều 14 Luật Biên giới quốc gia 2003, nghiêm cấm hành vi xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c05",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Việt Nam có đường biên giới chung trên đất liền với những quốc gia nào?",
+      "options": [
+        "Lào, Thái Lan, Philíppin.",
+        "Mianma, Malaixia, Inđônêxia.",
+        "Lào, Campuchia, Thái Lan.",
+        "Trung Quốc, Lào, Campuchia."
+      ],
+      "correct": 3,
+      "explanation": "Việt Nam có đường biên giới chung trên đất liền với 3 quốc gia: Trung Quốc, Lào và Campuchia.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c06",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Vùng đặc quyền kinh tế của Việt Nam có chiều rộng tính từ đường cơ sở ra phía biển là bao nhiêu hải lí?",
+      "options": [
+        "12 hải lí.",
+        "24 hải lí.",
+        "188 hải lí.",
+        "200 hải lí."
+      ],
+      "correct": 3,
+      "explanation": "Theo Điều 15 Luật Biển Việt Nam 2012, vùng đặc quyền kinh tế hợp với lãnh hải thành một vùng biển có chiều rộng 200 hải lí tính từ đường cơ sở.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c07",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Nội dung nào dưới đây thể hiện đúng quy định về khu vực biên giới trên không theo Luật Biên giới quốc gia?",
+      "options": [
+        "Gồm toàn bộ không gian từ biên giới quốc gia trên đất liền và trên biển lên vùng trời, rộng 10 km tính từ biên giới quốc gia trở vào.",
+        "Chỉ bao gồm vùng trời trên đất liền có đặt mốc quốc giới.",
+        "Là vùng không gian cách mặt đất 50 km.",
+        "Là vùng không giới hạn chiều cao dọc theo bờ biển."
+      ],
+      "correct": 0,
+      "explanation": "Khu vực biên giới trên không gồm phần không gian dọc theo biên giới quốc gia có chiều rộng 10 km tính từ biên giới quốc gia trở vào (Nghị định 140/2004/NĐ-CP).",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c08",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Nghị quyết phê chuẩn Công ước của Liên hợp quốc về Luật Biển năm 1982 được Quốc hội nước ta thông qua vào thời gian nào?",
+      "options": [
+        "Ngày 02/09/1945.",
+        "Ngày 23/06/1994.",
+        "Ngày 10/12/1982.",
+        "Ngày 16/11/1994."
+      ],
+      "correct": 1,
+      "explanation": "Quốc hội nước CHXHCN Việt Nam khóa IX, kỳ họp thứ 5 đã thông qua Nghị quyết phê chuẩn Công ước của LHQ về Luật Biển năm 1982 vào ngày 23/06/1994.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c09",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Theo Luật Biển Việt Nam, ranh giới ngoài của thềm lục địa cách đường cơ sở không quá bao nhiêu hải lí?",
+      "options": [
+        "12 hải lí.",
+        "200 hải lí.",
+        "350 hải lí.",
+        "500 hải lí."
+      ],
+      "correct": 2,
+      "explanation": "Theo Điều 17 Luật Biển Việt Nam 2012, ranh giới ngoài của thềm lục địa không được vượt quá 350 hải lí tính từ đường cơ sở hoặc không quá 100 hải lí tính từ đường đẳng sâu 2.500 m.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c10",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Phát biểu nào sau đây không đúng về trách nhiệm của học sinh trong bảo vệ chủ quyền lãnh thổ, biên giới quốc gia?",
+      "options": [
+        "Tích cực học tập, nâng cao nhận thức pháp luật về biên giới, hải đảo.",
+        "Tự ý vượt mốc biên giới sang nước láng giềng thăm họ hàng khi chưa có phép.",
+        "Tuyên truyền, vận động bạn bè chấp hành nghiêm quy định pháp luật về biên giới.",
+        "Kịp thời báo cáo cơ quan chức năng khi phát hiện hành vi vi phạm chủ quyền."
+      ],
+      "correct": 1,
+      "explanation": "Tự ý qua lại biên giới sang nước láng giềng khi chưa có phép của cơ quan chức năng là hành vi vi phạm pháp luật về biên giới quốc gia.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c11",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Hành vi nào dưới đây vi phạm các quy định về bảo vệ biên giới quốc gia trên biển?",
+      "options": [
+        "Đánh bắt hải sản đúng vùng biển được phép theo quy định pháp luật.",
+        "Xâm phạm tài nguyên thiên nhiên, đánh bắt trái phép trong vùng biển chủ quyền của Việt Nam.",
+        "Tham gia tuần tra bảo vệ ngư trường cùng lực lượng chức năng.",
+        "Tôn trọng các hiệp định phân định ranh giới trên biển giữa các nước hữu quan."
+      ],
+      "correct": 1,
+      "explanation": "Xâm phạm tài nguyên thiên nhiên, khai thác và đánh bắt trái phép trong vùng biển thuộc chủ quyền và quyền chủ quyền của Việt Nam là hành vi vi phạm nghiêm trọng.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c12",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Khi cùng các bạn đi tham quan cột mốc biên giới, một bạn trong lớp có ý định vượt qua cột mốc sang phía nước bạn để chụp ảnh lưu niệm và hái hoa rừng. Nếu là em, em sẽ xử lý như thế nào?",
+      "options": [
+        "Đồng ý đi cùng vì chỉ hái hoa và chụp ảnh trong thời gian ngắn.",
+        "Ngăn cản bạn ngay lập tức, giải thích rằng hành vi đó vi phạm pháp luật biên giới quốc gia.",
+        "Cổ vũ bạn vượt mốc nhanh chóng để không bị lực lượng biên phòng phát hiện.",
+        "Lờ đi vì đó là việc cá nhân của bạn."
+      ],
+      "correct": 1,
+      "explanation": "Cần ngăn cản bạn ngay lập tức và giải thích rằng hành vi vượt qua mốc quốc giới sang nước bạn khi chưa được phép là vi phạm pháp luật biên giới quốc gia.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c13",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Trường hợp nào dưới đây được coi là vi phạm nghiêm trọng quy định về khu vực biên giới đất liền?",
+      "options": [
+        "Người dân sinh sống trong xã biên giới qua lại làm nương rẫy theo đúng hiệp định ký kết.",
+        "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới tại khu vực biên giới.",
+        "Lực lượng biên phòng tuần tra kiểm soát đường biên giới.",
+        "Du khách tham quan khu vực biên giới có giấy phép hợp lệ."
+      ],
+      "correct": 1,
+      "explanation": "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới là các hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c14",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Chủ quyền lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam bao gồm những bộ phận nào?",
+      "options": [
+        "Đất liền, hải đảo, vùng biển và vùng trời",
+        "Đất liền và vùng biển",
+        "Đất liền, vùng trời và vùng tiếp giáp lãnh hải",
+        "Đất liền, vùng biển và vùng đặc quyền kinh tế"
+      ],
+      "correct": 0,
+      "explanation": "Chủ quyền lãnh thổ nước CHXHCN Việt Nam bao gồm: đất liền, hải đảo, vùng biển và vùng trời.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c15",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng gì?",
+      "options": [
+        "Hệ thống phao tiêu hàng hải",
+        "Hệ thống mốc quốc giới",
+        "Đường ranh giới hành chính cấp huyện",
+        "Các biển báo giao thông"
+      ],
+      "correct": 1,
+      "explanation": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng hệ thống mốc quốc giới.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c16",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Khu vực biên giới trên không có chiều rộng bao nhiêu tính từ biên giới quốc gia trở vào?",
+      "options": [
+        "5 km",
+        "8 km",
+        "10 km",
+        "12 hải lí"
+      ],
+      "correct": 2,
+      "explanation": "Khu vực biên giới trên không có chiều rộng 10 km tính từ biên giới quốc gia trở vào.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c17",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Hành vi nào sau đây thuộc nhóm hành vi bị nghiêm cấm theo nội dung về biên giới quốc gia?",
+      "options": [
+        "Báo tin cho lực lượng chức năng khi phát hiện dấu hiệu vi phạm",
+        "Tham gia tuyên truyền pháp luật về biên giới",
+        "Xê dịch hoặc phá hoại mốc quốc giới",
+        "Tìm hiểu kiến thức về chủ quyền lãnh thổ"
+      ],
+      "correct": 2,
+      "explanation": "Hành vi xê dịch hoặc phá hoại mốc quốc giới thuộc nhóm hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c18",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng bao nhiêu tính từ đường cơ sở ra phía biển?",
+      "options": [
+        "6 hải lí",
+        "12 hải lí",
+        "24 hải lí",
+        "200 hải lí"
+      ],
+      "correct": 1,
+      "explanation": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng 12 hải lí tính từ đường cơ sở ra phía biển.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c19",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Vì sao việc bảo vệ hệ thống mốc quốc giới có ý nghĩa trực tiếp đối với quản lí biên giới trên đất liền?",
+      "options": [
+        "Mốc quốc giới thay thế mọi văn bản pháp luật về biên giới",
+        "Mốc quốc giới giúp đánh dấu đường biên giới đã được hoạch định trên thực địa",
+        "Mốc quốc giới xác định ranh giới giữa các tỉnh trong nội địa",
+        "Mốc quốc giới chỉ có ý nghĩa tham quan, du lịch"
+      ],
+      "correct": 1,
+      "explanation": "Mốc quốc giới có ý nghĩa quan trọng vì giúp đánh dấu đường biên giới đã được hoạch định và thỏa thuận trên thực địa.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b1_c20",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b1",
+      "sectionId": "gdqp11_b1_s1",
+      "stem": "Một tổ chức nước ngoài dự định tiến hành nghiên cứu khoa học trong vùng biển Việt Nam. Theo nội dung Luật Biển Việt Nam được học, yêu cầu nào là phù hợp?",
+      "options": [
+        "Có thể tự tiến hành nếu hoạt động không dùng tàu lớn",
+        "Chỉ cần thông báo cho ngư dân gần đó",
+        "Phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ quy định liên quan",
+        "Được tự tiến hành nếu công bố kết quả nghiên cứu công khai\n--o0o--"
+      ],
+      "correct": 2,
+      "explanation": "Mọi hoạt động nghiên cứu khoa học của tổ chức, cá nhân nước ngoài trong vùng biển Việt Nam phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ các quy định liên quan.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c01",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Theo Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ bao nhiêu tuổi trở lên phải đăng kí nghĩa vụ quân sự?",
+      "options": [
+        "Đủ 16 tuổi.",
+        "Đủ 17 tuổi.",
+        "Đủ 18 tuổi.",
+        "Đủ 19 tuổi."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 12 Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ 17 tuổi trở lên phải đăng kí nghĩa vụ quân sự lần đầu.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c02",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ bao nhiêu tuổi đến hết bao nhiêu tuổi?",
+      "options": [
+        "Từ đủ 17 tuổi đến hết 25 tuổi.",
+        "Từ đủ 18 tuổi đến hết 25 tuổi.",
+        "Từ đủ 18 tuổi đến hết 27 tuổi.",
+        "Từ đủ 20 tuổi đến hết 30 tuổi."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 30 Luật NVQS 2015, độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ 18 tuổi đến hết 25 tuổi.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c03",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là bao nhiêu tháng?",
+      "options": [
+        "12 tháng.",
+        "18 tháng.",
+        "24 tháng.",
+        "36 tháng."
+      ],
+      "correct": 2,
+      "explanation": "Theo Điều 21 Luật NVQS 2015, thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là 24 tháng.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c04",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Công dân thực hiện nghĩa vụ tham gia Công an nhân dân được coi là thực hiện nghĩa vụ quân sự ở đâu?",
+      "options": [
+        "Tại ngũ.",
+        "Ngạch dự bị.",
+        "Dân quân tự vệ.",
+        "Lực lượng dự trữ động viên."
+      ],
+      "correct": 0,
+      "explanation": "Theo Khoản 2 Điều 8 Luật NVQS 2015, công dân thực hiện nghĩa vụ tham gia CAND được coi là thực hiện nghĩa vụ quân sự tại ngũ.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c05",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Cơ quan nào dưới đây thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương?",
+      "options": [
+        "Ban Chỉ huy quân sự cấp xã.",
+        "Công an cấp tỉnh.",
+        "Ủy ban nhân dân cấp tỉnh.",
+        "Bộ Tư lệnh Thủ đô."
+      ],
+      "correct": 0,
+      "explanation": "Theo Điều 15 Luật NVQS 2015, Ban Chỉ huy quân sự cấp xã thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c06",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Đối tượng nào dưới đây được miễn gọi nhập ngũ trong thời bình?",
+      "options": [
+        "Học sinh đang học tại trường trung học phổ thông.",
+        "Con của liệt sĩ, con của thương binh hạng một.",
+        "Sinh viên đang học đại học hệ chính quy.",
+        "Lao động duy nhất trong gia đình khó khăn."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 41 Khoản 2 Luật NVQS 2015, con của liệt sĩ, con của thương binh hạng một được miễn gọi nhập ngũ trong thời bình.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c07",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Trường hợp nào dưới đây được tạm hoãn gọi nhập ngũ trong thời bình?",
+      "options": [
+        "Chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của hội đồng khám sức khoẻ.",
+        "Là con duy nhất của thương binh hạng nặng.",
+        "Đang chấp hành án phạt tù.",
+        "Đang bị tước quyền phục vụ trong lực lượng vũ trang."
+      ],
+      "correct": 0,
+      "explanation": "Theo Điều 41 Khoản 1 Luật NVQS 2015, công dân chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của Hội đồng khám sức khoẻ được tạm hoãn gọi nhập ngũ.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c08",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Hành vi nào dưới đây bị nghiêm cấm trong thực hiện Luật Nghĩa vụ quân sự?",
+      "options": [
+        "Đăng kí nghĩa vụ quân sự đúng hạn.",
+        "Trốn tránh thực hiện nghĩa vụ quân sự.",
+        "Tham gia khám tuyển nghĩa vụ quân sự theo lệnh gọi.",
+        "Tình nguyện nhập ngũ bảo vệ Tổ quốc."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 10 Luật NVQS 2015, nghiêm cấm hành vi trốn tránh thực hiện nghĩa vụ quân sự.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c09",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Theo Luật Nghĩa vụ quân sự, công dân được đào tạo trình độ cao đẳng, đại học đã được tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ đến hết bao nhiêu tuổi?",
+      "options": [
+        "Hết 25 tuổi.",
+        "Hết 26 tuổi.",
+        "Hết 27 tuổi.",
+        "Hết 30 tuổi."
+      ],
+      "correct": 2,
+      "explanation": "Theo Điều 30 Luật NVQS 2015, công dân được đào tạo trình độ CĐ, ĐH đã tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ kéo dài đến hết 27 tuổi.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c10",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Nội dung nào sau đây phản ánh đúng trách nhiệm của học sinh đối với nghĩa vụ quân sự?",
+      "options": [
+        "Chấp hành nghiêm các quy định về đăng kí nghĩa vụ quân sự, tích cực học tập môn GDQP&AN.",
+        "Trốn tránh khi có lệnh gọi sơ tuyển sức khỏe nghĩa vụ quân sự.",
+        "Chỉ tham gia khi bắt buộc phải rời khỏi địa phương.",
+        "Không cần quan tâm đến các quy định pháp luật về quân sự khi còn đi học."
+      ],
+      "correct": 0,
+      "explanation": "Học sinh có trách nhiệm chấp hành nghiêm các quy định về đăng kí NVQS khi đủ 17 tuổi và tích cực học tập, rèn luyện môn GDQP&AN.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c11",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Anh A (24 tuổi, đã tốt nghiệp đại học hệ chính quy và đang tạm hoãn gọi nhập ngũ) hỏi rằng độ tuổi tối đa anh có thể được gọi nhập ngũ trong thời bình là bao nhiêu? Em hãy trả lời giúp anh A.",
+      "options": [
+        "Đến hết 25 tuổi.",
+        "Đến hết 27 tuổi.",
+        "Đến hết 30 tuổi.",
+        "Không giới hạn độ tuổi."
+      ],
+      "correct": 1,
+      "explanation": "Anh A đã tốt nghiệp ĐH hệ chính quy và tạm hoãn trong thời gian học, do đó độ tuổi gọi nhập ngũ tối đa của anh A là đến hết 27 tuổi.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c12",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Trường hợp nào sau đây bị xử phạt vi phạm hành chính từ 3.000.000 đồng đến 5.000.000 đồng theo Nghị định về xử phạt vi phạm hành chính trong lĩnh vực quốc phòng?",
+      "options": [
+        "Không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng.",
+        "Không đăng ký nghĩa vụ quân sự lần đầu.",
+        "Gian dối trong khám sức khỏe nghĩa vụ quân sự.",
+        "Chống đối, cản trở việc thực hiện nghĩa vụ quân sự."
+      ],
+      "correct": 0,
+      "explanation": "Hành vi không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng bị xử phạt vi phạm hành chính từ 3.000.000 đến 5.000.000 đồng.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c13",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Nghĩa vụ quân sự của công dân bao gồm những hình thức nào?",
+      "options": [
+        "Chỉ phục vụ tại ngũ",
+        "Chỉ phục vụ trong ngạch dự bị",
+        "Phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân",
+        "Chỉ tham gia dân quân tự vệ"
+      ],
+      "correct": 2,
+      "explanation": "Theo Điều 4 Luật NVQS 2015, nghĩa vụ quân sự gồm phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c14",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Chủ tịch UBND cấp xã ra lệnh gọi công dân đăng kí nghĩa vụ quân sự lần đầu vào thời gian nào?",
+      "options": [
+        "Tháng ba hằng năm.",
+        "Tháng tư hằng năm.",
+        "Tháng năm hằng năm.",
+        "Tháng sáu hằng năm."
+      ],
+      "correct": 1,
+      "explanation": "Tháng tư hằng năm là thời gian Chỉ huy trưởng Ban CHQS cấp huyện ra lệnh gọi công dân nam đủ 17 tuổi đăng kí NVQS lần đầu tại UBND cấp xã.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c15",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Dũng là lao động duy nhất trực tiếp nuôi mẹ không còn khả năng lao động. Dũng nhận được giấy gọi nhập ngũ và muốn biết trường hợp của mình được giải quyết thế nào. Cách xử lý phù hợp nhất là gì?",
+      "options": [
+        "Tự ý không chấp hành giấy gọi mà không cần thông báo",
+        "Cho rằng chắc chắn được miễn vĩnh viễn",
+        "Cung cấp hồ sơ, thông tin trung thực cho cơ quan có thẩm quyền để xem xét điều kiện tạm hoãn theo quy định",
+        "Nhờ người khác đi thay"
+      ],
+      "correct": 2,
+      "explanation": "Công dân cần cung cấp hồ sơ, giấy tờ chứng minh hoàn cảnh trung thực cho cơ quan có thẩm quyền để được xem xét điều kiện tạm hoãn theo quy định.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b2_c16",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b2",
+      "sectionId": "gdqp11_b2_s1",
+      "stem": "Một công dân nhận lệnh khám sức khỏe nghĩa vụ quân sự nhưng có lịch thi trùng thời gian. Cách ứng xử phù hợp nhất là gì?",
+      "options": [
+        "Tự bỏ qua lệnh vì lịch thi luôn được ưu tiên",
+        "Không đến và không liên hệ với cơ quan nào",
+        "Chủ động liên hệ cơ quan có thẩm quyền, trình bày và cung cấp giấy tờ để được hướng dẫn; không tự coi mình được miễn",
+        "Nhờ bạn ký thay vào danh sách\n---o0o---"
+      ],
+      "correct": 2,
+      "explanation": "Công dân cần chủ động liên hệ cơ quan có thẩm quyền, trình bày lý do trùng lịch thi và cung cấp giấy xác nhận để được hướng dẫn xếp lịch khám bù.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 2: Luật Nghĩa vụ quân sự"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c01",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Theo Bộ luật Hình sự, tội phạm là hành vi nguy hiểm cho xã hội do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm đến các khách thể nào dưới đây?",
+      "options": [
+        "Độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ xã hội chủ nghĩa, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
+        "Chỉ xâm phạm tài sản riêng của cá nhân.",
+        "Chỉ xâm phạm quy tắc sinh hoạt cộng đồng nhỏ lẻ.",
+        "Chỉ xâm phạm trật tự giao thông đô thị."
+      ],
+      "correct": 0,
+      "explanation": "Theo Điều 8 BLHS 2015, tội phạm là hành vi nguy hiểm cho xã hội xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ XHCN, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c02",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội được gọi là gì?",
+      "options": [
+        "Tệ nạn xã hội.",
+        "Hoạt động từ thiện.",
+        "Giao lưu văn hóa.",
+        "Lối sống văn minh."
+      ],
+      "correct": 0,
+      "explanation": "Tệ nạn xã hội là hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c03",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm cho xã hội bằng cách tác động trái pháp luật đến lĩnh vực nào?",
+      "options": [
+        "Thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, mạng viễn thông.",
+        "Hệ thống giao thông đường bộ công cộng.",
+        "Đất đai và tài nguyên rừng tự nhiên.",
+        "Hoạt động sản xuất nông nghiệp truyền thống."
+      ],
+      "correct": 0,
+      "explanation": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm bằng cách tác động trái phép vào thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, viễn thông.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c04",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Hành vi nào sau đây là biểu hiện của tội phạm hoặc vi phạm pháp luật về sử dụng công nghệ cao?",
+      "options": [
+        "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, phần mềm gián điệp.",
+        "Sử dụng internet để tra cứu tài liệu học tập, giải toán.",
+        "Nhắn tin hỏi thăm sức khỏe người thân qua mạng xã hội.",
+        "Đăng tải hình ảnh phong cảnh quê hương lên Facebook."
+      ],
+      "correct": 0,
+      "explanation": "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, mã độc gián điệp là biểu hiện vi phạm pháp luật về sử dụng công nghệ cao.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c05",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Theo quy định của pháp luật, hành vi đánh bạc trái phép dưới bất kì hình thức nào (mua bán số lô, số đề, cá độ bóng đá...) có thể bị xử lý nghiêm khắc như thế nào?",
+      "options": [
+        "Chỉ nhắc nhở tại nơi cư trú.",
+        "Bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù theo quy định của pháp luật.",
+        "Chỉ phạt cảnh cáo lần đầu đối với mọi trường hợp.",
+        "Được nhà nước cho phép nếu chơi vào dịp lễ tết."
+      ],
+      "correct": 1,
+      "explanation": "Theo Điều 321 BLHS 2015, hành vi đánh bạc trái phép dưới bất kì hình thức nào có thể bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c06",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Phát biểu nào dưới đây là đúng về trách nhiệm của học sinh trong phòng chống tệ nạn xã hội và tội phạm công nghệ cao?",
+      "options": [
+        "Không tham gia các tệ nạn xã hội, không chia sẻ thông tin chưa kiểm chứng trên không gian mạng.",
+        "Có thể tham gia cá cược trực tuyến nếu có tiền thưởng nhỏ.",
+        "Chia sẻ mọi đường link lạ nhận được trên mạng xã hội để câu tương tác.",
+        "Tự ý mua bán tài khoản ngân hàng cá nhân cho người khác thuê kiếm lời."
+      ],
+      "correct": 0,
+      "explanation": "Học sinh có trách nhiệm không tham gia các tệ nạn xã hội, không chia sẻ thông tin thất thiệt chưa được kiểm chứng trên không gian mạng.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c07",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Khi tham gia mạng xã hội, em phát hiện một hội nhóm đang lan truyền các video clip có nội dung đồi trụy, phản cảm và kích động bạo lực. Hành vi xử lý đúng đắn nhất của học sinh là gì?",
+      "options": [
+        "Tham gia bình luận và chia sẻ bài viết để tăng tương tác cho nhóm.",
+        "Báo cáo (report) vi phạm với quản trị viên mạng xã hội, tuyệt đối không xem, không chia sẻ và thông báo cho thầy cô hoặc cơ quan chức năng.",
+        "Tải về máy để lưu trữ và xem riêng tư.",
+        "Nhắn tin xin đường link gốc của video."
+      ],
+      "correct": 1,
+      "explanation": "Hành vi đúng đắn là báo cáo (report) vi phạm với quản trị viên, không xem, không chia sẻ và báo ngay cho thầy cô, cha mẹ hoặc cơ quan chức năng.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c08",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Một người lạ nhắn tin qua mạng xã hội thông báo em trúng thưởng một chiếc xe máy giá trị cao, yêu cầu em phải nộp trước 2 triệu đồng phí vận chuyển qua thẻ cào điện thoại. Em sẽ xử lý tình huống này như thế nào?",
+      "options": [
+        "Nhanh chóng mua thẻ cào gửi cho họ để nhận xe máy.",
+        "Từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo chiếm đoạt tài sản trên không gian mạng.",
+        "Nhờ bạn bè vay tiền giúp để nộp phí nhận thưởng.",
+        "Tin tưởng vì nghĩ trúng thưởng là may mắn có thật."
+      ],
+      "correct": 1,
+      "explanation": "Cần dứt khoát từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo 'trúng thưởng' phổ biến trên mạng.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c09",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Hành động nào thể hiện trách nhiệm của học sinh trong phòng chống tệ nạn xã hội?",
+      "options": [
+        "Thử tham gia để biết mức độ nguy hiểm",
+        "Chia sẻ mọi nội dung gây sốc để cảnh báo bạn bè",
+        "Chấp hành pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức",
+        "Che giấu hành vi vi phạm của bạn trong mọi trường hợp"
+      ],
+      "correct": 2,
+      "explanation": "Học sinh cần chấp hành nghiêm túc pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức, kỹ năng phòng vệ.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c10",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Vì sao việc chia sẻ ngay một bài đăng chưa kiểm chứng về hành vi phạm tội có thể gây hại?",
+      "options": [
+        "Vì mọi bài đăng trên mạng đều là bí mật nhà nước",
+        "Vì thông tin chưa kiểm chứng có thể gây hiểu lầm, ảnh hưởng người khác và làm lan truyền nội dung sai lệch",
+        "Vì học sinh không được sử dụng Internet",
+        "Vì chỉ cơ quan báo chí mới được đọc tin tức"
+      ],
+      "correct": 1,
+      "explanation": "Chia sẻ bài đăng chưa kiểm chứng có thể gây hiểu lầm, hoang mang dư luận, xâm phạm uy tín người khác và vi phạm Luật An ninh mạng.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c11",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Một người lạ giả danh nhân viên hỗ trợ kĩ thuật, yêu cầu học sinh cài phần mềm không rõ nguồn gốc. Dấu hiệu rủi ro chính là gì?",
+      "options": [
+        "Phần mềm được cài đặt miễn phí nên chắc chắn an toàn",
+        "Người đó dùng lời lẽ lịch sự nên không có rủi ro",
+        "Yêu cầu cài phần mềm không rõ nguồn gốc có thể nhằm chiếm quyền truy cập hoặc dữ liệu",
+        "Mọi phần mềm đều bị pháp luật cấm"
+      ],
+      "correct": 2,
+      "explanation": "Yêu cầu cài đặt phần mềm không rõ nguồn gốc tiềm ẩn rủi ro rất cao về việc bị cài mã độc đánh cắp tài khoản cá nhân hoặc dữ liệu riêng tư.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c12",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Cách ứng xử nào phù hợp khi phát hiện bạn cùng lớp có dấu hiệu bị lôi kéo tham gia tệ nạn xã hội?",
+      "options": [
+        "Chế giễu bạn trước tập thể",
+        "Im lặng trong mọi trường hợp để giữ tình bạn",
+        "Khuyên bạn dừng lại, tìm sự hỗ trợ của người lớn đáng tin cậy hoặc nhà trường khi cần",
+        "Tự đăng thông tin cá nhân của bạn lên mạng"
+      ],
+      "correct": 2,
+      "explanation": "Cần khuyên nhủ bạn dừng lại, đồng thời tìm kiếm sự hỗ trợ kịp thời từ người lớn đáng tin cậy hoặc thầy cô, nhà trường.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c13",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Trong nhóm lớp xuất hiện video tố cáo một người phạm tội nhưng chưa rõ nguồn gốc. Hành động nào thể hiện trách nhiệm số phù hợp nhất?",
+      "options": [
+        "Tải video về và đăng lại trên nhiều nền tảng",
+        "Thêm lời bình khẳng định người trong video có tội",
+        "Không phát tán, kiểm tra nguồn tin và báo người có trách nhiệm nếu nội dung có dấu hiệu vi phạm",
+        "Tìm địa chỉ người trong video để đến đối chất"
+      ],
+      "correct": 2,
+      "explanation": "Hành động có trách nhiệm số là không phát tán video chưa kiểm chứng, xác minh từ nguồn chính thống và báo cho cơ quan có trách nhiệm.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c14",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Một người bạn rủ học sinh tham gia nhóm trực tuyến chuyên cá cược và hướng dẫn cách che giấu giao dịch. Cách xử lý phù hợp nhất là gì?",
+      "options": [
+        "Tham gia thử với số tiền nhỏ",
+        "Từ chối, rời nhóm, lưu thông tin cần thiết một cách an toàn và báo người lớn hoặc cơ quan có trách nhiệm khi cần",
+        "Mời thêm bạn bè vào nhóm",
+        "Chỉ rời nhóm nếu bị thua tiền"
+      ],
+      "correct": 1,
+      "explanation": "Học sinh cần dứt khoát từ chối, rời khỏi nhóm, lưu thông tin bằng chứng an toàn và báo cho người lớn hoặc cơ quan chức năng xử lý.",
+      "difficulty": "van_dung",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c15",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Một trong những cách thức hoạt động phổ biến của tội phạm là",
+      "options": [
+        "hoạt động độc lập, không có sự cấu kết.",
+        "câu kết thành các băng nhóm, tổ chức.",
+        "chỉ lưu động trên phạm vi xã, phường.",
+        "không sử dụng các loại vũ khí, công cụ."
+      ],
+      "correct": 1,
+      "explanation": "Một trong những cách thức hoạt động phổ biến của tội phạm là thường câu kết thành các băng nhóm, tổ chức chặt chẽ.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "gdqp11_b3_c16",
+      "type": "mcq",
+      "subjectId": "sub_gdqp11",
+      "chapterId": "gdqp11_b3",
+      "sectionId": "gdqp11_b3_s1",
+      "stem": "Trong Bộ luật Hình sự năm 2015, sửa đổi, bổ sung năm 2017 có bao nhiêu chương quy định về hình phạt các tội phạm?",
+      "options": [
+        "12 chương.",
+        "13 chương.",
+        "14 chương.",
+        "15 chương."
+      ],
+      "correct": 1,
+      "explanation": "Phần thứ hai của Bộ luật Hình sự 2015 quy định về Các tội phạm bao gồm 13 chương (từ Chương XIV đến Chương XXVI).",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "GDQP 11",
+        "Giữa HKI",
+        "Bài 3: Phòng chống tệ nạn xã hội"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T06:00:00.000Z",
+      "updatedAt": "2026-10-28T06:00:00.000Z"
     }
   ],
   "exams": [
@@ -2856,6 +4217,66 @@ export const SEED_DATA = {
         "q_cn11_chap_b6_25"
       ],
       "createdAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+      "id": "exam_gdqp11_ghki",
+      "name": "GDQP&AN GHKI (52 câu trắc nghiệm)",
+      "description": "Đề cương ôn tập kiểm tra giữa HKI môn GDQP&AN 11 năm học 2026-2027 (Bài 1, Bài 2, Bài 3 đầy đủ 52 câu).",
+      "questionIds": [
+        "gdqp11_b1_c01",
+        "gdqp11_b1_c02",
+        "gdqp11_b1_c03",
+        "gdqp11_b1_c04",
+        "gdqp11_b1_c05",
+        "gdqp11_b1_c06",
+        "gdqp11_b1_c07",
+        "gdqp11_b1_c08",
+        "gdqp11_b1_c09",
+        "gdqp11_b1_c10",
+        "gdqp11_b1_c11",
+        "gdqp11_b1_c12",
+        "gdqp11_b1_c13",
+        "gdqp11_b1_c14",
+        "gdqp11_b1_c15",
+        "gdqp11_b1_c16",
+        "gdqp11_b1_c17",
+        "gdqp11_b1_c18",
+        "gdqp11_b1_c19",
+        "gdqp11_b1_c20",
+        "gdqp11_b2_c01",
+        "gdqp11_b2_c02",
+        "gdqp11_b2_c03",
+        "gdqp11_b2_c04",
+        "gdqp11_b2_c05",
+        "gdqp11_b2_c06",
+        "gdqp11_b2_c07",
+        "gdqp11_b2_c08",
+        "gdqp11_b2_c09",
+        "gdqp11_b2_c10",
+        "gdqp11_b2_c11",
+        "gdqp11_b2_c12",
+        "gdqp11_b2_c13",
+        "gdqp11_b2_c14",
+        "gdqp11_b2_c15",
+        "gdqp11_b2_c16",
+        "gdqp11_b3_c01",
+        "gdqp11_b3_c02",
+        "gdqp11_b3_c03",
+        "gdqp11_b3_c04",
+        "gdqp11_b3_c05",
+        "gdqp11_b3_c06",
+        "gdqp11_b3_c07",
+        "gdqp11_b3_c08",
+        "gdqp11_b3_c09",
+        "gdqp11_b3_c10",
+        "gdqp11_b3_c11",
+        "gdqp11_b3_c12",
+        "gdqp11_b3_c13",
+        "gdqp11_b3_c14",
+        "gdqp11_b3_c15",
+        "gdqp11_b3_c16"
+      ],
+      "createdAt": "2026-10-28T06:00:00.000Z"
     },
     {
       "id": "exam_mau_01",

@@ -8,7 +8,9 @@ import {
   Settings, 
   Sun, 
   Moon,
-  Database
+  Database,
+  Shield,
+  Wrench
 } from 'lucide-react';
 
 export default function Header({ 
@@ -20,7 +22,24 @@ export default function Header({
   examCount = 0 
 }) {
   const navItems = [
-    { id: 'congnghe_ghki', label: 'Công Nghệ GHKI', icon: Award, isSpecial: true, badgeText: 'Bài Làm' },
+    { 
+      id: 'congnghe_ghki', 
+      label: 'Công Nghệ GHKI', 
+      shortLabel: 'Công Nghệ',
+      icon: Wrench, 
+      isSpecial: true, 
+      badgeText: '93 câu', 
+      color: 'sky' 
+    },
+    { 
+      id: 'gdqp_ghki', 
+      label: 'GDQP&AN 11', 
+      shortLabel: 'GDQP 11',
+      icon: Shield, 
+      isSpecial: true, 
+      badgeText: '52 câu', 
+      color: 'emerald' 
+    },
     { id: 'questions', label: 'Ngân hàng câu hỏi', icon: Database, badge: questionCount },
     { id: 'syllabus', label: 'Nhập đề cương', icon: BookOpen },
     { id: 'exams', label: 'Tạo & Quản lý đề', icon: FileText, badge: examCount },
@@ -56,20 +75,29 @@ export default function Header({
               const isActive = activeTab === item.id;
               
               if (item.isSpecial) {
+                const isEmerald = item.color === 'emerald';
                 return (
                   <button
                     key={item.id}
                     onClick={() => setActiveTab(item.id)}
-                    className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-sm font-bold transition-all mr-1 ${
+                    className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs lg:text-sm font-bold transition-all mr-1 ${
                       isActive
-                        ? 'bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/25 ring-2 ring-sky-400'
-                        : 'bg-sky-50 dark:bg-sky-950/70 text-sky-800 dark:text-sky-300 border border-sky-300 dark:border-sky-800 hover:bg-sky-100 dark:hover:bg-sky-900/50 shadow-xs'
+                        ? isEmerald
+                          ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-500/25 ring-2 ring-emerald-400'
+                          : 'bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/25 ring-2 ring-sky-400'
+                        : isEmerald
+                          ? 'bg-emerald-50 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 shadow-xs'
+                          : 'bg-sky-50 dark:bg-sky-950/70 text-sky-800 dark:text-sky-300 border border-sky-300 dark:border-sky-800 hover:bg-sky-100 dark:hover:bg-sky-900/50 shadow-xs'
                     }`}
                   >
-                    <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-sky-600 dark:text-sky-400'}`} />
+                    <Icon className={`w-4 h-4 ${isActive ? 'text-white' : isEmerald ? 'text-emerald-600 dark:text-emerald-400' : 'text-sky-600 dark:text-sky-400'}`} />
                     <span>{item.label}</span>
                     <span className={`text-[10px] uppercase font-extrabold px-1.5 py-0.2 rounded-md ${
-                      isActive ? 'bg-white/20 text-white' : 'bg-sky-200 dark:bg-sky-900 text-sky-900 dark:text-sky-100'
+                      isActive 
+                        ? 'bg-white/20 text-white' 
+                        : isEmerald
+                          ? 'bg-emerald-200 dark:bg-emerald-900 text-emerald-900 dark:text-emerald-100'
+                          : 'bg-sky-200 dark:bg-sky-900 text-sky-900 dark:text-sky-100'
                     }`}>
                       {item.badgeText}
                     </span>
@@ -116,26 +144,31 @@ export default function Header({
         </div>
 
         {/* Mobile Navigation Bar */}
-        <div className="md:hidden flex items-center justify-around py-2 border-t border-slate-200 dark:border-slate-800 overflow-x-auto gap-2">
+        <div className="md:hidden flex items-center justify-start py-2 border-t border-slate-200 dark:border-slate-800 overflow-x-auto gap-1.5">
           {navItems.map(item => {
             const Icon = item.icon;
             const isActive = activeTab === item.id;
+            const isEmerald = item.color === 'emerald';
             return (
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex flex-col items-center gap-1 p-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition ${
+                className={`flex flex-col items-center gap-1 px-2.5 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition shrink-0 ${
                   item.isSpecial
                     ? isActive
-                      ? 'bg-sky-600 text-white font-bold px-2 py-1 rounded-xl shadow-xs'
-                      : 'bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-bold px-2 py-1 rounded-xl border border-sky-300'
+                      ? isEmerald
+                        ? 'bg-emerald-600 text-white font-bold shadow-xs'
+                        : 'bg-sky-600 text-white font-bold shadow-xs'
+                      : isEmerald
+                        ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 font-bold border border-emerald-300'
+                        : 'bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-bold border border-sky-300'
                     : isActive
                     ? 'text-sky-600 dark:text-sky-400 font-semibold'
                     : 'text-slate-500 dark:text-slate-400'
                 }`}
               >
                 <Icon className="w-4 h-4" />
-                <span>{item.isSpecial ? 'Công Nghệ GHKI' : item.label.split(' ')[0]}</span>
+                <span>{item.shortLabel || item.label.split(' ')[0]}</span>
               </button>
             );
           })}

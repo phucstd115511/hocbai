@@ -35,6 +35,7 @@ export function getStoredData() {
       saveAllData({ subjects, questions, exams, attempts });
     } else {
       // Đảm bảo "Công Nghệ GHKI" luôn có mặt trong hệ thống
+      let needsResave = false;
       const hasCongNgheSub = subjects.some(s => s.id === 'sub_congnghe_ghki' || s.name === 'Công Nghệ GHKI');
       if (!hasCongNgheSub) {
         const cnSubject = SEED_DATA.subjects.find(s => s.id === 'sub_congnghe_ghki');
@@ -48,6 +49,27 @@ export function getStoredData() {
           const newQ = cnQuestions.filter(q => !existingIds.has(q.id));
           questions = [...newQ, ...questions];
         }
+        needsResave = true;
+      }
+
+      // Đảm bảo "GDQP&AN 11" luôn có mặt trong hệ thống
+      const hasGdqpSub = subjects.some(s => s.id === 'sub_gdqp11' || s.name.includes('GDQP'));
+      if (!hasGdqpSub) {
+        const gdqpSubject = SEED_DATA.subjects.find(s => s.id === 'sub_gdqp11');
+        const gdqpExam = SEED_DATA.exams.find(e => e.id === 'exam_gdqp11_ghki');
+        const gdqpQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_gdqp11');
+
+        if (gdqpSubject) subjects = [...subjects, gdqpSubject];
+        if (gdqpExam && !exams.some(e => e.id === 'exam_gdqp11_ghki')) exams = [...exams, gdqpExam];
+        if (gdqpQuestions.length > 0) {
+          const existingIds = new Set(questions.map(q => q.id));
+          const newQ = gdqpQuestions.filter(q => !existingIds.has(q.id));
+          questions = [...questions, ...newQ];
+        }
+        needsResave = true;
+      }
+
+      if (needsResave) {
         saveAllData({ subjects, questions, exams, attempts });
       }
     }
