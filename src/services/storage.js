@@ -69,6 +69,15 @@ export function getStoredData() {
         needsResave = true;
       }
 
+      // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt
+      const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || s.name?.includes('Tin học 12'));
+      if (hasTinHoc) {
+        subjects = subjects.filter(s => s.id !== 'sub_tinhoc12' && !s.name?.includes('Tin học 12'));
+        questions = questions.filter(q => q.subjectId !== 'sub_tinhoc12');
+        exams = exams.filter(e => e.id !== 'exam_mau_01');
+        needsResave = true;
+      }
+
       if (needsResave) {
         saveAllData({ subjects, questions, exams, attempts });
       }
