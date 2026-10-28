@@ -171,6 +171,46 @@ export const SEED_DATA = {
           ]
         }
       ]
+    },
+    {
+      "id": "sub_dia11",
+      "name": "Địa Lí 11",
+      "chapters": [
+        {
+          "id": "chap_dia11_c1",
+          "name": "Một số vấn đề về kinh tế - xã hội thế giới",
+          "sections": [
+            {
+              "id": "chap_dia11_c1_s1",
+              "name": "Toàn cầu hóa, khu vực hóa kinh tế & Các vấn đề an ninh toàn cầu",
+              "content": "Khái quát về các nhóm nước, toàn cầu hóa, khu vực hóa kinh tế, an ninh lương thực, năng lượng, nguồn nước và an ninh mạng.",
+              "points": [
+                "Tiêu chí phân chia các nhóm nước: GNI/người, cơ cấu ngành kinh tế và HDI.",
+                "Toàn cầu hóa: dòng hàng hóa, dịch vụ, vốn và lao động di chuyển tự do.",
+                "Khu vực hóa: liên kết dựa trên tương đồng địa lí, văn hóa, mục tiêu phát triển.",
+                "An ninh phi truyền thống: an ninh năng lượng, lương thực, nguồn nước, an ninh mạng."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chap_dia11_c2",
+          "name": "Địa lí khu vực Mỹ La-tinh",
+          "sections": [
+            {
+              "id": "chap_dia11_c2_s1",
+              "name": "Điều kiện tự nhiên, dân cư, xã hội và kinh tế Mỹ La-tinh",
+              "content": "Vị trí địa lí, đặc điểm tự nhiên, tài nguyên thiên nhiên, quá trình đô thị hóa và phát triển kinh tế khu vực Mỹ La-tinh.",
+              "points": [
+                "Vị trí: nằm giữa Đại Tây Dương và Thái Bình Dương.",
+                "Tự nhiên: giàu tài nguyên khoáng sản, thủy điện ở phía Tây.",
+                "Dân cư - xã hội: đa dạng chủng tộc, nhiều người lai, đô thị hóa sớm gắn với nhập cư.",
+                "Kinh tế: dịch chuyển tăng tỉ trọng dịch vụ, chênh lệch giàu nghèo lớn, nợ nước ngoài cao."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "questions": [
@@ -3989,6 +4029,1353 @@ export const SEED_DATA = {
       "favorite": false,
       "createdAt": "2026-10-28T06:00:00.000Z",
       "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_01",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Dựa vào các tiêu chí chủ yếu nào sau đây để phân chia thế giới thành các nhóm nước?",
+      "options": [
+        "GNI/ người, cơ cấu ngành kinh tế và chỉ số phát triển con người.",
+        "GDP/ người, đầu tư ra nước ngoài và chỉ số phát triển con người.",
+        "GNI, cơ cấu ngành kinh tế và trình độ dân trí, tuổi thọ trung bình.",
+        "GDP/ người, chỉ số phát triển con người và cơ cấu ngành kinh tế."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_02",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Việc áp dụng ngày càng rộng rãi các tiêu chuẩn thống nhất trên phạm vi toàn cầu trong quá trình sản xuất kinh doanh là biểu hiện của",
+      "options": [
+        "khu vực hóa kinh tế.",
+        "đô thị hóa tự phát.",
+        "cơ cấu dân số già.",
+        "toàn cầu hóa kinh tế."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_03",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Trong xu thế toàn cầu hóa kinh tế, các công ty đa quốc gia có vai trò chi phối chủ yếu đối với",
+      "options": [
+        "thị trường tiêu thụ nội địa.",
+        "các chuỗi giá trị toàn cầu.",
+        "chính sách quốc phòng.",
+        "các quy luật tự nhiên."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_04",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong một khu vực trên thế giới thường dựa trên cơ sở tương đồng về",
+      "options": [
+        "trình độ phát triển và quy mô dân số.",
+        "địa lí, văn hóa, xã hội, mục tiêu phát triển.",
+        "thể chế chính trị và tiềm lực quân sự.",
+        "hệ thống pháp luật, chính sách quốc phòng."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_05",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Ở các nước đang phát triển, ngành nông nghiệp thu hút nhiều lao động nhưng lại chiếm tỉ trọng nhỏ trong cơ cấu GDP là do",
+      "options": [
+        "dân số đông và tăng nhanh.",
+        "truyền thống sản xuất lâu đời.",
+        "trình độ phát triển kinh tế thấp.",
+        "kĩ thuật canh tác lạc hậu."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_06",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Tổ chức nào sau đây là một trong những tổ chức kinh tế toàn cầu được hình thành và phát triển cùng với quá trình toàn cầu hóa kinh tế?",
+      "options": [
+        "Hiệp hội các quốc gia Đông Nam Á.",
+        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
+        "Tổ chức Thương mại Thế giới.",
+        "Liên minh châu Âu."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_07",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Tổ chức nào sau đây đóng vai trò là trung tâm điều hòa các nỗ lực quốc tế vì các mục tiêu chung?",
+      "options": [
+        "Liên hợp quốc.",
+        "Tổ chức Thương mại Thế giới.",
+        "Quỹ Tiền tệ Quốc tế.",
+        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_08",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Nâng cao mức sống, tạo việc làm cho người dân các nước thành viên và bảo đảm các tiêu chuẩn lao động tối thiểu là mục tiêu hoạt động của",
+      "options": [
+        "Quỹ Tiền tệ Quốc tế.",
+        "Liên hợp quốc.",
+        "Tổ chức Thương mại Thế giới.",
+        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_09",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Tổ chức nào sau đây có tôn chỉ hoạt động là thúc đẩy hợp tác tiền tệ toàn cầu và bảo đảm sự ổn định tài chính?",
+      "options": [
+        "Tổ chức Thương mại Thế giới.",
+        "Quỹ Tiền tệ Quốc tế.",
+        "Liên hợp quốc.",
+        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_10",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Tổ chức nào sau đây có mục tiêu là đẩy mạnh sự giao lưu hàng hóa, dịch vụ, vốn và công nghệ trong một khu vực?",
+      "options": [
+        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
+        "Liên hợp quốc.",
+        "Quỹ Tiền tệ Quốc tế.",
+        "Tổ chức Thương mại Thế giới."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_11",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Trong quá trình toàn cầu hóa kinh tế, yếu tố nào sau đây ngày càng được tự do dịch chuyển giữa các quốc gia?",
+      "options": [
+        "Hàng hóa và dịch vụ.",
+        "Biên giới hành chính.",
+        "Quân đội.",
+        "Luật pháp."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_12",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Thách thức to lớn của toàn cầu hóa đối với các nước đang phát triển là",
+      "options": [
+        "tự do hóa thương mại được mở rộng.",
+        "gây áp lực với tự nhiên, môi trường.",
+        "hàng hóa có cơ hội lưu thông rộng rãi.",
+        "các quốc gia đón đầu công nghệ mới."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_13",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cơ cấu ngành kinh tế ở các nước đang phát triển chủ yếu chuyển dịch theo hướng",
+      "options": [
+        "giảm nhanh tỉ trọng của các ngành dịch vụ.",
+        "tỉ trọng nông nghiệp chiếm vị trí chủ đạo.",
+        "tăng tỉ trọng của công nghiệp và dịch vụ.",
+        "tăng nhanh liên tục tỉ trọng nông nghiệp."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_14",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Việc chuyển dịch cơ cấu kinh tế sang nền kinh tế tri thức tạo động lực trực tiếp giúp các quốc gia giải quyết vấn đề nào sau đây về môi trường?",
+      "options": [
+        "Phát triển sản xuất xanh và giảm thiểu ô nhiễm môi trường sinh thái.",
+        "Cắt giảm việc sử dụng năng lượng tái tạo, giảm phát thải khí nhà kính.",
+        "Tăng cường khai thác các nguồn tài nguyên thiên nhiên, giảm ô nhiễm.",
+        "Đơn giản hóa quy trình kiểm soát chất thải công nghiệp, bảo vệ tài nguyên."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_15",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Phát biểu nào sau đây là một trong những biểu hiện của khu vực hóa kinh tế?",
+      "options": [
+        "Các tiêu chuẩn toàn cầu được áp dụng ngày càng rộng rãi.",
+        "Các công ty đa quốc gia mở rộng phạm vi sản xuất toàn cầu.",
+        "Gia tăng số lượng và quy mô của các tổ chức khu vực.",
+        "Các giao dịch thương mại quốc tế tăng lên nhanh chóng."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_16",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Vấn đề nào dưới đây là vấn đề an ninh truyền thống?",
+      "options": [
+        "An ninh năng lượng.",
+        "An ninh quân sự.",
+        "An ninh mạng.",
+        "An ninh nguồn nước."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_17",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Vấn đề nào dưới đây là vấn đề an ninh phi truyền thống?",
+      "options": [
+        "An ninh chính trị.",
+        "An ninh quân sự.",
+        "Chiến tranh, xung đột vũ trang.",
+        "An ninh lương thực."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_18",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Phát biểu nào sau đây không đúng với Tổ chức Thương mại Thế giới (WTO)?",
+      "options": [
+        "Là một tổ chức phi chính phủ lớn trên thế giới.",
+        "Có 164 nước tham gia thành viên (năm 2021).",
+        "Chi phối phần lớn hoạt động thương mại thế giới.",
+        "Làm sâu sắc sự khác biệt giữa các nhóm nước."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_19",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Giải pháp mang tính cấp bách khi giải quyết vấn đề khủng hoảng an ninh ương thực là",
+      "options": [
+        "cung cấp lương thực và cứu trợ nhân đạo.",
+        "tăng năng suất và phát triển bền vững.",
+        "phát huy vai trò của các tổ chức quốc tế.",
+        "bình ổn giá, ưu tiên hàng lương thực."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_20",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Hiện nay, nguồn nước ngọt ở nhiều nơi trên thế giới bị ô nhiễm nghiêm trọng, nguyên nhân chủ yếu là do",
+      "options": [
+        "Chất thải công nghiệp chưa qua xử lí.",
+        "Chất thải trong sản xuất nông nghiệp",
+        "Nước xả từ các nhà máy thủy điện",
+        "Khai thác và vận chuyển dầu mỏ. và"
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "nhan_biet",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_21",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Mỹ La-tinh nằm giữa hai đại dương lớn là",
+      "options": [
+        "Đại Tây Dương và Ấn Độ Dương.",
+        "Bắc Băng Dương và Ấn Độ Dương.",
+        "Đại Tây Dương và Thái Bình Dương.",
+        "Thái Bình Dương và Bắc Băng Dương."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_22",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Phát biểu nào sau đây không đúng về kinh tế khu vực Mỹ La-tinh?",
+      "options": [
+        "Tổng GDP của toàn khu vực ở mức thấp.",
+        "Chênh lệch lớn về GDP giữa các nước.",
+        "Có nhiều quốc gia nợ nước ngoài rất lớn.",
+        "Tốc độ tăng trưởng GDP luôn rất nhanh."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_23",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Kinh tế của khu vực Mỹ La-tinh có sự chuyển dịch theo hướng chủ yếu nào sau đây?",
+      "options": [
+        "Tăng nhanh tỉ trọng ngành nông nghiệp.",
+        "Tăng tỉ trọng của ngành dịch vụ.",
+        "Tỉ trọng ngành công nghiệp giảm rất nhanh.",
+        "Giảm mạnh tỉ trọng của ngành dịch vụ."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_24",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Quá trình đô thị hóa ở khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
+      "options": [
+        "Gắn liền chặt chẽ với công nghiệp hóa.",
+        "Mạng lưới đô thị phân bố rất đồng đều.",
+        "Gắn với nhập cư và lịch sử khai thác lãnh thổ.",
+        "Chỉ phân bố ở những khu vực đồng bằng rộng."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_25",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Thành phần dân cư của khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
+      "options": [
+        "Đa dạng về chủng tộc và có nhiều người lai.",
+        "Chủ yếu là người nhập cư từ Hoa Kỳ đến.",
+        "Người da trắng chính là người dân bản địa.",
+        "Có cơ cấu dân số già mức cao nhất thế giới."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_26",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Nhóm nước phát triển thường có chỉ số phát triển con người (HDI) ở mức cao chủ yếu do",
+      "options": [
+        "quy mô dân số đông và diện tích lãnh thổ rộng.",
+        "mức sống cao; kinh tế; giáo dục, y tế phát triển.",
+        "tỉ lệ tăng dân số cao và có cơ cấu dân số trẻ.",
+        "nguồn tài nguyên thiên nhiên rất phong phú."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_27",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Giải pháp chủ yếu giúp các doanh nghiệp sản xuất tối ưu hóa nguồn lực và hạn chế rủi ro trong nền kinh tế tri thức là",
+      "options": [
+        "mở rộng quy mô nhà xưởng và sử dụng nhiều lao động phổ thông.",
+        "tập trung khai thác triệt để các nguồn tài nguyên thiên nhiên sẵn có.",
+        "đẩy mạnh ứng dụng công nghệ và sản xuất theo nhu cầu thị trường.",
+        "duy trì mẫu mã và quy trình sản xuất để hạn chế chi phí phát sinh."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_28",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Sự phát triển kinh tế của nhiều quốc gia khu vực Mỹ La-tinh không ổn định chủ yếu do",
+      "options": [
+        "nguồn tài nguyên thiên nhiên nghèo nàn.",
+        "thiếu hụt nghiêm trọng lực lượng lao động.",
+        "không tiếp giáp với các tuyến đường biển.",
+        "nền kinh tế phụ thuộc vào nước ngoài."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_29",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Phát biểu nào sau đây đúng với đặc điểm đô thị hóa ở Mỹ La-tinh?",
+      "options": [
+        "Quá trình đô thị hóa sớm.",
+        "Tỉ lệ dân thành thị giảm.",
+        "Không có các đô thị lớn.",
+        "Phân bố đô thị đồng đều."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_30",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Khu vực Mỹ La tinh có",
+      "options": [
+        "cơ cấu dân số rất già, quy mô giảm.",
+        "gia tăng dân số rất cao, dân trẻ hóa.",
+        "dân số đông và đang có sự già hóa.",
+        "gia tăng dân số thấp, quy mô giảm."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_31",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Vấn đề dân cư - xã hội đáng quan tâm nhất ở Mỹ La-tinh là",
+      "options": [
+        "có nhiều siêu đô thị dân đông.",
+        "tỉ lệ thất nghiệp ở thành thị cao.",
+        "dân nông thôn vào đô thị đông.",
+        "chênh lệch giàu nghèo rất lớn."
+      ],
+      "correct": 3,
+      "explanation": "Phương án đúng là D.",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_32",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Hình thức tổ chức sản xuất nông nghiệp chủ yếu ở khu vực Mỹ La-tinh là",
+      "options": [
+        "hộ gia đình.",
+        "hợp tác xã.",
+        "trang trại.",
+        "du canh du cư."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_33",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Sản phẩm nông nghiệp nổi bật nhất của Mỹ La-tinh là",
+      "options": [
+        "lương thực.",
+        "cây công nghiệp.",
+        "thực phẩm.",
+        "gia súc."
+      ],
+      "correct": 1,
+      "explanation": "Phương án đúng là B.",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_34",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Phía đông các đảo của quần đảo Ăng-ti do có nhiều mưa nên phát triển mạnh",
+      "options": [
+        "rừng thưa.",
+        "cây bụi.",
+        "rừng rậm.",
+        "xavan."
+      ],
+      "correct": 2,
+      "explanation": "Phương án đúng là C.",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p1_35",
+      "type": "mcq",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Phía tây Mỹ La-tinh có thuận lợi chủ yếu cho phát triển ngành kinh tế nào sau đây?",
+      "options": [
+        "Thủy điện.",
+        "Trồng trọt.",
+        "Khai thác thủy sản.",
+        "Nuôi trồng thủy sản."
+      ],
+      "correct": 0,
+      "explanation": "Phương án đúng là A.",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần I: Trắc nghiệm"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_01",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho thông tin sau: Toàn cầu hóa kinh tế là quá trình liên kết các quốc gia trên thế giới về nhiều mặt, từ kinh tế đến văn hóa, khoa học. Quá trình này làm cho các dòng hàng hóa, dịch vụ, vốn và lao động ngày càng tự do di chuyển giữa các nước. Bên cạnh việc thúc đẩy tăng trưởng kinh tế toàn cầu, toàn cầu hóa cũng làm gia tăng sự phụ thuộc lẫn nhau về kinh tế giữa các quốc gia.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Toàn cầu hóa kinh tế tạo điều kiện thuận lợi cho các dòng vốn và lao động dịch chuyển giữa các nước.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Quá trình toàn cầu hóa kinh tế làm giảm bớt sự phụ thuộc lẫn nhau về mặt kinh tế giữa các quốc gia.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Các công ty đa quốc gia giữ vai trò chi phối các chuỗi giá trị toàn cầu trong xu thế toàn cầu hóa.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Việc chủ động hội nhập toàn cầu hóa kinh tế giúp các nước đang phát triển tranh thủ nguồn vốn và công nghệ để chuyển dịch cơ cấu kinh tế theo hướng hiện đại.",
+          "answer": true
+        }
+      ],
+      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) ĐÚNG",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_02",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho thông tin sau: Khu vực hóa kinh tế là quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong các khu vực trên thế giới trên cơ sở tương đồng về địa lí, văn hóa, xã hội hoặc có chung mục tiêu phát triển. Sự hình thành các tổ chức liên kết khu vực giúp tạo lập thị trường sản xuất và tiêu dùng rộng lớn, thúc đẩy thương mại nội khối và gia tăng sức cạnh tranh của khu vực.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Khu vực hóa kinh tế là sự liên kết giữa các quốc gia dựa trên sự tương đồng về địa lí, văn hóa hoặc mục tiêu phát triển.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Quá trình khu vực hóa kinh tế làm gia tăng số lượng và quy mô của các tổ chức liên kết khu vực.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Khu vực hóa kinh tế giúp dỡ bỏ hoàn toàn các rào cản thương mại đối với các nước nằm trong một khu vực.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Việc tham gia vào các tổ chức liên kết kinh tế khu vực giúp Việt Nam mở rộng thị trường xuất khẩu nhưng cũng đặt ra thách thức lớn về sức cạnh tranh cho các doanh nghiệp trong nước.",
+          "answer": true
+        }
+      ],
+      "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) SAI, d) ĐÚNG",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_03",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Các công ty xuyên quốc gia ngày càng mở rộng phạm vi hoạt động. Hệ thống các công ty xuyên quốc gia đã có mặt ở nhiều nước tạo nên sự liên kết chặt chẽ góp phần làm cho quá trình toàn cầu hóa trở nên sâu sắc hơn.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Các công ty xuyên quốc gia là 1 trong những nhân tố thúc đẩy toàn cầu hóa.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Các công ty xuyên quốc gia chủ yếu tham gia lĩnh vực tài chính, công nghệ.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Các công ty xuyên quốc gia tham gia chuỗi liên kết chủ yếu ở các nước đang phát triển.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Các công ty xuyên quốc gia chi phối và kiểm soát hoạt động thương mại thế giới.",
+          "answer": true
+        }
+      ],
+      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) SAI, d) ĐÚNG",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_04",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho thông tin sau: An ninh năng lượng và an ninh nguồn nước là những vấn đề an ninh phi truyền thống quan trọng mà thế giới đang phải đối mặt. Sự suy giảm tài nguyên, biến đổi khí hậu và nhu cầu tiêu thụ gia tăng đang đe dọa trực tiếp đến nguồn cung cấp năng lượng cũng như việc tiếp cận nguồn nước sạch của người dân ở nhiều quốc gia.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "An ninh năng lượng là sự bảo đảm đầy đủ năng lượng dưới nhiều hình thức khác nhau phục vụ cho nhu cầu con người và phát triển kinh tế.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Sử dụng tiết kiệm năng lượng và đẩy mạnh phát triển năng lượng tái tạo là giải pháp quan trọng nhằm bảo đảm an ninh năng lượng.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Các quốc gia cùng chia sẻ một lưu vực sông cần tăng cường hợp tác và phối hợp kiểm soát nguồn nước nhằm hạn chế nguy cơ cạn kiệt tài nguyên và mâu thuẫn quốc gia.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Việc bảo đảm đủ nước phục vụ cho sản xuất nông nghiệp là đã đảm bảo được an ninh nguồn nước.",
+          "answer": false
+        }
+      ],
+      "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) ĐÚNG, d) SAI",
+      "difficulty": "thong_hieu",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_05",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho thông tin sau: An ninh mạng là sự bảo đảm hoạt động trên không gian mạng không gây hại đến an ninh quốc gia, trật tự, an toàn xã hội, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân. Sự phát triển mạnh mẽ của công nghệ thông tin khiến an ninh mạng trở thành một thách thức lớn đối với tất cả các quốc gia, đòi hỏi sự phối hợp và hợp tác quốc tế chặt chẽ để phòng chống các hoạt động tấn công mạng.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Mất an ninh mạng gây ảnh hưởng đến lĩnh vực quân sự, không tác động đến phát triển kinh tế và đời sống xã hội.",
+          "answer": false
+        },
+        {
+          "label": "b",
+          "text": "An ninh mạng là sự bảo đảm các hoạt động trên không gian mạng không gây hại đến an ninh quốc gia và trật tự xã hội.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Tăng cường hợp tác quốc tế và hoàn thiện thể chế pháp luật là những giải pháp quan trọng để bảo vệ an ninh mạng.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Sự phụ thuộc ngày càng lớn của nền kinh tế vào hạ tầng kĩ thuật số khiến rủi ro mất an ninh mạng có thể gây ra những tổn thất diện rộng đối với nhiều quốc gia.",
+          "answer": true
+        }
+      ],
+      "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) ĐÚNG",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_06",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho thông tin: Theo số liệu của liên hợp quốc, hiện có 138 quốc gia (trong đó có 95 nước đang phát triển) ban hành Luật An ninh mạng. Việt Nam đã ban hành Luật An ninh mạng năm 2018 để quy định về hoạt động và bảo vệ an ninh quốc gia và bảo đảm trật tự, an toàn xã hội trên không gian mạng; trách nhiệm của cơ quan, tổ chức cá nhân có liên quan.",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Sự bùng nổ công nghệ thông tin trở thành thách thức lớn về an ninh quốc gia.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Các cuộc tấn công vào hệ thống hạ tầng thông tin, truyền thông quốc gia chỉ gây ảnh hưởng đến an ninh quốc gia.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Các cuộc tấn công mạng  xuyên quốc gia có thể gay thiệt hại đến nền kinh tế toàn cầu.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Luật An ninh mạng từng quốc xây dựng riêng để đảm bảo bí mật, an toàn, an ninh quốc gia.",
+          "answer": false
+        }
+      ],
+      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) SAI",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_07",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT NHẬP KHẨU HÀNG HÓA VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 - 2020 ( Đơn vị: Tỉ USD) Năm 2000 2005 2010 2015 2019 2020 Xuất Khẩu 7 961,7 13 014,0 19 009,0 21 341,8 24 970,7 22 594,7 Nhập Khẩu 7 927,2 12 804,0 18 467,2 20 815,8 24 418,2 21 949, 6 ( Nguồn : Ngân hàng Thế giới, 2022)",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Giá trị xuất khẩu hàng hóa và dịch vụ toàn thế giới giai đoạn 2000 - 2020 tăng liên tục.",
+          "answer": false
+        },
+        {
+          "label": "b",
+          "text": "Giá trị xuất khẩu hàng hóa luôn lớn hơn giá trị nhập khẩu giai đoạn 2000 - 2020.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Giá xuất nhập khẩu hàng hóa và dịch vụ toàn thế ngày càng tăng biểu hiện của toàn cầu hóa.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Hoạt động thương mại có tốc độ tăng trưởng cao giai đoạn 2000 - 2020 tăng 560%.",
+          "answer": false
+        }
+      ],
+      "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) SAI",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p2_08",
+      "type": "truefalse",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT, NHẬP KHẨU HÀNG HOÁ VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 – 2020 (Đơn vị: tỉ USD) Năm Xuất khẩu Nhập khẩu 2000 7 961,7 7 982,3 2010 19 009,0 18 467,2 2019 24 970,7 24 418,2 2020 22 594,7 21 949,6 (Nguồn: WB, 2022)",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Giá trị xuất khẩu tăng nhanh và liên tục.",
+          "answer": false
+        },
+        {
+          "label": "b",
+          "text": "Cán cân xuất nhập khẩu luôn dương.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Giá trị nhập khẩu tăng gấp 2,7 lần giai đoạn 2000 - 2020",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Giá trị xuất khẩu tăng nhiều hơn giá trị nhập khẩu giai đoạn 2000 - 2020",
+          "answer": true
+        }
+      ],
+      "explanation": "Đáp án các ý: a) SAI, b) SAI, c) ĐÚNG, d) ĐÚNG",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần II: Đúng / Sai"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_01",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Năm 2024, số dân thế giới là 8141,8 triệu người, sản lượng lương thực có hạt của thế giới là 2854 triệu tấn. Hãy cho biết bình quân lương thực có hạt theo đầu người của thế giới năm 2024 là bao nhiêu kg/người. (làm tròn kết quả đến hàng đơn vị).",
+      "answer": "351",
+      "explanation": "Đáp án chính xác: 351",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_02",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Cho bảng số liệu: Trị giá xuất khẩu hàng hóa và dịch vụ của Mông Cổ và Đan Mạch, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Mông Cổ 7,7 16,4 Đan Mạch 195,7 301,4 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết tốc độ tăng trưởng trị giá xuất khẩu năm 2024 so với năm 2020 của Mông Cổ cao hơn của Đan Mạch bao nhiêu phần trăm (coi năm 2020 của mỗi nước = 100%) (làm tròn kết quả đến hàng đơn vị).",
+      "answer": "59",
+      "explanation": "Đáp án chính xác: 59",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_03",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Tổng trị giá xuất nhập khẩu và cán cân xuất nhập khẩu của thế giới năm 2024 lần lượt là 47,2 nghìn tỷ USD và -0,4 nghìn tỷ USD. Hãy cho biết trị giá xuất khẩu của thế giới năm 2024 là bao nhiêu nghìn tỷ USD (làm tròn kết quả đến một chữ số thập phân).",
+      "answer": "23,4",
+      "explanation": "Đáp án chính xác: 23,4",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_04",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Năm 2024, trị giá xuất khẩu lĩnh vực dịch vụ của Hoa Kỳ đạt 1200 tỉ USD. Trong đó thương mại số chiếm 60%. Hãy cho biết lĩnh vực thương mại số của Hoa Kỳ có trị giá là bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
+      "answer": "720",
+      "explanation": "Đáp án chính xác: 720",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_05",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Năm 2018 và năm 2024, sản lượng tiêu thụ khí tự nhiên của thế giới lần lượt là 3831,7 tỉ m3 và 4127,8 tỉ m3. Hãy cho biết, sản lượng tiêu thụ khí tự nhiên của thế giới năm 2024 so với năm 2018 tăng thêm bao nhiêu tỉ m3 (làm tròn kết quả đến hàng đơn vị).",
+      "answer": "296",
+      "explanation": "Đáp án chính xác: 296",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_06",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c1",
+      "sectionId": "chap_dia11_c1_s1",
+      "stem": "Năm 2019 giá trị xuất khẩu toàn thế giới là 24 791,1 tỉ USD; giá trị nhập khẩu là 24 348,1 tỉ USD. Tính cán cân xuất nhập khẩu của toàn thế giới năm 2019. (làm tròn kết quả đến hàng đơn vị của tỉ USD)",
+      "answer": "443",
+      "explanation": "Đáp án chính xác: 443",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_07",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Cho bảng số liệu: Tổng dự trữ quốc tế của Hoa Kỳ và Nam Phi, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Hoa Kỳ 133,8 227,8 Nam Phi 47,4 54,9 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết năm 2024 so với năm 2020, tổng dự trữ quốc tế của Hoa Kỳ tăng nhiều hơn của Nam Phi bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
+      "answer": "87",
+      "explanation": "Đáp án chính xác: 87",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+      "id": "q_dia11_p3_08",
+      "type": "short_answer",
+      "subjectId": "sub_dia11",
+      "chapterId": "chap_dia11_c2",
+      "sectionId": "chap_dia11_c2_s1",
+      "stem": "Năm 2020, dân số của Mĩ La-tinh là 652,3 triệu người, trong đó dân số trong độ tuổi lao động là 438,3 triệu người. Tính tỉ lệ dân số trong độ tuổi lao động của Mĩ La-tinh năm 2020 (làm tròn đến hàng đơn vị của %).",
+      "answer": "67,2",
+      "explanation": "Đáp án chính xác: 67,2",
+      "difficulty": "van_dung",
+      "tags": [
+        "Địa lí 11",
+        "Giữa HKI",
+        "Phần III: Trả lời ngắn"
+      ],
+      "favorite": false,
+      "createdAt": "2026-10-28T09:50:00.000Z",
+      "updatedAt": "2026-10-28T09:50:00.000Z"
     }
   ],
   "exams": [
@@ -4152,6 +5539,65 @@ export const SEED_DATA = {
         "gdqp11_b3_c16"
       ],
       "createdAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+      "id": "exam_dia11_ghki",
+      "name": "Địa Lí 11 - Đề Cương Ôn Tập Giữa HKI",
+      "description": "Đề cương ôn tập kiểm tra giữa HKI môn Địa lí 11 (35 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng sai 4 ý + 8 câu trả lời ngắn).",
+      "questionIds": [
+        "q_dia11_p1_01",
+        "q_dia11_p1_02",
+        "q_dia11_p1_03",
+        "q_dia11_p1_04",
+        "q_dia11_p1_05",
+        "q_dia11_p1_06",
+        "q_dia11_p1_07",
+        "q_dia11_p1_08",
+        "q_dia11_p1_09",
+        "q_dia11_p1_10",
+        "q_dia11_p1_11",
+        "q_dia11_p1_12",
+        "q_dia11_p1_13",
+        "q_dia11_p1_14",
+        "q_dia11_p1_15",
+        "q_dia11_p1_16",
+        "q_dia11_p1_17",
+        "q_dia11_p1_18",
+        "q_dia11_p1_19",
+        "q_dia11_p1_20",
+        "q_dia11_p1_21",
+        "q_dia11_p1_22",
+        "q_dia11_p1_23",
+        "q_dia11_p1_24",
+        "q_dia11_p1_25",
+        "q_dia11_p1_26",
+        "q_dia11_p1_27",
+        "q_dia11_p1_28",
+        "q_dia11_p1_29",
+        "q_dia11_p1_30",
+        "q_dia11_p1_31",
+        "q_dia11_p1_32",
+        "q_dia11_p1_33",
+        "q_dia11_p1_34",
+        "q_dia11_p1_35",
+        "q_dia11_p2_01",
+        "q_dia11_p2_02",
+        "q_dia11_p2_03",
+        "q_dia11_p2_04",
+        "q_dia11_p2_05",
+        "q_dia11_p2_06",
+        "q_dia11_p2_07",
+        "q_dia11_p2_08",
+        "q_dia11_p3_01",
+        "q_dia11_p3_02",
+        "q_dia11_p3_03",
+        "q_dia11_p3_04",
+        "q_dia11_p3_05",
+        "q_dia11_p3_06",
+        "q_dia11_p3_07",
+        "q_dia11_p3_08"
+      ],
+      "createdAt": "2026-10-28T09:50:00.000Z"
     }
   ],
   "attempts": [

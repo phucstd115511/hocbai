@@ -69,6 +69,23 @@ export function getStoredData() {
         needsResave = true;
       }
 
+      // Đảm bảo "Địa Lí 11" luôn có mặt trong hệ thống
+      const hasDiaSub = subjects.some(s => s.id === 'sub_dia11' || s.name.includes('Địa Lí') || s.name.includes('Địa lí'));
+      if (!hasDiaSub) {
+        const diaSubject = SEED_DATA.subjects.find(s => s.id === 'sub_dia11');
+        const diaExam = SEED_DATA.exams.find(e => e.id === 'exam_dia11_ghki');
+        const diaQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_dia11');
+
+        if (diaSubject) subjects = [...subjects, diaSubject];
+        if (diaExam && !exams.some(e => e.id === 'exam_dia11_ghki')) exams = [...exams, diaExam];
+        if (diaQuestions.length > 0) {
+          const existingIds = new Set(questions.map(q => q.id));
+          const newQ = diaQuestions.filter(q => !existingIds.has(q.id));
+          questions = [...questions, ...newQ];
+        }
+        needsResave = true;
+      }
+
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt
       const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || s.name?.includes('Tin học 12'));
       if (hasTinHoc) {

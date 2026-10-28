@@ -20,6 +20,7 @@ export default function PrintView({
 
   const mcqQuestions = questions.filter(q => q.type === 'mcq');
   const tfQuestions = questions.filter(q => q.type === 'truefalse');
+  const saQuestions = questions.filter(q => q.type === 'short_answer');
 
   return (
     <div className="min-h-screen bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-slate-100 pb-12">
@@ -263,6 +264,43 @@ export default function PrintView({
                         </div>
                       );
                     })}
+                  </div>
+                  {/* Teacher Explanation */}
+                  {printMode === 'teacher' && q.explanation && (
+                    <div className="mt-2 ml-4 p-2 bg-slate-50 border-l-2 border-emerald-600 text-[10pt] text-slate-700 italic">
+                      <span className="font-bold text-emerald-700 not-italic">Hướng dẫn giải: </span>
+                      <MathRenderer text={q.explanation} />
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* SECTION 3: SHORT ANSWER QUESTIONS */}
+        {saQuestions.length > 0 && (
+          <div className="mb-6">
+            <div className="font-bold text-[11.5pt] uppercase mb-3 bg-slate-100 p-1 border-l-4 border-black">
+              PHẦN III. Câu trắc nghiệm yêu cầu trả lời ngắn (Thí sinh ghi đáp án vào ô quy định)
+            </div>
+            <div className="space-y-4">
+              {saQuestions.map((q, idx) => (
+                <div key={q.id} className="question-item-print">
+                  <div className="font-semibold text-[11pt] mb-1.5">
+                    <span className="font-bold">Câu {mcqQuestions.length + tfQuestions.length + idx + 1}: </span>
+                    <MathRenderer text={q.stem} />
+                  </div>
+                  <div className="pl-4 text-[10.5pt]">
+                    {printMode === 'teacher' ? (
+                      <div className="font-bold text-red-600">
+                        Đáp án: {q.correctAnswer}
+                      </div>
+                    ) : (
+                      <div className="text-slate-500 italic">
+                        Đáp số: ................................................................
+                      </div>
+                    )}
                   </div>
                   {/* Teacher Explanation */}
                   {printMode === 'teacher' && q.explanation && (

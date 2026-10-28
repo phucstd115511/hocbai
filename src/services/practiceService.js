@@ -81,6 +81,26 @@ export function gradeAttempt({ exam, questions, userAnswers, chapterMap = {}, sc
       if (!isCorrect) {
         wrongQuestionIds.push(q.id);
       }
+    } else if (q.type === 'short_answer') {
+      const userVal = String(userAnswers[q.id] || '').trim().replace(',', '.');
+      const correctVal = String(q.answer || '').trim().replace(',', '.');
+      const isCorrect = userVal !== '' && userVal === correctVal;
+      const score = isCorrect ? 1.0 : 0;
+      totalScore += score;
+      chapterBreakdown[chapterName].correct += score;
+
+      questionResults[q.id] = {
+        type: 'short_answer',
+        isCorrect,
+        score,
+        maxScore: 1.0,
+        userVal: userAnswers[q.id],
+        correctVal: q.answer
+      };
+
+      if (!isCorrect) {
+        wrongQuestionIds.push(q.id);
+      }
     } else {
       // True/False
       const ansObj = userAnswers[q.id] || {};

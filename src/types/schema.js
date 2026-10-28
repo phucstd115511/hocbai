@@ -11,7 +11,8 @@ export const DIFFICULTY_LEVELS = [
 
 export const QUESTION_TYPES = [
   { id: 'mcq', label: 'Trắc nghiệm 1 lựa chọn (A, B, C, D)', shortLabel: 'Trắc nghiệm' },
-  { id: 'truefalse', label: 'Đúng / Sai 4 ý (a, b, c, d)', shortLabel: 'Đúng / Sai' }
+  { id: 'truefalse', label: 'Đúng / Sai 4 ý (a, b, c, d)', shortLabel: 'Đúng / Sai' },
+  { id: 'short_answer', label: 'Trả lời ngắn / Điền số', shortLabel: 'Trả lời ngắn' }
 ];
 
 export function generateId(prefix = 'id') {

@@ -21,6 +21,7 @@ import {
   Sparkles,
   Shield,
   Wrench,
+  Globe,
   Grid
 } from 'lucide-react';
 
@@ -48,6 +49,7 @@ export default function CongNgheGHKIQuiz({
   }, [initialSubjectId]);
 
   const isGdqp = activeSubjectId === 'sub_gdqp11';
+  const isDia = activeSubjectId === 'sub_dia11';
 
   // Lọc toàn bộ câu hỏi của môn đã chọn (Gộp lại trọn vẹn, không chia vụn vặt)
   const questionsToTest = useMemo(() => {
@@ -57,6 +59,9 @@ export default function CongNgheGHKIQuiz({
       }
       if (activeSubjectId === 'sub_gdqp11') {
         return q.subjectId === 'sub_gdqp11' || (q.tags || []).includes('GDQP 11');
+      }
+      if (activeSubjectId === 'sub_dia11') {
+        return q.subjectId === 'sub_dia11' || (q.tags || []).includes('Địa Lí 11');
       }
       return q.subjectId === activeSubjectId;
     });
@@ -148,15 +153,27 @@ export default function CongNgheGHKIQuiz({
     });
   };
 
+  // Trả lời ngắn / Điền số
+  const handleSelectShortAnswer = (qId, val) => {
+    if (isSubmitted) return;
+    setUserAnswers(prev => ({
+      ...prev,
+      [qId]: val
+    }));
+  };
+
   // Đếm số câu đã trả lời
   const answeredCount = useMemo(() => {
     let count = 0;
     questionsToTest.forEach(q => {
       if (q.type === 'mcq') {
         if (userAnswers[q.id] !== undefined) count++;
-      } else {
+      } else if (q.type === 'truefalse') {
         const tf = userAnswers[q.id] || {};
         if (Object.keys(tf).length === 4) count++;
+      } else if (q.type === 'short_answer') {
+        const val = userAnswers[q.id];
+        if (val !== undefined && String(val).trim() !== '') count++;
       }
     });
     return count;
@@ -202,11 +219,18 @@ export default function CongNgheGHKIQuiz({
           totalPoints += 1;
           correctCount++;
         }
-      } else {
+      } else if (q.type === 'truefalse') {
         const userTf = userAnswers[q.id] || {};
         const res = scoreTrueFalseQuestion(q.statements, userTf, 'standard_thpt');
         totalPoints += res.score;
         if (res.isFullyCorrect) correctCount++;
+      } else if (q.type === 'short_answer') {
+        const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
+        const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+        if (userVal !== '' && userVal === correctVal) {
+          totalPoints += 1;
+          correctCount++;
+        }
       }
     });
 
@@ -226,15 +250,33 @@ export default function CongNgheGHKIQuiz({
       const wrongQuestionIds = questionsToTest
         .filter(q => {
           if (q.type === 'mcq') return userAnswers[q.id] !== q.correct;
-          const res = scoreTrueFalseQuestion(q.statements, userAnswers[q.id] || {}, 'standard_thpt');
-          return !res.isFullyCorrect;
+          if (q.type === 'truefalse') {
+            const res = scoreTrueFalseQuestion(q.statements, userAnswers[q.id] || {}, 'standard_thpt');
+            return !res.isFullyCorrect;
+          }
+          if (q.type === 'short_answer') {
+            const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
+            const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+            return userVal !== correctVal;
+          }
+          return false;
         })
         .map(q => q.id);
 
+      let examId = 'exam_congnghe_ghki';
+      let examName = 'Công Nghệ GHKI';
+      if (isGdqp) {
+        examId = 'exam_gdqp11_ghki';
+        examName = 'GDQP&AN 11 GHKI';
+      } else if (isDia) {
+        examId = 'exam_dia11_ghki';
+        examName = 'Địa Lí 11 GHKI';
+      }
+
       onSaveAttempt({
         id: `att_${Date.now()}`,
-        examId: isGdqp ? 'exam_gdqp11_ghki' : 'exam_congnghe_ghki',
-        examName: isGdqp ? 'GDQP&AN 11 GHKI' : 'Công Nghệ GHKI',
+        examId,
+        examName,
         answers: userAnswers,
         score: scoreResult.totalPoints,
         totalMaxScore: scoreResult.maxPoints,
@@ -244,18 +286,27 @@ export default function CongNgheGHKIQuiz({
         durationSeconds: seconds
       });
     }
-  }, [isSubmitted, scoreResult, onSaveAttempt, isGdqp, questionsToTest, userAnswers, seconds]);
+  }, [isSubmitted, scoreResult, onSaveAttempt, isGdqp, isDia, questionsToTest, userAnswers, seconds]);
 
   // Chế độ in đề A4
   if (isPrinting) {
+    let printId = 'print_congnghe_ghki';
+    let printName = 'ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HKI MÔN CÔNG NGHỆ 11';
+    let printDesc = 'Trường THPT - Tổ Lí - Công nghệ (Năm học 2026-2027)';
+    if (isGdqp) {
+      printId = 'print_gdqp11_ghki';
+      printName = 'ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HKI MÔN GDQP&AN 11';
+      printDesc = 'Trường THPT - Bộ môn Giáo dục Quốc phòng và An ninh 11 (Năm học 2026-2027)';
+    } else if (isDia) {
+      printId = 'print_dia11_ghki';
+      printName = 'ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HKI MÔN ĐỊA LÍ 11';
+      printDesc = 'Trường THPT - Tổ Sử - Địa Lí 11 (Năm học 2026-2027)';
+    }
+
     const fakeExam = {
-      id: isGdqp ? 'print_gdqp11_ghki' : 'print_congnghe_ghki',
-      name: isGdqp 
-        ? 'ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HKI MÔN GDQP&AN 11'
-        : 'ĐỀ CƯƠNG ÔN TẬP KIỂM TRA GIỮA HKI MÔN CÔNG NGHỆ 11',
-      description: isGdqp
-        ? 'Trường THPT - Bộ môn Giáo dục Quốc phòng và An ninh 11 (Năm học 2026-2027)'
-        : 'Trường THPT - Tổ Lí - Công nghệ (Năm học 2026-2027)',
+      id: printId,
+      name: printName,
+      description: printDesc,
       questionIds: questionsToTest.map(q => q.id)
     };
     return (
@@ -271,6 +322,7 @@ export default function CongNgheGHKIQuiz({
   // Tách câu hỏi theo dạng để hiển thị thành từng phần rõ ràng
   const mcqQuestions = questionsToTest.filter(q => q.type === 'mcq');
   const tfQuestions = questionsToTest.filter(q => q.type === 'truefalse');
+  const saQuestions = questionsToTest.filter(q => q.type === 'short_answer');
 
   const scrollToQuestion = (qId) => {
     const el = document.getElementById(`q_${qId}`);
@@ -282,19 +334,19 @@ export default function CongNgheGHKIQuiz({
   return (
     <div className="space-y-6 max-w-4xl mx-auto">
       {/* 1. Thanh chọn Môn học (Gộp gọn gàng theo môn) */}
-      <div className="bg-white dark:bg-slate-900 p-2 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex items-center gap-2">
+      <div className="bg-white dark:bg-slate-900 p-2 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-wrap items-center gap-2">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
-          className={`flex-1 flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-bold transition ${
-            !isGdqp
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+            activeSubjectId === 'sub_congnghe_ghki'
               ? 'bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/25 ring-2 ring-sky-400'
               : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
           }`}
         >
-          <Wrench className="w-4 h-4" />
+          <Wrench className="w-4 h-4 shrink-0" />
           <span>Môn Công Nghệ 11</span>
           <span className={`text-[11px] font-extrabold px-2 py-0.5 rounded-full ${
-            !isGdqp ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+            activeSubjectId === 'sub_congnghe_ghki' ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
           }`}>
             93 câu
           </span>
@@ -302,18 +354,35 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_gdqp11')}
-          className={`flex-1 flex items-center justify-center gap-2.5 py-3 px-4 rounded-xl text-sm font-bold transition ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
             isGdqp
               ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md shadow-emerald-500/25 ring-2 ring-emerald-400'
               : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
           }`}
         >
-          <Shield className="w-4 h-4" />
+          <Shield className="w-4 h-4 shrink-0" />
           <span>Môn GDQP&AN 11</span>
           <span className={`text-[11px] font-extrabold px-2 py-0.5 rounded-full ${
             isGdqp ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
           }`}>
             52 câu
+          </span>
+        </button>
+
+        <button
+          onClick={() => handleSwitchSubject('sub_dia11')}
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-bold transition ${
+            isDia
+              ? 'bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-md shadow-amber-500/25 ring-2 ring-amber-400'
+              : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+          }`}
+        >
+          <Globe className="w-4 h-4 shrink-0" />
+          <span>Môn Địa Lí 11</span>
+          <span className={`text-[11px] font-extrabold px-2 py-0.5 rounded-full ${
+            isDia ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+          }`}>
+            51 câu
           </span>
         </button>
       </div>
@@ -322,20 +391,32 @@ export default function CongNgheGHKIQuiz({
       <div className={`p-6 rounded-3xl shadow-lg relative overflow-hidden transition-all ${
         isGdqp 
           ? 'bg-gradient-to-r from-emerald-700 via-teal-700 to-indigo-800 text-white'
+          : isDia
+          ? 'bg-gradient-to-r from-amber-700 via-orange-600 to-rose-700 text-white'
           : 'bg-gradient-to-r from-sky-600 via-indigo-600 to-sky-700 text-white'
       }`}>
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 text-xs font-semibold backdrop-blur mb-2.5">
-              {isGdqp ? <Shield className="w-3.5 h-3.5" /> : <BookOpen className="w-3.5 h-3.5" />}
-              {isGdqp ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' : 'Công Nghệ 11 (Cơ Khí) • Giữa Học Kì I (2026-2027)'}
+              {isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : <BookOpen className="w-3.5 h-3.5" />}
+              {isGdqp 
+                ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' 
+                : isDia
+                ? 'Địa Lí 11 • Giữa Học Kì I (2026-2027)'
+                : 'Công Nghệ 11 (Cơ Khí) • Giữa Học Kì I (2026-2027)'}
             </div>
             <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight">
-              {isGdqp ? 'Bài Làm: Đề Cương Ôn Tập GDQP&AN 11' : 'Bài Làm: Đề Cương Ôn Tập Công Nghệ 11'}
+              {isGdqp 
+                ? 'Bài Làm: Đề Cương Ôn Tập GDQP&AN 11' 
+                : isDia
+                ? 'Bài Làm: Đề Cương Ôn Tập Địa Lí 11'
+                : 'Bài Làm: Đề Cương Ôn Tập Công Nghệ 11'}
             </h1>
             <p className="text-xs text-sky-100 mt-1 max-w-xl leading-relaxed">
               {isGdqp
                 ? 'Đề thi trọn bộ 52 câu hỏi trắc nghiệm khách quan. Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
+                : isDia
+                ? 'Đề thi trọn bộ 51 câu hỏi (35 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng/sai + 8 câu trả lời ngắn). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : 'Đề thi trọn bộ 93 câu hỏi (83 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'}
             </p>
           </div>
@@ -769,6 +850,120 @@ export default function CongNgheGHKIQuiz({
             </div>
           )}
 
+          {/* PHẦN III: CÂU TRẮC NGHIỆM TRẢ LỜI NGẮN (NẾU CÓ) */}
+          {saQuestions.length > 0 && (
+            <div className="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+              <div className="p-4 bg-amber-50 dark:bg-amber-950/40 rounded-2xl border border-amber-200 dark:border-amber-800 flex items-center justify-between">
+                <div>
+                  <h3 className="text-sm font-bold text-amber-900 dark:text-amber-200 uppercase tracking-wide">
+                    Phần III: Câu trắc nghiệm yêu cầu trả lời ngắn
+                  </h3>
+                  <p className="text-xs text-amber-700 dark:text-amber-300 mt-0.5">
+                    Thí sinh trả lời từ câu {mcqQuestions.length + tfQuestions.length + 1} đến câu {questionsToTest.length}. Thí sinh tính toán và nhập đáp số vào ô bên dưới.
+                  </p>
+                </div>
+                <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-600 text-white">
+                  {saQuestions.length} câu
+                </span>
+              </div>
+
+              {saQuestions.map((q, idx) => {
+                const questionNumber = mcqQuestions.length + tfQuestions.length + idx + 1;
+                const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
+                const isUserAnswered = userVal.trim() !== '';
+                const isRevealed = isSubmitted || revealedSingleQuestions[q.id];
+
+                const normUser = userVal.trim().replace(/,/g, '.');
+                const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+                const isCorrect = isRevealed ? normUser !== '' && normUser === normCorrect : null;
+
+                return (
+                  <div
+                    key={q.id}
+                    id={`q_${q.id}`}
+                    className={`bg-white dark:bg-slate-900 p-5 rounded-2xl border transition ${
+                      isSubmitted
+                        ? 'border-slate-200 dark:border-slate-800'
+                        : isUserAnswered
+                        ? 'border-amber-300 dark:border-amber-800 shadow-xs'
+                        : 'border-slate-200 dark:border-slate-800'
+                    }`}
+                  >
+                    {/* Header */}
+                    <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-2.5 mb-3">
+                      <div className="flex items-center gap-2">
+                        <span className="w-7 h-7 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 flex items-center justify-center font-bold text-xs">
+                          {questionNumber}
+                        </span>
+                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                          Câu {questionNumber} (Trả lời ngắn)
+                        </span>
+                      </div>
+
+                      {!isSubmitted && (
+                        <button
+                          onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
+                          className="text-[11px] text-slate-400 hover:text-amber-600 flex items-center gap-1 font-medium"
+                        >
+                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                          {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Stem */}
+                    <div className="text-sm font-semibold text-slate-900 dark:text-white leading-relaxed mb-4">
+                      <MathRenderer text={q.stem} />
+                    </div>
+
+                    {/* Input box */}
+                    <div className="space-y-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <label className="text-xs font-bold text-slate-700 dark:text-slate-300 shrink-0">
+                          Nhập kết quả:
+                        </label>
+                        <input
+                          type="text"
+                          disabled={isSubmitted}
+                          value={userVal}
+                          onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
+                          placeholder="Ví dụ: 351 hoặc 23,4"
+                          className={`w-full sm:w-64 px-3.5 py-2 rounded-xl text-sm font-bold border transition outline-none ${
+                            isRevealed
+                              ? isCorrect
+                                ? 'bg-emerald-50 text-emerald-900 border-emerald-400 ring-2 ring-emerald-300'
+                                : 'bg-rose-50 text-rose-900 border-rose-400 ring-2 ring-rose-300'
+                              : 'bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/20'
+                          }`}
+                        />
+                        {isRevealed && (
+                          <div className="flex items-center gap-2">
+                            <span className={`text-xs font-bold px-2.5 py-1 rounded-lg ${
+                              isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'
+                            }`}>
+                              {isCorrect ? '✓ Chính xác' : '✗ Chưa đúng'}
+                            </span>
+                            <span className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                              (Đáp án: <strong className="text-emerald-600">{q.correctAnswer}</strong>)
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Explanation */}
+                    {isRevealed && q.explanation && (
+                      <div className="mt-3 p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl text-xs text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                        <span className="font-bold text-amber-600 dark:text-amber-400 block mb-0.5">Lời giải chi tiết:</span>
+                        <MathRenderer text={q.explanation} />
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+
           {/* Bottom Submit button */}
           {!isSubmitted && (
             <div className="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 text-center space-y-2">
@@ -801,7 +996,11 @@ export default function CongNgheGHKIQuiz({
                       Câu {currentIndex + 1} / {questionsToTest.length}
                     </span>
                     <span className="text-xs text-slate-500">
-                      {q.type === 'mcq' ? 'Trắc nghiệm nhiều lựa chọn' : 'Đúng / Sai 4 ý'}
+                      {q.type === 'mcq' 
+                        ? 'Trắc nghiệm nhiều lựa chọn' 
+                        : q.type === 'truefalse'
+                        ? 'Đúng / Sai 4 ý'
+                        : 'Trả lời ngắn / Điền số'}
                     </span>
                   </div>
 
@@ -821,7 +1020,7 @@ export default function CongNgheGHKIQuiz({
                   <MathRenderer text={q.stem} />
                 </div>
 
-                {/* Options */}
+                {/* Options / Inputs */}
                 {q.type === 'mcq' ? (
                   <div className="space-y-2.5">
                     {q.options.map((opt, optIdx) => {
@@ -862,7 +1061,7 @@ export default function CongNgheGHKIQuiz({
                       );
                     })}
                   </div>
-                ) : (
+                ) : q.type === 'truefalse' ? (
                   <div className="space-y-2.5">
                     {q.statements.map(stmt => {
                       const userVal = userAnswers[q.id]?.[stmt.label];
@@ -907,6 +1106,50 @@ export default function CongNgheGHKIQuiz({
                       );
                     })}
                   </div>
+                ) : (
+                  /* Short answer in single mode */
+                  <div className="space-y-3 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-200 dark:border-slate-700">
+                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
+                      Nhập kết quả:
+                    </label>
+                    {(() => {
+                      const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
+                      const normUser = userVal.trim().replace(/,/g, '.');
+                      const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+                      const isCorrect = isRevealed ? normUser !== '' && normUser === normCorrect : null;
+
+                      return (
+                        <div className="space-y-3">
+                          <input
+                            type="text"
+                            disabled={isSubmitted}
+                            value={userVal}
+                            onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
+                            placeholder="Ví dụ: 351 hoặc 23,4"
+                            className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border transition outline-none ${
+                              isRevealed
+                                ? isCorrect
+                                  ? 'bg-emerald-50 text-emerald-900 border-emerald-400 ring-2 ring-emerald-300'
+                                  : 'bg-rose-50 text-rose-900 border-rose-400 ring-2 ring-rose-300'
+                                : 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-700 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/20'
+                            }`}
+                          />
+                          {isRevealed && (
+                            <div className="flex items-center gap-2">
+                              <span className={`text-xs font-bold px-2.5 py-1 rounded-lg ${
+                                isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'
+                              }`}>
+                                {isCorrect ? '✓ Chính xác' : '✗ Chưa đúng'}
+                              </span>
+                              <span className="text-xs font-bold text-slate-600 dark:text-slate-300">
+                                (Đáp án: <strong className="text-emerald-600">{q.correctAnswer}</strong>)
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })()}
+                  </div>
                 )}
 
                 {/* Explanation */}
@@ -945,9 +1188,15 @@ export default function CongNgheGHKIQuiz({
                 <div className="flex flex-wrap gap-1.5">
                   {questionsToTest.map((item, idx) => {
                     const isCur = idx === currentIndex;
-                    const isDone = item.type === 'mcq'
-                      ? userAnswers[item.id] !== undefined
-                      : Object.keys(userAnswers[item.id] || {}).length === 4;
+                    let isDone = false;
+                    if (item.type === 'mcq') {
+                      isDone = userAnswers[item.id] !== undefined;
+                    } else if (item.type === 'truefalse') {
+                      isDone = Object.keys(userAnswers[item.id] || {}).length === 4;
+                    } else if (item.type === 'short_answer') {
+                      const val = userAnswers[item.id];
+                      isDone = val !== undefined && String(val).trim() !== '';
+                    }
 
                     return (
                       <button
