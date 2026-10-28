@@ -661,23 +661,26 @@ export default function CongNgheGHKIQuiz({
                         const letter = ['A', 'B', 'C', 'D'][optIdx];
                         const isChosen = userAnswers[q.id] === optIdx;
                         const isCorrect = optIdx === q.correct;
+                        const hasAnswered = isChosen || isRevealed;
 
                         let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20';
                         let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black';
 
-                        if (!isRevealed) {
-                          if (isChosen) {
-                            itemStyle = 'bg-[#ffe17c] text-black border-black shadow-[3px_3px_0px_0px_#000] translate-x-[-1px] translate-y-[-1px]';
-                            badgeStyle = 'bg-black text-[#ffe17c] border-black';
-                          }
-                        } else {
+                        if (isChosen) {
                           if (isCorrect) {
-                            itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white';
+                            itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white ring-2 ring-emerald-500';
                             badgeStyle = 'bg-emerald-600 text-white border-black';
-                          } else if (isChosen && !isCorrect) {
-                            itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 line-through';
+                          } else {
+                            itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 shadow-[3px_3px_0px_0px_#000] ring-2 ring-rose-500';
                             badgeStyle = 'bg-rose-600 text-white border-black';
                           }
+                        } else if (isRevealed && isCorrect) {
+                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white';
+                          badgeStyle = 'bg-emerald-600 text-white border-black';
+                        } else if (userAnswers[q.id] !== undefined && isCorrect) {
+                          // Nếu người dùng đã chọn sai, hiển thị phương án đúng màu xanh luôn
+                          itemStyle = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold';
+                          badgeStyle = 'bg-emerald-600 text-white border-black';
                         }
 
                         return (
@@ -693,14 +696,19 @@ export default function CongNgheGHKIQuiz({
                             <span className="flex-1 mt-0.5">
                               <MathRenderer text={opt} />
                             </span>
-                            {isRevealed && isCorrect && (
+                            {isChosen && isCorrect && (
                               <span className="text-[11px] font-cabinet font-extrabold text-emerald-800 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
-                                <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
+                                <CheckCircle2 className="w-4 h-4" /> Chính xác (+1đ)
                               </span>
                             )}
-                            {isRevealed && isChosen && !isCorrect && (
+                            {isChosen && !isCorrect && (
                               <span className="text-[11px] font-cabinet font-extrabold text-rose-700 dark:text-rose-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
-                                <XCircle className="w-4 h-4" /> Bạn chọn
+                                <XCircle className="w-4 h-4" /> Sai rồi
+                              </span>
+                            )}
+                            {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
+                              <span className="text-[11px] font-cabinet font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                                <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
                               </span>
                             )}
                           </button>
@@ -708,8 +716,8 @@ export default function CongNgheGHKIQuiz({
                       })}
                     </div>
 
-                    {/* Explanation */}
-                    {isRevealed && q.explanation && (
+                    {/* Explanation (Hiển thị ngay khi người dùng chọn đáp án hoặc nộp bài) */}
+                    {(isRevealed || userAnswers[q.id] !== undefined) && q.explanation && (
                       <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
                         <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
                         <MathRenderer text={q.explanation} />
@@ -789,32 +797,36 @@ export default function CongNgheGHKIQuiz({
                       </p>
                       {q.statements.map(stmt => {
                         const userVal = userAnswers[q.id]?.[stmt.label];
-                        const isCorrect = isRevealed ? userVal === stmt.answer : null;
+                        const isAnsweredThisStmt = userVal !== undefined;
+                        const isCorrect = isAnsweredThisStmt ? userVal === stmt.answer : null;
+                        const showFeedback = isRevealed || isAnsweredThisStmt;
 
                         return (
                           <div
                             key={stmt.label}
-                            className={`p-3 rounded-xl border flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm transition ${
-                              isRevealed
+                            className={`p-3.5 rounded-xl border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm transition ${
+                              showFeedback
                                 ? isCorrect
-                                  ? 'bg-emerald-50/40 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800'
-                                  : 'bg-rose-50/40 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800'
-                                : 'bg-slate-50 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700'
+                                  ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-black dark:text-white'
+                                  : 'bg-rose-50 dark:bg-rose-950/40 border-rose-500 text-black dark:text-white'
+                                : 'bg-white dark:bg-[#272727] border-black/40 text-black dark:text-white'
                             }`}
                           >
                             <div className="flex items-start gap-2 flex-1">
-                              <span className="font-bold text-slate-500 shrink-0">{stmt.label})</span>
+                              <span className="font-cabinet font-extrabold text-black dark:text-white shrink-0">{stmt.label})</span>
                               <span><MathRenderer text={stmt.text} /></span>
                             </div>
 
-                            <div className="flex items-center gap-1.5 shrink-0 justify-end">
+                            <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
                               <button
                                 type="button"
                                 onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1 ${
+                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
                                   userVal === true
-                                    ? 'bg-emerald-600 text-white shadow-xs'
-                                    : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'
+                                    ? isCorrect
+                                      ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                      : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                    : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
                                 }`}
                               >
                                 <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
@@ -823,20 +835,22 @@ export default function CongNgheGHKIQuiz({
                               <button
                                 type="button"
                                 onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1 ${
+                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
                                   userVal === false
-                                    ? 'bg-rose-600 text-white shadow-xs'
-                                    : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'
+                                    ? isCorrect
+                                      ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                      : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                    : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
                                 }`}
                               >
                                 <XCircle className="w-3.5 h-3.5" /> Sai
                               </button>
 
-                              {isRevealed && (
-                                <span className={`ml-2 font-bold text-xs px-2 py-0.5 rounded ${
-                                  stmt.answer ? 'text-emerald-700 bg-emerald-100' : 'text-rose-700 bg-rose-100'
+                              {showFeedback && (
+                                <span className={`font-cabinet font-extrabold text-xs px-2.5 py-1 rounded-md border border-black ${
+                                  stmt.answer ? 'text-emerald-900 bg-emerald-200' : 'text-rose-900 bg-rose-200'
                                 }`}>
-                                  Đáp án: {stmt.answer ? 'ĐÚNG' : 'SAI'}
+                                  {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
                                 </span>
                               )}
                             </div>
@@ -846,9 +860,9 @@ export default function CongNgheGHKIQuiz({
                     </div>
 
                     {/* Explanation */}
-                    {isRevealed && q.explanation && (
-                      <div className="mt-3 p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl text-xs text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                        <span className="font-bold text-indigo-600 dark:text-indigo-400 block mb-0.5">Lời giải chi tiết:</span>
+                    {(isRevealed || Object.keys(userAnswers[q.id] || {}).length > 0) && q.explanation && (
+                      <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
+                        <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
                         <MathRenderer text={q.explanation} />
                       </div>
                     )}
@@ -879,31 +893,31 @@ export default function CongNgheGHKIQuiz({
                 const questionNumber = mcqQuestions.length + tfQuestions.length + idx + 1;
                 const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
                 const isUserAnswered = userVal.trim() !== '';
-                const isRevealed = isSubmitted || revealedSingleQuestions[q.id];
 
                 const normUser = userVal.trim().replace(/,/g, '.');
                 const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
-                const isCorrect = isRevealed ? normUser !== '' && normUser === normCorrect : null;
+                const isCorrect = isUserAnswered ? normUser !== '' && normUser === normCorrect : null;
+                const showFeedback = isRevealed || isUserAnswered;
 
                 return (
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-slate-900 p-5 rounded-2xl border transition ${
+                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-2xl border-2 border-black transition ${
                       isSubmitted
-                        ? 'border-slate-200 dark:border-slate-800'
+                        ? 'shadow-[4px_4px_0px_0px_#000]'
                         : isUserAnswered
-                        ? 'border-amber-300 dark:border-amber-800 shadow-xs'
-                        : 'border-slate-200 dark:border-slate-800'
+                        ? 'shadow-[4px_4px_0px_0px_#000] ring-2 ring-[#ffe17c]'
+                        : 'shadow-[4px_4px_0px_0px_#000]'
                     }`}
                   >
                     {/* Header */}
-                    <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-2.5 mb-3">
+                    <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
                       <div className="flex items-center gap-2">
-                        <span className="w-7 h-7 rounded-lg bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 flex items-center justify-center font-bold text-xs">
+                        <span className="w-8 h-8 rounded-lg bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs shadow-[2px_2px_0px_0px_#000]">
                           {questionNumber}
                         </span>
-                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                        <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
                           Câu {questionNumber} (Trả lời ngắn)
                         </span>
                       </div>
@@ -911,7 +925,7 @@ export default function CongNgheGHKIQuiz({
                       {!isSubmitted && (
                         <button
                           onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                          className="text-[11px] text-slate-400 hover:text-amber-600 flex items-center gap-1 font-medium"
+                          className="text-[11px] text-black dark:text-[#b7c6c2] hover:underline flex items-center gap-1 font-bold cursor-pointer"
                         >
                           {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
                           {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
@@ -920,14 +934,14 @@ export default function CongNgheGHKIQuiz({
                     </div>
 
                     {/* Stem */}
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white leading-relaxed mb-4">
+                    <div className="text-sm sm:text-base font-bold text-black dark:text-white leading-relaxed mb-4">
                       <MathRenderer text={q.stem} />
                     </div>
 
                     {/* Input box */}
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                        <label className="text-xs font-bold text-slate-700 dark:text-slate-300 shrink-0">
+                        <label className="text-xs font-cabinet font-extrabold text-black dark:text-white uppercase shrink-0">
                           Nhập kết quả:
                         </label>
                         <input
@@ -936,23 +950,20 @@ export default function CongNgheGHKIQuiz({
                           value={userVal}
                           onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
                           placeholder="Ví dụ: 351 hoặc 23,4"
-                          className={`w-full sm:w-64 px-3.5 py-2 rounded-xl text-sm font-bold border transition outline-none ${
-                            isRevealed
+                          className={`w-full sm:w-64 px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
+                            showFeedback
                               ? isCorrect
-                                ? 'bg-emerald-50 text-emerald-900 border-emerald-400 ring-2 ring-emerald-300'
-                                : 'bg-rose-50 text-rose-900 border-rose-400 ring-2 ring-rose-300'
-                              : 'bg-slate-50 dark:bg-slate-800 border-slate-300 dark:border-slate-700 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/20'
+                                ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
+                                : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
+                              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
                           }`}
                         />
-                        {isRevealed && (
+                        {showFeedback && (
                           <div className="flex items-center gap-2">
-                            <span className={`text-xs font-bold px-2.5 py-1 rounded-lg ${
-                              isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'
+                            <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
+                              isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
                             }`}>
-                              {isCorrect ? '✓ Chính xác' : '✗ Chưa đúng'}
-                            </span>
-                            <span className="text-xs font-bold text-slate-600 dark:text-slate-300">
-                              (Đáp án: <strong className="text-emerald-600">{q.correctAnswer}</strong>)
+                              {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer})`}
                             </span>
                           </div>
                         )}
@@ -960,9 +971,9 @@ export default function CongNgheGHKIQuiz({
                     </div>
 
                     {/* Explanation */}
-                    {isRevealed && q.explanation && (
-                      <div className="mt-3 p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl text-xs text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                        <span className="font-bold text-amber-600 dark:text-amber-400 block mb-0.5">Lời giải chi tiết:</span>
+                    {(showFeedback || isRevealed) && q.explanation && (
+                      <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
+                        <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
                         <MathRenderer text={q.explanation} />
                       </div>
                     )}
@@ -1036,22 +1047,23 @@ export default function CongNgheGHKIQuiz({
                       const isChosen = userAnswers[q.id] === optIdx;
                       const isCorrect = optIdx === q.correct;
 
-                      let itemStyle = 'bg-slate-50 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-100';
-                      let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300';
+                      let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20';
+                      let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black';
 
-                      if (!isRevealed) {
-                        if (isChosen) {
-                          itemStyle = 'bg-sky-50 dark:bg-sky-950/60 border-sky-500 text-sky-900 dark:text-sky-100 ring-2 ring-sky-500 shadow-sm';
-                          badgeStyle = 'bg-sky-600 text-white';
-                        }
-                      } else {
+                      if (isChosen) {
                         if (isCorrect) {
-                          itemStyle = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-400 text-emerald-900 dark:text-emerald-200 font-medium';
-                          badgeStyle = 'bg-emerald-600 text-white';
-                        } else if (isChosen && !isCorrect) {
-                          itemStyle = 'bg-rose-50 dark:bg-rose-950/40 border-rose-400 text-rose-900 dark:text-rose-200 line-through';
-                          badgeStyle = 'bg-rose-600 text-white';
+                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white ring-2 ring-emerald-500';
+                          badgeStyle = 'bg-emerald-600 text-white border-black';
+                        } else {
+                          itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 shadow-[3px_3px_0px_0px_#000] ring-2 ring-rose-500';
+                          badgeStyle = 'bg-rose-600 text-white border-black';
                         }
+                      } else if (isRevealed && isCorrect) {
+                        itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white';
+                        badgeStyle = 'bg-emerald-600 text-white border-black';
+                      } else if (userAnswers[q.id] !== undefined && isCorrect) {
+                        itemStyle = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold';
+                        badgeStyle = 'bg-emerald-600 text-white border-black';
                       }
 
                       return (
@@ -1059,12 +1071,27 @@ export default function CongNgheGHKIQuiz({
                           key={optIdx}
                           type="button"
                           onClick={() => handleSelectMCQ(q.id, optIdx)}
-                          className={`w-full flex items-start gap-3 p-3.5 rounded-2xl border text-xs sm:text-sm text-left transition ${itemStyle}`}
+                          className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition cursor-pointer ${itemStyle}`}
                         >
-                          <span className={`w-7 h-7 rounded-xl flex items-center justify-center font-bold text-xs shrink-0 ${badgeStyle}`}>
+                          <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
                             {letter}
                           </span>
                           <span className="flex-1 mt-0.5"><MathRenderer text={opt} /></span>
+                          {isChosen && isCorrect && (
+                            <span className="text-[11px] font-cabinet font-extrabold text-emerald-800 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                              <CheckCircle2 className="w-4 h-4" /> Chính xác (+1đ)
+                            </span>
+                          )}
+                          {isChosen && !isCorrect && (
+                            <span className="text-[11px] font-cabinet font-extrabold text-rose-700 dark:text-rose-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                              <XCircle className="w-4 h-4" /> Sai rồi
+                            </span>
+                          )}
+                          {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
+                            <span className="text-[11px] font-cabinet font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                              <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
+                            </span>
+                          )}
                         </button>
                       );
                     })}
@@ -1073,22 +1100,36 @@ export default function CongNgheGHKIQuiz({
                   <div className="space-y-2.5">
                     {q.statements.map(stmt => {
                       const userVal = userAnswers[q.id]?.[stmt.label];
+                      const isAnsweredThisStmt = userVal !== undefined;
+                      const isCorrect = isAnsweredThisStmt ? userVal === stmt.answer : null;
+                      const showFeedback = isRevealed || isAnsweredThisStmt;
+
                       return (
                         <div
                           key={stmt.label}
-                          className="p-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-800/40 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm"
+                          className={`p-3.5 rounded-xl border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm transition ${
+                            showFeedback
+                              ? isCorrect
+                                ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-black dark:text-white'
+                                : 'bg-rose-50 dark:bg-rose-950/40 border-rose-500 text-black dark:text-white'
+                              : 'bg-white dark:bg-[#272727] border-black/40 text-black dark:text-white'
+                          }`}
                         >
                           <div className="flex items-start gap-2 flex-1">
-                            <span className="font-bold text-slate-500 shrink-0">{stmt.label})</span>
+                            <span className="font-cabinet font-extrabold text-black dark:text-white shrink-0">{stmt.label})</span>
                             <span><MathRenderer text={stmt.text} /></span>
                           </div>
 
-                          <div className="flex items-center gap-1.5 shrink-0 justify-end">
+                          <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
                             <button
                               type="button"
                               onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
-                                userVal === true ? 'bg-emerald-600 text-white shadow-xs' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                                userVal === true
+                                  ? isCorrect
+                                    ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                    : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                  : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
                               }`}
                             >
                               <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
@@ -1096,17 +1137,21 @@ export default function CongNgheGHKIQuiz({
                             <button
                               type="button"
                               onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
-                                userVal === false ? 'bg-rose-600 text-white shadow-xs' : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300'
+                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 cursor-pointer ${
+                                userVal === false
+                                  ? isCorrect
+                                    ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                    : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
+                                  : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
                               }`}
                             >
                               <XCircle className="w-3.5 h-3.5" /> Sai
                             </button>
-                            {isRevealed && (
-                              <span className={`ml-2 font-bold text-xs px-2 py-0.5 rounded ${
-                                stmt.answer ? 'text-emerald-700 bg-emerald-100' : 'text-rose-700 bg-rose-100'
+                            {showFeedback && (
+                              <span className={`font-cabinet font-extrabold text-xs px-2.5 py-1 rounded-md border border-black ${
+                                stmt.answer ? 'text-emerald-900 bg-emerald-200' : 'text-rose-900 bg-rose-200'
                               }`}>
-                                Đáp án: {stmt.answer ? 'ĐÚNG' : 'SAI'}
+                                {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
                               </span>
                             )}
                           </div>
@@ -1116,15 +1161,17 @@ export default function CongNgheGHKIQuiz({
                   </div>
                 ) : (
                   /* Short answer in single mode */
-                  <div className="space-y-3 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border border-slate-200 dark:border-slate-700">
-                    <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
+                  <div className="space-y-3 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border-2 border-black">
+                    <label className="text-xs font-cabinet font-extrabold text-black dark:text-white block uppercase">
                       Nhập kết quả:
                     </label>
                     {(() => {
                       const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
+                      const isUserAnswered = userVal.trim() !== '';
                       const normUser = userVal.trim().replace(/,/g, '.');
                       const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
-                      const isCorrect = isRevealed ? normUser !== '' && normUser === normCorrect : null;
+                      const isCorrect = isUserAnswered ? normUser !== '' && normUser === normCorrect : null;
+                      const showFeedback = isRevealed || isUserAnswered;
 
                       return (
                         <div className="space-y-3">
@@ -1134,23 +1181,20 @@ export default function CongNgheGHKIQuiz({
                             value={userVal}
                             onChange={(e) => handleSelectShortAnswer(q.id, e.target.value)}
                             placeholder="Ví dụ: 351 hoặc 23,4"
-                            className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border transition outline-none ${
-                              isRevealed
+                            className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
+                              showFeedback
                                 ? isCorrect
-                                  ? 'bg-emerald-50 text-emerald-900 border-emerald-400 ring-2 ring-emerald-300'
-                                  : 'bg-rose-50 text-rose-900 border-rose-400 ring-2 ring-rose-300'
-                                : 'bg-white dark:bg-slate-900 border-slate-300 dark:border-slate-700 focus:border-amber-500 focus:ring-2 focus:ring-amber-400/20'
+                                  ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
+                                  : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
+                                : 'bg-white dark:bg-slate-900 border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
                             }`}
                           />
-                          {isRevealed && (
+                          {showFeedback && (
                             <div className="flex items-center gap-2">
-                              <span className={`text-xs font-bold px-2.5 py-1 rounded-lg ${
-                                isCorrect ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-700'
+                              <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
+                                isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
                               }`}>
-                                {isCorrect ? '✓ Chính xác' : '✗ Chưa đúng'}
-                              </span>
-                              <span className="text-xs font-bold text-slate-600 dark:text-slate-300">
-                                (Đáp án: <strong className="text-emerald-600">{q.correctAnswer}</strong>)
+                                {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer})`}
                               </span>
                             </div>
                           )}
