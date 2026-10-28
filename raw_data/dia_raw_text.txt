@@ -1,0 +1,262 @@
+000: [B]TRƯỜNG THPT[/B][B] NGUYỄN TRÃI[/B]
+001: [B]ĐỀ [/B][B]CƯƠNG[/B][B] GIỮA KÌ I NĂM HỌ[/B][B]C 202[/B][B]6[/B][B] - 202[/B][B]7[/B]
+002: [B]Môn: Địa lí, Lớ[/B][B]p 1[/B][B]1[/B]
+003: [B]PHẦN I[/B][B] (3,0 điểm)[/B][B]. Câu trắc nghiệm nhiều phương án lựa chọn. [/B]Mỗi câu hỏi thí sinh chỉ chọn một phương án.
+004: [B]Câu [/B][B]1[/B][B]:[/B] Dựa vào các tiêu chí chủ yếu nào sau đây để phân chia thế giới thành các nhóm nước?
+005: [B,U]A.[/B,U][B] [/B]GNI/ người, cơ cấu ngành kinh tế và chỉ số phát triển con người.
+006: [B]B. [/B]GDP/ người, đầu tư ra nước ngoài và chỉ số phát triển con người.
+007: [B]C. [/B]GNI,[B] [/B]cơ cấu ngành kinh tế và trình độ dân trí, tuổi thọ trung bình.
+008: [B]D. [/B]GDP/ người,[B] [/B]chỉ số phát triển con người và cơ cấu ngành kinh tế.
+009: [B]Câu [/B][B]2[/B][B]:[/B] Việc áp dụng ngày càng rộng rãi các tiêu chuẩn thống nhất trên phạm vi toàn cầu trong quá trình sản xuất kinh doanh là biểu hiện của
+010: [B]A.[/B] khu vực hóa kinh tế. [B]B.[/B] đô thị hóa tự phát.
+011: [B]C.[/B] cơ cấu dân số già. [B,U]D.[/B,U] toàn cầu hóa kinh tế.
+012: [B]Câu 3:[/B] Trong xu thế toàn cầu hóa kinh tế, các công ty đa quốc gia có vai trò chi phối chủ yếu đối với
+013: [B]A.[/B] thị trường tiêu thụ nội địa. [B,U]B.[/B,U] các chuỗi giá trị toàn cầu.
+014: [B]C.[/B] chính sách quốc phòng. [B]D.[/B] các quy luật tự nhiên.
+015: [B]Câu [/B][B]4[/B][B]:[/B] Quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong một khu vực trên thế giới thường dựa trên cơ sở tương đồng về
+016: [B]A.[/B] trình độ phát triển và quy mô dân số. [B,U]B.[/B,U] địa lí, văn hóa, xã hội, mục tiêu phát triển.
+017: [B]C.[/B] thể chế chính trị và tiềm lực quân sự. [B]D.[/B] hệ thống pháp luật, chính sách quốc phòng.
+018: [B]Câu [/B][B]5[/B][B].[/B] Ở các nước đang phát triển, ngành nông nghiệp thu hút nhiều lao động nhưng lại chiếm tỉ trọng nhỏ trong cơ cấu GDP là do
+019: [B]A.[/B] dân số đông và tăng nhanh.[B]B.[/B] truyền thống sản xuất lâu đời.
+020: [B,U]C.[/B,U] trình độ phát triển kinh tế thấp.[B]D.[/B] kĩ thuật canh tác lạc hậu.
+021: [B]Câu [/B][B]6[/B][B]:[/B] Tổ chức nào sau đây là một trong những tổ chức kinh tế toàn cầu được hình thành và phát triển cùng với quá trình toàn cầu hóa kinh tế?
+022: [B]A.[/B] Hiệp hội các quốc gia Đông Nam Á.
+023: [B]B.[/B] Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.
+024: [B,U]C.[/B,U] Tổ chức Thương mại Thế giới.
+025: [B]D.[/B] Liên minh châu Âu.
+026: [B]Câu [/B][B]7[/B][B]:[/B] Tổ chức nào sau đây đóng vai trò là trung tâm điều hòa các nỗ lực quốc tế vì các mục tiêu chung?
+027: [B,U]A.[/B,U] Liên hợp quốc.
+028: [B]B.[/B] Tổ chức Thương mại Thế giới.
+029: [B]C.[/B] Quỹ Tiền tệ Quốc tế.
+030: [B]D.[/B] Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.
+031: [B]Câu [/B][B]8[/B][B]:[/B] Nâng cao mức sống, tạo việc làm cho người dân các nước thành viên và bảo đảm các tiêu chuẩn lao động tối thiểu là mục tiêu hoạt động của
+032: [B]A.[/B] Quỹ Tiền tệ Quốc tế.
+033: [B]B.[/B] Liên hợp quốc.
+034: [B,U]C.[/B,U] Tổ chức Thương mại Thế giới.
+035: [B]D.[/B] Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.
+036: [B]Câu [/B][B]9[/B][B]:[/B] Tổ chức nào sau đây có tôn chỉ hoạt động là thúc đẩy hợp tác tiền tệ toàn cầu và bảo đảm sự ổn định tài chính?
+037: [B]A.[/B] Tổ chức Thương mại Thế giới.
+038: [B,U]B.[/B,U] Quỹ Tiền tệ Quốc tế.
+039: [B]C.[/B] Liên hợp quốc.
+040: [B]D.[/B] Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.
+041: [B]Câu [/B][B]10[/B][B]:[/B] Tổ chức nào sau đây có mục tiêu là đẩy mạnh sự giao lưu hàng hóa, dịch vụ, vốn và công nghệ trong một khu vực?
+042: [B,U]A.[/B,U] Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.                [B]B.[/B] Liên hợp quốc.
+043: [B]C.[/B] Quỹ Tiền tệ Quốc tế.                      [B]D.[/B] Tổ chức Thương mại Thế giới.
+044: [B]Câu [/B][B]11[/B][B]:[/B] Trong quá trình toàn cầu hóa kinh tế, yếu tố nào sau đây ngày càng được tự do dịch chuyển giữa các quốc gia?
+045: [B,U]A.[/B,U] Hàng hóa và dịch vụ.     [B]B.[/B] Biên giới hành chính.         [B]C.[/B] Quân đội. [B]D.[/B] Luật pháp.
+046: [B]Câu [/B][B]12[/B][B]:[/B] Thách thức to lớn của toàn cầu hóa đối với các nước đang phát triển là
+047: [B]    A. [/B]tự do hóa thương mại được mở rộng.[B,U]B.[/B,U][B] [/B]gây áp lực với tự nhiên, môi trường.
+048: [B]    C. [/B]hàng hóa có cơ hội lưu thông rộng rãi.[B]D. [/B]các quốc gia đón đầu công nghệ mới.
+049: [B]Câu 1[/B][B]3[/B][B]:[/B] Cơ cấu ngành kinh tế ở các nước đang phát triển chủ yếu chuyển dịch theo hướng
+050: [B]A.[/B] giảm nhanh tỉ trọng của các ngành dịch vụ. [B]B.[/B] tỉ trọng nông nghiệp chiếm vị trí chủ đạo.
+051: [B,U]C.[/B,U] tăng tỉ trọng của công nghiệp và dịch vụ. [B]D.[/B] tăng nhanh liên tục tỉ trọng nông nghiệp.
+052: [B]Câu 14:[/B] Việc chuyển dịch cơ cấu kinh tế sang nền kinh tế tri thức tạo động lực trực tiếp giúp các quốc gia giải quyết vấn đề nào sau đây về môi trường?
+053: [B,U]A.[/B,U] Phát triển sản xuất xanh và giảm thiểu ô nhiễm môi trường sinh thái.
+054: [B]B.[/B] Cắt giảm việc sử dụng năng lượng tái tạo, giảm phát thải khí nhà kính.
+055: [B]C.[/B] Tăng cường khai thác các nguồn tài nguyên thiên nhiên, giảm ô nhiễm.
+056: [B]D.[/B] Đơn giản hóa quy trình kiểm soát chất thải công nghiệp, bảo vệ tài nguyên.
+057: [B]Câu [/B][B]15[/B][B]:[/B] Phát biểu nào sau đây là một trong những biểu hiện của khu vực hóa kinh tế?
+058: [B]A.[/B] Các tiêu chuẩn toàn cầu được áp dụng ngày càng rộng rãi.
+059: [B]B.[/B] Các công ty đa quốc gia mở rộng phạm vi sản xuất toàn cầu.
+060: [B,U]C.[/B,U] Gia tăng số lượng và quy mô của các tổ chức khu vực.
+061: [B]D.[/B] Các giao dịch thương mại quốc tế tăng lên nhanh chóng.
+062: [B]Câu [/B][B]16[/B][B]:[/B] Vấn đề nào dưới đây là vấn đề an ninh truyền thống?
+063: [B]     [/B][B]A.[/B] An ninh năng lượng.[B,U]B.[/B,U][B] [/B]An ninh quân sự.
+064: [B]     [/B][B]C.[/B] An ninh mạng.[B]D. [/B]An ninh nguồn nước.
+065: [B]Câu [/B][B]17[/B][B]:[/B] Vấn đề nào dưới đây là vấn đề an ninh phi truyền thống?
+066: [B]     [/B][B]A.[/B] An ninh chính trị.[B]B. [/B]An ninh quân sự.
+067: [B]     [/B][B]C.[/B] Chiến tranh, xung đột vũ trang.[B,U]D.[/B,U][B] [/B]An ninh lương thực.
+068: [B]Câu [/B][B]18[/B][B]:[/B] Phát biểu nào sau đây [B]không [/B]đúng với Tổ chức Thương mại Thế giới (WTO)?
+069: [B]     [/B][B]A. [/B]Là một tổ chức phi chính phủ lớn trên thế giới.      [B]B. [/B]Có 164 nước tham gia thành viên (năm 2021).
+070: [B]    [/B][B]C. [/B]Chi phối phần lớn hoạt động thương mại thế giới.   [B,U]D.[/B,U][B] [/B]Làm sâu sắc sự khác biệt giữa các nhóm nước.
+071: [B]Câu 1[/B][B]9[/B][B]:[/B] Giải pháp mang tính cấp bách khi giải quyết vấn đề khủng hoảng an ninh ương thực là
+072: [B]    [/B][B,U]A.[/B,U][B] [/B]cung cấp lương thực và cứu trợ nhân đạo.         [B]B. [/B]tăng năng suất và phát triển bền vững.
+073: [B]    [/B][B]C. [/B]phát huy vai trò của các tổ chức quốc tế.         [B]D. [/B]bình ổn giá, ưu tiên hàng lương thực.
+074: [B]Câu 2[/B][B]0[/B][B].[/B] Hiện nay, nguồn nước ngọt ở nhiều nơi trên thế giới bị ô nhiễm nghiêm trọng, nguyên nhân chủ yếu là do
+075: [B]     [/B][B,U]A.[/B,U] Chất thải công nghiệp chưa qua xử lí.[B]B[/B]. Chất thải trong sản xuất nông nghiệp
+076: [B]     [/B][B]C[/B]. Nước xả từ các nhà máy thủy điện[B]D.[/B] Khai thác và vận chuyển dầu mỏ. và[B] [/B]
+077: [B]Câu 21. [/B]Mỹ La-tinh nằm giữa hai đại dương lớn là
+078: [B]     [/B][B]A. [/B]Đại Tây Dương và Ấn Độ Dương.[B]B. [/B]Bắc Băng Dương và[B] [/B]Ấn Độ Dương.
+079: [B]     [/B][B,U]C[/B,U][B].[/B] Đại Tây Dương và Thái Bình Dương.[B]D. [/B]Thái Bình Dương và Bắc Băng Dương.
+080: [B]Câu 22:[/B] Phát biểu nào sau đây [B]không [/B]đúng về kinh tế khu vực Mỹ La-tinh?
+081: [B]     [/B][B]A. [/B]Tổng GDP của toàn khu vực ở mức thấp.[B]B. [/B]Chênh lệch lớn về GDP giữa các nước.
+082: [B]     [/B][B]C. [/B]Có nhiều quốc gia nợ nước ngoài rất lớn.[B,U]D.[/B,U][B] [/B]Tốc độ tăng trưởng GDP luôn rất nhanh.
+083: [B]Câu [/B][B]23[/B][B]:[/B] Kinh tế của khu vực Mỹ La-tinh có sự chuyển dịch theo hướng chủ yếu nào sau đây?
+084: [B]A.[/B] Tăng nhanh tỉ trọng ngành nông nghiệp. [B,U]B.[/B,U] Tăng tỉ trọng của ngành dịch vụ.
+085: [B]C.[/B] Tỉ trọng ngành công nghiệp giảm rất nhanh. [B]D.[/B] Giảm mạnh tỉ trọng của ngành dịch vụ.
+086: [B]Câu [/B][B]24[/B][B]:[/B] Quá trình đô thị hóa ở khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?
+087: [B]A.[/B] Gắn liền chặt chẽ với công nghiệp hóa.
+088: [B]B.[/B] Mạng lưới đô thị phân bố rất đồng đều.
+089: [B,U]C.[/B,U] Gắn với nhập cư và lịch sử khai thác lãnh thổ.
+090: [B]D.[/B] Chỉ phân bố ở những khu vực đồng bằng rộng.
+091: [B]Câu [/B][B]25[/B][B]:[/B] Thành phần dân cư của khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?
+092: [B,U]A.[/B,U] Đa dạng về chủng tộc và có nhiều người lai. [B]B.[/B] Chủ yếu là người nhập cư từ Hoa Kỳ đến.
+093: [B]C.[/B] Người da trắng chính là người dân bản địa.[B]D.[/B] Có cơ cấu dân số già mức cao nhất thế giới.
+094: [B]Câu [/B][B]26[/B][B]:[/B] Nhóm nước phát triển thường có chỉ số phát triển con người (HDI) ở mức cao chủ yếu do
+095: [B]A.[/B] quy mô dân số đông và diện tích lãnh thổ rộng.
+096: [B,U]B.[/B,U] mức sống cao; kinh tế; giáo dục, y tế phát triển.
+097: [B]C.[/B] tỉ lệ tăng dân số cao và có cơ cấu dân số trẻ.
+098: [B]D.[/B] nguồn tài nguyên thiên nhiên rất phong phú.
+099: [B]Câu [/B][B]27[/B][B]:[/B] Giải pháp chủ yếu giúp các doanh nghiệp sản xuất tối ưu hóa nguồn lực và hạn chế rủi ro trong nền kinh tế tri thức là
+100: [B]A.[/B] mở rộng quy mô nhà xưởng và sử dụng nhiều lao động phổ thông.
+101: [B]B.[/B] tập trung khai thác triệt để các nguồn tài nguyên thiên nhiên sẵn có.
+102: [B,U]C.[/B,U] đẩy mạnh ứng dụng công nghệ và sản xuất theo nhu cầu thị trường.
+103: [B]D.[/B] duy trì mẫu mã và quy trình sản xuất để hạn chế chi phí phát sinh.
+104: [B]Câu [/B][B]28[/B][B]:[/B] Sự phát triển kinh tế của nhiều quốc gia khu vực Mỹ La-tinh không ổn định chủ yếu do
+105: [B]A.[/B] nguồn tài nguyên thiên nhiên nghèo nàn. [B]B.[/B] thiếu hụt nghiêm trọng lực lượng lao động.
+106: [B]C.[/B] không tiếp giáp với các tuyến đường biển. [B,U]D.[/B,U] nền kinh tế phụ thuộc vào nước ngoài.
+107: [B]Câu [/B][B]2[/B][B]9:[/B] Phát biểu nào sau đây đúng với đặc điểm đô thị hóa ở Mỹ La-tinh?
+108: [B,U]A. [/B,U]Quá trình đô thị hóa sớm.[B]B. [/B]Tỉ lệ dân thành thị giảm.
+109: [B]C. [/B]Không có các đô thị lớn.[B]D. [/B]Phân bố đô thị đồng đều.
+110: [B]Câu [/B][B]30[/B][B]:[/B] Khu vực Mỹ La tinh có
+111: [B]A. [/B]cơ cấu dân số rất già, quy mô giảm.[B]B. [/B]gia tăng dân số rất cao, dân trẻ hóa.
+112: [B,U]C. [/B,U]dân số đông và đang có sự già hóa.[B]D. [/B]gia tăng dân số thấp, quy mô giảm.
+113: [B]Câu [/B][B]31[/B][B]:[/B] Vấn đề dân cư - xã hội đáng quan tâm nhất ở Mỹ La-tinh là
+114: [B]     [/B][B]A. [/B]có nhiều siêu đô thị dân đông.       [B]B. [/B]tỉ lệ thất nghiệp ở thành thị cao.
+115: [B]    [/B][B]C. [/B]dân nông thôn vào đô thị đông.        [B,U]D.[/B,U][B] [/B]chênh lệch giàu nghèo rất lớn.
+116: [B]Câu [/B][B]32[/B][B]:[/B] Hình thức tổ chức sản xuất nông nghiệp chủ yếu ở khu vực Mỹ La-tinh là
+117: [B]    [/B][B]A. [/B]hộ gia đình.[B]B. [/B]hợp tác xã.[B,U]C.[/B,U][B] [/B]trang trại.[B]D. [/B]du canh du cư.
+118: [B]Câu [/B][B]33[/B][B]:[/B] Sản phẩm nông nghiệp nổi bật nhất của Mỹ La-tinh là
+119: [B]    [/B][B]A. [/B]lương thực.[B,U]B.[/B,U][B] [/B]cây công nghiệp.[B]C. [/B]thực phẩm.[B]D. [/B]gia súc.
+120: [B]Câu [/B][B]34[/B][B]:[/B] Phía đông các đảo của quần đảo Ăng-ti do có nhiều mưa nên phát triển mạnh
+121: [B]    [/B][B]A. [/B]rừng thưa.[B]B. [/B]cây bụi.[B,U]C.[/B,U][B] [/B]rừng rậm.[B]D. [/B]xavan.
+122: [B]Câu [/B][B]35[/B][B]:[/B] Phía tây Mỹ La-tinh có thuận lợi chủ yếu cho phát triển ngành kinh tế nào sau đây?
+123: [B]    [/B][B,U]A.[/B,U][B] [/B]Thủy điện.[B]B. [/B]Trồng trọt.
+124: [B]    [/B][B]C. [/B]Khai thác thủy sản.[B]D. [/B]Nuôi trồng thủy sản.
+125: [B]PHẦN II[/B][B] (2,0 điểm)[/B][B]. Câu trắc nghiệm đúng sai.[/B] Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn đúng hoặc sai.
+126: [B]Câu 1:[/B] Cho thông tin sau:
+127: Toàn cầu hóa kinh tế là quá trình liên kết các quốc gia trên thế giới về nhiều mặt, từ kinh tế đến văn hóa, khoa học. Quá trình này làm cho các dòng hàng hóa, dịch vụ, vốn và lao động ngày càng tự do di chuyển giữa các nước. Bên cạnh việc thúc đẩy tăng trưởng kinh tế toàn cầu, toàn cầu hóa cũng làm gia tăng sự phụ thuộc lẫn nhau về kinh tế giữa các quốc gia.
+128: [B,U]a)[/B,U] Toàn cầu hóa kinh tế tạo điều kiện thuận lợi cho các dòng vốn và lao động dịch chuyển giữa các nước.
+129: [B]b)[/B] Quá trình toàn cầu hóa kinh tế làm giảm bớt sự phụ thuộc lẫn nhau về mặt kinh tế giữa các quốc gia.
+130: [B,U]c)[/B,U] Các công ty đa quốc gia giữ vai trò chi phối các chuỗi giá trị toàn cầu trong xu thế toàn cầu hóa.
+131: [B,U]d)[/B,U] Việc chủ động hội nhập toàn cầu hóa kinh tế giúp các nước đang phát triển tranh thủ nguồn vốn và công nghệ để chuyển dịch cơ cấu kinh tế theo hướng hiện đại.
+132: [B]Câu 2:[/B] Cho thông tin sau:
+133: Khu vực hóa kinh tế là quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong các khu vực trên thế giới trên cơ sở tương đồng về địa lí, văn hóa, xã hội hoặc có chung mục tiêu phát triển. Sự hình thành các tổ chức liên kết khu vực giúp tạo lập thị trường sản xuất và tiêu dùng rộng lớn, thúc đẩy thương mại nội khối và gia tăng sức cạnh tranh của khu vực.
+134: [B,U]a)[/B,U] Khu vực hóa kinh tế là sự liên kết giữa các quốc gia dựa trên sự tương đồng về địa lí, văn hóa hoặc mục tiêu phát triển.
+135: [B,U]b)[/B,U] Quá trình khu vực hóa kinh tế làm gia tăng số lượng và quy mô của các tổ chức liên kết khu vực.
+136: [B]c)[/B] Khu vực hóa kinh tế giúp dỡ bỏ hoàn toàn các rào cản thương mại đối với các nước nằm trong một khu vực.
+137: [B,U]d)[/B,U] Việc tham gia vào các tổ chức liên kết kinh tế khu vực giúp Việt Nam mở rộng thị trường xuất khẩu nhưng cũng đặt ra thách thức lớn về sức cạnh tranh cho các doanh nghiệp trong nước.
+138: [B,C(303030)]Câu 3:[/B,C(303030)][C(303030)] [/C(303030)]Các công ty xuyên quốc gia ngày càng mở rộng phạm vi hoạt động. Hệ thống các công ty xuyên quốc gia đã có mặt ở nhiều nước tạo nên sự liên kết chặt chẽ góp phần làm cho quá trình toàn cầu hóa trở nên sâu sắc hơn.
+139: [B,U]a)[/B,U] Các công ty xuyên quốc gia là 1 trong những nhân tố thúc đẩy toàn cầu hóa.
+140: [B]b)[/B] Các công ty xuyên quốc gia chủ yếu tham gia lĩnh vực tài chính, công nghệ.
+141: [B,C(000000)]c)[/B,C(000000)][C(000000)] [/C(000000)][C(000000)]Các công ty xuyên quốc gia tham gia chuỗi liên kết chủ yếu ở các nước đang phát triển. [/C(000000)]
+142: [B,U,C(000000)]d)[/B,U,C(000000)][C(000000)] [/C(000000)][C(000000)]Các công ty xuyên quốc gia chi phối và kiểm soát hoạt động thương mại thế giới. [/C(000000)]
+143: [B,C(303030)]Câu [/B,C(303030)][B,C(303030)]4[/B,C(303030)][B,C(303030)]:[/B,C(303030)][C(303030)] Cho thông tin sau:[/C(303030)]
+144: [C(303030)]An ninh năng lượng và an ninh nguồn nước là những vấn đề an ninh phi truyền thống quan trọng mà thế giới đang phải đối mặt. Sự suy giảm tài nguyên, biến đổi khí hậu và nhu cầu tiêu thụ gia tăng đang đe dọa trực tiếp đến nguồn cung cấp năng lượng cũng như việc tiếp cận nguồn nước sạch của người dân ở nhiều quốc gia.[/C(303030)]
+145: [B,U,C(303030)]a)[/B,U,C(303030)][C(303030)] An ninh năng lượng là sự bảo đảm đầy đủ năng lượng dưới nhiều hình thức khác nhau phục vụ cho nhu cầu con người và phát triển kinh tế. [/C(303030)]
+146: [B,U,C(303030)]b)[/B,U,C(303030)][C(303030)] Sử dụng tiết kiệm năng lượng và đẩy mạnh phát triển năng lượng tái tạo là giải pháp quan trọng nhằm bảo đảm an ninh năng lượng. [/C(303030)]
+147: [B,U,C(303030)]c)[/B,U,C(303030)][C(303030)] Các quốc gia cùng chia sẻ một lưu vực sông cần tăng cường hợp tác và phối hợp kiểm soát nguồn nước nhằm hạn chế nguy cơ cạn kiệt tài nguyên và mâu thuẫn quốc gia.[/C(303030)]
+148: [B,C(303030)]d)[/B,C(303030)][C(303030)] Việc bảo đảm đủ nước phục vụ cho sản xuất nông nghiệp là đã đảm bảo được an ninh nguồn nước. [/C(303030)]
+149: [B]Câu [/B][B]5[/B][B]:[/B] Cho thông tin sau:
+150: An ninh mạng là sự bảo đảm hoạt động trên không gian mạng không gây hại đến an ninh quốc gia, trật tự, an toàn xã hội, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân. Sự phát triển mạnh mẽ của công nghệ thông tin khiến an ninh mạng trở thành một thách thức lớn đối với tất cả các quốc gia, đòi hỏi sự phối hợp và hợp tác quốc tế chặt chẽ để phòng chống các hoạt động tấn công mạng.
+151: [B]a)[/B] Mất an ninh mạng gây ảnh hưởng đến lĩnh vực quân sự, không tác động đến phát triển kinh tế và đời sống xã hội.
+152: [B,U]b)[/B,U] An ninh mạng là sự bảo đảm các hoạt động trên không gian mạng không gây hại đến an ninh quốc gia và trật tự xã hội.
+153: [B,U]c)[/B,U] Tăng cường hợp tác quốc tế và hoàn thiện thể chế pháp luật là những giải pháp quan trọng để bảo vệ an ninh mạng.
+154: [B,U]d)[/B,U] Sự phụ thuộc ngày càng lớn của nền kinh tế vào hạ tầng kĩ thuật số khiến rủi ro mất an ninh mạng có thể gây ra những tổn thất diện rộng đối với nhiều quốc gia.
+155: [B]Câu [/B][B]6[/B][B]: [/B][B]Cho thông tin:[/B]
+156: Theo số liệu của liên hợp quốc, hiện có 138 quốc gia (trong đó có 95 nước đang phát triển) ban hành Luật An ninh mạng. Việt Nam đã ban hành Luật An ninh mạng năm 2018 để quy định về hoạt động và bảo vệ an ninh quốc gia và bảo đảm trật tự, an toàn xã hội trên không gian mạng; trách nhiệm của cơ quan, tổ chức cá nhân có liên quan.
+157: [B,U]a)[/B,U] Sự bùng nổ công nghệ thông tin trở thành thách thức lớn về an ninh quốc gia.
+158: [B]b)[/B] Các cuộc tấn công vào hệ thống hạ tầng thông tin, truyền thông quốc gia chỉ gây ảnh hưởng đến an ninh quốc gia.
+159: [B,U]c)[/B,U] Các cuộc tấn công mạng  xuyên quốc gia có thể gay thiệt hại đến nền kinh tế toàn cầu.
+160: [B]d)[/B] Luật An ninh mạng từng quốc xây dựng riêng để đảm bảo bí mật, an toàn, an ninh quốc gia.
+161: [B]Câu [/B][B]7[/B][B]: [/B][B]Cho bảng số liệu sau:[/B]
+162: TRỊ GIÁ XUẤT NHẬP KHẨU HÀNG HÓA VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN
+163: 2000 - 2020
+164: ( Đơn vị: Tỉ USD)
+165: [B]N[/B][B]ăm[/B]
+166: [B]2000[/B]
+167: [B]2005[/B]
+168: [B]2010[/B]
+169: [B]2015[/B]
+170: [B]2019[/B]
+171: [B]2020[/B]
+172: Xuất Khẩu
+173: 7 961,7
+174: 13 014,0
+175: 19 009,0
+176: 21 341,8
+177: 24 970,7
+178: 22 594,7
+179: Nhập Khẩu
+180: 7 927,2
+181: 12 804,0
+182: 18 467,2
+183: 20 815,8
+184: 24 418,2
+185: 21 949, 6
+186: ( Nguồn : Ngân hàng Thế giới, 2022)
+187: [B]a)[/B] Giá trị xuất khẩu hàng hóa và dịch vụ toàn thế giới giai đoạn 2000 - 2020 tăng liên tục.
+188: [B,U]b)[/B,U] Giá trị xuất khẩu hàng hóa luôn lớn hơn giá trị nhập khẩu giai đoạn 2000 - 2020.[B] [/B]
+189: [B,U]c)[/B,U] Giá xuất nhập khẩu hàng hóa và dịch vụ toàn thế ngày càng tăng biểu hiện của toàn cầu hóa.
+190: [B]d)[/B] Hoạt động thương mại có tốc độ tăng trưởng cao giai đoạn 2000 - 2020 tăng 560%.
+191: [B]Câu 8. Cho bảng số liệu sau:[/B]
+192: TRỊ GIÁ XUẤT, NHẬP KHẨU HÀNG HOÁ VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 – 2020
+193: (Đơn vị: tỉ USD)
+194: [B]Năm[/B]
+195: [B]Xuất khẩu[/B]
+196: [B]Nhập khẩu[/B]
+197: 2000
+198: 7 961,7
+199: 7 982,3
+200: 2010
+201: 19 009,0
+202: 18 467,2
+203: 2019
+204: 24 970,7
+205: 24 418,2
+206: 2020
+207: 22 594,7
+208: 21 949,6
+209: (Nguồn: WB, 2022)
+210: [B]a)[/B] Giá trị xuất khẩu tăng nhanh và liên tục.
+211: [B]b)[/B] Cán cân xuất nhập khẩu luôn dương.
+212: [B,U]c)[/B,U] Giá trị nhập khẩu tăng gấp 2,7 lần giai đoạn 2000 - 2020
+213: [B,U]d)[/B,U] Giá trị xuất khẩu tăng nhiều hơn giá trị nhập khẩu giai đoạn 2000 - 2020
+214: [B]Phần III[/B][B] (2,0 điểm)[/B][B]. Câu trắc nghiệm yêu cầu trả lời ngắn.[/B]
+215: [B]Câu 1:[/B] Năm 2024, số dân thế giới là 8141,8 triệu người, sản lượng lương thực có hạt của thế giới là 2854 triệu tấn. Hãy cho biết bình quân lương thực có hạt theo đầu người của thế giới năm 2024 là bao nhiêu kg/người. (làm tròn kết quả đến hàng đơn vị).
+216: [B]Đáp án: 351[/B]
+217: [B]Câu 2: [/B]Cho bảng số liệu:
+218: [B]Trị giá xuất khẩu hàng hóa và dịch vụ của Mông Cổ và Đan Mạch, năm 2020 và năm 2024[/B]
+219: (Đơn vị: Tỷ USD)
+220: [B]Năm[/B]
+221: [B]2020[/B]
+222: [B]2024[/B]
+223: Mông Cổ
+224: 7,7
+225: 16,4
+226: Đan Mạch
+227: 195,7
+228: 301,4
+229: (Nguồn: Cục Thống kê Việt Nam, năm 2025)
+230: Căn cứ vào bảng số liệu trên, hãy cho biết tốc độ tăng trưởng trị giá xuất khẩu năm 2024 so với năm 2020 của Mông Cổ cao hơn của Đan Mạch bao nhiêu phần trăm (coi năm 2020 của mỗi nước = 100%) (làm tròn kết quả đến hàng đơn vị).
+231: [B]Đáp án: 59[/B]
+232: [B]Câu 3: [/B]Tổng trị giá xuất nhập khẩu và cán cân xuất nhập khẩu của thế giới năm 2024 lần lượt là 47,2 nghìn tỷ USD và -0,4 nghìn tỷ USD. Hãy cho biết trị giá xuất khẩu của thế giới năm 2024 là bao nhiêu nghìn tỷ USD (làm tròn kết quả đến một chữ số thập phân).
+233: [B]Đáp án: 23,4[/B]
+234: [B]Câu [/B][B]4[/B][B]: [/B]Năm 2024, trị giá xuất khẩu lĩnh vực dịch vụ của Hoa Kỳ đạt 1200 tỉ USD. Trong đó thương mại số chiếm 60%. Hãy cho biết lĩnh vực thương mại số của Hoa Kỳ có trị giá là bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).
+235: [B]Đáp án: 720[/B]
+236: [B]Câu [/B][B]5[/B][B]:[/B] Năm 2018 và năm 2024, sản lượng tiêu thụ khí tự nhiên của thế giới lần lượt là 3831,7 tỉ m3 và 4127,8 tỉ m3. Hãy cho biết, sản lượng tiêu thụ khí tự nhiên của thế giới năm 2024 so với năm 2018 tăng thêm bao nhiêu tỉ m3 (làm tròn kết quả đến hàng đơn vị).
+237: [B]Đáp án: 296[/B]
+238: [B]Câu [/B][B]6:[/B] Năm 2019 giá trị xuất khẩu toàn thế giới là 24 791,1 tỉ USD; giá trị nhập khẩu là 24 348,1 tỉ USD. Tính cán cân xuất nhập khẩu của toàn thế giới năm 2019. (làm tròn kết quả đến hàng đơn vị của tỉ USD)
+239: [B]Đáp án:   [/B][B]443[/B]
+240: [B]Câu [/B][B]7[/B][B]: [/B]Cho bảng số liệu:
+241: [B]Tổng dự trữ quốc tế của Hoa Kỳ và Nam Phi, năm 2020 và năm 2024[/B]
+242: (Đơn vị: Tỷ USD)
+243: [B]Năm[/B]
+244: [B]2020[/B]
+245: [B]2024[/B]
+246: Hoa Kỳ
+247: 133,8
+248: 227,8
+249: Nam Phi
+250: 47,4
+251: 54,9
+252: (Nguồn: Cục Thống kê Việt Nam, năm 2025)
+253: [C(000000)]Căn cứ vào bảng số liệu trên, hãy cho biết năm 2024 so với năm 2020, tổng dự trữ quốc tế của Hoa Kỳ tăng nhiều hơn của Nam Phi bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).[/C(000000)]
+254: [B,C(000000)]Đáp án: 87[/B,C(000000)]
+255: [B]Câu 8. [/B]Năm 2020, dân số của Mĩ La-tinh là 652,3 triệu người, trong đó dân số trong độ tuổi lao động là 438,3 triệu người. Tính tỉ lệ dân số trong độ tuổi lao động của Mĩ La-tinh năm 2020 (làm tròn đến hàng đơn vị của %).
+256: [B]Đáp án:  [/B][B]67,2[/B]
+257: [B]Phần IV (3,0 điểm). Tự luận[/B]
+258: 1. Phân tích ảnh hưởng của phạm vi lãnh thổ và vị trí địa lí đến sự phát triển kinh tế - xã hội của Mỹ La Tinh
+259: 2. Phân tích những thuận lợi của điều kiện tự nhiên và TNTN đến sự phát ngành nông nghiệp và công nghiệp của Mỹ La Tinh.
+260: 2. Vẽ biểu đồ (cột, đường) nhận xét và giải thích
+261: [B]…………………HẾT……………….[/B]

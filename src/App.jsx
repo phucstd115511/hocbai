@@ -7,6 +7,7 @@ import PracticeRoom from './components/practice/PracticeRoom.jsx';
 import CongNgheGHKIQuiz from './components/practice/CongNgheGHKIQuiz.jsx';
 import StatsView from './components/stats/StatsView.jsx';
 import SettingsView from './components/settings/SettingsView.jsx';
+import NeoLandingPage from './components/landing/NeoLandingPage.jsx';
 
 import { 
   getStoredData, 
@@ -155,83 +156,87 @@ export default function App() {
         examCount={data.exams.length}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {(activeTab === 'quiz' || activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
-          <CongNgheGHKIQuiz
-            initialSubjectId={activeTab === 'gdqp_ghki' ? 'sub_gdqp11' : 'sub_congnghe_ghki'}
-            allQuestions={data.questions}
-            subjects={data.subjects}
-            onSaveAttempt={handleSaveAttempt}
-          />
-        )}
+      {activeTab === 'landing' ? (
+        <NeoLandingPage onEnterApp={() => setActiveTab('quiz')} />
+      ) : (
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          {(activeTab === 'quiz' || activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
+            <CongNgheGHKIQuiz
+              initialSubjectId={activeTab === 'gdqp_ghki' ? 'sub_gdqp11' : 'sub_congnghe_ghki'}
+              allQuestions={data.questions}
+              subjects={data.subjects}
+              onSaveAttempt={handleSaveAttempt}
+            />
+          )}
 
-        {activeTab === 'questions' && (
-          <QuestionBank
-            questions={data.questions}
-            subjects={data.subjects}
-            onSaveQuestion={handleSaveQuestion}
-            onDeleteQuestion={handleDeleteQuestion}
-            onCloneQuestion={handleCloneQuestion}
-            onToggleFavorite={handleToggleFavorite}
-          />
-        )}
+          {activeTab === 'questions' && (
+            <QuestionBank
+              questions={data.questions}
+              subjects={data.subjects}
+              onSaveQuestion={handleSaveQuestion}
+              onDeleteQuestion={handleDeleteQuestion}
+              onCloneQuestion={handleCloneQuestion}
+              onToggleFavorite={handleToggleFavorite}
+            />
+          )}
 
-        {activeTab === 'syllabus' && (
-          <SyllabusManager
-            subjects={data.subjects}
-            onUpdateSubjects={handleUpdateSubjects}
-            onSaveQuestion={handleSaveQuestion}
-            existingQuestions={data.questions}
-            geminiApiKey={data.settings.geminiApiKey}
-          />
-        )}
+          {activeTab === 'syllabus' && (
+            <SyllabusManager
+              subjects={data.subjects}
+              onUpdateSubjects={handleUpdateSubjects}
+              onSaveQuestion={handleSaveQuestion}
+              existingQuestions={data.questions}
+              geminiApiKey={data.settings.geminiApiKey}
+            />
+          )}
 
-        {activeTab === 'exams' && (
-          <ExamManager
-            exams={data.exams}
-            questions={data.questions}
-            subjects={data.subjects}
-            onSaveExam={handleSaveExam}
-            onDeleteExam={handleDeleteExam}
-            onStartPractice={handleStartPractice}
-          />
-        )}
+          {activeTab === 'exams' && (
+            <ExamManager
+              exams={data.exams}
+              questions={data.questions}
+              subjects={data.subjects}
+              onSaveExam={handleSaveExam}
+              onDeleteExam={handleDeleteExam}
+              onStartPractice={handleStartPractice}
+            />
+          )}
 
-        {activeTab === 'practice' && (
-          <PracticeRoom
-            exams={data.exams}
-            questions={data.questions}
-            subjects={data.subjects}
-            attempts={data.attempts}
-            scoringMode={data.settings.scoringMode}
-            initialExam={selectedExamForPractice}
-            onSaveAttempt={handleSaveAttempt}
-            onSaveExam={handleSaveExam}
-            onNavigateToStats={() => setActiveTab('stats')}
-          />
-        )}
+          {activeTab === 'practice' && (
+            <PracticeRoom
+              exams={data.exams}
+              questions={data.questions}
+              subjects={data.subjects}
+              attempts={data.attempts}
+              scoringMode={data.settings.scoringMode}
+              initialExam={selectedExamForPractice}
+              onSaveAttempt={handleSaveAttempt}
+              onSaveExam={handleSaveExam}
+              onNavigateToStats={() => setActiveTab('stats')}
+            />
+          )}
 
-        {activeTab === 'stats' && (
-          <StatsView
-            attempts={data.attempts}
-            exams={data.exams}
-            questions={data.questions}
-            subjects={data.subjects}
-            onSaveExam={handleSaveExam}
-            onStartPractice={handleStartPractice}
-          />
-        )}
+          {activeTab === 'stats' && (
+            <StatsView
+              attempts={data.attempts}
+              exams={data.exams}
+              questions={data.questions}
+              subjects={data.subjects}
+              onSaveExam={handleSaveExam}
+              onStartPractice={handleStartPractice}
+            />
+          )}
 
-        {activeTab === 'settings' && (
-          <SettingsView
-            settings={data.settings}
-            onUpdateSettings={(newSettings) => setData(prev => ({ ...prev, settings: newSettings }))}
-            onDataReloaded={reloadDataFromStorage}
-            theme={theme}
-            toggleTheme={toggleTheme}
-          />
-        )}
-      </main>
+          {activeTab === 'settings' && (
+            <SettingsView
+              settings={data.settings}
+              onUpdateSettings={(newSettings) => setData(prev => ({ ...prev, settings: newSettings }))}
+              onDataReloaded={reloadDataFromStorage}
+              theme={theme}
+              toggleTheme={toggleTheme}
+            />
+          )}
+        </main>
+      )}
     </div>
   );
 }

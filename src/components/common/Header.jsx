@@ -10,7 +10,8 @@ import {
   Moon,
   Database,
   Shield,
-  Wrench
+  Wrench,
+  Sparkles
 } from 'lucide-react';
 
 export default function Header({ 
@@ -22,6 +23,12 @@ export default function Header({
   examCount = 0 
 }) {
   const navItems = [
+    { 
+      id: 'landing', 
+      label: 'Giới thiệu Neo', 
+      shortLabel: 'Neo', 
+      icon: Sparkles 
+    },
     { 
       id: 'quiz', 
       label: 'Làm bài thi', 
