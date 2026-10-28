@@ -17,7 +17,7 @@ import { generateId } from './types/schema.js';
 
 export default function App() {
   const [data, setData] = useState(() => getStoredData());
-  const [activeTab, setActiveTab] = useState('congnghe_ghki');
+  const [activeTab, setActiveTab] = useState('quiz');
   const [theme, setTheme] = useState(() => {
     const saved = getStoredData().settings?.theme;
     if (saved) return saved;
@@ -156,10 +156,9 @@ export default function App() {
       />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        {(activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
+        {(activeTab === 'quiz' || activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
           <CongNgheGHKIQuiz
             initialSubjectId={activeTab === 'gdqp_ghki' ? 'sub_gdqp11' : 'sub_congnghe_ghki'}
-            onSwitchSubject={(subId) => setActiveTab(subId === 'sub_gdqp11' ? 'gdqp_ghki' : 'congnghe_ghki')}
             allQuestions={data.questions}
             subjects={data.subjects}
             onSaveAttempt={handleSaveAttempt}
