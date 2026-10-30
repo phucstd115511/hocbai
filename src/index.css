@@ -176,3 +176,47 @@
   animation-play-state: paused;
 }
 
+/* Water Ripple Theme Transition Animation */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Fallback ripple overlay if View Transition is not supported */
+@keyframes ripple-wave {
+  0% {
+    clip-path: circle(0px at var(--ripple-x, 50%) var(--ripple-y, 50%));
+    opacity: 1;
+  }
+  45% {
+    clip-path: circle(35vmax at var(--ripple-x, 50%) var(--ripple-y, 50%));
+    opacity: 1;
+  }
+  55% {
+    clip-path: circle(35vmax at var(--ripple-x, 50%) var(--ripple-y, 50%));
+    opacity: 1;
+  }
+  100% {
+    clip-path: circle(150vmax at var(--ripple-x, 50%) var(--ripple-y, 50%));
+    opacity: 1;
+  }
+}
+
+.theme-ripple-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 99999;
+  animation: ripple-wave 0.85s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+

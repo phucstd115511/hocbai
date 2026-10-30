@@ -35,8 +35,71 @@ export default function App() {
     }
   }, [theme]);
 
-  const toggleTheme = () => {
+  const toggleTheme = (event) => {
     const next = theme === 'dark' ? 'light' : 'dark';
+
+    // Tính toán tọa độ tâm xuất phát từ icon/nút click
+    let x = window.innerWidth - 40;
+    let y = 32;
+    if (event && event.currentTarget) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      x = rect.left + rect.width / 2;
+      y = rect.top + rect.height / 2;
+    } else if (event && event.clientX) {
+      x = event.clientX;
+      y = event.clientY;
+    }
+
+    const endRadius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y)
+    );
+
+    // Nếu trình duyệt hỗ trợ View Transitions API (Chrome 111+, Edge, Safari 18+)
+    if (document.startViewTransition) {
+      const transition = document.startViewTransition(() => {
+        setTheme(next);
+        const updatedSettings = { ...data.settings, theme: next };
+        saveSettings(updatedSettings);
+        setData(prev => ({ ...prev, settings: updatedSettings }));
+        if (next === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      });
+
+      transition.ready.then(() => {
+        // Hiệu ứng loang sóng nước hình tròn:
+        // Loang từ tâm icon đến ~30% trong 0.4s (400ms), dừng ngưng 1 nhịp (0.1s), rồi loang hết toàn màn hình
+        document.documentElement.animate(
+          [
+            {
+              clipPath: `circle(0px at ${x}px ${y}px)`
+            },
+            {
+              clipPath: `circle(${endRadius * 0.35}px at ${x}px ${y}px)`,
+              offset: 0.45
+            },
+            {
+              clipPath: `circle(${endRadius * 0.35}px at ${x}px ${y}px)`,
+              offset: 0.55
+            },
+            {
+              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)`
+            }
+          ],
+          {
+            duration: 900,
+            easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+            pseudoElement: '::view-transition-new(root)'
+          }
+        );
+      });
+      return;
+    }
+
+    // Fallback cho trình duyệt cũ
     setTheme(next);
     const updatedSettings = { ...data.settings, theme: next };
     saveSettings(updatedSettings);

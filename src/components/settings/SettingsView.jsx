@@ -122,7 +122,7 @@ export default function SettingsView({
             <div className="flex gap-2">
               <button
                 type="button"
-                onClick={() => { if (theme !== 'light') toggleTheme(); }}
+                onClick={(e) => { if (theme !== 'light') toggleTheme(e); }}
                 className={`flex-1 py-2 px-3 rounded-xl border text-xs font-bold flex items-center justify-center gap-2 transition ${
                   theme === 'light'
                     ? 'bg-sky-50 border-sky-400 text-sky-700 shadow-xs'
@@ -133,7 +133,7 @@ export default function SettingsView({
               </button>
               <button
                 type="button"
-                onClick={() => { if (theme !== 'dark') toggleTheme(); }}
+                onClick={(e) => { if (theme !== 'dark') toggleTheme(e); }}
                 className={`flex-1 py-2 px-3 rounded-xl border text-xs font-bold flex items-center justify-center gap-2 transition ${
                   theme === 'dark'
                     ? 'bg-sky-950/70 border-sky-500 text-sky-300 shadow-xs'
