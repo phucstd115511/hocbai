@@ -72,31 +72,34 @@ export default function App() {
       });
 
       transition.ready.then(() => {
-        // Giai đoạn 1: Loang từ tâm icon ra bán kính ~280px trong 0.45s
-        // Giai đoạn 2: DỪNG LẠI/NGƯNG 0.4s tại bán kính đó (giữ nguyên clip-path)
-        // Giai đoạn 3: Bùng nổ loang hết toàn bộ màn hình trong 0.45s còn lại
-        const firstRadius = Math.min(260, endRadius * 0.25);
+        // Giai đoạn 1: Loang chậm, thong thả từ tâm ra bán kính ~240px trong 0.5s (tốc độ chậm, êm dịu, tạo chiều sâu nước sâu lắng)
+        // Giai đoạn 2: Sóng nước dừng 0.4s (giữ nguyên bán kính 240px) với easing êm, không bị giật khung hình
+        // Giai đoạn 3: Bùng nổ quét nhanh (tốc độ nhanh hơn nhiều đoạn 1) ra toàn bộ màn hình trong ~0.4s
+        const firstRadius = Math.min(240, endRadius * 0.25);
 
         const anim = document.documentElement.animate(
           [
             {
-              clipPath: `circle(0px at ${x}px ${y}px)`
+              clipPath: `circle(0px at ${x}px ${y}px)`,
+              easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)' // đường cong êm dịu lúc bắt đầu
             },
             {
               clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
-              offset: 0.35 // 0s -> 0.45s (loang đợt 1)
+              offset: 0.38, // 0s -> 0.5s: loang chậm rãi tạo chiều sâu
+              easing: 'linear' // trong thời gian dừng, giữ nguyên mượt mà
             },
             {
               clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
-              offset: 0.68 // 0.45s -> 0.85s (dừng hẳn 0.4s để thấy rõ điểm dừng)
+              offset: 0.69, // 0.5s -> 0.9s: dừng chính xác 0.4s
+              easing: 'cubic-bezier(0.12, 0.8, 0.32, 1)' // bứt tốc phóng nhanh ra ngoài
             },
             {
-              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)` // 0.85s -> 1.3s (loang hết màn hình)
+              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)` // 0.9s -> 1.3s: quét nhanh dứt khoát
             }
           ],
           {
             duration: 1300,
-            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+            fill: 'forwards',
             pseudoElement: '::view-transition-new(root)'
           }
         );
