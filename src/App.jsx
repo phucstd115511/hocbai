@@ -222,7 +222,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors">
+    <div className="min-h-screen bg-[#EBECF0] dark:bg-[#1A1E24] text-[#4A5568] dark:text-[#E2E8F0] transition-colors duration-300 font-sans selection:bg-[#FF8800] selection:text-white">
       <Header
         activeTab={activeTab}
         setActiveTab={(tab) => {

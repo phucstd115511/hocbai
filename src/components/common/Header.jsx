@@ -32,8 +32,8 @@ export default function Header({
     },
     { 
       id: 'landing', 
-      label: 'Giới thiệu Neo', 
-      shortLabel: 'Giới thiệu', 
+      label: 'Khám phá UI', 
+      shortLabel: 'Soft UI', 
       icon: Sparkles 
     },
     { 
@@ -71,27 +71,35 @@ export default function Header({
   ];
 
   return (
-    <header className="no-print sticky top-0 z-40 bg-[#ffe17c] dark:bg-[#171e19] border-b-2 border-black shadow-[0_2px_0_0_#000] transition-colors">
+    <header className="no-print sticky top-0 z-40 bg-[#EBECF0]/90 dark:bg-[#1A1E24]/90 backdrop-blur-md shadow-[0_8px_20px_rgb(163,177,198,0.35)] dark:shadow-[0_8px_20px_rgb(0,0,0,0.5)] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Neo-Brutalist Logo */}
-          <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => setActiveTab('quiz')}>
-            <div className="w-10 h-10 bg-black flex items-center justify-center border-2 border-black neo-depth-sm rounded-xl">
-              <Zap className="w-6 h-6 text-[#ffe17c] fill-[#ffe17c]" />
+        <div className="flex items-center justify-between h-20">
+          
+          {/* Neumorphic Brand Logo */}
+          <div 
+            className="flex items-center gap-3 cursor-pointer select-none group" 
+            onClick={() => setActiveTab('quiz')}
+          >
+            <div className="w-12 h-12 rounded-2xl neu-inset flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+              <Zap className="w-6 h-6 text-[#FF8800] fill-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="font-cabinet font-extrabold text-xl text-black dark:text-white tracking-tight uppercase">Học Bài</span>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-black text-[#ffe17c] border border-black neo-depth-sm">
-                  Neo v2.0
+                <span className="font-display font-extrabold text-2xl text-[#2D3748] dark:text-white tracking-tight">
+                  Học<span className="text-[#FF8800]">Bài</span>
+                </span>
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full neu-inset-sm text-[#FF8800]">
+                  Soft UI
                 </span>
               </div>
-              <p className="text-[11px] font-bold text-black/75 dark:text-[#b7c6c2] hidden sm:block">Ngân hàng câu hỏi & Ôn luyện thông minh</p>
+              <p className="text-[11px] font-medium text-[#718096] dark:text-[#94A3B8] hidden sm:block">
+                Ngân hàng câu hỏi & Ôn luyện thông minh
+              </p>
             </div>
           </div>
 
-          {/* Navigation - Desktop Neo-Brutalist */}
-          <nav className="hidden md:flex items-center gap-2">
+          {/* Desktop Navigation - Neumorphic Segmented Control Bar */}
+          <nav className="hidden lg:flex items-center gap-1 neu-inset p-1.5 rounded-2xl">
             {navItems.map(item => {
               const Icon = item.icon;
               const isActive = activeTab === item.id || 
@@ -101,19 +109,19 @@ export default function Header({
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold border-2 transition-all cursor-pointer ${
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
                     isActive
-                      ? 'bg-black text-[#ffe17c] border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
-                      : 'bg-white/80 dark:bg-slate-800 text-black dark:text-white border-black/80 hover:bg-white hover:neo-depth-sm hover:translate-x-[-1px] hover:translate-y-[-1px]'
+                      ? 'neu-extruded text-[#FF8800] dark:text-[#FF8800] shadow-[4px_4px_8px_rgb(163,177,198,0.6),-4px_-4px_8px_rgba(255,255,255,0.7)] dark:shadow-[4px_4px_8px_rgb(14,17,21,0.85),-4px_-4px_8px_rgba(255,255,255,0.05)]'
+                      : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
                   }`}
                 >
-                  <Icon className={`w-4 h-4 ${isActive ? 'text-[#ffe17c]' : 'text-black dark:text-slate-300'}`} />
+                  <Icon className={`w-4 h-4 ${isActive ? 'text-[#FF8800]' : 'text-current'}`} />
                   <span>{item.label}</span>
                   {item.badge !== undefined && item.badge > 0 && (
-                    <span className={`text-[10px] font-extrabold px-1.5 py-0.2 rounded-md border border-black ${
+                    <span className={`text-[10px] font-extrabold px-1.5 py-0.2 rounded-full ${
                       isActive 
-                        ? 'bg-[#ffe17c] text-black' 
-                        : 'bg-black text-white'
+                        ? 'bg-[#FF8800] text-white' 
+                        : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
                     }`}>
                       {item.badge}
                     </span>
@@ -123,20 +131,24 @@ export default function Header({
             })}
           </nav>
 
-          {/* Right Actions */}
-          <div className="flex items-center gap-2">
+          {/* Right Action: Water Ripple Theme Toggle */}
+          <div className="flex items-center gap-3">
             <button
               onClick={toggleTheme}
               title={theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối'}
-              className="p-2 rounded-xl border-2 border-black bg-white dark:bg-slate-800 text-black dark:text-white neo-depth-sm hover:translate-x-[-1px] hover:translate-y-[-1px] transition cursor-pointer"
+              className="w-12 h-12 rounded-2xl neu-btn flex items-center justify-center text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] dark:hover:text-[#FF8800] transition-colors"
             >
-              {theme === 'dark' ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-black" />}
+              {theme === 'dark' ? (
+                <Sun className="w-5 h-5 text-[#FF8800] drop-shadow-[0_0_8px_rgba(255,136,0,0.5)]" />
+              ) : (
+                <Moon className="w-5 h-5 text-[#4A5568]" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation Bar */}
-        <div className="md:hidden flex items-center justify-around py-2 border-t-2 border-black overflow-x-auto gap-1">
+        <div className="lg:hidden flex items-center py-2.5 overflow-x-auto gap-1.5 neu-inset rounded-2xl px-2 mb-2">
           {navItems.map(item => {
             const Icon = item.icon;
             const isActive = activeTab === item.id || 
@@ -146,13 +158,13 @@ export default function Header({
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex flex-col items-center gap-1 p-1.5 rounded-lg text-[11px] font-bold whitespace-nowrap border transition ${
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-200 ${
                   isActive
-                    ? 'text-black bg-white border-black shadow-[2px_2px_0px_0px_#000]'
-                    : 'text-black/70 dark:text-white/70 border-transparent hover:bg-white/50'
+                    ? 'neu-extruded text-[#FF8800]'
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-3.5 h-3.5" />
                 <span>{item.shortLabel || item.label}</span>
               </button>
             );

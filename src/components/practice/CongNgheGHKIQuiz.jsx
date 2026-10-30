@@ -432,21 +432,21 @@ export default function CongNgheGHKIQuiz({
   };
 
   return (
-    <div className="space-y-6 max-w-4xl mx-auto font-satoshi text-black dark:text-white">
-      {/* 1. Thanh chọn Môn học (Gộp gọn gàng theo môn chuẩn Neo-Brutalist) */}
-      <div className="bg-white dark:bg-[#171e19] p-3 rounded-3xl border-2 border-black neo-depth-md flex flex-wrap items-center gap-2.5">
+    <div className="space-y-6 max-w-4xl mx-auto font-sans text-[#4A5568] dark:text-[#E2E8F0]">
+      {/* 1. Thanh chọn Môn học (Neumorphic Segmented Control) */}
+      <div className="neu-inset p-2 rounded-[28px] flex flex-wrap items-center gap-2.5">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
             activeSubjectId === 'sub_congnghe_ghki'
-              ? 'bg-[#ffe17c] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30 hover:neo-depth-sm'
+              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Wrench className="w-4 h-4 shrink-0" />
+          <Wrench className="w-4 h-4 shrink-0 text-[#FF8800]" />
           <span>Môn Công Nghệ 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
-            activeSubjectId === 'sub_congnghe_ghki' ? 'bg-black text-[#ffe17c]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+            activeSubjectId === 'sub_congnghe_ghki' ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
             93 câu
           </span>
@@ -454,16 +454,16 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_gdqp11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
             isGdqp
-              ? 'bg-[#b7c6c2] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#b7c6c2]/30 hover:neo-depth-sm'
+              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Shield className="w-4 h-4 shrink-0" />
+          <Shield className="w-4 h-4 shrink-0 text-[#FF8800]" />
           <span>Môn GDQP&AN 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
-            isGdqp ? 'bg-black text-[#b7c6c2]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+            isGdqp ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
             52 câu
           </span>
@@ -471,48 +471,42 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_dia11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
             isDia
-              ? 'bg-[#ffe17c] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30 hover:neo-depth-sm'
+              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Globe className="w-4 h-4 shrink-0" />
+          <Globe className="w-4 h-4 shrink-0 text-[#FF8800]" />
           <span>Môn Địa Lí 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
-            isDia ? 'bg-black text-[#ffe17c]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+            isDia ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
             51 câu
           </span>
         </button>
       </div>
 
-      {/* 2. Top Banner: Đề thi của môn học Neo-Brutalist */}
-      <div className={`p-6 sm:p-8 rounded-[32px] border-2 border-black neo-depth-lg relative overflow-hidden transition-all ${
-        isGdqp 
-          ? 'bg-[#b7c6c2] text-black'
-          : isDia
-          ? 'bg-[#ffe17c] text-black neo-dot-pattern'
-          : 'bg-[#ffe17c] text-black neo-dot-pattern'
-      }`}>
+      {/* 2. Top Banner: Đề thi môn học Neumorphic */}
+      <div className="p-6 sm:p-8 rounded-[32px] neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24] relative overflow-hidden transition-all duration-300">
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-black text-white text-xs font-cabinet font-extrabold uppercase border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)]">
-              {isGdqp ? <Shield className="w-3.5 h-3.5 text-[#b7c6c2]" /> : isDia ? <Globe className="w-3.5 h-3.5 text-[#ffe17c]" /> : <BookOpen className="w-3.5 h-3.5 text-[#ffe17c]" />}
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full neu-inset-sm text-xs font-display font-bold text-[#FF8800]">
+              {isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : <BookOpen className="w-3.5 h-3.5" />}
               {isGdqp 
                 ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' 
                 : isDia
                 ? 'Địa Lí 11 • Giữa Học Kì I (2026-2027)'
                 : 'Công Nghệ 11 (Cơ Khí) • Giữa Học Kì I (2026-2027)'}
             </div>
-            <h1 className="text-2xl sm:text-3xl font-cabinet font-extrabold tracking-tight uppercase text-black">
+            <h1 className="text-2xl sm:text-3xl font-display font-extrabold tracking-tight text-[#2D3748] dark:text-white">
               {isGdqp 
                 ? 'Bài Làm: Đề Cương Ôn Tập GDQP&AN 11' 
                 : isDia
                 ? 'Bài Làm: Đề Cương Ôn Tập Địa Lí 11'
                 : 'Bài Làm: Đề Cương Ôn Tập Công Nghệ 11'}
             </h1>
-            <p className="text-xs sm:text-sm text-black/85 max-w-xl font-medium leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#718096] dark:text-[#94A3B8] max-w-xl font-normal leading-relaxed">
               {isGdqp
                 ? 'Đề thi trọn bộ 52 câu hỏi trắc nghiệm khách quan. Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : isDia
@@ -524,62 +518,66 @@ export default function CongNgheGHKIQuiz({
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <button
               onClick={() => setIsPrinting(true)}
-              className="neo-btn bg-white text-black px-4 py-2.5 rounded-2xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
+              className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0]"
               title="In đề thi giấy A4 để làm bài hoặc phát cho học sinh"
             >
-              <Printer className="w-4 h-4" /> In Đề A4
+              <Printer className="w-4 h-4 text-[#FF8800]" /> In Đề A4
             </button>
             <button
               onClick={handleReset}
-              className="neo-btn bg-[#171e19] text-white px-4 py-2.5 rounded-2xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
+              className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#FF8800]"
               title="Đặt lại bài làm"
             >
-              <RotateCcw className="w-4 h-4 text-[#ffe17c]" /> Làm Lại
+              <RotateCcw className="w-4 h-4" /> Làm Lại
             </button>
           </div>
         </div>
       </div>
 
-      {/* 3. Sticky Progress & Control Bar Neo-Brutalist */}
-      <div className="sticky top-16 z-30 bg-white/95 dark:bg-[#171e19]/95 backdrop-blur-md p-3.5 rounded-2xl border-2 border-black neo-depth-md flex flex-wrap items-center justify-between gap-3">
+      {/* 3. Sticky Progress & Control Bar Neumorphic */}
+      <div className="sticky top-20 z-30 bg-[#EBECF0]/95 dark:bg-[#1A1E24]/95 backdrop-blur-md p-3.5 rounded-2xl neu-extruded flex flex-wrap items-center justify-between gap-3 shadow-[0_8px_16px_rgb(163,177,198,0.35)] dark:shadow-[0_8px_16px_rgb(0,0,0,0.5)]">
         <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#ffe17c] text-black font-mono font-bold text-xs sm:text-sm border-2 border-black neo-depth-sm">
-            <Clock className="w-4 h-4 text-black" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl neu-inset-sm text-[#FF8800] font-mono font-bold text-xs sm:text-sm">
+            <Clock className="w-4 h-4" />
             <span>{formatTimer(seconds)}</span>
           </div>
 
-          <div className="text-xs font-bold text-black dark:text-white">
-            Tiến độ: <span className="text-black bg-[#b7c6c2] px-2 py-0.5 rounded-md border border-black font-extrabold neo-depth-sm">{answeredCount}</span> / {questionsToTest.length} câu
+          <div className="neu-inset-sm px-3 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
+            Tiến độ: <span className="text-[#FF8800] font-extrabold">{answeredCount}</span> / {questionsToTest.length} câu
           </div>
 
           <button
             onClick={() => setShowPalette(!showPalette)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border-2 border-black transition cursor-pointer ${
+            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition duration-200 cursor-pointer ${
               showPalette 
-                ? 'bg-black text-[#ffe17c] neo-depth-sm' 
-                : 'bg-white dark:bg-slate-800 text-black dark:text-white hover:bg-slate-100 neo-depth-sm'
+                ? 'neu-inset-sm text-[#FF8800]' 
+                : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
             }`}
           >
-            <Grid className="w-3.5 h-3.5" />
+            <Grid className="w-3.5 h-3.5 text-[#FF8800]" />
             <span>Bảng câu hỏi ({answeredCount}/{questionsToTest.length})</span>
           </button>
         </div>
 
         {/* View mode & submit toggle */}
         <div className="flex items-center gap-3">
-          <div className="flex bg-slate-100 dark:bg-slate-800 p-1 rounded-xl border-2 border-black text-xs">
+          <div className="flex neu-inset p-1 rounded-xl text-xs gap-1">
             <button
               onClick={() => setDisplayMode('scroll')}
-              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition cursor-pointer ${
-                displayMode === 'scroll' ? 'bg-black text-[#ffe17c]' : 'text-slate-600 dark:text-slate-300'
+              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                displayMode === 'scroll' 
+                  ? 'neu-extruded text-[#FF8800]' 
+                  : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
               <LayoutList className="w-3.5 h-3.5" /> Toàn bộ đề
             </button>
             <button
               onClick={() => setDisplayMode('single')}
-              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition cursor-pointer ${
-                displayMode === 'single' ? 'bg-black text-[#ffe17c]' : 'text-slate-600 dark:text-slate-300'
+              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                displayMode === 'single' 
+                  ? 'neu-extruded text-[#FF8800]' 
+                  : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
               <ListOrdered className="w-3.5 h-3.5" /> Từng câu
@@ -589,14 +587,14 @@ export default function CongNgheGHKIQuiz({
           {!isSubmitted ? (
             <button
               onClick={handleSubmit}
-              className="neo-btn bg-black text-[#ffe17c] px-4 py-2 rounded-xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-2 cursor-pointer"
+              className="neu-btn-primary px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center gap-2 cursor-pointer"
             >
               <Send className="w-3.5 h-3.5" /> Nộp Bài & Chấm Điểm
             </button>
           ) : (
             <button
               onClick={handleReset}
-              className="neo-btn bg-[#ffe17c] text-black px-4 py-2 rounded-xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-2 cursor-pointer"
+              className="neu-btn px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center gap-2 cursor-pointer"
             >
               <RotateCcw className="w-3.5 h-3.5" /> Làm Lại Đề Này
             </button>
@@ -606,26 +604,28 @@ export default function CongNgheGHKIQuiz({
 
       {/* 4. Collapsible Question Quick Jump Palette */}
       {showPalette && (
-        <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md animate-in fade-in duration-200">
+        <div className="neu-inset p-5 rounded-[28px] animate-in fade-in duration-200">
           <div className="flex items-center justify-between mb-3 text-xs">
-            <span className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
-              <Grid className="w-4 h-4 text-sky-600" /> Nhấp vào số câu để nhảy nhanh:
+            <span className="font-bold text-[#2D3748] dark:text-white flex items-center gap-1.5">
+              <Grid className="w-4 h-4 text-[#FF8800]" /> Nhấp vào số câu để nhảy nhanh:
             </span>
-            <div className="flex items-center gap-3 text-[11px] text-slate-500">
+            <div className="flex items-center gap-3 text-[11px] text-[#718096] dark:text-[#94A3B8]">
               <span className="flex items-center gap-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> Đã làm
+                <span className="w-2.5 h-2.5 rounded-full bg-[#FF8800] inline-block"></span> Đã làm
               </span>
               <span className="flex items-center gap-1">
-                <span className="w-2.5 h-2.5 rounded-full bg-slate-300 dark:bg-slate-600 inline-block"></span> Chưa làm
+                <span className="w-2.5 h-2.5 rounded-full bg-[#CBD5E1] dark:bg-slate-600 inline-block"></span> Chưa làm
               </span>
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-1.5 max-h-56 overflow-y-auto p-1">
+          <div className="flex flex-wrap gap-2 max-h-56 overflow-y-auto p-1">
             {questionsToTest.map((item, idx) => {
               const isDone = item.type === 'mcq'
                 ? userAnswers[item.id] !== undefined
-                : Object.keys(userAnswers[item.id] || {}).length === 4;
+                : item.type === 'truefalse'
+                ? Object.keys(userAnswers[item.id] || {}).length === 4
+                : userAnswers[item.id] !== undefined && String(userAnswers[item.id]).trim() !== '';
 
               return (
                 <button
@@ -637,10 +637,10 @@ export default function CongNgheGHKIQuiz({
                       scrollToQuestion(item.id);
                     }
                   }}
-                  className={`w-8 h-8 rounded-lg text-xs font-bold transition flex items-center justify-center ${
+                  className={`w-9 h-9 rounded-xl text-xs font-bold transition-all flex items-center justify-center cursor-pointer ${
                     isDone
-                      ? 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 font-extrabold'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 border border-transparent'
+                      ? 'neu-inset-sm text-[#FF8800] font-extrabold'
+                      : 'neu-extruded text-[#718096] dark:text-[#94A3B8] hover:neu-extruded-sm hover:text-[#2D3748] dark:hover:text-white'
                   }`}
                 >
                   {idx + 1}
@@ -653,28 +653,28 @@ export default function CongNgheGHKIQuiz({
 
       {/* 5. Result Card (Hiện ra khi nộp bài) */}
       {isSubmitted && scoreResult && (
-        <div className="bg-[#ffe17c] p-6 sm:p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_#000] text-center space-y-3 neo-dot-pattern">
-          <div className="inline-flex p-3 rounded-2xl bg-black text-[#ffe17c] border-2 border-black shadow-[3px_3px_0px_0px_#000] mb-1">
-            <Award className="w-10 h-10" />
+        <div className="neu-card p-6 sm:p-8 rounded-[32px] text-center space-y-4 bg-[#EBECF0] dark:bg-[#1A1E24]">
+          <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800] mb-2">
+            <Award className="w-9 h-9 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
           </div>
-          <h2 className="text-2xl font-cabinet font-extrabold uppercase text-black">
+          <h2 className="text-2xl font-display font-extrabold uppercase text-[#2D3748] dark:text-white">
             Kết Quả Bài Làm Của Bạn
           </h2>
-          <div className="text-5xl font-cabinet font-extrabold text-black">
-            {scoreResult.totalPoints} <span className="text-2xl font-bold text-black/70">/ {scoreResult.maxPoints} điểm</span>
+          <div className="text-5xl font-display font-extrabold text-[#2D3748] dark:text-white">
+            {scoreResult.totalPoints} <span className="text-2xl font-bold text-[#718096] dark:text-[#94A3B8]">/ {scoreResult.maxPoints} điểm</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-3 pt-1">
-            <span className="bg-black text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-              Tỉ lệ đúng: {scoreResult.percent}%
+            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
+              Tỉ lệ đúng: <strong className="text-[#FF8800]">{scoreResult.percent}%</strong>
             </span>
-            <span className="bg-white text-black px-3 py-1 rounded-full text-xs font-bold border border-black uppercase">
-              Số câu chuẩn: {scoreResult.correctCount}/{scoreResult.maxPoints}
+            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
+              Số câu chuẩn: <strong className="text-[#FF8800]">{scoreResult.correctCount}/{scoreResult.maxPoints}</strong>
             </span>
-            <span className="bg-black text-[#ffe17c] px-3 py-1 rounded-full text-xs font-mono font-bold">
+            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-mono font-bold text-[#FF8800]">
               ⏱ {formatTimer(seconds)}
             </span>
           </div>
-          <p className="text-xs text-black/80 font-bold italic pt-2">
+          <p className="text-xs text-[#718096] dark:text-[#94A3B8] italic pt-1">
             * Toàn bộ đáp án đúng và lời giải chi tiết từng câu đã được hiển thị bên dưới để bạn đối chiếu.
           </p>
         </div>
@@ -682,9 +682,9 @@ export default function CongNgheGHKIQuiz({
 
       {/* 6. MAIN TEST VIEW */}
       {questionsToTest.length === 0 ? (
-        <div className="bg-white dark:bg-slate-900 p-12 text-center rounded-2xl border border-slate-200 dark:border-slate-800">
-          <HelpCircle className="w-12 h-12 text-slate-300 mx-auto mb-2" />
-          <h3 className="text-sm font-bold text-slate-700 dark:text-slate-300">Không tìm thấy câu hỏi nào</h3>
+        <div className="neu-card p-12 text-center rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24]">
+          <HelpCircle className="w-12 h-12 text-[#A0AEC0] mx-auto mb-2" />
+          <h3 className="text-sm font-bold text-[#718096] dark:text-[#94A3B8]">Không tìm thấy câu hỏi nào</h3>
         </div>
       ) : displayMode === 'scroll' ? (
         /* SCROLL VIEW: HIỂN THỊ ĐỀ THI TRỌN VẸN THEO CẤU TRÚC PHẦN */
@@ -692,16 +692,16 @@ export default function CongNgheGHKIQuiz({
           {/* PHẦN I: TRẮC NGHIỆM NHIỀU PHƯƠNG ÁN LỰA CHỌN */}
           {mcqQuestions.length > 0 && (
             <div className="space-y-4">
-              <div className="p-5 bg-white dark:bg-[#171e19] rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
+              <div className="p-5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24] flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-cabinet font-extrabold text-black dark:text-[#ffe17c] uppercase tracking-wide">
+                  <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wide">
                     Phần I: Câu trắc nghiệm nhiều phương án lựa chọn
                   </h3>
-                  <p className="text-xs text-black/75 dark:text-slate-300 mt-0.5 font-medium">
+                  <p className="text-xs text-[#718096] dark:text-[#94A3B8] mt-0.5 font-normal">
                     Thí sinh trả lời từ câu 1 đến câu {mcqQuestions.length}. Mỗi câu hỏi thí sinh chỉ chọn một phương án đúng nhất.
                   </p>
                 </div>
-                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-black text-[#ffe17c] border border-black neo-depth-sm shrink-0">
+                <span className="text-xs font-display font-extrabold px-3 py-1.5 rounded-full neu-inset-sm text-[#FF8800] shrink-0">
                   {mcqQuestions.length} câu
                 </span>
               </div>
@@ -715,25 +715,19 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
-                      isSubmitted
-                        ? 'neo-depth-md'
-                        : isUserAnswered
-                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
-                        : 'neo-depth-md hover:translate-y-[-1px]'
-                    }`}
+                    className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] transition-all duration-300"
                   >
                     {/* Question Header */}
-                    <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
-                      <div className="flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
+                    <div className="flex items-center justify-between gap-2 pb-3 mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <span className="w-9 h-9 rounded-xl neu-inset-sm flex items-center justify-center font-display font-extrabold text-xs text-[#FF8800]">
                           {questionNumber}
                         </span>
-                        <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
+                        <span className="text-xs font-display font-bold uppercase text-[#2D3748] dark:text-white">
                           Câu {questionNumber}
                         </span>
                         {q.tags && q.tags[2] && (
-                          <span className="text-[11px] font-bold text-slate-500 hidden sm:inline">
+                          <span className="text-[11px] font-medium text-[#718096] dark:text-[#94A3B8] hidden sm:inline">
                             • {q.tags[2]}
                           </span>
                         )}
@@ -742,45 +736,43 @@ export default function CongNgheGHKIQuiz({
                       {!isSubmitted && (
                         <button
                           onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                          className="text-[11px] text-black dark:text-[#b7c6c2] hover:underline flex items-center gap-1 font-bold cursor-pointer"
+                          className="neu-btn px-3 py-1.5 rounded-xl text-[11px] text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 font-bold cursor-pointer"
                         >
-                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
                           {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
                         </button>
                       )}
                     </div>
 
                     {/* Stem */}
-                    <div className="text-sm sm:text-base font-bold text-black dark:text-white leading-relaxed mb-4">
+                    <div className="text-sm sm:text-base font-medium text-[#2D3748] dark:text-white leading-relaxed mb-5">
                       <MathRenderer text={q.stem} />
                     </div>
 
                     {/* Options */}
-                    <div className="space-y-2.5">
+                    <div className="space-y-3">
                       {q.options.map((opt, optIdx) => {
                         const letter = ['A', 'B', 'C', 'D'][optIdx];
                         const isChosen = userAnswers[q.id] === optIdx;
                         const isCorrect = optIdx === q.correct;
-                        const hasAnswered = isChosen || isRevealed;
 
-                        let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20 hover:neo-depth-sm';
-                        let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black neo-depth-sm';
+                        let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] hover:neu-card active:neu-inset';
+                        let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
 
                         if (isChosen) {
                           if (isCorrect) {
-                            itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black neo-depth-sm font-bold text-black dark:text-white ring-2 ring-emerald-500';
-                            badgeStyle = 'bg-emerald-600 text-white border-black';
+                            itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
+                            badgeStyle = 'bg-emerald-500 text-white';
                           } else {
-                            itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 neo-depth-sm ring-2 ring-rose-500';
-                            badgeStyle = 'bg-rose-600 text-white border-black';
+                            itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24]';
+                            badgeStyle = 'bg-rose-500 text-white';
                           }
                         } else if (isRevealed && isCorrect) {
-                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black neo-depth-sm font-bold text-black dark:text-white';
-                          badgeStyle = 'bg-emerald-600 text-white border-black';
+                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
+                          badgeStyle = 'bg-emerald-500 text-white';
                         } else if (userAnswers[q.id] !== undefined && isCorrect) {
-                          // Nếu người dùng đã chọn sai, hiển thị phương án đúng màu xanh luôn
-                          itemStyle = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold';
-                          badgeStyle = 'bg-emerald-600 text-white border-black';
+                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
+                          badgeStyle = 'bg-emerald-500 text-white';
                         }
 
                         const isLocked = userAnswers[q.id] !== undefined;
@@ -791,28 +783,28 @@ export default function CongNgheGHKIQuiz({
                             type="button"
                             disabled={isLocked}
                             onClick={() => handleSelectMCQ(q.id, optIdx)}
-                            className={`w-full flex items-start gap-3 p-3.5 rounded-2xl border-2 text-xs sm:text-sm text-left transition ${
+                            className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-all duration-200 ${
                               isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                             } ${itemStyle}`}
                           >
-                            <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
+                            <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
                               {letter}
                             </span>
-                            <span className="flex-1 mt-0.5">
+                            <span className="flex-1 mt-1 leading-relaxed">
                               <MathRenderer text={opt} />
                             </span>
                             {isChosen && isCorrect && (
-                              <span className="text-[11px] font-cabinet font-extrabold text-emerald-800 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
-                                <CheckCircle2 className="w-4 h-4" /> Chính xác (+1đ)
+                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
                               </span>
                             )}
                             {isChosen && !isCorrect && (
-                              <span className="text-[11px] font-cabinet font-extrabold text-rose-700 dark:text-rose-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                              <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
                                 <XCircle className="w-4 h-4" /> Sai rồi
                               </span>
                             )}
                             {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
-                              <span className="text-[11px] font-cabinet font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
                                 <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
                               </span>
                             )}
@@ -821,11 +813,15 @@ export default function CongNgheGHKIQuiz({
                       })}
                     </div>
 
-                    {/* Explanation (Hiển thị ngay khi người dùng chọn đáp án hoặc nộp bài) */}
+                    {/* Explanation */}
                     {(isRevealed || userAnswers[q.id] !== undefined) && q.explanation && (
-                      <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
-                        <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
-                        <MathRenderer text={q.explanation} />
+                      <div className="mt-4 p-4 sm:p-5 neu-inset rounded-2xl text-xs text-[#4A5568] dark:text-[#E2E8F0]">
+                        <span className="font-display font-extrabold text-[#FF8800] block mb-1 uppercase tracking-wide">
+                          Lời giải chi tiết:
+                        </span>
+                        <div className="leading-relaxed">
+                          <MathRenderer text={q.explanation} />
+                        </div>
                       </div>
                     )}
                   </div>
@@ -836,17 +832,17 @@ export default function CongNgheGHKIQuiz({
 
           {/* PHẦN II: CÂU TRẮC NGHIỆM ĐÚNG / SAI (NẾU CÓ) */}
           {tfQuestions.length > 0 && (
-            <div className="space-y-4 pt-4 border-t-2 border-black">
-              <div className="p-5 bg-white dark:bg-[#171e19] rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
+            <div className="space-y-4 pt-4">
+              <div className="p-5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24] flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-cabinet font-extrabold text-black dark:text-[#ffe17c] uppercase tracking-wide">
+                  <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wide">
                     Phần II: Câu trắc nghiệm đúng / sai (4 ý)
                   </h3>
-                  <p className="text-xs text-black/75 dark:text-slate-300 mt-0.5 font-medium">
+                  <p className="text-xs text-[#718096] dark:text-[#94A3B8] mt-0.5 font-normal">
                     Thí sinh trả lời từ câu {mcqQuestions.length + 1} đến câu {questionsToTest.length}. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn Đúng hoặc Sai.
                   </p>
                 </div>
-                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-black text-[#ffe17c] border border-black neo-depth-sm shrink-0">
+                <span className="text-xs font-display font-extrabold px-3 py-1.5 rounded-full neu-inset-sm text-[#FF8800] shrink-0">
                   {tfQuestions.length} câu
                 </span>
               </div>
@@ -860,21 +856,15 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
-                      isSubmitted
-                        ? 'neo-depth-md'
-                        : isUserAnswered
-                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
-                        : 'neo-depth-md hover:translate-y-[-1px]'
-                    }`}
+                    className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] transition-all duration-300"
                   >
                     {/* Header */}
-                    <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
-                      <div className="flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
+                    <div className="flex items-center justify-between gap-2 pb-3 mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <span className="w-9 h-9 rounded-xl neu-inset-sm flex items-center justify-center font-display font-extrabold text-xs text-[#FF8800]">
                           {questionNumber}
                         </span>
-                        <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
+                        <span className="text-xs font-display font-bold uppercase text-[#2D3748] dark:text-white">
                           Câu {questionNumber} (Đúng / Sai 4 ý)
                         </span>
                       </div>
@@ -882,22 +872,22 @@ export default function CongNgheGHKIQuiz({
                       {!isSubmitted && (
                         <button
                           onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                          className="text-[11px] text-slate-400 hover:text-indigo-600 flex items-center gap-1 font-medium"
+                          className="neu-btn px-3 py-1.5 rounded-xl text-[11px] text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 font-bold cursor-pointer"
                         >
-                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
                           {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
                         </button>
                       )}
                     </div>
 
                     {/* Stem */}
-                    <div className="text-sm font-semibold text-slate-900 dark:text-white leading-relaxed mb-4">
+                    <div className="text-sm sm:text-base font-medium text-[#2D3748] dark:text-white leading-relaxed mb-4">
                       <MathRenderer text={q.stem} />
                     </div>
 
                     {/* Statements */}
-                    <div className="space-y-2">
-                      <p className="text-[11px] text-slate-400 italic mb-1">
+                    <div className="space-y-3">
+                      <p className="text-[11px] text-[#718096] dark:text-[#94A3B8] italic mb-1">
                         * Đánh dấu ĐÚNG hoặc SAI cho từng ý a, b, c, d dưới đây:
                       </p>
                       {q.statements.map(stmt => {
@@ -909,17 +899,17 @@ export default function CongNgheGHKIQuiz({
                         return (
                           <div
                             key={stmt.label}
-                            className={`p-3.5 rounded-xl border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm transition ${
+                            className={`p-4 rounded-2xl neu-inset-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm transition ${
                               showFeedback
                                 ? isCorrect
-                                  ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-black dark:text-white'
-                                  : 'bg-rose-50 dark:bg-rose-950/40 border-rose-500 text-black dark:text-white'
-                                : 'bg-white dark:bg-[#272727] border-black/40 text-black dark:text-white'
+                                  ? 'ring-2 ring-emerald-500/60'
+                                  : 'ring-2 ring-rose-500/60'
+                                : ''
                             }`}
                           >
-                            <div className="flex items-start gap-2 flex-1">
-                              <span className="font-cabinet font-extrabold text-black dark:text-white shrink-0">{stmt.label})</span>
-                              <span><MathRenderer text={stmt.text} /></span>
+                            <div className="flex items-start gap-2.5 flex-1">
+                              <span className="font-display font-extrabold text-[#2D3748] dark:text-white shrink-0 mt-0.5">{stmt.label})</span>
+                              <span className="leading-relaxed"><MathRenderer text={stmt.text} /></span>
                             </div>
 
                             <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
@@ -927,14 +917,14 @@ export default function CongNgheGHKIQuiz({
                                 type="button"
                                 disabled={isAnsweredThisStmt}
                                 onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
                                   isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                                 } ${
                                   userVal === true
                                     ? isCorrect
-                                      ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                      : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                    : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
+                                      ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
+                                      : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
+                                    : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
                                 }`}
                               >
                                 <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
@@ -944,22 +934,22 @@ export default function CongNgheGHKIQuiz({
                                 type="button"
                                 disabled={isAnsweredThisStmt}
                                 onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                                className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                                className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
                                   isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                                 } ${
                                   userVal === false
                                     ? isCorrect
-                                      ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                      : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                    : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
+                                      ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
+                                      : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
+                                    : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
                                 }`}
                               >
                                 <XCircle className="w-3.5 h-3.5" /> Sai
                               </button>
 
                               {showFeedback && (
-                                <span className={`font-cabinet font-extrabold text-xs px-2.5 py-1 rounded-md border border-black ${
-                                  stmt.answer ? 'text-emerald-900 bg-emerald-200' : 'text-rose-900 bg-rose-200'
+                                <span className={`font-display font-bold text-xs px-3 py-1 rounded-full neu-inset-sm ${
+                                  stmt.answer ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
                                 }`}>
                                   {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
                                 </span>
@@ -972,9 +962,11 @@ export default function CongNgheGHKIQuiz({
 
                     {/* Explanation */}
                     {(isRevealed || Object.keys(userAnswers[q.id] || {}).length > 0) && q.explanation && (
-                      <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
-                        <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
-                        <MathRenderer text={q.explanation} />
+                      <div className="mt-4 p-4 sm:p-5 neu-inset rounded-2xl text-xs text-[#4A5568] dark:text-[#E2E8F0]">
+                        <span className="font-display font-extrabold text-[#FF8800] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
+                        <div className="leading-relaxed">
+                          <MathRenderer text={q.explanation} />
+                        </div>
                       </div>
                     )}
                   </div>
@@ -985,17 +977,17 @@ export default function CongNgheGHKIQuiz({
 
           {/* PHẦN III: CÂU TRẮC NGHIỆM TRẢ LỜI NGẮN (NẾU CÓ) */}
           {saQuestions.length > 0 && (
-            <div className="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
-              <div className="p-5 bg-amber-50 dark:bg-amber-950/40 rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
+            <div className="space-y-4 pt-4">
+              <div className="p-5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24] flex items-center justify-between">
                 <div>
-                  <h3 className="text-base font-cabinet font-extrabold text-amber-950 dark:text-amber-200 uppercase tracking-wide">
+                  <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wide">
                     Phần III: Câu trắc nghiệm yêu cầu trả lời ngắn
                   </h3>
-                  <p className="text-xs text-amber-900/80 dark:text-amber-300 mt-0.5 font-medium">
+                  <p className="text-xs text-[#718096] dark:text-[#94A3B8] mt-0.5 font-normal">
                     Thí sinh trả lời từ câu {mcqQuestions.length + tfQuestions.length + 1} đến câu {questionsToTest.length}. Thí sinh tính toán và nhập đáp số vào ô bên dưới.
                   </p>
                 </div>
-                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-amber-600 text-white border border-black neo-depth-sm">
+                <span className="text-xs font-display font-extrabold px-3 py-1.5 rounded-full neu-inset-sm text-[#FF8800] shrink-0">
                   {saQuestions.length} câu
                 </span>
               </div>
@@ -1015,21 +1007,15 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
-                      isSubmitted
-                        ? 'neo-depth-md'
-                        : isLocked
-                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
-                        : 'neo-depth-md hover:translate-y-[-1px]'
-                    }`}
+                    className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] transition-all duration-300"
                   >
                     {/* Header */}
-                    <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
-                      <div className="flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
+                    <div className="flex items-center justify-between gap-2 pb-3 mb-4">
+                      <div className="flex items-center gap-2.5">
+                        <span className="w-9 h-9 rounded-xl neu-inset-sm flex items-center justify-center font-display font-extrabold text-xs text-[#FF8800]">
                           {questionNumber}
                         </span>
-                        <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
+                        <span className="text-xs font-display font-bold uppercase text-[#2D3748] dark:text-white">
                           Câu {questionNumber} (Trả lời ngắn)
                         </span>
                       </div>
@@ -1037,23 +1023,23 @@ export default function CongNgheGHKIQuiz({
                       {!isSubmitted && (
                         <button
                           onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                          className="text-[11px] text-black dark:text-[#b7c6c2] hover:underline flex items-center gap-1 font-bold cursor-pointer"
+                          className="neu-btn px-3 py-1.5 rounded-xl text-[11px] text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 font-bold cursor-pointer"
                         >
-                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+                          {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
                           {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
                         </button>
                       )}
                     </div>
 
                     {/* Stem */}
-                    <div className="text-sm sm:text-base font-bold text-black dark:text-white leading-relaxed mb-4">
+                    <div className="text-sm sm:text-base font-medium text-[#2D3748] dark:text-white leading-relaxed mb-4">
                       <MathRenderer text={q.stem} />
                     </div>
 
                     {/* Input box */}
                     <div className="space-y-3">
                       <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                        <label className="text-xs font-cabinet font-extrabold text-black dark:text-white uppercase shrink-0">
+                        <label className="text-xs font-display font-bold text-[#2D3748] dark:text-white uppercase shrink-0">
                           Nhập kết quả:
                         </label>
                         <input
@@ -1065,12 +1051,12 @@ export default function CongNgheGHKIQuiz({
                             if (e.key === 'Enter') handleLockShortAnswer(q.id);
                           }}
                           placeholder="Ví dụ: 351 hoặc 23,4"
-                          className={`w-full sm:w-64 px-4 py-2.5 rounded-2xl text-sm font-bold border-2 transition outline-none ${
+                          className={`w-full sm:w-64 px-4 py-2.5 rounded-2xl text-sm font-bold transition outline-none ${
                             isLocked
                               ? isCorrect
-                                ? 'bg-emerald-50 text-black border-black neo-depth-sm ring-2 ring-emerald-400'
-                                : 'bg-rose-50 text-black border-black neo-depth-sm ring-2 ring-rose-400'
-                              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black neo-inset-well focus:neo-inset-deep'
+                                ? 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold'
+                                : 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500'
+                              : 'neu-input'
                           }`}
                         />
                         {!isLocked && (
@@ -1078,15 +1064,15 @@ export default function CongNgheGHKIQuiz({
                             type="button"
                             onClick={() => handleLockShortAnswer(q.id)}
                             disabled={!userVal.trim()}
-                            className="neo-btn bg-black text-[#ffe17c] px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase disabled:opacity-40 cursor-pointer"
+                            className="neu-btn-primary px-4 py-2.5 rounded-xl text-xs font-display font-bold uppercase disabled:opacity-40 cursor-pointer"
                           >
                             Xác nhận & Khóa
                           </button>
                         )}
                         {showFeedback && (
                           <div className="flex items-center gap-2">
-                            <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
-                              isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
+                            <span className={`text-xs font-display font-bold px-3 py-1.5 rounded-full neu-inset-sm ${
+                              isCorrect ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
                             }`}>
                               {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer || q.answer})`}
                             </span>
@@ -1097,9 +1083,11 @@ export default function CongNgheGHKIQuiz({
 
                     {/* Explanation */}
                     {(showFeedback || isRevealed) && q.explanation && (
-                      <div className="mt-4 p-4 bg-[#b7c6c2]/30 dark:bg-slate-800 rounded-xl text-xs text-black dark:text-slate-200 border-2 border-black">
-                        <span className="font-cabinet font-extrabold text-black dark:text-[#ffe17c] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
-                        <MathRenderer text={q.explanation} />
+                      <div className="mt-4 p-4 sm:p-5 neu-inset rounded-2xl text-xs text-[#4A5568] dark:text-[#E2E8F0]">
+                        <span className="font-display font-extrabold text-[#FF8800] block mb-1 uppercase tracking-wide">Lời giải chi tiết:</span>
+                        <div className="leading-relaxed">
+                          <MathRenderer text={q.explanation} />
+                        </div>
                       </div>
                     )}
                   </div>
@@ -1110,13 +1098,13 @@ export default function CongNgheGHKIQuiz({
 
           {/* Bottom Submit button */}
           {!isSubmitted && (
-            <div className="p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 text-center space-y-2">
-              <p className="text-xs text-slate-500">
-                Đã hoàn thành <span className="font-bold text-sky-600">{answeredCount}</span> / {questionsToTest.length} câu.
+            <div className="p-8 neu-card rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] text-center space-y-3">
+              <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
+                Đã hoàn thành <span className="font-extrabold text-[#FF8800]">{answeredCount}</span> / {questionsToTest.length} câu.
               </p>
               <button
                 onClick={handleSubmit}
-                className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold rounded-xl shadow-md shadow-emerald-600/20 transition inline-flex items-center gap-2"
+                className="neu-btn-primary px-8 py-3.5 rounded-full text-sm font-bold uppercase tracking-wider inline-flex items-center gap-2 cursor-pointer shadow-[6px_6px_14px_rgba(255,136,0,0.35),-6px_-6px_14px_rgba(255,255,255,0.7)]"
               >
                 <Send className="w-4 h-4" /> Nộp Bài & Xem Điểm Số
               </button>
@@ -1132,14 +1120,14 @@ export default function CongNgheGHKIQuiz({
 
           return (
             <div className="space-y-4">
-              <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
+              <div className="neu-card p-6 sm:p-8 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-5">
                 {/* Question Info */}
-                <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-                  <div className="flex items-center gap-2">
-                    <span className="px-2.5 py-1 rounded-lg bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300 font-bold text-xs">
+                <div className="flex items-center justify-between pb-3 border-b border-black/5 dark:border-white/5">
+                  <div className="flex items-center gap-2.5">
+                    <span className="px-3 py-1 rounded-full neu-inset-sm text-[#FF8800] font-display font-bold text-xs">
                       Câu {currentIndex + 1} / {questionsToTest.length}
                     </span>
-                    <span className="text-xs text-slate-500">
+                    <span className="text-xs font-medium text-[#718096] dark:text-[#94A3B8]">
                       {q.type === 'mcq' 
                         ? 'Trắc nghiệm nhiều lựa chọn' 
                         : q.type === 'truefalse'
@@ -1151,44 +1139,44 @@ export default function CongNgheGHKIQuiz({
                   {!isSubmitted && (
                     <button
                       onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                      className="text-xs text-slate-500 hover:text-sky-600 flex items-center gap-1 font-medium"
+                      className="neu-btn px-3 py-1.5 rounded-xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 cursor-pointer"
                     >
-                      {isRevealed ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                      {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
                       {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
                     </button>
                   )}
                 </div>
 
                 {/* Stem */}
-                <div className="text-sm sm:text-base font-semibold text-slate-900 dark:text-white leading-relaxed">
+                <div className="text-sm sm:text-base font-medium text-[#2D3748] dark:text-white leading-relaxed">
                   <MathRenderer text={q.stem} />
                 </div>
 
                 {/* Options / Inputs */}
                 {q.type === 'mcq' ? (
-                  <div className="space-y-2.5">
+                  <div className="space-y-3">
                     {q.options.map((opt, optIdx) => {
                       const letter = ['A', 'B', 'C', 'D'][optIdx];
                       const isChosen = userAnswers[q.id] === optIdx;
                       const isCorrect = optIdx === q.correct;
 
-                      let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20';
-                      let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black';
+                      let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] hover:neu-card active:neu-inset';
+                      let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
 
                       if (isChosen) {
                         if (isCorrect) {
-                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white ring-2 ring-emerald-500';
-                          badgeStyle = 'bg-emerald-600 text-white border-black';
+                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold';
+                          badgeStyle = 'bg-emerald-500 text-white';
                         } else {
-                          itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 shadow-[3px_3px_0px_0px_#000] ring-2 ring-rose-500';
-                          badgeStyle = 'bg-rose-600 text-white border-black';
+                          itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500';
+                          badgeStyle = 'bg-rose-500 text-white';
                         }
                       } else if (isRevealed && isCorrect) {
-                        itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white';
-                        badgeStyle = 'bg-emerald-600 text-white border-black';
+                        itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold';
+                        badgeStyle = 'bg-emerald-500 text-white';
                       } else if (userAnswers[q.id] !== undefined && isCorrect) {
-                        itemStyle = 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-emerald-900 dark:text-emerald-200 font-bold';
-                        badgeStyle = 'bg-emerald-600 text-white border-black';
+                        itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 font-bold';
+                        badgeStyle = 'bg-emerald-500 text-white';
                       }
 
                       const isLocked = userAnswers[q.id] !== undefined;
@@ -1199,26 +1187,26 @@ export default function CongNgheGHKIQuiz({
                           type="button"
                           disabled={isLocked}
                           onClick={() => handleSelectMCQ(q.id, optIdx)}
-                          className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition ${
+                          className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-all duration-200 ${
                             isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                           } ${itemStyle}`}
                         >
-                          <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
+                          <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
                             {letter}
                           </span>
-                          <span className="flex-1 mt-0.5"><MathRenderer text={opt} /></span>
+                          <span className="flex-1 mt-1 leading-relaxed"><MathRenderer text={opt} /></span>
                           {isChosen && isCorrect && (
-                            <span className="text-[11px] font-cabinet font-extrabold text-emerald-800 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
-                              <CheckCircle2 className="w-4 h-4" /> Chính xác (+1đ)
+                            <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                              <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
                             </span>
                           )}
                           {isChosen && !isCorrect && (
-                            <span className="text-[11px] font-cabinet font-extrabold text-rose-700 dark:text-rose-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                            <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
                               <XCircle className="w-4 h-4" /> Sai rồi
                             </span>
                           )}
                           {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
-                            <span className="text-[11px] font-cabinet font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5 flex items-center gap-1 uppercase">
+                            <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
                               <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
                             </span>
                           )}
@@ -1227,7 +1215,7 @@ export default function CongNgheGHKIQuiz({
                     })}
                   </div>
                 ) : q.type === 'truefalse' ? (
-                  <div className="space-y-2.5">
+                  <div className="space-y-3">
                     {q.statements.map(stmt => {
                       const userVal = userAnswers[q.id]?.[stmt.label];
                       const isAnsweredThisStmt = userVal !== undefined;
@@ -1237,17 +1225,17 @@ export default function CongNgheGHKIQuiz({
                       return (
                         <div
                           key={stmt.label}
-                          className={`p-3.5 rounded-xl border-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs sm:text-sm transition ${
+                          className={`p-4 rounded-2xl neu-inset-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm transition ${
                             showFeedback
                               ? isCorrect
-                                ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-500 text-black dark:text-white'
-                                : 'bg-rose-50 dark:bg-rose-950/40 border-rose-500 text-black dark:text-white'
-                              : 'bg-white dark:bg-[#272727] border-black/40 text-black dark:text-white'
+                                ? 'ring-2 ring-emerald-500/60'
+                                : 'ring-2 ring-rose-500/60'
+                              : ''
                           }`}
                         >
-                          <div className="flex items-start gap-2 flex-1">
-                            <span className="font-cabinet font-extrabold text-black dark:text-white shrink-0">{stmt.label})</span>
-                            <span><MathRenderer text={stmt.text} /></span>
+                          <div className="flex items-start gap-2.5 flex-1">
+                            <span className="font-display font-extrabold text-[#2D3748] dark:text-white shrink-0 mt-0.5">{stmt.label})</span>
+                            <span className="leading-relaxed"><MathRenderer text={stmt.text} /></span>
                           </div>
 
                           <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
@@ -1255,14 +1243,14 @@ export default function CongNgheGHKIQuiz({
                               type="button"
                               disabled={isAnsweredThisStmt}
                               onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                              className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
                                 isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                               } ${
                                 userVal === true
                                   ? isCorrect
-                                    ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                    : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                  : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
+                                    ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
+                                    : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
+                                  : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
                               }`}
                             >
                               <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
@@ -1271,21 +1259,21 @@ export default function CongNgheGHKIQuiz({
                               type="button"
                               disabled={isAnsweredThisStmt}
                               onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                              className={`px-3 py-1.5 rounded-lg text-xs font-cabinet font-extrabold transition border-2 flex items-center gap-1 ${
+                              className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
                                 isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                               } ${
                                 userVal === false
                                   ? isCorrect
-                                    ? 'bg-emerald-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                    : 'bg-rose-600 text-white border-black shadow-[2px_2px_0px_0px_#000]'
-                                  : 'bg-slate-100 dark:bg-slate-700 text-black dark:text-white border-black/40 hover:border-black'
+                                    ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
+                                    : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
+                                  : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
                               }`}
                             >
                               <XCircle className="w-3.5 h-3.5" /> Sai
                             </button>
                             {showFeedback && (
-                              <span className={`font-cabinet font-extrabold text-xs px-2.5 py-1 rounded-md border border-black ${
-                                stmt.answer ? 'text-emerald-900 bg-emerald-200' : 'text-rose-900 bg-rose-200'
+                              <span className={`font-display font-bold text-xs px-3 py-1 rounded-full neu-inset-sm ${
+                                stmt.answer ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
                               }`}>
                                 {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
                               </span>
@@ -1297,8 +1285,8 @@ export default function CongNgheGHKIQuiz({
                   </div>
                 ) : (
                   /* Short answer in single mode */
-                  <div className="space-y-3 p-4 bg-slate-50 dark:bg-slate-800/40 rounded-2xl border-2 border-black">
-                    <label className="text-xs font-cabinet font-extrabold text-black dark:text-white block uppercase">
+                  <div className="space-y-3 p-5 neu-inset rounded-2xl">
+                    <label className="text-xs font-display font-bold text-[#2D3748] dark:text-white block uppercase">
                       Nhập kết quả:
                     </label>
                     {(() => {
@@ -1321,12 +1309,12 @@ export default function CongNgheGHKIQuiz({
                                 if (e.key === 'Enter') handleLockShortAnswer(q.id);
                               }}
                               placeholder="Ví dụ: 351 hoặc 23,4"
-                              className={`w-full max-w-sm px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
+                              className={`w-full max-w-sm px-4 py-2.5 rounded-2xl text-sm font-bold transition outline-none ${
                                 isLocked
                                   ? isCorrect
-                                    ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
-                                    : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
-                                  : 'bg-white dark:bg-slate-900 border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
+                                    ? 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold'
+                                    : 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500'
+                                  : 'neu-input'
                               }`}
                             />
                             {!isLocked && (
@@ -1334,7 +1322,7 @@ export default function CongNgheGHKIQuiz({
                                 type="button"
                                 onClick={() => handleLockShortAnswer(q.id)}
                                 disabled={!userVal.trim()}
-                                className="neo-btn bg-black text-[#ffe17c] px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase disabled:opacity-40 cursor-pointer"
+                                className="neu-btn-primary px-4 py-2.5 rounded-xl text-xs font-display font-bold uppercase disabled:opacity-40 cursor-pointer"
                               >
                                 Xác nhận & Khóa
                               </button>
@@ -1342,8 +1330,8 @@ export default function CongNgheGHKIQuiz({
                           </div>
                           {showFeedback && (
                             <div className="flex items-center gap-2">
-                              <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
-                                isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
+                              <span className={`text-xs font-display font-bold px-3 py-1.5 rounded-full neu-inset-sm ${
+                                isCorrect ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
                               }`}>
                                 {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer || q.answer})`}
                               </span>
@@ -1357,38 +1345,42 @@ export default function CongNgheGHKIQuiz({
 
                 {/* Explanation */}
                 {isRevealed && q.explanation && (
-                  <div className="p-3 bg-slate-50 dark:bg-slate-800/80 rounded-xl text-xs text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                    <span className="font-bold text-sky-600 dark:text-sky-400 block mb-0.5">Lời giải chi tiết:</span>
-                    <MathRenderer text={q.explanation} />
+                  <div className="p-4 neu-inset rounded-2xl text-xs text-[#4A5568] dark:text-[#E2E8F0]">
+                    <span className="font-display font-extrabold text-[#FF8800] block mb-1 uppercase tracking-wide">
+                      Lời giải chi tiết:
+                    </span>
+                    <div className="leading-relaxed">
+                      <MathRenderer text={q.explanation} />
+                    </div>
                   </div>
                 )}
 
                 {/* Navigation buttons */}
-                <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
+                <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/5">
                   <button
                     onClick={() => setCurrentIndex(i => Math.max(0, i - 1))}
                     disabled={currentIndex === 0}
-                    className="flex items-center gap-1 px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40"
+                    className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] disabled:opacity-40 cursor-pointer"
                   >
-                    <ChevronLeft className="w-4 h-4" /> Câu trước
+                    <ChevronLeft className="w-4 h-4 text-[#FF8800]" /> Câu trước
                   </button>
 
                   <button
                     onClick={() => setCurrentIndex(i => Math.min(questionsToTest.length - 1, i + 1))}
                     disabled={currentIndex === questionsToTest.length - 1}
-                    className="flex items-center gap-1 px-4 py-2 rounded-xl text-xs font-semibold text-sky-600 hover:bg-sky-50 dark:hover:bg-slate-800 disabled:opacity-40"
+                    className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#FF8800] disabled:opacity-40 cursor-pointer"
                   >
                     Câu sau <ChevronRight className="w-4 h-4" />
                   </button>
                 </div>
               </div>
 
-              {/* Bubble Question Palette */}
-              <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-                <div className="text-xs font-bold text-slate-700 dark:text-slate-300 mb-2">
+              {/* Bubble Question Palette in Single Mode */}
+              <div className="neu-inset p-5 rounded-[28px]">
+                <div className="text-xs font-bold text-[#2D3748] dark:text-white mb-3">
                   Bảng danh sách câu hỏi:
                 </div>
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-2">
                   {questionsToTest.map((item, idx) => {
                     const isCur = idx === currentIndex;
                     let isDone = false;
@@ -1405,12 +1397,12 @@ export default function CongNgheGHKIQuiz({
                       <button
                         key={item.id}
                         onClick={() => setCurrentIndex(idx)}
-                        className={`w-8 h-8 rounded-lg text-xs font-bold transition flex items-center justify-center ${
+                        className={`w-9 h-9 rounded-xl text-xs font-bold transition-all flex items-center justify-center cursor-pointer ${
                           isCur
-                            ? 'ring-2 ring-sky-500 bg-sky-600 text-white'
+                            ? 'neu-inset text-[#FF8800] ring-2 ring-[#FF8800] font-extrabold'
                             : isDone
-                            ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300'
-                            : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
+                            ? 'neu-inset-sm text-[#FF8800]'
+                            : 'neu-extruded text-[#718096] dark:text-[#94A3B8] hover:neu-extruded-sm hover:text-[#2D3748] dark:hover:text-white'
                         }`}
                       >
                         {idx + 1}
