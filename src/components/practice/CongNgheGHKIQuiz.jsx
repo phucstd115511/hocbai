@@ -1002,6 +1002,7 @@ export default function CongNgheGHKIQuiz({
 
               {saQuestions.map((q, idx) => {
                 const questionNumber = mcqQuestions.length + tfQuestions.length + idx + 1;
+                const isRevealed = isSubmitted || revealedSingleQuestions[q.id];
                 const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
                 const isLocked = lockedShortAnswers[q.id] || isSubmitted;
 
