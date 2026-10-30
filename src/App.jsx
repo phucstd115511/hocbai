@@ -57,6 +57,8 @@ export default function App() {
 
     // Nếu trình duyệt hỗ trợ View Transitions API (Chrome 111+, Edge, Safari 18+)
     if (document.startViewTransition) {
+      document.documentElement.classList.add('in-theme-transition');
+
       const transition = document.startViewTransition(() => {
         setTheme(next);
         const updatedSettings = { ...data.settings, theme: next };
@@ -70,31 +72,42 @@ export default function App() {
       });
 
       transition.ready.then(() => {
-        // Hiệu ứng loang sóng nước hình tròn:
-        // Loang từ tâm icon đến ~30% trong 0.4s (400ms), dừng ngưng 1 nhịp (0.1s), rồi loang hết toàn màn hình
-        document.documentElement.animate(
+        // Giai đoạn 1: Loang từ tâm icon ra bán kính ~280px trong 0.45s
+        // Giai đoạn 2: DỪNG LẠI/NGƯNG 0.4s tại bán kính đó (giữ nguyên clip-path)
+        // Giai đoạn 3: Bùng nổ loang hết toàn bộ màn hình trong 0.45s còn lại
+        const firstRadius = Math.min(260, endRadius * 0.25);
+
+        const anim = document.documentElement.animate(
           [
             {
               clipPath: `circle(0px at ${x}px ${y}px)`
             },
             {
-              clipPath: `circle(${endRadius * 0.35}px at ${x}px ${y}px)`,
-              offset: 0.45
+              clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
+              offset: 0.35 // 0s -> 0.45s (loang đợt 1)
             },
             {
-              clipPath: `circle(${endRadius * 0.35}px at ${x}px ${y}px)`,
-              offset: 0.55
+              clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
+              offset: 0.68 // 0.45s -> 0.85s (dừng hẳn 0.4s để thấy rõ điểm dừng)
             },
             {
-              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)`
+              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)` // 0.85s -> 1.3s (loang hết màn hình)
             }
           ],
           {
-            duration: 900,
-            easing: 'cubic-bezier(0.25, 1, 0.5, 1)',
+            duration: 1300,
+            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
             pseudoElement: '::view-transition-new(root)'
           }
         );
+
+        anim.onfinish = () => {
+          document.documentElement.classList.remove('in-theme-transition');
+        };
+      });
+
+      transition.finished.finally(() => {
+        document.documentElement.classList.remove('in-theme-transition');
       });
       return;
     }

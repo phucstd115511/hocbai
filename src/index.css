@@ -177,10 +177,18 @@
 }
 
 /* Water Ripple Theme Transition Animation */
+::view-transition-group(root) {
+  animation-duration: 1.2s;
+  animation-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;
   mix-blend-mode: normal;
+  display: block;
+  overflow: clip;
+  height: 100%;
 }
 
 ::view-transition-old(root) {
@@ -189,6 +197,12 @@
 
 ::view-transition-new(root) {
   z-index: 9999;
+}
+
+/* Tắt transition-colors khi view transition đang chạy để tránh 60fps drop do repaint */
+html.in-theme-transition,
+html.in-theme-transition * {
+  transition: none !important;
 }
 
 /* Fallback ripple overlay if View Transition is not supported */
