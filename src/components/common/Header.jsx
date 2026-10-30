@@ -76,13 +76,13 @@ export default function Header({
         <div className="flex items-center justify-between h-16">
           {/* Neo-Brutalist Logo */}
           <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => setActiveTab('quiz')}>
-            <div className="w-10 h-10 bg-black flex items-center justify-center border-2 border-black shadow-[2px_2px_0px_0px_#000]">
+            <div className="w-10 h-10 bg-black flex items-center justify-center border-2 border-black neo-depth-sm rounded-xl">
               <Zap className="w-6 h-6 text-[#ffe17c] fill-[#ffe17c]" />
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-cabinet font-extrabold text-xl text-black dark:text-white tracking-tight uppercase">Học Bài</span>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-black text-[#ffe17c] border border-black shadow-[1px_1px_0px_0px_#000]">
+                <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-black text-[#ffe17c] border border-black neo-depth-sm">
                   Neo v2.0
                 </span>
               </div>
@@ -103,8 +103,8 @@ export default function Header({
                   onClick={() => setActiveTab(item.id)}
                   className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold border-2 transition-all cursor-pointer ${
                     isActive
-                      ? 'bg-black text-[#ffe17c] border-black shadow-[3px_3px_0px_0px_#000] translate-x-[-1px] translate-y-[-1px]'
-                      : 'bg-white/80 dark:bg-slate-800 text-black dark:text-white border-black/80 hover:bg-white hover:shadow-[2px_2px_0px_0px_#000] hover:translate-x-[-1px] hover:translate-y-[-1px]'
+                      ? 'bg-black text-[#ffe17c] border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
+                      : 'bg-white/80 dark:bg-slate-800 text-black dark:text-white border-black/80 hover:bg-white hover:neo-depth-sm hover:translate-x-[-1px] hover:translate-y-[-1px]'
                   }`}
                 >
                   <Icon className={`w-4 h-4 ${isActive ? 'text-[#ffe17c]' : 'text-black dark:text-slate-300'}`} />
@@ -128,7 +128,7 @@ export default function Header({
             <button
               onClick={toggleTheme}
               title={theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối'}
-              className="p-2 rounded-xl border-2 border-black bg-white dark:bg-slate-800 text-black dark:text-white shadow-[2px_2px_0px_0px_#000] hover:translate-x-[-1px] hover:translate-y-[-1px] transition cursor-pointer"
+              className="p-2 rounded-xl border-2 border-black bg-white dark:bg-slate-800 text-black dark:text-white neo-depth-sm hover:translate-x-[-1px] hover:translate-y-[-1px] transition cursor-pointer"
             >
               {theme === 'dark' ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-black" />}
             </button>

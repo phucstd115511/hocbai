@@ -434,18 +434,18 @@ export default function CongNgheGHKIQuiz({
   return (
     <div className="space-y-6 max-w-4xl mx-auto font-satoshi text-black dark:text-white">
       {/* 1. Thanh chọn Môn học (Gộp gọn gàng theo môn chuẩn Neo-Brutalist) */}
-      <div className="bg-white dark:bg-[#171e19] p-2.5 rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_#000] flex flex-wrap items-center gap-2.5">
+      <div className="bg-white dark:bg-[#171e19] p-3 rounded-3xl border-2 border-black neo-depth-md flex flex-wrap items-center gap-2.5">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
             activeSubjectId === 'sub_congnghe_ghki'
-              ? 'bg-[#ffe17c] text-black border-black shadow-[4px_4px_0px_0px_#000] translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30'
+              ? 'bg-[#ffe17c] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
+              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30 hover:neo-depth-sm'
           }`}
         >
           <Wrench className="w-4 h-4 shrink-0" />
           <span>Môn Công Nghệ 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-black ${
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
             activeSubjectId === 'sub_congnghe_ghki' ? 'bg-black text-[#ffe17c]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
           }`}>
             93 câu
@@ -454,15 +454,15 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_gdqp11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
             isGdqp
-              ? 'bg-[#b7c6c2] text-black border-black shadow-[4px_4px_0px_0px_#000] translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#b7c6c2]/30'
+              ? 'bg-[#b7c6c2] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
+              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#b7c6c2]/30 hover:neo-depth-sm'
           }`}
         >
           <Shield className="w-4 h-4 shrink-0" />
           <span>Môn GDQP&AN 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-black ${
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
             isGdqp ? 'bg-black text-[#b7c6c2]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
           }`}>
             52 câu
@@ -471,15 +471,15 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_dia11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3 rounded-xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
+          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-cabinet font-extrabold border-2 transition-all cursor-pointer ${
             isDia
-              ? 'bg-[#ffe17c] text-black border-black shadow-[4px_4px_0px_0px_#000] translate-x-[-1px] translate-y-[-1px]'
-              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30'
+              ? 'bg-[#ffe17c] text-black border-black neo-depth-sm translate-x-[-1px] translate-y-[-1px]'
+              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black/40 hover:border-black hover:bg-[#ffe17c]/30 hover:neo-depth-sm'
           }`}
         >
           <Globe className="w-4 h-4 shrink-0" />
           <span>Môn Địa Lí 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-md border border-black ${
+          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-lg border border-black ${
             isDia ? 'bg-black text-[#ffe17c]' : 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white'
           }`}>
             51 câu
@@ -488,7 +488,7 @@ export default function CongNgheGHKIQuiz({
       </div>
 
       {/* 2. Top Banner: Đề thi của môn học Neo-Brutalist */}
-      <div className={`p-6 sm:p-8 rounded-3xl border-2 border-black shadow-[8px_8px_0px_0px_#000] relative overflow-hidden transition-all ${
+      <div className={`p-6 sm:p-8 rounded-[32px] border-2 border-black neo-depth-lg relative overflow-hidden transition-all ${
         isGdqp 
           ? 'bg-[#b7c6c2] text-black'
           : isDia
@@ -497,7 +497,7 @@ export default function CongNgheGHKIQuiz({
       }`}>
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-black text-white text-xs font-cabinet font-extrabold uppercase border border-black">
+            <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-black text-white text-xs font-cabinet font-extrabold uppercase border border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,0.3)]">
               {isGdqp ? <Shield className="w-3.5 h-3.5 text-[#b7c6c2]" /> : isDia ? <Globe className="w-3.5 h-3.5 text-[#ffe17c]" /> : <BookOpen className="w-3.5 h-3.5 text-[#ffe17c]" />}
               {isGdqp 
                 ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' 
@@ -524,14 +524,14 @@ export default function CongNgheGHKIQuiz({
           <div className="flex flex-wrap items-center gap-3 shrink-0">
             <button
               onClick={() => setIsPrinting(true)}
-              className="neo-btn bg-white text-black px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
+              className="neo-btn bg-white text-black px-4 py-2.5 rounded-2xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
               title="In đề thi giấy A4 để làm bài hoặc phát cho học sinh"
             >
               <Printer className="w-4 h-4" /> In Đề A4
             </button>
             <button
               onClick={handleReset}
-              className="neo-btn bg-[#171e19] text-white px-4 py-2.5 rounded-xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
+              className="neo-btn bg-[#171e19] text-white px-4 py-2.5 rounded-2xl text-xs font-cabinet font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer"
               title="Đặt lại bài làm"
             >
               <RotateCcw className="w-4 h-4 text-[#ffe17c]" /> Làm Lại
@@ -541,23 +541,23 @@ export default function CongNgheGHKIQuiz({
       </div>
 
       {/* 3. Sticky Progress & Control Bar Neo-Brutalist */}
-      <div className="sticky top-16 z-30 bg-white dark:bg-[#171e19] p-3.5 rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_#000] flex flex-wrap items-center justify-between gap-3">
+      <div className="sticky top-16 z-30 bg-white/95 dark:bg-[#171e19]/95 backdrop-blur-md p-3.5 rounded-2xl border-2 border-black neo-depth-md flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#ffe17c] text-black font-mono font-bold text-xs sm:text-sm border-2 border-black shadow-[2px_2px_0px_0px_#000]">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#ffe17c] text-black font-mono font-bold text-xs sm:text-sm border-2 border-black neo-depth-sm">
             <Clock className="w-4 h-4 text-black" />
             <span>{formatTimer(seconds)}</span>
           </div>
 
           <div className="text-xs font-bold text-black dark:text-white">
-            Tiến độ: <span className="text-black bg-[#b7c6c2] px-2 py-0.5 rounded-md border border-black font-extrabold">{answeredCount}</span> / {questionsToTest.length} câu
+            Tiến độ: <span className="text-black bg-[#b7c6c2] px-2 py-0.5 rounded-md border border-black font-extrabold neo-depth-sm">{answeredCount}</span> / {questionsToTest.length} câu
           </div>
 
           <button
             onClick={() => setShowPalette(!showPalette)}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border-2 border-black transition cursor-pointer ${
               showPalette 
-                ? 'bg-black text-[#ffe17c] shadow-[2px_2px_0px_0px_#000]' 
-                : 'bg-white dark:bg-slate-800 text-black dark:text-white hover:bg-slate-100 shadow-[2px_2px_0px_0px_#000]'
+                ? 'bg-black text-[#ffe17c] neo-depth-sm' 
+                : 'bg-white dark:bg-slate-800 text-black dark:text-white hover:bg-slate-100 neo-depth-sm'
             }`}
           >
             <Grid className="w-3.5 h-3.5" />
@@ -692,7 +692,7 @@ export default function CongNgheGHKIQuiz({
           {/* PHẦN I: TRẮC NGHIỆM NHIỀU PHƯƠNG ÁN LỰA CHỌN */}
           {mcqQuestions.length > 0 && (
             <div className="space-y-4">
-              <div className="p-5 bg-white dark:bg-[#171e19] rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_#000] flex items-center justify-between">
+              <div className="p-5 bg-white dark:bg-[#171e19] rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
                 <div>
                   <h3 className="text-base font-cabinet font-extrabold text-black dark:text-[#ffe17c] uppercase tracking-wide">
                     Phần I: Câu trắc nghiệm nhiều phương án lựa chọn
@@ -701,7 +701,7 @@ export default function CongNgheGHKIQuiz({
                     Thí sinh trả lời từ câu 1 đến câu {mcqQuestions.length}. Mỗi câu hỏi thí sinh chỉ chọn một phương án đúng nhất.
                   </p>
                 </div>
-                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg bg-black text-[#ffe17c] border border-black shadow-[2px_2px_0px_0px_#000] shrink-0">
+                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-black text-[#ffe17c] border border-black neo-depth-sm shrink-0">
                   {mcqQuestions.length} câu
                 </span>
               </div>
@@ -715,18 +715,18 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-2xl border-2 border-black transition ${
+                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
                       isSubmitted
-                        ? 'shadow-[4px_4px_0px_0px_#000]'
+                        ? 'neo-depth-md'
                         : isUserAnswered
-                        ? 'shadow-[4px_4px_0px_0px_#000] ring-2 ring-[#ffe17c]'
-                        : 'shadow-[4px_4px_0px_0px_#000]'
+                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
+                        : 'neo-depth-md hover:translate-y-[-1px]'
                     }`}
                   >
                     {/* Question Header */}
                     <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
                       <div className="flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-lg bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs shadow-[2px_2px_0px_0px_#000]">
+                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
                           {questionNumber}
                         </span>
                         <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
@@ -763,19 +763,19 @@ export default function CongNgheGHKIQuiz({
                         const isCorrect = optIdx === q.correct;
                         const hasAnswered = isChosen || isRevealed;
 
-                        let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20';
-                        let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black';
+                        let itemStyle = 'bg-white dark:bg-[#272727] border-black/60 text-black dark:text-white hover:border-black hover:bg-[#ffe17c]/20 hover:neo-depth-sm';
+                        let badgeStyle = 'bg-slate-200 dark:bg-slate-700 text-black dark:text-white border-black neo-depth-sm';
 
                         if (isChosen) {
                           if (isCorrect) {
-                            itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white ring-2 ring-emerald-500';
+                            itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black neo-depth-sm font-bold text-black dark:text-white ring-2 ring-emerald-500';
                             badgeStyle = 'bg-emerald-600 text-white border-black';
                           } else {
-                            itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 shadow-[3px_3px_0px_0px_#000] ring-2 ring-rose-500';
+                            itemStyle = 'bg-rose-100 dark:bg-rose-950/80 border-black text-rose-900 dark:text-rose-200 neo-depth-sm ring-2 ring-rose-500';
                             badgeStyle = 'bg-rose-600 text-white border-black';
                           }
                         } else if (isRevealed && isCorrect) {
-                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black shadow-[3px_3px_0px_0px_#000] font-bold text-black dark:text-white';
+                          itemStyle = 'bg-emerald-100 dark:bg-emerald-950/80 border-black neo-depth-sm font-bold text-black dark:text-white';
                           badgeStyle = 'bg-emerald-600 text-white border-black';
                         } else if (userAnswers[q.id] !== undefined && isCorrect) {
                           // Nếu người dùng đã chọn sai, hiển thị phương án đúng màu xanh luôn
@@ -791,11 +791,11 @@ export default function CongNgheGHKIQuiz({
                             type="button"
                             disabled={isLocked}
                             onClick={() => handleSelectMCQ(q.id, optIdx)}
-                            className={`w-full flex items-start gap-3 p-3.5 rounded-xl border-2 text-xs sm:text-sm text-left transition ${
+                            className={`w-full flex items-start gap-3 p-3.5 rounded-2xl border-2 text-xs sm:text-sm text-left transition ${
                               isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
                             } ${itemStyle}`}
                           >
-                            <span className={`w-7 h-7 rounded-lg flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
+                            <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-cabinet font-extrabold text-xs shrink-0 mt-0.5 border ${badgeStyle}`}>
                               {letter}
                             </span>
                             <span className="flex-1 mt-0.5">
@@ -837,7 +837,7 @@ export default function CongNgheGHKIQuiz({
           {/* PHẦN II: CÂU TRẮC NGHIỆM ĐÚNG / SAI (NẾU CÓ) */}
           {tfQuestions.length > 0 && (
             <div className="space-y-4 pt-4 border-t-2 border-black">
-              <div className="p-5 bg-white dark:bg-[#171e19] rounded-2xl border-2 border-black shadow-[4px_4px_0px_0px_#000] flex items-center justify-between">
+              <div className="p-5 bg-white dark:bg-[#171e19] rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
                 <div>
                   <h3 className="text-base font-cabinet font-extrabold text-black dark:text-[#ffe17c] uppercase tracking-wide">
                     Phần II: Câu trắc nghiệm đúng / sai (4 ý)
@@ -846,7 +846,7 @@ export default function CongNgheGHKIQuiz({
                     Thí sinh trả lời từ câu {mcqQuestions.length + 1} đến câu {questionsToTest.length}. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn Đúng hoặc Sai.
                   </p>
                 </div>
-                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg bg-black text-[#ffe17c] border border-black shadow-[2px_2px_0px_0px_#000] shrink-0">
+                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-black text-[#ffe17c] border border-black neo-depth-sm shrink-0">
                   {tfQuestions.length} câu
                 </span>
               </div>
@@ -860,21 +860,21 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-slate-900 p-5 rounded-2xl border transition ${
+                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
                       isSubmitted
-                        ? 'border-slate-200 dark:border-slate-800'
+                        ? 'neo-depth-md'
                         : isUserAnswered
-                        ? 'border-indigo-300 dark:border-indigo-800 shadow-xs'
-                        : 'border-slate-200 dark:border-slate-800'
+                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
+                        : 'neo-depth-md hover:translate-y-[-1px]'
                     }`}
                   >
                     {/* Header */}
-                    <div className="flex items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-2.5 mb-3">
+                    <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
                       <div className="flex items-center gap-2">
-                        <span className="w-7 h-7 rounded-lg bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-300 flex items-center justify-center font-bold text-xs">
+                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
                           {questionNumber}
                         </span>
-                        <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
+                        <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
                           Câu {questionNumber} (Đúng / Sai 4 ý)
                         </span>
                       </div>
@@ -986,16 +986,16 @@ export default function CongNgheGHKIQuiz({
           {/* PHẦN III: CÂU TRẮC NGHIỆM TRẢ LỜI NGẮN (NẾU CÓ) */}
           {saQuestions.length > 0 && (
             <div className="space-y-4 pt-4 border-t border-slate-200 dark:border-slate-800">
-              <div className="p-4 bg-amber-50 dark:bg-amber-950/40 rounded-2xl border border-amber-200 dark:border-amber-800 flex items-center justify-between">
+              <div className="p-5 bg-amber-50 dark:bg-amber-950/40 rounded-3xl border-2 border-black neo-depth-md flex items-center justify-between">
                 <div>
-                  <h3 className="text-sm font-bold text-amber-900 dark:text-amber-200 uppercase tracking-wide">
+                  <h3 className="text-base font-cabinet font-extrabold text-amber-950 dark:text-amber-200 uppercase tracking-wide">
                     Phần III: Câu trắc nghiệm yêu cầu trả lời ngắn
                   </h3>
-                  <p className="text-xs text-amber-700 dark:text-amber-300 mt-0.5">
+                  <p className="text-xs text-amber-900/80 dark:text-amber-300 mt-0.5 font-medium">
                     Thí sinh trả lời từ câu {mcqQuestions.length + tfQuestions.length + 1} đến câu {questionsToTest.length}. Thí sinh tính toán và nhập đáp số vào ô bên dưới.
                   </p>
                 </div>
-                <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-amber-600 text-white">
+                <span className="text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-xl bg-amber-600 text-white border border-black neo-depth-sm">
                   {saQuestions.length} câu
                 </span>
               </div>
@@ -1015,18 +1015,18 @@ export default function CongNgheGHKIQuiz({
                   <div
                     key={q.id}
                     id={`q_${q.id}`}
-                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-2xl border-2 border-black transition ${
+                    className={`bg-white dark:bg-[#171e19] p-5 sm:p-6 rounded-3xl border-2 border-black transition ${
                       isSubmitted
-                        ? 'shadow-[4px_4px_0px_0px_#000]'
+                        ? 'neo-depth-md'
                         : isLocked
-                        ? 'shadow-[4px_4px_0px_0px_#000] ring-2 ring-[#ffe17c]'
-                        : 'shadow-[4px_4px_0px_0px_#000]'
+                        ? 'neo-depth-md ring-2 ring-[#ffe17c]'
+                        : 'neo-depth-md hover:translate-y-[-1px]'
                     }`}
                   >
                     {/* Header */}
                     <div className="flex items-center justify-between gap-2 border-b-2 border-black/10 dark:border-white/10 pb-3 mb-4">
                       <div className="flex items-center gap-2">
-                        <span className="w-8 h-8 rounded-lg bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs shadow-[2px_2px_0px_0px_#000]">
+                        <span className="w-8 h-8 rounded-xl bg-black text-[#ffe17c] border border-black flex items-center justify-center font-cabinet font-extrabold text-xs neo-depth-sm">
                           {questionNumber}
                         </span>
                         <span className="text-xs font-cabinet font-extrabold uppercase text-black dark:text-white">
@@ -1065,12 +1065,12 @@ export default function CongNgheGHKIQuiz({
                             if (e.key === 'Enter') handleLockShortAnswer(q.id);
                           }}
                           placeholder="Ví dụ: 351 hoặc 23,4"
-                          className={`w-full sm:w-64 px-4 py-2.5 rounded-xl text-sm font-bold border-2 transition outline-none ${
+                          className={`w-full sm:w-64 px-4 py-2.5 rounded-2xl text-sm font-bold border-2 transition outline-none ${
                             isLocked
                               ? isCorrect
-                                ? 'bg-emerald-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-emerald-400'
-                                : 'bg-rose-50 text-black border-black shadow-[2px_2px_0px_0px_#000] ring-2 ring-rose-400'
-                              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black focus:border-[#ffe17c] focus:shadow-[2px_2px_0px_0px_#000]'
+                                ? 'bg-emerald-50 text-black border-black neo-depth-sm ring-2 ring-emerald-400'
+                                : 'bg-rose-50 text-black border-black neo-depth-sm ring-2 ring-rose-400'
+                              : 'bg-white dark:bg-[#272727] text-black dark:text-white border-black neo-inset-well focus:neo-inset-deep'
                           }`}
                         />
                         {!isLocked && (
