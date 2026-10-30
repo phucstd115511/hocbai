@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { 
   Zap,
   BookOpen, 
@@ -15,6 +15,116 @@ import {
   Sparkles
 } from 'lucide-react';
 
+/**
+ * Custom hook providing mouse wheel horizontal scrolling & mouse drag-to-scroll.
+ * Supports both left-click drag and middle-click/wheel drag, suppresses click on drag,
+ * and leaves touch scrolling native.
+ */
+function useHorizontalScroll() {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    // 1. Mouse wheel horizontal scrolling
+    const onWheel = (e) => {
+      const delta = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+      if (delta !== 0) {
+        const maxScroll = el.scrollWidth - el.clientWidth;
+        if (maxScroll > 0) {
+          e.preventDefault();
+          el.scrollLeft += delta;
+        }
+      }
+    };
+
+    // 2. Mouse drag-to-scroll (supports Left Click and Middle/Wheel Click)
+    let isDown = false;
+    let startX = 0;
+    let scrollStart = 0;
+    let hasDragged = false;
+
+    const onMouseDown = (e) => {
+      // Button 0 (left-click) or Button 1 (middle-click / wheel click)
+      if (e.button !== 0 && e.button !== 1) return;
+      isDown = true;
+      hasDragged = false;
+      startX = e.pageX - el.offsetLeft;
+      scrollStart = el.scrollLeft;
+      if (e.button === 1) {
+        e.preventDefault(); // Prevent default middle click autoscroll icon
+      }
+    };
+
+    const onMouseMove = (e) => {
+      if (!isDown) return;
+      const x = e.pageX - el.offsetLeft;
+      const walk = x - startX;
+      if (Math.abs(walk) > 4) {
+        hasDragged = true;
+        el.style.cursor = 'grabbing';
+        el.style.userSelect = 'none';
+      }
+      el.scrollLeft = scrollStart - walk;
+    };
+
+    const onMouseUp = () => {
+      if (!isDown) return;
+      isDown = false;
+      el.style.cursor = '';
+      el.style.removeProperty('user-select');
+      setTimeout(() => {
+        hasDragged = false;
+      }, 50);
+    };
+
+    const onWindowBlur = () => {
+      if (isDown) {
+        isDown = false;
+        el.style.cursor = '';
+        el.style.removeProperty('user-select');
+        hasDragged = false;
+      }
+    };
+
+    // Block click action if user was dragging
+    const onClickCapture = (e) => {
+      if (hasDragged) {
+        e.stopPropagation();
+        e.preventDefault();
+      }
+    };
+
+    // Prevent middle-click auxiliary click action
+    const onAuxClick = (e) => {
+      if (e.button === 1) {
+        e.preventDefault();
+      }
+    };
+
+    el.addEventListener('wheel', onWheel, { passive: false });
+    el.addEventListener('mousedown', onMouseDown);
+    window.addEventListener('mousemove', onMouseMove);
+    window.addEventListener('mouseup', onMouseUp);
+    window.addEventListener('blur', onWindowBlur);
+    el.addEventListener('click', onClickCapture, { capture: true });
+    el.addEventListener('auxclick', onAuxClick);
+
+    return () => {
+      el.removeEventListener('wheel', onWheel);
+      el.removeEventListener('mousedown', onMouseDown);
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+      window.removeEventListener('blur', onWindowBlur);
+      el.removeEventListener('click', onClickCapture, { capture: true });
+      el.removeEventListener('auxclick', onAuxClick);
+    };
+  }, []);
+
+  return ref;
+}
+
 export default function Header({ 
   activeTab, 
   setActiveTab, 
@@ -23,6 +133,9 @@ export default function Header({
   questionCount = 0, 
   examCount = 0 
 }) {
+  const mobileNavRef = useHorizontalScroll();
+  const desktopNavRef = useHorizontalScroll();
+
   const navItems = [
     { 
       id: 'quiz', 
@@ -99,7 +212,10 @@ export default function Header({
           </div>
 
           {/* Desktop Navigation - Neumorphic Segmented Control Bar */}
-          <nav className="hidden lg:flex items-center gap-1 neu-inset p-1.5 rounded-2xl">
+          <nav 
+            ref={desktopNavRef}
+            className="hidden lg:flex items-center gap-1 neu-inset p-1.5 rounded-2xl overflow-x-auto no-scrollbar cursor-grab"
+          >
             {navItems.map(item => {
               const Icon = item.icon;
               const isActive = activeTab === item.id || 
@@ -109,7 +225,7 @@ export default function Header({
                 <button
                   key={item.id}
                   onClick={() => setActiveTab(item.id)}
-                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all duration-300 cursor-pointer ${
                     isActive
                       ? 'neu-extruded text-[#FF8800] dark:text-[#FF8800] shadow-[4px_4px_8px_rgb(163,177,198,0.6),-4px_-4px_8px_rgba(255,255,255,0.7)] dark:shadow-[4px_4px_8px_rgb(14,17,21,0.85),-4px_-4px_8px_rgba(255,255,255,0.05)]'
                       : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
@@ -148,7 +264,10 @@ export default function Header({
         </div>
 
         {/* Mobile Navigation Bar */}
-        <div className="lg:hidden flex items-center py-2.5 overflow-x-auto gap-1.5 neu-inset rounded-2xl px-2 mb-2">
+        <div 
+          ref={mobileNavRef}
+          className="lg:hidden flex items-center py-2.5 overflow-x-auto gap-1.5 neu-inset rounded-2xl px-2 mb-2 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+        >
           {navItems.map(item => {
             const Icon = item.icon;
             const isActive = activeTab === item.id || 
@@ -158,7 +277,7 @@ export default function Header({
               <button
                 key={item.id}
                 onClick={() => setActiveTab(item.id)}
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all duration-200 ${
+                className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 cursor-pointer transition-all duration-200 ${
                   isActive
                     ? 'neu-extruded text-[#FF8800]'
                     : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
