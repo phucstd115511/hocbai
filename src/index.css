@@ -52,6 +52,15 @@
   scrollbar-width: none !important; /* Firefox */
 }
 
+/* Neumorphic Sliding Pill Transition */
+.neu-pill-transition {
+  transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+              width 320ms cubic-bezier(0.16, 1, 0.3, 1),
+              height 320ms cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 200ms ease;
+  will-change: transform, width;
+}
+
 /* Print Styles */
 @media print {
   @page {
