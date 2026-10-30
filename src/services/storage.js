@@ -84,6 +84,21 @@ export function getStoredData() {
           questions = [...questions, ...newQ];
         }
         needsResave = true;
+      } else {
+        // Cập nhật correctAnswer cho các câu hỏi ngắn của Địa Lí nếu bị thiếu trong storage cũ
+        const diaShortQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_dia11' && q.type === 'short_answer');
+        let updatedAny = false;
+        questions = questions.map(q => {
+          if (q.subjectId === 'sub_dia11' && q.type === 'short_answer') {
+            const seedQ = diaShortQuestions.find(sq => sq.id === q.id);
+            if (seedQ && (!q.correctAnswer || !q.answer)) {
+              updatedAny = true;
+              return { ...q, answer: seedQ.answer, correctAnswer: seedQ.correctAnswer };
+            }
+          }
+          return q;
+        });
+        if (updatedAny) needsResave = true;
       }
 
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt

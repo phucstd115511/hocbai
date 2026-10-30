@@ -82,8 +82,8 @@ export function gradeAttempt({ exam, questions, userAnswers, chapterMap = {}, sc
         wrongQuestionIds.push(q.id);
       }
     } else if (q.type === 'short_answer') {
-      const userVal = String(userAnswers[q.id] || '').trim().replace(',', '.');
-      const correctVal = String(q.answer || '').trim().replace(',', '.');
+      const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
+      const correctVal = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
       const isCorrect = userVal !== '' && userVal === correctVal;
       const score = isCorrect ? 1.0 : 0;
       totalScore += score;
@@ -95,7 +95,7 @@ export function gradeAttempt({ exam, questions, userAnswers, chapterMap = {}, sc
         score,
         maxScore: 1.0,
         userVal: userAnswers[q.id],
-        correctVal: q.answer
+        correctVal: q.correctAnswer || q.answer
       };
 
       if (!isCorrect) {

@@ -132,6 +132,15 @@ export default function PracticeRoom({
     });
   };
 
+  // Trả lời câu hỏi ngắn
+  const handleSelectShortAnswer = (qId, val) => {
+    if (isSubmitted) return;
+    setUserAnswers(prev => ({
+      ...prev,
+      [qId]: val
+    }));
+  };
+
   // Nộp bài
   const handleSubmitExam = () => {
     const totalQ = examQuestions.length;
@@ -139,6 +148,9 @@ export default function PracticeRoom({
     examQuestions.forEach(q => {
       if (q.type === 'mcq') {
         if (userAnswers[q.id] !== undefined) answeredQ++;
+      } else if (q.type === 'short_answer') {
+        const val = userAnswers[q.id];
+        if (val !== undefined && String(val).trim() !== '') answeredQ++;
       } else {
         const tf = userAnswers[q.id] || {};
         if (Object.keys(tf).length === 4) answeredQ++;
@@ -436,7 +448,7 @@ export default function PracticeRoom({
                   {/* Answers review */}
                   {q.type === 'mcq' ? (
                     <div className="space-y-1.5 mb-3">
-                      {q.options.map((opt, optIdx) => {
+                      {(q.options || []).map((opt, optIdx) => {
                         const letter = ['A', 'B', 'C', 'D'][optIdx];
                         const isUserChoice = res.userChoice === optIdx;
                         const isCorrectOption = q.correct === optIdx;
@@ -458,10 +470,26 @@ export default function PracticeRoom({
                         );
                       })}
                     </div>
+                  ) : q.type === 'short_answer' ? (
+                    /* Short Answer review */
+                    <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5 mb-3 text-xs">
+                      <div className="flex items-center justify-between">
+                        <span className="text-slate-600 dark:text-slate-400">Câu trả lời của bạn:</span>
+                        <span className={`font-bold ${res.isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                          {res.userVal ? String(res.userVal) : '(Bỏ trống)'}
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-slate-600 dark:text-slate-400">Đáp án chính xác:</span>
+                        <span className="font-bold text-emerald-700 dark:text-emerald-300">
+                          {q.correctAnswer || q.answer}
+                        </span>
+                      </div>
+                    </div>
                   ) : (
                     /* True/False Statements review */
                     <div className="space-y-1.5 mb-3">
-                      {q.statements.map(stmt => {
+                      {(q.statements || []).map(stmt => {
                         const detail = res.details?.[stmt.label] || {};
                         const stmtCorrect = detail.isCorrect;
                         const userValStr = detail.userVal === true ? 'Đúng' : detail.userVal === false ? 'Sai' : 'Chưa chọn';
@@ -548,7 +576,11 @@ export default function PracticeRoom({
                 Câu {currentIndex + 1}
               </span>
               <span className="text-xs font-semibold text-slate-500">
-                {currentQ.type === 'mcq' ? 'Trắc nghiệm 1 lựa chọn' : 'Đúng / Sai 4 ý'}
+                {currentQ.type === 'mcq'
+                  ? 'Trắc nghiệm 1 lựa chọn'
+                  : currentQ.type === 'short_answer'
+                  ? 'Trả lời ngắn / Điền số'
+                  : 'Đúng / Sai 4 ý'}
               </span>
             </div>
             <span className="text-xs text-slate-400 capitalize">
@@ -564,7 +596,7 @@ export default function PracticeRoom({
           {/* Input Answer Section */}
           {currentQ.type === 'mcq' ? (
             <div className="space-y-2.5">
-              {currentQ.options.map((opt, optIdx) => {
+              {(currentQ.options || []).map((opt, optIdx) => {
                 const letter = ['A', 'B', 'C', 'D'][optIdx];
                 const isSelected = userAnswers[currentQ.id] === optIdx;
 
@@ -593,13 +625,31 @@ export default function PracticeRoom({
                 );
               })}
             </div>
+          ) : currentQ.type === 'short_answer' ? (
+            /* Short Answer input box */
+            <div className="space-y-3 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-800/40">
+              <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
+                Nhập câu trả lời hoặc số liệu của bạn:
+              </label>
+              <input
+                type="text"
+                disabled={isSubmitted}
+                value={userAnswers[currentQ.id] !== undefined ? String(userAnswers[currentQ.id]) : ''}
+                onChange={(e) => handleSelectShortAnswer(currentQ.id, e.target.value)}
+                placeholder="Ví dụ: 351 hoặc 23,4"
+                className="w-full sm:w-80 px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-medium text-sm focus:ring-2 focus:ring-sky-500 outline-none"
+              />
+              <p className="text-[11px] text-slate-400">
+                Lưu ý: Đối với số thập phân, bạn có thể dùng dấu phẩy (,) hoặc dấu chấm (.).
+              </p>
+            </div>
           ) : (
             /* True/False Statements with interactive buttons */
             <div className="space-y-3">
               <p className="text-xs text-slate-500 italic">
                 * Thí sinh chọn ĐÚNG hoặc SAI cho mỗi nhận định sau:
               </p>
-              {currentQ.statements.map(stmt => {
+              {(currentQ.statements || []).map(stmt => {
                 const userVal = userAnswers[currentQ.id]?.[stmt.label];
 
                 return (
@@ -675,6 +725,9 @@ export default function PracticeRoom({
             let isAnswered = false;
             if (q.type === 'mcq') {
               isAnswered = userAnswers[q.id] !== undefined;
+            } else if (q.type === 'short_answer') {
+              const val = userAnswers[q.id];
+              isAnswered = val !== undefined && String(val).trim() !== '';
             } else {
               const tf = userAnswers[q.id] || {};
               isAnswered = Object.keys(tf).length === 4;

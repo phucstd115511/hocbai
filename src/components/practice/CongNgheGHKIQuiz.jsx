@@ -221,7 +221,7 @@ export default function CongNgheGHKIQuiz({
         if (res.isFullyCorrect) correctCount++;
       } else if (q.type === 'short_answer') {
         const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
-        const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+        const correctVal = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
         if (userVal !== '' && userVal === correctVal) {
           totalPoints += 1;
           correctCount++;
@@ -243,7 +243,7 @@ export default function CongNgheGHKIQuiz({
           }
           if (q.type === 'short_answer') {
             const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
-            const correctVal = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+            const correctVal = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
             return userVal !== correctVal;
           }
           return false;
@@ -1006,7 +1006,7 @@ export default function CongNgheGHKIQuiz({
                 const isLocked = lockedShortAnswers[q.id] || isSubmitted;
 
                 const normUser = userVal.trim().replace(/,/g, '.');
-                const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+                const normCorrect = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
                 const isCorrect = isLocked ? normUser !== '' && normUser === normCorrect : null;
                 const showFeedback = isRevealed || isLocked;
 
@@ -1087,7 +1087,7 @@ export default function CongNgheGHKIQuiz({
                             <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
                               isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
                             }`}>
-                              {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer})`}
+                              {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer || q.answer})`}
                             </span>
                           </div>
                         )}
@@ -1304,7 +1304,7 @@ export default function CongNgheGHKIQuiz({
                       const userVal = userAnswers[q.id] !== undefined ? String(userAnswers[q.id]) : '';
                       const isLocked = lockedShortAnswers[q.id] || isSubmitted;
                       const normUser = userVal.trim().replace(/,/g, '.');
-                      const normCorrect = String(q.correctAnswer || '').trim().replace(/,/g, '.');
+                      const normCorrect = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
                       const isCorrect = isLocked ? normUser !== '' && normUser === normCorrect : null;
                       const showFeedback = isRevealed || isLocked;
 
@@ -1344,7 +1344,7 @@ export default function CongNgheGHKIQuiz({
                               <span className={`text-xs font-cabinet font-extrabold px-3 py-1.5 rounded-lg border border-black shadow-[1px_1px_0px_0px_#000] ${
                                 isCorrect ? 'bg-emerald-300 text-black' : 'bg-rose-300 text-black'
                               }`}>
-                                {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer})`}
+                                {isCorrect ? '✓ Chính xác (+1đ)' : `✗ Chưa đúng (Đáp án: ${q.correctAnswer || q.answer})`}
                               </span>
                             </div>
                           )}

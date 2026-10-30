@@ -294,7 +294,7 @@ export default function PrintView({
                   <div className="pl-4 text-[10.5pt]">
                     {printMode === 'teacher' ? (
                       <div className="font-bold text-red-600">
-                        Đáp án: {q.correctAnswer}
+                        Đáp án: {q.correctAnswer || q.answer}
                       </div>
                     ) : (
                       <div className="text-slate-500 italic">

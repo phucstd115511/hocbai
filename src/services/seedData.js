@@ -5233,6 +5233,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Năm 2024, số dân thế giới là 8141,8 triệu người, sản lượng lương thực có hạt của thế giới là 2854 triệu tấn. Hãy cho biết bình quân lương thực có hạt theo đầu người của thế giới năm 2024 là bao nhiêu kg/người. (làm tròn kết quả đến hàng đơn vị).",
       "answer": "351",
+      "correctAnswer": "351",
       "explanation": "Đáp án chính xác: 351",
       "difficulty": "van_dung",
       "tags": [
@@ -5252,6 +5253,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Cho bảng số liệu: Trị giá xuất khẩu hàng hóa và dịch vụ của Mông Cổ và Đan Mạch, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Mông Cổ 7,7 16,4 Đan Mạch 195,7 301,4 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết tốc độ tăng trưởng trị giá xuất khẩu năm 2024 so với năm 2020 của Mông Cổ cao hơn của Đan Mạch bao nhiêu phần trăm (coi năm 2020 của mỗi nước = 100%) (làm tròn kết quả đến hàng đơn vị).",
       "answer": "59",
+      "correctAnswer": "59",
       "explanation": "Đáp án chính xác: 59",
       "difficulty": "van_dung",
       "tags": [
@@ -5271,6 +5273,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Tổng trị giá xuất nhập khẩu và cán cân xuất nhập khẩu của thế giới năm 2024 lần lượt là 47,2 nghìn tỷ USD và -0,4 nghìn tỷ USD. Hãy cho biết trị giá xuất khẩu của thế giới năm 2024 là bao nhiêu nghìn tỷ USD (làm tròn kết quả đến một chữ số thập phân).",
       "answer": "23,4",
+      "correctAnswer": "23,4",
       "explanation": "Đáp án chính xác: 23,4",
       "difficulty": "van_dung",
       "tags": [
@@ -5290,6 +5293,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Năm 2024, trị giá xuất khẩu lĩnh vực dịch vụ của Hoa Kỳ đạt 1200 tỉ USD. Trong đó thương mại số chiếm 60%. Hãy cho biết lĩnh vực thương mại số của Hoa Kỳ có trị giá là bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
       "answer": "720",
+      "correctAnswer": "720",
       "explanation": "Đáp án chính xác: 720",
       "difficulty": "van_dung",
       "tags": [
@@ -5309,6 +5313,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Năm 2018 và năm 2024, sản lượng tiêu thụ khí tự nhiên của thế giới lần lượt là 3831,7 tỉ m3 và 4127,8 tỉ m3. Hãy cho biết, sản lượng tiêu thụ khí tự nhiên của thế giới năm 2024 so với năm 2018 tăng thêm bao nhiêu tỉ m3 (làm tròn kết quả đến hàng đơn vị).",
       "answer": "296",
+      "correctAnswer": "296",
       "explanation": "Đáp án chính xác: 296",
       "difficulty": "van_dung",
       "tags": [
@@ -5328,6 +5333,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c1_s1",
       "stem": "Năm 2019 giá trị xuất khẩu toàn thế giới là 24 791,1 tỉ USD; giá trị nhập khẩu là 24 348,1 tỉ USD. Tính cán cân xuất nhập khẩu của toàn thế giới năm 2019. (làm tròn kết quả đến hàng đơn vị của tỉ USD)",
       "answer": "443",
+      "correctAnswer": "443",
       "explanation": "Đáp án chính xác: 443",
       "difficulty": "van_dung",
       "tags": [
@@ -5347,6 +5353,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c2_s1",
       "stem": "Cho bảng số liệu: Tổng dự trữ quốc tế của Hoa Kỳ và Nam Phi, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Hoa Kỳ 133,8 227,8 Nam Phi 47,4 54,9 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết năm 2024 so với năm 2020, tổng dự trữ quốc tế của Hoa Kỳ tăng nhiều hơn của Nam Phi bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
       "answer": "87",
+      "correctAnswer": "87",
       "explanation": "Đáp án chính xác: 87",
       "difficulty": "van_dung",
       "tags": [
@@ -5366,6 +5373,7 @@ export const SEED_DATA = {
       "sectionId": "chap_dia11_c2_s1",
       "stem": "Năm 2020, dân số của Mĩ La-tinh là 652,3 triệu người, trong đó dân số trong độ tuổi lao động là 438,3 triệu người. Tính tỉ lệ dân số trong độ tuổi lao động của Mĩ La-tinh năm 2020 (làm tròn đến hàng đơn vị của %).",
       "answer": "67,2",
+      "correctAnswer": "67,2",
       "explanation": "Đáp án chính xác: 67,2",
       "difficulty": "van_dung",
       "tags": [
