@@ -284,10 +284,10 @@ export default function Header({
       icon: Award 
     },
     { 
-      id: 'landing', 
-      label: 'Khám phá UI', 
-      shortLabel: 'Soft UI', 
-      icon: Sparkles 
+      id: 'stats', 
+      label: 'Thống kê kết quả', 
+      shortLabel: 'Thống kê', 
+      icon: BarChart3 
     },
     { 
       id: 'questions', 
@@ -308,12 +308,6 @@ export default function Header({
       shortLabel: 'Tạo đề', 
       icon: FileText, 
       badge: examCount 
-    },
-    { 
-      id: 'stats', 
-      label: 'Thống kê', 
-      shortLabel: 'Thống kê', 
-      icon: BarChart3 
     },
     { 
       id: 'settings', 
@@ -340,9 +334,6 @@ export default function Header({
               <div className="flex items-center gap-2">
                 <span className="font-display font-extrabold text-2xl text-[#2D3748] dark:text-white tracking-tight">
                   Học<span className="text-[#FF8800]">Bài</span>
-                </span>
-                <span className="text-[10px] uppercase font-bold tracking-wider px-2.5 py-0.5 rounded-full neu-inset-sm text-[#FF8800]">
-                  Soft UI
                 </span>
               </div>
               <p className="text-[11px] font-medium text-[#718096] dark:text-[#94A3B8] hidden sm:block">

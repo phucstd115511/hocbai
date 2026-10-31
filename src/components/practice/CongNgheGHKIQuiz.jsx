@@ -22,7 +22,8 @@ import {
   Shield,
   Wrench,
   Globe,
-  Grid
+  Grid,
+  ChevronDown
 } from 'lucide-react';
 
 export default function CongNgheGHKIQuiz({
@@ -33,6 +34,20 @@ export default function CongNgheGHKIQuiz({
   onSwitchSubject
 }) {
   const [activeSubjectId, setActiveSubjectId] = useState(initialSubjectId);
+  const [isStickyStuck, setIsStickyStuck] = useState(false);
+  const stickyRef = useRef(null);
+
+  // Theo dõi trạng thái cuộn để kích hoạt animation mở rộng khi dính (sticky)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!stickyRef.current) return;
+      const rect = stickyRef.current.getBoundingClientRect();
+      setIsStickyStuck(rect.top <= 85);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Đồng bộ khi prop initialSubjectId thay đổi từ Header
   useEffect(() => {
@@ -434,55 +449,61 @@ export default function CongNgheGHKIQuiz({
   return (
     <div className="space-y-6 max-w-4xl mx-auto font-sans text-[#4A5568] dark:text-[#E2E8F0]">
       {/* 1. Thanh chọn Môn học (Neumorphic Segmented Control) */}
-      <div className="neu-inset p-2 rounded-[28px] flex flex-wrap items-center gap-2.5">
+      <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-3.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
             activeSubjectId === 'sub_congnghe_ghki'
-              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              ? 'neu-extruded text-[#FF8800] shadow-[3px_3px_8px_rgb(163,177,198,0.7),-3px_-3px_8px_rgba(255,255,255,0.8)] dark:shadow-[3px_3px_8px_rgb(14,17,21,0.85),-3px_-3px_8px_rgba(255,255,255,0.05)]'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Wrench className="w-4 h-4 shrink-0 text-[#FF8800]" />
-          <span>Môn Công Nghệ 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+          <div className="flex items-center gap-1 sm:gap-1.5 truncate">
+            <Wrench className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#FF8800]" />
+            <span className="truncate"><span className="hidden md:inline">Môn </span>Công Nghệ 11</span>
+          </div>
+          <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
             activeSubjectId === 'sub_congnghe_ghki' ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
-            93 câu
+            93<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
 
         <button
           onClick={() => handleSwitchSubject('sub_gdqp11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-3.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
             isGdqp
-              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              ? 'neu-extruded text-[#FF8800] shadow-[3px_3px_8px_rgb(163,177,198,0.7),-3px_-3px_8px_rgba(255,255,255,0.8)] dark:shadow-[3px_3px_8px_rgb(14,17,21,0.85),-3px_-3px_8px_rgba(255,255,255,0.05)]'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Shield className="w-4 h-4 shrink-0 text-[#FF8800]" />
-          <span>Môn GDQP&AN 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+          <div className="flex items-center gap-1 sm:gap-1.5 truncate">
+            <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#FF8800]" />
+            <span className="truncate"><span className="hidden md:inline">Môn </span>GDQP&AN 11</span>
+          </div>
+          <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
             isGdqp ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
-            52 câu
+            52<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
 
         <button
           onClick={() => handleSwitchSubject('sub_dia11')}
-          className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-3.5 rounded-2xl text-xs sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-3.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
             isDia
-              ? 'neu-extruded text-[#FF8800] shadow-[4px_4px_10px_rgb(163,177,198,0.7),-4px_-4px_10px_rgba(255,255,255,0.8)]'
+              ? 'neu-extruded text-[#FF8800] shadow-[3px_3px_8px_rgb(163,177,198,0.7),-3px_-3px_8px_rgba(255,255,255,0.8)] dark:shadow-[3px_3px_8px_rgb(14,17,21,0.85),-3px_-3px_8px_rgba(255,255,255,0.05)]'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
           }`}
         >
-          <Globe className="w-4 h-4 shrink-0 text-[#FF8800]" />
-          <span>Môn Địa Lí 11</span>
-          <span className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+          <div className="flex items-center gap-1 sm:gap-1.5 truncate">
+            <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#FF8800]" />
+            <span className="truncate"><span className="hidden md:inline">Môn </span>Địa Lí 11</span>
+          </div>
+          <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
             isDia ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
-            51 câu
+            51<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
       </div>
@@ -534,71 +555,86 @@ export default function CongNgheGHKIQuiz({
         </div>
       </div>
 
-      {/* 3. Sticky Progress & Control Bar Neumorphic */}
-      <div className="sticky top-20 z-30 bg-[#EBECF0]/95 dark:bg-[#1A1E24]/95 backdrop-blur-md p-3.5 rounded-2xl neu-extruded flex flex-wrap items-center justify-between gap-3 shadow-[0_8px_16px_rgb(163,177,198,0.35)] dark:shadow-[0_8px_16px_rgb(0,0,0,0.5)]">
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl neu-inset-sm text-[#FF8800] font-mono font-bold text-xs sm:text-sm">
-            <Clock className="w-4 h-4" />
-            <span>{formatTimer(seconds)}</span>
-          </div>
+      {/* 3. Sticky Progress & Control Bar Neumorphic with Locked Expansion Animation */}
+      <div 
+        ref={stickyRef}
+        className={`sticky top-20 z-30 backdrop-blur-md p-2.5 sm:p-3.5 rounded-2xl neu-extruded transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          isStickyStuck 
+            ? 'bg-[#EBECF0]/95 dark:bg-[#1A1E24]/95 shadow-[0_12px_28px_rgb(163,177,198,0.45)] dark:shadow-[0_12px_28px_rgb(0,0,0,0.7)] ring-1 ring-[#FF8800]/25' 
+            : 'bg-[#EBECF0]/90 dark:bg-[#1A1E24]/90 shadow-[0_8px_16px_rgb(163,177,198,0.35)] dark:shadow-[0_8px_16px_rgb(0,0,0,0.5)]'
+        }`}
+      >
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2.5 w-full">
+          {/* Row 1 on mobile: Clock, Progress & Question Palette button spread out evenly */}
+          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto">
+            {/* Clock */}
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl neu-inset-sm text-[#FF8800] font-mono font-bold text-xs sm:text-sm shrink-0">
+              <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+              <span>{formatTimer(seconds)}</span>
+            </div>
 
-          <div className="neu-inset-sm px-3 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
-            Tiến độ: <span className="text-[#FF8800] font-extrabold">{answeredCount}</span> / {questionsToTest.length} câu
-          </div>
+            {/* Progress */}
+            <div className="neu-inset-sm px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] shrink-0">
+              <span className="hidden sm:inline">Tiến độ: </span>
+              <span className="text-[#FF8800] font-extrabold">{answeredCount}</span>/{questionsToTest.length} <span className="hidden xs:inline">câu</span>
+            </div>
 
-          <button
-            onClick={() => setShowPalette(!showPalette)}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold transition duration-200 cursor-pointer ${
-              showPalette 
-                ? 'neu-inset-sm text-[#FF8800]' 
-                : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
-            }`}
-          >
-            <Grid className="w-3.5 h-3.5 text-[#FF8800]" />
-            <span>Bảng câu hỏi ({answeredCount}/{questionsToTest.length})</span>
-          </button>
-        </div>
-
-        {/* View mode & submit toggle */}
-        <div className="flex items-center gap-3">
-          <div className="flex neu-inset p-1 rounded-xl text-xs gap-1">
+            {/* Question Palette Button: expands to fill all remaining right space smoothly */}
             <button
-              onClick={() => setDisplayMode('scroll')}
-              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
-                displayMode === 'scroll' 
-                  ? 'neu-extruded text-[#FF8800]' 
-                  : 'text-[#718096] dark:text-[#94A3B8]'
-              }`}
+              onClick={() => setShowPalette(!showPalette)}
+              className={`flex-1 md:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
+                showPalette 
+                  ? 'neu-inset-sm text-[#FF8800]' 
+                  : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
+              } ${isStickyStuck ? 'ring-1 ring-[#FF8800]/30 shadow-sm' : ''}`}
             >
-              <LayoutList className="w-3.5 h-3.5" /> Toàn bộ đề
-            </button>
-            <button
-              onClick={() => setDisplayMode('single')}
-              className={`flex items-center gap-1 px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
-                displayMode === 'single' 
-                  ? 'neu-extruded text-[#FF8800]' 
-                  : 'text-[#718096] dark:text-[#94A3B8]'
-              }`}
-            >
-              <ListOrdered className="w-3.5 h-3.5" /> Từng câu
+              <Grid className="w-3.5 h-3.5 text-[#FF8800] shrink-0" />
+              <span className="truncate">Bảng câu hỏi ({answeredCount}/{questionsToTest.length})</span>
+              <ChevronDown className={`w-3.5 h-3.5 text-[#718096] transition-transform duration-300 shrink-0 ${showPalette ? 'rotate-180 text-[#FF8800]' : ''}`} />
             </button>
           </div>
 
-          {!isSubmitted ? (
-            <button
-              onClick={handleSubmit}
-              className="neu-btn-primary px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center gap-2 cursor-pointer"
-            >
-              <Send className="w-3.5 h-3.5" /> Nộp Bài & Chấm Điểm
-            </button>
-          ) : (
-            <button
-              onClick={handleReset}
-              className="neu-btn px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center gap-2 cursor-pointer"
-            >
-              <RotateCcw className="w-3.5 h-3.5" /> Làm Lại Đề Này
-            </button>
-          )}
+          {/* Row 2 on mobile: View mode & Submit toggle spread out evenly */}
+          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-between">
+            <div className="flex neu-inset p-1 rounded-xl text-xs gap-1 shrink-0">
+              <button
+                onClick={() => setDisplayMode('scroll')}
+                className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                  displayMode === 'scroll' 
+                    ? 'neu-extruded text-[#FF8800]' 
+                    : 'text-[#718096] dark:text-[#94A3B8]'
+                }`}
+              >
+                <LayoutList className="w-3.5 h-3.5" /> <span className="hidden xs:inline">Toàn bộ đề</span><span className="xs:hidden">Tất cả</span>
+              </button>
+              <button
+                onClick={() => setDisplayMode('single')}
+                className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                  displayMode === 'single' 
+                    ? 'neu-extruded text-[#FF8800]' 
+                    : 'text-[#718096] dark:text-[#94A3B8]'
+                }`}
+              >
+                <ListOrdered className="w-3.5 h-3.5" /> <span>Từng câu</span>
+              </button>
+            </div>
+
+            {!isSubmitted ? (
+              <button
+                onClick={handleSubmit}
+                className="flex-1 md:flex-initial neu-btn-primary px-3.5 sm:px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer font-bold transition-all duration-300"
+              >
+                <Send className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Nộp Bài & Chấm Điểm</span>
+              </button>
+            ) : (
+              <button
+                onClick={handleReset}
+                className="flex-1 md:flex-initial neu-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-all duration-300"
+              >
+                <RotateCcw className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Làm Lại Đề Này</span>
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

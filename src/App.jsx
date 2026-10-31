@@ -7,7 +7,6 @@ import PracticeRoom from './components/practice/PracticeRoom.jsx';
 import CongNgheGHKIQuiz from './components/practice/CongNgheGHKIQuiz.jsx';
 import StatsView from './components/stats/StatsView.jsx';
 import SettingsView from './components/settings/SettingsView.jsx';
-import NeoLandingPage from './components/landing/NeoLandingPage.jsx';
 
 import { 
   getStoredData, 
@@ -235,10 +234,7 @@ export default function App() {
         examCount={data.exams.length}
       />
 
-      {activeTab === 'landing' ? (
-        <NeoLandingPage onEnterApp={() => setActiveTab('quiz')} />
-      ) : (
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           {(activeTab === 'quiz' || activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
             <CongNgheGHKIQuiz
               initialSubjectId={activeTab === 'gdqp_ghki' ? 'sub_gdqp11' : 'sub_congnghe_ghki'}
@@ -315,7 +311,6 @@ export default function App() {
             />
           )}
         </main>
-      )}
     </div>
   );
 }
