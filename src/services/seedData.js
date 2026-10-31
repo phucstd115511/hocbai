@@ -297,6775 +297,6775 @@ export const SEED_DATA = {
   ],
   "questions": [
     {
-      "id": "q_cn11_chap_b1_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo nghiên cứu và thực hiện những quá trình nào?",
-      "options": [
-        "Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Thiết kế, thi công, vận hành, sửa chữa các chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Thiết kế, lắp đặt, sửa chữa, bảo dưỡng các thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Chế tạo, vận hành, bảo dưỡng, sửa chữa các máy móc phục vụ cho sản xuất và cho đời sống của con người."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ sử dụng các kiến thức số liệu của bộ môn nào?",
-      "options": [
-        "Vật lí",
-        "Hóa học",
-        "Toán học",
-        "Công nghệ"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Toán học",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ ứng dụng nguyên lí của bộ môn nào ?",
-      "options": [
-        "Vật lí",
-        "Hóa học",
-        "Toán học",
-        "Công nghệ"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật lí",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Vai trò chủ yếu của cơ khí chế tạo trong sản xuất là gì?",
-      "options": [
-        "Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.B. Chế tạo công cụ, máy phục vụ các ngành sản xuất.C. Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.D. Sản xuất vật liệu phục vụ xây dựng các công trình.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.B. Chế tạo công cụ, máy phục vụ các ngành sản xuất.C. Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.D. Sản xuất vật liệu phục vụ xây dựng các công trình.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo sử dụng kiến thức và kết quả nghiên cứu nào để thực hiện các nhiệm vụ kĩ thuật?",
-      "options": [
-        "Toán học, nguyên lí Vật lí và công nghệ vật liệu.B. Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.C. Địa lí, nguyên lí Sinh học và công nghệ môi trường.D. Hoá học, nguyên lí Địa lí và công nghệ sinh học.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Toán học, nguyên lí Vật lí và công nghệ vật liệu.B. Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.C. Địa lí, nguyên lí Sinh học và công nghệ môi trường.D. Hoá học, nguyên lí Địa lí và công nghệ sinh học.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo góp phần phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ thông qua hoạt động nào?A. Khai thác nguồn nhiên liệu có sẵn trong tự nhiên.B. Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.C. Tổ chức vận chuyển và phân phối sản phẩm tiêu dùng.D. Xây dựng các chương trình quảng bá kết quả nghiên cứu.",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phương án A",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Việc sử dụng máy giặt giúp con người giảm công sức giặt quần áo và có thêm thời gian nghỉ ngơi. Ví dụ này thể hiện vai trò nào của cơ khí chế tạo trong đời sống?A. Tạo ra thiết bị phục vụ nghiên cứu và khám phá vũ trụ.B. Tạo ra công cụ giúp nâng cao năng suất trong sản xuất.C. Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.D. Tạo ra máy móc phục vụ nghiên cứu và chinh phục thiên nhiên.",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phương án A",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Các nhà khoa học sử dụng robot thám hiểm để khảo sát bề mặt một hành tinh. Trường hợp này thể hiện vai trò nào của cơ khí chế tạo?",
-      "options": [
-        ". Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.B. Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.C. Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.D. Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.B. Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.C. Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.D. Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Nhóm nào sau đây thuộc máy, công cụ lao động của ngành cơ khí chế tạo?",
-      "options": [
-        "Máy tiện, máy phay, máy bào, máy hàn.B. Sắt, thép, đồng, nhôm và các hợp kim.C. Bản vẽ, quy trình và hồ sơ kĩ thuật.D. Chi tiết, cụm máy và sản phẩm cơ khí.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Máy tiện, máy phay, máy bào, máy hàn.B. Sắt, thép, đồng, nhôm và các hợp kim.C. Bản vẽ, quy trình và hồ sơ kĩ thuật.D. Chi tiết, cụm máy và sản phẩm cơ khí.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Trong chế tạo sản phẩm cơ khí, bản vẽ kĩ thuật và quy trình gia công được sử dụng nhằm mục đích nào?",
-      "options": [
-        "Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.B. Xác định số lượng công nhân và tính tiền công sản xuất.C. Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.D. Xác định thời gian giao hàng và lựa chọn cách vận chuyển.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.B. Xác định số lượng công nhân và tính tiền công sản xuất.C. Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.D. Xác định thời gian giao hàng và lựa chọn cách vận chuyển.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Một chi tiết máy đạt yêu cầu về độ bền nhưng có kích thước sai lệch quá mức cho phép. Đánh giá nào sau đây phù hợp?",
-      "options": [
-        "Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thước.B. Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.C. Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.D. Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thước.B. Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.C. Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.D. Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Đối tượng lao động của ngành cơ khí chế tạo là gì?",
-      "options": [
-        "Vật liệu kim loại và hợp kim",
-        "Vật liệu phi kim loại",
-        "Các vật liệu cơ khí",
-        "Vật liệu kim loại và phi kim loại"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Các vật liệu cơ khí",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_13",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Phương án nào sau đây mô tả đúng trình tự chế tạo một chiếc kìm nguội?",
-      "options": [
-        "Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh.",
-        "Thép (nhiệt luyện) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (rèn hoặc đập) → Chiếc kìm hoàn chỉnh.",
-        "Thép (nhiệt luyện) → Phôi kìm (rèn hoặc đập) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh.",
-        "Thép (rèn hoặc dập) → Phôi kìm (Nhiệt luyện) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Trong quy trình chế tạo cơ khí, công đoạn làm giảm mài mòn cho sản phẩm được thực hiện ở bước nào?A. Lựa chọn phương pháp và chế tạo phôi.B. Thực hiện gia công các chi tiết máy.C. Xử lí và bảo vệ bề mặt sản phẩm.D. Lắp ráp các chi tiết thành sản phẩm.",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phương án A",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_15",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Việc chọn phương pháp chế tạo phôi và xác định kích thước phôi phù hợp thuộc bước nào trong quy trình chế tạo cơ khí?A. Chế tạo phôi cho các chi tiết máy.B. Gia công các chi tiết của sản phẩm.C. Xử lí và bảo vệ bề mặt sản phẩm.D. Lắp ráp các chi tiết của sản phẩm.",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phương án A",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Bước nào trong quy trình chế tạo cơ khí giúp chi tiết đạt hình dạng, kích thước và độ chính xác theo yêu cầu?A. Lắp ráp các chi tiết thành sản phẩm.B. Xử lí và bảo vệ bề mặt sản phẩm.C. Lựa chọn phương pháp và chế tạo phôi.D. Thực hiện gia công các chi tiết máy",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phương án A",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Yếu tố nào là quan trọng nhất để đánh giá chất lượng của một lô vòng bi trước khi xuất xưởng?",
-      "options": [
-        "Bề mặt sản phẩm phải thật sáng bóng, không có bất kì vết trầy xước nào để đảm bảo tính thẩm mĩ khi xuất bán.",
-        "Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
-        "Thời gian kiểm tra chất lượng cần được rút ngắn tối đa để đẩy nhanh tiến độ sản xuất mà không cần quá khắt khe.",
-        "Sản phẩm chỉ cần đạt tiêu chuẩn về kích thước tổng thể bao ngoài, bỏ qua việc đo kiểm chi tiết từng thông số."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_18",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Khi trao đổi về nội dung, mục đích và trình tự các bước trong quy trình chế tạo cơ khí, một nhóm học sinh đưa ra các ý kiến sau:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_19",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Một bạn đưa ra nhận định về đặc điểm của ngành cơ khí chế tạo?",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,...",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của thiết kế sản phẩm cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của bảo dưỡng, sửa chữa thiết bị cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của lắp ráp sản phẩm cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.",
-        "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra..",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra..",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của gia công cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.",
-        "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc thiết kế sản phẩm cơ khí??",
-      "options": [
-        "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-        "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
-        "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-        "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc gia công cơ khí ?",
-      "options": [
-        "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-        "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
-        "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-        "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Người làm công việc bảo dưỡng, sửa chữa thiết bị cơ khí thực hiện nhiệm vụ chính nào sau đây?",
-      "options": [
-        "Lắp ghép các chi tiết thành sản phẩm hoàn chỉnh, bảo đảm yêu cầu kĩ thuật theo bản vẽ lắp.",
-        "Chế tạo các sản phẩm máy móc mới, kiểm tra và thử nghiệm theo yêu cầu của bản thiết kế.",
-        "Phân tích nhu cầu của khách hàng, tư vấn và bán các sản phẩm máy móc phù hợp với nhu cầu.",
-        "Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy móc."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy móc.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Nghề nghiệp nào sau đây không thuộc nhóm công việc gia công cơ khí?",
-      "options": [
-        "nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết",
-        "Thợ hàn",
-        ". Thợ mỏ",
-        "Thợ rèn, dập"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: . Thợ mỏ",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Quá trình sử dụng máy móc, công cụ và công nghệ để biến đổi vật liệu ban đầu thành sản phẩm cơ khí được gọi là gì??",
-      "options": [
-        "Quá trình thiết kế sản phẩm cơ khí",
-        "Quá trình gia công cơ khí",
-        "Quá trình lắp ráp sản phẩm cơ khí",
-        "Quá trình bảo dưỡng, sửa chữa thiết bị cơ khí"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Quá trình gia công cơ khí",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Quá trình tạo ra một sản phẩm cơ khí diễn ra theo trình tự?",
-      "options": [
-        "Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
-        "Thiết kế sản phẩm → Gia công cơ khí → Bảo dưỡng thiết bị.",
-        "Gia công cơ khí → Thiết kế sản phẩm → Lắp ráp sản phẩm.",
-        "Thiết kế sản phẩm → Lắp ráp sản phẩm → Gia công cơ khí."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_11",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Môi trường làm việc trong ngành cơ khí có thể khắc nghiệt và tiềm ẩn nguy cơ tai nạn lao động. Khi tìm hiểu những yêu cầu đối với người lao động trong ngành này, một học sinh đưa ra các nhận định sau:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việc.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động..",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_12",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Trong giờ học nhóm học sinh trao đổi các ý kiến về các ngành nghề trong lĩnh vực cơ khí chế tạo như sau.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu.",
-          "answer": false
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm.",
-          "answer": true
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (b, d) Đúng. Ý (a, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu cơ khí là?",
-      "options": [
-        "Các kim loại được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Vật liệu được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Chất được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Dụng cụ được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Vật liệu được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu cơ khí cần đáp ứng yêu cầu về?",
-      "options": [
-        "Tính sử dụng, tính công nghệ và tính kinh tế.",
-        "Tính cơ học, tính công nghệ và tính kinh tế.",
-        "Tính lý học, tính công nghệ và tính kinh tế.",
-        "Tính hóa học, tính công nghệ và tính kinh tế."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Tính sử dụng, tính công nghệ và tính kinh tế.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu có tính chất :Cách điện ,cách nhiệt, không bị oxi hóa, ít mài mòn..là nhóm vật liệu ?",
-      "options": [
-        "Phi kim loại.B. Kim loại .",
-        "Phương án B",
-        "Hợp kim.D. Kim loại và vật liệu mới.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phi kim loại.B. Kim loại .",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Căn cứ vào  tính chất, vật liệu cơ khí được chia thành?",
-      "options": [
-        "Vật liệu kim loại, vật liệu phi kim loại.",
-        "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
-        "Vật liệu kim loại, vật liệu phi kim loại, vật liệu mới.",
-        "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu đàn hồi, vật liệu mới."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Nhóm vật liệu được dùng chủ yếu trong sản xuất cơ khí ?",
-      "options": [
-        "Vật liệu kim loại và hợp kim.B. Vật liệu phi kim loại.",
-        "Phương án B",
-        "Vật liệu mới và hợp kim .D. Kim loại đen và kim loại màu.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu kim loại và hợp kim.B. Vật liệu phi kim loại.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Tính chất nào sau đây thuộc nhóm tính chất cơ học của vật liệu cơ khí?",
-      "options": [
-        "Khả năng chịu nhiệt độ cao mà không bị biến dạng.",
-        "Khả năng chống lại các phản ứng hoá học với môi trường xung quanh.",
-        "Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
-        "Khả năng dẫn điện và dẫn nhiệt hiệu quả."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu mới là?",
-      "options": [
-        "hợp kim, polymer nhớ hình, nano, gang, thép, vật liệu có cơ tính biến thiên",
-        "nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
-        "cao su, gỗ, composite, nhựa nhiệt rắn, hợp kim đồng, vật liệu phi kim loại.",
-        "nano, composite, hợp kim, cao su tổng hợp, gốm sứ kĩ thuật, nhựa nhiệt dẻo."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Tại sao trong sản xuất cơ khí phải biết được tính công nghệ của vật liệu?",
-      "options": [
-        "Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
-        "Để xác định và chọn đúng loại vật liệu phù hợp nhất với yêu cầu kĩ thuật đặt ra.",
-        "Để ưu tiên tìm kiếm các vật liệu có giá thành thấp nhằm tối ưu hóa chi phí sản xuất.",
-        "Để tạo ra những chi tiết cơ khí đạt được độ chính xác cao nhất cho quá trình lắp ráp."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_09",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Trong một buổi học, học sinh được phát các tấm thẻ ghi tên nhiều loại vật liệu khác nhau như gang, thép, hợp kim đồng, nhựa nhiệt dẻo, cao su, composite,... Giáo viên yêu cầu học sinh phân loại các vật liệu này vào từng nhóm dựa trên các đặc điểm chung.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép.",
-          "answer": true
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép..",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, b) Đúng. Ý (c, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 3: Tổng quan về vật liệu cơ khí.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu kim loại và hợp kim được chia ra thành những loại nào?",
-      "options": [
-        "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
-        "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim đen",
-        "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim màu",
-        "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim đen"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Sắt và hợp kim của sắt gồm những loại nào?",
-      "options": [
-        "Gang, thép carbon, thép hợp kim, nhômB. Gang, thép carbon, nhôm, nickel",
-        "Phương án B",
-        "Thép hợp kim, nhôm và hợp kim của nhômD. Gang, thép carbon, thép hợp kim",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Gang, thép carbon, thép hợp kim, nhômB. Gang, thép carbon, nhôm, nickel",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu nào sau đây thuộc nhóm kim loại và hợp kim màu?",
-      "options": [
-        "Gang và hợp kim gànB. Nhôm và hợp kim nhôm",
-        "Phương án B",
-        "Sắt và hợp kim sắtD. Thép và hợp kim thép",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Gang và hợp kim gànB. Nhôm và hợp kim nhôm",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu nào sau đây thuộc nhóm sắt và hợp kim của sắt",
-      "options": [
-        "NhômB. GangC. ĐồngD. Nickel",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: NhômB. GangC. ĐồngD. Nickel",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Đâu là tính chất cơ học của kim loại và hợp kim ?",
-      "options": [
-        "Độ bền, độ dẻo, độ cứng, độ nén",
-        "Tính dẫn điện, tính dẫn nhiệt, tính giãn nở.",
-        "Tính chịu axit, tính chống ăn mòn hóa học.",
-        "Tính đúc, tính hàn, tính rèn và khả năng gia công cắt gọt."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Độ bền, độ dẻo, độ cứng, độ nén",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Hợp kim của sắt và carbon được gọi là gang khi có hàm lượng carbon trong khoảng nào?",
-      "options": [
-        "Từ 2,14% đến 4,3%.",
-        "Từ 0,02% đến 2,14%.",
-        "Từ 4,3% đến 6,67%.",
-        "Trên 6,67%."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Từ 2,14% đến 4,3%.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "So với thép carbon, thép hợp kim có ưu điểm nào sau đây về nhiệt luyện và độ bền ở nhiệt độ cao?A. Có tính nhiệt luyện kém hơn, giữ được độ bền cao hơn ở nhiệt độ cao.B. Có tính nhiệt luyện tốt hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.C. Có tính nhiệt luyện kém hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
-      "options": [
-        "Phương án A",
-        "Phương án B",
-        "Phương án C",
-        ". Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu hợp kim được ứng dụng làm vỏ máy bay, tên lửa và tàu vũ trụ cần phải đáp ứng trọn vẹn những yêu cầu kỹ thuật nào dưới đây?",
-      "options": [
-        "Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
-        "Kháng oxy hóa tuyệt đối, chống ăn mòn bề mặt và sở hữu tính dẻo dai vượt trội.",
-        "Đạt độ cứng cơ học tối đa, chống mài mòn và chịu lực va đập cường độ cao.",
-        "Sở hữu khả năng truyền dẫn điện năng và tản nhiệt ưu việt trong mọi điều kiện."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_09",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Một cơ sở cơ khí có hai mẫu hợp kim của sắt và carbon: mẫu X chứa 1,0% carbon, mẫu Y chứa 3,0% carbon. Cơ sở đang lựa chọn vật liệu để đúc vỏ máy và chế tạo chi tiết chịu lực ở nhiệt độ cao.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_10",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Gang và thép là hai hợp kim của sắt với carbon, được dùng rất phổ biến trong ngành cơ khí. Nhận xét về gang, thép và hợp kim nói chung:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim).",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_11",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Đồng, nhôm và hợp kim của chúng là các kim loại màu được dùng rộng rãi trong đời sống và sản xuất. Nhận xét về việc sử dụng các vật liệu này:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại bao gồm?",
-      "options": [
-        "Nhựa nhiệt dẻo, kim loại, cao su, hợp kim nhớ hình",
-        ". Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
-        "Nhựa nhiệt rắn ,vật liệu vô cơ, vật liệu hữu cơ",
-        "Kim loại, vật liệu vô cơ, các vật liệu mới"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Phi kim loại ở thể lỏng ở nhiệt độ phòng ?",
-      "options": [
-        "Thủy ngânB. BromC. NitơD. Cao su",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thủy ngânB. BromC. NitơD. Cao su",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Tính chất vật lí của vật liệu phi kim loại?",
-      "options": [
-        "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp.",
-        ". Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
-        "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao",
-        "Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại không bị oxi hóa, không bị ăn mòn trong các môi trường   acid, muối,. thuộc tính chất?",
-      "options": [
-        "Cơ học.B. Hóa học.C. Vật lý.D. Công nghệ.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Cơ học.B. Hóa học.C. Vật lý.D. Công nghệ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại được gia công bằng nhiều phương pháp khác nhau như đùn, đúc, phun, thổi, ép…tùy theo từng loại vật liệu thuộc tính chất?",
-      "options": [
-        "Cơ học.B. Hóa học.C. Vật lý.D. Công nghệ",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Cơ học.B. Hóa học.C. Vật lý.D. Công nghệ",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Cao su không có tính chất nào sau đây?",
-      "options": [
-        "Tính đàn hồi caoB. Tính cách nhiệt",
-        "Phương án B",
-        "Tính cách âm caoD. Tính dẫn điện",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Tính đàn hồi caoB. Tính cách nhiệt",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Ưu điểm của vật liệu phi kim loại so với vật liệu kim loại và hợp kim là:",
-      "options": [
-        "Tính dẫn điện, dẫn nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-        "Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-        "Tính cứng, dẻo, dễ rèn dập, dẫn điện, dẫn nhiệt, chịu ăn mòn hóa học tốt",
-        "Tính Tính cơ học, vật lí, hóa học, công nghệ nổi trội hơn"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu khi gia nhiệt sẽ rắn cứng, không có khả năng tái chế ?",
-      "options": [
-        "GangB. Nhựa nhiệt dẻoC. Nhựa nhiệt rắnD. Cao su",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: GangB. Nhựa nhiệt dẻoC. Nhựa nhiệt rắnD. Cao su",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Cao su được dùng làm săm, lốp xe vì ?",
-      "options": [
-        "Độ cứng cao và chịu được nhiệt độ cao, chống ăn mòn tốt, dẻo.",
-        "Tính dẫn nhiệt, dẫn điện cao, chống ăn mòn tốt, dẻo.",
-        "Độ bền nhiệt, nhẹ, chống ăn mòn, chịu va đập tốt, ma sát tốt.",
-        ". Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Đặc điểm của nhựa nhiệt dẻo?",
-      "options": [
-        "Nhẹ, không dẫn điện, không có khả năng tái sinh",
-        ". Nhẹ, không dẫn điện, có khả năng chế biến lại",
-        "Nhẹ, có nhiệt độ nóng chảy thấp, không có khả năng tái sinh",
-        "Nhẹ, có nhiệt độ nóng chảy cao, có khả năng chế biến lại"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Nhẹ, không dẫn điện, có khả năng chế biến lại",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Nguồn gốc của cao su nhân tạo được chế biến từ ?",
-      "options": [
-        "Than đáB. Dầu mỏ",
-        "Phương án B",
-        "Cây cao su và than đá.D. Than đá và dầu mỏ.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Than đáB. Dầu mỏ",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Công nghệ đùn thường dùng cho loại vật liệu?",
-      "options": [
-        ". Nhựa nhiệt dẻo, cao su.B. Nhựa nhiệt rắn, cao su",
-        "Phương án B",
-        "Nhựa nhiệt dẻo.D. Nhựa nhiệt rắn.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Nhựa nhiệt dẻo, cao su.B. Nhựa nhiệt rắn, cao su",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_13",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Trong ngành cơ khí, nhựa nhiệt rắn được dùng để làm?",
-      "options": [
-        "Chế tạo bu lông, ốc vít nhựa trong một số máy mócB. Chế tạo vỏ tàu thuyền, ô tô",
-        "Phương án B",
-        "Sản xuất dụng cụ cắt, khuôn dậpD. Dùng làm săm lốp, ống dẫn",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Chế tạo bu lông, ốc vít nhựa trong một số máy mócB. Chế tạo vỏ tàu thuyền, ô tô",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Sản phẩm nào dưới đây được làm bằng vật liệu nhựa nhiệt dẻo?",
-      "options": [
-        "Vỏ tàuB. Vỏ công tắc điện",
-        "Phương án B",
-        "Săm xe đạpD. Cốc nhựa uống nước",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vỏ tàuB. Vỏ công tắc điện",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_15",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Một cơ sở sản xuất sử dụng nhựa nhiệt dẻo và nhựa nhiệt rắn để chế tạo đồ dùng, đồng thời tìm cách tận dụng vật liệu thừa sau gia công.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 5: Vật liệu phi kim loại.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu mới là?",
-      "options": [
-        "Vật liệu không nằm trong danh mục vật liệu truyền thống.",
-        "Vật liệu truyền thống đang được sử dụng để sản xuất.",
-        "Vật liệu thuộc danh mục truyền thống nhưng không còn sử dụng.",
-        "Vật liệu có sẵn trong tự nhiên, chưa qua xử lý công nghiệp"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu không nằm trong danh mục vật liệu truyền thống.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu nano là?",
-      "options": [
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ micrômét",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ milimét.",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ centimét."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu composite là?",
-      "options": [
-        ". Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
-        "Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần giống nhau, gồm vật liệu cốt và vật liệu nền.",
-        "Vật liệu được tạo thành bằng cách nấu chảy hai hay nhiều loại kim loại hoặc phi kim với nhau.",
-        "Vật liệu được tạo ra từ một loại vật liệu cơ bản duy nhất thông qua các phương pháp xử lý nhiệt."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu có cơ tính biến thiên là?",
-      "options": [
-        "Loại vật liệu siêu cấu trúc, có các hạt tinh thể cấu tạo nên vật liệu đạt tới kích thước vô cùng nhỏ ở mức nanomet.",
-        "Là tổ hợp của hai hay nhiểu vật liệu thành phần khác nhau bao gồm vật liệu cốt và vật liệu nền.",
-        "Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
-        "Loại vật liệu thông minh, sở hữu đặc tính cơ học ưu việt là khả năng tự động ghi nhớ và phục hồi lại hình dạng gốc.."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Nhận định sau đây “ Vật liệu có được chất lượng tốt nhất từ các vật liệu thành phần , tránh được ăn mòn, mỏi, đứt gãy và bong tách do sự chuyển đổi đột ngột về tính chất vật liệu trên bề mặt phân cách giữa các vật liệu khác nhau” là đang chỉ loại vật liệu nào ?",
-      "options": [
-        "Vật liệu nano.B. Vật liệu composite.",
-        "Phương án B",
-        "Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.",
-        "Phương án D"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong vật liệu composite thì vật liệu cốt có tác dụng gì ?",
-      "options": [
-        "Liên kết các vật liệu.B. Truyền ứng suất.C. Tăng độ bền.D. Tách điện.",
-        "Phương án B",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Liên kết các vật liệu.B. Truyền ứng suất.C. Tăng độ bền.D. Tách điện.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong vật liệu composite thì vật liệu nền có tác dụng gì ?",
-      "options": [
-        "Liên kết các vật liệu cốtB. Chịu ứng suất tập trung.",
-        "Phương án B",
-        "Truyền nhiệt.D. Kháng hoá chất môi trường và nhiệt độ.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Liên kết các vật liệu cốtB. Chịu ứng suất tập trung.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu được dùng trong may mặc. Có khả năng diệt vi khuẩn gây mùi hôi khó chịu ?",
-      "options": [
-        "Vật liệu nano.B. Vật liệu composite.",
-        "Phương án B",
-        "Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu nano.B. Vật liệu composite.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Tính chất của vật liệu nano?",
-      "options": [
-        "Cứng, nặng, cách điện, cách nhiệt và hấp thụ ánh sáng kém.",
-        "Giòn, xốp, cách điện, giữ nhiệt và chống chịu ăn mòn kém.",
-        "Mềm, dẻo, dẫn điện, truyền nhiệt và chống lại mài mòn kém",
-        "Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu được sử dụng để chế tạo cánh quạt máy bay thông minh?",
-      "options": [
-        "Vật liệu composite.B. Vật liệu có cơ tính biến thiên.",
-        "Phương án B",
-        "Hợp kim nhớ hình.D. Vật liệu nano.",
-        "Phương án D"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Hợp kim nhớ hình.D. Vật liệu nano.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Chuồn chuồn robot được dùng bởi vật liệu chế tạo?",
-      "options": [
-        "Vật liệu nano.B. Vật liệu composite.",
-        "Phương án B",
-        "Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu nano.B. Vật liệu composite.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong lĩnh vực điện tử người ta dùng vật liệu nào để chế tạo loại robot mini?",
-      "options": [
-        "Vật liệu nano.B. Vật liệu composite.",
-        "Phương án B",
-        "Vật liệu có cơ tính biến thiên.D. Hợp kim nhớ hình.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu nano.B. Vật liệu composite.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_13",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Ưu điểm nào sau đây không phải là đặc tính nổi bật của vật liệu composite được nêu trong bài học?",
-      "options": [
-        "Độ cứng và độ bền cao, chịu nhiệt tốtB. Khả năng chống mài mòn và ăn mòn tốt",
-        "Phương án B",
-        "Khối lượng riêng nhỏ (nhẹ)D. Khối lượng riêng rất lớn và nặng",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Độ cứng và độ bền cao, chịu nhiệt tốtB. Khả năng chống mài mòn và ăn mòn tốt",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu composite được ứng dụng để chế tạo cánh tay robot, cánh quạt tua bin gió nhờ vào tính chất chính nào?",
-      "options": [
-        "Dẫn điện tốt và giá thành rẻB. Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
-        "Phương án B",
-        "Dễ bị nóng chảy để tái chếD. Khả năng phân hủy sinh học nhanh",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Dẫn điện tốt và giá thành rẻB. Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_15",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu có cơ tính biến thiên (FGM) còn được gọi bằng tên nào khác?",
-      "options": [
-        "Vật liệu composite thông thường.B. Vật liệu phân lớp chức năng.",
-        "Phương án B",
-        "Vật liệu đồng nhất.D. Vật liệu đẳng hướng.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu composite thông thường.B. Vật liệu phân lớp chức năng.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong quá trình chế tạo, sự thay đổi tính chất của vật liệu FGM đạt được bằng cách nào?",
-      "options": [
-        "Phủ thêm một lớp vật liệu hoàn toàn khác lên bề mặt.",
-        "Trộn lẫn ngẫu nhiên các loại vật liệu với nhau.",
-        "Nung chảy ở nhiệt độ cao trong thời gian dài.",
-        "Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Các vật liệu cấu thành cho vật liệu có cơ tính biến thiên được chọn dựa trên tiêu chí chính nào?",
-      "options": [
-        "Dựa trên màu sắc và giá thành của vật liệu.",
-        "Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
-        "Dựa trên độ hiếm có của vật liệu trong tự nhiên.",
-        "Dựa trên tính dễ gia công của từng vật liệu độc lập."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_18",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Đặc tính cơ bản làm nên tên gọi của \"hợp kim nhớ hình\" là gì?",
-      "options": [
-        "Khả năng chống ăn mòn cực tốt.B. Khả năng ghi nhớ hình dạng ban đầu.",
-        "Phương án B",
-        "Khả năng dẫn điện ở nhiệt độ thấp.D. Khả năng chịu nhiệt độ cao.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Khả năng chống ăn mòn cực tốt.B. Khả năng ghi nhớ hình dạng ban đầu.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_19",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Các chi tiết làm bằng hợp kim nhớ hình thường bị biến dạng do nguyên nhân nào?",
-      "options": [
-        "Tác động của ngoại lực.B. Tác động của nhiệt độ phòng.",
-        "Phương án B",
-        "Phản ứng hóa học với oxy.D. Tác động của từ trường.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Tác động của ngoại lực.B. Tác động của nhiệt độ phòng.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_20",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Điều kiện nào giúp hợp kim nhớ hình khôi phục lại hình dạng ban đầu sau khi bị biến dạng?",
-      "options": [
-        "Nhúng vào dung dịch axit.B. Làm lạnh đột ngột.",
-        "Phương án B",
-        "Quá trình cơ nhiệt thích hợp.D. Phơi dưới ánh sáng Mặt Trời.",
-        "Phương án D"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Quá trình cơ nhiệt thích hợp.D. Phơi dưới ánh sáng Mặt Trời.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_21",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Loại hợp kim nhớ hình nào được xem là điển hình và phổ biến nhất hiện nay?",
-      "options": [
-        "Thép không gỉ.B. Hợp kim đồng - kẽm.",
-        "Phương án B",
-        "Hợp kim nhôm siêu nhẹ.D. Hợp kim nitinol.",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thép không gỉ.B. Hợp kim đồng - kẽm.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_22",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Nitinol là hợp kim được tạo thành từ hai kim loại nào?",
-      "options": [
-        "Nickel và titanium.",
-        "Sắt và carbon.C. Đồng và thiếc.D. Nhôm và magie.",
-        "Phương án C",
-        "Phương án D"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Nickel và titanium.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_23",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Khi tham quan một trung tâm nghiên cứu vật liệu mới, học sinh được giới thiệu về các loại vật liệu tiên tiến đang được ứng dụng trong ngành công nghiệp. Một số vật liệu có thể chịu nhiệt độ cao, một số khác chống ăn mòn tốt hoặc có tính chất vượt trội so với vật liệu truyền thống.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại.",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, d) Đúng. Ý (b, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 6: Vật liệu mới.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Khi so sánh giữa nhựa nhiệt dẻo và nhựa nhiệt rắn, điểm khác biệt cơ bản nhất về tính chất công nghệ là gì?",
-      "options": [
-        "Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp và có thể tái chế, trong khi nhựa nhiệt rắn có nhiệt độ nóng chảy cao và không thể tái chế",
-        "Nhựa nhiệt dẻo không dẫn điện, nhựa nhiệt rắn dẫn điện tốt",
-        "Nhựa nhiệt dẻo có khối lượng riêng lớn hơn nhiều so với nhựa nhiệt rắn",
-        "Nhựa nhiệt dẻo cứng và giòn hơn so với nhựa nhiệt rắn"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Giống nhau: Đều là vật liệu cao phân tử, cách điện, cách nhiệt, không bị oxy hóa. Khác nhau: Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp, có thể tái sinh (tái chế); Nhựa nhiệt rắn có nhiệt độ nóng chảy cao, không có khả năng tái sinh.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Vận dụng"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Một cơ sở cần lựa chọn vật liệu làm đệm để giảm rung cho máy khi hoạt động trong ba loại vật liệu: cao su, nhựa nhiệt dẻo và nhựa nhiệt rắn. Lựa chọn nào sau đây là tối ưu nhất và có cơ sở khoa học?",
-      "options": [
-        "Chọn cao su vì có tính đàn hồi cao, biến dạng khi chịu lực, phục hồi hình dạng khi thôi lực và có khả năng tiêu hao năng lượng dao động giúp giảm rung truyền xuống nền",
-        "Chọn nhựa nhiệt dẻo vì giá thành rẻ và dễ dàng nóng chảy để tạo hình đệm máy",
-        "Chọn nhựa nhiệt rắn vì có độ cứng tối đa giúp máy đứng cố định tuyệt đối không dịch chuyển",
-        "Chọn kết hợp nhựa nhiệt dẻo và nhựa nhiệt rắn để tăng độ giòn cho đệm máy"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Chọn cao su vì cao su có tính đàn hồi cao, có thể biến dạng khi chịu lực và phục hồi hình dạng khi thôi tác dụng lực. Ngoài ra, cao su còn có khả năng hấp thụ và tiêu hao một phần năng lượng dao động, giúp giảm rung truyền từ máy xuống nền.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Vận dụng thực tế"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_24_mcq",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Giải thích nào sau đây là chính xác về tính 'nhớ hình' của hợp kim nhớ hình và ứng dụng tiêu biểu của nó?",
-      "options": [
-        "Khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp (sau khi bị biến dạng trong giới hạn cho phép); ứng dụng chế tạo bộ phận chấp hành điều khiển bằng nhiệt",
-        "Khả năng tự động thay đổi màu sắc và kích thước theo cường độ ánh sáng môi trường; ứng dụng làm kính râm",
-        "Khả năng ghi nhớ và lưu trữ dữ liệu thông tin số như một con chip bán dẫn trong máy tính",
-        "Khả năng tự hàn gắn các vết nứt mà không cần gia nhiệt hay cung cấp năng lượng từ bên ngoài"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Tính 'nhớ hình' là khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp, sau khi bị biến dạng trong giới hạn cho phép. Ứng dụng: Chế tạo bộ phận chấp hành điều khiển bằng nhiệt. Khi được nung nóng, bộ phận bằng hợp kim nhớ hình khôi phục hình dạng định trước, tạo chuyển động cho cơ cấu.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Hợp kim nhớ hình"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_25",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Một chi tiết máy cần có bề mặt chịu nhiệt tốt, bên trong có độ bền cơ học cao và thành phần vật liệu thay đổi dần từ ngoài vào trong. Loại vật liệu mới nào phù hợp nhất với yêu cầu trên?",
-      "options": [
-        "Vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng - FGM)",
-        "Vật liệu nano đơn lớp phủ bề mặt",
-        "Hợp kim nhớ hình Nitinol",
-        "Vật liệu nhựa nhiệt rắn phenolic"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Chọn vật liệu có cơ tính biến thiên (FGM). Vật liệu này gồm hai hoặc nhiều thành phần, có tỉ lệ thành phần thay đổi dần theo vị trí, giúp tạo ra tính chất phù hợp tại từng vùng của chi tiết (bề mặt chịu nhiệt chiếm ưu thế ở ngoài, độ bền cơ học cao chiếm ưu thế ở bên trong).",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "FGM",
-        "Vận dụng"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c01",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Theo Luật Biên giới quốc gia năm 2003, biên giới quốc gia của nước Cộng hoá xã hội chủ nghĩa Việt Nam xác định giới hạn lãnh thổ đối với vùng nào dưới đây?",
-      "options": [
-        "Chỉ phần đất liền và hải đảo.",
-        "Đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất, vùng trời.",
-        "Chỉ vùng đất liền và vùng trời trên đất liền.",
-        "Vùng biển và vùng trời quốc gia."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 5 Luật Biên giới quốc gia 2003, biên giới quốc gia xác định giới hạn lãnh thổ đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất và vùng trời của Tổ quốc.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c02",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Theo Luật Biển Việt Nam năm 2012, vùng biển nào nằm ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam?",
-      "options": [
-        "Vùng lãnh hải.",
-        "Vùng nội thủy.",
-        "Vùng tiếp giáp lãnh hải.",
-        "Vùng thềm lục địa."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 9 Luật Biển Việt Nam 2012, nội thủy là vùng nước tiếp giáp với bờ biển, ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c03",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Vùng tiếp giáp lãnh hải là vùng biển có chiều rộng bao nhiêu hải lí?",
-      "options": [
-        "12 hải lí.",
-        "24 hải lí.",
-        "100 hải lí.",
-        "200 hải lí."
-      ],
-      "correct": 0,
-      "explanation": "Theo Điều 13 Luật Biển Việt Nam 2012, vùng tiếp giáp lãnh hải có chiều rộng 12 hải lí tính từ ranh giới ngoài của lãnh hải.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c04",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Hành vi nào dưới đây bị nghiêm cấm theo Luật Biên giới quốc gia?",
-      "options": [
-        "Xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
-        "Tổ chức tuyên truyền pháp luật về biên giới cho nhân dân.",
-        "Trồng cây bảo vệ hệ sinh thái dọc tuyến biên giới.",
-        "Tuần tra bảo vệ chủ quyền biên giới theo phân công."
-      ],
-      "correct": 0,
-      "explanation": "Theo Điều 14 Luật Biên giới quốc gia 2003, nghiêm cấm hành vi xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c05",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Việt Nam có đường biên giới chung trên đất liền với những quốc gia nào?",
-      "options": [
-        "Lào, Thái Lan, Philíppin.",
-        "Mianma, Malaixia, Inđônêxia.",
-        "Lào, Campuchia, Thái Lan.",
-        "Trung Quốc, Lào, Campuchia."
-      ],
-      "correct": 3,
-      "explanation": "Việt Nam có đường biên giới chung trên đất liền với 3 quốc gia: Trung Quốc, Lào và Campuchia.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c06",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Vùng đặc quyền kinh tế của Việt Nam có chiều rộng tính từ đường cơ sở ra phía biển là bao nhiêu hải lí?",
-      "options": [
-        "12 hải lí.",
-        "24 hải lí.",
-        "188 hải lí.",
-        "200 hải lí."
-      ],
-      "correct": 3,
-      "explanation": "Theo Điều 15 Luật Biển Việt Nam 2012, vùng đặc quyền kinh tế hợp với lãnh hải thành một vùng biển có chiều rộng 200 hải lí tính từ đường cơ sở.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c07",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Nội dung nào dưới đây thể hiện đúng quy định về khu vực biên giới trên không theo Luật Biên giới quốc gia?",
-      "options": [
-        "Gồm toàn bộ không gian từ biên giới quốc gia trên đất liền và trên biển lên vùng trời, rộng 10 km tính từ biên giới quốc gia trở vào.",
-        "Chỉ bao gồm vùng trời trên đất liền có đặt mốc quốc giới.",
-        "Là vùng không gian cách mặt đất 50 km.",
-        "Là vùng không giới hạn chiều cao dọc theo bờ biển."
-      ],
-      "correct": 0,
-      "explanation": "Khu vực biên giới trên không gồm phần không gian dọc theo biên giới quốc gia có chiều rộng 10 km tính từ biên giới quốc gia trở vào (Nghị định 140/2004/NĐ-CP).",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c08",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Nghị quyết phê chuẩn Công ước của Liên hợp quốc về Luật Biển năm 1982 được Quốc hội nước ta thông qua vào thời gian nào?",
-      "options": [
-        "Ngày 02/09/1945.",
-        "Ngày 23/06/1994.",
-        "Ngày 10/12/1982.",
-        "Ngày 16/11/1994."
-      ],
-      "correct": 1,
-      "explanation": "Quốc hội nước CHXHCN Việt Nam khóa IX, kỳ họp thứ 5 đã thông qua Nghị quyết phê chuẩn Công ước của LHQ về Luật Biển năm 1982 vào ngày 23/06/1994.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c09",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Theo Luật Biển Việt Nam, ranh giới ngoài của thềm lục địa cách đường cơ sở không quá bao nhiêu hải lí?",
-      "options": [
-        "12 hải lí.",
-        "200 hải lí.",
-        "350 hải lí.",
-        "500 hải lí."
-      ],
-      "correct": 2,
-      "explanation": "Theo Điều 17 Luật Biển Việt Nam 2012, ranh giới ngoài của thềm lục địa không được vượt quá 350 hải lí tính từ đường cơ sở hoặc không quá 100 hải lí tính từ đường đẳng sâu 2.500 m.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c10",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Phát biểu nào sau đây không đúng về trách nhiệm của học sinh trong bảo vệ chủ quyền lãnh thổ, biên giới quốc gia?",
-      "options": [
-        "Tích cực học tập, nâng cao nhận thức pháp luật về biên giới, hải đảo.",
-        "Tự ý vượt mốc biên giới sang nước láng giềng thăm họ hàng khi chưa có phép.",
-        "Tuyên truyền, vận động bạn bè chấp hành nghiêm quy định pháp luật về biên giới.",
-        "Kịp thời báo cáo cơ quan chức năng khi phát hiện hành vi vi phạm chủ quyền."
-      ],
-      "correct": 1,
-      "explanation": "Tự ý qua lại biên giới sang nước láng giềng khi chưa có phép của cơ quan chức năng là hành vi vi phạm pháp luật về biên giới quốc gia.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c11",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Hành vi nào dưới đây vi phạm các quy định về bảo vệ biên giới quốc gia trên biển?",
-      "options": [
-        "Đánh bắt hải sản đúng vùng biển được phép theo quy định pháp luật.",
-        "Xâm phạm tài nguyên thiên nhiên, đánh bắt trái phép trong vùng biển chủ quyền của Việt Nam.",
-        "Tham gia tuần tra bảo vệ ngư trường cùng lực lượng chức năng.",
-        "Tôn trọng các hiệp định phân định ranh giới trên biển giữa các nước hữu quan."
-      ],
-      "correct": 1,
-      "explanation": "Xâm phạm tài nguyên thiên nhiên, khai thác và đánh bắt trái phép trong vùng biển thuộc chủ quyền và quyền chủ quyền của Việt Nam là hành vi vi phạm nghiêm trọng.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c12",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Khi cùng các bạn đi tham quan cột mốc biên giới, một bạn trong lớp có ý định vượt qua cột mốc sang phía nước bạn để chụp ảnh lưu niệm và hái hoa rừng. Nếu là em, em sẽ xử lý như thế nào?",
-      "options": [
-        "Đồng ý đi cùng vì chỉ hái hoa và chụp ảnh trong thời gian ngắn.",
-        "Ngăn cản bạn ngay lập tức, giải thích rằng hành vi đó vi phạm pháp luật biên giới quốc gia.",
-        "Cổ vũ bạn vượt mốc nhanh chóng để không bị lực lượng biên phòng phát hiện.",
-        "Lờ đi vì đó là việc cá nhân của bạn."
-      ],
-      "correct": 1,
-      "explanation": "Cần ngăn cản bạn ngay lập tức và giải thích rằng hành vi vượt qua mốc quốc giới sang nước bạn khi chưa được phép là vi phạm pháp luật biên giới quốc gia.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c13",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Trường hợp nào dưới đây được coi là vi phạm nghiêm trọng quy định về khu vực biên giới đất liền?",
-      "options": [
-        "Người dân sinh sống trong xã biên giới qua lại làm nương rẫy theo đúng hiệp định ký kết.",
-        "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới tại khu vực biên giới.",
-        "Lực lượng biên phòng tuần tra kiểm soát đường biên giới.",
-        "Du khách tham quan khu vực biên giới có giấy phép hợp lệ."
-      ],
-      "correct": 1,
-      "explanation": "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới là các hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c14",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Chủ quyền lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam bao gồm những bộ phận nào?",
-      "options": [
-        "Đất liền, hải đảo, vùng biển và vùng trời",
-        "Đất liền và vùng biển",
-        "Đất liền, vùng trời và vùng tiếp giáp lãnh hải",
-        "Đất liền, vùng biển và vùng đặc quyền kinh tế"
-      ],
-      "correct": 0,
-      "explanation": "Chủ quyền lãnh thổ nước CHXHCN Việt Nam bao gồm: đất liền, hải đảo, vùng biển và vùng trời.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c15",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng gì?",
-      "options": [
-        "Hệ thống phao tiêu hàng hải",
-        "Hệ thống mốc quốc giới",
-        "Đường ranh giới hành chính cấp huyện",
-        "Các biển báo giao thông"
-      ],
-      "correct": 1,
-      "explanation": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng hệ thống mốc quốc giới.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c16",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Khu vực biên giới trên không có chiều rộng bao nhiêu tính từ biên giới quốc gia trở vào?",
-      "options": [
-        "5 km",
-        "8 km",
-        "10 km",
-        "12 hải lí"
-      ],
-      "correct": 2,
-      "explanation": "Khu vực biên giới trên không có chiều rộng 10 km tính từ biên giới quốc gia trở vào.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c17",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Hành vi nào sau đây thuộc nhóm hành vi bị nghiêm cấm theo nội dung về biên giới quốc gia?",
-      "options": [
-        "Báo tin cho lực lượng chức năng khi phát hiện dấu hiệu vi phạm",
-        "Tham gia tuyên truyền pháp luật về biên giới",
-        "Xê dịch hoặc phá hoại mốc quốc giới",
-        "Tìm hiểu kiến thức về chủ quyền lãnh thổ"
-      ],
-      "correct": 2,
-      "explanation": "Hành vi xê dịch hoặc phá hoại mốc quốc giới thuộc nhóm hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c18",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng bao nhiêu tính từ đường cơ sở ra phía biển?",
-      "options": [
-        "6 hải lí",
-        "12 hải lí",
-        "24 hải lí",
-        "200 hải lí"
-      ],
-      "correct": 1,
-      "explanation": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng 12 hải lí tính từ đường cơ sở ra phía biển.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c19",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Vì sao việc bảo vệ hệ thống mốc quốc giới có ý nghĩa trực tiếp đối với quản lí biên giới trên đất liền?",
-      "options": [
-        "Mốc quốc giới thay thế mọi văn bản pháp luật về biên giới",
-        "Mốc quốc giới giúp đánh dấu đường biên giới đã được hoạch định trên thực địa",
-        "Mốc quốc giới xác định ranh giới giữa các tỉnh trong nội địa",
-        "Mốc quốc giới chỉ có ý nghĩa tham quan, du lịch"
-      ],
-      "correct": 1,
-      "explanation": "Mốc quốc giới có ý nghĩa quan trọng vì giúp đánh dấu đường biên giới đã được hoạch định và thỏa thuận trên thực địa.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b1_c20",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b1",
-      "sectionId": "gdqp11_b1_s1",
-      "stem": "Một tổ chức nước ngoài dự định tiến hành nghiên cứu khoa học trong vùng biển Việt Nam. Theo nội dung Luật Biển Việt Nam được học, yêu cầu nào là phù hợp?",
-      "options": [
-        "Có thể tự tiến hành nếu hoạt động không dùng tàu lớn",
-        "Chỉ cần thông báo cho ngư dân gần đó",
-        "Phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ quy định liên quan",
-        "Được tự tiến hành nếu công bố kết quả nghiên cứu công khai\n--o0o--"
-      ],
-      "correct": 2,
-      "explanation": "Mọi hoạt động nghiên cứu khoa học của tổ chức, cá nhân nước ngoài trong vùng biển Việt Nam phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ các quy định liên quan.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 1: Bảo vệ chủ quyền lãnh thổ"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c01",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Theo Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ bao nhiêu tuổi trở lên phải đăng kí nghĩa vụ quân sự?",
-      "options": [
-        "Đủ 16 tuổi.",
-        "Đủ 17 tuổi.",
-        "Đủ 18 tuổi.",
-        "Đủ 19 tuổi."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 12 Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ 17 tuổi trở lên phải đăng kí nghĩa vụ quân sự lần đầu.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c02",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ bao nhiêu tuổi đến hết bao nhiêu tuổi?",
-      "options": [
-        "Từ đủ 17 tuổi đến hết 25 tuổi.",
-        "Từ đủ 18 tuổi đến hết 25 tuổi.",
-        "Từ đủ 18 tuổi đến hết 27 tuổi.",
-        "Từ đủ 20 tuổi đến hết 30 tuổi."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 30 Luật NVQS 2015, độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ 18 tuổi đến hết 25 tuổi.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c03",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là bao nhiêu tháng?",
-      "options": [
-        "12 tháng.",
-        "18 tháng.",
-        "24 tháng.",
-        "36 tháng."
-      ],
-      "correct": 2,
-      "explanation": "Theo Điều 21 Luật NVQS 2015, thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là 24 tháng.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c04",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Công dân thực hiện nghĩa vụ tham gia Công an nhân dân được coi là thực hiện nghĩa vụ quân sự ở đâu?",
-      "options": [
-        "Tại ngũ.",
-        "Ngạch dự bị.",
-        "Dân quân tự vệ.",
-        "Lực lượng dự trữ động viên."
-      ],
-      "correct": 0,
-      "explanation": "Theo Khoản 2 Điều 8 Luật NVQS 2015, công dân thực hiện nghĩa vụ tham gia CAND được coi là thực hiện nghĩa vụ quân sự tại ngũ.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c05",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Cơ quan nào dưới đây thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương?",
-      "options": [
-        "Ban Chỉ huy quân sự cấp xã.",
-        "Công an cấp tỉnh.",
-        "Ủy ban nhân dân cấp tỉnh.",
-        "Bộ Tư lệnh Thủ đô."
-      ],
-      "correct": 0,
-      "explanation": "Theo Điều 15 Luật NVQS 2015, Ban Chỉ huy quân sự cấp xã thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c06",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Đối tượng nào dưới đây được miễn gọi nhập ngũ trong thời bình?",
-      "options": [
-        "Học sinh đang học tại trường trung học phổ thông.",
-        "Con của liệt sĩ, con của thương binh hạng một.",
-        "Sinh viên đang học đại học hệ chính quy.",
-        "Lao động duy nhất trong gia đình khó khăn."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 41 Khoản 2 Luật NVQS 2015, con của liệt sĩ, con của thương binh hạng một được miễn gọi nhập ngũ trong thời bình.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c07",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Trường hợp nào dưới đây được tạm hoãn gọi nhập ngũ trong thời bình?",
-      "options": [
-        "Chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của hội đồng khám sức khoẻ.",
-        "Là con duy nhất của thương binh hạng nặng.",
-        "Đang chấp hành án phạt tù.",
-        "Đang bị tước quyền phục vụ trong lực lượng vũ trang."
-      ],
-      "correct": 0,
-      "explanation": "Theo Điều 41 Khoản 1 Luật NVQS 2015, công dân chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của Hội đồng khám sức khoẻ được tạm hoãn gọi nhập ngũ.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c08",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Hành vi nào dưới đây bị nghiêm cấm trong thực hiện Luật Nghĩa vụ quân sự?",
-      "options": [
-        "Đăng kí nghĩa vụ quân sự đúng hạn.",
-        "Trốn tránh thực hiện nghĩa vụ quân sự.",
-        "Tham gia khám tuyển nghĩa vụ quân sự theo lệnh gọi.",
-        "Tình nguyện nhập ngũ bảo vệ Tổ quốc."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 10 Luật NVQS 2015, nghiêm cấm hành vi trốn tránh thực hiện nghĩa vụ quân sự.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c09",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Theo Luật Nghĩa vụ quân sự, công dân được đào tạo trình độ cao đẳng, đại học đã được tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ đến hết bao nhiêu tuổi?",
-      "options": [
-        "Hết 25 tuổi.",
-        "Hết 26 tuổi.",
-        "Hết 27 tuổi.",
-        "Hết 30 tuổi."
-      ],
-      "correct": 2,
-      "explanation": "Theo Điều 30 Luật NVQS 2015, công dân được đào tạo trình độ CĐ, ĐH đã tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ kéo dài đến hết 27 tuổi.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c10",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Nội dung nào sau đây phản ánh đúng trách nhiệm của học sinh đối với nghĩa vụ quân sự?",
-      "options": [
-        "Chấp hành nghiêm các quy định về đăng kí nghĩa vụ quân sự, tích cực học tập môn GDQP&AN.",
-        "Trốn tránh khi có lệnh gọi sơ tuyển sức khỏe nghĩa vụ quân sự.",
-        "Chỉ tham gia khi bắt buộc phải rời khỏi địa phương.",
-        "Không cần quan tâm đến các quy định pháp luật về quân sự khi còn đi học."
-      ],
-      "correct": 0,
-      "explanation": "Học sinh có trách nhiệm chấp hành nghiêm các quy định về đăng kí NVQS khi đủ 17 tuổi và tích cực học tập, rèn luyện môn GDQP&AN.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c11",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Anh A (24 tuổi, đã tốt nghiệp đại học hệ chính quy và đang tạm hoãn gọi nhập ngũ) hỏi rằng độ tuổi tối đa anh có thể được gọi nhập ngũ trong thời bình là bao nhiêu? Em hãy trả lời giúp anh A.",
-      "options": [
-        "Đến hết 25 tuổi.",
-        "Đến hết 27 tuổi.",
-        "Đến hết 30 tuổi.",
-        "Không giới hạn độ tuổi."
-      ],
-      "correct": 1,
-      "explanation": "Anh A đã tốt nghiệp ĐH hệ chính quy và tạm hoãn trong thời gian học, do đó độ tuổi gọi nhập ngũ tối đa của anh A là đến hết 27 tuổi.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c12",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Trường hợp nào sau đây bị xử phạt vi phạm hành chính từ 3.000.000 đồng đến 5.000.000 đồng theo Nghị định về xử phạt vi phạm hành chính trong lĩnh vực quốc phòng?",
-      "options": [
-        "Không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng.",
-        "Không đăng ký nghĩa vụ quân sự lần đầu.",
-        "Gian dối trong khám sức khỏe nghĩa vụ quân sự.",
-        "Chống đối, cản trở việc thực hiện nghĩa vụ quân sự."
-      ],
-      "correct": 0,
-      "explanation": "Hành vi không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng bị xử phạt vi phạm hành chính từ 3.000.000 đến 5.000.000 đồng.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c13",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Nghĩa vụ quân sự của công dân bao gồm những hình thức nào?",
-      "options": [
-        "Chỉ phục vụ tại ngũ",
-        "Chỉ phục vụ trong ngạch dự bị",
-        "Phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân",
-        "Chỉ tham gia dân quân tự vệ"
-      ],
-      "correct": 2,
-      "explanation": "Theo Điều 4 Luật NVQS 2015, nghĩa vụ quân sự gồm phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c14",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Chủ tịch UBND cấp xã ra lệnh gọi công dân đăng kí nghĩa vụ quân sự lần đầu vào thời gian nào?",
-      "options": [
-        "Tháng ba hằng năm.",
-        "Tháng tư hằng năm.",
-        "Tháng năm hằng năm.",
-        "Tháng sáu hằng năm."
-      ],
-      "correct": 1,
-      "explanation": "Tháng tư hằng năm là thời gian Chỉ huy trưởng Ban CHQS cấp huyện ra lệnh gọi công dân nam đủ 17 tuổi đăng kí NVQS lần đầu tại UBND cấp xã.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c15",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Dũng là lao động duy nhất trực tiếp nuôi mẹ không còn khả năng lao động. Dũng nhận được giấy gọi nhập ngũ và muốn biết trường hợp của mình được giải quyết thế nào. Cách xử lý phù hợp nhất là gì?",
-      "options": [
-        "Tự ý không chấp hành giấy gọi mà không cần thông báo",
-        "Cho rằng chắc chắn được miễn vĩnh viễn",
-        "Cung cấp hồ sơ, thông tin trung thực cho cơ quan có thẩm quyền để xem xét điều kiện tạm hoãn theo quy định",
-        "Nhờ người khác đi thay"
-      ],
-      "correct": 2,
-      "explanation": "Công dân cần cung cấp hồ sơ, giấy tờ chứng minh hoàn cảnh trung thực cho cơ quan có thẩm quyền để được xem xét điều kiện tạm hoãn theo quy định.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b2_c16",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b2",
-      "sectionId": "gdqp11_b2_s1",
-      "stem": "Một công dân nhận lệnh khám sức khỏe nghĩa vụ quân sự nhưng có lịch thi trùng thời gian. Cách ứng xử phù hợp nhất là gì?",
-      "options": [
-        "Tự bỏ qua lệnh vì lịch thi luôn được ưu tiên",
-        "Không đến và không liên hệ với cơ quan nào",
-        "Chủ động liên hệ cơ quan có thẩm quyền, trình bày và cung cấp giấy tờ để được hướng dẫn; không tự coi mình được miễn",
-        "Nhờ bạn ký thay vào danh sách\n---o0o---"
-      ],
-      "correct": 2,
-      "explanation": "Công dân cần chủ động liên hệ cơ quan có thẩm quyền, trình bày lý do trùng lịch thi và cung cấp giấy xác nhận để được hướng dẫn xếp lịch khám bù.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 2: Luật Nghĩa vụ quân sự"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c01",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Theo Bộ luật Hình sự, tội phạm là hành vi nguy hiểm cho xã hội do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm đến các khách thể nào dưới đây?",
-      "options": [
-        "Độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ xã hội chủ nghĩa, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
-        "Chỉ xâm phạm tài sản riêng của cá nhân.",
-        "Chỉ xâm phạm quy tắc sinh hoạt cộng đồng nhỏ lẻ.",
-        "Chỉ xâm phạm trật tự giao thông đô thị."
-      ],
-      "correct": 0,
-      "explanation": "Theo Điều 8 BLHS 2015, tội phạm là hành vi nguy hiểm cho xã hội xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ XHCN, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c02",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội được gọi là gì?",
-      "options": [
-        "Tệ nạn xã hội.",
-        "Hoạt động từ thiện.",
-        "Giao lưu văn hóa.",
-        "Lối sống văn minh."
-      ],
-      "correct": 0,
-      "explanation": "Tệ nạn xã hội là hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c03",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm cho xã hội bằng cách tác động trái pháp luật đến lĩnh vực nào?",
-      "options": [
-        "Thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, mạng viễn thông.",
-        "Hệ thống giao thông đường bộ công cộng.",
-        "Đất đai và tài nguyên rừng tự nhiên.",
-        "Hoạt động sản xuất nông nghiệp truyền thống."
-      ],
-      "correct": 0,
-      "explanation": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm bằng cách tác động trái phép vào thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, viễn thông.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c04",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Hành vi nào sau đây là biểu hiện của tội phạm hoặc vi phạm pháp luật về sử dụng công nghệ cao?",
-      "options": [
-        "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, phần mềm gián điệp.",
-        "Sử dụng internet để tra cứu tài liệu học tập, giải toán.",
-        "Nhắn tin hỏi thăm sức khỏe người thân qua mạng xã hội.",
-        "Đăng tải hình ảnh phong cảnh quê hương lên Facebook."
-      ],
-      "correct": 0,
-      "explanation": "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, mã độc gián điệp là biểu hiện vi phạm pháp luật về sử dụng công nghệ cao.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c05",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Theo quy định của pháp luật, hành vi đánh bạc trái phép dưới bất kì hình thức nào (mua bán số lô, số đề, cá độ bóng đá...) có thể bị xử lý nghiêm khắc như thế nào?",
-      "options": [
-        "Chỉ nhắc nhở tại nơi cư trú.",
-        "Bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù theo quy định của pháp luật.",
-        "Chỉ phạt cảnh cáo lần đầu đối với mọi trường hợp.",
-        "Được nhà nước cho phép nếu chơi vào dịp lễ tết."
-      ],
-      "correct": 1,
-      "explanation": "Theo Điều 321 BLHS 2015, hành vi đánh bạc trái phép dưới bất kì hình thức nào có thể bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c06",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Phát biểu nào dưới đây là đúng về trách nhiệm của học sinh trong phòng chống tệ nạn xã hội và tội phạm công nghệ cao?",
-      "options": [
-        "Không tham gia các tệ nạn xã hội, không chia sẻ thông tin chưa kiểm chứng trên không gian mạng.",
-        "Có thể tham gia cá cược trực tuyến nếu có tiền thưởng nhỏ.",
-        "Chia sẻ mọi đường link lạ nhận được trên mạng xã hội để câu tương tác.",
-        "Tự ý mua bán tài khoản ngân hàng cá nhân cho người khác thuê kiếm lời."
-      ],
-      "correct": 0,
-      "explanation": "Học sinh có trách nhiệm không tham gia các tệ nạn xã hội, không chia sẻ thông tin thất thiệt chưa được kiểm chứng trên không gian mạng.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c07",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Khi tham gia mạng xã hội, em phát hiện một hội nhóm đang lan truyền các video clip có nội dung đồi trụy, phản cảm và kích động bạo lực. Hành vi xử lý đúng đắn nhất của học sinh là gì?",
-      "options": [
-        "Tham gia bình luận và chia sẻ bài viết để tăng tương tác cho nhóm.",
-        "Báo cáo (report) vi phạm với quản trị viên mạng xã hội, tuyệt đối không xem, không chia sẻ và thông báo cho thầy cô hoặc cơ quan chức năng.",
-        "Tải về máy để lưu trữ và xem riêng tư.",
-        "Nhắn tin xin đường link gốc của video."
-      ],
-      "correct": 1,
-      "explanation": "Hành vi đúng đắn là báo cáo (report) vi phạm với quản trị viên, không xem, không chia sẻ và báo ngay cho thầy cô, cha mẹ hoặc cơ quan chức năng.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c08",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Một người lạ nhắn tin qua mạng xã hội thông báo em trúng thưởng một chiếc xe máy giá trị cao, yêu cầu em phải nộp trước 2 triệu đồng phí vận chuyển qua thẻ cào điện thoại. Em sẽ xử lý tình huống này như thế nào?",
-      "options": [
-        "Nhanh chóng mua thẻ cào gửi cho họ để nhận xe máy.",
-        "Từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo chiếm đoạt tài sản trên không gian mạng.",
-        "Nhờ bạn bè vay tiền giúp để nộp phí nhận thưởng.",
-        "Tin tưởng vì nghĩ trúng thưởng là may mắn có thật."
-      ],
-      "correct": 1,
-      "explanation": "Cần dứt khoát từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo 'trúng thưởng' phổ biến trên mạng.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c09",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Hành động nào thể hiện trách nhiệm của học sinh trong phòng chống tệ nạn xã hội?",
-      "options": [
-        "Thử tham gia để biết mức độ nguy hiểm",
-        "Chia sẻ mọi nội dung gây sốc để cảnh báo bạn bè",
-        "Chấp hành pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức",
-        "Che giấu hành vi vi phạm của bạn trong mọi trường hợp"
-      ],
-      "correct": 2,
-      "explanation": "Học sinh cần chấp hành nghiêm túc pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức, kỹ năng phòng vệ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c10",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Vì sao việc chia sẻ ngay một bài đăng chưa kiểm chứng về hành vi phạm tội có thể gây hại?",
-      "options": [
-        "Vì mọi bài đăng trên mạng đều là bí mật nhà nước",
-        "Vì thông tin chưa kiểm chứng có thể gây hiểu lầm, ảnh hưởng người khác và làm lan truyền nội dung sai lệch",
-        "Vì học sinh không được sử dụng Internet",
-        "Vì chỉ cơ quan báo chí mới được đọc tin tức"
-      ],
-      "correct": 1,
-      "explanation": "Chia sẻ bài đăng chưa kiểm chứng có thể gây hiểu lầm, hoang mang dư luận, xâm phạm uy tín người khác và vi phạm Luật An ninh mạng.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c11",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Một người lạ giả danh nhân viên hỗ trợ kĩ thuật, yêu cầu học sinh cài phần mềm không rõ nguồn gốc. Dấu hiệu rủi ro chính là gì?",
-      "options": [
-        "Phần mềm được cài đặt miễn phí nên chắc chắn an toàn",
-        "Người đó dùng lời lẽ lịch sự nên không có rủi ro",
-        "Yêu cầu cài phần mềm không rõ nguồn gốc có thể nhằm chiếm quyền truy cập hoặc dữ liệu",
-        "Mọi phần mềm đều bị pháp luật cấm"
-      ],
-      "correct": 2,
-      "explanation": "Yêu cầu cài đặt phần mềm không rõ nguồn gốc tiềm ẩn rủi ro rất cao về việc bị cài mã độc đánh cắp tài khoản cá nhân hoặc dữ liệu riêng tư.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c12",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Cách ứng xử nào phù hợp khi phát hiện bạn cùng lớp có dấu hiệu bị lôi kéo tham gia tệ nạn xã hội?",
-      "options": [
-        "Chế giễu bạn trước tập thể",
-        "Im lặng trong mọi trường hợp để giữ tình bạn",
-        "Khuyên bạn dừng lại, tìm sự hỗ trợ của người lớn đáng tin cậy hoặc nhà trường khi cần",
-        "Tự đăng thông tin cá nhân của bạn lên mạng"
-      ],
-      "correct": 2,
-      "explanation": "Cần khuyên nhủ bạn dừng lại, đồng thời tìm kiếm sự hỗ trợ kịp thời từ người lớn đáng tin cậy hoặc thầy cô, nhà trường.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c13",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Trong nhóm lớp xuất hiện video tố cáo một người phạm tội nhưng chưa rõ nguồn gốc. Hành động nào thể hiện trách nhiệm số phù hợp nhất?",
-      "options": [
-        "Tải video về và đăng lại trên nhiều nền tảng",
-        "Thêm lời bình khẳng định người trong video có tội",
-        "Không phát tán, kiểm tra nguồn tin và báo người có trách nhiệm nếu nội dung có dấu hiệu vi phạm",
-        "Tìm địa chỉ người trong video để đến đối chất"
-      ],
-      "correct": 2,
-      "explanation": "Hành động có trách nhiệm số là không phát tán video chưa kiểm chứng, xác minh từ nguồn chính thống và báo cho cơ quan có trách nhiệm.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c14",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Một người bạn rủ học sinh tham gia nhóm trực tuyến chuyên cá cược và hướng dẫn cách che giấu giao dịch. Cách xử lý phù hợp nhất là gì?",
-      "options": [
-        "Tham gia thử với số tiền nhỏ",
-        "Từ chối, rời nhóm, lưu thông tin cần thiết một cách an toàn và báo người lớn hoặc cơ quan có trách nhiệm khi cần",
-        "Mời thêm bạn bè vào nhóm",
-        "Chỉ rời nhóm nếu bị thua tiền"
-      ],
-      "correct": 1,
-      "explanation": "Học sinh cần dứt khoát từ chối, rời khỏi nhóm, lưu thông tin bằng chứng an toàn và báo cho người lớn hoặc cơ quan chức năng xử lý.",
-      "difficulty": "van_dung",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c15",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Một trong những cách thức hoạt động phổ biến của tội phạm là",
-      "options": [
-        "hoạt động độc lập, không có sự cấu kết.",
-        "câu kết thành các băng nhóm, tổ chức.",
-        "chỉ lưu động trên phạm vi xã, phường.",
-        "không sử dụng các loại vũ khí, công cụ."
-      ],
-      "correct": 1,
-      "explanation": "Một trong những cách thức hoạt động phổ biến của tội phạm là thường câu kết thành các băng nhóm, tổ chức chặt chẽ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "gdqp11_b3_c16",
-      "type": "mcq",
-      "subjectId": "sub_gdqp11",
-      "chapterId": "gdqp11_b3",
-      "sectionId": "gdqp11_b3_s1",
-      "stem": "Trong Bộ luật Hình sự năm 2015, sửa đổi, bổ sung năm 2017 có bao nhiêu chương quy định về hình phạt các tội phạm?",
-      "options": [
-        "12 chương.",
-        "13 chương.",
-        "14 chương.",
-        "15 chương."
-      ],
-      "correct": 1,
-      "explanation": "Phần thứ hai của Bộ luật Hình sự 2015 quy định về Các tội phạm bao gồm 13 chương (từ Chương XIV đến Chương XXVI).",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "GDQP 11",
-        "Giữa HKI",
-        "Bài 3: Phòng chống tệ nạn xã hội"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T06:00:00.000Z",
-      "updatedAt": "2026-10-28T06:00:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_01",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Dựa vào các tiêu chí chủ yếu nào sau đây để phân chia thế giới thành các nhóm nước?",
-      "options": [
-        "GNI/ người, cơ cấu ngành kinh tế và chỉ số phát triển con người.",
-        "GDP/ người, đầu tư ra nước ngoài và chỉ số phát triển con người.",
-        "GNI, cơ cấu ngành kinh tế và trình độ dân trí, tuổi thọ trung bình.",
-        "GDP/ người, chỉ số phát triển con người và cơ cấu ngành kinh tế."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_02",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Việc áp dụng ngày càng rộng rãi các tiêu chuẩn thống nhất trên phạm vi toàn cầu trong quá trình sản xuất kinh doanh là biểu hiện của",
-      "options": [
-        "khu vực hóa kinh tế.",
-        "đô thị hóa tự phát.",
-        "cơ cấu dân số già.",
-        "toàn cầu hóa kinh tế."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_03",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Trong xu thế toàn cầu hóa kinh tế, các công ty đa quốc gia có vai trò chi phối chủ yếu đối với",
-      "options": [
-        "thị trường tiêu thụ nội địa.",
-        "các chuỗi giá trị toàn cầu.",
-        "chính sách quốc phòng.",
-        "các quy luật tự nhiên."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_04",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong một khu vực trên thế giới thường dựa trên cơ sở tương đồng về",
-      "options": [
-        "trình độ phát triển và quy mô dân số.",
-        "địa lí, văn hóa, xã hội, mục tiêu phát triển.",
-        "thể chế chính trị và tiềm lực quân sự.",
-        "hệ thống pháp luật, chính sách quốc phòng."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_05",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Ở các nước đang phát triển, ngành nông nghiệp thu hút nhiều lao động nhưng lại chiếm tỉ trọng nhỏ trong cơ cấu GDP là do",
-      "options": [
-        "dân số đông và tăng nhanh.",
-        "truyền thống sản xuất lâu đời.",
-        "trình độ phát triển kinh tế thấp.",
-        "kĩ thuật canh tác lạc hậu."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_06",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Tổ chức nào sau đây là một trong những tổ chức kinh tế toàn cầu được hình thành và phát triển cùng với quá trình toàn cầu hóa kinh tế?",
-      "options": [
-        "Hiệp hội các quốc gia Đông Nam Á.",
-        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
-        "Tổ chức Thương mại Thế giới.",
-        "Liên minh châu Âu."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_07",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Tổ chức nào sau đây đóng vai trò là trung tâm điều hòa các nỗ lực quốc tế vì các mục tiêu chung?",
-      "options": [
-        "Liên hợp quốc.",
-        "Tổ chức Thương mại Thế giới.",
-        "Quỹ Tiền tệ Quốc tế.",
-        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_08",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Nâng cao mức sống, tạo việc làm cho người dân các nước thành viên và bảo đảm các tiêu chuẩn lao động tối thiểu là mục tiêu hoạt động của",
-      "options": [
-        "Quỹ Tiền tệ Quốc tế.",
-        "Liên hợp quốc.",
-        "Tổ chức Thương mại Thế giới.",
-        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_09",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Tổ chức nào sau đây có tôn chỉ hoạt động là thúc đẩy hợp tác tiền tệ toàn cầu và bảo đảm sự ổn định tài chính?",
-      "options": [
-        "Tổ chức Thương mại Thế giới.",
-        "Quỹ Tiền tệ Quốc tế.",
-        "Liên hợp quốc.",
-        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_10",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Tổ chức nào sau đây có mục tiêu là đẩy mạnh sự giao lưu hàng hóa, dịch vụ, vốn và công nghệ trong một khu vực?",
-      "options": [
-        "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
-        "Liên hợp quốc.",
-        "Quỹ Tiền tệ Quốc tế.",
-        "Tổ chức Thương mại Thế giới."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_11",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Trong quá trình toàn cầu hóa kinh tế, yếu tố nào sau đây ngày càng được tự do dịch chuyển giữa các quốc gia?",
-      "options": [
-        "Hàng hóa và dịch vụ.",
-        "Biên giới hành chính.",
-        "Quân đội.",
-        "Luật pháp."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_12",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Thách thức to lớn của toàn cầu hóa đối với các nước đang phát triển là",
-      "options": [
-        "tự do hóa thương mại được mở rộng.",
-        "gây áp lực với tự nhiên, môi trường.",
-        "hàng hóa có cơ hội lưu thông rộng rãi.",
-        "các quốc gia đón đầu công nghệ mới."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_13",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cơ cấu ngành kinh tế ở các nước đang phát triển chủ yếu chuyển dịch theo hướng",
-      "options": [
-        "giảm nhanh tỉ trọng của các ngành dịch vụ.",
-        "tỉ trọng nông nghiệp chiếm vị trí chủ đạo.",
-        "tăng tỉ trọng của công nghiệp và dịch vụ.",
-        "tăng nhanh liên tục tỉ trọng nông nghiệp."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_14",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Việc chuyển dịch cơ cấu kinh tế sang nền kinh tế tri thức tạo động lực trực tiếp giúp các quốc gia giải quyết vấn đề nào sau đây về môi trường?",
-      "options": [
-        "Phát triển sản xuất xanh và giảm thiểu ô nhiễm môi trường sinh thái.",
-        "Cắt giảm việc sử dụng năng lượng tái tạo, giảm phát thải khí nhà kính.",
-        "Tăng cường khai thác các nguồn tài nguyên thiên nhiên, giảm ô nhiễm.",
-        "Đơn giản hóa quy trình kiểm soát chất thải công nghiệp, bảo vệ tài nguyên."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_15",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Phát biểu nào sau đây là một trong những biểu hiện của khu vực hóa kinh tế?",
-      "options": [
-        "Các tiêu chuẩn toàn cầu được áp dụng ngày càng rộng rãi.",
-        "Các công ty đa quốc gia mở rộng phạm vi sản xuất toàn cầu.",
-        "Gia tăng số lượng và quy mô của các tổ chức khu vực.",
-        "Các giao dịch thương mại quốc tế tăng lên nhanh chóng."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_16",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Vấn đề nào dưới đây là vấn đề an ninh truyền thống?",
-      "options": [
-        "An ninh năng lượng.",
-        "An ninh quân sự.",
-        "An ninh mạng.",
-        "An ninh nguồn nước."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_17",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Vấn đề nào dưới đây là vấn đề an ninh phi truyền thống?",
-      "options": [
-        "An ninh chính trị.",
-        "An ninh quân sự.",
-        "Chiến tranh, xung đột vũ trang.",
-        "An ninh lương thực."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_18",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Phát biểu nào sau đây không đúng với Tổ chức Thương mại Thế giới (WTO)?",
-      "options": [
-        "Là một tổ chức phi chính phủ lớn trên thế giới.",
-        "Có 164 nước tham gia thành viên (năm 2021).",
-        "Chi phối phần lớn hoạt động thương mại thế giới.",
-        "Làm sâu sắc sự khác biệt giữa các nhóm nước."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_19",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Giải pháp mang tính cấp bách khi giải quyết vấn đề khủng hoảng an ninh ương thực là",
-      "options": [
-        "cung cấp lương thực và cứu trợ nhân đạo.",
-        "tăng năng suất và phát triển bền vững.",
-        "phát huy vai trò của các tổ chức quốc tế.",
-        "bình ổn giá, ưu tiên hàng lương thực."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_20",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Hiện nay, nguồn nước ngọt ở nhiều nơi trên thế giới bị ô nhiễm nghiêm trọng, nguyên nhân chủ yếu là do",
-      "options": [
-        "Chất thải công nghiệp chưa qua xử lí.",
-        "Chất thải trong sản xuất nông nghiệp",
-        "Nước xả từ các nhà máy thủy điện",
-        "Khai thác và vận chuyển dầu mỏ. và"
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_21",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Mỹ La-tinh nằm giữa hai đại dương lớn là",
-      "options": [
-        "Đại Tây Dương và Ấn Độ Dương.",
-        "Bắc Băng Dương và Ấn Độ Dương.",
-        "Đại Tây Dương và Thái Bình Dương.",
-        "Thái Bình Dương và Bắc Băng Dương."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_22",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Phát biểu nào sau đây không đúng về kinh tế khu vực Mỹ La-tinh?",
-      "options": [
-        "Tổng GDP của toàn khu vực ở mức thấp.",
-        "Chênh lệch lớn về GDP giữa các nước.",
-        "Có nhiều quốc gia nợ nước ngoài rất lớn.",
-        "Tốc độ tăng trưởng GDP luôn rất nhanh."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_23",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Kinh tế của khu vực Mỹ La-tinh có sự chuyển dịch theo hướng chủ yếu nào sau đây?",
-      "options": [
-        "Tăng nhanh tỉ trọng ngành nông nghiệp.",
-        "Tăng tỉ trọng của ngành dịch vụ.",
-        "Tỉ trọng ngành công nghiệp giảm rất nhanh.",
-        "Giảm mạnh tỉ trọng của ngành dịch vụ."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_24",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Quá trình đô thị hóa ở khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
-      "options": [
-        "Gắn liền chặt chẽ với công nghiệp hóa.",
-        "Mạng lưới đô thị phân bố rất đồng đều.",
-        "Gắn với nhập cư và lịch sử khai thác lãnh thổ.",
-        "Chỉ phân bố ở những khu vực đồng bằng rộng."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_25",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Thành phần dân cư của khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
-      "options": [
-        "Đa dạng về chủng tộc và có nhiều người lai.",
-        "Chủ yếu là người nhập cư từ Hoa Kỳ đến.",
-        "Người da trắng chính là người dân bản địa.",
-        "Có cơ cấu dân số già mức cao nhất thế giới."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_26",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Nhóm nước phát triển thường có chỉ số phát triển con người (HDI) ở mức cao chủ yếu do",
-      "options": [
-        "quy mô dân số đông và diện tích lãnh thổ rộng.",
-        "mức sống cao; kinh tế; giáo dục, y tế phát triển.",
-        "tỉ lệ tăng dân số cao và có cơ cấu dân số trẻ.",
-        "nguồn tài nguyên thiên nhiên rất phong phú."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_27",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Giải pháp chủ yếu giúp các doanh nghiệp sản xuất tối ưu hóa nguồn lực và hạn chế rủi ro trong nền kinh tế tri thức là",
-      "options": [
-        "mở rộng quy mô nhà xưởng và sử dụng nhiều lao động phổ thông.",
-        "tập trung khai thác triệt để các nguồn tài nguyên thiên nhiên sẵn có.",
-        "đẩy mạnh ứng dụng công nghệ và sản xuất theo nhu cầu thị trường.",
-        "duy trì mẫu mã và quy trình sản xuất để hạn chế chi phí phát sinh."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_28",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Sự phát triển kinh tế của nhiều quốc gia khu vực Mỹ La-tinh không ổn định chủ yếu do",
-      "options": [
-        "nguồn tài nguyên thiên nhiên nghèo nàn.",
-        "thiếu hụt nghiêm trọng lực lượng lao động.",
-        "không tiếp giáp với các tuyến đường biển.",
-        "nền kinh tế phụ thuộc vào nước ngoài."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_29",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Phát biểu nào sau đây đúng với đặc điểm đô thị hóa ở Mỹ La-tinh?",
-      "options": [
-        "Quá trình đô thị hóa sớm.",
-        "Tỉ lệ dân thành thị giảm.",
-        "Không có các đô thị lớn.",
-        "Phân bố đô thị đồng đều."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_30",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Khu vực Mỹ La tinh có",
-      "options": [
-        "cơ cấu dân số rất già, quy mô giảm.",
-        "gia tăng dân số rất cao, dân trẻ hóa.",
-        "dân số đông và đang có sự già hóa.",
-        "gia tăng dân số thấp, quy mô giảm."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_31",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Vấn đề dân cư - xã hội đáng quan tâm nhất ở Mỹ La-tinh là",
-      "options": [
-        "có nhiều siêu đô thị dân đông.",
-        "tỉ lệ thất nghiệp ở thành thị cao.",
-        "dân nông thôn vào đô thị đông.",
-        "chênh lệch giàu nghèo rất lớn."
-      ],
-      "correct": 3,
-      "explanation": "Phương án đúng là D.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_32",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Hình thức tổ chức sản xuất nông nghiệp chủ yếu ở khu vực Mỹ La-tinh là",
-      "options": [
-        "hộ gia đình.",
-        "hợp tác xã.",
-        "trang trại.",
-        "du canh du cư."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_33",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Sản phẩm nông nghiệp nổi bật nhất của Mỹ La-tinh là",
-      "options": [
-        "lương thực.",
-        "cây công nghiệp.",
-        "thực phẩm.",
-        "gia súc."
-      ],
-      "correct": 1,
-      "explanation": "Phương án đúng là B.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_34",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Phía đông các đảo của quần đảo Ăng-ti do có nhiều mưa nên phát triển mạnh",
-      "options": [
-        "rừng thưa.",
-        "cây bụi.",
-        "rừng rậm.",
-        "xavan."
-      ],
-      "correct": 2,
-      "explanation": "Phương án đúng là C.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p1_35",
-      "type": "mcq",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Phía tây Mỹ La-tinh có thuận lợi chủ yếu cho phát triển ngành kinh tế nào sau đây?",
-      "options": [
-        "Thủy điện.",
-        "Trồng trọt.",
-        "Khai thác thủy sản.",
-        "Nuôi trồng thủy sản."
-      ],
-      "correct": 0,
-      "explanation": "Phương án đúng là A.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần I: Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_01",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho thông tin sau: Toàn cầu hóa kinh tế là quá trình liên kết các quốc gia trên thế giới về nhiều mặt, từ kinh tế đến văn hóa, khoa học. Quá trình này làm cho các dòng hàng hóa, dịch vụ, vốn và lao động ngày càng tự do di chuyển giữa các nước. Bên cạnh việc thúc đẩy tăng trưởng kinh tế toàn cầu, toàn cầu hóa cũng làm gia tăng sự phụ thuộc lẫn nhau về kinh tế giữa các quốc gia.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Toàn cầu hóa kinh tế tạo điều kiện thuận lợi cho các dòng vốn và lao động dịch chuyển giữa các nước.",
-          "answer": true
-        },
-        {
-          "label": "b",
-          "text": "Quá trình toàn cầu hóa kinh tế làm giảm bớt sự phụ thuộc lẫn nhau về mặt kinh tế giữa các quốc gia.",
-          "answer": false
-        },
-        {
-          "label": "c",
-          "text": "Các công ty đa quốc gia giữ vai trò chi phối các chuỗi giá trị toàn cầu trong xu thế toàn cầu hóa.",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Việc chủ động hội nhập toàn cầu hóa kinh tế giúp các nước đang phát triển tranh thủ nguồn vốn và công nghệ để chuyển dịch cơ cấu kinh tế theo hướng hiện đại.",
-          "answer": true
-        }
-      ],
-      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) ĐÚNG",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_02",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho thông tin sau: Khu vực hóa kinh tế là quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong các khu vực trên thế giới trên cơ sở tương đồng về địa lí, văn hóa, xã hội hoặc có chung mục tiêu phát triển. Sự hình thành các tổ chức liên kết khu vực giúp tạo lập thị trường sản xuất và tiêu dùng rộng lớn, thúc đẩy thương mại nội khối và gia tăng sức cạnh tranh của khu vực.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Khu vực hóa kinh tế là sự liên kết giữa các quốc gia dựa trên sự tương đồng về địa lí, văn hóa hoặc mục tiêu phát triển.",
-          "answer": true
-        },
-        {
-          "label": "b",
-          "text": "Quá trình khu vực hóa kinh tế làm gia tăng số lượng và quy mô của các tổ chức liên kết khu vực.",
-          "answer": true
-        },
-        {
-          "label": "c",
-          "text": "Khu vực hóa kinh tế giúp dỡ bỏ hoàn toàn các rào cản thương mại đối với các nước nằm trong một khu vực.",
-          "answer": false
-        },
-        {
-          "label": "d",
-          "text": "Việc tham gia vào các tổ chức liên kết kinh tế khu vực giúp Việt Nam mở rộng thị trường xuất khẩu nhưng cũng đặt ra thách thức lớn về sức cạnh tranh cho các doanh nghiệp trong nước.",
-          "answer": true
-        }
-      ],
-      "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) SAI, d) ĐÚNG",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_03",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Các công ty xuyên quốc gia ngày càng mở rộng phạm vi hoạt động. Hệ thống các công ty xuyên quốc gia đã có mặt ở nhiều nước tạo nên sự liên kết chặt chẽ góp phần làm cho quá trình toàn cầu hóa trở nên sâu sắc hơn.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Các công ty xuyên quốc gia là 1 trong những nhân tố thúc đẩy toàn cầu hóa.",
-          "answer": true
-        },
-        {
-          "label": "b",
-          "text": "Các công ty xuyên quốc gia chủ yếu tham gia lĩnh vực tài chính, công nghệ.",
-          "answer": false
-        },
-        {
-          "label": "c",
-          "text": "Các công ty xuyên quốc gia tham gia chuỗi liên kết chủ yếu ở các nước đang phát triển.",
-          "answer": false
-        },
-        {
-          "label": "d",
-          "text": "Các công ty xuyên quốc gia chi phối và kiểm soát hoạt động thương mại thế giới.",
-          "answer": true
-        }
-      ],
-      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) SAI, d) ĐÚNG",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_04",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho thông tin sau: An ninh năng lượng và an ninh nguồn nước là những vấn đề an ninh phi truyền thống quan trọng mà thế giới đang phải đối mặt. Sự suy giảm tài nguyên, biến đổi khí hậu và nhu cầu tiêu thụ gia tăng đang đe dọa trực tiếp đến nguồn cung cấp năng lượng cũng như việc tiếp cận nguồn nước sạch của người dân ở nhiều quốc gia.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "An ninh năng lượng là sự bảo đảm đầy đủ năng lượng dưới nhiều hình thức khác nhau phục vụ cho nhu cầu con người và phát triển kinh tế.",
-          "answer": true
-        },
-        {
-          "label": "b",
-          "text": "Sử dụng tiết kiệm năng lượng và đẩy mạnh phát triển năng lượng tái tạo là giải pháp quan trọng nhằm bảo đảm an ninh năng lượng.",
-          "answer": true
-        },
-        {
-          "label": "c",
-          "text": "Các quốc gia cùng chia sẻ một lưu vực sông cần tăng cường hợp tác và phối hợp kiểm soát nguồn nước nhằm hạn chế nguy cơ cạn kiệt tài nguyên và mâu thuẫn quốc gia.",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Việc bảo đảm đủ nước phục vụ cho sản xuất nông nghiệp là đã đảm bảo được an ninh nguồn nước.",
-          "answer": false
-        }
-      ],
-      "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) ĐÚNG, d) SAI",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_05",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho thông tin sau: An ninh mạng là sự bảo đảm hoạt động trên không gian mạng không gây hại đến an ninh quốc gia, trật tự, an toàn xã hội, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân. Sự phát triển mạnh mẽ của công nghệ thông tin khiến an ninh mạng trở thành một thách thức lớn đối với tất cả các quốc gia, đòi hỏi sự phối hợp và hợp tác quốc tế chặt chẽ để phòng chống các hoạt động tấn công mạng.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Mất an ninh mạng gây ảnh hưởng đến lĩnh vực quân sự, không tác động đến phát triển kinh tế và đời sống xã hội.",
-          "answer": false
-        },
-        {
-          "label": "b",
-          "text": "An ninh mạng là sự bảo đảm các hoạt động trên không gian mạng không gây hại đến an ninh quốc gia và trật tự xã hội.",
-          "answer": true
-        },
-        {
-          "label": "c",
-          "text": "Tăng cường hợp tác quốc tế và hoàn thiện thể chế pháp luật là những giải pháp quan trọng để bảo vệ an ninh mạng.",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Sự phụ thuộc ngày càng lớn của nền kinh tế vào hạ tầng kĩ thuật số khiến rủi ro mất an ninh mạng có thể gây ra những tổn thất diện rộng đối với nhiều quốc gia.",
-          "answer": true
-        }
-      ],
-      "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) ĐÚNG",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_06",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho thông tin: Theo số liệu của liên hợp quốc, hiện có 138 quốc gia (trong đó có 95 nước đang phát triển) ban hành Luật An ninh mạng. Việt Nam đã ban hành Luật An ninh mạng năm 2018 để quy định về hoạt động và bảo vệ an ninh quốc gia và bảo đảm trật tự, an toàn xã hội trên không gian mạng; trách nhiệm của cơ quan, tổ chức cá nhân có liên quan.",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Sự bùng nổ công nghệ thông tin trở thành thách thức lớn về an ninh quốc gia.",
-          "answer": true
-        },
-        {
-          "label": "b",
-          "text": "Các cuộc tấn công vào hệ thống hạ tầng thông tin, truyền thông quốc gia chỉ gây ảnh hưởng đến an ninh quốc gia.",
-          "answer": false
-        },
-        {
-          "label": "c",
-          "text": "Các cuộc tấn công mạng  xuyên quốc gia có thể gay thiệt hại đến nền kinh tế toàn cầu.",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Luật An ninh mạng từng quốc xây dựng riêng để đảm bảo bí mật, an toàn, an ninh quốc gia.",
-          "answer": false
-        }
-      ],
-      "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) SAI",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_07",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT NHẬP KHẨU HÀNG HÓA VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 - 2020 ( Đơn vị: Tỉ USD) Năm 2000 2005 2010 2015 2019 2020 Xuất Khẩu 7 961,7 13 014,0 19 009,0 21 341,8 24 970,7 22 594,7 Nhập Khẩu 7 927,2 12 804,0 18 467,2 20 815,8 24 418,2 21 949, 6 ( Nguồn : Ngân hàng Thế giới, 2022)",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Giá trị xuất khẩu hàng hóa và dịch vụ toàn thế giới giai đoạn 2000 - 2020 tăng liên tục.",
-          "answer": false
-        },
-        {
-          "label": "b",
-          "text": "Giá trị xuất khẩu hàng hóa luôn lớn hơn giá trị nhập khẩu giai đoạn 2000 - 2020.",
-          "answer": true
-        },
-        {
-          "label": "c",
-          "text": "Giá xuất nhập khẩu hàng hóa và dịch vụ toàn thế ngày càng tăng biểu hiện của toàn cầu hóa.",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Hoạt động thương mại có tốc độ tăng trưởng cao giai đoạn 2000 - 2020 tăng 560%.",
-          "answer": false
-        }
-      ],
-      "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) SAI",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p2_08",
-      "type": "truefalse",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT, NHẬP KHẨU HÀNG HOÁ VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 – 2020 (Đơn vị: tỉ USD) Năm Xuất khẩu Nhập khẩu 2000 7 961,7 7 982,3 2010 19 009,0 18 467,2 2019 24 970,7 24 418,2 2020 22 594,7 21 949,6 (Nguồn: WB, 2022)",
-      "statements": [
-        {
-          "label": "a",
-          "text": "Giá trị xuất khẩu tăng nhanh và liên tục.",
-          "answer": false
-        },
-        {
-          "label": "b",
-          "text": "Cán cân xuất nhập khẩu luôn dương.",
-          "answer": false
-        },
-        {
-          "label": "c",
-          "text": "Giá trị nhập khẩu tăng gấp 2,7 lần giai đoạn 2000 - 2020",
-          "answer": true
-        },
-        {
-          "label": "d",
-          "text": "Giá trị xuất khẩu tăng nhiều hơn giá trị nhập khẩu giai đoạn 2000 - 2020",
-          "answer": true
-        }
-      ],
-      "explanation": "Đáp án các ý: a) SAI, b) SAI, c) ĐÚNG, d) ĐÚNG",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần II: Đúng / Sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_01",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Năm 2024, số dân thế giới là 8141,8 triệu người, sản lượng lương thực có hạt của thế giới là 2854 triệu tấn. Hãy cho biết bình quân lương thực có hạt theo đầu người của thế giới năm 2024 là bao nhiêu kg/người. (làm tròn kết quả đến hàng đơn vị).",
-      "answer": "351",
-      "correctAnswer": "351",
-      "explanation": "Đáp án chính xác: 351",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_02",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Cho bảng số liệu: Trị giá xuất khẩu hàng hóa và dịch vụ của Mông Cổ và Đan Mạch, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Mông Cổ 7,7 16,4 Đan Mạch 195,7 301,4 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết tốc độ tăng trưởng trị giá xuất khẩu năm 2024 so với năm 2020 của Mông Cổ cao hơn của Đan Mạch bao nhiêu phần trăm (coi năm 2020 của mỗi nước = 100%) (làm tròn kết quả đến hàng đơn vị).",
-      "answer": "59",
-      "correctAnswer": "59",
-      "explanation": "Đáp án chính xác: 59",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_03",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Tổng trị giá xuất nhập khẩu và cán cân xuất nhập khẩu của thế giới năm 2024 lần lượt là 47,2 nghìn tỷ USD và -0,4 nghìn tỷ USD. Hãy cho biết trị giá xuất khẩu của thế giới năm 2024 là bao nhiêu nghìn tỷ USD (làm tròn kết quả đến một chữ số thập phân).",
-      "answer": "23,4",
-      "correctAnswer": "23,4",
-      "explanation": "Đáp án chính xác: 23,4",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_04",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Năm 2024, trị giá xuất khẩu lĩnh vực dịch vụ của Hoa Kỳ đạt 1200 tỉ USD. Trong đó thương mại số chiếm 60%. Hãy cho biết lĩnh vực thương mại số của Hoa Kỳ có trị giá là bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
-      "answer": "720",
-      "correctAnswer": "720",
-      "explanation": "Đáp án chính xác: 720",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_05",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Năm 2018 và năm 2024, sản lượng tiêu thụ khí tự nhiên của thế giới lần lượt là 3831,7 tỉ m3 và 4127,8 tỉ m3. Hãy cho biết, sản lượng tiêu thụ khí tự nhiên của thế giới năm 2024 so với năm 2018 tăng thêm bao nhiêu tỉ m3 (làm tròn kết quả đến hàng đơn vị).",
-      "answer": "296",
-      "correctAnswer": "296",
-      "explanation": "Đáp án chính xác: 296",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_06",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c1",
-      "sectionId": "chap_dia11_c1_s1",
-      "stem": "Năm 2019 giá trị xuất khẩu toàn thế giới là 24 791,1 tỉ USD; giá trị nhập khẩu là 24 348,1 tỉ USD. Tính cán cân xuất nhập khẩu của toàn thế giới năm 2019. (làm tròn kết quả đến hàng đơn vị của tỉ USD)",
-      "answer": "443",
-      "correctAnswer": "443",
-      "explanation": "Đáp án chính xác: 443",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_07",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Cho bảng số liệu: Tổng dự trữ quốc tế của Hoa Kỳ và Nam Phi, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Hoa Kỳ 133,8 227,8 Nam Phi 47,4 54,9 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết năm 2024 so với năm 2020, tổng dự trữ quốc tế của Hoa Kỳ tăng nhiều hơn của Nam Phi bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
-      "answer": "87",
-      "correctAnswer": "87",
-      "explanation": "Đáp án chính xác: 87",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    },
-    {
-      "id": "q_dia11_p3_08",
-      "type": "short_answer",
-      "subjectId": "sub_dia11",
-      "chapterId": "chap_dia11_c2",
-      "sectionId": "chap_dia11_c2_s1",
-      "stem": "Năm 2020, dân số của Mĩ La-tinh là 652,3 triệu người, trong đó dân số trong độ tuổi lao động là 438,3 triệu người. Tính tỉ lệ dân số trong độ tuổi lao động của Mĩ La-tinh năm 2020 (làm tròn đến hàng đơn vị của %).",
-      "answer": "67,2",
-      "correctAnswer": "67,2",
-      "explanation": "Đáp án chính xác: 67,2",
-      "difficulty": "van_dung",
-      "tags": [
-        "Địa lí 11",
-        "Giữa HKI",
-        "Phần III: Trả lời ngắn"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T09:50:00.000Z",
-      "updatedAt": "2026-10-28T09:50:00.000Z"
-    }    ,
-    {
-          "id": "q_su11_t1_mcq_01",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Một trong những nhiệm vụ của các cuộc cách mạng tư sản thế kỉ XVII - XVIII là",
-          "options": [
-                "đưa giai cấp công nhân lên nắm quyền.",
-                "xóa bỏ triệt để mâu thuẫn trong xã hội.",
-                "xác lập sự thống trị của chủ nghĩa thực dân.",
-                "xóa bỏ tình trạng phong kiến cát cứ."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: xóa bỏ tình trạng phong kiến cát cứ.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_02",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Cách mạng tư sản Anh thế kỉ XVII thắng lợi đã",
-          "options": [
-                "lật đổ chế độ thuộc địa nửa phong kiến.",
-                "thiết lập chế độ dân chủ cộng hòa ở Anh.",
-                "thiết lập chế độ quân chủ lập hiến ở Anh.",
-                "giành độc lập dân tộc từ tay thực dân Pháp."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: thiết lập chế độ quân chủ lập hiến ở Anh.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_03",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Mục tiêu chung của các cuộc cách mạng tư sản thế kỉ XVI - XVIII là",
-          "options": [
-                "lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
-                "lật đổ chế độ phong kiến, cô lập cùng tàn tích của nó.",
-                "tạo điều kiện cho sự phát triển của chế độ phong kiến.",
-                "mở đường cho sự phát triển của chủ nghĩa xã hội."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_04",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Các cuộc cách mạng tư sản thế kỉ XVI - XVIII có hai nhiệm vụ cơ bản là",
-          "options": [
-                "dân tộc và dân chủ.",
-                "dân tộc và dân sinh.",
-                "độc lập và tự do.",
-                "dân chủ và dân quyền."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: dân tộc và dân chủ.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_05",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Lãnh đạo của cuộc cách mạng tư sản Anh thế kỉ XVII là",
-          "options": [
-                "tư sản và chủ nô.",
-                "tư sản và quý tộc mới.",
-                "tăng lữ và quý tộc.",
-                "chủ nô và quý tộc."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: tư sản và quý tộc mới.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_06",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Trong các thế kỉ XVI - XVIII, phương thức sản xuất gì phát triển mạnh ở các nước Âu - Mỹ?",
-          "options": [
-                "Cộng sản nguyên thủy.",
-                "Chiếm hữu nô lệ.",
-                "Xã hội chủ nghĩa.",
-                "Tư bản chủ nghĩa."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Tư bản chủ nghĩa.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_07",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Tại 13 thuộc địa Anh ở Bắc Mỹ trước cách mạng, người dân phải tuân theo:",
-          "options": [
-                "Các đạo luật khắt khe do Chính phủ Anh đề ra.",
-                "Các đạo luật khắt khe do chính quyền mỗi thuộc địa đề ra.",
-                "Các đạo luật cởi mở do Chính phủ Anh đề ra.",
-                "Các đạo luật cởi mở do chính quyền mỗi thuộc địa đề ra."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Các đạo luật khắt khe do Chính phủ Anh đề ra.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_08",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Nội dung nào sau đây là mục tiêu của cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII?",
-          "options": [
-                "Lật đổ chế độ phong kiến đứng đầu vua Sác-lơ I.",
-                "Lật đổ ách thống trị của thực dân Anh, giành độc lập.",
-                "Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
-                "Thiết lập chính quyền của giai cấp tư sản và ..."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_09",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "“Trào lưu Triết học Ánh sáng đã tích cực phê phán tình trạng mục nát, lỗi thời của chế độ phong kiến và Giáo hội Thiên Chúa giáo đương thời, đưa ra những lí thuyết về việc xây dựng nhà nước mới”. Đây là tiền đề tư tưởng của cuộc cách mạng nào?",
-          "options": [
-                "Cách mạng tư sản Anh.",
-                "Cách mạng tư sản Pháp.",
-                "Cách mạng giải phóng ở Bắc Mỹ.",
-                "Cách mạng giải phóng ở Đức."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Cách mạng tư sản Pháp.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_10",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Các cuộc cách mạng tư sản thời cận đại đều",
-          "options": [
-                "dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
-                "tạo ra một nền dân chủ, tự do thực sự, rộng rãi.",
-                "lật đổ chế độ phong kiến, thiết lập nền cộng hòa.",
-                "lật đổ chế độ thực dân, thiết lập nền cộng hòa."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_11",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Chủ nghĩa đế quốc ra đời từ cuối thế kỉ XIX đầu thế kỉ XX là hệ quả trực tiếp của quá trình",
-          "options": [
-                "xâm lược thuộc địa.",
-                "giao lưu buôn bán.",
-                "toàn cầu hóa.",
-                "hợp tác kinh tế."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: xâm lược thuộc địa.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_12",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Hình thức tiêu biểu của các tổ chức độc quyền ở Đức và Pháp vào cuối thế kỉ XIX - đầu thế kỉ XX, là",
-          "options": [
-                "các-ten và tô-rớt.",
-                "xanh-đi-ca và các-ten.",
-                "tô-rớt và công-xoóc-xi-om.",
-                "con-sơn và công-gô-lô-mê-rét."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: xanh-đi-ca và các-ten.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_13",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Sau các cuộc cách mạng tư sản, chủ nghĩa tư bản từng bước được xác lập ở đâu?",
-          "options": [
-                "Châu Âu và Bắc Mĩ.",
-                "Tây Âu và Châu Á.",
-                "Bắc Mĩ và Nam Á.",
-                "Châu Á và Châu Phi."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Châu Âu và Bắc Mĩ.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_14",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Chính sách xâm lược và mở rộng thuộc địa của các nước tư bản nhằm mục đích đáp ứng nhu cầu",
-          "options": [
-                "phát triển khoa học – kĩ thuật.",
-                "giải quyết tình trạng thất nghiệp.",
-                "thu hút nguồn vốn đầu tư bên ngoài.",
-                "nguyên liệu và nguồn nhân công."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: nguyên liệu và nguồn nhân công.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_15",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Sự kiện đánh dấu sự mở rộng của cuộc cách mạng tư sản bên ngoài Châu Âu là",
-          "options": [
-                "Cách mạng tư sản Anh.",
-                "Cách mạng tư sản Pháp.",
-                "Cách mạng tư sản Hà Lan.",
-                "Cách mạng tư sản Bắc Mĩ."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Cách mạng tư sản Bắc Mĩ.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_16",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Cuối thế kỉ XIX – đầu thế kỉ XX, các nước tư bản chủ nghĩa đã chuyển sang giai đoạn",
-          "options": [
-                "tự do cạnh tranh.",
-                "cải cách đất nước.",
-                "đế quốc chủ nghĩa.",
-                "chủ nghĩa phát xít."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: đế quốc chủ nghĩa.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_17",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Cơ sở tạo ra bước chuyển tiếp của chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền là gì?",
-          "options": [
-                "Sự phát triển của kinh tế tư bản chủ nghĩa.",
-                "Sự phát triển của khoa học – công nghệ.",
-                "Sự tăng cường đầu tư vốn trong sản xuất.",
-                "Sự phát triển của các tổ chức độc quyền."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Sự phát triển của các tổ chức độc quyền.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_18",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Ở châu Á, cuối thế kỉ XIX, những quốc gia nào sau khi tiến hành cải cách duy tân đã đưa đất nước theo con đường tư bản chủ nghĩa?",
-          "options": [
-                "Nhật Bản và Xiêm.",
-                "Nhật Bản và Trung Quốc.",
-                "Xiêm và Việt Nam.",
-                "Xiêm và Ấn Độ."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Nhật Bản và Xiêm.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_19",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Chủ nghĩa tư bản hiện đại là thuật ngữ dùng để chỉ chủ nghĩa tư bản",
-          "options": [
-                "trong giai đoạn tự do cạnh tranh.",
-                "bắt đầu chuyển sang giai đoạn độc quyền.",
-                "từ sau chiến tranh thế giới thứ II đến nay.",
-                "từ sau chiến tranh thế giới thứ I đến nay."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: từ sau chiến tranh thế giới thứ II đến nay.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_20",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Sự xác lập của chủ nghĩa tư bản ở Châu Âu và Bắc Mĩ đều có điểm chung là",
-          "options": [
-                "đều thành lập chế độ quân chủ lập hiến.",
-                "đều thành lập nước cộng hòa.",
-                "đều hoàn toàn xóa bỏ hoàn toàn chế độ phong kiến.",
-                "đều do giai cấp tư sản lãnh đạo và giành thắng lợi."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: đều do giai cấp tư sản lãnh đạo và giành thắng lợi.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_21",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Đẩy nhanh quá trình tích tụ và tập trung tư bản đã dẫn đến",
-          "options": [
-                "sự xuất hiện các công ty độc quyền lũng đoạn nền kinh tế đất nước.",
-                "sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
-                "sự ra đời của chủ nghĩa đế quốc trên phạm vi toàn thế giới.",
-                "sự hình thành chủ nghĩa tư bản hiện đại sau chiến tranh thế giới thứ hai."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_22",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Chủ nghĩa đế quốc là hệ quả trực tiếp của sự phát triển và mở rộng của chủ nghĩa tư bản nhằm:",
-          "options": [
-                "tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
-                "tìm kiếm nguyên liệu và thị trường ở nước ngoài.",
-                "khai thác tài nguyên ở các nước thuộc địa.",
-                "tăng cường chính sách xâm lược để mở rộng thị trường."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_23",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Nội dung nào sau đây tạo cơ sở cho bước chuyển biến của chủ nghĩa tư bản từ tự do cạnh tranh sang giai đoạn độc quyền?",
-          "options": [
-                "Quá trình hợp tác ở các nước tư bản.",
-                "Sự phát triển của các tổ chức độc quyền.",
-                "Nhiều trung tâm kinh tế - tài chính ra đời.",
-                "Sự ra đời nhiều tổ chức liên kết khu vực."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Sự phát triển của các tổ chức độc quyền.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_mcq_24",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s1",
-          "stem": "Nguyên nhân trực tiếp nào đã thúc đẩy các nước đế quốc tiến hành xâm lược các nước châu Á, Phi, Mỹ Latinh?",
-          "options": [
-                "Do nhu cầu về nguyên liệu và nhân công.",
-                "Khát vọng chinh phục những vùng đất mới.",
-                "Thực hiện tham vọng bá chủ toàn thế giới.",
-                "Thúc đẩy sự giao lưu văn hóa các châu lục."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Do nhu cầu về nguyên liệu và nhân công.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Cách mạng tư sản"
-          ]
-    },
-    {
-          "id": "q_su11_t1_tf_01",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: Tư liệu 1: “Tất cả mọi người sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. (Tuyên ngôn Độc lập (Mĩ, năm 1776)) Tư liệu 2: “Điều 1. Con người sinh ra đều có quyền tự do và bình đẳng. Những sự phân biệt xã hội chỉ có thể dựa trên lợi ích chung. Điều 17. Quyền tư hữu là quyền bất khả xâm phạm và thiêng liêng không ai có thể bị tước bỏ”. (Tuyên ngôn Nhân quyền và Dân quyền (Pháp, năm 1789))",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền ra đời từ cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Điểm chung của Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp là đề cao quyền con người và quyền công dân.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp năm 1789 không đề cao quyền tư hữu cá nhân vì đó là biểu hiện cho sự phân biệt giàu – nghèo trong xã hội.",
-                      "answer": false
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Trong Tuyên ngôn độc lập của nước Việt Nam dân chủ cộng hòa (2/9/1945), Chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp.",
-                      "answer": true
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t1_tf_02",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Anh là quốc gia duy nhất trên Trái Đất đã thủ tiêu quyền lực của nhà vua thông qua đấu tranh bằng sự cố gắng, cuối cùng Anh đã thiết lập Chính phủ mới mà nhà vua chỉ có quyền khi làm việc tốt và bị hạn chế quyền lực khi làm điều xấu, các lãnh chúa phong kiến thì không được phép ngạo mạn và không có chức hầu, nhân dân là người nắm quyền. Thượng nghị viện Anh và các cơ quan trực thuộc có quyền quyết đoán công việc của quốc gia, vua chỉ được coi như là đồ trang trí...”. (Sách giáo khoa lớp 10 của nước cộng hòa Pháp, Magnard, tr 208.)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Anh là quốc gia duy nhất trên thế giới hiện nay theo chế độ quân chủ lập hiến.",
-                      "answer": false
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Sau cách mạng tư sản Anh vua không còn là người nắm quyền mà chỉ được coi như là đồ trang trí.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Thượng nghị viện Anh là cơ quan có quyền quyết định cao nhất trong mọi vấn đề.",
-                      "answer": false
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Nước Pháp sau cách mạng tư sản năm 1789 cũng là một nước quân chủ lập hiến.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t1_tf_03",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: C. Mác viết: “Việc tìm thấy những mỏ vàng, mỏ bạc ở Châu Mỹ, việc biến người bản xứ thành người nô lệ, việc chôn vùi họ vào các hầm mỏ hoặc tuyệt diệt họ đi, những buổi đầu của cuộc chinh phục và cướp bóc ở Đông Ấn, việc biến Châu Phi thành một vùng đất cấm thương mại đen, đầy những phương pháp tích lũy ban đầu đó có tính chất tàn nhẫn, báo hiệu buổi bình minh của thời đại tư bản chủ nghĩa”. (C. Mác, Tư bản, quyển 1, tập 3, NXB Sự thật, Hà Nội, năm 1960, trang 272)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Đoạn trích nêu quá trình xâm lược và săn bắt người da đen ở Châu Phi đưa sang Châu Mỹ làm nô lệ.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Châu Mỹ là một vùng đất mới rất giàu về tài nguyên thiên nhiên, thu hút sự xâm lược của thực dân phương Tây.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Trước khi bị phương Tây xâm lược, Châu Mỹ là một vùng đất có nền kinh tế rất phát triển.",
-                      "answer": false
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Nô lệ da đen trở thành lực lượng lao động chính trong các đồn điền, trang trại ở miền Nam nước Mỹ trong giai đoạn thế kỉ XVII-XIX.",
-                      "answer": true
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t1_tf_04",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Lạy Chúa tôi! Những đất bị rào ấy sẽ là một tổn thất của chúng ta! Vì chúng mà chúng ta phải trả tiền thuê nhà ở cho các nông trại của chúng ta nặng hơn bao giờ hết, và chúng ta sẽ không tìm thấy đất đai để cày bừa nữa. Mọi cái đều bị chiếm làm đồng cỏ cho cừu và cừu có lông lớn, đến nỗi trong vòng 7 năm, trong một vùng có bán kính 6 dặm quanh tôi đã có hàng chục chiếc máy cày bị bỏ xó; nơi mà hơn 40 người ngày trước đã tìm thấy chỗ sống thì bây giờ chỉ có 1 người và đàn cừu của anh ta. Chính những con cừu này đem lại khốn khổ cho chúng ta. Họ phải thôi xứ sở nghề nghiệp ngày xưa đã từng cung cấp cho chúng ta đủ các loại sản phẩm này, còn bây giờ chỉ có cừu, cừu lại cừu”. (Phan Ngọc Liên (2008), Lịch sử thế giới cận đại, tập 1, NXB Đại học Sư phạm, tr 35)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Cuối thế kỉ XV – đầu thế kỉ XVI, ở Anh diễn ra phong trào “rào đất nuôi cừu”.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Nguyên nhân chủ yếu dẫn đến phong trào “rào đất cướp ruộng” ở Anh là do sự phát triển mạnh mẽ của ngành công nghiệp len dạ.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Sự phát triển của kinh tế tư bản chủ nghĩa trong nông nghiệp làm xuất hiện tầng lớp quý tộc mới, sau này đã liên minh với tư sản chống lại chế độ phong kiến Anh.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Phong trào “rào đất cướp ruộng” đã góp phần cải thiện đời sống của nông dân Anh trước cách mạng tư sản.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t1_tf_05",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t1",
-          "sectionId": "chap_su_t1_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “- Sự tập trung sản xuất và tư bản đạt tới một mức độ phát triển cao khiến nó tạo ra những tổ chức độc quyền có một vai trò quyết định trong sinh hoạt kinh tế. - Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp và trên cơ sở “tư bản tài chính” đó, xuất hiện một bọn đầu sỏ tài chính. - Việc xuất khẩu tư bản, khác với việc xuất khẩu hàng hoá, đã có một ý nghĩa quan trọng đặc biệt. - Sự hình thành những liên minh độc quyền quốc tế của bọn tư bản chia nhau thế giới. - Việc các cường quốc tư bản chủ nghĩa lớn nhất đã chia nhau xong đất đai trên thế giới”. (Lê-nin toàn tập, Tập 27, NXB Sự thật, Hà Nội, 1961, tr.402)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Một trong những đặc điểm của chủ nghĩa tư bản độc quyền là xuất hiện các tổ chức độc quyền.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Tổ chức độc quyền là sự liên minh giữa các giai cấp tư sản và chủ nô để thu lợi nhuận cao.",
-                      "answer": false
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp tạo nên “tư bản tài chính”.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Các cường quốc tư bản chủ nghĩa bắt đầu xâm lược, phân chia thuộc địa trên thế giới.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 1",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_01",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Tháng 12/1922, Đại hội lần thứ nhất các Xô viết toàn liên bang đã thông qua văn kiện nào sau đây?",
-          "options": [
-                "Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
-                "Cương lĩnh chính trị đầu tiên của Đảng Bôn-sê-vích liên minh với tư sản.",
-                "Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất trên toàn Liên bang Xô viết.",
-                "Chính sách Kinh tế mới, Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_02",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Từ sau Chiến tranh thế giới thứ hai (1939-1945), quốc gia nào sau đây ở khu vực Đông Nam Á chọn con đường phát triển lên chủ nghĩa xã hội?",
-          "options": [
-                "Việt Nam.",
-                "In-đô-nê-xi-a.",
-                "Thái Lan.",
-                "Philippin."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Việt Nam.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_03",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Chủ nghĩa xã hội được mở rộng qua khu vực Mỹ Latinh sau thắng lợi của cách mạng ở quốc gia nào sau đây?",
-          "options": [
-                "Bra-xin.",
-                "Pê-ru.",
-                "Cu-ba.",
-                "Chi-lê."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Cu-ba.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_04",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia châu Á nào sau đây lựa chọn con đường đi theo chủ nghĩa xã hội?",
-          "options": [
-                "Thái Lan.",
-                "Ấn Độ.",
-                "Nhật Bản.",
-                "Triều Tiên."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Triều Tiên.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_05",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Trước năm 1945, quốc gia duy nhất trên thế giới đi theo con đường chủ nghĩa xã hội là",
-          "options": [
-                "Trung Quốc.",
-                "Việt Nam.",
-                "Liên Xô.",
-                "Triều Tiên."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Liên Xô.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_06",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Sau Chiến tranh thế giới thứ hai, các quốc gia ở khu vực nào sau đây đã lựa chọn con đường đi theo chủ nghĩa xã hội?",
-          "options": [
-                "Tây Âu.",
-                "Đông Âu.",
-                "Bắc Mỹ.",
-                "Nam Á."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Đông Âu.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_07",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Năm 1922, lịch sử thế giới ghi nhận sự kiện quan trọng nào sau đây?",
-          "options": [
-                "V.I. Lê-nin thành lập Chính quyền Xô viết ở nước Nga.",
-                "Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
-                "Liên Xô, Mỹ, Anh họp hội nghị I-an-ta ở Liên Xô.",
-                "Quốc tế cộng sản được thành lập ở Mát-xcơ-va (Liên Xô)."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_08",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia nào sau đây ở khu vực Đông Á đi theo con đường chủ nghĩa xã hội?",
-          "options": [
-                "Trung Quốc.",
-                "Hàn Quốc.",
-                "Nhật Bản.",
-                "Mông Cổ."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Trung Quốc.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_09",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Sự kiện nào sau đây đã cổ vũ phong trào giải phóng dân tộc trên thế giới?",
-          "options": [
-                "Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
-                "Sự hình thành của Trật tự thế giới hai cực I-an-ta.",
-                "Sự thành lập của tổ chức Hiệp ước Bắc Đại Tây Dương.",
-                "Sự giải thể của tổ chức Hiệp ước Vác-sa-va."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_10",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Bối cảnh nào sau đây đã tạo điều kiện thuận lợi để nhân dân các nước Đông Âu nổi dậy giành chính quyền và thành lập các nhà nước dân chủ nhân dân?",
-          "options": [
-                "Nhật Bản đầu hàng quân Đồng minh vô điều kiện.",
-                "Chiến tranh thế giới thứ hai bùng nổ và lan rộng.",
-                "Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
-                "Trung Quốc hoàn thành cách mạng dân tộc dân chủ."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_11",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Sự khủng hoảng sụp đổ của hệ thống chủ nghĩa xã hội ở châu Âu (1989-1991) cho thấy",
-          "options": [
-                "bài học về mô hình xây dựng chủ nghĩa xã hội.",
-                "chế độ xã hội chủ nghĩa đã không còn phù hợp.",
-                "Mỹ đã thành công trong chiến lược toàn cầu.",
-                "Mỹ đã thắng lợi trong cuộc Chiến tranh lạnh."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: bài học về mô hình xây dựng chủ nghĩa xã hội.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_12",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Từ sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô (1989-1991), Việt Nam cần rút ra bài học kinh nghiệm nào sau đây?",
-          "options": [
-                "Tiến hành cải cách đất nước trước khi xuất hiện những biểu hiện khủng hoảng.",
-                "Tuân thủ các quy luật phát triển khách quan, xây dựng cơ chế tập trung bao cấp.",
-                "Thực hiện chính sách đối nội đối ngoại theo hướng đa dạng hóa, đa phương hóa.",
-                "Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_13",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Cách mạng tháng Mười Nga 1917 có tác động nào sau đây đến quá trình hoạt động yêu nước và cách mạng của Nguyễn Ái Quốc?",
-          "options": [
-                "Đoàn kết nhân dân Việt Nam với phong trào cộng sản và công nhân quốc tế.",
-                "Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
-                "Xác định được hai nhiệm vụ cho cách mạng Việt Nam là dân tộc và dân chủ.",
-                "Xây dựng khối đoàn kết dân tộc trên nền tảng liên minh công-nông-binh."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_14",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Từ năm 1986, Lào thực hiện đường lối đổi mới toàn diện theo định hướng:",
-          "options": [
-                "Xã hội chủ nghĩa.",
-                "Tư bản chủ nghĩa hiện đại.",
-                "Cách mạng công nghiệp 4.0.",
-                "Hoàn hảo hóa."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Xã hội chủ nghĩa.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_15",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Đâu không phải một thành tựu nổi bật về khoa học – công nghệ của Trung Quốc?",
-          "options": [
-                "Phát triển ngành hàng không vũ trụ (phóng được tàu Thần Châu vào không gian).",
-                "Xây dựng hệ thống định vị vệ tinh Bắc Đẩu, hệ thống đường sắt cao tốc.",
-                "Phát triển hạ tầng kĩ thuật số, các trung tâm dữ liệu hiện đại.",
-                "Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_mcq_16",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s1",
-          "stem": "Cả nước Việt Nam tiến lên xây dựng chủ nghĩa xã hội từ năm nào?",
-          "options": [
-                "Sau khi thắng Pháp năm 1954.",
-                "Sau khi giải phóng miền Nam năm 1975.",
-                "Sau khi hoàn thành thống nhất đất nước năm 1976.",
-                "Sau Đổi mới năm 1986."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Sau khi hoàn thành thống nhất đất nước năm 1976.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Chủ nghĩa xã hội"
-          ]
-    },
-    {
-          "id": "q_su11_t2_tf_01",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Liên Xô là nhà nước chuyên chính vô sản duy nhất trên thế giới.",
-                      "answer": false
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Vừa mới ra đời Liên Xô đã đánh thắng cuộc can thiệp vũ trang của liên quân 14 nước đế quốc.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Liên Xô đánh thắng phát xít Nhật ở châu Á là điều kiện khách quan thuận lợi để nhân dân Việt Nam giành thắng lợi trong Cách mạng tháng Tám năm 1945.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Cứu cả loài người thoát khỏi ách nô lệ chủ nghĩa phát xít là trách nhiệm của Liên Xô.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t2_tf_02",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Liên Xô là nhà nước chuyên chính vô sản đầu tiên trên thế giới.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Liên Xô đã đánh bại thù trong giặc ngoài sau khi vừa thành lập.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Chưa đầy 30 năm sau, Liên Xô bị sụp đổ trong tay chủ nghĩa phát xít.",
-                      "answer": false
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Sự ra đời của Liên Xô chẳng những có ý nghĩa to lớn đối với nhân dân Liên Xô mà cả đối với nhân loại thế giới.",
-                      "answer": true
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t2_tf_03",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t2",
-          "sectionId": "chap_su_t2_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Năm 2020, 75% thành phố của Trung Quốc với dân số 500 nghìn người trở lên có đường sắt cao tốc. Trong khi đó, ở Tây Ban Nha, quốc gia có mạng lưới đường sắt tốc độ cao lớn nhất châu Âu và đứng thứ 2 toàn cầu chỉ có hơn 3 nghìn km đường sắt chuyên dụng đáp ứng tàu tốc độ 250km/h. Ở Vương quốc Anh chỉ có 107km, trong khi ở Mỹ chỉ có 1 tuyến đường sắt gần như tiêu chuẩn cho tàu cao tốc. Đến cuối năm 2021, tổng chiều dài đường sắt của Trung Quốc đã lên đến 150 nghìn km, bao gồm 40 nghìn km đường sắt cao tốc. Đường sắt cao tốc Trung Quốc hiện chiếm 66,3% tổng chiều dài đường sắt cao tốc trên toàn thế giới”. (Theo Tạp chí Giao thông vận tải, Trung Quốc đã trở thành cường quốc đường sắt cao tốc như thế nào?)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Hiện nay, Trung Quốc là quốc gia có mạng lưới đường sắt cao tốc phát triển nhất thế giới.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Tổng chiều dài đường sắt cao tốc của Trung Quốc nhiều hơn tổng chiều dài đường sắt cao tốc của Tây Ban Nha, Anh, Mỹ cộng lại.",
-                      "answer": true
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Đoạn trích phản ánh một trong những thành tựu nổi bật về khoa học – kĩ thuật và phát triển cơ sở hạ tầng của Trung Quốc hiện nay.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Năm 2020, toàn bộ các thành phố của Trung Quốc đều có hệ thống đường sắt cao tốc bao phủ.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 2",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_01",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Sự kiện nào sau đây mở đầu quá trình xâm lược của chủ nghĩa thực dân phương Tây ở khu vực Đông Nam Á?",
-          "options": [
-                "Tây Ban Nha xâm lược Phi-líp-pin.",
-                "Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
-                "Pháp tấn công Đà Nẵng (Việt Nam).",
-                "Hà Lan xâm lược In-đô-nê-xi-a."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_02",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Năm 1898 diễn ra sự kiện gì ở Đông Nam Á?",
-          "options": [
-                "Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
-                "Bồ Đào Nha đánh chiếm Ma-lắc-ca.",
-                "Pháp xâm lược Việt Nam.",
-                "Anh xâm lược xong Xin-ga-po."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_03",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Việc Pháp hoàn thành quá trình xâm lược Việt Nam gắn với sự kiện nào?",
-          "options": [
-                "Năm 1862, nhà Nguyễn kí Hiệp ước Nhâm Tuất.",
-                "Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
-                "Nhà Nguyễn thực hiện chính sách cấm đạo.",
-                "Năm 1883, nhà Nguyễn kí Hiệp ước Hác-măng."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_04",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Quốc gia nào ở Đông Nam Á trở thành vùng đệm giữa hai thế lực thực dân Anh và Pháp?",
-          "options": [
-                "Xin-ga-po.",
-                "In-đô-nê-xi-a.",
-                "Ma-lai-xi-a.",
-                "Xiêm."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Xiêm.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_05",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Đứng trước mối đe dọa của chủ nghĩa thực dân, Xiêm đã",
-          "options": [
-                "thực hiện chính sách đóng cửa, bế tỏa cảng quan.",
-                "thực hiện chính sách cấm đạo Thiên Chúa.",
-                "tiến hành công cuộc cải cách.",
-                "tiến hành kháng chiến bảo vệ nền độc lập."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: tiến hành công cuộc cải cách.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_06",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Nửa sau thế kỉ XIX, quốc gia Đông Nam Á nào dưới đây không bị thực dân phương Tây xâm lược?",
-          "options": [
-                "Xiêm.",
-                "Ma-lay-xi-a.",
-                "In-đô-nê-xi-a.",
-                "Phi-líp-pin."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: Xiêm.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_07",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Từ nửa sau thế kỉ XIX, chế độ phong kiến các nước Đông Nam Á đang trong tình trạng",
-          "options": [
-                "vừa mới hình thành.",
-                "khủng hoảng, suy yếu.",
-                "đang trên đà phát triển.",
-                "đang chuyển sang giai đoạn tư bản."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: khủng hoảng, suy yếu.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_08",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Đến cuối thế kỉ XIX, những quốc gia nào ở Đông Nam Á là thuộc địa của Anh?",
-          "options": [
-                "Xiêm, In-đô-nê-xi-a.",
-                "Ma-lay-xi-a, Miến Điện.",
-                "In-đô-nê-xi-a, Phi-líp-pin.",
-                "Ma-lay-xi-a, Phi-líp-pin."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: Ma-lay-xi-a, Miến Điện.",
-          "difficulty": "nhan_biet",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_09",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Đâu không phải là nội dung cải cách trong chính sách ngoại giao của vua Rama V (1892)?",
-          "options": [
-                "Thực hiện chính sách ngoại giao mềm dẻo.",
-                "Lợi dụng vị trí nước “đệm” giữa hai thế lực Anh – Pháp.",
-                "Cắt nhượng một số vùng đất phụ thuộc để giữ gìn chủ quyền đất nước.",
-                "Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_10",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Ý nào sau đây không phản ánh đúng ý nghĩa cuộc cải cách Ra-ma V đối với sự phát triển của Xiêm?",
-          "options": [
-                "Xiêm vẫn giữ được độc lập.",
-                "Tạo cho nước Xiêm một bộ mặt mới.",
-                "Xiêm trở thành đồng minh thân cận của Mĩ.",
-                "Đưa Xiêm phát triển theo hướng tư bản chủ nghĩa."
-          ],
-          "correct": 2,
-          "explanation": "Đáp án C đúng: Xiêm trở thành đồng minh thân cận của Mĩ.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_11",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Ý nào sau đây không phải là nguyên nhân để thực dân phương Tây xâm lược các nước Đông Nam Á?",
-          "options": [
-                "Các nước này đông dân, có lâm, hải sản và hương liệu quý.",
-                "Đây là một khu vực có vị trí địa lí quan trọng, giàu tài nguyên.",
-                "Chế độ phong kiến ở khu vực này đang lâm vào khủng hoảng, suy yếu.",
-                "Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_12",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Trong chính sách cai trị về văn hóa, xã hội và giáo dục ở Đông Nam Á, thực dân phương Tây đã",
-          "options": [
-                "làm xói mòn giá trị truyền thống của các quốc gia.",
-                "phát triển kinh tế ở những nơi có điều kiện phù hợp.",
-                "chú trọng xây dựng hệ thống đường giao thông.",
-                "chú trọng thực hiện các chính sách xã hội – đói."
-          ],
-          "correct": 0,
-          "explanation": "Đáp án A đúng: làm xói mòn giá trị truyền thống của các quốc gia.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_13",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "“Chúng lập ra ba chế độ khác nhau ở Trung, Nam, Bắc để ngăn cản việc thống nhất nước nhà của ta, để ngăn cản dân tộc ta đoàn kết”. (Hồ Chí Minh toàn tập, tập 4, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, trang 2,3) Đoạn tư liệu trên phản ánh chính sách cai trị của thực dân Pháp ở Việt Nam trên lĩnh vực nào?",
-          "options": [
-                "Văn hóa.",
-                "Tôn giáo.",
-                "Kinh tế.",
-                "Chính trị."
-          ],
-          "correct": 3,
-          "explanation": "Đáp án D đúng: Chính trị.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_mcq_14",
-          "type": "mcq",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s1",
-          "stem": "Đầu thế kỉ XX, hầu hết các nước trong khu vực Đông Nam Á đều trở thành",
-          "options": [
-                "các nước dân chủ cộng hòa độc lập.",
-                "thuộc địa của thực dân phương Tây.",
-                "trung tâm hàng hải lớn trên thế giới.",
-                "các quốc gia phong kiến độc lập, tự chủ."
-          ],
-          "correct": 1,
-          "explanation": "Đáp án B đúng: thuộc địa của thực dân phương Tây.",
-          "difficulty": "thong_hieu",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đông Nam Á"
-          ]
-    },
-    {
-          "id": "q_su11_t3_tf_01",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Từ năm 1892, Ra-ma V tiến hành cuộc cải cách hành chính. Sau khi cử nhiều đoàn đi nghiên cứu thể chế của một số nước châu Âu, giai cấp thống trị Xiêm coi mô hình nhà nước quân chủ lập hiến của đế quốc Đức là phù hợp với tình hình Xiêm. Vua vẫn là người có quyền lực tối cao trong toàn quốc. Bên cạnh vua có Hội đồng nhà nước đóng vai trò cơ quan tư vấn, khởi thảo luật pháp. Bộ máy hành pháp của triều đình được thay thế bằng Hội đồng Chính phủ gồm 12 bộ trưởng”. (Vũ Dương Ninh, Lịch sử Vương quốc Thái Lan, NXB Giáo dục, 1994, tr.92)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Đoạn trích cung cấp thông tin về cải cách của vua Ra-ma V trên tất cả mọi lĩnh vực.",
-                      "answer": false
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Cuộc cải cách hành chính của vua Ra-ma V bắt đầu được tiến hành từ cuối thế kỉ XVIII.",
-                      "answer": false
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Thể chế nhà nước quân chủ lập hiến mà Xiêm xây dựng từ cuộc cải cách của vua Ra-ma V là học tập theo mô hình của phương Tây.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Với cải cách của vua Ra-ma V, Hội đồng nhà nước đóng vai trò lập pháp, còn Hội đồng Chính phủ đóng vai trò hành pháp.",
-                      "answer": true
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đúng sai"
-          ]
-    },
-    {
-          "id": "q_su11_t3_tf_02",
-          "type": "truefalse",
-          "subjectId": "sub_su11",
-          "chapterId": "chap_su_t3",
-          "sectionId": "chap_su_t3_s2",
-          "stem": "Đọc đoạn tư liệu sau đây: “Điểm chung của chính sách thống trị thực dân ở Đông Nam Á là khai thác, vơ vét và bòn rút các quốc gia trong khu vực bằng chính sách thuế khóa đánh vào các tầng lớp nhân dân bản địa, cướp ruộng đất lập đồn điền, bóc lột sức người, khai thác tài nguyên; thông qua khai thác triệt để sản phẩm nông nghiệp, tiếp tục đầu tư để bóc lột lâu dài trong công nghiệp... Vì vậy, cao su, cà phê, chè, lúa gạo là những sản vật đặc trưng của Đông Nam Á được thực dân phương Tây chú ý khai thác từ sớm”. (Lương Ninh (Chủ biên), Đông Nam Á: Lịch sử từ nguyên thủy đến ngày nay, NXB Chính trị quốc gia, Hà Nội, 2018, tr.337)",
-          "statements": [
-                {
-                      "id": "a",
-                      "label": "a",
-                      "text": "Đoạn trích cung cấp thông tin về chính sách khai thác, bóc lột của thực dân phương Tây đối với khu vực Đông Nam Á.",
-                      "answer": true
-                },
-                {
-                      "id": "b",
-                      "label": "b",
-                      "text": "Trong công nghiệp, thực dân phương Tây tìm cách vơ vét, bòn rút các nước Đông Nam Á thông qua việc cướp ruộng đất lập đồn điền.",
-                      "answer": false
-                },
-                {
-                      "id": "c",
-                      "label": "c",
-                      "text": "Những sản vật được coi là thế mạnh của các nước Đông Nam Á được thực dân phương Tây chú ý đầu tư khai thác sớm để thu lợi nhuận cao.",
-                      "answer": true
-                },
-                {
-                      "id": "d",
-                      "label": "d",
-                      "text": "Khai thác tài nguyên thiên nhiên không phải là điểm chung trong chính sách cai trị của thực dân phương Tây ở Đông Nam Á.",
-                      "answer": false
-                }
-          ],
-          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
-          "difficulty": "van_dung",
-          "tags": [
-                "Lịch Sử 11",
-                "Chủ đề 3",
-                "Đúng sai"
-          ]
+        "id": "q_cn11_chap_b1_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Cơ khí chế tạo nghiên cứu và thực hiện những quá trình nào?",
+        "options": [
+            "Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+            "Thiết kế, thi công, vận hành, sửa chữa các chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+            "Thiết kế, lắp đặt, sửa chữa, bảo dưỡng các thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+            "Chế tạo, vận hành, bảo dưỡng, sửa chữa các máy móc phục vụ cho sản xuất và cho đời sống của con người."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ sử dụng các kiến thức số liệu của bộ môn nào?",
+        "options": [
+            "Vật lí",
+            "Hóa học",
+            "Toán học",
+            "Công nghệ"
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Toán học",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ ứng dụng nguyên lí của bộ môn nào ?",
+        "options": [
+            "Vật lí",
+            "Hóa học",
+            "Toán học",
+            "Công nghệ"
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật lí",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Vai trò chủ yếu của cơ khí chế tạo trong sản xuất là gì?",
+        "options": [
+            "Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.",
+            "Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
+            "Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.",
+            "Sản xuất vật liệu phục vụ xây dựng các công trình."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Cơ khí chế tạo sử dụng kiến thức và kết quả nghiên cứu nào để thực hiện các nhiệm vụ kĩ thuật?",
+        "options": [
+            "Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
+            "Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.",
+            "Địa lí, nguyên lí Sinh học và công nghệ môi trường.",
+            "Hoá học, nguyên lí Địa lí và công nghệ sinh họ c."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Cơ khí chế tạo góp phần phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ thông qua hoạt động nào?",
+        "options": [
+            "Khai thác nguồn nhiên liệu có sẵn trong tự nhiên.",
+            "Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
+            "Tổ chức vận chuyển và phân phối sản phẩm tiêu dùng.",
+            "Xây dựng các chương trình quảng bá kết quả nghiên cứu."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Việc sử dụng máy giặt giúp con người giảm công sức giặt quần áo và có thêm thời gian nghỉ ngơi. Ví dụ này thể hiện vai trò nào của cơ khí chế tạo trong đời sống?",
+        "options": [
+            "Tạo ra thiết bị phục vụ nghiên cứu và khám phá vũ trụ.",
+            "Tạo ra công cụ giúp nâng cao năng suất trong sản xuất.",
+            "Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
+            "Tạo ra máy móc phục vụ nghiên cứu và chinh phục thiên nhiên."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Các nhà khoa học sử dụng robot thám hiểm để khảo sát bề mặt một hành tinh. Trường hợp này thể hiện vai trò nào của cơ khí chế tạo?",
+        "options": [
+            ". Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
+            "Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.",
+            "Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.",
+            "Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: . Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_09",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Nhóm nào sau đây thuộc máy, công cụ lao động của ngành cơ khí chế tạo?",
+        "options": [
+            "Máy tiện, máy phay, máy bào, máy hàn.",
+            "Sắt, thép, đồng, nhôm và các hợp kim.",
+            "Bản vẽ, quy trình và hồ sơ kĩ thuật.",
+            "Chi tiết, cụm máy và sản phẩm cơ khí."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Máy tiện, máy phay, máy bào, máy hàn.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_10",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Trong chế tạo sản phẩm cơ khí, bản vẽ kĩ thuật và quy trình gia công được sử dụng nhằm mục đích nào?",
+        "options": [
+            "Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.",
+            "Xác định số lượng công nhân và tính tiền công sản xuất.",
+            "Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
+            "Xác định thời gian giao hàng và lựa chọn cách vận chuyển."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_11",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Một chi tiết máy đạt yêu cầu về độ bền nhưng có kích thước sai lệch quá mức cho phép. Đánh giá nào sau đây phù hợp?",
+        "options": [
+            "Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thướ c.",
+            "Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
+            "Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.",
+            "Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_12",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Đối tượng lao động của ngành cơ khí chế tạo là gì?",
+        "options": [
+            "Vật liệu kim loại và hợp kim",
+            "Vật liệu phi kim loại",
+            "Các vật liệu cơ khí",
+            "Vật liệu kim loại và phi kim loại"
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Các vật liệu cơ khí",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_13",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Phương án nào sau đây mô tả đúng trình tự chế tạo một chiếc kìm nguội?  A. Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũ",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "→ Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh. B. Thép (nhiệt luyện) → Phôi kìm (khoan lỗ và dũ",
+                "answer": false
+            },
+            {
+                "id": "a",
+                "label": "a",
+                "text": "→ Hai má kìm (Tán ghép) → Chiếc kìm (rèn hoặc đập) → Chiếc kìm hoàn chỉnh. C. Thép (nhiệt luyện) → Phôi kìm (rèn hoặc đập) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũ",
+                "answer": false
+            },
+            {
+                "id": "a",
+                "label": "a",
+                "text": "→ Chiếc kìm hoàn chỉnh. D. Thép (rèn hoặc dập) → Phôi kìm (Nhiệt luyện) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũ",
+                "answer": false
+            },
+            {
+                "id": "a",
+                "label": "a",
+                "text": "→ Chiếc kìm hoàn chỉnh.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý () Đúng. Ý (a, a, a, a) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_14",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Trong quy trình chế tạo cơ khí, công đoạn làm giảm mài mòn cho sản phẩm được thực hiện ở bước nào?",
+        "options": [
+            "Lựa chọn phương pháp và chế tạo phôi.",
+            "Thực hiện gia công các chi tiết máy.",
+            "Xử lí và bảo vệ bề mặt sản phẩm.",
+            "Lắp ráp các chi tiết thành sản phẩm."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Xử lí và bảo vệ bề mặt sản phẩm.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_15",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Việc chọn phương pháp chế tạo phôi và xác định kích thước phôi phù hợp thuộc bước nào trong quy trình chế tạo cơ khí?",
+        "options": [
+            "Chế tạo phôi cho các chi tiết máy.",
+            "Gia công các chi tiết của sản phẩm.",
+            "Xử lí và bảo vệ bề mặt sản phẩm.",
+            "Lắp ráp các chi tiết của sản phẩm."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Chế tạo phôi cho các chi tiết máy.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_16",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Bước nào trong quy trình chế tạo cơ khí giúp chi tiết đạt hình dạng, kích thước và độ chính xác theo yêu cầu?",
+        "options": [
+            "Lắp ráp các chi tiết thành sản phẩm.",
+            "Xử lí và bảo vệ bề mặt sản phẩm.",
+            "Lựa chọn phương pháp và chế tạo phôi.",
+            "Thực hiện gia công các chi tiết máy"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Thực hiện gia công các chi tiết máy",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_17",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Yếu tố nào là quan trọng nhất để đánh giá chất lượng của một lô vòng bi trước khi xuất xưởng?",
+        "options": [
+            "Bề mặt sản phẩm phải thật sáng bóng, không có bất kì vết trầy xước nào để đảm bảo tính thẩm mĩ khi xuất bán.",
+            "Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
+            "Thời gian kiểm tra chất lượng cần được rút ngắn tối đa để đẩy nhanh tiến độ sản xuất mà không cần quá khắt khe.",
+            "Sản phẩm chỉ cần đạt tiêu chuẩn về kích thước tổng thể bao ngoài, bỏ qua việc đo kiểm chi tiết từng thông số."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_18",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Khi trao đổi về nội dung, mục đích và trình tự các bước trong quy trình chế tạo cơ khí, một nhóm học sinh đưa ra các ý kiến sau:",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b1_19",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b1",
+        "sectionId": "chap_b1_sec",
+        "stem": "Một bạn đưa ra nhận định về đặc điểm của ngành cơ khí chế tạo?",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,...",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất",
+                "answer": true
+            }
+        ],
+        "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 1",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Công việc chính của thiết kế sản phẩm cơ khí ?",
+        "options": [
+            "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+            "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Công việc chính của bảo dưỡng, sửa chữa thiết bị cơ khí ?",
+        "options": [
+            "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+            "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Công việc chính của lắp ráp sản phẩm cơ khí ?",
+        "options": [
+            "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt r a.",
+            "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+            "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a..",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a..",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Công việc chính của gia công cơ khí ?",
+        "options": [
+            "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt r a.",
+            "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+            "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
+            "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc thiết kế sản phẩm cơ khí??",
+        "options": [
+            "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+            "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
+            "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+            "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc gia công cơ khí ?",
+        "options": [
+            "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+            "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
+            "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+            "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Người làm công việc bảo dưỡng, sửa chữa thiết bị cơ khí thực hiện nhiệm vụ chính nào sau đây?",
+        "options": [
+            "Lắp ghép các chi tiết thành sản phẩm hoàn chỉnh, bảo đảm yêu cầu kĩ thuật theo bản vẽ lắp.",
+            "Chế tạo các sản phẩm máy móc mới, kiểm tra và thử nghiệm theo yêu cầu của bản thiết kế.",
+            "Phân tích nhu cầu của khách hàng, tư vấn và bán các sản phẩm máy móc phù hợp với nhu cầu.",
+            "Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy mó c."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy mó c.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Nghề nghiệp nào sau đây không thuộc nhóm công việc gia công cơ khí?",
+        "options": [
+            "nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết",
+            "Thợ hàn",
+            ". Thợ mỏ",
+            "Thợ rèn, dập"
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: . Thợ mỏ",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_09",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Quá trình sử dụng máy móc, công cụ và công nghệ để biến đổi vật liệu ban đầu thành sản phẩm cơ khí được gọi là gì??",
+        "options": [
+            "Quá trình thiết kế sản phẩm cơ khí",
+            "Quá trình gia công cơ khí",
+            "Quá trình lắp ráp sản phẩm cơ khí",
+            "Quá trình bảo dưỡng, sửa chữa thiết bị cơ khí"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Quá trình gia công cơ khí",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_10",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Quá trình tạo ra một sản phẩm cơ khí diễn ra theo trình tự?",
+        "options": [
+            "Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
+            "Thiết kế sản phẩm → Gia công cơ khí → Bảo dưỡng thiết bị.",
+            "Gia công cơ khí → Thiết kế sản phẩm → Lắp ráp sản phẩm.",
+            "Thiết kế sản phẩm → Lắp ráp sản phẩm → Gia công cơ khí."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_11",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Môi trường làm việc trong ngành cơ khí có thể khắc nghiệt và tiềm ẩn nguy cơ tai nạn lao động. Khi tìm hiểu những yêu cầu đối với người lao động trong ngành này, một học sinh đưa ra các nhận định sau:",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việ",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động..",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý (a) Đúng. Ý (b, c, c, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b2_12",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b2",
+        "sectionId": "chap_b2_sec",
+        "stem": "Trong giờ học nhóm học sinh trao đổi các ý kiến về các ngành nghề trong lĩnh vực cơ khí chế tạo như sau.",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu.",
+                "answer": false
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu.",
+                "answer": true
+            }
+        ],
+        "explanation": "Ý (b, d) Đúng. Ý (a, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 2",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Vật liệu cơ khí là?",
+        "options": [
+            "Các kim loại được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+            "Vật liệu được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+            "Chất được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+            "Dụng cụ được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Vật liệu được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Vật liệu cơ khí cần đáp ứng yêu cầu về?",
+        "options": [
+            "Tính sử dụng, tính công nghệ và tính kinh tế.",
+            "Tính cơ học, tính công nghệ và tính kinh tế.",
+            "Tính lý học, tính công nghệ và tính kinh tế.",
+            "Tính hóa học, tính công nghệ và tính kinh tế."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Tính sử dụng, tính công nghệ và tính kinh tế.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Vật liệu có tính chất :Cách điện ,cách nhiệt, không bị oxi hóa, ít mài mòn..là nhóm vật liệu ?",
+        "options": [
+            "Phi kim loại.",
+            "Kim loại .",
+            "Hợp kim.",
+            "Kim loại và vật liệu mới."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Phi kim loại.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Căn cứ vào tính chất, vật liệu cơ khí được chia thành?",
+        "options": [
+            "Vật liệu kim loại, vật liệu phi kim loại.",
+            "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
+            "Vật liệu kim loại, vật liệu phi kim loại, vật liệu mới.",
+            "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu đàn hồi, vật liệu mới."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Nhóm vật liệu được dùng chủ yếu trong sản xuất cơ khí ?",
+        "options": [
+            "Vật liệu kim loại và hợp kim.",
+            "Vật liệu phi kim loại.",
+            "Vật liệu mới và hợp kim .",
+            "Kim loại đen và kim loại màu."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật liệu kim loại và hợp kim.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Tính chất nào sau đây thuộc nhóm tính chất cơ học của vật liệu cơ khí?",
+        "options": [
+            "Khả năng chịu nhiệt độ cao mà không bị biến dạng.",
+            "Khả năng chống lại các phản ứng hoá học với môi trường xung quanh.",
+            "Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
+            "Khả năng dẫn điện và dẫn nhiệt hiệu quả."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Vật liệu mới là?",
+        "options": [
+            "hợp kim, polymer nhớ hình, nano, gang, thép, vật liệu có cơ tính biến thiên",
+            "nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
+            "cao su, gỗ, composite, nhựa nhiệt rắn, hợp kim đồng, vật liệu phi kim loại.",
+            "nano, composite, hợp kim, cao su tổng hợp, gốm sứ kĩ thuật, nhựa nhiệt dẻo."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Tại sao trong sản xuất cơ khí phải biết được tính công nghệ của vật liệu?",
+        "options": [
+            "Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
+            "Để xác định và chọn đúng loại vật liệu phù hợp nhất với yêu cầu kĩ thuật đặt r a.",
+            "Để ưu tiên tìm kiếm các vật liệu có giá thành thấp nhằm tối ưu hóa chi phí sản xuất.",
+            "Để tạo ra những chi tiết cơ khí đạt được độ chính xác cao nhất cho quá trình lắp ráp."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b3_09",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b3",
+        "sectionId": "chap_b3_sec",
+        "stem": "Trong một buổi học, học sinh được phát các tấm thẻ ghi tên nhiều loại vật liệu khác nhau như gang, thép, hợp kim đồng, nhựa nhiệt dẻo, cao su, composite,... Giáo viên yêu cầu học sinh phân loại các vật liệu này vào từng nhóm dựa trên các đặc điểm chung. a) Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim  b) Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép.",
+        "statements": [
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép..",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý () Đúng. Ý (c, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 3: Tổng quan về vật liệu cơ khí.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 3",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Vật liệu kim loại và hợp kim được chia ra thành những loại nào?",
+        "options": [
+            "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
+            "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim đen",
+            "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim màu",
+            "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim đen"
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Sắt và hợp kim của sắt gồm những loại nào?",
+        "options": [
+            "Gang, thép carbon, thép hợp kim, nhôm",
+            "Gang, thép carbon, nhôm, nickel",
+            "Thép hợp kim, nhôm và hợp kim của nhôm",
+            "Gang, thép carbon, thép hợp kim"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Gang, thép carbon, thép hợp kim",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Vật liệu nào sau đây thuộc nhóm kim loại và hợp kim màu?",
+        "options": [
+            "Gang và hợp kim gàn",
+            "Nhôm và hợp kim nhôm",
+            "Sắt và hợp kim sắt",
+            "Thép và hợp kim thép"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Nhôm và hợp kim nhôm",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Vật liệu nào sau đây thuộc nhóm sắt và hợp kim của sắt",
+        "options": [
+            "Nhôm",
+            "Gang",
+            "Đồng",
+            "Nickel"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Gang",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Đâu là tính chất cơ học của kim loại và hợp kim ?",
+        "options": [
+            "Độ bền, độ dẻo, độ cứng, độ nén",
+            "Tính dẫn điện, tính dẫn nhiệt, tính giãn nở.",
+            "Tính chịu axit, tính chống ăn mòn hóa họ c.",
+            "Tính đúc, tính hàn, tính rèn và khả năng gia công cắt gọt."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Độ bền, độ dẻo, độ cứng, độ nén",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Hợp kim của sắt và carbon được gọi là gang khi có hàm lượng carbon trong khoảng nào?",
+        "options": [
+            "Từ 2,14% đến 4,3%.",
+            "Từ 0,02% đến 2,14%.",
+            "Từ 4,3% đến 6,67%.",
+            "Trên 6,67%."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Từ 2,14% đến 4,3%.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "So với thép carbon, thép hợp kim có ưu điểm nào sau đây về nhiệt luyện và độ bền ở nhiệt độ cao?",
+        "options": [
+            "Có tính nhiệt luyện kém hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
+            "Có tính nhiệt luyện tốt hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
+            "Có tính nhiệt luyện kém hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
+            ". Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Vật liệu hợp kim được ứng dụng làm vỏ máy bay, tên lửa và tàu vũ trụ cần phải đáp ứng trọn vẹn những yêu cầu kỹ thuật nào dưới đây?",
+        "options": [
+            "Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
+            "Kháng oxy hóa tuyệt đối, chống ăn mòn bề mặt và sở hữu tính dẻo dai vượt trội.",
+            "Đạt độ cứng cơ học tối đa, chống mài mòn và chịu lực va đập cường độ cao.",
+            "Sở hữu khả năng truyền dẫn điện năng và tản nhiệt ưu việt trong mọi điều kiện."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_09",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Một cơ sở cơ khí có hai mẫu hợp kim của sắt và carbon: mẫu X chứa 1,0% carbon, mẫu Y chứa 3,0% carbon. Cơ sở đang lựa chọn vật liệu để đúc vỏ máy và chế tạo chi tiết chịu lực ở nhiệt độ cao. a̲) Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt.",
+        "statements": [
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép. c̲) Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý () Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_10",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Gang và thép là hai hợp kim của sắt với carbon, được dùng rất phổ biến trong ngành cơ khí. Nhận xét về gang, thép và hợp kim nói chung:",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim).",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn.",
+                "answer": true
+            }
+        ],
+        "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b4_11",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b4",
+        "sectionId": "chap_b4_sec",
+        "stem": "Đồng, nhôm và hợp kim của chúng là các kim loại màu được dùng rộng rãi trong đời sống và sản xuất. Nhận xét về việc sử dụng các vật liệu này:",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 4",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Vật liệu phi kim loại bao gồm?",
+        "options": [
+            "Nhựa nhiệt dẻo, kim loại, cao su, hợp kim nhớ hình",
+            ". Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
+            "Nhựa nhiệt rắn ,vật liệu vô cơ, vật liệu hữu cơ",
+            "Kim loại, vật liệu vô cơ, các vật liệu mới"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Phi kim loại ở thể lỏng ở nhiệt độ phòng ?",
+        "options": [
+            "Thủy ngân",
+            ". Brom",
+            "Nitơ",
+            "Cao su"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Brom",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Tính chất vật lí của vật liệu phi kim loại?",
+        "options": [
+            "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp.",
+            ". Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
+            "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao",
+            "Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Vật liệu phi kim loại không bị oxi hóa, không bị ăn mòn trong các môi trường acid, muối,. thuộc tính chất?",
+        "options": [
+            "Cơ họ c.",
+            ". Hóa họ c.",
+            "Vật lý.",
+            "Công nghệ."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Hóa họ c.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Vật liệu phi kim loại được gia công bằng nhiều phương pháp khác nhau như đùn, đúc, phun, thổi, ép…tùy theo từng loại vật liệu thuộc tính chất?",
+        "options": [
+            "Cơ họ c.",
+            "Hóa họ c.",
+            "Vật lý.",
+            ". Công nghệ"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Công nghệ",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Cao su không có tính chất nào sau đây?",
+        "options": [
+            "Tính đàn hồi cao",
+            "Tính cách nhiệt",
+            "Tính cách âm cao",
+            ". Tính dẫn điện"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Tính dẫn điện",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Ưu điểm của vật liệu phi kim loại so với vật liệu kim loại và hợp kim là:",
+        "options": [
+            "Tính dẫn điện, dẫn nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+            "Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+            "Tính cứng, dẻo, dễ rèn dập, dẫn điện, dẫn nhiệt, chịu ăn mòn hóa học tốt",
+            "Tính Tính cơ học, vật lí, hóa học, công nghệ nổi trội hơn"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Vật liệu khi gia nhiệt sẽ rắn cứng, không có khả năng tái chế ?",
+        "options": [
+            "Gang",
+            "Nhựa nhiệt dẻo",
+            ". Nhựa nhiệt rắn",
+            "Cao su"
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: . Nhựa nhiệt rắn",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_09",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Cao su được dùng làm săm, lốp xe vì ?",
+        "options": [
+            "Độ cứng cao và chịu được nhiệt độ cao, chống ăn mòn tốt, dẻo.",
+            "Tính dẫn nhiệt, dẫn điện cao, chống ăn mòn tốt, dẻo.",
+            "Độ bền nhiệt, nhẹ, chống ăn mòn, chịu va đập tốt, ma sát tốt.",
+            ". Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_10",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Đặc điểm của nhựa nhiệt dẻo?",
+        "options": [
+            "Nhẹ, không dẫn điện, không có khả năng tái sinh",
+            ". Nhẹ, không dẫn điện, có khả năng chế biến lại",
+            "Nhẹ, có nhiệt độ nóng chảy thấp, không có khả năng tái sinh",
+            "Nhẹ, có nhiệt độ nóng chảy cao, có khả năng chế biến lại"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Nhẹ, không dẫn điện, có khả năng chế biến lại",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_11",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Nguồn gốc của cao su nhân tạo được chế biến từ ?",
+        "options": [
+            "Than đá",
+            "Dầu mỏ",
+            "Cây cao su và than đá.",
+            ". Than đá và dầu mỏ."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Than đá và dầu mỏ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_12",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Công nghệ đùn thường dùng cho loại vật liệu?",
+        "options": [
+            ". Nhựa nhiệt dẻo, cao su.",
+            "Nhựa nhiệt rắn, cao su",
+            "Nhựa nhiệt dẻo.",
+            "Nhựa nhiệt rắn."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: . Nhựa nhiệt dẻo, cao su.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_13",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Trong ngành cơ khí, nhựa nhiệt rắn được dùng để làm?",
+        "options": [
+            "Chế tạo bu lông, ốc vít nhựa trong một số máy móc",
+            ". Chế tạo vỏ tàu thuyền, ô tô",
+            "Sản xuất dụng cụ cắt, khuôn dập",
+            "Dùng làm săm lốp, ống dẫn"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: . Chế tạo vỏ tàu thuyền, ô tô",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_14",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Sản phẩm nào dưới đây được làm bằng vật liệu nhựa nhiệt dẻo?",
+        "options": [
+            "Vỏ tàu",
+            "Vỏ công tắc điện",
+            "Săm xe đạp",
+            ". Cốc nhựa uống nước"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: . Cốc nhựa uống nước",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_15",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Một cơ sở sản xuất sử dụng nhựa nhiệt dẻo và nhựa nhiệt rắn để chế tạo đồ dùng, đồng thời tìm cách tận dụng vật liệu thừa sau gia công.",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất.",
+                "answer": false
+            }
+        ],
+        "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 5: Vật liệu phi kim loại.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_01",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu mới là?",
+        "options": [
+            "Vật liệu không nằm trong danh mục vật liệu truyền thống.",
+            "Vật liệu truyền thống đang được sử dụng để sản xuất.",
+            "Vật liệu thuộc danh mục truyền thống nhưng không còn sử dụng.",
+            "Vật liệu có sẵn trong tự nhiên, chưa qua xử lý công nghiệp"
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật liệu không nằm trong danh mục vật liệu truyền thống.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_02",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu nano là?",
+        "options": [
+            "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
+            "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ micrômét",
+            "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ milimét.",
+            "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ centimét."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_03",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu composite là?",
+        "options": [
+            ". Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
+            "Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần giống nhau, gồm vật liệu cốt và vật liệu nền.",
+            "Vật liệu được tạo thành bằng cách nấu chảy hai hay nhiều loại kim loại hoặc phi kim với nhau.",
+            "Vật liệu được tạo ra từ một loại vật liệu cơ bản duy nhất thông qua các phương pháp xử lý nhiệt."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: . Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_04",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu có cơ tính biến thiên là?",
+        "options": [
+            "Loại vật liệu siêu cấu trúc, có các hạt tinh thể cấu tạo nên vật liệu đạt tới kích thước vô cùng nhỏ ở mức nanomet.",
+            "Là tổ hợp của hai hay nhiểu vật liệu thành phần khác nhau bao gồm vật liệu cốt và vật liệu nền.",
+            "Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
+            "Loại vật liệu thông minh, sở hữu đặc tính cơ học ưu việt là khả năng tự động ghi nhớ và phục hồi lại hình dạng gố c.."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_05",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Nhận định sau đây “ Vật liệu có được chất lượng tốt nhất từ các vật liệu thành phần , tránh được ăn mòn, mỏi, đứt gãy và bong tách do sự chuyển đổi đột ngột về tính chất vật liệu trên bề mặt phân cách giữa các vật liệu khác nhau” là đang chỉ loại vật liệu nào ?",
+        "options": [
+            "Vật liệu nano.",
+            "Vật liệu composite.",
+            "Vật liệu có cơ tính biến thiên.",
+            "Hợp kim nhớ hình."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Vật liệu có cơ tính biến thiên.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_06",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Trong vật liệu composite thì vật liệu cốt có tác dụng gì ?",
+        "options": [
+            "Liên kết các vật liệu.",
+            "Truyền ứng suất.",
+            "Tăng độ bền.",
+            "Tách điện."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Tăng độ bền.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_07",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Trong vật liệu composite thì vật liệu nền có tác dụng gì ?",
+        "options": [
+            "Liên kết các vật liệu cốt",
+            "Chịu ứng suất tập trung.",
+            "Truyền nhiệt.",
+            "Kháng hoá chất môi trường và nhiệt độ."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Liên kết các vật liệu cốt",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_08",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu được dùng trong may mặ c. Có khả năng diệt vi khuẩn gây mùi hôi khó chịu ?",
+        "options": [
+            "Vật liệu nano.",
+            "Vật liệu composite.",
+            "Vật liệu có cơ tính biến thiên.",
+            "Hợp kim nhớ hình."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật liệu nano.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_09",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Tính chất của vật liệu nano?",
+        "options": [
+            "Cứng, nặng, cách điện, cách nhiệt và hấp thụ ánh sáng kém.",
+            "Giòn, xốp, cách điện, giữ nhiệt và chống chịu ăn mòn kém.",
+            "Mềm, dẻo, dẫn điện, truyền nhiệt và chống lại mài mòn kém",
+            "Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_10",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu được sử dụng để chế tạo cánh quạt máy bay thông minh?",
+        "options": [
+            "Vật liệu composite.",
+            "Vật liệu có cơ tính biến thiên.",
+            "Hợp kim nhớ hình.",
+            "Vật liệu nano."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Hợp kim nhớ hình.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_11",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Chuồn chuồn robot được dùng bởi vật liệu chế tạo?",
+        "options": [
+            "Vật liệu nano.",
+            "Vật liệu composite.",
+            "Vật liệu có cơ tính biến thiên.",
+            "Hợp kim nhớ hình."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Hợp kim nhớ hình.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_12",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Trong lĩnh vực điện tử người ta dùng vật liệu nào để chế tạo loại robot mini?",
+        "options": [
+            "Vật liệu nano.",
+            "Vật liệu composite.",
+            "Vật liệu có cơ tính biến thiên.",
+            "Hợp kim nhớ hình."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Vật liệu nano.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_13",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Ưu điểm nào sau đây không phải là đặc tính nổi bật của vật liệu composite được nêu trong bài học?",
+        "options": [
+            "Độ cứng và độ bền cao, chịu nhiệt tốt",
+            "Khả năng chống mài mòn và ăn mòn tốt",
+            "Khối lượng riêng nhỏ (nhẹ)",
+            "Khối lượng riêng rất lớn và nặng"
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Khối lượng riêng rất lớn và nặng",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_14",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu composite được ứng dụng để chế tạo cánh tay robot, cánh quạt tua bin gió nhờ vào tính chất chính nào?",
+        "options": [
+            "Dẫn điện tốt và giá thành rẻ",
+            "Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
+            "Dễ bị nóng chảy để tái chế",
+            "Khả năng phân hủy sinh học nhanh"
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_15",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Vật liệu có cơ tính biến thiên (FGM) còn được gọi bằng tên nào khác?",
+        "options": [
+            "Vật liệu composite thông thường.",
+            "Vật liệu phân lớp chức năng.",
+            "Vật liệu đồng nhất.",
+            "Vật liệu đẳng hướng."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Vật liệu phân lớp chức năng.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_16",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Trong quá trình chế tạo, sự thay đổi tính chất của vật liệu FGM đạt được bằng cách nào?",
+        "options": [
+            "Phủ thêm một lớp vật liệu hoàn toàn khác lên bề mặt.",
+            "Trộn lẫn ngẫu nhiên các loại vật liệu với nhau.",
+            "Nung chảy ở nhiệt độ cao trong thời gian dài.",
+            "Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_17",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Các vật liệu cấu thành cho vật liệu có cơ tính biến thiên được chọn dựa trên tiêu chí chính nào?",
+        "options": [
+            "Dựa trên màu sắc và giá thành của vật liệu.",
+            "Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
+            "Dựa trên độ hiếm có của vật liệu trong tự nhiên.",
+            "Dựa trên tính dễ gia công của từng vật liệu độc lập."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_18",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Đặc tính cơ bản làm nên tên gọi của \"hợp kim nhớ hình\" là gì?",
+        "options": [
+            "Khả năng chống ăn mòn cực tốt.",
+            "Khả năng ghi nhớ hình dạng ban đầu.",
+            "Khả năng dẫn điện ở nhiệt độ thấp.",
+            "Khả năng chịu nhiệt độ cao."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Khả năng ghi nhớ hình dạng ban đầu.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_19",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Các chi tiết làm bằng hợp kim nhớ hình thường bị biến dạng do nguyên nhân nào?",
+        "options": [
+            "Tác động của ngoại lự c.",
+            "Tác động của nhiệt độ phòng.",
+            "Phản ứng hóa học với oxy.",
+            "Tác động của từ trường."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Tác động của ngoại lự c.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_20",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Điều kiện nào giúp hợp kim nhớ hình khôi phục lại hình dạng ban đầu sau khi bị biến dạng?",
+        "options": [
+            "Nhúng vào dung dịch axit.",
+            "Làm lạnh đột ngột.",
+            "Quá trình cơ nhiệt thích hợp.",
+            "Phơi dưới ánh sáng Mặt Trời."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Quá trình cơ nhiệt thích hợp.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_21",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Loại hợp kim nhớ hình nào được xem là điển hình và phổ biến nhất hiện nay?",
+        "options": [
+            "Thép không gỉ.",
+            "Hợp kim đồng - kẽm.",
+            "Hợp kim nhôm siêu nhẹ.",
+            "Hợp kim nitinol."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Hợp kim nitinol.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_22",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Nitinol là hợp kim được tạo thành từ hai kim loại nào?",
+        "options": [
+            "Nickel và titanium.",
+            "Sắt và carbon.",
+            "Đồng và thiế c.",
+            "Nhôm và magie."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Nickel và titanium.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_23",
+        "type": "truefalse",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Khi tham quan một trung tâm nghiên cứu vật liệu mới, học sinh được giới thiệu về các loại vật liệu tiên tiến đang được ứng dụng trong ngành công nghiệp. Một số vật liệu có thể chịu nhiệt độ cao, một số khác chống ăn mòn tốt hoặc có tính chất vượt trội so với vật liệu truyền thống.",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống.",
+                "answer": true
+            }
+        ],
+        "explanation": "Ý (a, d) Đúng. Ý (b, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 6: Vật liệu mới.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Đúng sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_16",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Khi so sánh giữa nhựa nhiệt dẻo và nhựa nhiệt rắn, điểm khác biệt cơ bản nhất về tính chất công nghệ là gì?",
+        "options": [
+            "Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp và có thể tái chế, trong khi nhựa nhiệt rắn có nhiệt độ nóng chảy cao và không thể tái chế",
+            "Nhựa nhiệt dẻo không dẫn điện, nhựa nhiệt rắn dẫn điện tốt",
+            "Nhựa nhiệt dẻo có khối lượng riêng lớn hơn nhiều so với nhựa nhiệt rắn",
+            "Nhựa nhiệt dẻo cứng và giòn hơn so với nhựa nhiệt rắn"
+        ],
+        "correct": 0,
+        "explanation": "Theo đáp án đề cương: Giống nhau: Đều là vật liệu cao phân tử, cách điện, cách nhiệt, không bị oxy hóa. Khác nhau: Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp, có thể tái sinh (tái chế); Nhựa nhiệt rắn có nhiệt độ nóng chảy cao, không có khả năng tái sinh.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Vận dụng"
+        ],
+        "favorite": true,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b5_17",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b5",
+        "sectionId": "chap_b5_sec",
+        "stem": "Một cơ sở cần lựa chọn vật liệu làm đệm để giảm rung cho máy khi hoạt động trong ba loại vật liệu: cao su, nhựa nhiệt dẻo và nhựa nhiệt rắn. Lựa chọn nào sau đây là tối ưu nhất và có cơ sở khoa học?",
+        "options": [
+            "Chọn cao su vì có tính đàn hồi cao, biến dạng khi chịu lực, phục hồi hình dạng khi thôi lực và có khả năng tiêu hao năng lượng dao động giúp giảm rung truyền xuống nền",
+            "Chọn nhựa nhiệt dẻo vì giá thành rẻ và dễ dàng nóng chảy để tạo hình đệm máy",
+            "Chọn nhựa nhiệt rắn vì có độ cứng tối đa giúp máy đứng cố định tuyệt đối không dịch chuyển",
+            "Chọn kết hợp nhựa nhiệt dẻo và nhựa nhiệt rắn để tăng độ giòn cho đệm máy"
+        ],
+        "correct": 0,
+        "explanation": "Theo đáp án đề cương: Chọn cao su vì cao su có tính đàn hồi cao, có thể biến dạng khi chịu lực và phục hồi hình dạng khi thôi tác dụng lực. Ngoài ra, cao su còn có khả năng hấp thụ và tiêu hao một phần năng lượng dao động, giúp giảm rung truyền từ máy xuống nền.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 5",
+            "Vận dụng thực tế"
+        ],
+        "favorite": true,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_24_mcq",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Giải thích nào sau đây là chính xác về tính 'nhớ hình' của hợp kim nhớ hình và ứng dụng tiêu biểu của nó?",
+        "options": [
+            "Khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp (sau khi bị biến dạng trong giới hạn cho phép); ứng dụng chế tạo bộ phận chấp hành điều khiển bằng nhiệt",
+            "Khả năng tự động thay đổi màu sắc và kích thước theo cường độ ánh sáng môi trường; ứng dụng làm kính râm",
+            "Khả năng ghi nhớ và lưu trữ dữ liệu thông tin số như một con chip bán dẫn trong máy tính",
+            "Khả năng tự hàn gắn các vết nứt mà không cần gia nhiệt hay cung cấp năng lượng từ bên ngoài"
+        ],
+        "correct": 0,
+        "explanation": "Theo đáp án đề cương: Tính 'nhớ hình' là khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp, sau khi bị biến dạng trong giới hạn cho phép. Ứng dụng: Chế tạo bộ phận chấp hành điều khiển bằng nhiệt. Khi được nung nóng, bộ phận bằng hợp kim nhớ hình khôi phục hình dạng định trước, tạo chuyển động cho cơ cấu.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Vận dụng"
+        ],
+        "favorite": true,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "q_cn11_chap_b6_25",
+        "type": "mcq",
+        "subjectId": "sub_congnghe_ghki",
+        "chapterId": "chap_b6",
+        "sectionId": "chap_b6_sec",
+        "stem": "Trong các động cơ tuabin phản lực hoặc chi tiết chịu nhiệt độ cực cao, việc sử dụng vật liệu nào giúp giải quyết vấn đề chênh lệch ứng suất nhiệt và chống bong tách lớp phủ bề mặt?",
+        "options": [
+            "Vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng FGM)",
+            "Vật liệu nano đơn lớp phủ bề mặt",
+            "Hợp kim nhớ hình Nitinol",
+            "Vật liệu nhựa nhiệt rắn phenolic"
+        ],
+        "correct": 0,
+        "explanation": "Theo đáp án đề cương: FGM có thành phần và cấu trúc biến đổi liên tục trong không gian, do đó tính chất của nó biến đổi liên tục, giúp loại bỏ bề mặt phân cách giữa các lớp, giải quyết sự bất tương thích về ứng suất nhiệt và chống bong tách.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Công Nghệ GHKI",
+            "Bài 6",
+            "Vận dụng thực tế"
+        ],
+        "favorite": true,
+        "createdAt": "2026-10-28T08:00:00.000Z",
+        "updatedAt": "2026-10-28T08:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c01",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Theo Luật Biên giới quốc gia năm 2003, biên giới quốc gia của nước Cộng hoá xã hội chủ nghĩa Việt Nam xác định giới hạn lãnh thổ đối với vùng nào dưới đây?",
+        "options": [
+            "Chỉ phần đất liền và hải đảo.",
+            "Đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất, vùng trời.",
+            "Chỉ vùng đất liền và vùng trời trên đất liền.",
+            "Vùng biển và vùng trời quốc gia."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 5 Luật Biên giới quốc gia 2003, biên giới quốc gia xác định giới hạn lãnh thổ đất liền, các đảo, quần đảo (gồm Hoàng Sa và Trường Sa), vùng biển, lòng đất và vùng trời của Tổ quốc.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c02",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Theo Luật Biển Việt Nam năm 2012, vùng biển nào nằm ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam?",
+        "options": [
+            "Vùng lãnh hải.",
+            "Vùng nội thủy.",
+            "Vùng tiếp giáp lãnh hải.",
+            "Vùng thềm lục địa."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 9 Luật Biển Việt Nam 2012, nội thủy là vùng nước tiếp giáp với bờ biển, ở phía trong đường cơ sở và là bộ phận lãnh thổ của Việt Nam.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c03",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Vùng tiếp giáp lãnh hải là vùng biển có chiều rộng bao nhiêu hải lí?",
+        "options": [
+            "12 hải lí.",
+            "24 hải lí.",
+            "100 hải lí.",
+            "200 hải lí."
+        ],
+        "correct": 0,
+        "explanation": "Theo Điều 13 Luật Biển Việt Nam 2012, vùng tiếp giáp lãnh hải có chiều rộng 12 hải lí tính từ ranh giới ngoài của lãnh hải.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c04",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Hành vi nào dưới đây bị nghiêm cấm theo Luật Biên giới quốc gia?",
+        "options": [
+            "Xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
+            "Tổ chức tuyên truyền pháp luật về biên giới cho nhân dân.",
+            "Trồng cây bảo vệ hệ sinh thái dọc tuyến biên giới.",
+            "Tuần tra bảo vệ chủ quyền biên giới theo phân công."
+        ],
+        "correct": 0,
+        "explanation": "Theo Điều 14 Luật Biên giới quốc gia 2003, nghiêm cấm hành vi xê dịch, phá hoại mốc quốc giới; làm sai lệch hướng đi của đường biên giới quốc gia.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c05",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Việt Nam có đường biên giới chung trên đất liền với những quốc gia nào?",
+        "options": [
+            "Lào, Thái Lan, Philíppin.",
+            "Mianma, Malaixia, Inđônêxia.",
+            "Lào, Campuchia, Thái Lan.",
+            "Trung Quốc, Lào, Campuchia."
+        ],
+        "correct": 3,
+        "explanation": "Việt Nam có đường biên giới chung trên đất liền với 3 quốc gia: Trung Quốc, Lào và Campuchia.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c06",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Vùng đặc quyền kinh tế của Việt Nam có chiều rộng tính từ đường cơ sở ra phía biển là bao nhiêu hải lí?",
+        "options": [
+            "12 hải lí.",
+            "24 hải lí.",
+            "188 hải lí.",
+            "200 hải lí."
+        ],
+        "correct": 3,
+        "explanation": "Theo Điều 15 Luật Biển Việt Nam 2012, vùng đặc quyền kinh tế hợp với lãnh hải thành một vùng biển có chiều rộng 200 hải lí tính từ đường cơ sở.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c07",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Nội dung nào dưới đây thể hiện đúng quy định về khu vực biên giới trên không theo Luật Biên giới quốc gia?",
+        "options": [
+            "Gồm toàn bộ không gian từ biên giới quốc gia trên đất liền và trên biển lên vùng trời, rộng 10 km tính từ biên giới quốc gia trở vào.",
+            "Chỉ bao gồm vùng trời trên đất liền có đặt mốc quốc giới.",
+            "Là vùng không gian cách mặt đất 50 km.",
+            "Là vùng không giới hạn chiều cao dọc theo bờ biển."
+        ],
+        "correct": 0,
+        "explanation": "Khu vực biên giới trên không gồm phần không gian dọc theo biên giới quốc gia có chiều rộng 10 km tính từ biên giới quốc gia trở vào (Nghị định 140/2004/NĐ-CP).",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c08",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Nghị quyết phê chuẩn Công ước của Liên hợp quốc về Luật Biển năm 1982 được Quốc hội nước ta thông qua vào thời gian nào?",
+        "options": [
+            "Ngày 02/09/1945.",
+            "Ngày 23/06/1994.",
+            "Ngày 10/12/1982.",
+            "Ngày 16/11/1994."
+        ],
+        "correct": 1,
+        "explanation": "Quốc hội nước CHXHCN Việt Nam khóa IX, kỳ họp thứ 5 đã thông qua Nghị quyết phê chuẩn Công ước của LHQ về Luật Biển năm 1982 vào ngày 23/06/1994.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c09",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Theo Luật Biển Việt Nam, ranh giới ngoài của thềm lục địa cách đường cơ sở không quá bao nhiêu hải lí?",
+        "options": [
+            "12 hải lí.",
+            "200 hải lí.",
+            "350 hải lí.",
+            "500 hải lí."
+        ],
+        "correct": 2,
+        "explanation": "Theo Điều 17 Luật Biển Việt Nam 2012, ranh giới ngoài của thềm lục địa không được vượt quá 350 hải lí tính từ đường cơ sở hoặc không quá 100 hải lí tính từ đường đẳng sâu 2.500 m.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c10",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Phát biểu nào sau đây không đúng về trách nhiệm của học sinh trong bảo vệ chủ quyền lãnh thổ, biên giới quốc gia?",
+        "options": [
+            "Tích cực học tập, nâng cao nhận thức pháp luật về biên giới, hải đảo.",
+            "Tự ý vượt mốc biên giới sang nước láng giềng thăm họ hàng khi chưa có phép.",
+            "Tuyên truyền, vận động bạn bè chấp hành nghiêm quy định pháp luật về biên giới.",
+            "Kịp thời báo cáo cơ quan chức năng khi phát hiện hành vi vi phạm chủ quyền."
+        ],
+        "correct": 1,
+        "explanation": "Tự ý qua lại biên giới sang nước láng giềng khi chưa có phép của cơ quan chức năng là hành vi vi phạm pháp luật về biên giới quốc gia.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c11",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Hành vi nào dưới đây vi phạm các quy định về bảo vệ biên giới quốc gia trên biển?",
+        "options": [
+            "Đánh bắt hải sản đúng vùng biển được phép theo quy định pháp luật.",
+            "Xâm phạm tài nguyên thiên nhiên, đánh bắt trái phép trong vùng biển chủ quyền của Việt Nam.",
+            "Tham gia tuần tra bảo vệ ngư trường cùng lực lượng chức năng.",
+            "Tôn trọng các hiệp định phân định ranh giới trên biển giữa các nước hữu quan."
+        ],
+        "correct": 1,
+        "explanation": "Xâm phạm tài nguyên thiên nhiên, khai thác và đánh bắt trái phép trong vùng biển thuộc chủ quyền và quyền chủ quyền của Việt Nam là hành vi vi phạm nghiêm trọng.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c12",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Khi cùng các bạn đi tham quan cột mốc biên giới, một bạn trong lớp có ý định vượt qua cột mốc sang phía nước bạn để chụp ảnh lưu niệm và hái hoa rừng. Nếu là em, em sẽ xử lý như thế nào?",
+        "options": [
+            "Đồng ý đi cùng vì chỉ hái hoa và chụp ảnh trong thời gian ngắn.",
+            "Ngăn cản bạn ngay lập tức, giải thích rằng hành vi đó vi phạm pháp luật biên giới quốc gia.",
+            "Cổ vũ bạn vượt mốc nhanh chóng để không bị lực lượng biên phòng phát hiện.",
+            "Lờ đi vì đó là việc cá nhân của bạn."
+        ],
+        "correct": 1,
+        "explanation": "Cần ngăn cản bạn ngay lập tức và giải thích rằng hành vi vượt qua mốc quốc giới sang nước bạn khi chưa được phép là vi phạm pháp luật biên giới quốc gia.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c13",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Trường hợp nào dưới đây được coi là vi phạm nghiêm trọng quy định về khu vực biên giới đất liền?",
+        "options": [
+            "Người dân sinh sống trong xã biên giới qua lại làm nương rẫy theo đúng hiệp định ký kết.",
+            "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới tại khu vực biên giới.",
+            "Lực lượng biên phòng tuần tra kiểm soát đường biên giới.",
+            "Du khách tham quan khu vực biên giới có giấy phép hợp lệ."
+        ],
+        "correct": 1,
+        "explanation": "Xâm canh, cư trú trái phép hoặc phá hoại công trình biên giới là các hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c14",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Chủ quyền lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam bao gồm những bộ phận nào?",
+        "options": [
+            "Đất liền, hải đảo, vùng biển và vùng trời",
+            "Đất liền và vùng biển",
+            "Đất liền, vùng trời và vùng tiếp giáp lãnh hải",
+            "Đất liền, vùng biển và vùng đặc quyền kinh tế"
+        ],
+        "correct": 0,
+        "explanation": "Chủ quyền lãnh thổ nước CHXHCN Việt Nam bao gồm: đất liền, hải đảo, vùng biển và vùng trời.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c15",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng gì?",
+        "options": [
+            "Hệ thống phao tiêu hàng hải",
+            "Hệ thống mốc quốc giới",
+            "Đường ranh giới hành chính cấp huyện",
+            "Các biển báo giao thông"
+        ],
+        "correct": 1,
+        "explanation": "Biên giới quốc gia trên đất liền được hoạch định và đánh dấu trên thực địa bằng hệ thống mốc quốc giới.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c16",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Khu vực biên giới trên không có chiều rộng bao nhiêu tính từ biên giới quốc gia trở vào?",
+        "options": [
+            "5 km",
+            "8 km",
+            "10 km",
+            "12 hải lí"
+        ],
+        "correct": 2,
+        "explanation": "Khu vực biên giới trên không có chiều rộng 10 km tính từ biên giới quốc gia trở vào.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c17",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Hành vi nào sau đây thuộc nhóm hành vi bị nghiêm cấm theo nội dung về biên giới quốc gia?",
+        "options": [
+            "Báo tin cho lực lượng chức năng khi phát hiện dấu hiệu vi phạm",
+            "Tham gia tuyên truyền pháp luật về biên giới",
+            "Xê dịch hoặc phá hoại mốc quốc giới",
+            "Tìm hiểu kiến thức về chủ quyền lãnh thổ"
+        ],
+        "correct": 2,
+        "explanation": "Hành vi xê dịch hoặc phá hoại mốc quốc giới thuộc nhóm hành vi bị nghiêm cấm theo Luật Biên giới quốc gia.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c18",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng bao nhiêu tính từ đường cơ sở ra phía biển?",
+        "options": [
+            "6 hải lí",
+            "12 hải lí",
+            "24 hải lí",
+            "200 hải lí"
+        ],
+        "correct": 1,
+        "explanation": "Theo Luật Biển Việt Nam, lãnh hải có chiều rộng 12 hải lí tính từ đường cơ sở ra phía biển.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c19",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Vì sao việc bảo vệ hệ thống mốc quốc giới có ý nghĩa trực tiếp đối với quản lí biên giới trên đất liền?",
+        "options": [
+            "Mốc quốc giới thay thế mọi văn bản pháp luật về biên giới",
+            "Mốc quốc giới giúp đánh dấu đường biên giới đã được hoạch định trên thực địa",
+            "Mốc quốc giới xác định ranh giới giữa các tỉnh trong nội địa",
+            "Mốc quốc giới chỉ có ý nghĩa tham quan, du lịch"
+        ],
+        "correct": 1,
+        "explanation": "Mốc quốc giới có ý nghĩa quan trọng vì giúp đánh dấu đường biên giới đã được hoạch định và thỏa thuận trên thực địa.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b1_c20",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b1",
+        "sectionId": "gdqp11_b1_s1",
+        "stem": "Một tổ chức nước ngoài dự định tiến hành nghiên cứu khoa học trong vùng biển Việt Nam. Theo nội dung Luật Biển Việt Nam được học, yêu cầu nào là phù hợp?",
+        "options": [
+            "Có thể tự tiến hành nếu hoạt động không dùng tàu lớn",
+            "Chỉ cần thông báo cho ngư dân gần đó",
+            "Phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ quy định liên quan",
+            "Được tự tiến hành nếu công bố kết quả nghiên cứu công khai\n--o0o--"
+        ],
+        "correct": 2,
+        "explanation": "Mọi hoạt động nghiên cứu khoa học của tổ chức, cá nhân nước ngoài trong vùng biển Việt Nam phải có giấy phép của cơ quan nhà nước có thẩm quyền Việt Nam và tuân thủ các quy định liên quan.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 1: Bảo vệ chủ quyền lãnh thổ"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c01",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Theo Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ bao nhiêu tuổi trở lên phải đăng kí nghĩa vụ quân sự?",
+        "options": [
+            "Đủ 16 tuổi.",
+            "Đủ 17 tuổi.",
+            "Đủ 18 tuổi.",
+            "Đủ 19 tuổi."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 12 Luật Nghĩa vụ quân sự năm 2015, công dân nam đủ 17 tuổi trở lên phải đăng kí nghĩa vụ quân sự lần đầu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c02",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ bao nhiêu tuổi đến hết bao nhiêu tuổi?",
+        "options": [
+            "Từ đủ 17 tuổi đến hết 25 tuổi.",
+            "Từ đủ 18 tuổi đến hết 25 tuổi.",
+            "Từ đủ 18 tuổi đến hết 27 tuổi.",
+            "Từ đủ 20 tuổi đến hết 30 tuổi."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 30 Luật NVQS 2015, độ tuổi gọi nhập ngũ trong thời bình đối với công dân nam từ đủ 18 tuổi đến hết 25 tuổi.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c03",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là bao nhiêu tháng?",
+        "options": [
+            "12 tháng.",
+            "18 tháng.",
+            "24 tháng.",
+            "36 tháng."
+        ],
+        "correct": 2,
+        "explanation": "Theo Điều 21 Luật NVQS 2015, thời hạn phục vụ tại ngũ trong thời bình của hạ sĩ quan, binh sĩ là 24 tháng.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c04",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Công dân thực hiện nghĩa vụ tham gia Công an nhân dân được coi là thực hiện nghĩa vụ quân sự ở đâu?",
+        "options": [
+            "Tại ngũ.",
+            "Ngạch dự bị.",
+            "Dân quân tự vệ.",
+            "Lực lượng dự trữ động viên."
+        ],
+        "correct": 0,
+        "explanation": "Theo Khoản 2 Điều 8 Luật NVQS 2015, công dân thực hiện nghĩa vụ tham gia CAND được coi là thực hiện nghĩa vụ quân sự tại ngũ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c05",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Cơ quan nào dưới đây thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương?",
+        "options": [
+            "Ban Chỉ huy quân sự cấp xã.",
+            "Công an cấp tỉnh.",
+            "Ủy ban nhân dân cấp tỉnh.",
+            "Bộ Tư lệnh Thủ đô."
+        ],
+        "correct": 0,
+        "explanation": "Theo Điều 15 Luật NVQS 2015, Ban Chỉ huy quân sự cấp xã thực hiện đăng kí nghĩa vụ quân sự cho công dân cư trú tại địa phương.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c06",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Đối tượng nào dưới đây được miễn gọi nhập ngũ trong thời bình?",
+        "options": [
+            "Học sinh đang học tại trường trung học phổ thông.",
+            "Con của liệt sĩ, con của thương binh hạng một.",
+            "Sinh viên đang học đại học hệ chính quy.",
+            "Lao động duy nhất trong gia đình khó khăn."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 41 Khoản 2 Luật NVQS 2015, con của liệt sĩ, con của thương binh hạng một được miễn gọi nhập ngũ trong thời bình.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c07",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Trường hợp nào dưới đây được tạm hoãn gọi nhập ngũ trong thời bình?",
+        "options": [
+            "Chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của hội đồng khám sức khoẻ.",
+            "Là con duy nhất của thương binh hạng nặng.",
+            "Đang chấp hành án phạt tù.",
+            "Đang bị tước quyền phục vụ trong lực lượng vũ trang."
+        ],
+        "correct": 0,
+        "explanation": "Theo Điều 41 Khoản 1 Luật NVQS 2015, công dân chưa đủ sức khoẻ phục vụ tại ngũ theo kết luận của Hội đồng khám sức khoẻ được tạm hoãn gọi nhập ngũ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c08",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Hành vi nào dưới đây bị nghiêm cấm trong thực hiện Luật Nghĩa vụ quân sự?",
+        "options": [
+            "Đăng kí nghĩa vụ quân sự đúng hạn.",
+            "Trốn tránh thực hiện nghĩa vụ quân sự.",
+            "Tham gia khám tuyển nghĩa vụ quân sự theo lệnh gọi.",
+            "Tình nguyện nhập ngũ bảo vệ Tổ quốc."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 10 Luật NVQS 2015, nghiêm cấm hành vi trốn tránh thực hiện nghĩa vụ quân sự.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c09",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Theo Luật Nghĩa vụ quân sự, công dân được đào tạo trình độ cao đẳng, đại học đã được tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ đến hết bao nhiêu tuổi?",
+        "options": [
+            "Hết 25 tuổi.",
+            "Hết 26 tuổi.",
+            "Hết 27 tuổi.",
+            "Hết 30 tuổi."
+        ],
+        "correct": 2,
+        "explanation": "Theo Điều 30 Luật NVQS 2015, công dân được đào tạo trình độ CĐ, ĐH đã tạm hoãn gọi nhập ngũ thì độ tuổi gọi nhập ngũ kéo dài đến hết 27 tuổi.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c10",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Nội dung nào sau đây phản ánh đúng trách nhiệm của học sinh đối với nghĩa vụ quân sự?",
+        "options": [
+            "Chấp hành nghiêm các quy định về đăng kí nghĩa vụ quân sự, tích cực học tập môn GDQP&AN.",
+            "Trốn tránh khi có lệnh gọi sơ tuyển sức khỏe nghĩa vụ quân sự.",
+            "Chỉ tham gia khi bắt buộc phải rời khỏi địa phương.",
+            "Không cần quan tâm đến các quy định pháp luật về quân sự khi còn đi học."
+        ],
+        "correct": 0,
+        "explanation": "Học sinh có trách nhiệm chấp hành nghiêm các quy định về đăng kí NVQS khi đủ 17 tuổi và tích cực học tập, rèn luyện môn GDQP&AN.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c11",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Anh A (24 tuổi, đã tốt nghiệp đại học hệ chính quy và đang tạm hoãn gọi nhập ngũ) hỏi rằng độ tuổi tối đa anh có thể được gọi nhập ngũ trong thời bình là bao nhiêu? Em hãy trả lời giúp anh A.",
+        "options": [
+            "Đến hết 25 tuổi.",
+            "Đến hết 27 tuổi.",
+            "Đến hết 30 tuổi.",
+            "Không giới hạn độ tuổi."
+        ],
+        "correct": 1,
+        "explanation": "Anh A đã tốt nghiệp ĐH hệ chính quy và tạm hoãn trong thời gian học, do đó độ tuổi gọi nhập ngũ tối đa của anh A là đến hết 27 tuổi.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c12",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Trường hợp nào sau đây bị xử phạt vi phạm hành chính từ 3.000.000 đồng đến 5.000.000 đồng theo Nghị định về xử phạt vi phạm hành chính trong lĩnh vực quốc phòng?",
+        "options": [
+            "Không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng.",
+            "Không đăng ký nghĩa vụ quân sự lần đầu.",
+            "Gian dối trong khám sức khỏe nghĩa vụ quân sự.",
+            "Chống đối, cản trở việc thực hiện nghĩa vụ quân sự."
+        ],
+        "correct": 0,
+        "explanation": "Hành vi không có mặt đúng thời gian hoặc địa điểm tập trung sơ tuyển sức khỏe ghi trong lệnh gọi mà không có lí do chính đáng bị xử phạt vi phạm hành chính từ 3.000.000 đến 5.000.000 đồng.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c13",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Nghĩa vụ quân sự của công dân bao gồm những hình thức nào?",
+        "options": [
+            "Chỉ phục vụ tại ngũ",
+            "Chỉ phục vụ trong ngạch dự bị",
+            "Phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân",
+            "Chỉ tham gia dân quân tự vệ"
+        ],
+        "correct": 2,
+        "explanation": "Theo Điều 4 Luật NVQS 2015, nghĩa vụ quân sự gồm phục vụ tại ngũ và phục vụ trong ngạch dự bị của Quân đội nhân dân.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c14",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Chủ tịch UBND cấp xã ra lệnh gọi công dân đăng kí nghĩa vụ quân sự lần đầu vào thời gian nào?",
+        "options": [
+            "Tháng ba hằng năm.",
+            "Tháng tư hằng năm.",
+            "Tháng năm hằng năm.",
+            "Tháng sáu hằng năm."
+        ],
+        "correct": 1,
+        "explanation": "Tháng tư hằng năm là thời gian Chỉ huy trưởng Ban CHQS cấp huyện ra lệnh gọi công dân nam đủ 17 tuổi đăng kí NVQS lần đầu tại UBND cấp xã.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c15",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Dũng là lao động duy nhất trực tiếp nuôi mẹ không còn khả năng lao động. Dũng nhận được giấy gọi nhập ngũ và muốn biết trường hợp của mình được giải quyết thế nào. Cách xử lý phù hợp nhất là gì?",
+        "options": [
+            "Tự ý không chấp hành giấy gọi mà không cần thông báo",
+            "Cho rằng chắc chắn được miễn vĩnh viễn",
+            "Cung cấp hồ sơ, thông tin trung thực cho cơ quan có thẩm quyền để xem xét điều kiện tạm hoãn theo quy định",
+            "Nhờ người khác đi thay"
+        ],
+        "correct": 2,
+        "explanation": "Công dân cần cung cấp hồ sơ, giấy tờ chứng minh hoàn cảnh trung thực cho cơ quan có thẩm quyền để được xem xét điều kiện tạm hoãn theo quy định.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b2_c16",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b2",
+        "sectionId": "gdqp11_b2_s1",
+        "stem": "Một công dân nhận lệnh khám sức khỏe nghĩa vụ quân sự nhưng có lịch thi trùng thời gian. Cách ứng xử phù hợp nhất là gì?",
+        "options": [
+            "Tự bỏ qua lệnh vì lịch thi luôn được ưu tiên",
+            "Không đến và không liên hệ với cơ quan nào",
+            "Chủ động liên hệ cơ quan có thẩm quyền, trình bày và cung cấp giấy tờ để được hướng dẫn; không tự coi mình được miễn",
+            "Nhờ bạn ký thay vào danh sách\n---o0o---"
+        ],
+        "correct": 2,
+        "explanation": "Công dân cần chủ động liên hệ cơ quan có thẩm quyền, trình bày lý do trùng lịch thi và cung cấp giấy xác nhận để được hướng dẫn xếp lịch khám bù.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 2: Luật Nghĩa vụ quân sự"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c01",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Theo Bộ luật Hình sự, tội phạm là hành vi nguy hiểm cho xã hội do người có năng lực trách nhiệm hình sự hoặc pháp nhân thương mại thực hiện một cách cố ý hoặc vô ý, xâm phạm đến các khách thể nào dưới đây?",
+        "options": [
+            "Độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ xã hội chủ nghĩa, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
+            "Chỉ xâm phạm tài sản riêng của cá nhân.",
+            "Chỉ xâm phạm quy tắc sinh hoạt cộng đồng nhỏ lẻ.",
+            "Chỉ xâm phạm trật tự giao thông đô thị."
+        ],
+        "correct": 0,
+        "explanation": "Theo Điều 8 BLHS 2015, tội phạm là hành vi nguy hiểm cho xã hội xâm phạm độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ, chế độ XHCN, quyền và lợi ích hợp pháp của tổ chức, cá nhân.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c02",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội được gọi là gì?",
+        "options": [
+            "Tệ nạn xã hội.",
+            "Hoạt động từ thiện.",
+            "Giao lưu văn hóa.",
+            "Lối sống văn minh."
+        ],
+        "correct": 0,
+        "explanation": "Tệ nạn xã hội là hiện tượng xã hội tiêu cực, biểu hiện bằng những hành vi sai lệch chuẩn mực xã hội, vi phạm đạo đức, pháp luật và gây nguy hiểm cho xã hội.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c03",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm cho xã hội bằng cách tác động trái pháp luật đến lĩnh vực nào?",
+        "options": [
+            "Thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, mạng viễn thông.",
+            "Hệ thống giao thông đường bộ công cộng.",
+            "Đất đai và tài nguyên rừng tự nhiên.",
+            "Hoạt động sản xuất nông nghiệp truyền thống."
+        ],
+        "correct": 0,
+        "explanation": "Tội phạm sử dụng công nghệ cao thực hiện hành vi nguy hiểm bằng cách tác động trái phép vào thông tin số được lưu trữ, xử lí, truyền tải trong hệ thống máy tính, viễn thông.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c04",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Hành vi nào sau đây là biểu hiện của tội phạm hoặc vi phạm pháp luật về sử dụng công nghệ cao?",
+        "options": [
+            "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, phần mềm gián điệp.",
+            "Sử dụng internet để tra cứu tài liệu học tập, giải toán.",
+            "Nhắn tin hỏi thăm sức khỏe người thân qua mạng xã hội.",
+            "Đăng tải hình ảnh phong cảnh quê hương lên Facebook."
+        ],
+        "correct": 0,
+        "explanation": "Lừa đảo chiếm đoạt tài sản trên không gian mạng, phát tán virus, mã độc gián điệp là biểu hiện vi phạm pháp luật về sử dụng công nghệ cao.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c05",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Theo quy định của pháp luật, hành vi đánh bạc trái phép dưới bất kì hình thức nào (mua bán số lô, số đề, cá độ bóng đá...) có thể bị xử lý nghiêm khắc như thế nào?",
+        "options": [
+            "Chỉ nhắc nhở tại nơi cư trú.",
+            "Bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù theo quy định của pháp luật.",
+            "Chỉ phạt cảnh cáo lần đầu đối với mọi trường hợp.",
+            "Được nhà nước cho phép nếu chơi vào dịp lễ tết."
+        ],
+        "correct": 1,
+        "explanation": "Theo Điều 321 BLHS 2015, hành vi đánh bạc trái phép dưới bất kì hình thức nào có thể bị phạt tiền, phạt cải tạo không giam giữ hoặc phạt tù.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c06",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Phát biểu nào dưới đây là đúng về trách nhiệm của học sinh trong phòng chống tệ nạn xã hội và tội phạm công nghệ cao?",
+        "options": [
+            "Không tham gia các tệ nạn xã hội, không chia sẻ thông tin chưa kiểm chứng trên không gian mạng.",
+            "Có thể tham gia cá cược trực tuyến nếu có tiền thưởng nhỏ.",
+            "Chia sẻ mọi đường link lạ nhận được trên mạng xã hội để câu tương tác.",
+            "Tự ý mua bán tài khoản ngân hàng cá nhân cho người khác thuê kiếm lời."
+        ],
+        "correct": 0,
+        "explanation": "Học sinh có trách nhiệm không tham gia các tệ nạn xã hội, không chia sẻ thông tin thất thiệt chưa được kiểm chứng trên không gian mạng.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c07",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Khi tham gia mạng xã hội, em phát hiện một hội nhóm đang lan truyền các video clip có nội dung đồi trụy, phản cảm và kích động bạo lực. Hành vi xử lý đúng đắn nhất của học sinh là gì?",
+        "options": [
+            "Tham gia bình luận và chia sẻ bài viết để tăng tương tác cho nhóm.",
+            "Báo cáo (report) vi phạm với quản trị viên mạng xã hội, tuyệt đối không xem, không chia sẻ và thông báo cho thầy cô hoặc cơ quan chức năng.",
+            "Tải về máy để lưu trữ và xem riêng tư.",
+            "Nhắn tin xin đường link gốc của video."
+        ],
+        "correct": 1,
+        "explanation": "Hành vi đúng đắn là báo cáo (report) vi phạm với quản trị viên, không xem, không chia sẻ và báo ngay cho thầy cô, cha mẹ hoặc cơ quan chức năng.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c08",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Một người lạ nhắn tin qua mạng xã hội thông báo em trúng thưởng một chiếc xe máy giá trị cao, yêu cầu em phải nộp trước 2 triệu đồng phí vận chuyển qua thẻ cào điện thoại. Em sẽ xử lý tình huống này như thế nào?",
+        "options": [
+            "Nhanh chóng mua thẻ cào gửi cho họ để nhận xe máy.",
+            "Từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo chiếm đoạt tài sản trên không gian mạng.",
+            "Nhờ bạn bè vay tiền giúp để nộp phí nhận thưởng.",
+            "Tin tưởng vì nghĩ trúng thưởng là may mắn có thật."
+        ],
+        "correct": 1,
+        "explanation": "Cần dứt khoát từ chối, không cung cấp thông tin cá nhân hay chuyển tiền vì đây là thủ đoạn lừa đảo 'trúng thưởng' phổ biến trên mạng.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c09",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Hành động nào thể hiện trách nhiệm của học sinh trong phòng chống tệ nạn xã hội?",
+        "options": [
+            "Thử tham gia để biết mức độ nguy hiểm",
+            "Chia sẻ mọi nội dung gây sốc để cảnh báo bạn bè",
+            "Chấp hành pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức",
+            "Che giấu hành vi vi phạm của bạn trong mọi trường hợp"
+        ],
+        "correct": 2,
+        "explanation": "Học sinh cần chấp hành nghiêm túc pháp luật, không tham gia tệ nạn và chủ động nâng cao nhận thức, kỹ năng phòng vệ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c10",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Vì sao việc chia sẻ ngay một bài đăng chưa kiểm chứng về hành vi phạm tội có thể gây hại?",
+        "options": [
+            "Vì mọi bài đăng trên mạng đều là bí mật nhà nước",
+            "Vì thông tin chưa kiểm chứng có thể gây hiểu lầm, ảnh hưởng người khác và làm lan truyền nội dung sai lệch",
+            "Vì học sinh không được sử dụng Internet",
+            "Vì chỉ cơ quan báo chí mới được đọc tin tức"
+        ],
+        "correct": 1,
+        "explanation": "Chia sẻ bài đăng chưa kiểm chứng có thể gây hiểu lầm, hoang mang dư luận, xâm phạm uy tín người khác và vi phạm Luật An ninh mạng.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c11",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Một người lạ giả danh nhân viên hỗ trợ kĩ thuật, yêu cầu học sinh cài phần mềm không rõ nguồn gốc. Dấu hiệu rủi ro chính là gì?",
+        "options": [
+            "Phần mềm được cài đặt miễn phí nên chắc chắn an toàn",
+            "Người đó dùng lời lẽ lịch sự nên không có rủi ro",
+            "Yêu cầu cài phần mềm không rõ nguồn gốc có thể nhằm chiếm quyền truy cập hoặc dữ liệu",
+            "Mọi phần mềm đều bị pháp luật cấm"
+        ],
+        "correct": 2,
+        "explanation": "Yêu cầu cài đặt phần mềm không rõ nguồn gốc tiềm ẩn rủi ro rất cao về việc bị cài mã độc đánh cắp tài khoản cá nhân hoặc dữ liệu riêng tư.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c12",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Cách ứng xử nào phù hợp khi phát hiện bạn cùng lớp có dấu hiệu bị lôi kéo tham gia tệ nạn xã hội?",
+        "options": [
+            "Chế giễu bạn trước tập thể",
+            "Im lặng trong mọi trường hợp để giữ tình bạn",
+            "Khuyên bạn dừng lại, tìm sự hỗ trợ của người lớn đáng tin cậy hoặc nhà trường khi cần",
+            "Tự đăng thông tin cá nhân của bạn lên mạng"
+        ],
+        "correct": 2,
+        "explanation": "Cần khuyên nhủ bạn dừng lại, đồng thời tìm kiếm sự hỗ trợ kịp thời từ người lớn đáng tin cậy hoặc thầy cô, nhà trường.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c13",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Trong nhóm lớp xuất hiện video tố cáo một người phạm tội nhưng chưa rõ nguồn gốc. Hành động nào thể hiện trách nhiệm số phù hợp nhất?",
+        "options": [
+            "Tải video về và đăng lại trên nhiều nền tảng",
+            "Thêm lời bình khẳng định người trong video có tội",
+            "Không phát tán, kiểm tra nguồn tin và báo người có trách nhiệm nếu nội dung có dấu hiệu vi phạm",
+            "Tìm địa chỉ người trong video để đến đối chất"
+        ],
+        "correct": 2,
+        "explanation": "Hành động có trách nhiệm số là không phát tán video chưa kiểm chứng, xác minh từ nguồn chính thống và báo cho cơ quan có trách nhiệm.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c14",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Một người bạn rủ học sinh tham gia nhóm trực tuyến chuyên cá cược và hướng dẫn cách che giấu giao dịch. Cách xử lý phù hợp nhất là gì?",
+        "options": [
+            "Tham gia thử với số tiền nhỏ",
+            "Từ chối, rời nhóm, lưu thông tin cần thiết một cách an toàn và báo người lớn hoặc cơ quan có trách nhiệm khi cần",
+            "Mời thêm bạn bè vào nhóm",
+            "Chỉ rời nhóm nếu bị thua tiền"
+        ],
+        "correct": 1,
+        "explanation": "Học sinh cần dứt khoát từ chối, rời khỏi nhóm, lưu thông tin bằng chứng an toàn và báo cho người lớn hoặc cơ quan chức năng xử lý.",
+        "difficulty": "van_dung",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c15",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Một trong những cách thức hoạt động phổ biến của tội phạm là",
+        "options": [
+            "hoạt động độc lập, không có sự cấu kết.",
+            "câu kết thành các băng nhóm, tổ chức.",
+            "chỉ lưu động trên phạm vi xã, phường.",
+            "không sử dụng các loại vũ khí, công cụ."
+        ],
+        "correct": 1,
+        "explanation": "Một trong những cách thức hoạt động phổ biến của tội phạm là thường câu kết thành các băng nhóm, tổ chức chặt chẽ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "gdqp11_b3_c16",
+        "type": "mcq",
+        "subjectId": "sub_gdqp11",
+        "chapterId": "gdqp11_b3",
+        "sectionId": "gdqp11_b3_s1",
+        "stem": "Trong Bộ luật Hình sự năm 2015, sửa đổi, bổ sung năm 2017 có bao nhiêu chương quy định về hình phạt các tội phạm?",
+        "options": [
+            "12 chương.",
+            "13 chương.",
+            "14 chương.",
+            "15 chương."
+        ],
+        "correct": 1,
+        "explanation": "Phần thứ hai của Bộ luật Hình sự 2015 quy định về Các tội phạm bao gồm 13 chương (từ Chương XIV đến Chương XXVI).",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "GDQP 11",
+            "Giữa HKI",
+            "Bài 3: Phòng chống tệ nạn xã hội"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T06:00:00.000Z",
+        "updatedAt": "2026-10-28T06:00:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_01",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Dựa vào các tiêu chí chủ yếu nào sau đây để phân chia thế giới thành các nhóm nước?",
+        "options": [
+            "GNI/ người, cơ cấu ngành kinh tế và chỉ số phát triển con người.",
+            "GDP/ người, đầu tư ra nước ngoài và chỉ số phát triển con người.",
+            "GNI, cơ cấu ngành kinh tế và trình độ dân trí, tuổi thọ trung bình.",
+            "GDP/ người, chỉ số phát triển con người và cơ cấu ngành kinh tế."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_02",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Việc áp dụng ngày càng rộng rãi các tiêu chuẩn thống nhất trên phạm vi toàn cầu trong quá trình sản xuất kinh doanh là biểu hiện của",
+        "options": [
+            "khu vực hóa kinh tế.",
+            "đô thị hóa tự phát.",
+            "cơ cấu dân số già.",
+            "toàn cầu hóa kinh tế."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_03",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Trong xu thế toàn cầu hóa kinh tế, các công ty đa quốc gia có vai trò chi phối chủ yếu đối với",
+        "options": [
+            "thị trường tiêu thụ nội địa.",
+            "các chuỗi giá trị toàn cầu.",
+            "chính sách quốc phòng.",
+            "các quy luật tự nhiên."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_04",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong một khu vực trên thế giới thường dựa trên cơ sở tương đồng về",
+        "options": [
+            "trình độ phát triển và quy mô dân số.",
+            "địa lí, văn hóa, xã hội, mục tiêu phát triển.",
+            "thể chế chính trị và tiềm lực quân sự.",
+            "hệ thống pháp luật, chính sách quốc phòng."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_05",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Ở các nước đang phát triển, ngành nông nghiệp thu hút nhiều lao động nhưng lại chiếm tỉ trọng nhỏ trong cơ cấu GDP là do",
+        "options": [
+            "dân số đông và tăng nhanh.",
+            "truyền thống sản xuất lâu đời.",
+            "trình độ phát triển kinh tế thấp.",
+            "kĩ thuật canh tác lạc hậu."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_06",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Tổ chức nào sau đây là một trong những tổ chức kinh tế toàn cầu được hình thành và phát triển cùng với quá trình toàn cầu hóa kinh tế?",
+        "options": [
+            "Hiệp hội các quốc gia Đông Nam Á.",
+            "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
+            "Tổ chức Thương mại Thế giới.",
+            "Liên minh châu Âu."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_07",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Tổ chức nào sau đây đóng vai trò là trung tâm điều hòa các nỗ lực quốc tế vì các mục tiêu chung?",
+        "options": [
+            "Liên hợp quốc.",
+            "Tổ chức Thương mại Thế giới.",
+            "Quỹ Tiền tệ Quốc tế.",
+            "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_08",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Nâng cao mức sống, tạo việc làm cho người dân các nước thành viên và bảo đảm các tiêu chuẩn lao động tối thiểu là mục tiêu hoạt động của",
+        "options": [
+            "Quỹ Tiền tệ Quốc tế.",
+            "Liên hợp quốc.",
+            "Tổ chức Thương mại Thế giới.",
+            "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_09",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Tổ chức nào sau đây có tôn chỉ hoạt động là thúc đẩy hợp tác tiền tệ toàn cầu và bảo đảm sự ổn định tài chính?",
+        "options": [
+            "Tổ chức Thương mại Thế giới.",
+            "Quỹ Tiền tệ Quốc tế.",
+            "Liên hợp quốc.",
+            "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_10",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Tổ chức nào sau đây có mục tiêu là đẩy mạnh sự giao lưu hàng hóa, dịch vụ, vốn và công nghệ trong một khu vực?",
+        "options": [
+            "Diễn đàn Hợp tác kinh tế châu Á - Thái Bình Dương.",
+            "Liên hợp quốc.",
+            "Quỹ Tiền tệ Quốc tế.",
+            "Tổ chức Thương mại Thế giới."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_11",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Trong quá trình toàn cầu hóa kinh tế, yếu tố nào sau đây ngày càng được tự do dịch chuyển giữa các quốc gia?",
+        "options": [
+            "Hàng hóa và dịch vụ.",
+            "Biên giới hành chính.",
+            "Quân đội.",
+            "Luật pháp."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_12",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Thách thức to lớn của toàn cầu hóa đối với các nước đang phát triển là",
+        "options": [
+            "tự do hóa thương mại được mở rộng.",
+            "gây áp lực với tự nhiên, môi trường.",
+            "hàng hóa có cơ hội lưu thông rộng rãi.",
+            "các quốc gia đón đầu công nghệ mới."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_13",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cơ cấu ngành kinh tế ở các nước đang phát triển chủ yếu chuyển dịch theo hướng",
+        "options": [
+            "giảm nhanh tỉ trọng của các ngành dịch vụ.",
+            "tỉ trọng nông nghiệp chiếm vị trí chủ đạo.",
+            "tăng tỉ trọng của công nghiệp và dịch vụ.",
+            "tăng nhanh liên tục tỉ trọng nông nghiệp."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_14",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Việc chuyển dịch cơ cấu kinh tế sang nền kinh tế tri thức tạo động lực trực tiếp giúp các quốc gia giải quyết vấn đề nào sau đây về môi trường?",
+        "options": [
+            "Phát triển sản xuất xanh và giảm thiểu ô nhiễm môi trường sinh thái.",
+            "Cắt giảm việc sử dụng năng lượng tái tạo, giảm phát thải khí nhà kính.",
+            "Tăng cường khai thác các nguồn tài nguyên thiên nhiên, giảm ô nhiễm.",
+            "Đơn giản hóa quy trình kiểm soát chất thải công nghiệp, bảo vệ tài nguyên."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_15",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Phát biểu nào sau đây là một trong những biểu hiện của khu vực hóa kinh tế?",
+        "options": [
+            "Các tiêu chuẩn toàn cầu được áp dụng ngày càng rộng rãi.",
+            "Các công ty đa quốc gia mở rộng phạm vi sản xuất toàn cầu.",
+            "Gia tăng số lượng và quy mô của các tổ chức khu vực.",
+            "Các giao dịch thương mại quốc tế tăng lên nhanh chóng."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_16",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Vấn đề nào dưới đây là vấn đề an ninh truyền thống?",
+        "options": [
+            "An ninh năng lượng.",
+            "An ninh quân sự.",
+            "An ninh mạng.",
+            "An ninh nguồn nước."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_17",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Vấn đề nào dưới đây là vấn đề an ninh phi truyền thống?",
+        "options": [
+            "An ninh chính trị.",
+            "An ninh quân sự.",
+            "Chiến tranh, xung đột vũ trang.",
+            "An ninh lương thực."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_18",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Phát biểu nào sau đây không đúng với Tổ chức Thương mại Thế giới (WTO)?",
+        "options": [
+            "Là một tổ chức phi chính phủ lớn trên thế giới.",
+            "Có 164 nước tham gia thành viên (năm 2021).",
+            "Chi phối phần lớn hoạt động thương mại thế giới.",
+            "Làm sâu sắc sự khác biệt giữa các nhóm nước."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_19",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Giải pháp mang tính cấp bách khi giải quyết vấn đề khủng hoảng an ninh ương thực là",
+        "options": [
+            "cung cấp lương thực và cứu trợ nhân đạo.",
+            "tăng năng suất và phát triển bền vững.",
+            "phát huy vai trò của các tổ chức quốc tế.",
+            "bình ổn giá, ưu tiên hàng lương thực."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_20",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Hiện nay, nguồn nước ngọt ở nhiều nơi trên thế giới bị ô nhiễm nghiêm trọng, nguyên nhân chủ yếu là do",
+        "options": [
+            "Chất thải công nghiệp chưa qua xử lí.",
+            "Chất thải trong sản xuất nông nghiệp",
+            "Nước xả từ các nhà máy thủy điện",
+            "Khai thác và vận chuyển dầu mỏ. và"
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_21",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Mỹ La-tinh nằm giữa hai đại dương lớn là",
+        "options": [
+            "Đại Tây Dương và Ấn Độ Dương.",
+            "Bắc Băng Dương và Ấn Độ Dương.",
+            "Đại Tây Dương và Thái Bình Dương.",
+            "Thái Bình Dương và Bắc Băng Dương."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_22",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Phát biểu nào sau đây không đúng về kinh tế khu vực Mỹ La-tinh?",
+        "options": [
+            "Tổng GDP của toàn khu vực ở mức thấp.",
+            "Chênh lệch lớn về GDP giữa các nước.",
+            "Có nhiều quốc gia nợ nước ngoài rất lớn.",
+            "Tốc độ tăng trưởng GDP luôn rất nhanh."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_23",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Kinh tế của khu vực Mỹ La-tinh có sự chuyển dịch theo hướng chủ yếu nào sau đây?",
+        "options": [
+            "Tăng nhanh tỉ trọng ngành nông nghiệp.",
+            "Tăng tỉ trọng của ngành dịch vụ.",
+            "Tỉ trọng ngành công nghiệp giảm rất nhanh.",
+            "Giảm mạnh tỉ trọng của ngành dịch vụ."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_24",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Quá trình đô thị hóa ở khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
+        "options": [
+            "Gắn liền chặt chẽ với công nghiệp hóa.",
+            "Mạng lưới đô thị phân bố rất đồng đều.",
+            "Gắn với nhập cư và lịch sử khai thác lãnh thổ.",
+            "Chỉ phân bố ở những khu vực đồng bằng rộng."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_25",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Thành phần dân cư của khu vực Mỹ La-tinh có đặc điểm nổi bật nào sau đây?",
+        "options": [
+            "Đa dạng về chủng tộc và có nhiều người lai.",
+            "Chủ yếu là người nhập cư từ Hoa Kỳ đến.",
+            "Người da trắng chính là người dân bản địa.",
+            "Có cơ cấu dân số già mức cao nhất thế giới."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_26",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Nhóm nước phát triển thường có chỉ số phát triển con người (HDI) ở mức cao chủ yếu do",
+        "options": [
+            "quy mô dân số đông và diện tích lãnh thổ rộng.",
+            "mức sống cao; kinh tế; giáo dục, y tế phát triển.",
+            "tỉ lệ tăng dân số cao và có cơ cấu dân số trẻ.",
+            "nguồn tài nguyên thiên nhiên rất phong phú."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_27",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Giải pháp chủ yếu giúp các doanh nghiệp sản xuất tối ưu hóa nguồn lực và hạn chế rủi ro trong nền kinh tế tri thức là",
+        "options": [
+            "mở rộng quy mô nhà xưởng và sử dụng nhiều lao động phổ thông.",
+            "tập trung khai thác triệt để các nguồn tài nguyên thiên nhiên sẵn có.",
+            "đẩy mạnh ứng dụng công nghệ và sản xuất theo nhu cầu thị trường.",
+            "duy trì mẫu mã và quy trình sản xuất để hạn chế chi phí phát sinh."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_28",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Sự phát triển kinh tế của nhiều quốc gia khu vực Mỹ La-tinh không ổn định chủ yếu do",
+        "options": [
+            "nguồn tài nguyên thiên nhiên nghèo nàn.",
+            "thiếu hụt nghiêm trọng lực lượng lao động.",
+            "không tiếp giáp với các tuyến đường biển.",
+            "nền kinh tế phụ thuộc vào nước ngoài."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_29",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Phát biểu nào sau đây đúng với đặc điểm đô thị hóa ở Mỹ La-tinh?",
+        "options": [
+            "Quá trình đô thị hóa sớm.",
+            "Tỉ lệ dân thành thị giảm.",
+            "Không có các đô thị lớn.",
+            "Phân bố đô thị đồng đều."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_30",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Khu vực Mỹ La tinh có",
+        "options": [
+            "cơ cấu dân số rất già, quy mô giảm.",
+            "gia tăng dân số rất cao, dân trẻ hóa.",
+            "dân số đông và đang có sự già hóa.",
+            "gia tăng dân số thấp, quy mô giảm."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_31",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Vấn đề dân cư - xã hội đáng quan tâm nhất ở Mỹ La-tinh là",
+        "options": [
+            "có nhiều siêu đô thị dân đông.",
+            "tỉ lệ thất nghiệp ở thành thị cao.",
+            "dân nông thôn vào đô thị đông.",
+            "chênh lệch giàu nghèo rất lớn."
+        ],
+        "correct": 3,
+        "explanation": "Phương án đúng là D.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_32",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Hình thức tổ chức sản xuất nông nghiệp chủ yếu ở khu vực Mỹ La-tinh là",
+        "options": [
+            "hộ gia đình.",
+            "hợp tác xã.",
+            "trang trại.",
+            "du canh du cư."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_33",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Sản phẩm nông nghiệp nổi bật nhất của Mỹ La-tinh là",
+        "options": [
+            "lương thực.",
+            "cây công nghiệp.",
+            "thực phẩm.",
+            "gia súc."
+        ],
+        "correct": 1,
+        "explanation": "Phương án đúng là B.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_34",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Phía đông các đảo của quần đảo Ăng-ti do có nhiều mưa nên phát triển mạnh",
+        "options": [
+            "rừng thưa.",
+            "cây bụi.",
+            "rừng rậm.",
+            "xavan."
+        ],
+        "correct": 2,
+        "explanation": "Phương án đúng là C.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p1_35",
+        "type": "mcq",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Phía tây Mỹ La-tinh có thuận lợi chủ yếu cho phát triển ngành kinh tế nào sau đây?",
+        "options": [
+            "Thủy điện.",
+            "Trồng trọt.",
+            "Khai thác thủy sản.",
+            "Nuôi trồng thủy sản."
+        ],
+        "correct": 0,
+        "explanation": "Phương án đúng là A.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần I: Trắc nghiệm"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_01",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho thông tin sau: Toàn cầu hóa kinh tế là quá trình liên kết các quốc gia trên thế giới về nhiều mặt, từ kinh tế đến văn hóa, khoa học. Quá trình này làm cho các dòng hàng hóa, dịch vụ, vốn và lao động ngày càng tự do di chuyển giữa các nước. Bên cạnh việc thúc đẩy tăng trưởng kinh tế toàn cầu, toàn cầu hóa cũng làm gia tăng sự phụ thuộc lẫn nhau về kinh tế giữa các quốc gia.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Toàn cầu hóa kinh tế tạo điều kiện thuận lợi cho các dòng vốn và lao động dịch chuyển giữa các nước.",
+                "answer": true
+            },
+            {
+                "label": "b",
+                "text": "Quá trình toàn cầu hóa kinh tế làm giảm bớt sự phụ thuộc lẫn nhau về mặt kinh tế giữa các quốc gia.",
+                "answer": false
+            },
+            {
+                "label": "c",
+                "text": "Các công ty đa quốc gia giữ vai trò chi phối các chuỗi giá trị toàn cầu trong xu thế toàn cầu hóa.",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Việc chủ động hội nhập toàn cầu hóa kinh tế giúp các nước đang phát triển tranh thủ nguồn vốn và công nghệ để chuyển dịch cơ cấu kinh tế theo hướng hiện đại.",
+                "answer": true
+            }
+        ],
+        "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) ĐÚNG",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_02",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho thông tin sau: Khu vực hóa kinh tế là quá trình liên kết và hợp tác kinh tế giữa các quốc gia trong các khu vực trên thế giới trên cơ sở tương đồng về địa lí, văn hóa, xã hội hoặc có chung mục tiêu phát triển. Sự hình thành các tổ chức liên kết khu vực giúp tạo lập thị trường sản xuất và tiêu dùng rộng lớn, thúc đẩy thương mại nội khối và gia tăng sức cạnh tranh của khu vực.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Khu vực hóa kinh tế là sự liên kết giữa các quốc gia dựa trên sự tương đồng về địa lí, văn hóa hoặc mục tiêu phát triển.",
+                "answer": true
+            },
+            {
+                "label": "b",
+                "text": "Quá trình khu vực hóa kinh tế làm gia tăng số lượng và quy mô của các tổ chức liên kết khu vực.",
+                "answer": true
+            },
+            {
+                "label": "c",
+                "text": "Khu vực hóa kinh tế giúp dỡ bỏ hoàn toàn các rào cản thương mại đối với các nước nằm trong một khu vực.",
+                "answer": false
+            },
+            {
+                "label": "d",
+                "text": "Việc tham gia vào các tổ chức liên kết kinh tế khu vực giúp Việt Nam mở rộng thị trường xuất khẩu nhưng cũng đặt ra thách thức lớn về sức cạnh tranh cho các doanh nghiệp trong nước.",
+                "answer": true
+            }
+        ],
+        "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) SAI, d) ĐÚNG",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_03",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Các công ty xuyên quốc gia ngày càng mở rộng phạm vi hoạt động. Hệ thống các công ty xuyên quốc gia đã có mặt ở nhiều nước tạo nên sự liên kết chặt chẽ góp phần làm cho quá trình toàn cầu hóa trở nên sâu sắc hơn.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Các công ty xuyên quốc gia là 1 trong những nhân tố thúc đẩy toàn cầu hóa.",
+                "answer": true
+            },
+            {
+                "label": "b",
+                "text": "Các công ty xuyên quốc gia chủ yếu tham gia lĩnh vực tài chính, công nghệ.",
+                "answer": false
+            },
+            {
+                "label": "c",
+                "text": "Các công ty xuyên quốc gia tham gia chuỗi liên kết chủ yếu ở các nước đang phát triển.",
+                "answer": false
+            },
+            {
+                "label": "d",
+                "text": "Các công ty xuyên quốc gia chi phối và kiểm soát hoạt động thương mại thế giới.",
+                "answer": true
+            }
+        ],
+        "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) SAI, d) ĐÚNG",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_04",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho thông tin sau: An ninh năng lượng và an ninh nguồn nước là những vấn đề an ninh phi truyền thống quan trọng mà thế giới đang phải đối mặt. Sự suy giảm tài nguyên, biến đổi khí hậu và nhu cầu tiêu thụ gia tăng đang đe dọa trực tiếp đến nguồn cung cấp năng lượng cũng như việc tiếp cận nguồn nước sạch của người dân ở nhiều quốc gia.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "An ninh năng lượng là sự bảo đảm đầy đủ năng lượng dưới nhiều hình thức khác nhau phục vụ cho nhu cầu con người và phát triển kinh tế.",
+                "answer": true
+            },
+            {
+                "label": "b",
+                "text": "Sử dụng tiết kiệm năng lượng và đẩy mạnh phát triển năng lượng tái tạo là giải pháp quan trọng nhằm bảo đảm an ninh năng lượng.",
+                "answer": true
+            },
+            {
+                "label": "c",
+                "text": "Các quốc gia cùng chia sẻ một lưu vực sông cần tăng cường hợp tác và phối hợp kiểm soát nguồn nước nhằm hạn chế nguy cơ cạn kiệt tài nguyên và mâu thuẫn quốc gia.",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Việc bảo đảm đủ nước phục vụ cho sản xuất nông nghiệp là đã đảm bảo được an ninh nguồn nước.",
+                "answer": false
+            }
+        ],
+        "explanation": "Đáp án các ý: a) ĐÚNG, b) ĐÚNG, c) ĐÚNG, d) SAI",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_05",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho thông tin sau: An ninh mạng là sự bảo đảm hoạt động trên không gian mạng không gây hại đến an ninh quốc gia, trật tự, an toàn xã hội, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân. Sự phát triển mạnh mẽ của công nghệ thông tin khiến an ninh mạng trở thành một thách thức lớn đối với tất cả các quốc gia, đòi hỏi sự phối hợp và hợp tác quốc tế chặt chẽ để phòng chống các hoạt động tấn công mạng.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Mất an ninh mạng gây ảnh hưởng đến lĩnh vực quân sự, không tác động đến phát triển kinh tế và đời sống xã hội.",
+                "answer": false
+            },
+            {
+                "label": "b",
+                "text": "An ninh mạng là sự bảo đảm các hoạt động trên không gian mạng không gây hại đến an ninh quốc gia và trật tự xã hội.",
+                "answer": true
+            },
+            {
+                "label": "c",
+                "text": "Tăng cường hợp tác quốc tế và hoàn thiện thể chế pháp luật là những giải pháp quan trọng để bảo vệ an ninh mạng.",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Sự phụ thuộc ngày càng lớn của nền kinh tế vào hạ tầng kĩ thuật số khiến rủi ro mất an ninh mạng có thể gây ra những tổn thất diện rộng đối với nhiều quốc gia.",
+                "answer": true
+            }
+        ],
+        "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) ĐÚNG",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_06",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho thông tin: Theo số liệu của liên hợp quốc, hiện có 138 quốc gia (trong đó có 95 nước đang phát triển) ban hành Luật An ninh mạng. Việt Nam đã ban hành Luật An ninh mạng năm 2018 để quy định về hoạt động và bảo vệ an ninh quốc gia và bảo đảm trật tự, an toàn xã hội trên không gian mạng; trách nhiệm của cơ quan, tổ chức cá nhân có liên quan.",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Sự bùng nổ công nghệ thông tin trở thành thách thức lớn về an ninh quốc gia.",
+                "answer": true
+            },
+            {
+                "label": "b",
+                "text": "Các cuộc tấn công vào hệ thống hạ tầng thông tin, truyền thông quốc gia chỉ gây ảnh hưởng đến an ninh quốc gia.",
+                "answer": false
+            },
+            {
+                "label": "c",
+                "text": "Các cuộc tấn công mạng  xuyên quốc gia có thể gay thiệt hại đến nền kinh tế toàn cầu.",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Luật An ninh mạng từng quốc xây dựng riêng để đảm bảo bí mật, an toàn, an ninh quốc gia.",
+                "answer": false
+            }
+        ],
+        "explanation": "Đáp án các ý: a) ĐÚNG, b) SAI, c) ĐÚNG, d) SAI",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_07",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT NHẬP KHẨU HÀNG HÓA VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 - 2020 ( Đơn vị: Tỉ USD) Năm 2000 2005 2010 2015 2019 2020 Xuất Khẩu 7 961,7 13 014,0 19 009,0 21 341,8 24 970,7 22 594,7 Nhập Khẩu 7 927,2 12 804,0 18 467,2 20 815,8 24 418,2 21 949, 6 ( Nguồn : Ngân hàng Thế giới, 2022)",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Giá trị xuất khẩu hàng hóa và dịch vụ toàn thế giới giai đoạn 2000 - 2020 tăng liên tục.",
+                "answer": false
+            },
+            {
+                "label": "b",
+                "text": "Giá trị xuất khẩu hàng hóa luôn lớn hơn giá trị nhập khẩu giai đoạn 2000 - 2020.",
+                "answer": true
+            },
+            {
+                "label": "c",
+                "text": "Giá xuất nhập khẩu hàng hóa và dịch vụ toàn thế ngày càng tăng biểu hiện của toàn cầu hóa.",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Hoạt động thương mại có tốc độ tăng trưởng cao giai đoạn 2000 - 2020 tăng 560%.",
+                "answer": false
+            }
+        ],
+        "explanation": "Đáp án các ý: a) SAI, b) ĐÚNG, c) ĐÚNG, d) SAI",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p2_08",
+        "type": "truefalse",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Cho bảng số liệu sau: TRỊ GIÁ XUẤT, NHẬP KHẨU HÀNG HOÁ VÀ DỊCH VỤ TOÀN THẾ GIỚI GIAI ĐOẠN 2000 – 2020 (Đơn vị: tỉ USD) Năm Xuất khẩu Nhập khẩu 2000 7 961,7 7 982,3 2010 19 009,0 18 467,2 2019 24 970,7 24 418,2 2020 22 594,7 21 949,6 (Nguồn: WB, 2022)",
+        "statements": [
+            {
+                "label": "a",
+                "text": "Giá trị xuất khẩu tăng nhanh và liên tục.",
+                "answer": false
+            },
+            {
+                "label": "b",
+                "text": "Cán cân xuất nhập khẩu luôn dương.",
+                "answer": false
+            },
+            {
+                "label": "c",
+                "text": "Giá trị nhập khẩu tăng gấp 2,7 lần giai đoạn 2000 - 2020",
+                "answer": true
+            },
+            {
+                "label": "d",
+                "text": "Giá trị xuất khẩu tăng nhiều hơn giá trị nhập khẩu giai đoạn 2000 - 2020",
+                "answer": true
+            }
+        ],
+        "explanation": "Đáp án các ý: a) SAI, b) SAI, c) ĐÚNG, d) ĐÚNG",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần II: Đúng / Sai"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_01",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Năm 2024, số dân thế giới là 8141,8 triệu người, sản lượng lương thực có hạt của thế giới là 2854 triệu tấn. Hãy cho biết bình quân lương thực có hạt theo đầu người của thế giới năm 2024 là bao nhiêu kg/người. (làm tròn kết quả đến hàng đơn vị).",
+        "answer": "351",
+        "correctAnswer": "351",
+        "explanation": "Đáp án chính xác: 351",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_02",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Cho bảng số liệu: Trị giá xuất khẩu hàng hóa và dịch vụ của Mông Cổ và Đan Mạch, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Mông Cổ 7,7 16,4 Đan Mạch 195,7 301,4 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết tốc độ tăng trưởng trị giá xuất khẩu năm 2024 so với năm 2020 của Mông Cổ cao hơn của Đan Mạch bao nhiêu phần trăm (coi năm 2020 của mỗi nước = 100%) (làm tròn kết quả đến hàng đơn vị).",
+        "answer": "59",
+        "correctAnswer": "59",
+        "explanation": "Đáp án chính xác: 59",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_03",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Tổng trị giá xuất nhập khẩu và cán cân xuất nhập khẩu của thế giới năm 2024 lần lượt là 47,2 nghìn tỷ USD và -0,4 nghìn tỷ USD. Hãy cho biết trị giá xuất khẩu của thế giới năm 2024 là bao nhiêu nghìn tỷ USD (làm tròn kết quả đến một chữ số thập phân).",
+        "answer": "23,4",
+        "correctAnswer": "23,4",
+        "explanation": "Đáp án chính xác: 23,4",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_04",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Năm 2024, trị giá xuất khẩu lĩnh vực dịch vụ của Hoa Kỳ đạt 1200 tỉ USD. Trong đó thương mại số chiếm 60%. Hãy cho biết lĩnh vực thương mại số của Hoa Kỳ có trị giá là bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
+        "answer": "720",
+        "correctAnswer": "720",
+        "explanation": "Đáp án chính xác: 720",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_05",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Năm 2018 và năm 2024, sản lượng tiêu thụ khí tự nhiên của thế giới lần lượt là 3831,7 tỉ m3 và 4127,8 tỉ m3. Hãy cho biết, sản lượng tiêu thụ khí tự nhiên của thế giới năm 2024 so với năm 2018 tăng thêm bao nhiêu tỉ m3 (làm tròn kết quả đến hàng đơn vị).",
+        "answer": "296",
+        "correctAnswer": "296",
+        "explanation": "Đáp án chính xác: 296",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_06",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c1",
+        "sectionId": "chap_dia11_c1_s1",
+        "stem": "Năm 2019 giá trị xuất khẩu toàn thế giới là 24 791,1 tỉ USD; giá trị nhập khẩu là 24 348,1 tỉ USD. Tính cán cân xuất nhập khẩu của toàn thế giới năm 2019. (làm tròn kết quả đến hàng đơn vị của tỉ USD)",
+        "answer": "443",
+        "correctAnswer": "443",
+        "explanation": "Đáp án chính xác: 443",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_07",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Cho bảng số liệu: Tổng dự trữ quốc tế của Hoa Kỳ và Nam Phi, năm 2020 và năm 2024 (Đơn vị: Tỷ USD) Năm 2020 2024 Hoa Kỳ 133,8 227,8 Nam Phi 47,4 54,9 (Nguồn: Cục Thống kê Việt Nam, năm 2025) Căn cứ vào bảng số liệu trên, hãy cho biết năm 2024 so với năm 2020, tổng dự trữ quốc tế của Hoa Kỳ tăng nhiều hơn của Nam Phi bao nhiêu tỉ USD (làm tròn kết quả đến hàng đơn vị).",
+        "answer": "87",
+        "correctAnswer": "87",
+        "explanation": "Đáp án chính xác: 87",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_dia11_p3_08",
+        "type": "short_answer",
+        "subjectId": "sub_dia11",
+        "chapterId": "chap_dia11_c2",
+        "sectionId": "chap_dia11_c2_s1",
+        "stem": "Năm 2020, dân số của Mĩ La-tinh là 652,3 triệu người, trong đó dân số trong độ tuổi lao động là 438,3 triệu người. Tính tỉ lệ dân số trong độ tuổi lao động của Mĩ La-tinh năm 2020 (làm tròn đến hàng đơn vị của %).",
+        "answer": "67,2",
+        "correctAnswer": "67,2",
+        "explanation": "Đáp án chính xác: 67,2",
+        "difficulty": "van_dung",
+        "tags": [
+            "Địa lí 11",
+            "Giữa HKI",
+            "Phần III: Trả lời ngắn"
+        ],
+        "favorite": false,
+        "createdAt": "2026-10-28T09:50:00.000Z",
+        "updatedAt": "2026-10-28T09:50:00.000Z"
+    },
+    {
+        "id": "q_su11_t1_mcq_01",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Một trong những nhiệm vụ của các cuộc cách mạng tư sản thế kỉ XVII - XVIII là",
+        "options": [
+            "đưa giai cấp công nhân lên nắm quyền.",
+            "xóa bỏ triệt để mâu thuẫn trong xã hội.",
+            "xác lập sự thống trị của chủ nghĩa thực dân.",
+            "xóa bỏ tình trạng phong kiến cát cứ."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: xóa bỏ tình trạng phong kiến cát cứ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_02",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Cách mạng tư sản Anh thế kỉ XVII thắng lợi đã",
+        "options": [
+            "lật đổ chế độ thuộc địa nửa phong kiến.",
+            "thiết lập chế độ dân chủ cộng hòa ở Anh.",
+            "thiết lập chế độ quân chủ lập hiến ở Anh.",
+            "giành độc lập dân tộc từ tay thực dân Pháp."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: thiết lập chế độ quân chủ lập hiến ở Anh.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_03",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Mục tiêu chung của các cuộc cách mạng tư sản thế kỉ XVI - XVIII là",
+        "options": [
+            "lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
+            "lật đổ chế độ phong kiến, cô lập cùng tàn tích của nó.",
+            "tạo điều kiện cho sự phát triển của chế độ phong kiến.",
+            "mở đường cho sự phát triển của chủ nghĩa xã hội."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_04",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Các cuộc cách mạng tư sản thế kỉ XVI - XVIII có hai nhiệm vụ cơ bản là",
+        "options": [
+            "dân tộc và dân chủ.",
+            "dân tộc và dân sinh.",
+            "độc lập và tự do.",
+            "dân chủ và dân quyền."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: dân tộc và dân chủ.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_05",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Lãnh đạo của cuộc cách mạng tư sản Anh thế kỉ XVII là",
+        "options": [
+            "tư sản và chủ nô.",
+            "tư sản và quý tộc mới.",
+            "tăng lữ và quý tộc.",
+            "chủ nô và quý tộc."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: tư sản và quý tộc mới.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_06",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Trong các thế kỉ XVI - XVIII, phương thức sản xuất gì phát triển mạnh ở các nước Âu - Mỹ?",
+        "options": [
+            "Cộng sản nguyên thủy.",
+            "Chiếm hữu nô lệ.",
+            "Xã hội chủ nghĩa.",
+            "Tư bản chủ nghĩa."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Tư bản chủ nghĩa.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_07",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Tại 13 thuộc địa Anh ở Bắc Mỹ trước cách mạng, người dân phải tuân theo:",
+        "options": [
+            "Các đạo luật khắt khe do Chính phủ Anh đề ra.",
+            "Các đạo luật khắt khe do chính quyền mỗi thuộc địa đề ra.",
+            "Các đạo luật cởi mở do Chính phủ Anh đề ra.",
+            "Các đạo luật cởi mở do chính quyền mỗi thuộc địa đề ra."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Các đạo luật khắt khe do Chính phủ Anh đề ra.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_08",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Nội dung nào sau đây là mục tiêu của cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII?",
+        "options": [
+            "Lật đổ chế độ phong kiến đứng đầu vua Sác-lơ I.",
+            "Lật đổ ách thống trị của thực dân Anh, giành độc lập.",
+            "Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
+            "Thiết lập chính quyền của giai cấp tư sản và ..."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_09",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "“Trào lưu Triết học Ánh sáng đã tích cực phê phán tình trạng mục nát, lỗi thời của chế độ phong kiến và Giáo hội Thiên Chúa giáo đương thời, đưa ra những lí thuyết về việc xây dựng nhà nước mới”. Đây là tiền đề tư tưởng của cuộc cách mạng nào?",
+        "options": [
+            "Cách mạng tư sản Anh.",
+            "Cách mạng tư sản Pháp.",
+            "Cách mạng giải phóng ở Bắc Mỹ.",
+            "Cách mạng giải phóng ở Đức."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Cách mạng tư sản Pháp.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_10",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Các cuộc cách mạng tư sản thời cận đại đều",
+        "options": [
+            "dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
+            "tạo ra một nền dân chủ, tự do thực sự, rộng rãi.",
+            "lật đổ chế độ phong kiến, thiết lập nền cộng hòa.",
+            "lật đổ chế độ thực dân, thiết lập nền cộng hòa."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_11",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Chủ nghĩa đế quốc ra đời từ cuối thế kỉ XIX đầu thế kỉ XX là hệ quả trực tiếp của quá trình",
+        "options": [
+            "xâm lược thuộc địa.",
+            "giao lưu buôn bán.",
+            "toàn cầu hóa.",
+            "hợp tác kinh tế."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: xâm lược thuộc địa.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_12",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Hình thức tiêu biểu của các tổ chức độc quyền ở Đức và Pháp vào cuối thế kỉ XIX - đầu thế kỉ XX, là",
+        "options": [
+            "các-ten và tô-rớt.",
+            "xanh-đi-ca và các-ten.",
+            "tô-rớt và công-xoóc-xi-om.",
+            "con-sơn và công-gô-lô-mê-rét."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: xanh-đi-ca và các-ten.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_13",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Sau các cuộc cách mạng tư sản, chủ nghĩa tư bản từng bước được xác lập ở đâu?",
+        "options": [
+            "Châu Âu và Bắc Mĩ.",
+            "Tây Âu và Châu Á.",
+            "Bắc Mĩ và Nam Á.",
+            "Châu Á và Châu Phi."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Châu Âu và Bắc Mĩ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_14",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Chính sách xâm lược và mở rộng thuộc địa của các nước tư bản nhằm mục đích đáp ứng nhu cầu",
+        "options": [
+            "phát triển khoa học – kĩ thuật.",
+            "giải quyết tình trạng thất nghiệp.",
+            "thu hút nguồn vốn đầu tư bên ngoài.",
+            "nguyên liệu và nguồn nhân công."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: nguyên liệu và nguồn nhân công.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_15",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Sự kiện đánh dấu sự mở rộng của cuộc cách mạng tư sản bên ngoài Châu Âu là",
+        "options": [
+            "Cách mạng tư sản Anh.",
+            "Cách mạng tư sản Pháp.",
+            "Cách mạng tư sản Hà Lan.",
+            "Cách mạng tư sản Bắc Mĩ."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Cách mạng tư sản Bắc Mĩ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_16",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Cuối thế kỉ XIX – đầu thế kỉ XX, các nước tư bản chủ nghĩa đã chuyển sang giai đoạn",
+        "options": [
+            "tự do cạnh tranh.",
+            "cải cách đất nước.",
+            "đế quốc chủ nghĩa.",
+            "chủ nghĩa phát xít."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: đế quốc chủ nghĩa.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_17",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Cơ sở tạo ra bước chuyển tiếp của chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền là gì?",
+        "options": [
+            "Sự phát triển của kinh tế tư bản chủ nghĩa.",
+            "Sự phát triển của khoa học – công nghệ.",
+            "Sự tăng cường đầu tư vốn trong sản xuất.",
+            "Sự phát triển của các tổ chức độc quyền."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Sự phát triển của các tổ chức độc quyền.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_18",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Ở châu Á, cuối thế kỉ XIX, những quốc gia nào sau khi tiến hành cải cách duy tân đã đưa đất nước theo con đường tư bản chủ nghĩa?",
+        "options": [
+            "Nhật Bản và Xiêm.",
+            "Nhật Bản và Trung Quốc.",
+            "Xiêm và Việt Nam.",
+            "Xiêm và Ấn Độ."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Nhật Bản và Xiêm.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_19",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Chủ nghĩa tư bản hiện đại là thuật ngữ dùng để chỉ chủ nghĩa tư bản",
+        "options": [
+            "trong giai đoạn tự do cạnh tranh.",
+            "bắt đầu chuyển sang giai đoạn độc quyền.",
+            "từ sau chiến tranh thế giới thứ II đến nay.",
+            "từ sau chiến tranh thế giới thứ I đến nay."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: từ sau chiến tranh thế giới thứ II đến nay.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_20",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Sự xác lập của chủ nghĩa tư bản ở Châu Âu và Bắc Mĩ đều có điểm chung là",
+        "options": [
+            "đều thành lập chế độ quân chủ lập hiến.",
+            "đều thành lập nước cộng hòa.",
+            "đều hoàn toàn xóa bỏ hoàn toàn chế độ phong kiến.",
+            "đều do giai cấp tư sản lãnh đạo và giành thắng lợi."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: đều do giai cấp tư sản lãnh đạo và giành thắng lợi.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_21",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Đẩy nhanh quá trình tích tụ và tập trung tư bản đã dẫn đến",
+        "options": [
+            "sự xuất hiện các công ty độc quyền lũng đoạn nền kinh tế đất nước.",
+            "sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
+            "sự ra đời của chủ nghĩa đế quốc trên phạm vi toàn thế giới.",
+            "sự hình thành chủ nghĩa tư bản hiện đại sau chiến tranh thế giới thứ hai."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_22",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Chủ nghĩa đế quốc là hệ quả trực tiếp của sự phát triển và mở rộng của chủ nghĩa tư bản nhằm:",
+        "options": [
+            "tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
+            "tìm kiếm nguyên liệu và thị trường ở nước ngoài.",
+            "khai thác tài nguyên ở các nước thuộc địa.",
+            "tăng cường chính sách xâm lược để mở rộng thị trường."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_23",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Nội dung nào sau đây tạo cơ sở cho bước chuyển biến của chủ nghĩa tư bản từ tự do cạnh tranh sang giai đoạn độc quyền?",
+        "options": [
+            "Quá trình hợp tác ở các nước tư bản.",
+            "Sự phát triển của các tổ chức độc quyền.",
+            "Nhiều trung tâm kinh tế - tài chính ra đời.",
+            "Sự ra đời nhiều tổ chức liên kết khu vực."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Sự phát triển của các tổ chức độc quyền.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_mcq_24",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s1",
+        "stem": "Nguyên nhân trực tiếp nào đã thúc đẩy các nước đế quốc tiến hành xâm lược các nước châu Á, Phi, Mỹ Latinh?",
+        "options": [
+            "Do nhu cầu về nguyên liệu và nhân công.",
+            "Khát vọng chinh phục những vùng đất mới.",
+            "Thực hiện tham vọng bá chủ toàn thế giới.",
+            "Thúc đẩy sự giao lưu văn hóa các châu lục."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Do nhu cầu về nguyên liệu và nhân công.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Cách mạng tư sản"
+        ]
+    },
+    {
+        "id": "q_su11_t1_tf_01",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: Tư liệu 1: “Tất cả mọi người sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. (Tuyên ngôn Độc lập (Mĩ, năm 1776)) Tư liệu 2: “Điều 1. Con người sinh ra đều có quyền tự do và bình đẳng. Những sự phân biệt xã hội chỉ có thể dựa trên lợi ích chung. Điều 17. Quyền tư hữu là quyền bất khả xâm phạm và thiêng liêng không ai có thể bị tước bỏ”. (Tuyên ngôn Nhân quyền và Dân quyền (Pháp, năm 1789))",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền ra đời từ cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Điểm chung của Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp là đề cao quyền con người và quyền công dân.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp năm 1789 không đề cao quyền tư hữu cá nhân vì đó là biểu hiện cho sự phân biệt giàu – nghèo trong xã hội.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Trong Tuyên ngôn độc lập của nước Việt Nam dân chủ cộng hòa (2/9/1945), Chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp.",
+                "answer": true
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t1_tf_02",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Anh là quốc gia duy nhất trên Trái Đất đã thủ tiêu quyền lực của nhà vua thông qua đấu tranh bằng sự cố gắng, cuối cùng Anh đã thiết lập Chính phủ mới mà nhà vua chỉ có quyền khi làm việc tốt và bị hạn chế quyền lực khi làm điều xấu, các lãnh chúa phong kiến thì không được phép ngạo mạn và không có chức hầu, nhân dân là người nắm quyền. Thượng nghị viện Anh và các cơ quan trực thuộc có quyền quyết đoán công việc của quốc gia, vua chỉ được coi như là đồ trang trí...”. (Sách giáo khoa lớp 10 của nước cộng hòa Pháp, Magnard, tr 208.)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Anh là quốc gia duy nhất trên thế giới hiện nay theo chế độ quân chủ lập hiến.",
+                "answer": false
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Sau cách mạng tư sản Anh vua không còn là người nắm quyền mà chỉ được coi như là đồ trang trí.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Thượng nghị viện Anh là cơ quan có quyền quyết định cao nhất trong mọi vấn đề.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Nước Pháp sau cách mạng tư sản năm 1789 cũng là một nước quân chủ lập hiến.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t1_tf_03",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: C. Mác viết: “Việc tìm thấy những mỏ vàng, mỏ bạc ở Châu Mỹ, việc biến người bản xứ thành người nô lệ, việc chôn vùi họ vào các hầm mỏ hoặc tuyệt diệt họ đi, những buổi đầu của cuộc chinh phục và cướp bóc ở Đông Ấn, việc biến Châu Phi thành một vùng đất cấm thương mại đen, đầy những phương pháp tích lũy ban đầu đó có tính chất tàn nhẫn, báo hiệu buổi bình minh của thời đại tư bản chủ nghĩa”. (C. Mác, Tư bản, quyển 1, tập 3, NXB Sự thật, Hà Nội, năm 1960, trang 272)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Đoạn trích nêu quá trình xâm lược và săn bắt người da đen ở Châu Phi đưa sang Châu Mỹ làm nô lệ.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Châu Mỹ là một vùng đất mới rất giàu về tài nguyên thiên nhiên, thu hút sự xâm lược của thực dân phương Tây.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Trước khi bị phương Tây xâm lược, Châu Mỹ là một vùng đất có nền kinh tế rất phát triển.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Nô lệ da đen trở thành lực lượng lao động chính trong các đồn điền, trang trại ở miền Nam nước Mỹ trong giai đoạn thế kỉ XVII-XIX.",
+                "answer": true
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t1_tf_04",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Lạy Chúa tôi! Những đất bị rào ấy sẽ là một tổn thất của chúng ta! Vì chúng mà chúng ta phải trả tiền thuê nhà ở cho các nông trại của chúng ta nặng hơn bao giờ hết, và chúng ta sẽ không tìm thấy đất đai để cày bừa nữa. Mọi cái đều bị chiếm làm đồng cỏ cho cừu và cừu có lông lớn, đến nỗi trong vòng 7 năm, trong một vùng có bán kính 6 dặm quanh tôi đã có hàng chục chiếc máy cày bị bỏ xó; nơi mà hơn 40 người ngày trước đã tìm thấy chỗ sống thì bây giờ chỉ có 1 người và đàn cừu của anh ta. Chính những con cừu này đem lại khốn khổ cho chúng ta. Họ phải thôi xứ sở nghề nghiệp ngày xưa đã từng cung cấp cho chúng ta đủ các loại sản phẩm này, còn bây giờ chỉ có cừu, cừu lại cừu”. (Phan Ngọc Liên (2008), Lịch sử thế giới cận đại, tập 1, NXB Đại học Sư phạm, tr 35)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Cuối thế kỉ XV – đầu thế kỉ XVI, ở Anh diễn ra phong trào “rào đất nuôi cừu”.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Nguyên nhân chủ yếu dẫn đến phong trào “rào đất cướp ruộng” ở Anh là do sự phát triển mạnh mẽ của ngành công nghiệp len dạ.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Sự phát triển của kinh tế tư bản chủ nghĩa trong nông nghiệp làm xuất hiện tầng lớp quý tộc mới, sau này đã liên minh với tư sản chống lại chế độ phong kiến Anh.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Phong trào “rào đất cướp ruộng” đã góp phần cải thiện đời sống của nông dân Anh trước cách mạng tư sản.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t1_tf_05",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t1",
+        "sectionId": "chap_su_t1_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “- Sự tập trung sản xuất và tư bản đạt tới một mức độ phát triển cao khiến nó tạo ra những tổ chức độc quyền có một vai trò quyết định trong sinh hoạt kinh tế. - Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp và trên cơ sở “tư bản tài chính” đó, xuất hiện một bọn đầu sỏ tài chính. - Việc xuất khẩu tư bản, khác với việc xuất khẩu hàng hoá, đã có một ý nghĩa quan trọng đặc biệt. - Sự hình thành những liên minh độc quyền quốc tế của bọn tư bản chia nhau thế giới. - Việc các cường quốc tư bản chủ nghĩa lớn nhất đã chia nhau xong đất đai trên thế giới”. (Lê-nin toàn tập, Tập 27, NXB Sự thật, Hà Nội, 1961, tr.402)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Một trong những đặc điểm của chủ nghĩa tư bản độc quyền là xuất hiện các tổ chức độc quyền.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Tổ chức độc quyền là sự liên minh giữa các giai cấp tư sản và chủ nô để thu lợi nhuận cao.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp tạo nên “tư bản tài chính”.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Các cường quốc tư bản chủ nghĩa bắt đầu xâm lược, phân chia thuộc địa trên thế giới.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 1",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_01",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Tháng 12/1922, Đại hội lần thứ nhất các Xô viết toàn liên bang đã thông qua văn kiện nào sau đây?",
+        "options": [
+            "Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+            "Cương lĩnh chính trị đầu tiên của Đảng Bôn-sê-vích liên minh với tư sản.",
+            "Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất trên toàn Liên bang Xô viết.",
+            "Chính sách Kinh tế mới, Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_02",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Từ sau Chiến tranh thế giới thứ hai (1939-1945), quốc gia nào sau đây ở khu vực Đông Nam Á chọn con đường phát triển lên chủ nghĩa xã hội?",
+        "options": [
+            "Việt Nam.",
+            "In-đô-nê-xi-a.",
+            "Thái Lan.",
+            "Philippin."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Việt Nam.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_03",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Chủ nghĩa xã hội được mở rộng qua khu vực Mỹ Latinh sau thắng lợi của cách mạng ở quốc gia nào sau đây?",
+        "options": [
+            "Bra-xin.",
+            "Pê-ru.",
+            "Cu-ba.",
+            "Chi-lê."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Cu-ba.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_04",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia châu Á nào sau đây lựa chọn con đường đi theo chủ nghĩa xã hội?",
+        "options": [
+            "Thái Lan.",
+            "Ấn Độ.",
+            "Nhật Bản.",
+            "Triều Tiên."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Triều Tiên.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_05",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Trước năm 1945, quốc gia duy nhất trên thế giới đi theo con đường chủ nghĩa xã hội là",
+        "options": [
+            "Trung Quốc.",
+            "Việt Nam.",
+            "Liên Xô.",
+            "Triều Tiên."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Liên Xô.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_06",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Sau Chiến tranh thế giới thứ hai, các quốc gia ở khu vực nào sau đây đã lựa chọn con đường đi theo chủ nghĩa xã hội?",
+        "options": [
+            "Tây Âu.",
+            "Đông Âu.",
+            "Bắc Mỹ.",
+            "Nam Á."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Đông Âu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_07",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Năm 1922, lịch sử thế giới ghi nhận sự kiện quan trọng nào sau đây?",
+        "options": [
+            "V.I. Lê-nin thành lập Chính quyền Xô viết ở nước Nga.",
+            "Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
+            "Liên Xô, Mỹ, Anh họp hội nghị I-an-ta ở Liên Xô.",
+            "Quốc tế cộng sản được thành lập ở Mát-xcơ-va (Liên Xô)."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_08",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia nào sau đây ở khu vực Đông Á đi theo con đường chủ nghĩa xã hội?",
+        "options": [
+            "Trung Quốc.",
+            "Hàn Quốc.",
+            "Nhật Bản.",
+            "Mông Cổ."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Trung Quốc.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_09",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Sự kiện nào sau đây đã cổ vũ phong trào giải phóng dân tộc trên thế giới?",
+        "options": [
+            "Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+            "Sự hình thành của Trật tự thế giới hai cực I-an-ta.",
+            "Sự thành lập của tổ chức Hiệp ước Bắc Đại Tây Dương.",
+            "Sự giải thể của tổ chức Hiệp ước Vác-sa-va."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_10",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Bối cảnh nào sau đây đã tạo điều kiện thuận lợi để nhân dân các nước Đông Âu nổi dậy giành chính quyền và thành lập các nhà nước dân chủ nhân dân?",
+        "options": [
+            "Nhật Bản đầu hàng quân Đồng minh vô điều kiện.",
+            "Chiến tranh thế giới thứ hai bùng nổ và lan rộng.",
+            "Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
+            "Trung Quốc hoàn thành cách mạng dân tộc dân chủ."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_11",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Sự khủng hoảng sụp đổ của hệ thống chủ nghĩa xã hội ở châu Âu (1989-1991) cho thấy",
+        "options": [
+            "bài học về mô hình xây dựng chủ nghĩa xã hội.",
+            "chế độ xã hội chủ nghĩa đã không còn phù hợp.",
+            "Mỹ đã thành công trong chiến lược toàn cầu.",
+            "Mỹ đã thắng lợi trong cuộc Chiến tranh lạnh."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: bài học về mô hình xây dựng chủ nghĩa xã hội.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_12",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Từ sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô (1989-1991), Việt Nam cần rút ra bài học kinh nghiệm nào sau đây?",
+        "options": [
+            "Tiến hành cải cách đất nước trước khi xuất hiện những biểu hiện khủng hoảng.",
+            "Tuân thủ các quy luật phát triển khách quan, xây dựng cơ chế tập trung bao cấp.",
+            "Thực hiện chính sách đối nội đối ngoại theo hướng đa dạng hóa, đa phương hóa.",
+            "Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_13",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Cách mạng tháng Mười Nga 1917 có tác động nào sau đây đến quá trình hoạt động yêu nước và cách mạng của Nguyễn Ái Quốc?",
+        "options": [
+            "Đoàn kết nhân dân Việt Nam với phong trào cộng sản và công nhân quốc tế.",
+            "Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
+            "Xác định được hai nhiệm vụ cho cách mạng Việt Nam là dân tộc và dân chủ.",
+            "Xây dựng khối đoàn kết dân tộc trên nền tảng liên minh công-nông-binh."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_14",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Từ năm 1986, Lào thực hiện đường lối đổi mới toàn diện theo định hướng:",
+        "options": [
+            "Xã hội chủ nghĩa.",
+            "Tư bản chủ nghĩa hiện đại.",
+            "Cách mạng công nghiệp 4.0.",
+            "Hoàn hảo hóa."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Xã hội chủ nghĩa.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_15",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Đâu không phải một thành tựu nổi bật về khoa học – công nghệ của Trung Quốc?",
+        "options": [
+            "Phát triển ngành hàng không vũ trụ (phóng được tàu Thần Châu vào không gian).",
+            "Xây dựng hệ thống định vị vệ tinh Bắc Đẩu, hệ thống đường sắt cao tốc.",
+            "Phát triển hạ tầng kĩ thuật số, các trung tâm dữ liệu hiện đại.",
+            "Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_mcq_16",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s1",
+        "stem": "Cả nước Việt Nam tiến lên xây dựng chủ nghĩa xã hội từ năm nào?",
+        "options": [
+            "Sau khi thắng Pháp năm 1954.",
+            "Sau khi giải phóng miền Nam năm 1975.",
+            "Sau khi hoàn thành thống nhất đất nước năm 1976.",
+            "Sau Đổi mới năm 1986."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Sau khi hoàn thành thống nhất đất nước năm 1976.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Chủ nghĩa xã hội"
+        ]
+    },
+    {
+        "id": "q_su11_t2_tf_01",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Liên Xô là nhà nước chuyên chính vô sản duy nhất trên thế giới.",
+                "answer": false
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Vừa mới ra đời Liên Xô đã đánh thắng cuộc can thiệp vũ trang của liên quân 14 nước đế quốc.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Liên Xô đánh thắng phát xít Nhật ở châu Á là điều kiện khách quan thuận lợi để nhân dân Việt Nam giành thắng lợi trong Cách mạng tháng Tám năm 1945.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Cứu cả loài người thoát khỏi ách nô lệ chủ nghĩa phát xít là trách nhiệm của Liên Xô.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t2_tf_02",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Liên Xô là nhà nước chuyên chính vô sản đầu tiên trên thế giới.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Liên Xô đã đánh bại thù trong giặc ngoài sau khi vừa thành lập.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Chưa đầy 30 năm sau, Liên Xô bị sụp đổ trong tay chủ nghĩa phát xít.",
+                "answer": false
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Sự ra đời của Liên Xô chẳng những có ý nghĩa to lớn đối với nhân dân Liên Xô mà cả đối với nhân loại thế giới.",
+                "answer": true
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t2_tf_03",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t2",
+        "sectionId": "chap_su_t2_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Năm 2020, 75% thành phố của Trung Quốc với dân số 500 nghìn người trở lên có đường sắt cao tốc. Trong khi đó, ở Tây Ban Nha, quốc gia có mạng lưới đường sắt tốc độ cao lớn nhất châu Âu và đứng thứ 2 toàn cầu chỉ có hơn 3 nghìn km đường sắt chuyên dụng đáp ứng tàu tốc độ 250km/h. Ở Vương quốc Anh chỉ có 107km, trong khi ở Mỹ chỉ có 1 tuyến đường sắt gần như tiêu chuẩn cho tàu cao tốc. Đến cuối năm 2021, tổng chiều dài đường sắt của Trung Quốc đã lên đến 150 nghìn km, bao gồm 40 nghìn km đường sắt cao tốc. Đường sắt cao tốc Trung Quốc hiện chiếm 66,3% tổng chiều dài đường sắt cao tốc trên toàn thế giới”. (Theo Tạp chí Giao thông vận tải, Trung Quốc đã trở thành cường quốc đường sắt cao tốc như thế nào?)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Hiện nay, Trung Quốc là quốc gia có mạng lưới đường sắt cao tốc phát triển nhất thế giới.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Tổng chiều dài đường sắt cao tốc của Trung Quốc nhiều hơn tổng chiều dài đường sắt cao tốc của Tây Ban Nha, Anh, Mỹ cộng lại.",
+                "answer": true
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Đoạn trích phản ánh một trong những thành tựu nổi bật về khoa học – kĩ thuật và phát triển cơ sở hạ tầng của Trung Quốc hiện nay.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Năm 2020, toàn bộ các thành phố của Trung Quốc đều có hệ thống đường sắt cao tốc bao phủ.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 2",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_01",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Sự kiện nào sau đây mở đầu quá trình xâm lược của chủ nghĩa thực dân phương Tây ở khu vực Đông Nam Á?",
+        "options": [
+            "Tây Ban Nha xâm lược Phi-líp-pin.",
+            "Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
+            "Pháp tấn công Đà Nẵng (Việt Nam).",
+            "Hà Lan xâm lược In-đô-nê-xi-a."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_02",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Năm 1898 diễn ra sự kiện gì ở Đông Nam Á?",
+        "options": [
+            "Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
+            "Bồ Đào Nha đánh chiếm Ma-lắc-ca.",
+            "Pháp xâm lược Việt Nam.",
+            "Anh xâm lược xong Xin-ga-po."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_03",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Việc Pháp hoàn thành quá trình xâm lược Việt Nam gắn với sự kiện nào?",
+        "options": [
+            "Năm 1862, nhà Nguyễn kí Hiệp ước Nhâm Tuất.",
+            "Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
+            "Nhà Nguyễn thực hiện chính sách cấm đạo.",
+            "Năm 1883, nhà Nguyễn kí Hiệp ước Hác-măng."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_04",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Quốc gia nào ở Đông Nam Á trở thành vùng đệm giữa hai thế lực thực dân Anh và Pháp?",
+        "options": [
+            "Xin-ga-po.",
+            "In-đô-nê-xi-a.",
+            "Ma-lai-xi-a.",
+            "Xiêm."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Xiêm.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_05",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Đứng trước mối đe dọa của chủ nghĩa thực dân, Xiêm đã",
+        "options": [
+            "thực hiện chính sách đóng cửa, bế tỏa cảng quan.",
+            "thực hiện chính sách cấm đạo Thiên Chúa.",
+            "tiến hành công cuộc cải cách.",
+            "tiến hành kháng chiến bảo vệ nền độc lập."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: tiến hành công cuộc cải cách.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_06",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Nửa sau thế kỉ XIX, quốc gia Đông Nam Á nào dưới đây không bị thực dân phương Tây xâm lược?",
+        "options": [
+            "Xiêm.",
+            "Ma-lay-xi-a.",
+            "In-đô-nê-xi-a.",
+            "Phi-líp-pin."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: Xiêm.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_07",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Từ nửa sau thế kỉ XIX, chế độ phong kiến các nước Đông Nam Á đang trong tình trạng",
+        "options": [
+            "vừa mới hình thành.",
+            "khủng hoảng, suy yếu.",
+            "đang trên đà phát triển.",
+            "đang chuyển sang giai đoạn tư bản."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: khủng hoảng, suy yếu.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_08",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Đến cuối thế kỉ XIX, những quốc gia nào ở Đông Nam Á là thuộc địa của Anh?",
+        "options": [
+            "Xiêm, In-đô-nê-xi-a.",
+            "Ma-lay-xi-a, Miến Điện.",
+            "In-đô-nê-xi-a, Phi-líp-pin.",
+            "Ma-lay-xi-a, Phi-líp-pin."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: Ma-lay-xi-a, Miến Điện.",
+        "difficulty": "nhan_biet",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_09",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Đâu không phải là nội dung cải cách trong chính sách ngoại giao của vua Rama V (1892)?",
+        "options": [
+            "Thực hiện chính sách ngoại giao mềm dẻo.",
+            "Lợi dụng vị trí nước “đệm” giữa hai thế lực Anh – Pháp.",
+            "Cắt nhượng một số vùng đất phụ thuộc để giữ gìn chủ quyền đất nước.",
+            "Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_10",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Ý nào sau đây không phản ánh đúng ý nghĩa cuộc cải cách Ra-ma V đối với sự phát triển của Xiêm?",
+        "options": [
+            "Xiêm vẫn giữ được độc lập.",
+            "Tạo cho nước Xiêm một bộ mặt mới.",
+            "Xiêm trở thành đồng minh thân cận của Mĩ.",
+            "Đưa Xiêm phát triển theo hướng tư bản chủ nghĩa."
+        ],
+        "correct": 2,
+        "explanation": "Đáp án C đúng: Xiêm trở thành đồng minh thân cận của Mĩ.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_11",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Ý nào sau đây không phải là nguyên nhân để thực dân phương Tây xâm lược các nước Đông Nam Á?",
+        "options": [
+            "Các nước này đông dân, có lâm, hải sản và hương liệu quý.",
+            "Đây là một khu vực có vị trí địa lí quan trọng, giàu tài nguyên.",
+            "Chế độ phong kiến ở khu vực này đang lâm vào khủng hoảng, suy yếu.",
+            "Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_12",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Trong chính sách cai trị về văn hóa, xã hội và giáo dục ở Đông Nam Á, thực dân phương Tây đã",
+        "options": [
+            "làm xói mòn giá trị truyền thống của các quốc gia.",
+            "phát triển kinh tế ở những nơi có điều kiện phù hợp.",
+            "chú trọng xây dựng hệ thống đường giao thông.",
+            "chú trọng thực hiện các chính sách xã hội – đói."
+        ],
+        "correct": 0,
+        "explanation": "Đáp án A đúng: làm xói mòn giá trị truyền thống của các quốc gia.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_13",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "“Chúng lập ra ba chế độ khác nhau ở Trung, Nam, Bắc để ngăn cản việc thống nhất nước nhà của ta, để ngăn cản dân tộc ta đoàn kết”. (Hồ Chí Minh toàn tập, tập 4, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, trang 2,3) Đoạn tư liệu trên phản ánh chính sách cai trị của thực dân Pháp ở Việt Nam trên lĩnh vực nào?",
+        "options": [
+            "Văn hóa.",
+            "Tôn giáo.",
+            "Kinh tế.",
+            "Chính trị."
+        ],
+        "correct": 3,
+        "explanation": "Đáp án D đúng: Chính trị.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_mcq_14",
+        "type": "mcq",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s1",
+        "stem": "Đầu thế kỉ XX, hầu hết các nước trong khu vực Đông Nam Á đều trở thành",
+        "options": [
+            "các nước dân chủ cộng hòa độc lập.",
+            "thuộc địa của thực dân phương Tây.",
+            "trung tâm hàng hải lớn trên thế giới.",
+            "các quốc gia phong kiến độc lập, tự chủ."
+        ],
+        "correct": 1,
+        "explanation": "Đáp án B đúng: thuộc địa của thực dân phương Tây.",
+        "difficulty": "thong_hieu",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đông Nam Á"
+        ]
+    },
+    {
+        "id": "q_su11_t3_tf_01",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Từ năm 1892, Ra-ma V tiến hành cuộc cải cách hành chính. Sau khi cử nhiều đoàn đi nghiên cứu thể chế của một số nước châu Âu, giai cấp thống trị Xiêm coi mô hình nhà nước quân chủ lập hiến của đế quốc Đức là phù hợp với tình hình Xiêm. Vua vẫn là người có quyền lực tối cao trong toàn quốc. Bên cạnh vua có Hội đồng nhà nước đóng vai trò cơ quan tư vấn, khởi thảo luật pháp. Bộ máy hành pháp của triều đình được thay thế bằng Hội đồng Chính phủ gồm 12 bộ trưởng”. (Vũ Dương Ninh, Lịch sử Vương quốc Thái Lan, NXB Giáo dục, 1994, tr.92)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Đoạn trích cung cấp thông tin về cải cách của vua Ra-ma V trên tất cả mọi lĩnh vực.",
+                "answer": false
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Cuộc cải cách hành chính của vua Ra-ma V bắt đầu được tiến hành từ cuối thế kỉ XVIII.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Thể chế nhà nước quân chủ lập hiến mà Xiêm xây dựng từ cuộc cải cách của vua Ra-ma V là học tập theo mô hình của phương Tây.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Với cải cách của vua Ra-ma V, Hội đồng nhà nước đóng vai trò lập pháp, còn Hội đồng Chính phủ đóng vai trò hành pháp.",
+                "answer": true
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đúng sai"
+        ]
+    },
+    {
+        "id": "q_su11_t3_tf_02",
+        "type": "truefalse",
+        "subjectId": "sub_su11",
+        "chapterId": "chap_su_t3",
+        "sectionId": "chap_su_t3_s2",
+        "stem": "Đọc đoạn tư liệu sau đây: “Điểm chung của chính sách thống trị thực dân ở Đông Nam Á là khai thác, vơ vét và bòn rút các quốc gia trong khu vực bằng chính sách thuế khóa đánh vào các tầng lớp nhân dân bản địa, cướp ruộng đất lập đồn điền, bóc lột sức người, khai thác tài nguyên; thông qua khai thác triệt để sản phẩm nông nghiệp, tiếp tục đầu tư để bóc lột lâu dài trong công nghiệp... Vì vậy, cao su, cà phê, chè, lúa gạo là những sản vật đặc trưng của Đông Nam Á được thực dân phương Tây chú ý khai thác từ sớm”. (Lương Ninh (Chủ biên), Đông Nam Á: Lịch sử từ nguyên thủy đến ngày nay, NXB Chính trị quốc gia, Hà Nội, 2018, tr.337)",
+        "statements": [
+            {
+                "id": "a",
+                "label": "a",
+                "text": "Đoạn trích cung cấp thông tin về chính sách khai thác, bóc lột của thực dân phương Tây đối với khu vực Đông Nam Á.",
+                "answer": true
+            },
+            {
+                "id": "b",
+                "label": "b",
+                "text": "Trong công nghiệp, thực dân phương Tây tìm cách vơ vét, bòn rút các nước Đông Nam Á thông qua việc cướp ruộng đất lập đồn điền.",
+                "answer": false
+            },
+            {
+                "id": "c",
+                "label": "c",
+                "text": "Những sản vật được coi là thế mạnh của các nước Đông Nam Á được thực dân phương Tây chú ý đầu tư khai thác sớm để thu lợi nhuận cao.",
+                "answer": true
+            },
+            {
+                "id": "d",
+                "label": "d",
+                "text": "Khai thác tài nguyên thiên nhiên không phải là điểm chung trong chính sách cai trị của thực dân phương Tây ở Đông Nam Á.",
+                "answer": false
+            }
+        ],
+        "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
+        "difficulty": "van_dung",
+        "tags": [
+            "Lịch Sử 11",
+            "Chủ đề 3",
+            "Đúng sai"
+        ]
     }
-  ],
+],
   "exams": [
     {
       "id": "exam_congnghe_ghki",

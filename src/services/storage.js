@@ -50,6 +50,24 @@ export function getStoredData() {
           questions = [...newQ, ...questions];
         }
         needsResave = true;
+      } else {
+        // Tự động sửa chữa và đồng bộ câu hỏi Môn Công Nghệ GHKI nếu trong storage cũ bị dính chùm đáp án hoặc chứa "Phương án B"
+        const cnSeedQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_congnghe_ghki');
+        const hasCorruptedCN = questions.some(q => 
+          q.subjectId === 'sub_congnghe_ghki' && 
+          q.options && 
+          q.options.some(opt => typeof opt === 'string' && (opt.includes('Phương án B') || /[B-D]\.\s+/.test(opt)))
+        );
+        if (hasCorruptedCN) {
+          const cnSeedMap = new Map(cnSeedQuestions.map(q => [q.id, q]));
+          questions = questions.map(q => {
+            if (q.subjectId === 'sub_congnghe_ghki' && cnSeedMap.has(q.id)) {
+              return cnSeedMap.get(q.id);
+            }
+            return q;
+          });
+          needsResave = true;
+        }
       }
 
       // Đảm bảo "GDQP&AN 11" luôn có mặt trong hệ thống
