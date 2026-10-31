@@ -61,46 +61,66 @@
   will-change: transform, width;
 }
 
-/* Card Collapse and Popup Spring Animations for Quiz flow */
+/* Silk-smooth Quiz Card Transition without frame drops */
 @keyframes card-collapse {
   0% {
-    transform: scale(1) translateY(0);
+    transform: translate3d(0, 0, 0) scale(1);
     opacity: 1;
-    filter: blur(0px);
   }
   100% {
-    transform: scale(0.92) translateY(-16px);
+    transform: translate3d(0, -14px, 0) scale(0.96);
     opacity: 0;
-    filter: blur(4px);
   }
 }
 
 @keyframes card-popup {
   0% {
-    transform: scale(0.88) translateY(24px);
+    transform: translate3d(0, 20px, 0) scale(0.96);
     opacity: 0;
-    filter: blur(4px);
   }
-  65% {
-    transform: scale(1.02) translateY(-4px);
+  38% {
+    transform: translate3d(0, 8px, 0) scale(0.985);
+    opacity: 0.65;
+  }
+  75% {
+    transform: translate3d(0, -2px, 0) scale(1.008);
+    opacity: 0.98;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
     opacity: 1;
-    filter: blur(0px);
+  }
+}
+
+@keyframes option-pop {
+  0% {
+    transform: scale(0.98) translateY(1px);
+  }
+  60% {
+    transform: scale(1.008) translateY(-1px);
   }
   100% {
     transform: scale(1) translateY(0);
-    opacity: 1;
-    filter: blur(0px);
   }
 }
 
 .neu-card-collapse {
-  animation: card-collapse 260ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  will-change: transform, opacity, filter;
+  animation: card-collapse 220ms cubic-bezier(0.36, 0, 0.66, 0) forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .neu-card-popup {
-  animation: card-popup 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  will-change: transform, opacity, filter;
+  animation: card-popup 420ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.neu-option-pop {
+  animation: option-pop 240ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform;
 }
 
 /* Print Styles */

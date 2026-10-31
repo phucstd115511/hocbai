@@ -85,13 +85,13 @@ export default function CongNgheGHKIQuiz({
     }
   };
 
-  const scheduleNextQuestion = (delay = 750) => {
+  const scheduleNextQuestion = (delay = 700) => {
     if (!autoAdvance) return;
     if (displayMode !== 'single') return;
     clearAutoAdvanceTimer();
 
     autoAdvanceTimerRef.current = setTimeout(() => {
-      // 1. Thu lại với animation (card-collapse)
+      // 1. Thu lại mượt mà với GPU composite (card-collapse)
       setCardTransitionState('collapsing');
 
       // 2. Chuyển sang câu tiếp theo và popup lên (card-popup)
@@ -103,17 +103,18 @@ export default function CongNgheGHKIQuiz({
           return prev;
         });
         setCardTransitionState('idle');
-      }, 260);
+      }, 220);
     }, delay);
   };
 
   const goToQuestion = (idx) => {
+    if (idx === currentIndex) return;
     clearAutoAdvanceTimer();
     setCardTransitionState('collapsing');
     setTimeout(() => {
       setCurrentIndex(idx);
       setCardTransitionState('idle');
-    }, 200);
+    }, 220);
   };
 
   // Theo dõi trạng thái cuộn để kích hoạt animation mở rộng khi dính (sticky)
@@ -894,9 +895,9 @@ export default function CongNgheGHKIQuiz({
                             type="button"
                             disabled={isLocked}
                             onClick={() => handleSelectMCQ(q.id, optIdx)}
-                            className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-all duration-200 ${
-                              isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                            } ${itemStyle}`}
+                            className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
+                              isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
+                            } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
                           >
                             <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
                               {letter}
@@ -1327,9 +1328,9 @@ export default function CongNgheGHKIQuiz({
                           type="button"
                           disabled={isLocked}
                           onClick={() => handleSelectMCQ(q.id, optIdx)}
-                          className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-all duration-200 ${
-                            isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                          } ${itemStyle}`}
+                          className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
+                            isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
+                          } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
                         >
                           <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
                             {letter}
@@ -1494,25 +1495,6 @@ export default function CongNgheGHKIQuiz({
                     </div>
                   </div>
                 )}
-
-                {/* Navigation buttons */}
-                <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/5">
-                  <button
-                    onClick={() => goToQuestion(Math.max(0, currentIndex - 1))}
-                    disabled={currentIndex === 0}
-                    className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] disabled:opacity-40 cursor-pointer"
-                  >
-                    <ChevronLeft className="w-4 h-4 text-[#FF8800]" /> Câu trước
-                  </button>
-
-                  <button
-                    onClick={() => goToQuestion(Math.min(questionsToTest.length - 1, currentIndex + 1))}
-                    disabled={currentIndex === questionsToTest.length - 1}
-                    className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#FF8800] disabled:opacity-40 cursor-pointer"
-                  >
-                    Câu sau <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
               </div>
 
               {/* Bubble Question Palette in Single Mode */}
