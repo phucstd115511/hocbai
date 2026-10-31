@@ -34,13 +34,49 @@ export default function CongNgheGHKIQuiz({
   onSwitchSubject
 }) {
   const [activeSubjectId, setActiveSubjectId] = useState(initialSubjectId);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayMode, setDisplayMode] = useState(() => (typeof window !== 'undefined' && window.innerWidth < 768 ? 'single' : 'scroll'));
+  const [showPalette, setShowPalette] = useState(false);
+  const [userAnswers, setUserAnswers] = useState({});
+  const [lockedShortAnswers, setLockedShortAnswers] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [revealedSingleQuestions, setRevealedSingleQuestions] = useState({});
+  const [seconds, setSeconds] = useState(0);
+  const [isTimerActive, setIsTimerActive] = useState(true);
+  const [isPrinting, setIsPrinting] = useState(false);
   const [isStickyStuck, setIsStickyStuck] = useState(false);
-  const stickyRef = useRef(null);
 
   // Hiệu ứng chuyển động thu lại & popup câu hỏi tiếp theo
   const [cardTransitionState, setCardTransitionState] = useState('idle'); // 'idle' | 'collapsing'
   const [autoAdvance, setAutoAdvance] = useState(true);
+
+  const stickyRef = useRef(null);
   const autoAdvanceTimerRef = useRef(null);
+  const timerRef = useRef(null);
+  const hasSavedAttemptRef = useRef(false);
+
+  const isGdqp = activeSubjectId === 'sub_gdqp11';
+  const isDia = activeSubjectId === 'sub_dia11';
+  const isSu = activeSubjectId === 'sub_su11';
+
+  // Lọc toàn bộ câu hỏi của môn đã chọn (Gộp lại trọn vẹn, không chia vụn vặt)
+  const questionsToTest = useMemo(() => {
+    return allQuestions.filter(q => {
+      if (activeSubjectId === 'sub_congnghe_ghki') {
+        return q.subjectId === 'sub_congnghe_ghki' || (q.tags || []).includes('Công Nghệ GHKI');
+      }
+      if (activeSubjectId === 'sub_gdqp11') {
+        return q.subjectId === 'sub_gdqp11' || (q.tags || []).includes('GDQP 11');
+      }
+      if (activeSubjectId === 'sub_dia11') {
+        return q.subjectId === 'sub_dia11' || (q.tags || []).includes('Địa Lí 11');
+      }
+      if (activeSubjectId === 'sub_su11') {
+        return q.subjectId === 'sub_su11' || (q.tags || []).includes('Lịch Sử 11');
+      }
+      return q.subjectId === activeSubjectId;
+    });
+  }, [allQuestions, activeSubjectId]);
 
   const clearAutoAdvanceTimer = () => {
     if (autoAdvanceTimerRef.current) {
@@ -110,48 +146,6 @@ export default function CongNgheGHKIQuiz({
       setShowPalette(false);
     }
   }, [initialSubjectId]);
-
-  const isGdqp = activeSubjectId === 'sub_gdqp11';
-  const isDia = activeSubjectId === 'sub_dia11';
-
-  // Lọc toàn bộ câu hỏi của môn đã chọn (Gộp lại trọn vẹn, không chia vụn vặt)
-  const questionsToTest = useMemo(() => {
-    return allQuestions.filter(q => {
-      if (activeSubjectId === 'sub_congnghe_ghki') {
-        return q.subjectId === 'sub_congnghe_ghki' || (q.tags || []).includes('Công Nghệ GHKI');
-      }
-      if (activeSubjectId === 'sub_gdqp11') {
-        return q.subjectId === 'sub_gdqp11' || (q.tags || []).includes('GDQP 11');
-      }
-      if (activeSubjectId === 'sub_dia11') {
-        return q.subjectId === 'sub_dia11' || (q.tags || []).includes('Địa Lí 11');
-      }
-      return q.subjectId === activeSubjectId;
-    });
-  }, [allQuestions, activeSubjectId]);
-
-  // Vị trí câu hiện tại khi ở chế độ 'single'
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Chế độ hiển thị: 'scroll' (dạng đề thi đầy đủ) | 'single' (từng câu) - Mặc định 'single' trên điện thoại
-  const [displayMode, setDisplayMode] = useState(() => (typeof window !== 'undefined' && window.innerWidth < 768 ? 'single' : 'scroll'));
-  const [showPalette, setShowPalette] = useState(false);
-
-  // Câu trả lời của học sinh
-  const [userAnswers, setUserAnswers] = useState({});
-
-  // Trạng thái nộp bài (mặc định false: CHƯA NỘP, ĐÁP ÁN KHÔNG LỘ SẴN)
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [revealedSingleQuestions, setRevealedSingleQuestions] = useState({});
-
-  // Đồng hồ bấm giờ
-  const [seconds, setSeconds] = useState(0);
-  const [isTimerActive, setIsTimerActive] = useState(true);
-  const timerRef = useRef(null);
-  const hasSavedAttemptRef = useRef(false);
-
-  // In đề thi
-  const [isPrinting, setIsPrinting] = useState(false);
 
   // Timer effect
   useEffect(() => {
@@ -240,7 +234,6 @@ export default function CongNgheGHKIQuiz({
   };
 
   // Khóa câu trả lời ngắn khi người dùng bấm "Xác nhận"
-  const [lockedShortAnswers, setLockedShortAnswers] = useState({});
   const handleLockShortAnswer = (qId) => {
     if (isSubmitted) return;
     const val = userAnswers[qId];
@@ -506,7 +499,7 @@ export default function CongNgheGHKIQuiz({
   return (
     <div className="space-y-6 max-w-4xl mx-auto font-sans text-[#4A5568] dark:text-[#E2E8F0]">
       {/* 1. Thanh chọn Môn học (Neumorphic Segmented Control) */}
-      <div className="grid grid-cols-3 gap-1.5 sm:gap-2.5 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-2.5 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
           className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-3.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
@@ -563,6 +556,25 @@ export default function CongNgheGHKIQuiz({
             51<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
+
+        <button
+          onClick={() => handleSwitchSubject('sub_su11')}
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-3.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
+            isSu
+              ? 'neu-extruded text-[#FF8800] shadow-[3px_3px_8px_rgb(163,177,198,0.7),-3px_-3px_8px_rgba(255,255,255,0.8)] dark:shadow-[3px_3px_8px_rgb(14,17,21,0.85),-3px_-3px_8px_rgba(255,255,255,0.05)]'
+              : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
+          }`}
+        >
+          <div className="flex items-center gap-1 sm:gap-1.5 truncate">
+            <BookOpen className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#FF8800]" />
+            <span className="truncate"><span className="hidden md:inline">Môn </span>Lịch Sử 11</span>
+          </div>
+          <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
+            isSu ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
+          }`}>
+            64<span className="hidden sm:inline"> câu</span>
+          </span>
+        </button>
       </div>
 
       {/* 2. Top Banner: Đề thi môn học Neumorphic */}
@@ -570,11 +582,13 @@ export default function CongNgheGHKIQuiz({
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full neu-inset-sm text-xs font-display font-bold text-[#FF8800]">
-              {isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : <BookOpen className="w-3.5 h-3.5" />}
+              {isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : isSu ? <BookOpen className="w-3.5 h-3.5" /> : <Wrench className="w-3.5 h-3.5" />}
               {isGdqp 
                 ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' 
                 : isDia
                 ? 'Địa Lí 11 • Giữa Học Kì I (2026-2027)'
+                : isSu
+                ? 'Lịch Sử 11 • Giữa Học Kì I (2026-2027)'
                 : 'Công Nghệ 11 (Cơ Khí) • Giữa Học Kì I (2026-2027)'}
             </div>
             <h1 className="text-2xl sm:text-3xl font-display font-extrabold tracking-tight text-[#2D3748] dark:text-white">
@@ -582,6 +596,8 @@ export default function CongNgheGHKIQuiz({
                 ? 'Bài Làm: Đề Cương Ôn Tập GDQP&AN 11' 
                 : isDia
                 ? 'Bài Làm: Đề Cương Ôn Tập Địa Lí 11'
+                : isSu
+                ? 'Bài Làm: Đề Cương Ôn Tập Lịch Sử 11'
                 : 'Bài Làm: Đề Cương Ôn Tập Công Nghệ 11'}
             </h1>
             <p className="text-xs sm:text-sm text-[#718096] dark:text-[#94A3B8] max-w-xl font-normal leading-relaxed">
@@ -589,6 +605,8 @@ export default function CongNgheGHKIQuiz({
                 ? 'Đề thi trọn bộ 52 câu hỏi trắc nghiệm khách quan. Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : isDia
                 ? 'Đề thi trọn bộ 51 câu hỏi (35 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng/sai + 8 câu trả lời ngắn). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
+                : isSu
+                ? 'Đề thi trọn bộ 64 câu hỏi (54 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : 'Đề thi trọn bộ 93 câu hỏi (83 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'}
             </p>
           </div>

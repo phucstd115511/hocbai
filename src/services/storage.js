@@ -101,6 +101,23 @@ export function getStoredData() {
         if (updatedAny) needsResave = true;
       }
 
+      // Đảm bảo "Lịch Sử 11" luôn có mặt trong hệ thống
+      const hasSuSub = subjects.some(s => s.id === 'sub_su11' || s.name.includes('Lịch Sử') || s.name.includes('Lịch sử'));
+      if (!hasSuSub) {
+        const suSubject = SEED_DATA.subjects.find(s => s.id === 'sub_su11');
+        const suExam = SEED_DATA.exams.find(e => e.id === 'exam_su11_ghki');
+        const suQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_su11');
+
+        if (suSubject) subjects = [...subjects, suSubject];
+        if (suExam && !exams.some(e => e.id === 'exam_su11_ghki')) exams = [...exams, suExam];
+        if (suQuestions.length > 0) {
+          const existingIds = new Set(questions.map(q => q.id));
+          const newQ = suQuestions.filter(q => !existingIds.has(q.id));
+          questions = [...questions, ...newQ];
+        }
+        needsResave = true;
+      }
+
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt
       const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || s.name?.includes('Tin học 12'));
       if (hasTinHoc) {

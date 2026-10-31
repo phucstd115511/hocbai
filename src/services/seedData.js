@@ -211,6 +211,88 @@ export const SEED_DATA = {
           ]
         }
       ]
+    }    ,
+    {
+        "id": "sub_su11",
+        "name": "Lịch Sử 11",
+        "chapters": [
+            {
+                "id": "chap_su_t1",
+                "name": "Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB (Bài 1, 2)",
+                "sections": [
+                    {
+                        "id": "chap_su_t1_s1",
+                        "name": "I. Câu hỏi nhiều lựa chọn",
+                        "content": "Tiền đề, mục tiêu, nhiệm vụ, giai cấp lãnh đạo và ý nghĩa của các cuộc cách mạng tư sản.",
+                        "points": [
+                            "Mục tiêu chung: lật đổ chế độ phong kiến, thực dân, mở đường cho CNTB phát triển.",
+                            "Hai nhiệm vụ cơ bản: Dân tộc và Dân chủ.",
+                            "Sự phát triển của chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền (cuối TK XIX - đầu TK XX)."
+                        ]
+                    },
+                    {
+                        "id": "chap_su_t1_s2",
+                        "name": "II. Câu hỏi Đúng - Sai",
+                        "content": "Đọc hiểu tư liệu lịch sử về Tuyên ngôn độc lập, phong trào rào đất và CNTB độc quyền.",
+                        "points": [
+                            "Tuyên ngôn Nhân quyền và Dân quyền Pháp 1789 đề cao quyền bình đẳng và quyền tư hữu.",
+                            "Chế độ quân chủ lập hiến ở Anh và sự xuất hiện của tầng lớp quý tộc mới.",
+                            "Năm đặc điểm cơ bản của chủ nghĩa đế quốc theo V.I. Lê-nin."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "chap_su_t2",
+                "name": "Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay (Bài 3, 4)",
+                "sections": [
+                    {
+                        "id": "chap_su_t2_s1",
+                        "name": "I. Câu hỏi nhiều lựa chọn",
+                        "content": "Sự ra đời của Liên Xô, sự mở rộng của CNXH sau CTTG II và công cuộc đổi mới, cải cách hiện nay.",
+                        "points": [
+                            "Tháng 12/1922: Thành lập Liên bang Cộng hòa XHCN Xô viết (Liên Xô).",
+                            "Sau 1945: CNXH trở thành hệ thống thế giới trải dài từ Đông Âu qua châu Á đến Mỹ Latinh (Cuba 1959).",
+                            "Bài học kinh nghiệm từ sự sụp đổ của mô hình CNXH ở Liên Xô và Đông Âu."
+                        ]
+                    },
+                    {
+                        "id": "chap_su_t2_s2",
+                        "name": "II. Câu hỏi Đúng - Sai",
+                        "content": "Phân tích vai trò lịch sử của Liên Xô và thành tựu phát triển vượt bậc của Trung Quốc.",
+                        "points": [
+                            "Vai trò to lớn của Liên Xô trong việc đánh bại chủ nghĩa phát xít cứu loài người.",
+                            "Thành tựu công cuộc cải cách mở cửa của Trung Quốc về khoa học công nghệ và đường sắt cao tốc."
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "chap_su_t3",
+                "name": "Chủ đề 3: Bài 5. Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á",
+                "sections": [
+                    {
+                        "id": "chap_su_t3_s1",
+                        "name": "I. Câu hỏi nhiều lựa chọn",
+                        "content": "Quá trình xâm lược của thực dân phương Tây và chính sách cai trị tại các nước Đông Nam Á.",
+                        "points": [
+                            "Năm 1511: Bồ Đào Nha đánh chiếm Malacca mở đầu quá trình thực dân xâm lược ĐNA.",
+                            "Năm 1884: Nhà Nguyễn kí Hiệp ước Patenôtre đánh dấu Pháp hoàn thành xâm lược VN.",
+                            "Xiêm là nước duy nhất giữ được độc lập nhờ công cuộc cải cách của vua Rama V và ngoại giao mềm dẻo."
+                        ]
+                    },
+                    {
+                        "id": "chap_su_t3_s2",
+                        "name": "II. Câu hỏi Đúng - Sai",
+                        "content": "Đọc hiểu tư liệu về cải cách Rama V tại Xiêm và chính sách bóc lột của thực dân phương Tây.",
+                        "points": [
+                            "Cải cách hành chính của vua Rama V (1892) học tập theo mô hình phương Tây.",
+                            "Chính sách cướp đất lập đồn điền nông nghiệp và bòn rút tài nguyên thiên nhiên của thực dân."
+                        ]
+                    }
+                ]
+            }
+        ]
     }
   ],
   "questions": [
@@ -5384,6 +5466,1604 @@ export const SEED_DATA = {
       "favorite": false,
       "createdAt": "2026-10-28T09:50:00.000Z",
       "updatedAt": "2026-10-28T09:50:00.000Z"
+    }    ,
+    {
+          "id": "q_su11_t1_mcq_01",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Một trong những nhiệm vụ của các cuộc cách mạng tư sản thế kỉ XVII - XVIII là",
+          "options": [
+                "đưa giai cấp công nhân lên nắm quyền.",
+                "xóa bỏ triệt để mâu thuẫn trong xã hội.",
+                "xác lập sự thống trị của chủ nghĩa thực dân.",
+                "xóa bỏ tình trạng phong kiến cát cứ."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: xóa bỏ tình trạng phong kiến cát cứ.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_02",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Cách mạng tư sản Anh thế kỉ XVII thắng lợi đã",
+          "options": [
+                "lật đổ chế độ thuộc địa nửa phong kiến.",
+                "thiết lập chế độ dân chủ cộng hòa ở Anh.",
+                "thiết lập chế độ quân chủ lập hiến ở Anh.",
+                "giành độc lập dân tộc từ tay thực dân Pháp."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: thiết lập chế độ quân chủ lập hiến ở Anh.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_03",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Mục tiêu chung của các cuộc cách mạng tư sản thế kỉ XVI - XVIII là",
+          "options": [
+                "lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
+                "lật đổ chế độ phong kiến, cô lập cùng tàn tích của nó.",
+                "tạo điều kiện cho sự phát triển của chế độ phong kiến.",
+                "mở đường cho sự phát triển của chủ nghĩa xã hội."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: lật đổ chế độ phong kiến, thực dân cùng tàn tích của nó.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_04",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Các cuộc cách mạng tư sản thế kỉ XVI - XVIII có hai nhiệm vụ cơ bản là",
+          "options": [
+                "dân tộc và dân chủ.",
+                "dân tộc và dân sinh.",
+                "độc lập và tự do.",
+                "dân chủ và dân quyền."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: dân tộc và dân chủ.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_05",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Lãnh đạo của cuộc cách mạng tư sản Anh thế kỉ XVII là",
+          "options": [
+                "tư sản và chủ nô.",
+                "tư sản và quý tộc mới.",
+                "tăng lữ và quý tộc.",
+                "chủ nô và quý tộc."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: tư sản và quý tộc mới.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_06",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Trong các thế kỉ XVI - XVIII, phương thức sản xuất gì phát triển mạnh ở các nước Âu - Mỹ?",
+          "options": [
+                "Cộng sản nguyên thủy.",
+                "Chiếm hữu nô lệ.",
+                "Xã hội chủ nghĩa.",
+                "Tư bản chủ nghĩa."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Tư bản chủ nghĩa.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_07",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Tại 13 thuộc địa Anh ở Bắc Mỹ trước cách mạng, người dân phải tuân theo:",
+          "options": [
+                "Các đạo luật khắt khe do Chính phủ Anh đề ra.",
+                "Các đạo luật khắt khe do chính quyền mỗi thuộc địa đề ra.",
+                "Các đạo luật cởi mở do Chính phủ Anh đề ra.",
+                "Các đạo luật cởi mở do chính quyền mỗi thuộc địa đề ra."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Các đạo luật khắt khe do Chính phủ Anh đề ra.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_08",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Nội dung nào sau đây là mục tiêu của cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII?",
+          "options": [
+                "Lật đổ chế độ phong kiến đứng đầu vua Sác-lơ I.",
+                "Lật đổ ách thống trị của thực dân Anh, giành độc lập.",
+                "Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
+                "Thiết lập chính quyền của giai cấp tư sản và ..."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Lật đổ chế độ phong kiến đứng đầu vua Lu-i XVI.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_09",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "“Trào lưu Triết học Ánh sáng đã tích cực phê phán tình trạng mục nát, lỗi thời của chế độ phong kiến và Giáo hội Thiên Chúa giáo đương thời, đưa ra những lí thuyết về việc xây dựng nhà nước mới”. Đây là tiền đề tư tưởng của cuộc cách mạng nào?",
+          "options": [
+                "Cách mạng tư sản Anh.",
+                "Cách mạng tư sản Pháp.",
+                "Cách mạng giải phóng ở Bắc Mỹ.",
+                "Cách mạng giải phóng ở Đức."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Cách mạng tư sản Pháp.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_10",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Các cuộc cách mạng tư sản thời cận đại đều",
+          "options": [
+                "dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
+                "tạo ra một nền dân chủ, tự do thực sự, rộng rãi.",
+                "lật đổ chế độ phong kiến, thiết lập nền cộng hòa.",
+                "lật đổ chế độ thực dân, thiết lập nền cộng hòa."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: dẫn đến xác lập quan hệ sản xuất tư bản chủ nghĩa.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_11",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Chủ nghĩa đế quốc ra đời từ cuối thế kỉ XIX đầu thế kỉ XX là hệ quả trực tiếp của quá trình",
+          "options": [
+                "xâm lược thuộc địa.",
+                "giao lưu buôn bán.",
+                "toàn cầu hóa.",
+                "hợp tác kinh tế."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: xâm lược thuộc địa.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_12",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Hình thức tiêu biểu của các tổ chức độc quyền ở Đức và Pháp vào cuối thế kỉ XIX - đầu thế kỉ XX, là",
+          "options": [
+                "các-ten và tô-rớt.",
+                "xanh-đi-ca và các-ten.",
+                "tô-rớt và công-xoóc-xi-om.",
+                "con-sơn và công-gô-lô-mê-rét."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: xanh-đi-ca và các-ten.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_13",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Sau các cuộc cách mạng tư sản, chủ nghĩa tư bản từng bước được xác lập ở đâu?",
+          "options": [
+                "Châu Âu và Bắc Mĩ.",
+                "Tây Âu và Châu Á.",
+                "Bắc Mĩ và Nam Á.",
+                "Châu Á và Châu Phi."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Châu Âu và Bắc Mĩ.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_14",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Chính sách xâm lược và mở rộng thuộc địa của các nước tư bản nhằm mục đích đáp ứng nhu cầu",
+          "options": [
+                "phát triển khoa học – kĩ thuật.",
+                "giải quyết tình trạng thất nghiệp.",
+                "thu hút nguồn vốn đầu tư bên ngoài.",
+                "nguyên liệu và nguồn nhân công."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: nguyên liệu và nguồn nhân công.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_15",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Sự kiện đánh dấu sự mở rộng của cuộc cách mạng tư sản bên ngoài Châu Âu là",
+          "options": [
+                "Cách mạng tư sản Anh.",
+                "Cách mạng tư sản Pháp.",
+                "Cách mạng tư sản Hà Lan.",
+                "Cách mạng tư sản Bắc Mĩ."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Cách mạng tư sản Bắc Mĩ.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_16",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Cuối thế kỉ XIX – đầu thế kỉ XX, các nước tư bản chủ nghĩa đã chuyển sang giai đoạn",
+          "options": [
+                "tự do cạnh tranh.",
+                "cải cách đất nước.",
+                "đế quốc chủ nghĩa.",
+                "chủ nghĩa phát xít."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: đế quốc chủ nghĩa.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_17",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Cơ sở tạo ra bước chuyển tiếp của chủ nghĩa tư bản từ tự do cạnh tranh sang độc quyền là gì?",
+          "options": [
+                "Sự phát triển của kinh tế tư bản chủ nghĩa.",
+                "Sự phát triển của khoa học – công nghệ.",
+                "Sự tăng cường đầu tư vốn trong sản xuất.",
+                "Sự phát triển của các tổ chức độc quyền."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Sự phát triển của các tổ chức độc quyền.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_18",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Ở châu Á, cuối thế kỉ XIX, những quốc gia nào sau khi tiến hành cải cách duy tân đã đưa đất nước theo con đường tư bản chủ nghĩa?",
+          "options": [
+                "Nhật Bản và Xiêm.",
+                "Nhật Bản và Trung Quốc.",
+                "Xiêm và Việt Nam.",
+                "Xiêm và Ấn Độ."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Nhật Bản và Xiêm.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_19",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Chủ nghĩa tư bản hiện đại là thuật ngữ dùng để chỉ chủ nghĩa tư bản",
+          "options": [
+                "trong giai đoạn tự do cạnh tranh.",
+                "bắt đầu chuyển sang giai đoạn độc quyền.",
+                "từ sau chiến tranh thế giới thứ II đến nay.",
+                "từ sau chiến tranh thế giới thứ I đến nay."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: từ sau chiến tranh thế giới thứ II đến nay.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_20",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Sự xác lập của chủ nghĩa tư bản ở Châu Âu và Bắc Mĩ đều có điểm chung là",
+          "options": [
+                "đều thành lập chế độ quân chủ lập hiến.",
+                "đều thành lập nước cộng hòa.",
+                "đều hoàn toàn xóa bỏ hoàn toàn chế độ phong kiến.",
+                "đều do giai cấp tư sản lãnh đạo và giành thắng lợi."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: đều do giai cấp tư sản lãnh đạo và giành thắng lợi.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_21",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Đẩy nhanh quá trình tích tụ và tập trung tư bản đã dẫn đến",
+          "options": [
+                "sự xuất hiện các công ty độc quyền lũng đoạn nền kinh tế đất nước.",
+                "sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
+                "sự ra đời của chủ nghĩa đế quốc trên phạm vi toàn thế giới.",
+                "sự hình thành chủ nghĩa tư bản hiện đại sau chiến tranh thế giới thứ hai."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: sự xuất hiện những xí nghiệp khổng lồ và các tổ chức độc quyền.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_22",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Chủ nghĩa đế quốc là hệ quả trực tiếp của sự phát triển và mở rộng của chủ nghĩa tư bản nhằm:",
+          "options": [
+                "tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
+                "tìm kiếm nguyên liệu và thị trường ở nước ngoài.",
+                "khai thác tài nguyên ở các nước thuộc địa.",
+                "tăng cường chính sách xâm lược để mở rộng thị trường."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: tìm kiếm thị trường, thu lợi nhuận và đầu tư tư bản ở nước ngoài.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_23",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Nội dung nào sau đây tạo cơ sở cho bước chuyển biến của chủ nghĩa tư bản từ tự do cạnh tranh sang giai đoạn độc quyền?",
+          "options": [
+                "Quá trình hợp tác ở các nước tư bản.",
+                "Sự phát triển của các tổ chức độc quyền.",
+                "Nhiều trung tâm kinh tế - tài chính ra đời.",
+                "Sự ra đời nhiều tổ chức liên kết khu vực."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Sự phát triển của các tổ chức độc quyền.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_mcq_24",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s1",
+          "stem": "Nguyên nhân trực tiếp nào đã thúc đẩy các nước đế quốc tiến hành xâm lược các nước châu Á, Phi, Mỹ Latinh?",
+          "options": [
+                "Do nhu cầu về nguyên liệu và nhân công.",
+                "Khát vọng chinh phục những vùng đất mới.",
+                "Thực hiện tham vọng bá chủ toàn thế giới.",
+                "Thúc đẩy sự giao lưu văn hóa các châu lục."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Do nhu cầu về nguyên liệu và nhân công.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Cách mạng tư sản"
+          ]
+    },
+    {
+          "id": "q_su11_t1_tf_01",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: Tư liệu 1: “Tất cả mọi người sinh ra có quyền bình đẳng. Tạo hóa cho họ những quyền không ai có thể xâm phạm được; trong những quyền ấy, có quyền được sống, quyền tự do và quyền mưu cầu hạnh phúc”. (Tuyên ngôn Độc lập (Mĩ, năm 1776)) Tư liệu 2: “Điều 1. Con người sinh ra đều có quyền tự do và bình đẳng. Những sự phân biệt xã hội chỉ có thể dựa trên lợi ích chung. Điều 17. Quyền tư hữu là quyền bất khả xâm phạm và thiêng liêng không ai có thể bị tước bỏ”. (Tuyên ngôn Nhân quyền và Dân quyền (Pháp, năm 1789))",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền ra đời từ cuộc cách mạng tư sản Pháp cuối thế kỉ XVIII.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Điểm chung của Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp là đề cao quyền con người và quyền công dân.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Bản Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp năm 1789 không đề cao quyền tư hữu cá nhân vì đó là biểu hiện cho sự phân biệt giàu – nghèo trong xã hội.",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Trong Tuyên ngôn độc lập của nước Việt Nam dân chủ cộng hòa (2/9/1945), Chủ tịch Hồ Chí Minh đã trích dẫn những câu nói nổi tiếng trong bản Tuyên ngôn Độc lập của nước Mĩ và Tuyên ngôn Nhân quyền và Dân quyền của nước Pháp.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t1_tf_02",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Anh là quốc gia duy nhất trên Trái Đất đã thủ tiêu quyền lực của nhà vua thông qua đấu tranh bằng sự cố gắng, cuối cùng Anh đã thiết lập Chính phủ mới mà nhà vua chỉ có quyền khi làm việc tốt và bị hạn chế quyền lực khi làm điều xấu, các lãnh chúa phong kiến thì không được phép ngạo mạn và không có chức hầu, nhân dân là người nắm quyền. Thượng nghị viện Anh và các cơ quan trực thuộc có quyền quyết đoán công việc của quốc gia, vua chỉ được coi như là đồ trang trí...”. (Sách giáo khoa lớp 10 của nước cộng hòa Pháp, Magnard, tr 208.)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Anh là quốc gia duy nhất trên thế giới hiện nay theo chế độ quân chủ lập hiến.",
+                      "answer": false
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Sau cách mạng tư sản Anh vua không còn là người nắm quyền mà chỉ được coi như là đồ trang trí.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Thượng nghị viện Anh là cơ quan có quyền quyết định cao nhất trong mọi vấn đề.",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Nước Pháp sau cách mạng tư sản năm 1789 cũng là một nước quân chủ lập hiến.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t1_tf_03",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: C. Mác viết: “Việc tìm thấy những mỏ vàng, mỏ bạc ở Châu Mỹ, việc biến người bản xứ thành người nô lệ, việc chôn vùi họ vào các hầm mỏ hoặc tuyệt diệt họ đi, những buổi đầu của cuộc chinh phục và cướp bóc ở Đông Ấn, việc biến Châu Phi thành một vùng đất cấm thương mại đen, đầy những phương pháp tích lũy ban đầu đó có tính chất tàn nhẫn, báo hiệu buổi bình minh của thời đại tư bản chủ nghĩa”. (C. Mác, Tư bản, quyển 1, tập 3, NXB Sự thật, Hà Nội, năm 1960, trang 272)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Đoạn trích nêu quá trình xâm lược và săn bắt người da đen ở Châu Phi đưa sang Châu Mỹ làm nô lệ.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Châu Mỹ là một vùng đất mới rất giàu về tài nguyên thiên nhiên, thu hút sự xâm lược của thực dân phương Tây.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Trước khi bị phương Tây xâm lược, Châu Mỹ là một vùng đất có nền kinh tế rất phát triển.",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Nô lệ da đen trở thành lực lượng lao động chính trong các đồn điền, trang trại ở miền Nam nước Mỹ trong giai đoạn thế kỉ XVII-XIX.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t1_tf_04",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Lạy Chúa tôi! Những đất bị rào ấy sẽ là một tổn thất của chúng ta! Vì chúng mà chúng ta phải trả tiền thuê nhà ở cho các nông trại của chúng ta nặng hơn bao giờ hết, và chúng ta sẽ không tìm thấy đất đai để cày bừa nữa. Mọi cái đều bị chiếm làm đồng cỏ cho cừu và cừu có lông lớn, đến nỗi trong vòng 7 năm, trong một vùng có bán kính 6 dặm quanh tôi đã có hàng chục chiếc máy cày bị bỏ xó; nơi mà hơn 40 người ngày trước đã tìm thấy chỗ sống thì bây giờ chỉ có 1 người và đàn cừu của anh ta. Chính những con cừu này đem lại khốn khổ cho chúng ta. Họ phải thôi xứ sở nghề nghiệp ngày xưa đã từng cung cấp cho chúng ta đủ các loại sản phẩm này, còn bây giờ chỉ có cừu, cừu lại cừu”. (Phan Ngọc Liên (2008), Lịch sử thế giới cận đại, tập 1, NXB Đại học Sư phạm, tr 35)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Cuối thế kỉ XV – đầu thế kỉ XVI, ở Anh diễn ra phong trào “rào đất nuôi cừu”.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Nguyên nhân chủ yếu dẫn đến phong trào “rào đất cướp ruộng” ở Anh là do sự phát triển mạnh mẽ của ngành công nghiệp len dạ.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Sự phát triển của kinh tế tư bản chủ nghĩa trong nông nghiệp làm xuất hiện tầng lớp quý tộc mới, sau này đã liên minh với tư sản chống lại chế độ phong kiến Anh.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Phong trào “rào đất cướp ruộng” đã góp phần cải thiện đời sống của nông dân Anh trước cách mạng tư sản.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t1_tf_05",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t1",
+          "sectionId": "chap_su_t1_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “- Sự tập trung sản xuất và tư bản đạt tới một mức độ phát triển cao khiến nó tạo ra những tổ chức độc quyền có một vai trò quyết định trong sinh hoạt kinh tế. - Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp và trên cơ sở “tư bản tài chính” đó, xuất hiện một bọn đầu sỏ tài chính. - Việc xuất khẩu tư bản, khác với việc xuất khẩu hàng hoá, đã có một ý nghĩa quan trọng đặc biệt. - Sự hình thành những liên minh độc quyền quốc tế của bọn tư bản chia nhau thế giới. - Việc các cường quốc tư bản chủ nghĩa lớn nhất đã chia nhau xong đất đai trên thế giới”. (Lê-nin toàn tập, Tập 27, NXB Sự thật, Hà Nội, 1961, tr.402)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Một trong những đặc điểm của chủ nghĩa tư bản độc quyền là xuất hiện các tổ chức độc quyền.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Tổ chức độc quyền là sự liên minh giữa các giai cấp tư sản và chủ nô để thu lợi nhuận cao.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Sự hợp nhất tư bản ngân hàng với tư bản công nghiệp tạo nên “tư bản tài chính”.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Các cường quốc tư bản chủ nghĩa bắt đầu xâm lược, phân chia thuộc địa trên thế giới.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai dựa theo kiến thức SGK Lịch Sử 11 - Chủ đề 1: Cách mạng tư sản và sự phát triển của CNTB.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 1",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_01",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Tháng 12/1922, Đại hội lần thứ nhất các Xô viết toàn liên bang đã thông qua văn kiện nào sau đây?",
+          "options": [
+                "Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+                "Cương lĩnh chính trị đầu tiên của Đảng Bôn-sê-vích liên minh với tư sản.",
+                "Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất trên toàn Liên bang Xô viết.",
+                "Chính sách Kinh tế mới, Sắc lệnh Hòa bình và Sắc lệnh Ruộng đất."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Tuyên bố thành lập Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_02",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Từ sau Chiến tranh thế giới thứ hai (1939-1945), quốc gia nào sau đây ở khu vực Đông Nam Á chọn con đường phát triển lên chủ nghĩa xã hội?",
+          "options": [
+                "Việt Nam.",
+                "In-đô-nê-xi-a.",
+                "Thái Lan.",
+                "Philippin."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Việt Nam.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_03",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Chủ nghĩa xã hội được mở rộng qua khu vực Mỹ Latinh sau thắng lợi của cách mạng ở quốc gia nào sau đây?",
+          "options": [
+                "Bra-xin.",
+                "Pê-ru.",
+                "Cu-ba.",
+                "Chi-lê."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Cu-ba.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_04",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia châu Á nào sau đây lựa chọn con đường đi theo chủ nghĩa xã hội?",
+          "options": [
+                "Thái Lan.",
+                "Ấn Độ.",
+                "Nhật Bản.",
+                "Triều Tiên."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Triều Tiên.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_05",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Trước năm 1945, quốc gia duy nhất trên thế giới đi theo con đường chủ nghĩa xã hội là",
+          "options": [
+                "Trung Quốc.",
+                "Việt Nam.",
+                "Liên Xô.",
+                "Triều Tiên."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Liên Xô.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_06",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Sau Chiến tranh thế giới thứ hai, các quốc gia ở khu vực nào sau đây đã lựa chọn con đường đi theo chủ nghĩa xã hội?",
+          "options": [
+                "Tây Âu.",
+                "Đông Âu.",
+                "Bắc Mỹ.",
+                "Nam Á."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Đông Âu.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_07",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Năm 1922, lịch sử thế giới ghi nhận sự kiện quan trọng nào sau đây?",
+          "options": [
+                "V.I. Lê-nin thành lập Chính quyền Xô viết ở nước Nga.",
+                "Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
+                "Liên Xô, Mỹ, Anh họp hội nghị I-an-ta ở Liên Xô.",
+                "Quốc tế cộng sản được thành lập ở Mát-xcơ-va (Liên Xô)."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Liên bang Cộng hòa xã hội chủ nghĩa Xô viết ra đời.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_08",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Sau Chiến tranh thế giới thứ hai, quốc gia nào sau đây ở khu vực Đông Á đi theo con đường chủ nghĩa xã hội?",
+          "options": [
+                "Trung Quốc.",
+                "Hàn Quốc.",
+                "Nhật Bản.",
+                "Mông Cổ."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Trung Quốc.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_09",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Sự kiện nào sau đây đã cổ vũ phong trào giải phóng dân tộc trên thế giới?",
+          "options": [
+                "Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+                "Sự hình thành của Trật tự thế giới hai cực I-an-ta.",
+                "Sự thành lập của tổ chức Hiệp ước Bắc Đại Tây Dương.",
+                "Sự giải thể của tổ chức Hiệp ước Vác-sa-va."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_10",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Bối cảnh nào sau đây đã tạo điều kiện thuận lợi để nhân dân các nước Đông Âu nổi dậy giành chính quyền và thành lập các nhà nước dân chủ nhân dân?",
+          "options": [
+                "Nhật Bản đầu hàng quân Đồng minh vô điều kiện.",
+                "Chiến tranh thế giới thứ hai bùng nổ và lan rộng.",
+                "Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
+                "Trung Quốc hoàn thành cách mạng dân tộc dân chủ."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Sự giúp đỡ của Hồng quân Liên Xô để tiêu diệt phát xít.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_11",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Sự khủng hoảng sụp đổ của hệ thống chủ nghĩa xã hội ở châu Âu (1989-1991) cho thấy",
+          "options": [
+                "bài học về mô hình xây dựng chủ nghĩa xã hội.",
+                "chế độ xã hội chủ nghĩa đã không còn phù hợp.",
+                "Mỹ đã thành công trong chiến lược toàn cầu.",
+                "Mỹ đã thắng lợi trong cuộc Chiến tranh lạnh."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: bài học về mô hình xây dựng chủ nghĩa xã hội.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_12",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Từ sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và Liên Xô (1989-1991), Việt Nam cần rút ra bài học kinh nghiệm nào sau đây?",
+          "options": [
+                "Tiến hành cải cách đất nước trước khi xuất hiện những biểu hiện khủng hoảng.",
+                "Tuân thủ các quy luật phát triển khách quan, xây dựng cơ chế tập trung bao cấp.",
+                "Thực hiện chính sách đối nội đối ngoại theo hướng đa dạng hóa, đa phương hóa.",
+                "Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Luôn đề phòng cảnh giác với âm mưu “diễn biến hòa bình” và “tự chuyển hóa”.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_13",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Cách mạng tháng Mười Nga 1917 có tác động nào sau đây đến quá trình hoạt động yêu nước và cách mạng của Nguyễn Ái Quốc?",
+          "options": [
+                "Đoàn kết nhân dân Việt Nam với phong trào cộng sản và công nhân quốc tế.",
+                "Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
+                "Xác định được hai nhiệm vụ cho cách mạng Việt Nam là dân tộc và dân chủ.",
+                "Xây dựng khối đoàn kết dân tộc trên nền tảng liên minh công-nông-binh."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Lựa chọn con đường giải phóng dân tộc theo khuynh hướng cách mạng vô sản.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_14",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Từ năm 1986, Lào thực hiện đường lối đổi mới toàn diện theo định hướng:",
+          "options": [
+                "Xã hội chủ nghĩa.",
+                "Tư bản chủ nghĩa hiện đại.",
+                "Cách mạng công nghiệp 4.0.",
+                "Hoàn hảo hóa."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Xã hội chủ nghĩa.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_15",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Đâu không phải một thành tựu nổi bật về khoa học – công nghệ của Trung Quốc?",
+          "options": [
+                "Phát triển ngành hàng không vũ trụ (phóng được tàu Thần Châu vào không gian).",
+                "Xây dựng hệ thống định vị vệ tinh Bắc Đẩu, hệ thống đường sắt cao tốc.",
+                "Phát triển hạ tầng kĩ thuật số, các trung tâm dữ liệu hiện đại.",
+                "Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Chế tạo được đầu đạn hạt nhân có sức công phá gấp hàng triệu lần hai quả bom nguyên tử của Mỹ thả xuống Nhật Bản năm 1945.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_mcq_16",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s1",
+          "stem": "Cả nước Việt Nam tiến lên xây dựng chủ nghĩa xã hội từ năm nào?",
+          "options": [
+                "Sau khi thắng Pháp năm 1954.",
+                "Sau khi giải phóng miền Nam năm 1975.",
+                "Sau khi hoàn thành thống nhất đất nước năm 1976.",
+                "Sau Đổi mới năm 1986."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Sau khi hoàn thành thống nhất đất nước năm 1976.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Chủ nghĩa xã hội"
+          ]
+    },
+    {
+          "id": "q_su11_t2_tf_01",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Liên Xô là nhà nước chuyên chính vô sản duy nhất trên thế giới.",
+                      "answer": false
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Vừa mới ra đời Liên Xô đã đánh thắng cuộc can thiệp vũ trang của liên quân 14 nước đế quốc.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Liên Xô đánh thắng phát xít Nhật ở châu Á là điều kiện khách quan thuận lợi để nhân dân Việt Nam giành thắng lợi trong Cách mạng tháng Tám năm 1945.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Cứu cả loài người thoát khỏi ách nô lệ chủ nghĩa phát xít là trách nhiệm của Liên Xô.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t2_tf_02",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Liên Xô là nhà nước chuyên chính vô sản đầu tiên, đã tỏ ra sức mạnh phi thường. Ngay từ khi mới thành lập, Liên Xô chẳng những đập tan được bọn phản cách mạng trong nước, mà còn đánh thắng cuộc can thiệp vũ trang của 14 nước đế quốc, chưa đầy 30 năm sau lại đánh thắng hoàn toàn bọn phát xít Đức – Ý – Nhật, chẳng những bảo vệ được nhà nước Xô Viết mình mà còn góp phần to lớn giải phóng nhiều nước khác, cứu cả loài người khỏi ách nô lệ của chủ nghĩa phát xít”. (Hồ Chí Minh, Cách mạng tháng Mười vĩ đại mở ra con đường giải phóng cho các dân tộc, trích trong: Hồ Chí Minh, Toàn tập, Tập 15, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, tr.388 – 389)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Liên Xô là nhà nước chuyên chính vô sản đầu tiên trên thế giới.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Liên Xô đã đánh bại thù trong giặc ngoài sau khi vừa thành lập.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Chưa đầy 30 năm sau, Liên Xô bị sụp đổ trong tay chủ nghĩa phát xít.",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Sự ra đời của Liên Xô chẳng những có ý nghĩa to lớn đối với nhân dân Liên Xô mà cả đối với nhân loại thế giới.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t2_tf_03",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t2",
+          "sectionId": "chap_su_t2_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Năm 2020, 75% thành phố của Trung Quốc với dân số 500 nghìn người trở lên có đường sắt cao tốc. Trong khi đó, ở Tây Ban Nha, quốc gia có mạng lưới đường sắt tốc độ cao lớn nhất châu Âu và đứng thứ 2 toàn cầu chỉ có hơn 3 nghìn km đường sắt chuyên dụng đáp ứng tàu tốc độ 250km/h. Ở Vương quốc Anh chỉ có 107km, trong khi ở Mỹ chỉ có 1 tuyến đường sắt gần như tiêu chuẩn cho tàu cao tốc. Đến cuối năm 2021, tổng chiều dài đường sắt của Trung Quốc đã lên đến 150 nghìn km, bao gồm 40 nghìn km đường sắt cao tốc. Đường sắt cao tốc Trung Quốc hiện chiếm 66,3% tổng chiều dài đường sắt cao tốc trên toàn thế giới”. (Theo Tạp chí Giao thông vận tải, Trung Quốc đã trở thành cường quốc đường sắt cao tốc như thế nào?)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Hiện nay, Trung Quốc là quốc gia có mạng lưới đường sắt cao tốc phát triển nhất thế giới.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Tổng chiều dài đường sắt cao tốc của Trung Quốc nhiều hơn tổng chiều dài đường sắt cao tốc của Tây Ban Nha, Anh, Mỹ cộng lại.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Đoạn trích phản ánh một trong những thành tựu nổi bật về khoa học – kĩ thuật và phát triển cơ sở hạ tầng của Trung Quốc hiện nay.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Năm 2020, toàn bộ các thành phố của Trung Quốc đều có hệ thống đường sắt cao tốc bao phủ.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 2: Chủ nghĩa xã hội từ năm 1917 đến nay.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 2",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_01",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Sự kiện nào sau đây mở đầu quá trình xâm lược của chủ nghĩa thực dân phương Tây ở khu vực Đông Nam Á?",
+          "options": [
+                "Tây Ban Nha xâm lược Phi-líp-pin.",
+                "Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
+                "Pháp tấn công Đà Nẵng (Việt Nam).",
+                "Hà Lan xâm lược In-đô-nê-xi-a."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Bồ Đào Nha đánh chiếm Ma-lắc-ca (Ma-lai-xi-a).",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_02",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Năm 1898 diễn ra sự kiện gì ở Đông Nam Á?",
+          "options": [
+                "Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
+                "Bồ Đào Nha đánh chiếm Ma-lắc-ca.",
+                "Pháp xâm lược Việt Nam.",
+                "Anh xâm lược xong Xin-ga-po."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Mĩ thay thế Tây Ban Nha cai trị Phi-líp-pin.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_03",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Việc Pháp hoàn thành quá trình xâm lược Việt Nam gắn với sự kiện nào?",
+          "options": [
+                "Năm 1862, nhà Nguyễn kí Hiệp ước Nhâm Tuất.",
+                "Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
+                "Nhà Nguyễn thực hiện chính sách cấm đạo.",
+                "Năm 1883, nhà Nguyễn kí Hiệp ước Hác-măng."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Năm 1884, nhà Nguyễn kí Hiệp ước Pa-tơ-nốt.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_04",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Quốc gia nào ở Đông Nam Á trở thành vùng đệm giữa hai thế lực thực dân Anh và Pháp?",
+          "options": [
+                "Xin-ga-po.",
+                "In-đô-nê-xi-a.",
+                "Ma-lai-xi-a.",
+                "Xiêm."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Xiêm.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_05",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Đứng trước mối đe dọa của chủ nghĩa thực dân, Xiêm đã",
+          "options": [
+                "thực hiện chính sách đóng cửa, bế tỏa cảng quan.",
+                "thực hiện chính sách cấm đạo Thiên Chúa.",
+                "tiến hành công cuộc cải cách.",
+                "tiến hành kháng chiến bảo vệ nền độc lập."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: tiến hành công cuộc cải cách.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_06",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Nửa sau thế kỉ XIX, quốc gia Đông Nam Á nào dưới đây không bị thực dân phương Tây xâm lược?",
+          "options": [
+                "Xiêm.",
+                "Ma-lay-xi-a.",
+                "In-đô-nê-xi-a.",
+                "Phi-líp-pin."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Xiêm.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_07",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Từ nửa sau thế kỉ XIX, chế độ phong kiến các nước Đông Nam Á đang trong tình trạng",
+          "options": [
+                "vừa mới hình thành.",
+                "khủng hoảng, suy yếu.",
+                "đang trên đà phát triển.",
+                "đang chuyển sang giai đoạn tư bản."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: khủng hoảng, suy yếu.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_08",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Đến cuối thế kỉ XIX, những quốc gia nào ở Đông Nam Á là thuộc địa của Anh?",
+          "options": [
+                "Xiêm, In-đô-nê-xi-a.",
+                "Ma-lay-xi-a, Miến Điện.",
+                "In-đô-nê-xi-a, Phi-líp-pin.",
+                "Ma-lay-xi-a, Phi-líp-pin."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Ma-lay-xi-a, Miến Điện.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_09",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Đâu không phải là nội dung cải cách trong chính sách ngoại giao của vua Rama V (1892)?",
+          "options": [
+                "Thực hiện chính sách ngoại giao mềm dẻo.",
+                "Lợi dụng vị trí nước “đệm” giữa hai thế lực Anh – Pháp.",
+                "Cắt nhượng một số vùng đất phụ thuộc để giữ gìn chủ quyền đất nước.",
+                "Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Từng bước thiết lập quan hệ ngoại giao với Mĩ, để kiềm chế Anh – Pháp.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_10",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Ý nào sau đây không phản ánh đúng ý nghĩa cuộc cải cách Ra-ma V đối với sự phát triển của Xiêm?",
+          "options": [
+                "Xiêm vẫn giữ được độc lập.",
+                "Tạo cho nước Xiêm một bộ mặt mới.",
+                "Xiêm trở thành đồng minh thân cận của Mĩ.",
+                "Đưa Xiêm phát triển theo hướng tư bản chủ nghĩa."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Xiêm trở thành đồng minh thân cận của Mĩ.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_11",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Ý nào sau đây không phải là nguyên nhân để thực dân phương Tây xâm lược các nước Đông Nam Á?",
+          "options": [
+                "Các nước này đông dân, có lâm, hải sản và hương liệu quý.",
+                "Đây là một khu vực có vị trí địa lí quan trọng, giàu tài nguyên.",
+                "Chế độ phong kiến ở khu vực này đang lâm vào khủng hoảng, suy yếu.",
+                "Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Các nước tư bản phương Tây muốn biến khu vực này thành thuộc địa kiểu mới.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_12",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Trong chính sách cai trị về văn hóa, xã hội và giáo dục ở Đông Nam Á, thực dân phương Tây đã",
+          "options": [
+                "làm xói mòn giá trị truyền thống của các quốc gia.",
+                "phát triển kinh tế ở những nơi có điều kiện phù hợp.",
+                "chú trọng xây dựng hệ thống đường giao thông.",
+                "chú trọng thực hiện các chính sách xã hội – đói."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: làm xói mòn giá trị truyền thống của các quốc gia.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_13",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "“Chúng lập ra ba chế độ khác nhau ở Trung, Nam, Bắc để ngăn cản việc thống nhất nước nhà của ta, để ngăn cản dân tộc ta đoàn kết”. (Hồ Chí Minh toàn tập, tập 4, NXB Chính trị Quốc gia Sự thật, Hà Nội, 2011, trang 2,3) Đoạn tư liệu trên phản ánh chính sách cai trị của thực dân Pháp ở Việt Nam trên lĩnh vực nào?",
+          "options": [
+                "Văn hóa.",
+                "Tôn giáo.",
+                "Kinh tế.",
+                "Chính trị."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Chính trị.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_mcq_14",
+          "type": "mcq",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s1",
+          "stem": "Đầu thế kỉ XX, hầu hết các nước trong khu vực Đông Nam Á đều trở thành",
+          "options": [
+                "các nước dân chủ cộng hòa độc lập.",
+                "thuộc địa của thực dân phương Tây.",
+                "trung tâm hàng hải lớn trên thế giới.",
+                "các quốc gia phong kiến độc lập, tự chủ."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: thuộc địa của thực dân phương Tây.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đông Nam Á"
+          ]
+    },
+    {
+          "id": "q_su11_t3_tf_01",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Từ năm 1892, Ra-ma V tiến hành cuộc cải cách hành chính. Sau khi cử nhiều đoàn đi nghiên cứu thể chế của một số nước châu Âu, giai cấp thống trị Xiêm coi mô hình nhà nước quân chủ lập hiến của đế quốc Đức là phù hợp với tình hình Xiêm. Vua vẫn là người có quyền lực tối cao trong toàn quốc. Bên cạnh vua có Hội đồng nhà nước đóng vai trò cơ quan tư vấn, khởi thảo luật pháp. Bộ máy hành pháp của triều đình được thay thế bằng Hội đồng Chính phủ gồm 12 bộ trưởng”. (Vũ Dương Ninh, Lịch sử Vương quốc Thái Lan, NXB Giáo dục, 1994, tr.92)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Đoạn trích cung cấp thông tin về cải cách của vua Ra-ma V trên tất cả mọi lĩnh vực.",
+                      "answer": false
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Cuộc cải cách hành chính của vua Ra-ma V bắt đầu được tiến hành từ cuối thế kỉ XVIII.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Thể chế nhà nước quân chủ lập hiến mà Xiêm xây dựng từ cuộc cải cách của vua Ra-ma V là học tập theo mô hình của phương Tây.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Với cải cách của vua Ra-ma V, Hội đồng nhà nước đóng vai trò lập pháp, còn Hội đồng Chính phủ đóng vai trò hành pháp.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đúng sai"
+          ]
+    },
+    {
+          "id": "q_su11_t3_tf_02",
+          "type": "truefalse",
+          "subjectId": "sub_su11",
+          "chapterId": "chap_su_t3",
+          "sectionId": "chap_su_t3_s2",
+          "stem": "Đọc đoạn tư liệu sau đây: “Điểm chung của chính sách thống trị thực dân ở Đông Nam Á là khai thác, vơ vét và bòn rút các quốc gia trong khu vực bằng chính sách thuế khóa đánh vào các tầng lớp nhân dân bản địa, cướp ruộng đất lập đồn điền, bóc lột sức người, khai thác tài nguyên; thông qua khai thác triệt để sản phẩm nông nghiệp, tiếp tục đầu tư để bóc lột lâu dài trong công nghiệp... Vì vậy, cao su, cà phê, chè, lúa gạo là những sản vật đặc trưng của Đông Nam Á được thực dân phương Tây chú ý khai thác từ sớm”. (Lương Ninh (Chủ biên), Đông Nam Á: Lịch sử từ nguyên thủy đến ngày nay, NXB Chính trị quốc gia, Hà Nội, 2018, tr.337)",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Đoạn trích cung cấp thông tin về chính sách khai thác, bóc lột của thực dân phương Tây đối với khu vực Đông Nam Á.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Trong công nghiệp, thực dân phương Tây tìm cách vơ vét, bòn rút các nước Đông Nam Á thông qua việc cướp ruộng đất lập đồn điền.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Những sản vật được coi là thế mạnh của các nước Đông Nam Á được thực dân phương Tây chú ý đầu tư khai thác sớm để thu lợi nhuận cao.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Khai thác tài nguyên thiên nhiên không phải là điểm chung trong chính sách cai trị của thực dân phương Tây ở Đông Nam Á.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Kiểm tra đúng/sai theo SGK Lịch Sử 11 - Chủ đề 3: Quá trình xâm lược và cai trị của CNTD ở Đông Nam Á.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Lịch Sử 11",
+                "Chủ đề 3",
+                "Đúng sai"
+          ]
     }
   ],
   "exams": [
@@ -5606,6 +7286,77 @@ export const SEED_DATA = {
         "q_dia11_p3_08"
       ],
       "createdAt": "2026-10-28T09:50:00.000Z"
+    }    ,
+    {
+        "id": "exam_su11_ghki",
+        "name": "Lịch Sử 11 - Đề Cương Ôn Tập Giữa HKI",
+        "description": "Đề cương ôn tập kiểm tra giữa HKI môn Lịch Sử 11 (54 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án chính xác theo chương trình SGK Lịch Sử 11.",
+        "questionIds": [
+            "q_su11_t1_mcq_01",
+            "q_su11_t1_mcq_02",
+            "q_su11_t1_mcq_03",
+            "q_su11_t1_mcq_04",
+            "q_su11_t1_mcq_05",
+            "q_su11_t1_mcq_06",
+            "q_su11_t1_mcq_07",
+            "q_su11_t1_mcq_08",
+            "q_su11_t1_mcq_09",
+            "q_su11_t1_mcq_10",
+            "q_su11_t1_mcq_11",
+            "q_su11_t1_mcq_12",
+            "q_su11_t1_mcq_13",
+            "q_su11_t1_mcq_14",
+            "q_su11_t1_mcq_15",
+            "q_su11_t1_mcq_16",
+            "q_su11_t1_mcq_17",
+            "q_su11_t1_mcq_18",
+            "q_su11_t1_mcq_19",
+            "q_su11_t1_mcq_20",
+            "q_su11_t1_mcq_21",
+            "q_su11_t1_mcq_22",
+            "q_su11_t1_mcq_23",
+            "q_su11_t1_mcq_24",
+            "q_su11_t1_tf_01",
+            "q_su11_t1_tf_02",
+            "q_su11_t1_tf_03",
+            "q_su11_t1_tf_04",
+            "q_su11_t1_tf_05",
+            "q_su11_t2_mcq_01",
+            "q_su11_t2_mcq_02",
+            "q_su11_t2_mcq_03",
+            "q_su11_t2_mcq_04",
+            "q_su11_t2_mcq_05",
+            "q_su11_t2_mcq_06",
+            "q_su11_t2_mcq_07",
+            "q_su11_t2_mcq_08",
+            "q_su11_t2_mcq_09",
+            "q_su11_t2_mcq_10",
+            "q_su11_t2_mcq_11",
+            "q_su11_t2_mcq_12",
+            "q_su11_t2_mcq_13",
+            "q_su11_t2_mcq_14",
+            "q_su11_t2_mcq_15",
+            "q_su11_t2_mcq_16",
+            "q_su11_t2_tf_01",
+            "q_su11_t2_tf_02",
+            "q_su11_t2_tf_03",
+            "q_su11_t3_mcq_01",
+            "q_su11_t3_mcq_02",
+            "q_su11_t3_mcq_03",
+            "q_su11_t3_mcq_04",
+            "q_su11_t3_mcq_05",
+            "q_su11_t3_mcq_06",
+            "q_su11_t3_mcq_07",
+            "q_su11_t3_mcq_08",
+            "q_su11_t3_mcq_09",
+            "q_su11_t3_mcq_10",
+            "q_su11_t3_mcq_11",
+            "q_su11_t3_mcq_12",
+            "q_su11_t3_mcq_13",
+            "q_su11_t3_mcq_14",
+            "q_su11_t3_tf_01",
+            "q_su11_t3_tf_02"
+        ]
     }
   ],
   "attempts": [
