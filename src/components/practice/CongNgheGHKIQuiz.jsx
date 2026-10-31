@@ -37,6 +37,49 @@ export default function CongNgheGHKIQuiz({
   const [isStickyStuck, setIsStickyStuck] = useState(false);
   const stickyRef = useRef(null);
 
+  // Hiệu ứng chuyển động thu lại & popup câu hỏi tiếp theo
+  const [cardTransitionState, setCardTransitionState] = useState('idle'); // 'idle' | 'collapsing'
+  const [autoAdvance, setAutoAdvance] = useState(true);
+  const autoAdvanceTimerRef = useRef(null);
+
+  const clearAutoAdvanceTimer = () => {
+    if (autoAdvanceTimerRef.current) {
+      clearTimeout(autoAdvanceTimerRef.current);
+      autoAdvanceTimerRef.current = null;
+    }
+  };
+
+  const scheduleNextQuestion = (delay = 750) => {
+    if (!autoAdvance) return;
+    if (displayMode !== 'single') return;
+    clearAutoAdvanceTimer();
+
+    autoAdvanceTimerRef.current = setTimeout(() => {
+      // 1. Thu lại với animation (card-collapse)
+      setCardTransitionState('collapsing');
+
+      // 2. Chuyển sang câu tiếp theo và popup lên (card-popup)
+      setTimeout(() => {
+        setCurrentIndex(prev => {
+          if (prev < questionsToTest.length - 1) {
+            return prev + 1;
+          }
+          return prev;
+        });
+        setCardTransitionState('idle');
+      }, 260);
+    }, delay);
+  };
+
+  const goToQuestion = (idx) => {
+    clearAutoAdvanceTimer();
+    setCardTransitionState('collapsing');
+    setTimeout(() => {
+      setCurrentIndex(idx);
+      setCardTransitionState('idle');
+    }, 200);
+  };
+
   // Theo dõi trạng thái cuộn để kích hoạt animation mở rộng khi dính (sticky)
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +91,10 @@ export default function CongNgheGHKIQuiz({
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    return () => clearAutoAdvanceTimer();
+  }, [currentIndex, activeSubjectId]);
 
   // Đồng bộ khi prop initialSubjectId thay đổi từ Header
   useEffect(() => {
@@ -86,8 +133,8 @@ export default function CongNgheGHKIQuiz({
   // Vị trí câu hiện tại khi ở chế độ 'single'
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Chế độ hiển thị: 'scroll' (dạng đề thi đầy đủ) | 'single' (từng câu)
-  const [displayMode, setDisplayMode] = useState('scroll');
+  // Chế độ hiển thị: 'scroll' (dạng đề thi đầy đủ) | 'single' (từng câu) - Mặc định 'single' trên điện thoại
+  const [displayMode, setDisplayMode] = useState(() => (typeof window !== 'undefined' && window.innerWidth < 768 ? 'single' : 'scroll'));
   const [showPalette, setShowPalette] = useState(false);
 
   // Câu trả lời của học sinh
@@ -134,6 +181,7 @@ export default function CongNgheGHKIQuiz({
         return;
       }
     }
+    clearAutoAdvanceTimer();
     setActiveSubjectId(newSubId);
     setUserAnswers({});
     setLockedShortAnswers({});
@@ -146,7 +194,7 @@ export default function CongNgheGHKIQuiz({
     onSwitchSubject?.(newSubId);
   };
 
-  // Chọn phương án MCQ (Khóa đáp án sau khi đã chọn)
+  // Chọn phương án MCQ (Khóa đáp án sau khi đã chọn, hiện kết quả ngay, sau đó thu lại và nhảy popup câu tiếp theo)
   const handleSelectMCQ = (qId, optIdx) => {
     if (isSubmitted) return;
     if (userAnswers[qId] !== undefined) return; // Đã chọn rồi thì khóa không cho chọn lại
@@ -154,6 +202,11 @@ export default function CongNgheGHKIQuiz({
       ...prev,
       [qId]: optIdx
     }));
+
+    const q = questionsToTest.find(item => item.id === qId);
+    const isCorrect = q && optIdx === q.correct;
+    // Chạm hiện đáp án ngay, đúng thì 750ms thu lại và popup câu mới, sai thì 1050ms để kịp nhìn đáp án chuẩn
+    scheduleNextQuestion(isCorrect ? 750 : 1050);
   };
 
   // Chọn Đúng / Sai (Khóa từng ý a, b, c, d sau khi đã chọn)
@@ -161,16 +214,19 @@ export default function CongNgheGHKIQuiz({
     if (isSubmitted) return;
     const current = userAnswers[qId] || {};
     if (current[stmtLabel] !== undefined) return; // Ý này đã chọn rồi thì khóa không cho đổi
-    setUserAnswers(prev => {
-      const cur = prev[qId] || {};
-      return {
-        ...prev,
-        [qId]: {
-          ...cur,
-          [stmtLabel]: value
-        }
-      };
-    });
+    const updated = {
+      ...current,
+      [stmtLabel]: value
+    };
+    setUserAnswers(prev => ({
+      ...prev,
+      [qId]: updated
+    }));
+
+    const q = questionsToTest.find(item => item.id === qId);
+    if (q && q.statements && Object.keys(updated).length === q.statements.length) {
+      scheduleNextQuestion(900);
+    }
   };
 
   // Trả lời ngắn / Điền số
@@ -190,6 +246,7 @@ export default function CongNgheGHKIQuiz({
     const val = userAnswers[qId];
     if (val !== undefined && String(val).trim() !== '') {
       setLockedShortAnswers(prev => ({ ...prev, [qId]: true }));
+      scheduleNextQuestion(900);
     }
   };
 
@@ -1156,9 +1213,16 @@ export default function CongNgheGHKIQuiz({
 
           return (
             <div className="space-y-4">
-              <div className="neu-card p-6 sm:p-8 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-5">
+              <div 
+                key={q.id}
+                className={`neu-card p-6 sm:p-8 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-5 transition-all duration-300 ${
+                  cardTransitionState === 'collapsing'
+                    ? 'neu-card-collapse pointer-events-none'
+                    : 'neu-card-popup'
+                }`}
+              >
                 {/* Question Info */}
-                <div className="flex items-center justify-between pb-3 border-b border-black/5 dark:border-white/5">
+                <div className="flex items-center justify-between pb-3 border-b border-black/5 dark:border-white/5 flex-wrap gap-2">
                   <div className="flex items-center gap-2.5">
                     <span className="px-3 py-1 rounded-full neu-inset-sm text-[#FF8800] font-display font-bold text-xs">
                       Câu {currentIndex + 1} / {questionsToTest.length}
@@ -1172,15 +1236,37 @@ export default function CongNgheGHKIQuiz({
                     </span>
                   </div>
 
-                  {!isSubmitted && (
+                  <div className="flex items-center gap-2">
                     <button
-                      onClick={() => setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }))}
-                      className="neu-btn px-3 py-1.5 rounded-xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 cursor-pointer"
+                      type="button"
+                      onClick={() => {
+                        setAutoAdvance(prev => !prev);
+                        clearAutoAdvanceTimer();
+                      }}
+                      title={autoAdvance ? 'Đang bật tự động nhảy câu tiếp theo sau khi chọn' : 'Đang tắt tự động nhảy câu'}
+                      className={`px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition cursor-pointer ${
+                        autoAdvance 
+                          ? 'neu-inset-sm text-[#FF8800]' 
+                          : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
+                      }`}
                     >
-                      {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
-                      {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
+                      <Sparkles className="w-3.5 h-3.5 text-[#FF8800]" />
+                      <span className="text-[11px] hidden xs:inline">{autoAdvance ? 'Tự nhảy câu: BẬT' : 'Tự nhảy câu: TẮT'}</span>
                     </button>
-                  )}
+
+                    {!isSubmitted && (
+                      <button
+                        onClick={() => {
+                          clearAutoAdvanceTimer();
+                          setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }));
+                        }}
+                        className="neu-btn px-3 py-1.5 rounded-xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 cursor-pointer"
+                      >
+                        {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
+                        {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
+                      </button>
+                    )}
+                  </div>
                 </div>
 
                 {/* Stem */}
@@ -1394,7 +1480,7 @@ export default function CongNgheGHKIQuiz({
                 {/* Navigation buttons */}
                 <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/5">
                   <button
-                    onClick={() => setCurrentIndex(i => Math.max(0, i - 1))}
+                    onClick={() => goToQuestion(Math.max(0, currentIndex - 1))}
                     disabled={currentIndex === 0}
                     className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] disabled:opacity-40 cursor-pointer"
                   >
@@ -1402,7 +1488,7 @@ export default function CongNgheGHKIQuiz({
                   </button>
 
                   <button
-                    onClick={() => setCurrentIndex(i => Math.min(questionsToTest.length - 1, i + 1))}
+                    onClick={() => goToQuestion(Math.min(questionsToTest.length - 1, currentIndex + 1))}
                     disabled={currentIndex === questionsToTest.length - 1}
                     className="neu-btn flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-[#FF8800] disabled:opacity-40 cursor-pointer"
                   >
@@ -1432,7 +1518,7 @@ export default function CongNgheGHKIQuiz({
                     return (
                       <button
                         key={item.id}
-                        onClick={() => setCurrentIndex(idx)}
+                        onClick={() => goToQuestion(idx)}
                         className={`w-9 h-9 rounded-xl text-xs font-bold transition-all flex items-center justify-center cursor-pointer ${
                           isCur
                             ? 'neu-inset text-[#FF8800] ring-2 ring-[#FF8800] font-extrabold'
