@@ -277,7 +277,30 @@ export default function Header({
   examCount = 0 
 }) {
   const [mounted, setMounted] = useState(false);
-  const [isMoreOpen, setIsMoreOpen] = useState(false);
+  const [isMoreMounted, setIsMoreMounted] = useState(false);
+  const [isMoreAnimatingOut, setIsMoreAnimatingOut] = useState(false);
+
+  const openMore = () => {
+    setIsMoreAnimatingOut(false);
+    setIsMoreMounted(true);
+  };
+
+  const closeMore = () => {
+    setIsMoreAnimatingOut(true);
+    setTimeout(() => {
+      setIsMoreMounted(false);
+      setIsMoreAnimatingOut(false);
+    }, 220);
+  };
+
+  const toggleMore = () => {
+    if (isMoreMounted && !isMoreAnimatingOut) {
+      closeMore();
+    } else {
+      openMore();
+    }
+  };
+
   const desktopNav = useHorizontalMotionScroll(activeTab);
 
   useEffect(() => {
@@ -491,15 +514,15 @@ export default function Header({
             <button
               onClick={() => {
                 setActiveTab('quiz');
-                setIsMoreOpen(false);
+                closeMore();
               }}
               aria-current={isQuizActive ? 'page' : undefined}
               className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
-                isQuizActive ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
+                isQuizActive ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
-              <div className={`p-1.5 rounded-xl transition-all ${isQuizActive ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
-                <Award className={`w-5 h-5 transition-transform duration-200 ${isQuizActive ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
+              <div className={`p-1.5 rounded-xl transition-all ${isQuizActive ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                <Award className={`w-5 h-5 transition-transform duration-200 ${isQuizActive ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
               </div>
               <span className={`text-[10px] sm:text-[11px] font-display ${isQuizActive ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Làm bài
@@ -510,15 +533,15 @@ export default function Header({
             <button
               onClick={() => {
                 setActiveTab('stats');
-                setIsMoreOpen(false);
+                closeMore();
               }}
               aria-current={activeTab === 'stats' ? 'page' : undefined}
               className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
-                activeTab === 'stats' ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
+                activeTab === 'stats' ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
-              <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'stats' ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
-                <BarChart3 className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'stats' ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
+              <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'stats' ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                <BarChart3 className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'stats' ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
               </div>
               <span className={`text-[10px] sm:text-[11px] font-display ${activeTab === 'stats' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Thống kê
@@ -529,16 +552,16 @@ export default function Header({
             <button
               onClick={() => {
                 setActiveTab('questions');
-                setIsMoreOpen(false);
+                closeMore();
               }}
               aria-current={activeTab === 'questions' ? 'page' : undefined}
               className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
-                activeTab === 'questions' ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
+                activeTab === 'questions' ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
               <div className="relative">
-                <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'questions' ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
-                  <Database className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'questions' ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
+                <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'questions' ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                  <Database className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'questions' ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
                 </div>
                 {questionCount > 0 && (
                   <span className="absolute -top-1 -right-2 px-1.5 py-0.2 min-w-4 text-[9px] font-extrabold rounded-full bg-[#FF8800] text-white shadow-[0_2px_4px_rgba(255,136,0,0.4)] flex items-center justify-center">
@@ -553,16 +576,16 @@ export default function Header({
 
             {/* 4. Thêm / Menu (=) */}
             <button
-              onClick={() => setIsMoreOpen(prev => !prev)}
-              aria-expanded={isMoreOpen}
+              onClick={toggleMore}
+              aria-expanded={isMoreMounted && !isMoreAnimatingOut}
               aria-current={isMoreActive ? 'page' : undefined}
               className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
-                isMoreActive || isMoreOpen ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
+                isMoreActive || (isMoreMounted && !isMoreAnimatingOut) ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
               <div className="relative">
-                <div className={`p-1.5 rounded-xl transition-all ${(isMoreActive || isMoreOpen) ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
-                  <Menu className={`w-5 h-5 transition-transform duration-200 ${(isMoreActive || isMoreOpen) ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
+                <div className={`p-1.5 rounded-xl transition-all ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                  <Menu className={`w-5 h-5 transition-transform duration-200 ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
                 </div>
                 {examCount > 0 && (
                   <span className="absolute -top-1 -right-2 px-1.5 py-0.2 min-w-4 text-[9px] font-extrabold rounded-full bg-[#FF8800] text-white shadow-[0_2px_4px_rgba(255,136,0,0.4)] flex items-center justify-center">
@@ -570,7 +593,7 @@ export default function Header({
                   </span>
                 )}
               </div>
-              <span className={`text-[10px] sm:text-[11px] font-display ${(isMoreActive || isMoreOpen) ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
+              <span className={`text-[10px] sm:text-[11px] font-display ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Thêm
               </span>
             </button>
@@ -579,43 +602,49 @@ export default function Header({
         document.body
       )}
 
-      {/* Slide-up Bottom Sheet for Overflow Destinations ("=") */}
-      {mounted && isMoreOpen && createPortal(
+      {/* Spring Popover for Overflow Destinations ("=") */}
+      {mounted && isMoreMounted && createPortal(
         <>
           <div 
-            className="fixed inset-0 bg-black/50 z-[100000] lg:hidden transition-opacity duration-200"
+            className={`fixed inset-0 bg-black/40 backdrop-blur-[2px] z-[100000] lg:hidden transition-opacity duration-200 ${
+              isMoreAnimatingOut ? 'opacity-0' : 'opacity-100'
+            }`}
             style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100000 }}
-            onClick={() => setIsMoreOpen(false)}
+            onClick={closeMore}
           />
           <div 
-            className="neu-mobile-sheet fixed bottom-0 left-0 right-0 z-[100001] rounded-t-[32px] p-5 neu-card bg-[#EBECF0] dark:bg-[#1A1E24] shadow-[0_-16px_40px_rgba(0,0,0,0.45)] transition-all duration-200 border-t border-white/80 dark:border-white/10 max-w-lg mx-auto"
+            className={`neu-mobile-popup fixed p-5 max-w-sm w-[calc(100%-2rem)] mx-auto ${
+              isMoreAnimatingOut ? 'neu-popup-exit' : 'neu-popup-enter'
+            }`}
             style={{ 
               position: 'fixed',
-              bottom: 0,
               left: 0,
               right: 0,
-              zIndex: 100001,
-              WebkitTransform: 'translateZ(0)',
-              transform: 'translateZ(0)',
-              paddingBottom: 'calc(1.5rem + env(safe-area-inset-bottom, 0px))' 
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              bottom: 'calc(5.25rem + env(safe-area-inset-bottom, 0px))',
+              zIndex: 100001
             }}
           >
-            {/* iOS style sheet pill indicator */}
-            <div className="w-12 h-1.5 bg-[#CBD5E1] dark:bg-slate-600 rounded-full mx-auto mb-4" />
+            {/* Popover Header with Pill & Close Button */}
+            <div className="w-10 h-1.5 bg-[#A0AEC0]/40 dark:bg-slate-500/40 rounded-full mx-auto mb-3.5" />
             
-            <div className="flex items-center justify-between pb-3 mb-3 border-b border-black/5 dark:border-white/5">
-              <h3 className="text-sm font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wider">
-                Tính năng mở rộng
-              </h3>
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-black/5 dark:border-white/10">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 rounded-full bg-[#FF8800] animate-pulse" />
+                <h3 className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wider">
+                  Tính năng mở rộng
+                </h3>
+              </div>
               <button
-                onClick={() => setIsMoreOpen(false)}
-                className="w-8 h-8 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer"
+                onClick={closeMore}
+                className="w-7 h-7 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer active:scale-95 transition-transform"
               >
-                <X className="w-4 h-4" />
+                <X className="w-3.5 h-3.5" />
               </button>
             </div>
 
-            <div className="space-y-2.5">
+            <div className="space-y-2">
               {overflowItems.map(item => {
                 const Icon = item.icon;
                 const isActive = activeTab === item.id;
@@ -624,17 +653,17 @@ export default function Header({
                     key={item.id}
                     onClick={() => {
                       setActiveTab(item.id);
-                      setIsMoreOpen(false);
+                      closeMore();
                     }}
-                    className={`w-full flex items-center justify-between p-3.5 rounded-2xl text-xs font-bold transition-all duration-150 cursor-pointer ${
+                    className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all duration-150 cursor-pointer active:scale-98 ${
                       isActive
-                        ? 'neu-inset text-[#FF8800]'
+                        ? 'neu-inset text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
                         : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 ${
-                        isActive ? 'neu-inset-sm text-[#FF8800]' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
+                      <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
+                        isActive ? 'neu-material-vibrant-active text-[#FF8800]' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
                       }`}>
                         <Icon className="w-4 h-4" />
                       </div>

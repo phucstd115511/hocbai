@@ -440,7 +440,12 @@ body {
   max-width: 100vw;
 }
 
-/* Hardened floating compact capsule dock for mobile viewport locking */
+/* ==========================================================================
+   Apple NSVisualEffectView / SwiftUI Material Architecture
+   Semantic Purpose: .dock / .hudWindow (SwiftUI: .ultraThinMaterial)
+   BlendingMode: behindWindow with Optical Translucency & Vibrancy
+   ========================================================================== */
+
 .neu-mobile-bottom-nav {
   position: fixed !important;
   left: 0 !important;
@@ -452,20 +457,131 @@ body {
   max-width: 380px !important;
   border-radius: 9999px !important;
   z-index: 99999 !important;
+  box-sizing: border-box !important;
+
+  /* Optical Material: multi-stage convolution + adaptive vibrancy */
+  background-color: rgba(235, 236, 240, 0.76) !important;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(235, 236, 240, 0.4) 100%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) contrast(95%) !important;
+  backdrop-filter: blur(28px) saturate(190%) contrast(95%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  box-shadow: 
+    0 12px 30px rgba(163, 177, 198, 0.55),
+    0 4px 10px rgba(163, 177, 198, 0.25),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.04) !important;
   -webkit-transform: translateZ(0) !important;
   transform: translateZ(0) !important;
   will-change: transform !important;
-  box-sizing: border-box !important;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
 }
 
-/* Slide-up sheet for overflow menu */
-.neu-mobile-sheet {
+.dark .neu-mobile-bottom-nav {
+  background-color: rgba(26, 30, 36, 0.78) !important;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(26, 30, 36, 0.55) 100%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) contrast(105%) !important;
+  backdrop-filter: blur(32px) saturate(200%) contrast(105%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  box-shadow: 
+    0 16px 36px rgba(0, 0, 0, 0.8),
+    0 4px 12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Material Vibrancy for Control Wells inside NSVisualEffectView */
+.neu-material-vibrant-active {
+  background: rgba(255, 136, 0, 0.12) !important;
+  border: 1px solid rgba(255, 136, 0, 0.25) !important;
+  box-shadow: 
+    inset 0 1px 3px rgba(255, 136, 0, 0.2),
+    0 1px 2px rgba(255, 255, 255, 0.7) !important;
+}
+.dark .neu-material-vibrant-active {
+  background: rgba(255, 136, 0, 0.18) !important;
+  border: 1px solid rgba(255, 136, 0, 0.35) !important;
+  box-shadow: 
+    inset 0 1px 3px rgba(255, 136, 0, 0.3),
+    0 1px 2px rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ==========================================================================
+   Popup Bật Lên (Spring Popover Animation & NSVisualEffectView Material)
+   ========================================================================== */
+
+@keyframes popup-spring-enter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 36px, 0) scale(0.92);
+  }
+  65% {
+    opacity: 1;
+    transform: translate3d(0, -5px, 0) scale(1.015);
+  }
+  85% {
+    transform: translate3d(0, 2px, 0) scale(0.998);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes popup-spring-exit {
+  0% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0) scale(0.94);
+  }
+}
+
+.neu-mobile-popup {
   position: fixed !important;
-  bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
-  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  bottom: calc(5.25rem + env(safe-area-inset-bottom, 0px)) !important;
+  width: calc(100% - 2rem) !important;
+  max-width: 380px !important;
+  border-radius: 32px !important;
   z-index: 100001 !important;
-  -webkit-transform: translateZ(0) !important;
-  transform: translateZ(0) !important;
+  box-sizing: border-box !important;
+
+  /* Optical Material: .popover / .hudWindow */
+  background-color: rgba(235, 236, 240, 0.88) !important;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(235, 236, 240, 0.55) 100%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) contrast(98%) !important;
+  backdrop-filter: blur(32px) saturate(200%) contrast(98%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 
+    0 24px 60px rgba(0, 0, 0, 0.16),
+    0 8px 24px rgba(163, 177, 198, 0.5),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.04) !important;
+  will-change: transform, opacity !important;
+}
+
+.dark .neu-mobile-popup {
+  background-color: rgba(26, 30, 36, 0.88) !important;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(26, 30, 36, 0.65) 100%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(210%) contrast(108%) !important;
+  backdrop-filter: blur(36px) saturate(210%) contrast(108%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 
+    0 24px 64px rgba(0, 0, 0, 0.85),
+    0 8px 24px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.6) !important;
+}
+
+.neu-popup-enter {
+  animation: popup-spring-enter 420ms cubic-bezier(0.175, 0.885, 0.32, 1.15) forwards;
+}
+
+.neu-popup-exit {
+  animation: popup-spring-exit 220ms cubic-bezier(0.4, 0, 1, 1) forwards;
 }
