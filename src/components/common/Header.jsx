@@ -32,8 +32,9 @@ function useHorizontalMotionScroll(activeTabId) {
   const [canScrollRight, setCanScrollRight] = useState(false);
   const [pillStyle, setPillStyle] = useState({ left: 0, top: 0, width: 0, height: 0, opacity: 0 });
   const [isDragging, setIsDragging] = useState(false);
+  const [hoveredTabId, setHoveredTabId] = useState(null);
 
-  // Measure active button and scroll boundaries
+  // Measure active or hovered button and scroll boundaries
   const updateMetrics = useCallback(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -42,21 +43,22 @@ function useHorizontalMotionScroll(activeTabId) {
     setCanScrollLeft(el.scrollLeft > 6);
     setCanScrollRight(maxScroll > 0 && el.scrollLeft < maxScroll - 6);
 
-    const activeEl = el.querySelector('[data-active="true"]');
-    if (activeEl) {
+    const targetEl = (hoveredTabId && el.querySelector(`[data-tab-id="${hoveredTabId}"]`)) ||
+                     el.querySelector('[data-active="true"]');
+    if (targetEl) {
       setPillStyle({
-        left: activeEl.offsetLeft,
-        top: activeEl.offsetTop,
-        width: activeEl.offsetWidth,
-        height: activeEl.offsetHeight,
+        left: targetEl.offsetLeft,
+        top: targetEl.offsetTop,
+        width: targetEl.offsetWidth,
+        height: targetEl.offsetHeight,
         opacity: 1,
       });
     } else {
       setPillStyle(prev => ({ ...prev, opacity: 0 }));
     }
-  }, []);
+  }, [hoveredTabId]);
 
-  // Update metrics on tab changes, mount, and window resize
+  // Update metrics on tab changes, hover changes, mount, and window resize
   useEffect(() => {
     updateMetrics();
     const raf = requestAnimationFrame(updateMetrics);
@@ -67,7 +69,7 @@ function useHorizontalMotionScroll(activeTabId) {
       clearTimeout(timer);
       window.removeEventListener('resize', updateMetrics);
     };
-  }, [activeTabId, updateMetrics]);
+  }, [activeTabId, hoveredTabId, updateMetrics]);
 
   // Smoothly center the active tab into view when activeTabId changes
   useEffect(() => {
@@ -265,6 +267,8 @@ function useHorizontalMotionScroll(activeTabId) {
     canScrollRight,
     pillStyle,
     isDragging,
+    hoveredTabId,
+    setHoveredTabId,
   };
 }
 
@@ -413,14 +417,15 @@ export default function Header({
 
               <nav 
                 ref={desktopNav.ref}
+                onMouseLeave={() => desktopNav.setHoveredTabId(null)}
                 className={`flex items-center gap-1 neu-inset p-1.5 rounded-2xl overflow-x-auto no-scrollbar cursor-grab active:cursor-grabbing select-none relative transition-transform duration-200 ${
                   desktopNav.isDragging ? 'scale-[0.995]' : ''
                 }`}
               >
-                {/* Sliding Neumorphic Active Pill */}
+                {/* Sliding Water Surface Active/Hover Pill */}
                 {desktopNav.pillStyle.width > 0 && (
                   <div 
-                    className="absolute top-0 left-0 rounded-xl neu-extruded neu-pill-transition pointer-events-none shadow-[4px_4px_8px_rgb(163,177,198,0.6),-4px_-4px_8px_rgba(255,255,255,0.7)] dark:shadow-[4px_4px_8px_rgb(14,17,21,0.85),-4px_-4px_8px_rgba(255,255,255,0.05)]"
+                    className="absolute top-0 left-0 rounded-xl neu-water-surface neu-pill-transition pointer-events-none"
                     style={{
                       transform: `translate3d(${desktopNav.pillStyle.left}px, ${desktopNav.pillStyle.top}px, 0)`,
                       width: `${desktopNav.pillStyle.width}px`,
@@ -438,11 +443,13 @@ export default function Header({
                   return (
                     <button
                       key={item.id}
+                      data-tab-id={item.id}
                       data-active={isActive}
                       onClick={() => setActiveTab(item.id)}
+                      onMouseEnter={() => desktopNav.setHoveredTabId(item.id)}
                       className={`relative z-10 flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap shrink-0 transition-all duration-200 cursor-pointer active:scale-95 ${
                         isActive
-                          ? (!desktopNav.pillStyle.width ? 'neu-extruded text-[#FF8800]' : 'text-[#FF8800] dark:text-[#FF8800]')
+                          ? 'text-[#FF8800] dark:text-[#FF8800]'
                           : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                       }`}
                     >
@@ -521,7 +528,7 @@ export default function Header({
                 isQuizActive ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
-              <div className={`p-1.5 rounded-xl transition-all ${isQuizActive ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+              <div className={`p-1.5 rounded-xl transition-all ${isQuizActive ? 'neu-water-surface text-[#FF8800]' : 'neu-water-hover'}`}>
                 <Award className={`w-5 h-5 transition-transform duration-200 ${isQuizActive ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
               </div>
               <span className={`text-[10px] sm:text-[11px] font-display ${isQuizActive ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
@@ -540,7 +547,7 @@ export default function Header({
                 activeTab === 'stats' ? 'text-[#FF8800]' : 'text-[#4A5568]/85 dark:text-[#E2E8F0]/80 hover:text-[#FF8800]'
               }`}
             >
-              <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'stats' ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+              <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'stats' ? 'neu-water-surface text-[#FF8800]' : 'neu-water-hover'}`}>
                 <BarChart3 className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'stats' ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
               </div>
               <span className={`text-[10px] sm:text-[11px] font-display ${activeTab === 'stats' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
@@ -560,7 +567,7 @@ export default function Header({
               }`}
             >
               <div className="relative">
-                <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'questions' ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'questions' ? 'neu-water-surface text-[#FF8800]' : 'neu-water-hover'}`}>
                   <Database className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'questions' ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
                 </div>
                 {questionCount > 0 && (
@@ -584,7 +591,7 @@ export default function Header({
               }`}
             >
               <div className="relative">
-                <div className={`p-1.5 rounded-xl transition-all ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'neu-material-vibrant-active text-[#FF8800]' : ''}`}>
+                <div className={`p-1.5 rounded-xl transition-all ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'neu-water-surface text-[#FF8800]' : 'neu-water-hover'}`}>
                   <Menu className={`w-5 h-5 transition-transform duration-200 ${(isMoreActive || (isMoreMounted && !isMoreAnimatingOut)) ? 'scale-105 drop-shadow-[0_2px_8px_rgba(255,136,0,0.45)]' : ''}`} />
                 </div>
                 {examCount > 0 && (
@@ -658,8 +665,8 @@ export default function Header({
                       }}
                       className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all duration-150 cursor-pointer active:scale-98 ${
                         isActive
-                          ? 'neu-inset text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
-                          : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
+                          ? 'neu-water-surface text-[#FF8800] font-extrabold'
+                          : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] neu-water-hover'
                       }`}
                     >
                       <div className="flex items-center gap-3">

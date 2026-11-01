@@ -201,8 +201,8 @@ export default function QuestionBank({
               onClick={() => { setSelectedSubjectId(''); setSelectedChapterId(''); }}
               className={`px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                 !selectedSubjectId 
-                  ? 'neu-inset text-[#FF8800]' 
-                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+                  ? 'neu-water-surface text-[#FF8800]' 
+                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
               }`}
             >
               Tất cả ({questions.length})
@@ -219,8 +219,8 @@ export default function QuestionBank({
                   }}
                   className={`flex items-center gap-2 px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                     isSelected
-                      ? 'neu-inset text-[#FF8800]'
-                      : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+                      ? 'neu-water-surface text-[#FF8800]'
+                      : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                   }`}
                 >
                   <span>{s.name}</span>
@@ -245,8 +245,8 @@ export default function QuestionBank({
                 onClick={() => setSelectedChapterId('')}
                 className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                   !selectedChapterId
-                    ? 'neu-inset text-[#FF8800]'
-                    : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
+                    ? 'neu-water-surface text-[#FF8800]'
+                    : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                 }`}
               >
                 Tất cả ({questions.filter(q => q.subjectId === selectedSubjectId).length})
@@ -260,8 +260,8 @@ export default function QuestionBank({
                     onClick={() => setSelectedChapterId(isChapSelected ? '' : c.id)}
                     className={`flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                       isChapSelected
-                        ? 'neu-inset text-[#FF8800]'
-                        : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
+                        ? 'neu-water-surface text-[#FF8800]'
+                        : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                     }`}
                   >
                     <span>{c.name.split(':')[0]}</span>
