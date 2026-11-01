@@ -290,7 +290,7 @@ export default function Header({
     setTimeout(() => {
       setIsMoreMounted(false);
       setIsMoreAnimatingOut(false);
-    }, 220);
+    }, 240);
   };
 
   const toggleMore = () => {
@@ -613,7 +613,7 @@ export default function Header({
             onClick={closeMore}
           />
           <div 
-            className={`neu-mobile-popup fixed p-5 max-w-sm w-[calc(100%-2rem)] mx-auto ${
+            className={`neu-mobile-popup fixed p-5 max-w-sm w-[calc(100%-2rem)] mx-auto overflow-hidden ${
               isMoreAnimatingOut ? 'neu-popup-exit' : 'neu-popup-enter'
             }`}
             style={{ 
@@ -626,61 +626,63 @@ export default function Header({
               zIndex: 100001
             }}
           >
-            {/* Popover Header with Pill & Close Button */}
-            <div className="w-10 h-1.5 bg-[#A0AEC0]/40 dark:bg-slate-500/40 rounded-full mx-auto mb-3.5" />
-            
-            <div className="flex items-center justify-between pb-3 mb-3 border-b border-black/5 dark:border-white/10">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-[#FF8800] animate-pulse" />
-                <h3 className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wider">
-                  Tính năng mở rộng
-                </h3>
+            <div className={isMoreAnimatingOut ? 'neu-popup-content-exit' : 'neu-popup-content-enter'}>
+              {/* Popover Header with Pill & Close Button */}
+              <div className="w-10 h-1.5 bg-[#A0AEC0]/40 dark:bg-slate-500/40 rounded-full mx-auto mb-3.5" />
+              
+              <div className="flex items-center justify-between pb-3 mb-3 border-b border-black/5 dark:border-white/10">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-[#FF8800] animate-pulse" />
+                  <h3 className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wider">
+                    Tính năng mở rộng
+                  </h3>
+                </div>
+                <button
+                  onClick={closeMore}
+                  className="w-7 h-7 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer active:scale-95 transition-transform"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
               </div>
-              <button
-                onClick={closeMore}
-                className="w-7 h-7 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer active:scale-95 transition-transform"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            </div>
 
-            <div className="space-y-2">
-              {overflowItems.map(item => {
-                const Icon = item.icon;
-                const isActive = activeTab === item.id;
-                return (
-                  <button
-                    key={item.id}
-                    onClick={() => {
-                      setActiveTab(item.id);
-                      closeMore();
-                    }}
-                    className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all duration-150 cursor-pointer active:scale-98 ${
-                      isActive
-                        ? 'neu-inset text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
-                        : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
-                        isActive ? 'neu-material-vibrant-active text-[#FF8800]' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
-                      }`}>
-                        <Icon className="w-4 h-4" />
+              <div className="space-y-2">
+                {overflowItems.map(item => {
+                  const Icon = item.icon;
+                  const isActive = activeTab === item.id;
+                  return (
+                    <button
+                      key={item.id}
+                      onClick={() => {
+                        setActiveTab(item.id);
+                        closeMore();
+                      }}
+                      className={`w-full flex items-center justify-between p-3 rounded-2xl text-xs font-bold transition-all duration-150 cursor-pointer active:scale-98 ${
+                        isActive
+                          ? 'neu-inset text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
+                          : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 ${
+                          isActive ? 'neu-material-vibrant-active text-[#FF8800]' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
+                        }`}>
+                          <Icon className="w-4 h-4" />
+                        </div>
+                        <div className="text-left">
+                          <div className="text-xs font-bold">{item.label}</div>
+                          <div className="text-[10px] font-normal text-[#718096] dark:text-[#94A3B8]">{item.description}</div>
+                        </div>
                       </div>
-                      <div className="text-left">
-                        <div className="text-xs font-bold">{item.label}</div>
-                        <div className="text-[10px] font-normal text-[#718096] dark:text-[#94A3B8]">{item.description}</div>
-                      </div>
-                    </div>
 
-                    {item.badge !== undefined && item.badge > 0 && (
-                      <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-[#FF8800] text-white shadow-sm">
-                        {item.badge}
-                      </span>
-                    )}
-                  </button>
-                );
-              })}
+                      {item.badge !== undefined && item.badge > 0 && (
+                        <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-[#FF8800] text-white shadow-sm">
+                          {item.badge}
+                        </span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </>,

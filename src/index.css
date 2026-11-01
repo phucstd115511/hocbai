@@ -506,28 +506,58 @@ body {
 }
 
 /* ==========================================================================
-   Popup Bật Lên (Spring Popover Animation & NSVisualEffectView Material)
+   Popup Bật Lên (Spring Popover Morph Animation & NSVisualEffectView Material)
    ========================================================================== */
 
 @keyframes popup-spring-enter {
   0% {
     opacity: 0;
-    transform: translate3d(0, 42px, 0) scale(0.88);
+    transform: translate3d(0, 18px, 0) scale(0.18, 0.24);
+  }
+  12% {
+    opacity: 1;
+    transform: translate3d(0, 14px, 0) scale(0.21, 0.26);
   }
   100% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1, 1);
   }
 }
 
 @keyframes popup-spring-exit {
   0% {
     opacity: 1;
-    transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1, 1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate3d(0, 12px, 0) scale(0.21, 0.26);
   }
   100% {
     opacity: 0;
-    transform: translate3d(0, 28px, 0) scale(0.94);
+    transform: translate3d(0, 18px, 0) scale(0.18, 0.24);
+  }
+}
+
+@keyframes popup-content-fade-in {
+  0%, 26% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes popup-content-fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(6px);
   }
 }
 
@@ -544,6 +574,14 @@ body {
   animation: popup-backdrop-fade-in 300ms ease-out forwards;
 }
 
+.neu-popup-content-enter {
+  animation: popup-content-fade-in 480ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.neu-popup-content-exit {
+  animation: popup-content-fade-out 180ms ease-out forwards;
+}
+
 .neu-mobile-popup {
   position: fixed !important;
   left: 0 !important;
@@ -556,7 +594,8 @@ body {
   border-radius: 32px !important;
   z-index: 100001 !important;
   box-sizing: border-box !important;
-  transform-origin: center bottom !important;
+  overflow: hidden !important;
+  transform-origin: 87.5% bottom !important;
 
   /* Optical Material: .popover / .hudWindow */
   background-color: rgba(235, 236, 240, 0.88) !important;
@@ -586,9 +625,9 @@ body {
 }
 
 .neu-popup-enter {
-  animation: popup-spring-enter 460ms cubic-bezier(0.62, 0, 0.2, 1.16) forwards;
+  animation: popup-spring-enter 480ms cubic-bezier(0.62, 0, 0.2, 1.16) forwards;
 }
 
 .neu-popup-exit {
-  animation: popup-spring-exit 220ms cubic-bezier(0.4, 0, 1, 1) forwards;
+  animation: popup-spring-exit 240ms cubic-bezier(0.4, 0, 1, 1) forwards;
 }
