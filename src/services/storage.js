@@ -136,6 +136,23 @@ export function getStoredData() {
         needsResave = true;
       }
 
+      // Đảm bảo "Tiếng Anh 11" luôn có mặt trong hệ thống
+      const hasEngSub = subjects.some(s => s.id === 'sub_tienganh11' || s.name.includes('Tiếng Anh') || s.name.includes('tiếng Anh'));
+      if (!hasEngSub) {
+        const engSubject = SEED_DATA.subjects.find(s => s.id === 'sub_tienganh11');
+        const engExam = SEED_DATA.exams.find(e => e.id === 'exam_tienganh11_ghki');
+        const engQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_tienganh11');
+
+        if (engSubject) subjects = [...subjects, engSubject];
+        if (engExam && !exams.some(e => e.id === 'exam_tienganh11_ghki')) exams = [...exams, engExam];
+        if (engQuestions.length > 0) {
+          const existingIds = new Set(questions.map(q => q.id));
+          const newQ = engQuestions.filter(q => !existingIds.has(q.id));
+          questions = [...questions, ...newQ];
+        }
+        needsResave = true;
+      }
+
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt
       const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || s.name?.includes('Tin học 12'));
       if (hasTinHoc) {
