@@ -417,6 +417,8 @@
   display: block;
   height: 100%;
   width: 100%;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 ::view-transition-old(root) {

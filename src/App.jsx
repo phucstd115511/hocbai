@@ -54,8 +54,10 @@ export default function App() {
       Math.max(y, window.innerHeight - y)
     );
 
-    // Nếu trình duyệt hỗ trợ View Transitions API (Chrome 111+, Edge, Safari 18+)
-    if (document.startViewTransition) {
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Nếu trình duyệt hỗ trợ View Transitions API (Chrome 111+, Edge, Safari 18+) và người dùng không bật reduced motion
+    if (document.startViewTransition && !prefersReducedMotion) {
       document.documentElement.classList.add('in-theme-transition');
 
       const transition = document.startViewTransition(() => {
@@ -71,33 +73,19 @@ export default function App() {
       });
 
       transition.ready.then(() => {
-        // Giai đoạn 1: Loang chậm, thong thả từ tâm ra bán kính ~240px trong 0.5s (tốc độ chậm, êm dịu, tạo chiều sâu nước sâu lắng)
-        // Giai đoạn 2: Sóng nước dừng 0.4s (giữ nguyên bán kính 240px) với easing êm, không bị giật khung hình
-        // Giai đoạn 3: Bùng nổ quét nhanh (tốc độ nhanh hơn nhiều đoạn 1) ra toàn bộ màn hình trong ~0.4s
-        const firstRadius = Math.min(240, endRadius * 0.25);
-
+        // Hiệu ứng loang tròn mượt mà liên tục từ nút bấm ra toàn màn hình (không khựng, 60/120fps)
         const anim = document.documentElement.animate(
           [
             {
-              clipPath: `circle(0px at ${x}px ${y}px)`,
-              easing: 'cubic-bezier(0.25, 0.1, 0.25, 1)' // đường cong êm dịu lúc bắt đầu
+              clipPath: `circle(0px at ${x}px ${y}px)`
             },
             {
-              clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
-              offset: 0.38, // 0s -> 0.5s: loang chậm rãi tạo chiều sâu
-              easing: 'linear' // trong thời gian dừng, giữ nguyên mượt mà
-            },
-            {
-              clipPath: `circle(${firstRadius}px at ${x}px ${y}px)`,
-              offset: 0.69, // 0.5s -> 0.9s: dừng chính xác 0.4s
-              easing: 'cubic-bezier(0.12, 0.8, 0.32, 1)' // bứt tốc phóng nhanh ra ngoài
-            },
-            {
-              clipPath: `circle(${endRadius * 1.05}px at ${x}px ${y}px)` // 0.9s -> 1.3s: quét nhanh dứt khoát
+              clipPath: `circle(${endRadius}px at ${x}px ${y}px)`
             }
           ],
           {
-            duration: 1300,
+            duration: 460,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
             fill: 'forwards',
             pseudoElement: '::view-transition-new(root)'
           }
@@ -106,6 +94,8 @@ export default function App() {
         anim.onfinish = () => {
           document.documentElement.classList.remove('in-theme-transition');
         };
+      }).catch(() => {
+        document.documentElement.classList.remove('in-theme-transition');
       });
 
       transition.finished.finally(() => {
