@@ -604,7 +604,7 @@ export default function CongNgheGHKIQuiz({
           <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
             isSu ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
           }`}>
-            64<span className="hidden sm:inline"> câu</span>
+            48<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
 
@@ -688,7 +688,7 @@ export default function CongNgheGHKIQuiz({
                 : isDia
                 ? 'Đề thi trọn bộ 51 câu hỏi (35 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng/sai + 8 câu trả lời ngắn). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : isSu
-                ? 'Đề thi trọn bộ 64 câu hỏi (54 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
+                ? 'Đề thi trọn bộ 48 câu hỏi (40 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng/sai 4 ý - Chủ đề 1 & Chủ đề 2). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : 'Đề thi trọn bộ 93 câu hỏi (83 câu trắc nghiệm nhiều lựa chọn + 10 câu đúng/sai 4 ý). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'}
             </p>
           </div>

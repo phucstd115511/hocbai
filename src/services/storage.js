@@ -134,6 +134,35 @@ export function getStoredData() {
           questions = [...questions, ...newQ];
         }
         needsResave = true;
+      } else {
+        // Loại bỏ Chủ đề 3 khỏi Lịch Sử 11 nếu còn lưu trong localStorage (do người dùng không học đến)
+        const hasSuT3 = questions.some(q => q.subjectId === 'sub_su11' && (q.chapterId === 'chap_su_t3' || q.id?.startsWith('q_su11_t3_')));
+        if (hasSuT3) {
+          questions = questions.filter(q => !(q.subjectId === 'sub_su11' && (q.chapterId === 'chap_su_t3' || q.id?.startsWith('q_su11_t3_'))));
+          // Cập nhật lại exam_su11_ghki
+          exams = exams.map(e => {
+            if (e.id === 'exam_su11_ghki') {
+              const suSeedExam = SEED_DATA.exams.find(se => se.id === 'exam_su11_ghki');
+              return suSeedExam || {
+                ...e,
+                questionIds: e.questionIds.filter(id => !id.startsWith('q_su11_t3_')),
+                description: 'Đề cương ôn tập kiểm tra giữa HKI môn Lịch Sử 11 (40 câu trắc nghiệm nhiều lựa chọn + 8 câu đúng/sai 4 ý - Chủ đề 1 & Chủ đề 2).'
+              };
+            }
+            return e;
+          });
+          // Cập nhật lại chapters của sub_su11
+          subjects = subjects.map(s => {
+            if (s.id === 'sub_su11') {
+              return {
+                ...s,
+                chapters: s.chapters.filter(c => c.id !== 'chap_su_t3')
+              };
+            }
+            return s;
+          });
+          needsResave = true;
+        }
       }
 
       // Đảm bảo "Tiếng Anh 11" luôn có mặt trong hệ thống
