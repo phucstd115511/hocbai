@@ -511,16 +511,24 @@ body {
 
 @keyframes popup-spring-enter {
   0% {
-    opacity: 0;
-    transform: translate3d(0, 18px, 0) scale(0.18, 0.24);
+    opacity: 0.2;
+    transform: translate3d(0, 20px, 0) scale(0.18, 0.24);
+    filter: blur(4px);
   }
-  12% {
-    opacity: 1;
-    transform: translate3d(0, 14px, 0) scale(0.21, 0.26);
+  18% {
+    opacity: 0.55;
+    transform: translate3d(0, 16px, 0) scale(0.21, 0.26);
+    filter: blur(2px);
+  }
+  70% {
+    opacity: 0.95;
+    transform: translate3d(0, -3px, 0) scale(0.96, 0.96);
+    filter: blur(0px);
   }
   100% {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1, 1);
+    filter: blur(0px);
   }
 }
 
@@ -528,14 +536,17 @@ body {
   0% {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1, 1);
+    filter: blur(0px);
   }
-  80% {
-    opacity: 1;
-    transform: translate3d(0, 12px, 0) scale(0.21, 0.26);
+  75% {
+    opacity: 0.55;
+    transform: translate3d(0, 14px, 0) scale(0.21, 0.26);
+    filter: blur(2px);
   }
   100% {
     opacity: 0;
-    transform: translate3d(0, 18px, 0) scale(0.18, 0.24);
+    transform: translate3d(0, 20px, 0) scale(0.18, 0.24);
+    filter: blur(4px);
   }
 }
 
@@ -595,7 +606,7 @@ body {
   z-index: 100001 !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
-  transform-origin: 87.5% bottom !important;
+  transform-origin: center bottom !important;
 
   /* Optical Material: .popover / .hudWindow */
   background-color: rgba(235, 236, 240, 0.88) !important;
