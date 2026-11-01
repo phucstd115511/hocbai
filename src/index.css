@@ -443,98 +443,123 @@ body {
 }
 
 /* ==========================================================================
-   Apple VisionOS / Liquid Glass Architecture (Kính lỏng trong suốt khúc xạ)
+   Apple VisionOS / Liquid Glass Aesthetic
+   Keywords: rounded button, liquid glass aesthetic, frosted transparency, 
+             soft shadows, minimalistic design, subtle highlights, monochromatic
    ========================================================================== */
 
 .neu-water-surface {
   position: relative;
-  /* 1. Hoàn toàn trong suốt (Truly transparent) - Không dùng màu trắng hay gradient trắng đục */
-  background-color: rgba(255, 255, 255, 0.03) !important;
-  background-image: none !important;
+  /* 1. Frosted Transparency: Kính mờ trong suốt, khúc xạ ánh sáng 3D */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.25) 100%
+  ) !important;
   
-  /* 2. Apple Liquid Optical Blur & High Saturation */
-  -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
-  backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
+  /* 2. Optical Blur & Saturation */
+  -webkit-backdrop-filter: blur(20px) saturate(180%) contrast(105%) !important;
+  backdrop-filter: blur(20px) saturate(180%) contrast(105%) !important;
   
-  /* 3. Viền kính hơi đậm (Meniscus Rim) bao quanh 4 cạnh rõ nét, không làm trắng đỉnh */
-  border: 1.5px solid rgba(74, 85, 104, 0.45) !important;
+  /* 3. Sleek Glass Hairline Border (Bắt sáng trên, tương phản chiều sâu dưới) */
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid rgba(74, 85, 104, 0.28) !important;
   
-  /* 4. Specular Highlights & Rim Lighting mảnh dẻ (không tạo vệt trắng bệt) */
+  /* 4. Soft Multi-Tiered Shadows & Subtle Specular Highlights */
   box-shadow: 
-    0 4px 14px -2px rgba(163, 177, 198, 0.45),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.45),
-    inset 0 -1px 1px 0 rgba(74, 85, 104, 0.15) !important;
+    0 10px 28px -4px rgba(74, 85, 104, 0.18),
+    0 4px 10px -2px rgba(74, 85, 104, 0.08),
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1.5px 2px 0 rgba(74, 85, 104, 0.12),
+    inset 0 0 16px -2px rgba(255, 136, 0, 0.14) !important;
 }
 
 .dark .neu-water-surface {
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  background-image: none !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  ) !important;
   
-  -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
-  backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) contrast(105%) !important;
+  backdrop-filter: blur(20px) saturate(180%) contrast(105%) !important;
   
-  border: 1.5px solid rgba(255, 255, 255, 0.32) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45) !important;
   
   box-shadow: 
-    0 4px 14px -2px rgba(0, 0, 0, 0.65),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
-    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.4) !important;
+    0 12px 32px -4px rgba(0, 0, 0, 0.75),
+    0 4px 12px -2px rgba(0, 0, 0, 0.5),
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.45),
+    inset 0 -1.5px 2px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 16px -2px rgba(255, 136, 0, 0.18) !important;
 }
 
 /* Water Surface Hover for Items / Buttons / Options */
 .neu-water-hover {
   position: relative;
-  border: 1.5px solid transparent !important;
-  transition: all 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 1px solid transparent !important;
+  transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .neu-water-hover:hover,
 .neu-water-hover:focus-visible {
-  /* Hoàn toàn trong suốt (See-through) */
-  background-color: rgba(255, 255, 255, 0.04) !important;
-  background-image: none !important;
-  -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
-  backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.65) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  ) !important;
   
-  border: 1.5px solid rgba(74, 85, 104, 0.45) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%) contrast(105%) !important;
+  backdrop-filter: blur(20px) saturate(190%) contrast(105%) !important;
+  
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid rgba(74, 85, 104, 0.32) !important;
   
   box-shadow: 
-    0 4px 14px -2px rgba(163, 177, 198, 0.45),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.45),
-    inset 0 -1px 1px 0 rgba(74, 85, 104, 0.15) !important;
-  transform: translateY(-1px);
+    0 14px 36px -4px rgba(74, 85, 104, 0.22),
+    0 6px 14px -2px rgba(74, 85, 104, 0.1),
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 1),
+    inset 0 -1.5px 2px 0 rgba(74, 85, 104, 0.14) !important;
+  transform: translateY(-2px);
 }
 
 .neu-water-hover:active {
   transform: translateY(0.5px) scale(0.985);
   box-shadow: 
-    0 2px 8px -2px rgba(163, 177, 198, 0.35),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.3),
-    inset 0 -1px 1px 0 rgba(74, 85, 104, 0.1) !important;
+    0 4px 12px -2px rgba(74, 85, 104, 0.15),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 1.5px 0 rgba(74, 85, 104, 0.1) !important;
 }
 
 .dark .neu-water-hover:hover,
 .dark .neu-water-hover:focus-visible {
-  background-color: rgba(255, 255, 255, 0.02) !important;
-  background-image: none !important;
-  -webkit-backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
-  backdrop-filter: blur(12px) saturate(180%) contrast(102%) !important;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  ) !important;
   
-  border: 1.5px solid rgba(255, 255, 255, 0.32) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%) contrast(105%) !important;
+  backdrop-filter: blur(20px) saturate(190%) contrast(105%) !important;
+  
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
   
   box-shadow: 
-    0 4px 14px -2px rgba(0, 0, 0, 0.65),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
-    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.4) !important;
-  transform: translateY(-1px);
+    0 14px 36px -4px rgba(0, 0, 0, 0.8),
+    0 6px 14px -2px rgba(0, 0, 0, 0.55),
+    inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1.5px 2px 0 rgba(0, 0, 0, 0.55) !important;
+  transform: translateY(-2px);
 }
 
 .dark .neu-water-hover:active {
   transform: translateY(0.5px) scale(0.985);
   box-shadow: 
-    0 2px 8px -2px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.2),
-    inset 0 -1px 1px 0 rgba(0, 0, 0, 0.3) !important;
+    0 4px 12px -2px rgba(0, 0, 0, 0.6),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 1.5px 0 rgba(0, 0, 0, 0.4) !important;
 }
 
 /* ==========================================================================
