@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import MathRenderer from '../common/MathRenderer.jsx';
 import QuestionFormModal from './QuestionFormModal.jsx';
 import Modal from '../common/Modal.jsx';
+import useHorizontalScroll from '../../hooks/useHorizontalScroll.js';
 import { DIFFICULTY_LEVELS, QUESTION_TYPES, generateId } from '../../types/schema.js';
 import { 
   Search, 
@@ -43,6 +44,11 @@ export default function QuestionBank({
   const [selectedTag, setSelectedTag] = useState('');
   const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'table'
   const [expandedExplanationId, setExpandedExplanationId] = useState(null);
+
+  // Smooth mouse-wheel & drag-to-scroll horizontal containers
+  const subjectScrollRef = useHorizontalScroll();
+  const chapterScrollRef = useHorizontalScroll();
+  const tagScrollRef = useHorizontalScroll();
 
   // Modals
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -184,7 +190,10 @@ export default function QuestionBank({
       <div className="neu-card p-6 sm:p-7 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-4 transition-all duration-300">
         {/* Quick Subject Category Navigation */}
         <div className="space-y-2.5 pb-2 border-b border-black/5 dark:border-white/5">
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+          <div 
+            ref={subjectScrollRef}
+            className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+          >
             <span className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] shrink-0">
               Môn học:
             </span>
@@ -227,7 +236,10 @@ export default function QuestionBank({
 
           {/* Sub-Chapter Pills (if a subject is selected) */}
           {availableChapters.length > 0 && (
-            <div className="flex items-center gap-1.5 overflow-x-auto text-xs pt-1 pb-1 no-scrollbar">
+            <div 
+              ref={chapterScrollRef}
+              className="flex items-center gap-1.5 overflow-x-auto text-xs pt-1 pb-1 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+            >
               <span className="text-[#718096] dark:text-[#94A3B8] font-bold text-[11px] shrink-0">Chương / Bài:</span>
               <button
                 onClick={() => setSelectedChapterId('')}
@@ -343,7 +355,10 @@ export default function QuestionBank({
 
         {/* Tags bar (nếu có) */}
         {allTags.length > 0 && (
-          <div className="flex items-center gap-1.5 pt-1 overflow-x-auto text-xs pb-1 no-scrollbar">
+          <div 
+            ref={tagScrollRef}
+            className="flex items-center gap-1.5 pt-1 overflow-x-auto text-xs pb-1 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+          >
             <span className="text-[#718096] dark:text-[#94A3B8] flex items-center gap-1 shrink-0 font-bold text-[11px]">
               <Tag className="w-3 h-3 text-[#FF8800]" /> Thẻ:
             </span>
