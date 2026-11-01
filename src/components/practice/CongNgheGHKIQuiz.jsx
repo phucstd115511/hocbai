@@ -534,7 +534,7 @@ export default function CongNgheGHKIQuiz({
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1.5 sm:gap-2 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             activeSubjectId === 'sub_congnghe_ghki'
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
@@ -553,7 +553,7 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_gdqp11')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             isGdqp
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
@@ -572,7 +572,7 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_dia11')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             isDia
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
@@ -591,7 +591,7 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_su11')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             isSu
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
@@ -610,7 +610,7 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_tienganh11')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             isEnglish
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
@@ -629,7 +629,7 @@ export default function CongNgheGHKIQuiz({
 
         <button
           onClick={() => handleSwitchSubject('sub_tinhoc11')}
-          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-2 sm:px-3 rounded-full text-[11px] sm:text-sm font-display font-bold transition-all duration-200 cursor-pointer text-center ${
             isTinHoc
               ? 'neu-water-surface text-[#FF8800] font-extrabold'
               : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
