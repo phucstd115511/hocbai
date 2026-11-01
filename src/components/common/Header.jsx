@@ -469,18 +469,20 @@ export default function Header({
       {mounted && createPortal(
         <nav
           aria-label="Thanh điều hướng dưới"
-          className="neu-mobile-bottom-nav lg:hidden fixed z-[99999] rounded-full bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/90 dark:border-white/15 shadow-[0_10px_25px_rgba(163,177,198,0.6),0_4px_10px_rgba(163,177,198,0.25)] dark:shadow-[0_12px_28px_rgba(0,0,0,0.85),0_4px_10px_rgba(0,0,0,0.5)] py-1.5 px-3 transition-colors duration-300"
+          className="neu-mobile-bottom-nav lg:hidden fixed z-[99999] rounded-full bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/90 dark:border-white/15 shadow-[0_10px_25px_rgba(163,177,198,0.6),0_4px_10px_rgba(163,177,198,0.25)] dark:shadow-[0_12px_28px_rgba(0,0,0,0.85),0_4px_10px_rgba(0,0,0,0.5)] py-1.5 px-2 transition-colors duration-300"
           style={{
             position: 'fixed',
-            left: '50%',
-            right: 'auto',
+            left: 0,
+            right: 0,
+            marginLeft: 'auto',
+            marginRight: 'auto',
             bottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))',
             width: 'calc(100% - 2rem)',
             maxWidth: '380px',
             borderRadius: '9999px',
             zIndex: 99999,
-            WebkitTransform: 'translate3d(-50%, 0, 0)',
-            transform: 'translate3d(-50%, 0, 0)',
+            WebkitTransform: 'translateZ(0)',
+            transform: 'translateZ(0)',
             willChange: 'transform'
           }}
         >
