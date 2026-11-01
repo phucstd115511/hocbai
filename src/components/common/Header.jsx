@@ -607,7 +607,7 @@ export default function Header({
         <>
           <div 
             className={`fixed inset-0 bg-black/40 backdrop-blur-[2px] z-[100000] lg:hidden transition-opacity duration-200 ${
-              isMoreAnimatingOut ? 'opacity-0' : 'opacity-100'
+              isMoreAnimatingOut ? 'opacity-0' : 'neu-popup-backdrop-enter'
             }`}
             style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, zIndex: 100000 }}
             onClick={closeMore}

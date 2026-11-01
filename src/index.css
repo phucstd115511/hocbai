@@ -512,14 +512,7 @@ body {
 @keyframes popup-spring-enter {
   0% {
     opacity: 0;
-    transform: translate3d(0, 36px, 0) scale(0.92);
-  }
-  65% {
-    opacity: 1;
-    transform: translate3d(0, -5px, 0) scale(1.015);
-  }
-  85% {
-    transform: translate3d(0, 2px, 0) scale(0.998);
+    transform: translate3d(0, 42px, 0) scale(0.88);
   }
   100% {
     opacity: 1;
@@ -538,6 +531,19 @@ body {
   }
 }
 
+@keyframes popup-backdrop-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.neu-popup-backdrop-enter {
+  animation: popup-backdrop-fade-in 300ms ease-out forwards;
+}
+
 .neu-mobile-popup {
   position: fixed !important;
   left: 0 !important;
@@ -550,6 +556,7 @@ body {
   border-radius: 32px !important;
   z-index: 100001 !important;
   box-sizing: border-box !important;
+  transform-origin: center bottom !important;
 
   /* Optical Material: .popover / .hudWindow */
   background-color: rgba(235, 236, 240, 0.88) !important;
@@ -579,7 +586,7 @@ body {
 }
 
 .neu-popup-enter {
-  animation: popup-spring-enter 420ms cubic-bezier(0.175, 0.885, 0.32, 1.15) forwards;
+  animation: popup-spring-enter 460ms cubic-bezier(0.62, 0, 0.2, 1.16) forwards;
 }
 
 .neu-popup-exit {
