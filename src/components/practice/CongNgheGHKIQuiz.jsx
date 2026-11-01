@@ -720,11 +720,11 @@ export default function CongNgheGHKIQuiz({
           </div>
 
           {/* Row 2 on mobile: View mode & Submit toggle spread out evenly */}
-          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto">
+          <div className="flex items-center gap-1.5 sm:gap-3 w-full md:w-auto">
             <div className="flex neu-inset p-1 rounded-xl text-xs gap-1 shrink-0">
               <button
                 onClick={() => setDisplayMode('scroll')}
-                className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                className={`flex items-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
                   displayMode === 'scroll' 
                     ? 'neu-extruded text-[#FF8800]' 
                     : 'text-[#718096] dark:text-[#94A3B8]'
@@ -734,7 +734,7 @@ export default function CongNgheGHKIQuiz({
               </button>
               <button
                 onClick={() => setDisplayMode('single')}
-                className={`flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                className={`flex items-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
                   displayMode === 'single' 
                     ? 'neu-extruded text-[#FF8800]' 
                     : 'text-[#718096] dark:text-[#94A3B8]'
@@ -747,7 +747,7 @@ export default function CongNgheGHKIQuiz({
             {!isSubmitted ? (
               <button
                 onClick={handleSubmit}
-                className="flex-1 min-w-0 md:flex-initial neu-btn-primary px-3 sm:px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer font-bold transition-all duration-300 shrink"
+                className="flex-1 min-w-0 md:flex-initial neu-btn-primary px-2.5 sm:px-4 py-2 rounded-xl text-[11px] sm:text-xs uppercase tracking-tight sm:tracking-wide flex items-center justify-center gap-1.5 cursor-pointer font-bold transition-all duration-300 shrink"
               >
                 <Send className="w-3.5 h-3.5 shrink-0" />
                 <span className="truncate">
@@ -756,28 +756,25 @@ export default function CongNgheGHKIQuiz({
                 </span>
               </button>
             ) : (
-              <div className="flex items-center gap-1.5 shrink min-w-0">
+              <div className="flex items-center gap-1.5 flex-1 min-w-0 md:flex-initial">
                 <button
                   onClick={() => setIsScoreReportOpen(true)}
-                  className="neu-btn-primary px-3 sm:px-3.5 py-2 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-1 cursor-pointer transition shrink shadow-[0_2px_8px_rgba(255,136,0,0.35)]"
+                  className="flex-1 md:flex-initial neu-btn-primary px-2 sm:px-3.5 py-2 rounded-xl text-[11px] sm:text-xs font-display font-bold flex items-center justify-center gap-1 cursor-pointer transition shrink shadow-[0_2px_8px_rgba(255,136,0,0.35)]"
                   title="Xem lại bảng điểm chi tiết"
                 >
                   <Award className="w-3.5 h-3.5 shrink-0" />
                   <span className="truncate">
-                    <span className="sm:hidden">Xem Điểm</span>
+                    <span className="sm:hidden">Bảng Điểm</span>
                     <span className="hidden sm:inline">Bảng Điểm</span>
                   </span>
                 </button>
                 <button
                   onClick={handleReset}
-                  className="neu-btn px-3 sm:px-3.5 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1 cursor-pointer transition shrink"
+                  className="flex-1 md:flex-initial neu-btn px-2 sm:px-3.5 py-2 rounded-xl text-[11px] sm:text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1 cursor-pointer transition shrink"
                   title="Làm lại đề này"
                 >
                   <RotateCcw className="w-3.5 h-3.5 shrink-0" />
-                  <span className="truncate">
-                    <span className="sm:hidden">Làm Lại</span>
-                    <span className="hidden sm:inline">Làm Lại</span>
-                  </span>
+                  <span className="truncate">Làm Lại</span>
                 </button>
               </div>
             )}
@@ -834,89 +831,7 @@ export default function CongNgheGHKIQuiz({
         </div>
       )}
 
-      {/* 5. In-page Score Report Card (Element Báo Điểm khi nộp bài) */}
-      {isSubmitted && scoreResult && (
-        <div className="neu-card p-6 sm:p-8 rounded-[32px] text-center space-y-5 bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 shadow-[8px_8px_24px_rgb(163,177,198,0.6),-8px_-8px_24px_rgba(255,255,255,0.8)] dark:shadow-[8px_8px_24px_rgb(14,17,21,0.85),-8px_-8px_24px_rgba(255,255,255,0.05)] relative overflow-hidden transition-all duration-300">
-          <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800]">
-            <Award className="w-9 h-9 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
-          </div>
 
-          <div className="space-y-1">
-            {evaluation && (
-              <div className={`text-sm font-display font-black tracking-wider uppercase ${evaluation.color}`}>
-                {evaluation.badge}
-              </div>
-            )}
-            <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white">
-              Kết Quả Bài Làm: {currentSubjectName}
-            </h2>
-            <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
-              Thời gian hoàn thành: <span className="font-mono font-bold text-[#FF8800]">{formatTimer(seconds)}</span>
-            </p>
-          </div>
-
-          <div className="max-w-md mx-auto neu-inset p-5 rounded-2xl space-y-1.5">
-            <div className="text-4xl sm:text-5xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.35)]">
-              {scoreResult.totalPoints} <span className="text-xl sm:text-2xl font-bold text-[#718096] dark:text-[#94A3B8]">/ {scoreResult.maxPoints} điểm</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 text-xs font-bold text-[#718096] dark:text-[#94A3B8] pt-1">
-              <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
-                Thang 10: {scoreResult.scale10Score} điểm
-              </span>
-              <span>•</span>
-              <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
-                Đạt {scoreResult.percent}%
-              </span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-lg mx-auto text-xs">
-            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
-              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Số câu đúng</div>
-              <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
-                {scoreResult.correctCount} câu
-              </div>
-            </div>
-            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
-              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Số câu sai</div>
-              <div className="text-sm font-display font-extrabold text-rose-600 dark:text-rose-400">
-                {scoreResult.wrongCount} câu
-              </div>
-            </div>
-            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
-              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa làm</div>
-              <div className="text-sm font-display font-extrabold text-amber-600 dark:text-amber-400">
-                {scoreResult.unansweredCount} câu
-              </div>
-            </div>
-            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
-              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Tỉ lệ đạt</div>
-              <div className="text-sm font-display font-extrabold text-[#FF8800]">
-                {scoreResult.percent}%
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
-            <button
-              onClick={() => setIsScoreReportOpen(true)}
-              className="neu-btn-primary px-5 py-2.5 rounded-2xl text-xs font-display font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer shadow-[4px_4px_12px_rgba(255,136,0,0.35)]"
-            >
-              <Award className="w-4 h-4" /> Bảng Điểm Chi Tiết
-            </button>
-            <button
-              onClick={handleReset}
-              className="neu-btn px-5 py-2.5 rounded-2xl text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center gap-1.5 cursor-pointer"
-            >
-              <RotateCcw className="w-4 h-4" /> Làm Lại Từ Đầu
-            </button>
-          </div>
-
-          <p className="text-xs text-[#718096] dark:text-[#94A3B8] italic pt-1">
-            * Toàn bộ đáp án chuẩn và lời giải chi tiết từng câu đã được mở khóa bên dưới để bạn đối chiếu.
-          </p>
-        </div>
-      )}
 
       {/* 6. MAIN TEST VIEW */}
       {questionsToTest.length === 0 ? (
@@ -1673,13 +1588,13 @@ export default function CongNgheGHKIQuiz({
         title="Xác nhận nộp bài thi"
         maxWidth="max-w-md"
       >
-        <div className="space-y-5 text-[#4A5568] dark:text-[#E2E8F0]">
+        <div className="space-y-3 sm:space-y-4 text-[#4A5568] dark:text-[#E2E8F0]">
           {/* Header icon & Subject name */}
-          <div className="text-center space-y-1.5 pt-1">
-            <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800] mb-2">
-              <Send className="w-7 h-7 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
+          <div className="text-center space-y-1">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800] mb-1.5">
+              <Send className="w-5 h-5 sm:w-6 sm:h-6 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
             </div>
-            <h4 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white">
+            <h4 className="text-sm sm:text-base font-display font-extrabold text-[#2D3748] dark:text-white">
               {currentSubjectName}
             </h4>
             <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
@@ -1688,7 +1603,7 @@ export default function CongNgheGHKIQuiz({
           </div>
 
           {/* Progress stats card */}
-          <div className="neu-inset p-4 rounded-2xl space-y-2.5">
+          <div className="neu-inset p-3 sm:p-4 rounded-2xl space-y-2">
             <div className="flex items-center justify-between text-xs font-bold">
               <span className="text-[#718096] dark:text-[#94A3B8]">Tiến độ câu hỏi:</span>
               <span className="text-[#FF8800] font-extrabold">
@@ -1697,23 +1612,23 @@ export default function CongNgheGHKIQuiz({
             </div>
             
             {/* Progress bar */}
-            <div className="w-full h-2.5 rounded-full bg-[#D1D9E6] dark:bg-[#12151A] overflow-hidden p-0.5 neu-inset-sm">
+            <div className="w-full h-2 rounded-full bg-[#D1D9E6] dark:bg-[#12151A] overflow-hidden p-0.5 neu-inset-sm">
               <div 
                 className="h-full rounded-full bg-gradient-to-r from-[#FF8800] to-[#FFA726] transition-all duration-300"
                 style={{ width: `${questionsToTest.length > 0 ? (answeredCount / questionsToTest.length) * 100 : 0}%` }}
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-2 pt-1 text-center text-xs">
-              <div className="p-2 rounded-xl bg-white/40 dark:bg-black/20">
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Đã hoàn thành</div>
-                <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
+            <div className="grid grid-cols-2 gap-2 pt-0.5 text-center text-xs">
+              <div className="p-1.5 sm:p-2 rounded-xl bg-white/40 dark:bg-black/20">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Đã hoàn thành</div>
+                <div className="text-xs sm:text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
                   {answeredCount} câu
                 </div>
               </div>
-              <div className="p-2 rounded-xl bg-white/40 dark:bg-black/20">
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa trả lời</div>
-                <div className={`text-sm font-display font-extrabold ${questionsToTest.length - answeredCount > 0 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'}`}>
+              <div className="p-1.5 sm:p-2 rounded-xl bg-white/40 dark:bg-black/20">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa trả lời</div>
+                <div className={`text-xs sm:text-sm font-display font-extrabold ${questionsToTest.length - answeredCount > 0 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'}`}>
                   {questionsToTest.length - answeredCount} câu
                 </div>
               </div>
@@ -1722,14 +1637,14 @@ export default function CongNgheGHKIQuiz({
 
           {/* Warning / Reminder note */}
           {answeredCount < questionsToTest.length ? (
-            <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs leading-relaxed">
+            <div className="flex items-start gap-2 p-2.5 sm:p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs leading-relaxed">
               <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5 text-amber-500" />
               <span>
                 Bạn vẫn còn <strong>{questionsToTest.length - answeredCount} câu</strong> chưa làm. Những câu này sẽ được tính 0 điểm. Bạn có chắc chắn muốn nộp bài?
               </span>
             </div>
           ) : (
-            <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs leading-relaxed">
+            <div className="flex items-start gap-2 p-2.5 sm:p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs leading-relaxed">
               <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5 text-emerald-500" />
               <span>
                 Bạn đã trả lời đủ <strong>100% ({questionsToTest.length}/{questionsToTest.length})</strong> câu hỏi. Hãy bấm nộp bài để xem điểm số và lời giải chi tiết.
@@ -1738,16 +1653,16 @@ export default function CongNgheGHKIQuiz({
           )}
 
           {/* Actions */}
-          <div className="flex items-center gap-3 pt-1">
+          <div className="flex items-center gap-2.5 pt-1">
             <button
               onClick={() => setIsSubmitConfirmOpen(false)}
-              className="flex-1 py-3 px-4 rounded-2xl neu-btn text-xs font-display font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white transition cursor-pointer"
+              className="flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl neu-btn text-xs font-display font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white transition cursor-pointer"
             >
               Làm Tiếp
             </button>
             <button
               onClick={handleConfirmSubmit}
-              className="flex-1 py-3 px-4 rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 shadow-[4px_4px_12px_rgba(255,136,0,0.4)] cursor-pointer"
+              className="flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 shadow-[4px_4px_12px_rgba(255,136,0,0.4)] cursor-pointer"
             >
               <Send className="w-3.5 h-3.5" /> Nộp Bài Ngay
             </button>
@@ -1765,19 +1680,19 @@ export default function CongNgheGHKIQuiz({
           title="Bảng Điểm & Kết Quả Chi Tiết"
           maxWidth="max-w-md"
         >
-          <div className="space-y-4 text-center text-[#4A5568] dark:text-[#E2E8F0]">
+          <div className="space-y-3 sm:space-y-4 text-center text-[#4A5568] dark:text-[#E2E8F0]">
             {/* Top evaluation badge */}
-            <div className="space-y-1.5 pt-1">
-              <div className="w-16 h-16 mx-auto rounded-full neu-inset flex items-center justify-center text-[#FF8800] relative">
-                <Trophy className="w-8 h-8 drop-shadow-[0_2px_10px_rgba(255,136,0,0.5)]" />
+            <div className="space-y-1 pt-0.5">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto rounded-full neu-inset flex items-center justify-center text-[#FF8800] relative mb-1">
+                <Trophy className="w-6 h-6 sm:w-7 sm:h-7 drop-shadow-[0_2px_10px_rgba(255,136,0,0.5)]" />
               </div>
 
               {evaluation && (
                 <div className="space-y-0.5">
-                  <div className={`text-lg font-display font-black tracking-tight ${evaluation.color}`}>
+                  <div className={`text-base sm:text-lg font-display font-black tracking-tight ${evaluation.color}`}>
                     {evaluation.badge}
                   </div>
-                  <p className="text-xs text-[#718096] dark:text-[#94A3B8] max-w-xs mx-auto">
+                  <p className="text-[11px] sm:text-xs text-[#718096] dark:text-[#94A3B8] max-w-xs mx-auto">
                     {evaluation.desc}
                   </p>
                 </div>
@@ -1785,67 +1700,67 @@ export default function CongNgheGHKIQuiz({
             </div>
 
             {/* Main Score Display Box */}
-            <div className="neu-inset p-4 sm:p-5 rounded-3xl space-y-1">
-              <div className="text-4xl sm:text-5xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.35)]">
+            <div className="neu-inset p-3 sm:p-4 rounded-2xl sm:rounded-3xl space-y-1">
+              <div className="text-3xl sm:text-4xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.35)]">
                 {scoreResult.totalPoints}
-                <span className="text-xl sm:text-2xl font-bold text-[#718096] dark:text-[#94A3B8]"> / {scoreResult.maxPoints}</span>
+                <span className="text-lg sm:text-xl font-bold text-[#718096] dark:text-[#94A3B8]"> / {scoreResult.maxPoints}</span>
               </div>
-              <div className="flex items-center justify-center gap-2 text-xs font-bold text-[#718096] dark:text-[#94A3B8] pt-1">
-                <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
-                  Thang 10: {scoreResult.scale10Score} điểm
+              <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold text-[#718096] dark:text-[#94A3B8] pt-0.5">
+                <span className="px-2 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                  Thang 10: {scoreResult.scale10Score}
                 </span>
                 <span>•</span>
-                <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                <span className="px-2 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
                   Đạt {scoreResult.percent}%
                 </span>
               </div>
             </div>
 
             {/* 4 Stat Cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
-              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
-                <div className="flex items-center justify-center text-emerald-500 mb-1">
-                  <CheckCircle2 className="w-4 h-4" />
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-1.5 sm:gap-2 text-center text-xs">
+              <div className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-emerald-500 mb-0.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Đúng</div>
-                <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Đúng</div>
+                <div className="text-xs sm:text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
                   {scoreResult.correctCount}
                 </div>
               </div>
 
-              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
-                <div className="flex items-center justify-center text-rose-500 mb-1">
-                  <XCircle className="w-4 h-4" />
+              <div className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-rose-500 mb-0.5">
+                  <XCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Sai</div>
-                <div className="text-sm font-display font-extrabold text-rose-600 dark:text-rose-400">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Sai</div>
+                <div className="text-xs sm:text-sm font-display font-extrabold text-rose-600 dark:text-rose-400">
                   {scoreResult.wrongCount}
                 </div>
               </div>
 
-              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
-                <div className="flex items-center justify-center text-amber-500 mb-1">
-                  <HelpCircle className="w-4 h-4" />
+              <div className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-amber-500 mb-0.5">
+                  <HelpCircle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa làm</div>
-                <div className="text-sm font-display font-extrabold text-amber-600 dark:text-amber-400">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa làm</div>
+                <div className="text-xs sm:text-sm font-display font-extrabold text-amber-600 dark:text-amber-400">
                   {scoreResult.unansweredCount}
                 </div>
               </div>
 
-              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
-                <div className="flex items-center justify-center text-[#FF8800] mb-1">
-                  <Clock className="w-4 h-4" />
+              <div className="p-2 sm:p-2.5 rounded-xl sm:rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-[#FF8800] mb-0.5">
+                  <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </div>
-                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Thời gian</div>
-                <div className="text-sm font-mono font-bold text-[#FF8800]">
+                <div className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8]">Thời gian</div>
+                <div className="text-xs sm:text-sm font-mono font-bold text-[#FF8800]">
                   {formatTimer(seconds)}
                 </div>
               </div>
             </div>
 
             {/* Note */}
-            <p className="text-[11px] text-[#718096] dark:text-[#94A3B8] italic pt-0.5">
+            <p className="text-[10px] sm:text-[11px] text-[#718096] dark:text-[#94A3B8] italic pt-0.5">
               * Toàn bộ câu hỏi, đáp án đúng và lời giải chi tiết đã được mở khóa ngay trên trang để bạn đối chiếu.
             </p>
 
@@ -1853,13 +1768,13 @@ export default function CongNgheGHKIQuiz({
             <div className="flex flex-col sm:flex-row items-center gap-2 pt-1">
               <button
                 onClick={() => setIsScoreReportOpen(false)}
-                className="w-full sm:flex-1 py-3 px-4 rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer shadow-[4px_4px_12px_rgba(255,136,0,0.4)]"
+                className="w-full sm:flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer shadow-[4px_4px_12px_rgba(255,136,0,0.4)]"
               >
                 <Eye className="w-4 h-4" /> Xem Lại Bài Làm
               </button>
               <button
                 onClick={handleRestartFromModal}
-                className="w-full sm:flex-1 py-3 px-4 rounded-2xl neu-btn text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1.5 cursor-pointer transition"
+                className="w-full sm:flex-1 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl sm:rounded-2xl neu-btn text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1.5 cursor-pointer transition"
               >
                 <RotateCcw className="w-4 h-4" /> Làm Lại Đề Này
               </button>
