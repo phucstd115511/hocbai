@@ -634,15 +634,15 @@ export default function CongNgheGHKIQuiz({
       {/* 3. Sticky Progress & Control Bar Neumorphic with Locked Expansion Animation */}
       <div 
         ref={stickyRef}
-        className={`sticky top-20 z-30 backdrop-blur-md p-2.5 sm:p-3.5 rounded-2xl neu-extruded transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`sticky top-20 z-30 backdrop-blur-md p-2.5 sm:p-3.5 rounded-2xl neu-extruded transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] max-w-full overflow-hidden ${
           isStickyStuck 
             ? 'bg-[#EBECF0]/95 dark:bg-[#1A1E24]/95 shadow-[0_12px_28px_rgb(163,177,198,0.45)] dark:shadow-[0_12px_28px_rgb(0,0,0,0.7)] ring-1 ring-[#FF8800]/25' 
             : 'bg-[#EBECF0]/90 dark:bg-[#1A1E24]/90 shadow-[0_8px_16px_rgb(163,177,198,0.35)] dark:shadow-[0_8px_16px_rgb(0,0,0,0.5)]'
         }`}
       >
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2.5 w-full">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 sm:gap-2.5 w-full max-w-full">
           {/* Row 1 on mobile: Clock, Progress & Question Palette button spread out evenly */}
-          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto">
+          <div className="flex items-center gap-1.5 sm:gap-3 w-full md:w-auto">
             {/* Clock */}
             <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl neu-inset-sm text-[#FF8800] font-mono font-bold text-xs sm:text-sm shrink-0">
               <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
@@ -652,26 +652,26 @@ export default function CongNgheGHKIQuiz({
             {/* Progress */}
             <div className="neu-inset-sm px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] shrink-0">
               <span className="hidden sm:inline">Tiến độ: </span>
-              <span className="text-[#FF8800] font-extrabold">{answeredCount}</span>/{questionsToTest.length} <span className="hidden xs:inline">câu</span>
+              <span className="text-[#FF8800] font-extrabold">{answeredCount}</span>/{questionsToTest.length} <span className="hidden sm:inline">câu</span>
             </div>
 
             {/* Question Palette Button: expands to fill all remaining right space smoothly */}
             <button
               onClick={() => setShowPalette(!showPalette)}
-              className={`flex-1 md:flex-initial flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
+              className={`flex-1 min-w-0 md:flex-initial flex items-center justify-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-bold transition-all duration-300 cursor-pointer ${
                 showPalette 
                   ? 'neu-inset-sm text-[#FF8800]' 
                   : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800]'
               } ${isStickyStuck ? 'ring-1 ring-[#FF8800]/30 shadow-sm' : ''}`}
             >
               <Grid className="w-3.5 h-3.5 text-[#FF8800] shrink-0" />
-              <span className="truncate">Bảng câu hỏi ({answeredCount}/{questionsToTest.length})</span>
+              <span className="truncate">Bảng câu hỏi</span>
               <ChevronDown className={`w-3.5 h-3.5 text-[#718096] transition-transform duration-300 shrink-0 ${showPalette ? 'rotate-180 text-[#FF8800]' : ''}`} />
             </button>
           </div>
 
           {/* Row 2 on mobile: View mode & Submit toggle spread out evenly */}
-          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto justify-between">
+          <div className="flex items-center gap-2 sm:gap-3 w-full md:w-auto">
             <div className="flex neu-inset p-1 rounded-xl text-xs gap-1 shrink-0">
               <button
                 onClick={() => setDisplayMode('scroll')}
@@ -681,7 +681,7 @@ export default function CongNgheGHKIQuiz({
                     : 'text-[#718096] dark:text-[#94A3B8]'
                 }`}
               >
-                <LayoutList className="w-3.5 h-3.5" /> <span className="hidden xs:inline">Toàn bộ đề</span><span className="xs:hidden">Tất cả</span>
+                <LayoutList className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Toàn bộ đề</span><span className="sm:hidden">Tất cả</span>
               </button>
               <button
                 onClick={() => setDisplayMode('single')}
@@ -698,16 +698,24 @@ export default function CongNgheGHKIQuiz({
             {!isSubmitted ? (
               <button
                 onClick={handleSubmit}
-                className="flex-1 md:flex-initial neu-btn-primary px-3.5 sm:px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer font-bold transition-all duration-300"
+                className="flex-1 min-w-0 md:flex-initial neu-btn-primary px-3 sm:px-4 py-2 rounded-xl text-xs uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer font-bold transition-all duration-300 shrink"
               >
-                <Send className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Nộp Bài & Chấm Điểm</span>
+                <Send className="w-3.5 h-3.5 shrink-0" />
+                <span className="truncate">
+                  <span className="sm:hidden">Nộp Bài</span>
+                  <span className="hidden sm:inline">Nộp Bài & Chấm Điểm</span>
+                </span>
               </button>
             ) : (
               <button
                 onClick={handleReset}
-                className="flex-1 md:flex-initial neu-btn px-3.5 sm:px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center justify-center gap-1.5 sm:gap-2 cursor-pointer transition-all duration-300"
+                className="flex-1 min-w-0 md:flex-initial neu-btn px-3 sm:px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer transition-all duration-300 shrink"
               >
-                <RotateCcw className="w-3.5 h-3.5 shrink-0" /> <span className="truncate">Làm Lại Đề Này</span>
+                <RotateCcw className="w-3.5 h-3.5 shrink-0" />
+                <span className="truncate">
+                  <span className="sm:hidden">Làm Lại</span>
+                  <span className="hidden sm:inline">Làm Lại Đề Này</span>
+                </span>
               </button>
             )}
           </div>

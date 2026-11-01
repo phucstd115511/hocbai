@@ -7,6 +7,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      screens: {
+        xs: '420px',
+      },
       fontFamily: {
         sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
         display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],

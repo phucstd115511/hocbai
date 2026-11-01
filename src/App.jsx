@@ -234,7 +234,7 @@ export default function App() {
         examCount={data.exams.length}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-28 lg:py-6">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-28 lg:py-6 overflow-x-clip max-w-full">
           {(activeTab === 'quiz' || activeTab === 'congnghe_ghki' || activeTab === 'gdqp_ghki') && (
             <CongNgheGHKIQuiz
               initialSubjectId={activeTab === 'gdqp_ghki' ? 'sub_gdqp11' : 'sub_congnghe_ghki'}
