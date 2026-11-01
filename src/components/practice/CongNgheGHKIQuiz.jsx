@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import MathRenderer from '../common/MathRenderer.jsx';
 import PrintView from '../print/PrintView.jsx';
+import Modal from '../common/Modal.jsx';
 import { scoreTrueFalseQuestion } from '../../services/practiceService.js';
 import { 
   CheckCircle2, 
@@ -24,7 +25,9 @@ import {
   Globe,
   Grid,
   Languages,
-  ChevronDown
+  ChevronDown,
+  AlertTriangle,
+  Trophy
 } from 'lucide-react';
 
 export default function CongNgheGHKIQuiz({
@@ -47,6 +50,10 @@ export default function CongNgheGHKIQuiz({
   const [isPrinting, setIsPrinting] = useState(false);
   const [isStickyStuck, setIsStickyStuck] = useState(false);
 
+  // Popup xác nhận nộp bài & Popup báo điểm kết quả
+  const [isSubmitConfirmOpen, setIsSubmitConfirmOpen] = useState(false);
+  const [isScoreReportOpen, setIsScoreReportOpen] = useState(false);
+
   // Hiệu ứng chuyển động thu lại & popup câu hỏi tiếp theo
   const [cardTransitionState, setCardTransitionState] = useState('idle'); // 'idle' | 'collapsing'
   const [autoAdvance, setAutoAdvance] = useState(true);
@@ -60,6 +67,16 @@ export default function CongNgheGHKIQuiz({
   const isDia = activeSubjectId === 'sub_dia11';
   const isSu = activeSubjectId === 'sub_su11';
   const isEnglish = activeSubjectId === 'sub_tienganh11';
+
+  const currentSubjectName = isEnglish
+    ? 'Tiếng Anh 11 (Global Success)'
+    : isGdqp
+    ? 'GDQP&AN 11'
+    : isDia
+    ? 'Địa Lí 11'
+    : isSu
+    ? 'Lịch Sử 11'
+    : 'Công Nghệ 11';
 
   // Lọc toàn bộ câu hỏi của môn đã chọn (Gộp lại trọn vẹn, không chia vụn vặt)
   const questionsToTest = useMemo(() => {
@@ -266,112 +283,28 @@ export default function CongNgheGHKIQuiz({
     return count;
   }, [questionsToTest, userAnswers]);
 
-  // Nộp bài -> Tự động tính điểm, lưu lịch sử, và Reset trạng thái làm bài để làm lại từ đầu
+  // 1. Bấm nút Nộp bài -> Mở Modal Popup xác nhận nộp bài (thay cho alert/confirm mặc định)
   const handleSubmit = () => {
-    if (answeredCount < questionsToTest.length) {
-      const confirmSubmit = confirm(`Bạn mới làm ${answeredCount}/${questionsToTest.length} câu. Bạn có chắc chắn muốn nộp bài để xem điểm và đặt lại để luyện tập lại không?`);
-      if (!confirmSubmit) return;
-    }
+    setIsSubmitConfirmOpen(true);
+  };
 
-    // Tính điểm ngay trước khi reset
-    let totalPoints = 0;
-    let maxPoints = questionsToTest.length;
-    let correctCount = 0;
-
-    questionsToTest.forEach(q => {
-      if (q.type === 'mcq') {
-        const choice = userAnswers[q.id];
-        if (choice === q.correct) {
-          totalPoints += 1;
-          correctCount++;
-        }
-      } else if (q.type === 'truefalse') {
-        const userTf = userAnswers[q.id] || {};
-        const res = scoreTrueFalseQuestion(q.statements, userTf, 'standard_thpt');
-        totalPoints += res.score;
-        if (res.isFullyCorrect) correctCount++;
-      } else if (q.type === 'short_answer') {
-        const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
-        const correctVal = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
-        if (userVal !== '' && userVal === correctVal) {
-          totalPoints += 1;
-          correctCount++;
-        }
-      }
-    });
-
-    const percent = maxPoints > 0 ? Math.round((totalPoints / maxPoints) * 100) : 0;
-    const finalScore = Math.round(totalPoints * 100) / 100;
-
-    // Lưu kết quả vào lịch sử
-    if (onSaveAttempt) {
-      const wrongQuestionIds = questionsToTest
-        .filter(q => {
-          if (q.type === 'mcq') return userAnswers[q.id] !== q.correct;
-          if (q.type === 'truefalse') {
-            const res = scoreTrueFalseQuestion(q.statements, userAnswers[q.id] || {}, 'standard_thpt');
-            return !res.isFullyCorrect;
-          }
-          if (q.type === 'short_answer') {
-            const userVal = String(userAnswers[q.id] || '').trim().replace(/,/g, '.');
-            const correctVal = String(q.correctAnswer || q.answer || '').trim().replace(/,/g, '.');
-            return userVal !== correctVal;
-          }
-          return false;
-        })
-        .map(q => q.id);
-
-      let examId = 'exam_congnghe_ghki';
-      let examName = 'Công Nghệ GHKI';
-      if (isGdqp) {
-        examId = 'exam_gdqp11_ghki';
-        examName = 'GDQP&AN 11 GHKI';
-      } else if (isDia) {
-        examId = 'exam_dia11_ghki';
-        examName = 'Địa Lí 11 GHKI';
-      } else if (isSu) {
-        examId = 'exam_su11_ghki';
-        examName = 'Lịch Sử 11 GHKI';
-      } else if (isEnglish) {
-        examId = 'exam_tienganh11_ghki';
-        examName = 'Tiếng Anh 11 GHKI (Global Success)';
-      }
-
-      onSaveAttempt({
-        id: `att_${Date.now()}`,
-        examId,
-        examName,
-        answers: userAnswers,
-        score: finalScore,
-        totalMaxScore: maxPoints,
-        percentage: percent,
-        wrongQuestionIds,
-        date: new Date().toISOString(),
-        durationSeconds: seconds
-      });
-    }
-
-    // Hiển thị thông báo kết quả chi tiết
-    alert(`🎉 ĐÃ NỘP BÀI THÀNH CÔNG!\n\n• Điểm số: ${finalScore}/${maxPoints} điểm\n• Số câu đúng: ${correctCount}/${maxPoints} câu (${percent}%)\n• Thời gian: ${formatTimer(seconds)}\n\nToàn bộ đề thi sẽ được RESET sạch sẽ để bạn bắt đầu lượt làm mới!`);
-
-    // Reset toàn bộ trạng thái đáp án về ban đầu
-    setUserAnswers({});
-    setLockedShortAnswers({});
-    setIsSubmitted(false);
-    setRevealedSingleQuestions({});
-    setSeconds(0);
-    setCurrentIndex(0);
-    setIsTimerActive(true);
-    hasSavedAttemptRef.current = false;
+  // 2. Xác nhận Nộp bài trong Modal -> Chấm điểm, khóa đề, lưu lịch sử và mở Modal Báo điểm
+  const handleConfirmSubmit = () => {
+    setIsSubmitConfirmOpen(false);
+    clearAutoAdvanceTimer();
+    setIsTimerActive(false);
+    setIsSubmitted(true);
+    setIsScoreReportOpen(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // Làm lại đề thủ công
+  // Làm lại đề thủ công (từ thanh công cụ hoặc nút trên trang)
   const handleReset = () => {
     if (confirm('Làm lại từ đầu? Tất cả các đáp án bạn vừa chọn sẽ được đặt lại.')) {
       setUserAnswers({});
       setLockedShortAnswers({});
       setIsSubmitted(false);
+      setIsScoreReportOpen(false);
       setRevealedSingleQuestions({});
       setSeconds(0);
       setIsTimerActive(true);
@@ -379,6 +312,20 @@ export default function CongNgheGHKIQuiz({
       hasSavedAttemptRef.current = false;
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+  };
+
+  // Làm lại trực tiếp từ Modal Báo Điểm (không cần confirm lần 2)
+  const handleRestartFromModal = () => {
+    setUserAnswers({});
+    setLockedShortAnswers({});
+    setIsSubmitted(false);
+    setIsScoreReportOpen(false);
+    setRevealedSingleQuestions({});
+    setSeconds(0);
+    setIsTimerActive(true);
+    setCurrentIndex(0);
+    hasSavedAttemptRef.current = false;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Chấm điểm sau khi nộp
@@ -412,13 +359,65 @@ export default function CongNgheGHKIQuiz({
     });
 
     const percent = maxPoints > 0 ? Math.round((totalPoints / maxPoints) * 100) : 0;
+    const finalScore = Math.round(totalPoints * 100) / 100;
+    const scale10Score = maxPoints > 0 ? ((totalPoints / maxPoints) * 10).toFixed(1) : '0.0';
+    const unansweredCount = Math.max(0, maxPoints - answeredCount);
+    const wrongCount = Math.max(0, maxPoints - correctCount - unansweredCount);
+
     return {
-      totalPoints: Math.round(totalPoints * 100) / 100,
+      totalPoints: finalScore,
       maxPoints,
       percent,
-      correctCount
+      correctCount,
+      wrongCount,
+      unansweredCount,
+      scale10Score
     };
-  }, [isSubmitted, questionsToTest, userAnswers]);
+  }, [isSubmitted, questionsToTest, userAnswers, answeredCount]);
+
+  // Đánh giá xếp loại kết quả
+  const evaluation = useMemo(() => {
+    if (!scoreResult) return null;
+    const p = scoreResult.percent;
+    if (p >= 90) {
+      return {
+        badge: 'Xuất Sắc! 🎉',
+        desc: 'Kiến thức cực kỳ vững vàng, sẵn sàng đạt điểm tuyệt đối!',
+        color: 'text-amber-500',
+        bg: 'bg-amber-500/10'
+      };
+    }
+    if (p >= 80) {
+      return {
+        badge: 'Rất Tốt! ⭐',
+        desc: 'Nắm chắc kiến thức trọng tâm, chỉ cần chú ý thêm vài chi tiết nhỏ!',
+        color: 'text-emerald-500',
+        bg: 'bg-emerald-500/10'
+      };
+    }
+    if (p >= 65) {
+      return {
+        badge: 'Khá Tốt! 👍',
+        desc: 'Hoàn thành tốt phần cơ bản, hãy rà soát kỹ các câu hỏi vận dụng.',
+        color: 'text-blue-500',
+        bg: 'bg-blue-500/10'
+      };
+    }
+    if (p >= 50) {
+      return {
+        badge: 'Đạt Yêu Cầu 📖',
+        desc: 'Đã nắm được nền tảng, nên xem lại lời giải chi tiết và luyện tập thêm.',
+        color: 'text-orange-500',
+        bg: 'bg-orange-500/10'
+      };
+    }
+    return {
+      badge: 'Cần Cố Gắng Thêm 📚',
+      desc: 'Hãy xem kỹ các đáp án và phần giải thích chi tiết bên dưới nhé!',
+      color: 'text-rose-500',
+      bg: 'bg-rose-500/10'
+    };
+  }, [scoreResult]);
 
   // Lưu kết quả làm bài vào lịch sử
   useEffect(() => {
@@ -757,16 +756,30 @@ export default function CongNgheGHKIQuiz({
                 </span>
               </button>
             ) : (
-              <button
-                onClick={handleReset}
-                className="flex-1 min-w-0 md:flex-initial neu-btn px-3 sm:px-4 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer transition-all duration-300 shrink"
-              >
-                <RotateCcw className="w-3.5 h-3.5 shrink-0" />
-                <span className="truncate">
-                  <span className="sm:hidden">Làm Lại</span>
-                  <span className="hidden sm:inline">Làm Lại Đề Này</span>
-                </span>
-              </button>
+              <div className="flex items-center gap-1.5 shrink min-w-0">
+                <button
+                  onClick={() => setIsScoreReportOpen(true)}
+                  className="neu-btn-primary px-3 sm:px-3.5 py-2 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-1 cursor-pointer transition shrink shadow-[0_2px_8px_rgba(255,136,0,0.35)]"
+                  title="Xem lại bảng điểm chi tiết"
+                >
+                  <Award className="w-3.5 h-3.5 shrink-0" />
+                  <span className="truncate">
+                    <span className="sm:hidden">Xem Điểm</span>
+                    <span className="hidden sm:inline">Bảng Điểm</span>
+                  </span>
+                </button>
+                <button
+                  onClick={handleReset}
+                  className="neu-btn px-3 sm:px-3.5 py-2 rounded-xl text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1 cursor-pointer transition shrink"
+                  title="Làm lại đề này"
+                >
+                  <RotateCcw className="w-3.5 h-3.5 shrink-0" />
+                  <span className="truncate">
+                    <span className="sm:hidden">Làm Lại</span>
+                    <span className="hidden sm:inline">Làm Lại</span>
+                  </span>
+                </button>
+              </div>
             )}
           </div>
         </div>
@@ -821,31 +834,86 @@ export default function CongNgheGHKIQuiz({
         </div>
       )}
 
-      {/* 5. Result Card (Hiện ra khi nộp bài) */}
+      {/* 5. In-page Score Report Card (Element Báo Điểm khi nộp bài) */}
       {isSubmitted && scoreResult && (
-        <div className="neu-card p-6 sm:p-8 rounded-[32px] text-center space-y-4 bg-[#EBECF0] dark:bg-[#1A1E24]">
-          <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800] mb-2">
+        <div className="neu-card p-6 sm:p-8 rounded-[32px] text-center space-y-5 bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 shadow-[8px_8px_24px_rgb(163,177,198,0.6),-8px_-8px_24px_rgba(255,255,255,0.8)] dark:shadow-[8px_8px_24px_rgb(14,17,21,0.85),-8px_-8px_24px_rgba(255,255,255,0.05)] relative overflow-hidden transition-all duration-300">
+          <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800]">
             <Award className="w-9 h-9 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
           </div>
-          <h2 className="text-2xl font-display font-extrabold uppercase text-[#2D3748] dark:text-white">
-            Kết Quả Bài Làm Của Bạn
-          </h2>
-          <div className="text-5xl font-display font-extrabold text-[#2D3748] dark:text-white">
-            {scoreResult.totalPoints} <span className="text-2xl font-bold text-[#718096] dark:text-[#94A3B8]">/ {scoreResult.maxPoints} điểm</span>
+
+          <div className="space-y-1">
+            {evaluation && (
+              <div className={`text-sm font-display font-black tracking-wider uppercase ${evaluation.color}`}>
+                {evaluation.badge}
+              </div>
+            )}
+            <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white">
+              Kết Quả Bài Làm: {currentSubjectName}
+            </h2>
+            <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
+              Thời gian hoàn thành: <span className="font-mono font-bold text-[#FF8800]">{formatTimer(seconds)}</span>
+            </p>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-1">
-            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
-              Tỉ lệ đúng: <strong className="text-[#FF8800]">{scoreResult.percent}%</strong>
-            </span>
-            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0]">
-              Số câu chuẩn: <strong className="text-[#FF8800]">{scoreResult.correctCount}/{scoreResult.maxPoints}</strong>
-            </span>
-            <span className="neu-inset-sm px-4 py-1.5 rounded-full text-xs font-mono font-bold text-[#FF8800]">
-              ⏱ {formatTimer(seconds)}
-            </span>
+
+          <div className="max-w-md mx-auto neu-inset p-5 rounded-2xl space-y-1.5">
+            <div className="text-4xl sm:text-5xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.35)]">
+              {scoreResult.totalPoints} <span className="text-xl sm:text-2xl font-bold text-[#718096] dark:text-[#94A3B8]">/ {scoreResult.maxPoints} điểm</span>
+            </div>
+            <div className="flex items-center justify-center gap-2 text-xs font-bold text-[#718096] dark:text-[#94A3B8] pt-1">
+              <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                Thang 10: {scoreResult.scale10Score} điểm
+              </span>
+              <span>•</span>
+              <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                Đạt {scoreResult.percent}%
+              </span>
+            </div>
           </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-lg mx-auto text-xs">
+            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
+              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Số câu đúng</div>
+              <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
+                {scoreResult.correctCount} câu
+              </div>
+            </div>
+            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
+              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Số câu sai</div>
+              <div className="text-sm font-display font-extrabold text-rose-600 dark:text-rose-400">
+                {scoreResult.wrongCount} câu
+              </div>
+            </div>
+            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
+              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa làm</div>
+              <div className="text-sm font-display font-extrabold text-amber-600 dark:text-amber-400">
+                {scoreResult.unansweredCount} câu
+              </div>
+            </div>
+            <div className="neu-inset-sm p-2.5 rounded-xl text-center">
+              <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Tỉ lệ đạt</div>
+              <div className="text-sm font-display font-extrabold text-[#FF8800]">
+                {scoreResult.percent}%
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+            <button
+              onClick={() => setIsScoreReportOpen(true)}
+              className="neu-btn-primary px-5 py-2.5 rounded-2xl text-xs font-display font-extrabold uppercase tracking-wide flex items-center gap-1.5 cursor-pointer shadow-[4px_4px_12px_rgba(255,136,0,0.35)]"
+            >
+              <Award className="w-4 h-4" /> Bảng Điểm Chi Tiết
+            </button>
+            <button
+              onClick={handleReset}
+              className="neu-btn px-5 py-2.5 rounded-2xl text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center gap-1.5 cursor-pointer"
+            >
+              <RotateCcw className="w-4 h-4" /> Làm Lại Từ Đầu
+            </button>
+          </div>
+
           <p className="text-xs text-[#718096] dark:text-[#94A3B8] italic pt-1">
-            * Toàn bộ đáp án đúng và lời giải chi tiết từng câu đã được hiển thị bên dưới để bạn đối chiếu.
+            * Toàn bộ đáp án chuẩn và lời giải chi tiết từng câu đã được mở khóa bên dưới để bạn đối chiếu.
           </p>
         </div>
       )}
@@ -1594,6 +1662,210 @@ export default function CongNgheGHKIQuiz({
             </div>
           );
         })()
+      )}
+
+      {/* ======================================================== */}
+      {/* POPUP 1: XÁC NHẬN NỘP BÀI THI                            */}
+      {/* ======================================================== */}
+      <Modal
+        isOpen={isSubmitConfirmOpen}
+        onClose={() => setIsSubmitConfirmOpen(false)}
+        title="Xác nhận nộp bài thi"
+        maxWidth="max-w-md"
+      >
+        <div className="space-y-5 text-[#4A5568] dark:text-[#E2E8F0]">
+          {/* Header icon & Subject name */}
+          <div className="text-center space-y-1.5 pt-1">
+            <div className="w-16 h-16 mx-auto rounded-2xl neu-inset flex items-center justify-center text-[#FF8800] mb-2">
+              <Send className="w-7 h-7 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
+            </div>
+            <h4 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white">
+              {currentSubjectName}
+            </h4>
+            <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
+              Thời gian đã làm: <span className="font-mono font-bold text-[#FF8800]">{formatTimer(seconds)}</span>
+            </p>
+          </div>
+
+          {/* Progress stats card */}
+          <div className="neu-inset p-4 rounded-2xl space-y-2.5">
+            <div className="flex items-center justify-between text-xs font-bold">
+              <span className="text-[#718096] dark:text-[#94A3B8]">Tiến độ câu hỏi:</span>
+              <span className="text-[#FF8800] font-extrabold">
+                {answeredCount}/{questionsToTest.length} câu ({questionsToTest.length > 0 ? Math.round((answeredCount / questionsToTest.length) * 100) : 0}%)
+              </span>
+            </div>
+            
+            {/* Progress bar */}
+            <div className="w-full h-2.5 rounded-full bg-[#D1D9E6] dark:bg-[#12151A] overflow-hidden p-0.5 neu-inset-sm">
+              <div 
+                className="h-full rounded-full bg-gradient-to-r from-[#FF8800] to-[#FFA726] transition-all duration-300"
+                style={{ width: `${questionsToTest.length > 0 ? (answeredCount / questionsToTest.length) * 100 : 0}%` }}
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-2 pt-1 text-center text-xs">
+              <div className="p-2 rounded-xl bg-white/40 dark:bg-black/20">
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Đã hoàn thành</div>
+                <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
+                  {answeredCount} câu
+                </div>
+              </div>
+              <div className="p-2 rounded-xl bg-white/40 dark:bg-black/20">
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa trả lời</div>
+                <div className={`text-sm font-display font-extrabold ${questionsToTest.length - answeredCount > 0 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'}`}>
+                  {questionsToTest.length - answeredCount} câu
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Warning / Reminder note */}
+          {answeredCount < questionsToTest.length ? (
+            <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-700 dark:text-amber-300 text-xs leading-relaxed">
+              <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5 text-amber-500" />
+              <span>
+                Bạn vẫn còn <strong>{questionsToTest.length - answeredCount} câu</strong> chưa làm. Những câu này sẽ được tính 0 điểm. Bạn có chắc chắn muốn nộp bài?
+              </span>
+            </div>
+          ) : (
+            <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs leading-relaxed">
+              <CheckCircle2 className="w-4 h-4 shrink-0 mt-0.5 text-emerald-500" />
+              <span>
+                Bạn đã trả lời đủ <strong>100% ({questionsToTest.length}/{questionsToTest.length})</strong> câu hỏi. Hãy bấm nộp bài để xem điểm số và lời giải chi tiết.
+              </span>
+            </div>
+          )}
+
+          {/* Actions */}
+          <div className="flex items-center gap-3 pt-1">
+            <button
+              onClick={() => setIsSubmitConfirmOpen(false)}
+              className="flex-1 py-3 px-4 rounded-2xl neu-btn text-xs font-display font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white transition cursor-pointer"
+            >
+              Làm Tiếp
+            </button>
+            <button
+              onClick={handleConfirmSubmit}
+              className="flex-1 py-3 px-4 rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 shadow-[4px_4px_12px_rgba(255,136,0,0.4)] cursor-pointer"
+            >
+              <Send className="w-3.5 h-3.5" /> Nộp Bài Ngay
+            </button>
+          </div>
+        </div>
+      </Modal>
+
+      {/* ======================================================== */}
+      {/* POPUP 2: ELEMENT BÁO ĐIỂM CHI TIẾT                       */}
+      {/* ======================================================== */}
+      {scoreResult && (
+        <Modal
+          isOpen={isScoreReportOpen}
+          onClose={() => setIsScoreReportOpen(false)}
+          title="Bảng Điểm & Kết Quả Chi Tiết"
+          maxWidth="max-w-md"
+        >
+          <div className="space-y-4 text-center text-[#4A5568] dark:text-[#E2E8F0]">
+            {/* Top evaluation badge */}
+            <div className="space-y-1.5 pt-1">
+              <div className="w-16 h-16 mx-auto rounded-full neu-inset flex items-center justify-center text-[#FF8800] relative">
+                <Trophy className="w-8 h-8 drop-shadow-[0_2px_10px_rgba(255,136,0,0.5)]" />
+              </div>
+
+              {evaluation && (
+                <div className="space-y-0.5">
+                  <div className={`text-lg font-display font-black tracking-tight ${evaluation.color}`}>
+                    {evaluation.badge}
+                  </div>
+                  <p className="text-xs text-[#718096] dark:text-[#94A3B8] max-w-xs mx-auto">
+                    {evaluation.desc}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* Main Score Display Box */}
+            <div className="neu-inset p-4 sm:p-5 rounded-3xl space-y-1">
+              <div className="text-4xl sm:text-5xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.35)]">
+                {scoreResult.totalPoints}
+                <span className="text-xl sm:text-2xl font-bold text-[#718096] dark:text-[#94A3B8]"> / {scoreResult.maxPoints}</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 text-xs font-bold text-[#718096] dark:text-[#94A3B8] pt-1">
+                <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                  Thang 10: {scoreResult.scale10Score} điểm
+                </span>
+                <span>•</span>
+                <span className="px-2.5 py-0.5 rounded-full neu-extruded text-[#FF8800] font-extrabold">
+                  Đạt {scoreResult.percent}%
+                </span>
+              </div>
+            </div>
+
+            {/* 4 Stat Cards */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs">
+              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-emerald-500 mb-1">
+                  <CheckCircle2 className="w-4 h-4" />
+                </div>
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Đúng</div>
+                <div className="text-sm font-display font-extrabold text-emerald-600 dark:text-emerald-400">
+                  {scoreResult.correctCount}
+                </div>
+              </div>
+
+              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-rose-500 mb-1">
+                  <XCircle className="w-4 h-4" />
+                </div>
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Sai</div>
+                <div className="text-sm font-display font-extrabold text-rose-600 dark:text-rose-400">
+                  {scoreResult.wrongCount}
+                </div>
+              </div>
+
+              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-amber-500 mb-1">
+                  <HelpCircle className="w-4 h-4" />
+                </div>
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Chưa làm</div>
+                <div className="text-sm font-display font-extrabold text-amber-600 dark:text-amber-400">
+                  {scoreResult.unansweredCount}
+                </div>
+              </div>
+
+              <div className="p-2.5 rounded-2xl neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24]">
+                <div className="flex items-center justify-center text-[#FF8800] mb-1">
+                  <Clock className="w-4 h-4" />
+                </div>
+                <div className="text-[11px] text-[#718096] dark:text-[#94A3B8]">Thời gian</div>
+                <div className="text-sm font-mono font-bold text-[#FF8800]">
+                  {formatTimer(seconds)}
+                </div>
+              </div>
+            </div>
+
+            {/* Note */}
+            <p className="text-[11px] text-[#718096] dark:text-[#94A3B8] italic pt-0.5">
+              * Toàn bộ câu hỏi, đáp án đúng và lời giải chi tiết đã được mở khóa ngay trên trang để bạn đối chiếu.
+            </p>
+
+            {/* Action buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-2 pt-1">
+              <button
+                onClick={() => setIsScoreReportOpen(false)}
+                className="w-full sm:flex-1 py-3 px-4 rounded-2xl neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wide flex items-center justify-center gap-1.5 cursor-pointer shadow-[4px_4px_12px_rgba(255,136,0,0.4)]"
+              >
+                <Eye className="w-4 h-4" /> Xem Lại Bài Làm
+              </button>
+              <button
+                onClick={handleRestartFromModal}
+                className="w-full sm:flex-1 py-3 px-4 rounded-2xl neu-btn text-xs font-display font-bold text-[#FF8800] hover:text-[#e07700] flex items-center justify-center gap-1.5 cursor-pointer transition"
+              >
+                <RotateCcw className="w-4 h-4" /> Làm Lại Đề Này
+              </button>
+            </div>
+          </div>
+        </Modal>
       )}
     </div>
   );
