@@ -151,6 +151,21 @@ export function getStoredData() {
           questions = [...questions, ...newQ];
         }
         needsResave = true;
+      } else {
+        // Tự động đồng bộ và cập nhật từ khóa in đậm (closest, opposite,...) cho Tiếng Anh 11
+        const engSeedMap = new Map(SEED_DATA.questions.filter(q => q.subjectId === 'sub_tienganh11').map(q => [q.id, q]));
+        let updatedAny = false;
+        questions = questions.map(q => {
+          if (q.subjectId === 'sub_tienganh11' && engSeedMap.has(q.id)) {
+            const seedQ = engSeedMap.get(q.id);
+            if (q.stem !== seedQ.stem) {
+              updatedAny = true;
+              return { ...q, stem: seedQ.stem };
+            }
+          }
+          return q;
+        });
+        if (updatedAny) needsResave = true;
       }
 
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt

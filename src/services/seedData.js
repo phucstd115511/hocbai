@@ -7185,7 +7185,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u1",
       "sectionId": "chap_eng_u1_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nMany experts said coronavirus spread would effectively be halted as lockdown was imposed.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nMany experts said coronavirus **spread** would effectively be halted as lockdown was imposed.",
       "options": [
         "development",
         "isolation",
@@ -7201,7 +7201,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u1",
       "sectionId": "chap_eng_u1_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nA recent study reveals that women's dietary habits have changed significantly from unhealthy food to more nutritious one.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nA recent study reveals that women's **dietary** habits have changed significantly from unhealthy food to more nutritious one.",
       "options": [
         "eating",
         "smoking",
@@ -7217,7 +7217,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u1",
       "sectionId": "chap_eng_u1_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nHe had terribly suffered continual back pain from a bad injury until he was surgically treated last year.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nHe had terribly **suffered** continual back pain from a bad injury until he was surgically treated last year.",
       "options": [
         "hurt",
         "affected",
@@ -7233,7 +7233,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u1",
       "sectionId": "chap_eng_u1_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nThe National Institute of Health is discussing ways of tackling the childhood obesity disease.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nThe National Institute of Health is discussing ways of tackling the childhood **obesity** disease.",
       "options": [
         "fever",
         "mumps",
@@ -7681,7 +7681,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nWhen their children are teenagers, many parents struggle to comprehend what's happening to them.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nWhen their children are **teenagers**, many parents struggle to comprehend what's happening to them.",
       "options": [
         "adults",
         "elders",
@@ -7697,7 +7697,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nParents should strictly limit their children's screen time.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nParents should strictly **limit** their children's screen time.",
       "options": [
         "control",
         "allow",
@@ -7713,7 +7713,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nA generation gap is commonly perceived to refer to differences between generations that cause conflict.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nA generation gap is commonly perceived to refer to differences between generations that cause **conflict**.",
       "options": [
         "competition",
         "dispute",
@@ -7729,7 +7729,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nOne of the key benefits of generations diversity is knowledge sharing.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nOne of the key **benefits** of generations diversity is knowledge sharing.",
       "options": [
         "advantages",
         "drawbacks",
@@ -8033,7 +8033,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s2",
-      "stem": "Which one is closest in meaning to the word \"excelled\" in the third paragraph?",
+      "stem": "Which one is closest in meaning to the word **\"excelled\"** in the third paragraph?",
       "options": [
         "comprehended",
         "studied",
@@ -8081,7 +8081,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s3",
-      "stem": "Rewrite the sentence using the word in brackets:\n\nJohn doesn't get permission to use that computer. (mustn't)",
+      "stem": "Rewrite the sentence using the word in brackets:\n\nJohn doesn't get permission to use that computer. **(mustn't)**",
       "options": [
         "John mustn't use that computer.",
         "John mustn't get permission to use that computer.",
@@ -8097,7 +8097,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s3",
-      "stem": "Rewrite the sentence using the word in brackets:\n\nCustomers are advised to check their luggage before leaving the airport. (ought to)",
+      "stem": "Rewrite the sentence using the word in brackets:\n\nCustomers are advised to check their luggage before leaving the airport. **(ought to)**",
       "options": [
         "Customers ought to check their luggage before leaving the airport.",
         "Customers ought to be advised their luggage before leaving the airport.",
@@ -8113,7 +8113,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u2",
       "sectionId": "chap_eng_u2_s3",
-      "stem": "Rewrite the sentence using the word in brackets:\n\nIf I were you, I would spend more time talking with my children. (should)",
+      "stem": "Rewrite the sentence using the word in brackets:\n\nIf I were you, I would spend more time talking with my children. **(should)**",
       "options": [
         "You should spend more time talking with your children.",
         "You should spend more time talking with my children.",
@@ -8129,7 +8129,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u3",
       "sectionId": "chap_eng_u3_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nTwo drivers escaped injury when their vehicles collided in Thirsk.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nTwo drivers escaped injury when their **vehicles** collided in Thirsk.",
       "options": [
         "trams",
         "electric cars",
@@ -8145,7 +8145,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u3",
       "sectionId": "chap_eng_u3_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word(s):\n\nSmart technologies make daily life more efficient and saves people a lot of time.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined/bold word(s):\n\nSmart technologies make daily life more **efficient** and saves people a lot of time.",
       "options": [
         "effective",
         "liveable",
@@ -8161,7 +8161,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u3",
       "sectionId": "chap_eng_u3_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nThe growing population will cause some problems in the development of a nation.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nThe **growing** population will cause some problems in the development of a nation.",
       "options": [
         "decreasing",
         "increasing",
@@ -8177,7 +8177,7 @@ export const SEED_DATA = {
       "subjectId": "sub_tienganh11",
       "chapterId": "chap_eng_u3",
       "sectionId": "chap_eng_u3_s1",
-      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined word(s):\n\nCameras and sensors are set up in our building to make our residents secure.",
+      "stem": "Mark the letter A, B, C, or D to indicate the word(s) OPPOSITE in meaning to the underlined/bold word(s):\n\nCameras and sensors are set up in our building to make our residents **secure**.",
       "options": [
         "harmful",
         "protected",
