@@ -18,7 +18,8 @@ import {
   HelpCircle,
   Tag,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Database
 } from 'lucide-react';
 
 export default function QuestionBank({
@@ -122,34 +123,47 @@ export default function QuestionBank({
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 max-w-6xl mx-auto">
       {/* Top Banner & Quick Stats */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+      <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300">
         <div>
-          <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            Ngân Hàng Câu Hỏi
-            <span className="text-xs px-2.5 py-0.5 rounded-full bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300 font-semibold">
-              {filteredQuestions.length} / {questions.length} câu
-            </span>
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+          <div className="flex items-center gap-3 mb-1.5">
+            <div className="w-10 h-10 rounded-2xl neu-inset flex items-center justify-center text-[#FF8800]">
+              <Database className="w-5 h-5 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]" />
+            </div>
+            <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white tracking-tight flex items-center gap-2.5">
+              Ngân Hàng Câu Hỏi
+              <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-full bg-[#FF8800] text-white shadow-[0_2px_4px_rgba(255,136,0,0.35)]">
+                {filteredQuestions.length} / {questions.length} câu
+              </span>
+            </h2>
+          </div>
+          <p className="text-xs font-medium text-[#718096] dark:text-[#94A3B8] ml-13">
             Quản lý, tìm kiếm, phân loại theo độ khó và chọn lọc câu hỏi cho đề thi
           </p>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           {/* View Mode Toggle */}
-          <div className="flex items-center border border-slate-200 dark:border-slate-700 rounded-lg p-0.5 bg-slate-100 dark:bg-slate-800">
+          <div className="flex items-center p-1 rounded-2xl neu-inset gap-1">
             <button
               onClick={() => setViewMode('grid')}
-              className={`p-1.5 rounded-md transition ${viewMode === 'grid' ? 'bg-white dark:bg-slate-700 shadow-xs text-sky-600 dark:text-sky-400' : 'text-slate-500'}`}
+              className={`p-2 rounded-xl transition-all cursor-pointer ${
+                viewMode === 'grid' 
+                  ? 'neu-extruded text-[#FF8800]' 
+                  : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+              }`}
               title="Dạng thẻ lưới"
             >
               <LayoutGrid className="w-4 h-4" />
             </button>
             <button
               onClick={() => setViewMode('table')}
-              className={`p-1.5 rounded-md transition ${viewMode === 'table' ? 'bg-white dark:bg-slate-700 shadow-xs text-sky-600 dark:text-sky-400' : 'text-slate-500'}`}
+              className={`p-2 rounded-xl transition-all cursor-pointer ${
+                viewMode === 'table' 
+                  ? 'neu-extruded text-[#FF8800]' 
+                  : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+              }`}
               title="Dạng danh sách bảng"
             >
               <List className="w-4 h-4" />
@@ -158,28 +172,28 @@ export default function QuestionBank({
 
           <button
             onClick={handleAddNew}
-            className="flex items-center gap-2 px-4 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-lg text-sm font-semibold shadow-md shadow-sky-600/20 transition"
+            className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-bold text-[#FF8800] flex items-center gap-2 active:scale-95 transition-all cursor-pointer"
           >
-            <Plus className="w-4 h-4" />
+            <Plus className="w-4 h-4 text-[#FF8800]" />
             Thêm Câu Hỏi
           </button>
         </div>
       </div>
 
       {/* Filter Toolbar */}
-      <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3">
+      <div className="neu-card p-6 sm:p-7 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-4 transition-all duration-300">
         {/* Quick Subject Category Navigation */}
-        <div className="space-y-2 pb-1 border-b border-slate-100 dark:border-slate-800">
-          <div className="flex items-center gap-2 overflow-x-auto pb-1">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 shrink-0">
-              Mục môn học:
+        <div className="space-y-2.5 pb-2 border-b border-black/5 dark:border-white/5">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] shrink-0">
+              Môn học:
             </span>
             <button
               onClick={() => { setSelectedSubjectId(''); setSelectedChapterId(''); }}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${
+              className={`px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                 !selectedSubjectId 
-                  ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900 shadow-sm' 
-                  : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                  ? 'neu-inset text-[#FF8800]' 
+                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
               }`}
             >
               Tất cả ({questions.length})
@@ -187,7 +201,6 @@ export default function QuestionBank({
             {subjects.map(s => {
               const isSelected = selectedSubjectId === s.id;
               const count = questions.filter(q => q.subjectId === s.id).length;
-              const isCongNghe = s.id === 'sub_congnghe_ghki' || s.name === 'Công Nghệ GHKI';
               return (
                 <button
                   key={s.id}
@@ -195,21 +208,17 @@ export default function QuestionBank({
                     setSelectedSubjectId(s.id);
                     setSelectedChapterId('');
                   }}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition ${
+                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                     isSelected
-                      ? isCongNghe
-                        ? 'bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-600/20 ring-2 ring-sky-400'
-                        : 'bg-sky-600 text-white shadow-sm'
-                      : isCongNghe
-                        ? 'bg-sky-50 dark:bg-sky-950/70 border border-sky-300 dark:border-sky-800 text-sky-800 dark:text-sky-300 hover:bg-sky-100'
-                        : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                      ? 'neu-inset text-[#FF8800]'
+                      : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                   }`}
                 >
                   <span>{s.name}</span>
-                  <span className={`px-1.5 py-0.2 rounded-full text-[10px] ${
-                    isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                  <span className={`px-1.5 py-0.2 rounded-full text-[10px] font-extrabold ${
+                    isSelected ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
                   }`}>
-                    {count} câu
+                    {count}
                   </span>
                 </button>
               );
@@ -218,14 +227,14 @@ export default function QuestionBank({
 
           {/* Sub-Chapter Pills (if a subject is selected) */}
           {availableChapters.length > 0 && (
-            <div className="flex items-center gap-1.5 overflow-x-auto text-xs pt-1 pb-1">
-              <span className="text-slate-400 font-semibold text-[11px] shrink-0">Chương / Bài:</span>
+            <div className="flex items-center gap-1.5 overflow-x-auto text-xs pt-1 pb-1 no-scrollbar">
+              <span className="text-[#718096] dark:text-[#94A3B8] font-bold text-[11px] shrink-0">Chương / Bài:</span>
               <button
                 onClick={() => setSelectedChapterId('')}
-                className={`px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition ${
+                className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                   !selectedChapterId
-                    ? 'bg-sky-600 text-white shadow-xs'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
+                    ? 'neu-inset text-[#FF8800]'
+                    : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
                 }`}
               >
                 Tất cả ({questions.filter(q => q.subjectId === selectedSubjectId).length})
@@ -237,14 +246,14 @@ export default function QuestionBank({
                   <button
                     key={c.id}
                     onClick={() => setSelectedChapterId(isChapSelected ? '' : c.id)}
-                    className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition ${
+                    className={`flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                       isChapSelected
-                        ? 'bg-sky-600 text-white shadow-xs'
-                        : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                        ? 'neu-inset text-[#FF8800]'
+                        : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
                     }`}
                   >
                     <span>{c.name.split(':')[0]}</span>
-                    <span className="opacity-75 text-[10px]">({cCount})</span>
+                    <span className="text-[10px] opacity-75">({cCount})</span>
                   </button>
                 );
               })}
@@ -255,31 +264,31 @@ export default function QuestionBank({
         {/* Row 1: Search & Favorite */}
         <div className="flex flex-col sm:flex-row items-center gap-3">
           <div className="relative flex-1 w-full">
-            <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-[#718096] dark:text-[#94A3B8]" />
             <input
               type="text"
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
               placeholder="Tìm kiếm nội dung câu hỏi, đáp án, giải thích, từ khóa..."
-              className="w-full text-sm pl-9 pr-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/60 text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"
+              className="w-full text-xs font-medium pl-10 pr-4 py-2.5 rounded-2xl neu-inset bg-transparent text-[#2D3748] dark:text-white placeholder:text-[#718096] dark:placeholder:text-[#94A3B8] focus:outline-none"
             />
           </div>
 
           <button
             onClick={() => setOnlyFavorites(!onlyFavorites)}
-            className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold border transition ${
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-2xl text-xs font-bold transition-all cursor-pointer shrink-0 ${
               onlyFavorites
-                ? 'bg-amber-50 border-amber-300 text-amber-700 dark:bg-amber-950/60 dark:border-amber-700 dark:text-amber-300 shadow-sm'
-                : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
+                ? 'neu-inset text-amber-500'
+                : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748]'
             }`}
           >
-            <Star className={`w-4 h-4 ${onlyFavorites ? 'fill-amber-400 text-amber-500' : 'text-slate-400'}`} />
+            <Star className={`w-4 h-4 ${onlyFavorites ? 'fill-amber-400 text-amber-500' : 'text-current'}`} />
             Yêu thích
           </button>
         </div>
 
         {/* Row 2: Selectors */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
           {/* Môn */}
           <select
             value={selectedSubjectId}
@@ -287,7 +296,7 @@ export default function QuestionBank({
               setSelectedSubjectId(e.target.value);
               setSelectedChapterId('');
             }}
-            className="text-xs rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-2.5 py-1.5 text-slate-800 dark:text-slate-200"
+            className="text-xs font-bold rounded-xl neu-inset bg-[#EBECF0] dark:bg-[#1A1E24] px-3 py-2 text-[#2D3748] dark:text-white focus:outline-none cursor-pointer"
           >
             <option value="">Tất cả môn học</option>
             {subjects.map(s => (
@@ -300,7 +309,7 @@ export default function QuestionBank({
             value={selectedChapterId}
             onChange={e => setSelectedChapterId(e.target.value)}
             disabled={!selectedSubjectId}
-            className="text-xs rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-2.5 py-1.5 text-slate-800 dark:text-slate-200 disabled:opacity-50"
+            className="text-xs font-bold rounded-xl neu-inset bg-[#EBECF0] dark:bg-[#1A1E24] px-3 py-2 text-[#2D3748] dark:text-white disabled:opacity-50 focus:outline-none cursor-pointer"
           >
             <option value="">Tất cả chương</option>
             {availableChapters.map(c => (
@@ -312,7 +321,7 @@ export default function QuestionBank({
           <select
             value={selectedType}
             onChange={e => setSelectedType(e.target.value)}
-            className="text-xs rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-2.5 py-1.5 text-slate-800 dark:text-slate-200"
+            className="text-xs font-bold rounded-xl neu-inset bg-[#EBECF0] dark:bg-[#1A1E24] px-3 py-2 text-[#2D3748] dark:text-white focus:outline-none cursor-pointer"
           >
             <option value="">Tất cả loại câu</option>
             <option value="mcq">Trắc nghiệm (MCQ)</option>
@@ -323,7 +332,7 @@ export default function QuestionBank({
           <select
             value={selectedDifficulty}
             onChange={e => setSelectedDifficulty(e.target.value)}
-            className="text-xs rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 px-2.5 py-1.5 text-slate-800 dark:text-slate-200"
+            className="text-xs font-bold rounded-xl neu-inset bg-[#EBECF0] dark:bg-[#1A1E24] px-3 py-2 text-[#2D3748] dark:text-white focus:outline-none cursor-pointer"
           >
             <option value="">Tất cả mức độ</option>
             {DIFFICULTY_LEVELS.map(d => (
@@ -334,14 +343,14 @@ export default function QuestionBank({
 
         {/* Tags bar (nếu có) */}
         {allTags.length > 0 && (
-          <div className="flex items-center gap-1.5 pt-1 overflow-x-auto text-xs pb-1">
-            <span className="text-slate-400 flex items-center gap-1 shrink-0 font-medium text-[11px]">
-              <Tag className="w-3 h-3" /> Thẻ:
+          <div className="flex items-center gap-1.5 pt-1 overflow-x-auto text-xs pb-1 no-scrollbar">
+            <span className="text-[#718096] dark:text-[#94A3B8] flex items-center gap-1 shrink-0 font-bold text-[11px]">
+              <Tag className="w-3 h-3 text-[#FF8800]" /> Thẻ:
             </span>
             <button
               onClick={() => setSelectedTag('')}
-              className={`px-2 py-0.5 rounded-md font-medium text-[11px] shrink-0 transition ${
-                !selectedTag ? 'bg-sky-600 text-white' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+              className={`px-2.5 py-0.5 rounded-xl font-bold text-[11px] shrink-0 transition-all cursor-pointer ${
+                !selectedTag ? 'neu-inset text-[#FF8800]' : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
               Tất cả
@@ -350,10 +359,10 @@ export default function QuestionBank({
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag === selectedTag ? '' : tag)}
-                className={`px-2 py-0.5 rounded-md font-medium text-[11px] shrink-0 transition ${
+                className={`px-2.5 py-0.5 rounded-xl font-bold text-[11px] shrink-0 transition-all cursor-pointer ${
                   selectedTag === tag
-                    ? 'bg-sky-600 text-white'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                    ? 'neu-inset text-[#FF8800]'
+                    : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
                 }`}
               >
                 #{tag}
@@ -365,16 +374,16 @@ export default function QuestionBank({
 
       {/* Questions Display */}
       {filteredQuestions.length === 0 ? (
-        <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-12 text-center">
-          <HelpCircle className="w-12 h-12 text-slate-300 dark:text-slate-600 mx-auto mb-3" />
-          <h3 className="text-base font-bold text-slate-800 dark:text-slate-200">Không tìm thấy câu hỏi phù hợp</h3>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+        <div className="neu-card rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] p-12 text-center">
+          <HelpCircle className="w-12 h-12 text-[#718096] dark:text-[#94A3B8] mx-auto mb-3 opacity-60" />
+          <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white">Không tìm thấy câu hỏi phù hợp</h3>
+          <p className="text-xs text-[#718096] dark:text-[#94A3B8] mt-1">
             Hãy thử thay đổi điều kiện tìm kiếm hoặc thêm câu hỏi mới từ tab "Nhập đề cương".
           </p>
         </div>
       ) : viewMode === 'grid' ? (
         /* GRID VIEW */
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {filteredQuestions.map((q, idx) => {
             const diffMeta = getDifficultyMeta(q.difficulty);
             const source = getSourcePath(q);
@@ -383,81 +392,81 @@ export default function QuestionBank({
             return (
               <div
                 key={q.id}
-                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between"
+                className="neu-card rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] p-5 sm:p-6 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
                   {/* Card Header: Type, Difficulty, Source, Actions */}
                   <div className="flex items-start justify-between gap-2 mb-3">
                     <div className="flex flex-wrap items-center gap-1.5">
-                      <span className="text-[11px] font-bold px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                      <span className="text-[11px] font-extrabold px-2.5 py-0.5 rounded-xl neu-inset-sm text-[#2D3748] dark:text-white">
                         {q.type === 'mcq' ? 'Trắc nghiệm' : 'Đúng / Sai'}
                       </span>
-                      <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-md border ${diffMeta.color}`}>
+                      <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-xl ${diffMeta.color}`}>
                         {diffMeta.label}
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1.5">
                       <button
                         onClick={() => onToggleFavorite(q.id)}
-                        className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 transition"
+                        className="w-8 h-8 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] active:scale-95 transition-all cursor-pointer"
                         title={q.favorite ? 'Bỏ yêu thích' : 'Đánh dấu yêu thích'}
                       >
                         <Star className={`w-4 h-4 ${q.favorite ? 'fill-amber-400 text-amber-500' : 'hover:text-amber-400'}`} />
                       </button>
                       <button
                         onClick={() => onCloneQuestion(q)}
-                        className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-sky-600 transition"
+                        className="w-8 h-8 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] active:scale-95 transition-all cursor-pointer"
                         title="Nhân bản câu hỏi"
                       >
-                        <Copy className="w-4 h-4" />
+                        <Copy className="w-3.5 h-3.5" />
                       </button>
                       <button
                         onClick={() => handleEdit(q)}
-                        className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-sky-600 transition"
+                        className="w-8 h-8 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] active:scale-95 transition-all cursor-pointer"
                         title="Chỉnh sửa câu hỏi"
                       >
-                        <Edit3 className="w-4 h-4" />
+                        <Edit3 className="w-3.5 h-3.5" />
                       </button>
                       <button
                         onClick={() => setDeletingQuestion(q)}
-                        className="p-1 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-rose-600 transition"
+                        className="w-8 h-8 rounded-xl neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-rose-600 active:scale-95 transition-all cursor-pointer"
                         title="Xóa câu hỏi"
                       >
-                        <Trash2 className="w-4 h-4" />
+                        <Trash2 className="w-3.5 h-3.5" />
                       </button>
                     </div>
                   </div>
 
                   {/* Source Breadcrumb */}
                   {source.chapName && (
-                    <div className="text-[11px] text-slate-400 mb-2 truncate">
+                    <div className="text-[11px] font-medium text-[#718096] dark:text-[#94A3B8] mb-2 truncate">
                       {source.chapName} {source.secName ? `› ${source.secName}` : ''}
                     </div>
                   )}
 
                   {/* Stem Content */}
-                  <div className="text-sm font-semibold text-slate-900 dark:text-white leading-relaxed mb-4">
+                  <div className="text-sm font-bold text-[#2D3748] dark:text-white leading-relaxed mb-4">
                     <MathRenderer text={q.stem} />
                   </div>
 
                   {/* Answers Display */}
                   {q.type === 'mcq' ? (
-                    <div className="space-y-1.5 mb-3">
+                    <div className="space-y-2 mb-3">
                       {(q.options || []).map((opt, optIdx) => {
                         const isCorrect = optIdx === q.correct;
                         const label = ['A', 'B', 'C', 'D'][optIdx];
                         return (
                           <div
                             key={optIdx}
-                            className={`flex items-start gap-2 p-2 rounded-xl text-xs transition ${
+                            className={`flex items-start gap-2.5 p-2.5 rounded-2xl text-xs transition-all ${
                               isCorrect
-                                ? 'bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-300 dark:border-emerald-800/80 font-medium text-emerald-900 dark:text-emerald-200'
-                                : 'bg-slate-50 dark:bg-slate-800/50 text-slate-700 dark:text-slate-300'
+                                ? 'neu-inset text-emerald-700 dark:text-emerald-300 border border-emerald-500/20 bg-emerald-500/5 font-bold'
+                                : 'neu-inset text-[#4A5568] dark:text-[#E2E8F0]'
                             }`}
                           >
-                            <span className={`w-5 h-5 rounded-md flex items-center justify-center font-bold text-[11px] shrink-0 ${
-                              isCorrect ? 'bg-emerald-600 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                            <span className={`w-5 h-5 rounded-lg flex items-center justify-center font-extrabold text-[11px] shrink-0 ${
+                              isCorrect ? 'bg-emerald-600 text-white shadow-sm' : 'neu-extruded-sm text-[#718096] dark:text-[#94A3B8]'
                             }`}>
                               {label}
                             </span>
@@ -473,20 +482,20 @@ export default function QuestionBank({
                     </div>
                   ) : (
                     /* True/False Statements */
-                    <div className="space-y-1.5 mb-3">
+                    <div className="space-y-2 mb-3">
                       {(q.statements || []).map((stmt, sIdx) => (
                         <div
                           key={sIdx}
-                          className="flex items-start justify-between gap-2 p-2 rounded-xl text-xs bg-slate-50 dark:bg-slate-800/50 text-slate-800 dark:text-slate-200"
+                          className="flex items-start justify-between gap-2 p-2.5 rounded-2xl text-xs neu-inset text-[#2D3748] dark:text-white"
                         >
-                          <div className="flex items-start gap-1.5 flex-1">
-                            <span className="font-bold text-slate-500 shrink-0">{stmt.label})</span>
+                          <div className="flex items-start gap-1.5 flex-1 font-medium">
+                            <span className="font-bold text-[#718096] dark:text-[#94A3B8] shrink-0">{stmt.label})</span>
                             <span className="mt-0.5"><MathRenderer text={stmt.text} /></span>
                           </div>
-                          <span className={`px-2 py-0.5 rounded text-[11px] font-bold shrink-0 ${
+                          <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-extrabold shrink-0 ${
                             stmt.answer
-                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300'
-                              : 'bg-rose-100 text-rose-800 dark:bg-rose-900/60 dark:text-rose-300'
+                              ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25'
+                              : 'bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/25'
                           }`}>
                             {stmt.answer ? 'Đúng' : 'Sai'}
                           </span>
@@ -497,9 +506,9 @@ export default function QuestionBank({
 
                   {/* Tags */}
                   {q.tags && q.tags.length > 0 && (
-                    <div className="flex flex-wrap gap-1 mb-2">
+                    <div className="flex flex-wrap gap-1.5 mb-2">
                       {q.tags.map((tag, tIdx) => (
-                        <span key={tIdx} className="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 px-2 py-0.5 rounded">
+                        <span key={tIdx} className="text-[10px] font-bold neu-inset-sm text-[#718096] dark:text-[#94A3B8] px-2 py-0.5 rounded-full">
                           #{tag}
                         </span>
                       ))}
@@ -509,16 +518,16 @@ export default function QuestionBank({
 
                 {/* Card Footer: Explanation Toggle */}
                 {q.explanation && (
-                  <div className="pt-2 border-t border-slate-100 dark:border-slate-800 mt-2">
+                  <div className="pt-2 border-t border-black/5 dark:border-white/5 mt-2">
                     <button
                       onClick={() => setExpandedExplanationId(isExplExpanded ? null : q.id)}
-                      className="text-xs font-semibold text-sky-600 dark:text-sky-400 flex items-center justify-between w-full hover:underline"
+                      className="text-xs font-bold text-[#FF8800] flex items-center justify-between w-full cursor-pointer hover:underline"
                     >
-                      <span>{isExplExpanded ? 'Ẩn lời giải' : 'Xem lời giải thích'}</span>
+                      <span>{isExplExpanded ? 'Ẩn lời giải' : 'Xem lời giải chi tiết'}</span>
                       {isExplExpanded ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
                     </button>
                     {isExplExpanded && (
-                      <div className="mt-2 p-2.5 bg-sky-50 dark:bg-sky-950/40 rounded-xl text-xs text-slate-700 dark:text-slate-300 border border-sky-100 dark:border-sky-900">
+                      <div className="mt-2.5 p-3 neu-inset rounded-2xl text-xs text-[#4A5568] dark:text-[#CBD5E1]">
                         <MathRenderer text={q.explanation} />
                       </div>
                     )}
@@ -530,9 +539,9 @@ export default function QuestionBank({
         </div>
       ) : (
         /* TABLE VIEW */
-        <div className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 overflow-x-auto shadow-sm">
-          <table className="w-full text-left text-xs text-slate-700 dark:text-slate-300">
-            <thead className="bg-slate-50 dark:bg-slate-800 text-slate-500 uppercase text-[11px] font-semibold border-b border-slate-200 dark:border-slate-700">
+        <div className="neu-card rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] overflow-x-auto shadow-sm p-2">
+          <table className="w-full text-left text-xs text-[#4A5568] dark:text-[#CBD5E1]">
+            <thead className="text-[#718096] dark:text-[#94A3B8] uppercase text-[11px] font-bold border-b border-black/5 dark:border-white/5">
               <tr>
                 <th className="p-3 w-10 text-center">★</th>
                 <th className="p-3 w-28">Phân loại</th>
@@ -542,54 +551,54 @@ export default function QuestionBank({
                 <th className="p-3 w-24 text-right">Thao tác</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+            <tbody className="divide-y divide-black/5 dark:divide-white/5">
               {filteredQuestions.map(q => {
                 const diffMeta = getDifficultyMeta(q.difficulty);
                 const source = getSourcePath(q);
                 return (
-                  <tr key={q.id} className="hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition">
+                  <tr key={q.id} className="hover:bg-black/2 dark:hover:bg-white/2 transition">
                     <td className="p-3 text-center">
-                      <button onClick={() => onToggleFavorite(q.id)}>
-                        <Star className={`w-4 h-4 mx-auto ${q.favorite ? 'fill-amber-400 text-amber-500' : 'text-slate-300'}`} />
+                      <button onClick={() => onToggleFavorite(q.id)} className="cursor-pointer">
+                        <Star className={`w-4 h-4 mx-auto ${q.favorite ? 'fill-amber-400 text-amber-500' : 'text-[#718096]'}`} />
                       </button>
                     </td>
-                    <td className="p-3 font-semibold">
-                      <span className="px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    <td className="p-3 font-bold">
+                      <span className="px-2 py-0.5 rounded-xl neu-inset-sm text-[#2D3748] dark:text-white">
                         {q.type === 'mcq' ? 'MCQ' : 'Đ/S 4 ý'}
                       </span>
                     </td>
-                    <td className="p-3 font-medium text-slate-900 dark:text-white">
+                    <td className="p-3 font-medium text-[#2D3748] dark:text-white">
                       <div className="line-clamp-2">
                         <MathRenderer text={q.stem} />
                       </div>
                     </td>
-                    <td className="p-3 text-slate-500">
+                    <td className="p-3 text-[#718096] dark:text-[#94A3B8]">
                       <div className="truncate max-w-[180px]">{source.chapName || source.subName}</div>
                     </td>
                     <td className="p-3">
-                      <span className={`px-2 py-0.5 rounded text-[10px] font-semibold border ${diffMeta.color}`}>
+                      <span className={`px-2 py-0.5 rounded-xl text-[10px] font-bold ${diffMeta.color}`}>
                         {diffMeta.label}
                       </span>
                     </td>
                     <td className="p-3 text-right">
-                      <div className="flex items-center justify-end gap-1">
+                      <div className="flex items-center justify-end gap-1.5">
                         <button
                           onClick={() => onCloneQuestion(q)}
-                          className="p-1 text-slate-400 hover:text-sky-600 rounded"
+                          className="w-7 h-7 rounded-lg neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer"
                           title="Nhân bản"
                         >
                           <Copy className="w-3.5 h-3.5" />
                         </button>
                         <button
                           onClick={() => handleEdit(q)}
-                          className="p-1 text-slate-400 hover:text-sky-600 rounded"
+                          className="w-7 h-7 rounded-lg neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] cursor-pointer"
                           title="Sửa"
                         >
                           <Edit3 className="w-3.5 h-3.5" />
                         </button>
                         <button
                           onClick={() => setDeletingQuestion(q)}
-                          className="p-1 text-slate-400 hover:text-rose-600 rounded"
+                          className="w-7 h-7 rounded-lg neu-btn flex items-center justify-center text-[#718096] dark:text-[#94A3B8] hover:text-rose-600 cursor-pointer"
                           title="Xóa"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
@@ -622,24 +631,24 @@ export default function QuestionBank({
         maxWidth="max-w-md"
       >
         <div className="space-y-4">
-          <p className="text-sm text-slate-600 dark:text-slate-300">
+          <p className="text-sm text-[#4A5568] dark:text-[#CBD5E1]">
             Bạn có chắc chắn muốn xóa câu hỏi này khỏi ngân hàng không? Hành động này không thể hoàn tác.
           </p>
           {deletingQuestion && (
-            <div className="p-3 bg-slate-50 dark:bg-slate-800 rounded-lg text-xs italic text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+            <div className="p-3.5 neu-inset rounded-2xl text-xs italic text-[#2D3748] dark:text-white">
               "{deletingQuestion.stem.slice(0, 100)}..."
             </div>
           )}
           <div className="flex justify-end gap-3 pt-2">
             <button
               onClick={() => setDeletingQuestion(null)}
-              className="px-4 py-2 text-xs font-semibold rounded-lg text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
+              className="px-4 py-2 text-xs font-bold rounded-2xl neu-btn text-[#718096] dark:text-[#94A3B8] cursor-pointer active:scale-95 transition-all"
             >
               Hủy
             </button>
             <button
               onClick={handleConfirmDelete}
-              className="px-4 py-2 text-xs font-bold rounded-lg bg-rose-600 hover:bg-rose-500 text-white shadow-md shadow-rose-600/20"
+              className="px-4 py-2 text-xs font-bold rounded-2xl neu-btn text-rose-600 hover:text-rose-500 cursor-pointer active:scale-95 transition-all"
             >
               Xóa Vĩnh Viễn
             </button>

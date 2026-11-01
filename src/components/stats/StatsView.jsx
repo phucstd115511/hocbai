@@ -11,7 +11,8 @@ import {
   XCircle, 
   TrendingUp, 
   AlertTriangle,
-  Sparkles
+  Sparkles,
+  Zap
 } from 'lucide-react';
 
 export default function StatsView({
@@ -92,14 +93,19 @@ export default function StatsView({
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 max-w-5xl mx-auto">
       {/* Top Banner */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300">
         <div>
-          <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
-            Thống Kê Luyện Tập & Phân Tích Năng Lực
-          </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+          <div className="flex items-center gap-3 mb-1.5">
+            <div className="w-10 h-10 rounded-2xl neu-inset flex items-center justify-center text-[#FF8800]">
+              <BarChart3 className="w-5 h-5 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]" />
+            </div>
+            <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white tracking-tight">
+              Thống Kê & Phân Tích Năng Lực
+            </h2>
+          </div>
+          <p className="text-xs font-medium text-[#718096] dark:text-[#94A3B8] ml-13">
             Theo dõi tiến độ, tỷ lệ đúng theo từng chương kiến thức và ôn tập các câu làm sai
           </p>
         </div>
@@ -107,59 +113,62 @@ export default function StatsView({
         {summary.totalWrongQuestions > 0 && (
           <button
             onClick={handleCreateAllWrongExam}
-            className="flex items-center gap-2 px-4 py-2 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xs font-bold shadow-md shadow-rose-600/20 transition"
+            className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-2 active:scale-95 transition-all hover:text-rose-500 cursor-pointer shrink-0"
           >
-            <Sparkles className="w-4 h-4" />
+            <Sparkles className="w-4 h-4 text-rose-500 animate-pulse" />
             Tạo Đề Ôn {summary.totalWrongQuestions} Câu Sai
           </button>
         )}
       </div>
 
       {/* Summary KPI Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <div className="neu-card p-6 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] flex flex-col justify-between transition-all duration-300">
+          <div className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-2 flex items-center gap-1.5">
+            <Clock className="w-3.5 h-3.5 text-[#FF8800]" />
             Số lần đã luyện tập
           </div>
-          <div className="text-3xl font-extrabold text-slate-900 dark:text-white">
-            {totalAttempts} <span className="text-xs font-normal text-slate-400">lượt làm bài</span>
+          <div className="text-3xl font-display font-extrabold text-[#2D3748] dark:text-white mt-1">
+            {totalAttempts} <span className="text-xs font-medium text-[#718096] dark:text-[#94A3B8]">lượt làm bài</span>
           </div>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
+        <div className="neu-card p-6 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] flex flex-col justify-between transition-all duration-300">
+          <div className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-2 flex items-center gap-1.5">
+            <Award className="w-3.5 h-3.5 text-[#FF8800]" />
             Điểm trung bình
           </div>
-          <div className="text-3xl font-extrabold text-sky-600 dark:text-sky-400">
+          <div className="text-3xl font-display font-extrabold text-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.3)] mt-1">
             {summary.avgPercentage}%
           </div>
         </div>
 
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">
-            Số câu cần củng cố lại
+        <div className="neu-card p-6 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] flex flex-col justify-between transition-all duration-300">
+          <div className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-2 flex items-center gap-1.5">
+            <AlertTriangle className="w-3.5 h-3.5 text-rose-500" />
+            Số câu cần củng cố
           </div>
-          <div className="text-3xl font-extrabold text-rose-600 dark:text-rose-400">
-            {summary.totalWrongQuestions} <span className="text-xs font-normal text-slate-400">câu hỏi</span>
+          <div className="text-3xl font-display font-extrabold text-rose-500 mt-1">
+            {summary.totalWrongQuestions} <span className="text-xs font-medium text-[#718096] dark:text-[#94A3B8]">câu hỏi</span>
           </div>
         </div>
       </div>
 
       {/* Chapter Breakdown Analysis */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-        <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+      <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-5 transition-all duration-300">
+        <div className="flex items-center justify-between pb-3 border-b border-black/5 dark:border-white/5">
           <div>
-            <h3 className="text-base font-bold text-slate-900 dark:text-white">
+            <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white">
               Tỷ Lệ Đúng Theo Từng Chương Kiến Thức
             </h3>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-              Các chương có tỷ lệ thấp dưới 60% được khuyến nghị cần dành thêm thời gian ôn tập.
+            <p className="text-xs font-medium text-[#718096] dark:text-[#94A3B8] mt-0.5">
+              Các chương có tỷ lệ thấp dưới 60% được khuyến nghị cần dành thêm thời gian ôn tập
             </p>
           </div>
         </div>
 
         {chapterAggregate.length === 0 ? (
-          <div className="text-center p-8 text-xs text-slate-400">
+          <div className="neu-inset p-8 rounded-2xl text-center text-xs text-[#718096] dark:text-[#94A3B8]">
             Chưa có đủ dữ liệu bài thi để thống kê theo chương. Hãy hoàn thành ít nhất 1 bài luyện tập.
           </div>
         ) : (
@@ -167,25 +176,29 @@ export default function StatsView({
             {chapterAggregate.map(item => {
               const isWeak = item.percent < 60;
               return (
-                <div key={item.chapterName} className="space-y-1.5">
+                <div key={item.chapterName} className="neu-inset p-4 rounded-2xl space-y-2">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1.5">
+                    <span className="font-bold text-[#2D3748] dark:text-white flex items-center gap-2">
                       {item.chapterName}
                       {isWeak && (
-                        <span className="text-[10px] font-bold px-1.5 py-0.2 bg-rose-100 dark:bg-rose-950 text-rose-700 dark:text-rose-300 rounded flex items-center gap-1">
+                        <span className="text-[10px] font-extrabold px-2 py-0.5 bg-rose-500/10 text-rose-600 dark:text-rose-400 rounded-full border border-rose-500/20 flex items-center gap-1">
                           <AlertTriangle className="w-3 h-3" /> Cần ôn lại
                         </span>
                       )}
                     </span>
-                    <span className="font-semibold text-slate-600 dark:text-slate-400">
+                    <span className="font-bold text-[#718096] dark:text-[#94A3B8]">
                       {item.correct} / {item.total} đ ({item.percent}%)
                     </span>
                   </div>
 
-                  <div className="w-full h-3 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div className="w-full h-3 neu-inset-sm rounded-full overflow-hidden p-0.5">
                     <div
                       className={`h-full rounded-full transition-all duration-700 ${
-                        item.percent >= 80 ? 'bg-emerald-500' : item.percent >= 60 ? 'bg-sky-500' : 'bg-rose-500'
+                        item.percent >= 80 
+                          ? 'bg-gradient-to-r from-emerald-500 to-teal-400' 
+                          : item.percent >= 60 
+                            ? 'bg-gradient-to-r from-[#FF8800] to-amber-400' 
+                            : 'bg-gradient-to-r from-rose-500 to-orange-500'
                       }`}
                       style={{ width: `${item.percent}%` }}
                     />
@@ -198,44 +211,44 @@ export default function StatsView({
       </div>
 
       {/* Attempts History */}
-      <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
-        <h3 className="text-base font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-3">
+      <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] space-y-4 transition-all duration-300">
+        <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white pb-3 border-b border-black/5 dark:border-white/5">
           Lịch Sử Các Lần Luyện Tập
         </h3>
 
         {attempts.length === 0 ? (
-          <div className="text-center p-8 text-xs text-slate-400">
+          <div className="neu-inset p-8 rounded-2xl text-center text-xs text-[#718096] dark:text-[#94A3B8]">
             Chưa có lượt làm bài nào được ghi nhận.
           </div>
         ) : (
-          <div className="divide-y divide-slate-100 dark:divide-slate-800">
+          <div className="space-y-3">
             {[...attempts].reverse().map(att => {
               const dateStr = new Date(att.date).toLocaleString('vi-VN');
               const wrongCount = (att.wrongQuestionIds || []).length;
 
               return (
-                <div key={att.id} className="py-3.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div key={att.id} className="neu-inset p-4 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div>
-                    <h4 className="text-sm font-bold text-slate-900 dark:text-white">
+                    <h4 className="text-sm font-bold text-[#2D3748] dark:text-white">
                       {att.examName}
                     </h4>
-                    <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400 mt-1">
-                      <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" /> {dateStr}</span>
-                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5" /> {formatDuration(att.durationSeconds)}</span>
+                    <div className="flex flex-wrap items-center gap-3 text-xs text-[#718096] dark:text-[#94A3B8] mt-1.5">
+                      <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 text-[#FF8800]" /> {dateStr}</span>
+                      <span className="flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-[#FF8800]" /> {formatDuration(att.durationSeconds)}</span>
                       {wrongCount > 0 ? (
-                        <span className="text-rose-500 font-semibold">{wrongCount} câu sai</span>
+                        <span className="text-rose-500 font-bold">{wrongCount} câu sai</span>
                       ) : (
-                        <span className="text-emerald-500 font-semibold">Đúng 100%</span>
+                        <span className="text-emerald-500 font-bold">Đúng 100%</span>
                       )}
                     </div>
                   </div>
 
                   <div className="flex items-center gap-3">
                     <div className="text-right">
-                      <div className="text-base font-extrabold text-sky-600 dark:text-sky-400">
+                      <div className="text-base font-display font-extrabold text-[#FF8800]">
                         {att.score} / {att.totalMaxScore}
                       </div>
-                      <div className="text-[11px] text-slate-400">
+                      <div className="text-[11px] font-bold text-[#718096] dark:text-[#94A3B8]">
                         ({att.percentage}%)
                       </div>
                     </div>

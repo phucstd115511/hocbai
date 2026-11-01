@@ -241,12 +241,18 @@ export default function PracticeRoom({
 
     return (
       <div className="space-y-6">
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 shadow-[0_8px_20px_rgba(163,177,198,0.4),0_2px_6px_rgba(163,177,198,0.2)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.6)] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+            <div className="flex items-center gap-2 mb-1">
+              <span className="w-2 h-2 rounded-full bg-[#FF8800] animate-pulse" />
+              <span className="text-[11px] font-display font-extrabold text-[#FF8800] uppercase tracking-wider">
+                Khảo Thí Trực Tuyến
+              </span>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white tracking-tight flex items-center gap-2">
               Phòng Luyện Tập Trực Tuyến
             </h2>
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+            <p className="text-xs font-medium text-[#718096] dark:text-[#94A3B8] mt-1">
               Làm bài kiểm tra có bấm giờ, chấm điểm tự động và xem hướng dẫn giải chi tiết
             </p>
           </div>
@@ -254,14 +260,14 @@ export default function PracticeRoom({
           <div className="flex flex-wrap items-center gap-2">
             <button
               onClick={handleQuickPracticeRandom}
-              className="flex items-center gap-1.5 px-3.5 py-2 bg-sky-600 hover:bg-sky-500 text-white rounded-xl text-xs font-bold shadow-md shadow-sky-600/20"
+              className="flex items-center gap-1.5 px-4 py-2.5 neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wider rounded-2xl cursor-pointer active:scale-95 transition"
             >
               <Sparkles className="w-4 h-4" /> Luyện tập ngẫu nhiên (10 câu)
             </button>
             {allWrongIds.length > 0 && (
               <button
                 onClick={handlePracticeAllHistoryWrongQuestions}
-                className="flex items-center gap-1.5 px-3.5 py-2 bg-rose-600 hover:bg-rose-500 text-white rounded-xl text-xs font-bold shadow-md shadow-rose-600/20"
+                className="flex items-center gap-1.5 px-4 py-2.5 neu-btn text-rose-500 rounded-2xl text-xs font-display font-bold cursor-pointer active:scale-95 transition"
               >
                 <RotateCcw className="w-4 h-4" /> Ôn lại {allWrongIds.length} câu từng làm sai
               </button>
@@ -279,32 +285,32 @@ export default function PracticeRoom({
             return (
               <div
                 key={exam.id}
-                className="bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between"
+                className="neu-card rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 p-6 flex flex-col justify-between"
               >
                 <div>
-                  <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1">
+                  <h3 className="text-base font-display font-extrabold text-[#2D3748] dark:text-white mb-1">
                     {exam.name}
                   </h3>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mb-3 line-clamp-2">
+                  <p className="text-xs font-medium text-[#718096] dark:text-[#94A3B8] mb-3 line-clamp-2">
                     {exam.description || 'Không có mô tả chi tiết'}
                   </p>
 
                   <div className="flex flex-wrap items-center gap-2 text-xs mb-4">
-                    <span className="px-2 py-0.5 rounded bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-semibold">
+                    <span className="neu-inset-sm px-2.5 py-1 rounded-xl text-[11px] font-bold text-[#FF8800]">
                       {count} câu hỏi
                     </span>
                     {latestAttempt && (
-                      <span className="px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold">
+                      <span className="neu-inset-sm px-2.5 py-1 rounded-xl text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
                         Điểm gần nhất: {latestAttempt.score}/{latestAttempt.totalMaxScore} ({latestAttempt.percentage}%)
                       </span>
                     )}
                   </div>
                 </div>
 
-                <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+                <div className="pt-3 border-t border-black/5 dark:border-white/5 flex justify-end">
                   <button
                     onClick={() => startExam(exam)}
-                    className="flex items-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl shadow-md shadow-emerald-600/20 transition"
+                    className="flex items-center gap-2 px-5 py-2.5 neu-btn-primary text-xs font-display font-extrabold uppercase tracking-wider rounded-2xl cursor-pointer active:scale-95 transition"
                   >
                     <Play className="w-3.5 h-3.5 fill-white" />
                     Bắt Đầu Làm Bài
@@ -328,26 +334,24 @@ export default function PracticeRoom({
     return (
       <div className="space-y-6 max-w-4xl mx-auto">
         {/* Score Summary Card */}
-        <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-lg text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-sky-500 via-indigo-500 to-emerald-500" />
-
-          <div className="inline-flex p-3 rounded-2xl bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-300 mb-3">
-            <Award className="w-10 h-10" />
+        <div className="neu-card p-7 sm:p-9 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 text-center relative overflow-hidden">
+          <div className="inline-flex p-3 rounded-2xl neu-inset text-[#FF8800] mb-3">
+            <Award className="w-10 h-10 drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />
           </div>
 
-          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white mb-1">
+          <h2 className="text-xl sm:text-2xl font-display font-extrabold text-[#2D3748] dark:text-white mb-1">
             Kết Quả Bài Luyện Tập
           </h2>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
+          <p className="text-xs text-[#718096] dark:text-[#94A3B8]">
             {activeExam.name} • Thời gian làm bài: {formatTime(lastAttemptResult.durationSeconds)}
           </p>
 
           {/* Big Score Display */}
           <div className="my-6">
-            <div className="text-5xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-indigo-600">
-              {lastAttemptResult.score} <span className="text-2xl font-semibold text-slate-400">/ {lastAttemptResult.totalMaxScore}</span>
+            <div className="text-5xl sm:text-6xl font-display font-black text-[#FF8800] drop-shadow-[0_2px_10px_rgba(255,136,0,0.35)]">
+              {lastAttemptResult.score} <span className="text-2xl font-bold text-[#718096]">/ {lastAttemptResult.totalMaxScore}</span>
             </div>
-            <div className="text-sm font-bold text-slate-600 dark:text-slate-300 mt-1">
+            <div className="text-xs sm:text-sm font-display font-extrabold text-[#2D3748] dark:text-white mt-1 uppercase tracking-wider">
               Đạt {lastAttemptResult.percentage}% số điểm
             </div>
           </div>
@@ -356,7 +360,7 @@ export default function PracticeRoom({
           <div className="flex flex-wrap items-center justify-center gap-3">
             <button
               onClick={() => startExam(activeExam)}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 text-xs font-bold transition"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-2xl neu-btn text-xs font-display font-bold text-[#FF8800] cursor-pointer active:scale-95 transition"
             >
               <RotateCcw className="w-4 h-4" /> Làm Lại Đề Này
             </button>
@@ -364,7 +368,7 @@ export default function PracticeRoom({
             {wrongCount > 0 && (
               <button
                 onClick={handleCreateWrongQuestionsExam}
-                className="flex items-center gap-2 px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold shadow-md shadow-rose-600/20 transition"
+                className="flex items-center gap-2 px-5 py-2.5 rounded-2xl neu-btn text-rose-500 text-xs font-display font-bold cursor-pointer active:scale-95 transition"
               >
                 <Sparkles className="w-4 h-4" /> Tạo Đề Ôn Lại {wrongCount} Câu Sai
               </button>
@@ -372,7 +376,7 @@ export default function PracticeRoom({
 
             <button
               onClick={() => setActiveExam(null)}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-xs font-semibold hover:bg-slate-50 transition"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-2xl neu-btn text-[#718096] dark:text-[#94A3B8] text-xs font-display font-bold cursor-pointer active:scale-95 transition"
             >
               Chọn Đề Khác
             </button>
@@ -381,21 +385,21 @@ export default function PracticeRoom({
 
         {/* Chapter Breakdown */}
         {Object.keys(lastAttemptResult.chapterBreakdown).length > 0 && (
-          <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-              <BarChart className="w-4 h-4 text-sky-500" /> Tỷ Lệ Điểm Theo Từng Chương Kiến Thức
+          <div className="neu-card p-6 sm:p-7 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 space-y-4">
+            <h3 className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white flex items-center gap-2 uppercase tracking-wider">
+              <BarChart className="w-4 h-4 text-[#FF8800]" /> Tỷ Lệ Điểm Theo Từng Chương Kiến Thức
             </h3>
             <div className="space-y-3">
               {Object.entries(lastAttemptResult.chapterBreakdown).map(([chName, stats]) => (
-                <div key={chName}>
-                  <div className="flex justify-between text-xs font-medium text-slate-700 dark:text-slate-300 mb-1">
-                    <span className="truncate max-w-[70%]">{chName}</span>
-                    <span className="font-bold">{stats.correct}/{stats.total} đ ({stats.percent}%)</span>
+                <div key={chName} className="neu-inset p-3.5 rounded-2xl">
+                  <div className="flex justify-between text-xs font-medium text-[#4A5568] dark:text-[#CBD5E1] mb-2">
+                    <span className="truncate max-w-[70%] font-bold">{chName}</span>
+                    <span className="font-extrabold text-[#FF8800]">{stats.correct}/{stats.total} đ ({stats.percent}%)</span>
                   </div>
-                  <div className="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                  <div className="w-full h-2.5 neu-inset-sm rounded-full overflow-hidden p-0.5">
                     <div
                       className={`h-full rounded-full transition-all duration-500 ${
-                        stats.percent >= 80 ? 'bg-emerald-500' : stats.percent >= 50 ? 'bg-amber-500' : 'bg-rose-500'
+                        stats.percent >= 80 ? 'bg-gradient-to-r from-emerald-500 to-teal-400' : stats.percent >= 50 ? 'bg-gradient-to-r from-[#FF8800] to-amber-400' : 'bg-gradient-to-r from-rose-500 to-red-400'
                       }`}
                       style={{ width: `${stats.percent}%` }}
                     />
@@ -407,12 +411,12 @@ export default function PracticeRoom({
         )}
 
         {/* Detailed Solutions Review */}
-        <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-5">
-          <h3 className="text-sm font-bold text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-800 pb-3">
+        <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 space-y-5">
+          <h3 className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white border-b border-black/5 dark:border-white/5 pb-3 uppercase tracking-wider">
             Chi Tiết Hướng Dẫn Giải Từng Câu
           </h3>
 
-          <div className="space-y-6">
+          <div className="space-y-5">
             {examQuestions.map((q, idx) => {
               const res = lastAttemptResult.questionResults[q.id];
               const isCorrect = res?.isCorrect;
@@ -420,75 +424,75 @@ export default function PracticeRoom({
               return (
                 <div
                   key={q.id}
-                  className={`p-4 rounded-2xl border transition ${
+                  className={`p-5 rounded-2xl neu-card border transition ${
                     isCorrect
-                      ? 'bg-emerald-50/40 dark:bg-emerald-950/20 border-emerald-200 dark:border-emerald-800/60'
-                      : 'bg-rose-50/40 dark:bg-rose-950/20 border-rose-200 dark:border-rose-800/60'
+                      ? 'border-emerald-500/30 bg-emerald-500/5'
+                      : 'border-rose-500/30 bg-rose-500/5'
                   }`}
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <span className="font-bold text-xs flex items-center gap-1.5">
+                    <span className="font-display font-extrabold text-xs flex items-center gap-1.5">
                       {isCorrect ? (
-                        <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                        <CheckCircle2 className="w-4 h-4 text-emerald-500" />
                       ) : (
-                        <XCircle className="w-4 h-4 text-rose-600" />
+                        <XCircle className="w-4 h-4 text-rose-500" />
                       )}
                       Câu {idx + 1} ({res?.score}/{res?.maxScore} điểm)
                     </span>
-                    <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                    <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-lg neu-inset-sm text-[#FF8800]">
                       {q.type === 'mcq' ? 'Trắc nghiệm' : 'Đúng/Sai 4 ý'}
                     </span>
                   </div>
 
                   {/* Stem */}
-                  <div className="text-xs font-semibold text-slate-900 dark:text-white mb-3">
+                  <div className="text-xs sm:text-sm font-semibold text-[#2D3748] dark:text-white mb-3">
                     <MathRenderer text={q.stem} />
                   </div>
 
                   {/* Answers review */}
                   {q.type === 'mcq' ? (
-                    <div className="space-y-1.5 mb-3">
+                    <div className="space-y-2 mb-3">
                       {(q.options || []).map((opt, optIdx) => {
                         const letter = ['A', 'B', 'C', 'D'][optIdx];
                         const isUserChoice = res.userChoice === optIdx;
                         const isCorrectOption = q.correct === optIdx;
 
-                        let style = 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300';
+                        let style = 'neu-inset text-[#4A5568] dark:text-[#CBD5E1]';
                         if (isCorrectOption) {
-                          style = 'bg-emerald-100 dark:bg-emerald-900/60 text-emerald-900 dark:text-emerald-200 font-bold border border-emerald-300';
+                          style = 'neu-inset text-emerald-600 dark:text-emerald-400 bg-emerald-500/15 border border-emerald-500/30 font-bold';
                         } else if (isUserChoice && !isCorrectOption) {
-                          style = 'bg-rose-100 dark:bg-rose-900/60 text-rose-900 dark:text-rose-200 line-through';
+                          style = 'neu-inset text-rose-600 dark:text-rose-400 bg-rose-500/15 border border-rose-500/30 line-through';
                         }
 
                         return (
-                          <div key={optIdx} className={`p-2 rounded-xl text-xs flex items-start gap-2 ${style}`}>
-                            <span className="font-bold">{letter}.</span>
+                          <div key={optIdx} className={`p-3 rounded-2xl text-xs flex items-start gap-2.5 ${style}`}>
+                            <span className="font-display font-black">{letter}.</span>
                             <span className="flex-1"><MathRenderer text={opt} /></span>
-                            {isCorrectOption && <span className="text-[10px] uppercase font-bold text-emerald-700 dark:text-emerald-300">Đáp án đúng</span>}
-                            {isUserChoice && !isCorrectOption && <span className="text-[10px] uppercase font-bold text-rose-600">Bạn chọn</span>}
+                            {isCorrectOption && <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400">Đáp án đúng</span>}
+                            {isUserChoice && !isCorrectOption && <span className="text-[10px] uppercase font-bold text-rose-500">Bạn chọn</span>}
                           </div>
                         );
                       })}
                     </div>
                   ) : q.type === 'short_answer' ? (
                     /* Short Answer review */
-                    <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1.5 mb-3 text-xs">
+                    <div className="p-3.5 rounded-2xl neu-inset space-y-1.5 mb-3 text-xs">
                       <div className="flex items-center justify-between">
-                        <span className="text-slate-600 dark:text-slate-400">Câu trả lời của bạn:</span>
-                        <span className={`font-bold ${res.isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400'}`}>
+                        <span className="text-[#718096] dark:text-[#94A3B8]">Câu trả lời của bạn:</span>
+                        <span className={`font-bold ${res.isCorrect ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-500'}`}>
                           {res.userVal ? String(res.userVal) : '(Bỏ trống)'}
                         </span>
                       </div>
                       <div className="flex items-center justify-between">
-                        <span className="text-slate-600 dark:text-slate-400">Đáp án chính xác:</span>
-                        <span className="font-bold text-emerald-700 dark:text-emerald-300">
+                        <span className="text-[#718096] dark:text-[#94A3B8]">Đáp án chính xác:</span>
+                        <span className="font-bold text-emerald-600 dark:text-emerald-400">
                           {q.correctAnswer || q.answer}
                         </span>
                       </div>
                     </div>
                   ) : (
                     /* True/False Statements review */
-                    <div className="space-y-1.5 mb-3">
+                    <div className="space-y-2 mb-3">
                       {(q.statements || []).map(stmt => {
                         const detail = res.details?.[stmt.label] || {};
                         const stmtCorrect = detail.isCorrect;
@@ -498,18 +502,18 @@ export default function PracticeRoom({
                         return (
                           <div
                             key={stmt.label}
-                            className={`p-2 rounded-xl text-xs flex items-center justify-between gap-2 border ${
+                            className={`p-3 rounded-2xl text-xs flex items-center justify-between gap-2 border ${
                               stmtCorrect
-                                ? 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200'
-                                : 'bg-rose-50 dark:bg-rose-950/30 border-rose-200'
+                                ? 'neu-inset border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300'
+                                : 'neu-inset border-rose-500/30 bg-rose-500/10 text-rose-700 dark:text-rose-300'
                             }`}
                           >
                             <div className="flex-1">
-                              <span className="font-bold mr-1">{stmt.label})</span>
+                              <span className="font-display font-extrabold mr-1.5">{stmt.label})</span>
                               <MathRenderer text={stmt.text} />
                             </div>
                             <div className="text-[11px] shrink-0 font-medium">
-                              <span>Bạn: <b>{userValStr}</b></span> • <span className="text-emerald-700 dark:text-emerald-300 font-bold">Đáp án: {correctValStr}</span>
+                              <span>Bạn: <b>{userValStr}</b></span> • <span className="text-emerald-600 dark:text-emerald-400 font-bold">Đáp án: {correctValStr}</span>
                             </div>
                           </div>
                         );
@@ -519,8 +523,8 @@ export default function PracticeRoom({
 
                   {/* Explanation */}
                   {q.explanation && (
-                    <div className="p-2.5 rounded-xl bg-slate-50 dark:bg-slate-800/80 text-xs text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-                      <span className="font-bold text-sky-600 dark:text-sky-400 block mb-0.5">Lời giải thích:</span>
+                    <div className="p-3 rounded-2xl neu-inset text-xs text-[#4A5568] dark:text-[#CBD5E1]">
+                      <span className="font-display font-bold text-[#FF8800] block mb-1">Lời giải thích:</span>
                       <MathRenderer text={q.explanation} />
                     </div>
                   )}
@@ -537,28 +541,28 @@ export default function PracticeRoom({
   // VIEW 3: ACTIVE TEST TAKING SCREEN
   // ==========================================
   return (
-    <div className="space-y-4 max-w-4xl mx-auto">
+    <div className="space-y-5 max-w-4xl mx-auto">
       {/* Header bar: Timer, Title, Submit */}
-      <div className="sticky top-16 z-30 bg-white/95 dark:bg-slate-900/95 backdrop-blur p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md flex items-center justify-between gap-3">
+      <div className="sticky top-20 z-30 neu-card p-4 rounded-2xl bg-[#EBECF0]/95 dark:bg-[#1A1E24]/95 backdrop-blur-md border border-white/80 dark:border-white/10 shadow-[0_8px_16px_rgba(163,177,198,0.35)] dark:shadow-[0_8px_16px_rgba(0,0,0,0.5)] flex items-center justify-between gap-3">
         <div>
-          <h2 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white line-clamp-1">
+          <h2 className="text-xs sm:text-sm font-display font-extrabold text-[#2D3748] dark:text-white line-clamp-1">
             {activeExam.name}
           </h2>
-          <div className="text-[11px] text-slate-500">
+          <div className="text-[11px] font-bold text-[#FF8800]">
             Câu {currentIndex + 1} / {examQuestions.length}
           </div>
         </div>
 
         <div className="flex items-center gap-3">
           {/* Timer Display */}
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-mono font-bold text-xs sm:text-sm border border-sky-200 dark:border-sky-800">
-            <Clock className="w-4 h-4 text-sky-600" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl neu-inset-sm text-[#FF8800] font-mono font-bold text-xs sm:text-sm">
+            <Clock className="w-4 h-4" />
             <span>{formatTime(secondsElapsed)}</span>
           </div>
 
           <button
             onClick={handleSubmitExam}
-            className="flex items-center gap-1.5 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold shadow-md shadow-emerald-600/20 transition"
+            className="flex items-center gap-1.5 px-4 py-2 neu-btn-primary rounded-xl text-xs font-display font-extrabold uppercase tracking-wider cursor-pointer active:scale-95 transition"
           >
             <Send className="w-3.5 h-3.5" />
             Nộp Bài
@@ -568,14 +572,14 @@ export default function PracticeRoom({
 
       {/* Main Question Card */}
       {currentQ && (
-        <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
+        <div className="neu-card p-6 sm:p-7 rounded-[32px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 space-y-6">
           {/* Question Meta */}
-          <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+          <div className="flex items-center justify-between border-b border-black/5 dark:border-white/5 pb-3">
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950 text-sky-800 dark:text-sky-300">
+              <span className="text-xs font-display font-extrabold px-2.5 py-1 rounded-xl neu-inset-sm text-[#FF8800]">
                 Câu {currentIndex + 1}
               </span>
-              <span className="text-xs font-semibold text-slate-500">
+              <span className="text-xs font-medium text-[#718096] dark:text-[#94A3B8]">
                 {currentQ.type === 'mcq'
                   ? 'Trắc nghiệm 1 lựa chọn'
                   : currentQ.type === 'short_answer'
@@ -583,13 +587,13 @@ export default function PracticeRoom({
                   : 'Đúng / Sai 4 ý'}
               </span>
             </div>
-            <span className="text-xs text-slate-400 capitalize">
+            <span className="text-[11px] font-bold text-[#718096] uppercase tracking-wider">
               {currentQ.difficulty}
             </span>
           </div>
 
           {/* Stem */}
-          <div className="text-sm sm:text-base font-semibold text-slate-900 dark:text-white leading-relaxed">
+          <div className="text-sm sm:text-base font-semibold text-[#2D3748] dark:text-white leading-relaxed">
             <MathRenderer text={currentQ.stem} />
           </div>
 
@@ -605,20 +609,20 @@ export default function PracticeRoom({
                     key={optIdx}
                     type="button"
                     onClick={() => handleSelectMCQ(currentQ.id, optIdx)}
-                    className={`w-full flex items-start gap-3 p-3.5 rounded-2xl border text-xs sm:text-sm text-left transition ${
+                    className={`w-full flex items-start gap-3 p-3.5 rounded-2xl border text-xs sm:text-sm text-left transition cursor-pointer active:scale-98 ${
                       isSelected
-                        ? 'bg-sky-50 dark:bg-sky-950/50 border-sky-500 text-sky-900 dark:text-sky-100 shadow-sm'
-                        : 'bg-slate-50/70 dark:bg-slate-800/40 border-slate-200 dark:border-slate-700 text-slate-800 dark:text-slate-200 hover:bg-slate-100'
+                        ? 'neu-inset text-[#FF8800] bg-[#FF8800]/15 border-[#FF8800]/40 shadow-sm'
+                        : 'neu-btn text-[#4A5568] dark:text-[#CBD5E1] border-transparent hover:text-[#FF8800]'
                     }`}
                   >
-                    <span className={`w-7 h-7 rounded-xl flex items-center justify-center font-bold text-xs shrink-0 transition ${
+                    <span className={`w-7 h-7 rounded-xl flex items-center justify-center font-display font-black text-xs shrink-0 transition ${
                       isSelected
-                        ? 'bg-sky-600 text-white shadow-xs'
-                        : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300'
+                        ? 'neu-inset text-[#FF8800] bg-[#FF8800]/20'
+                        : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
                     }`}>
                       {letter}
                     </span>
-                    <span className="mt-0.5 flex-1">
+                    <span className="mt-0.5 flex-1 font-medium">
                       <MathRenderer text={opt} />
                     </span>
                   </button>
@@ -627,8 +631,8 @@ export default function PracticeRoom({
             </div>
           ) : currentQ.type === 'short_answer' ? (
             /* Short Answer input box */
-            <div className="space-y-3 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-800/40">
-              <label className="text-xs font-bold text-slate-700 dark:text-slate-300 block">
+            <div className="space-y-3 p-4 rounded-2xl neu-inset">
+              <label className="text-xs font-display font-bold text-[#2D3748] dark:text-white block">
                 Nhập câu trả lời hoặc số liệu của bạn:
               </label>
               <input
@@ -637,16 +641,16 @@ export default function PracticeRoom({
                 value={userAnswers[currentQ.id] !== undefined ? String(userAnswers[currentQ.id]) : ''}
                 onChange={(e) => handleSelectShortAnswer(currentQ.id, e.target.value)}
                 placeholder="Ví dụ: 351 hoặc 23,4"
-                className="w-full sm:w-80 px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white font-medium text-sm focus:ring-2 focus:ring-sky-500 outline-none"
+                className="w-full sm:w-80 px-4 py-2.5 rounded-2xl neu-inset bg-transparent text-[#2D3748] dark:text-white font-medium text-xs focus:ring-1 focus:ring-[#FF8800]/50 outline-none"
               />
-              <p className="text-[11px] text-slate-400">
+              <p className="text-[11px] text-[#718096]">
                 Lưu ý: Đối với số thập phân, bạn có thể dùng dấu phẩy (,) hoặc dấu chấm (.).
               </p>
             </div>
           ) : (
             /* True/False Statements with interactive buttons */
             <div className="space-y-3">
-              <p className="text-xs text-slate-500 italic">
+              <p className="text-xs text-[#718096] italic">
                 * Thí sinh chọn ĐÚNG hoặc SAI cho mỗi nhận định sau:
               </p>
               {(currentQ.statements || []).map(stmt => {
@@ -655,21 +659,21 @@ export default function PracticeRoom({
                 return (
                   <div
                     key={stmt.label}
-                    className="p-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-800/40 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm"
+                    className="p-3.5 rounded-2xl neu-inset flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm"
                   >
                     <div className="flex items-start gap-2 flex-1">
-                      <span className="font-bold text-slate-500 shrink-0">{stmt.label})</span>
-                      <span><MathRenderer text={stmt.text} /></span>
+                      <span className="font-display font-bold text-[#FF8800] shrink-0">{stmt.label})</span>
+                      <span className="font-medium text-[#2D3748] dark:text-white"><MathRenderer text={stmt.text} /></span>
                     </div>
 
                     <div className="flex items-center gap-1.5 shrink-0 justify-end">
                       <button
                         type="button"
                         onClick={() => handleSelectTF(currentQ.id, stmt.label, true)}
-                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
+                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 cursor-pointer ${
                           userVal === true
-                            ? 'bg-emerald-600 text-white shadow-sm'
-                            : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'
+                            ? 'neu-inset text-emerald-600 dark:text-emerald-400 bg-emerald-500/15 border border-emerald-500/30'
+                            : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-emerald-500'
                         }`}
                       >
                         <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
@@ -678,10 +682,10 @@ export default function PracticeRoom({
                       <button
                         type="button"
                         onClick={() => handleSelectTF(currentQ.id, stmt.label, false)}
-                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 ${
+                        className={`px-3 py-1.5 rounded-xl text-xs font-bold transition flex items-center gap-1 cursor-pointer ${
                           userVal === false
-                            ? 'bg-rose-600 text-white shadow-sm'
-                            : 'bg-slate-200 dark:bg-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-300'
+                            ? 'neu-inset text-rose-600 dark:text-rose-400 bg-rose-500/15 border border-rose-500/30'
+                            : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-rose-500'
                         }`}
                       >
                         <XCircle className="w-3.5 h-3.5" /> Sai
@@ -694,11 +698,11 @@ export default function PracticeRoom({
           )}
 
           {/* Navigation Buttons: Prev / Next */}
-          <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
+          <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/5">
             <button
               onClick={() => setCurrentIndex(i => Math.max(0, i - 1))}
               disabled={currentIndex === 0}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-40"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-2xl neu-btn text-xs font-display font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] disabled:opacity-40 cursor-pointer active:scale-95 transition"
             >
               <ArrowLeft className="w-4 h-4" /> Câu trước
             </button>
@@ -706,7 +710,7 @@ export default function PracticeRoom({
             <button
               onClick={() => setCurrentIndex(i => Math.min(examQuestions.length - 1, i + 1))}
               disabled={currentIndex === examQuestions.length - 1}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-sky-600 hover:bg-sky-50 dark:hover:bg-slate-800 disabled:opacity-40"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-2xl neu-btn text-xs font-display font-bold text-[#FF8800] disabled:opacity-40 cursor-pointer active:scale-95 transition"
             >
               Câu tiếp theo <ArrowRight className="w-4 h-4" />
             </button>
@@ -715,8 +719,8 @@ export default function PracticeRoom({
       )}
 
       {/* Bubble Question Palette */}
-      <div className="bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-        <div className="text-xs font-bold text-slate-700 dark:text-slate-300 mb-2">
+      <div className="neu-card p-5 rounded-[28px] bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/80 dark:border-white/10 space-y-3">
+        <div className="text-xs font-display font-extrabold text-[#2D3748] dark:text-white uppercase tracking-wider">
           Bảng điều hướng câu hỏi:
         </div>
         <div className="flex flex-wrap gap-2">
@@ -737,12 +741,12 @@ export default function PracticeRoom({
               <button
                 key={q.id}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-9 h-9 rounded-xl text-xs font-bold transition flex items-center justify-center ${
+                className={`w-9 h-9 rounded-xl text-xs font-display font-bold transition flex items-center justify-center cursor-pointer active:scale-95 ${
                   isCurrent
-                    ? 'ring-2 ring-sky-500 bg-sky-600 text-white shadow-sm'
+                    ? 'neu-extruded text-[#FF8800] ring-2 ring-[#FF8800]'
                     : isAnswered
-                    ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300'
-                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:bg-slate-200'
+                    ? 'neu-inset text-[#FF8800] bg-[#FF8800]/10'
+                    : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748]'
                 }`}
               >
                 {idx + 1}
