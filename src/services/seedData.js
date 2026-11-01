@@ -1,7 +1,3 @@
-/**
- * Dữ liệu mẫu (Seed Data) chuẩn - Môn Công Nghệ GHKI (93 câu hỏi đầy đủ đáp án) & Tin học 12
- */
-
 export const SEED_DATA = {
   "subjects": [
     {
@@ -403,6 +399,50 @@ export const SEED_DATA = {
                 "The city looks modern due to various skyscrapers and electric buses.",
                 "Some people find it difficult to get familiar with smart devices."
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sub_tinhoc11",
+      "name": "Tin Học 11",
+      "chapters": [
+        {
+          "id": "chap_tin11_c1",
+          "name": "Chủ đề 1: Máy tính và xã hội tri thức (Hệ điều hành & Phần mềm)",
+          "sections": [
+            {
+              "id": "chap_tin11_c1_s1",
+              "name": "Hệ điều hành và Thiết bị thông minh"
+            },
+            {
+              "id": "chap_tin11_c1_s2",
+              "name": "Phần mềm nguồn mở và Lưu trữ trực tuyến"
+            }
+          ]
+        },
+        {
+          "id": "chap_tin11_c2",
+          "name": "Chủ đề 2: Tổ chức lưu trữ, tìm kiếm và chia sẻ thông tin",
+          "sections": [
+            {
+              "id": "chap_tin11_c2_s1",
+              "name": "Lưu trữ đám mây và Bảo mật dữ liệu"
+            }
+          ]
+        },
+        {
+          "id": "chap_tin11_c3",
+          "name": "Chủ đề 3: Phần cứng và Logic máy tính",
+          "sections": [
+            {
+              "id": "chap_tin11_c3_s1",
+              "name": "Phần cứng máy tính, CPU, RAM, ROM, Cổng kết nối"
+            },
+            {
+              "id": "chap_tin11_c3_s2",
+              "name": "Biểu diễn dữ liệu số, Phép tính nhị phân và Cổng logic"
             }
           ]
         }
@@ -8618,6 +8658,1707 @@ export const SEED_DATA = {
       ],
       "correct": 0,
       "explanation": "Cấu trúc: `find it + adj + to V` (cảm thấy như thế nào khi làm gì) và cụm `get familiar with sth` (làm quen với cái gì). Đáp án viết tay trên đề cương: \"Some people find it difficult to get familiar with smart devices.\""
+    },
+    {
+      "id": "q_tin11_mcq_01",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Cho biểu thức logic **A AND B** và **A OR B**. Với $A=0$ và $B=1$, giá trị của 2 biểu thức logic lần lượt là:",
+      "options": [
+        "0; 0",
+        "0; 1",
+        "1; 0",
+        "1; 1"
+      ],
+      "correct": 1,
+      "explanation": "Thay $A = 0$ và $B = 1$:\n- $0 \\text{ AND } 1 = 0$\n- $0 \\text{ OR } 1 = 1$\nVậy giá trị lần lượt là **0; 1** (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_02",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Cho biểu thức logic **A AND B** và **A XOR B**. Với $A=1$ và $B=1$, giá trị của 2 biểu thức logic lần lượt là:",
+      "options": [
+        "0; 0",
+        "0; 1",
+        "1; 0",
+        "1; 1"
+      ],
+      "correct": 2,
+      "explanation": "Thay $A = 1$ và $B = 1$:\n- $1 \\text{ AND } 1 = 1$\n- $1 \\text{ XOR } 1 = 0$ (hai đầu vào giống nhau thì XOR bằng 0)\nVậy giá trị lần lượt là **1; 0** (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_03",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Kết quả đúng của phép toán cộng 2 số nhị phân $111_2 + 1101_2$ là bao nhiêu:",
+      "options": [
+        "10001",
+        "10100",
+        "10010",
+        "11000"
+      ],
+      "correct": 1,
+      "explanation": "Thực hiện phép cộng nhị phân theo từng cột từ phải sang trái:\n  0111_2 (7)\n+ 1101_2 (13)\n-------\n 10100_2 (20)\nKết quả là **10100** (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_04",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Khi chọn mua thiết bị số, ta thường quan tâm đến những thông số kĩ thuật quan trọng nào hàng đầu?",
+      "options": [
+        "Tốc độ CPU, dung lượng lưu trữ, độ phân giải màn hình",
+        "Dung lượng RAM, dung lượng lưu trữ.",
+        "Kích thước màn hình, tốc độ CPU.",
+        "Tốc độ CPU, dung lượng RAM, dung lượng lưu trữ."
+      ],
+      "correct": 3,
+      "explanation": "Theo SGK Tin học 11, khi chọn mua máy tính/thiết bị số, ba thông số cốt lõi quan trọng nhất là: Tốc độ CPU (xung nhịp), Dung lượng bộ nhớ RAM và Dung lượng ổ cứng lưu trữ (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_05",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Kí hiệu chuẩn quốc tế nào sau đây đúng cho **cổng logic AND**?",
+      "options": [
+        "Cổng có cạnh ngõ vào phẳng và đầu ra vòm cong bán nguyệt",
+        "Cổng có cạnh ngõ vào cong lõm và đầu ra vuốt nhọn (OR)",
+        "Cổng hình tam giác có vòng tròn đảo ở ngõ ra (NOT)",
+        "Cổng có vạch cong đôi ở ngõ vào và đầu ra nhọn (XOR)"
+      ],
+      "correct": 0,
+      "explanation": "Kí hiệu chuẩn ANSI/IEEE của cổng AND: cạnh ngõ vào thẳng phẳng, ngõ ra vòm cong bán nguyệt (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_06",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Đâu là bảng chân lí (các giá trị đầu ra) của **cổng OR** tương ứng với các cặp đầu vào $(1, 1), (1, 0), (0, 1), (0, 0)$?",
+      "options": [
+        "1 | 1 | 1",
+        "1 | 1 | 1 | 1",
+        "1 | 1 | 0",
+        "1 | 1 | 1 | 0"
+      ],
+      "correct": 3,
+      "explanation": "Cổng OR cho kết quả bằng 1 khi có ít nhất một đầu vào bằng 1, và chỉ cho kết quả bằng 0 khi cả hai đầu vào đều bằng 0. Với các tổ hợp đầu vào (1,1)->1, (1,0)->1, (0,1)->1, (0,0)->0, dãy giá trị đầu ra là 1 | 1 | 1 | 0 (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_07",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "CPU là gì?",
+      "options": [
+        "Trung tâm điều khiển máy tính",
+        "Bộ xử lý trung tâm của máy tính, đóng vai trò bộ não của MT.",
+        "Bộ điều khiển máy tính",
+        "Thân máy tính, chứa các thiết bị phần cứng bên trong nó"
+      ],
+      "correct": 1,
+      "explanation": "CPU (Central Processing Unit) là bộ xử lý trung tâm của máy tính, đóng vai trò như bộ não, thực hiện tính toán, điều khiển và thực thi các chương trình (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_08",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Chủ sở hữu quyết định quyền của người được chia sẻ tệp/thư mục trên dịch vụ lưu trữ trực tuyến với ba chế độ nào?",
+      "options": [
+        "Xem, xóa, khôi phục",
+        "Xem, nhận xét, chỉnh sửa",
+        "Xem, mua, bán",
+        "Xem, tải về, lấy tài khoản"
+      ],
+      "correct": 1,
+      "explanation": "Các nền tảng đám mây (Google Drive, OneDrive...) cung cấp 3 chế độ chia sẻ chuẩn: Xem (Viewer), Nhận xét (Commenter), Chỉnh sửa (Editor) (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_09",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Kích thước màn hình của các thiết bị điện tử thường được đo bằng:",
+      "options": [
+        "Chiều ngang màn hình",
+        "Chiều dài màn hình",
+        "Đường chéo màn hình",
+        "Chu vi của màn hình"
+      ],
+      "correct": 2,
+      "explanation": "Kích thước màn hình được đo bằng độ dài đường chéo của màn hình theo đơn vị inch ($1\\text{ inch} = 2.54\\text{ cm}$) (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_10",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Đơn vị đo tốc độ của CPU là:",
+      "options": [
+        "GHz",
+        "GB",
+        "Bit",
+        "Tất cả đúng"
+      ],
+      "correct": 0,
+      "explanation": "Tốc độ (tần số xung nhịp) của CPU đo bằng GHz (Gigahertz). GB đo dung lượng bộ nhớ, Bit là đơn vị thông tin nhỏ nhất (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_11",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Biết một màn hình có kích thước chiều dài và chiều rộng là $33.1\\text{ cm} \\times 20.7\\text{ cm}$, hỏi màn hình đó có kích thước bao nhiêu inch?",
+      "options": [
+        "15.4 inch",
+        "14.5 inch",
+        "16.2 inch",
+        "16 inch"
+      ],
+      "correct": 0,
+      "explanation": "Đường chéo: $d = \\sqrt{33.1^2 + 20.7^2} = \\sqrt{1524.1} \\approx 39.04\\text{ cm}$.\\nĐổi sang inch: $39.04 / 2.54 \\approx 15.37\\text{ inch} \\approx 15.4\\text{ inch}$ (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_12",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Ưu điểm của việc lưu trữ thông tin trực tuyến là?",
+      "options": [
+        "Cho phép chia sẻ thư mục, tệp cho người dùng khác",
+        "Không cho phép chia sẻ thư mục, tệp cho người dùng khác",
+        "Bán được thông tin cho nhau để kiếm tiền",
+        "Dữ liệu chỉ mở được trên đúng một máy tính cá nhân"
+      ],
+      "correct": 0,
+      "explanation": "Lưu trữ đám mây cho phép người dùng dễ dàng chia sẻ thư mục, tệp tin với người khác và truy cập từ mọi nơi có mạng Internet (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_13",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Thiết bị số là:",
+      "options": [
+        "Thiết bị có thể thực hiện được các phép tính số học.",
+        "Thiết bị có thể xử lí thông tin.",
+        "Máy tính điện tử.",
+        "Thiết bị lưu trữ, truyền và xử lí dữ liệu số."
+      ],
+      "correct": 3,
+      "explanation": "Định nghĩa SGK Tin học 11: Thiết bị số là thiết bị có khả năng lưu trữ, truyền và xử lí dữ liệu số (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_14",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Phát biểu nào **sai** khi nói về chức năng của hệ điều hành?",
+      "options": [
+        "Hệ điều hành cung cấp phương tiện giao tiếp để người dùng điều khiển máy tính thông qua giao diện đồ họa.",
+        "Hệ điều hành có chức năng quản lí và khai thác các thiết bị của hệ thống.",
+        "Hệ điều hành tạo và tổ chức lưu trữ các tệp trên bộ nhớ ngoài.",
+        "Hệ điều hành đảm nhận vai trò tìm nạp lệnh, giải mã lệnh và thực thi lệnh cho máy tính."
+      ],
+      "correct": 3,
+      "explanation": "Vai trò tìm nạp lệnh, giải mã lệnh và thực thi lệnh là chức năng của phần cứng CPU, không phải của hệ điều hành (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_15",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Hệ điều hành Windows được phát triển bởi tập đoàn nào?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "IBM"
+      ],
+      "correct": 1,
+      "explanation": "Hệ điều hành Windows do tập đoàn Microsoft phát triển (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_16",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Hệ điều hành macOS cho máy tính được phát triển bởi hãng nào?",
+      "options": [
+        "Apple",
+        "Microsoft",
+        "Google",
+        "IBM"
+      ],
+      "correct": 0,
+      "explanation": "macOS là hệ điều hành dành riêng cho máy tính Mac do Apple phát triển (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_17",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Thiết bị nào có chức năng lưu trữ tạm thời dữ liệu trong quá trình tính toán và sẽ bị mất đi khi tắt máy?",
+      "options": [
+        "CPU",
+        "ROM",
+        "RAM",
+        "MAIN BOARD"
+      ],
+      "correct": 2,
+      "explanation": "RAM (Random Access Memory) là bộ nhớ truy cập ngẫu nhiên lưu dữ liệu tạm thời; mất điện hoặc tắt máy thì dữ liệu trong RAM mất hết (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_18",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Hãy chọn đáp án đúng cho phép cộng 2 bít trong hệ nhị phân:",
+      "options": [
+        "1 + 1 = 01",
+        "1 + 1 = 11",
+        "1 + 1 = 2",
+        "1 + 1 = 10"
+      ],
+      "correct": 3,
+      "explanation": "Trong hệ nhị phân, $1 + 1 = 10_2$ (viết 0 nhớ 1 sang hàng bên trái) (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_19",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Bằng cách kết hợp các cổng logic ......., ......... , máy tính có thể thực hiện được phép tính cộng nhị phân. Em hãy chọn đáp án đúng để hoàn thành vào chỗ ...",
+      "options": [
+        "AND, OR",
+        "AND, NOT",
+        "AND, XOR",
+        "OR, XOR"
+      ],
+      "correct": 2,
+      "explanation": "Mạch nửa bộ cộng (Half Adder) cộng 2 bit gồm cổng XOR (cho bit Tổng) và cổng AND (cho bit Nhớ) (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_20",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Những bộ phận chính bên trong máy tính bao gồm:",
+      "options": [
+        "Bảng mạch chính, CPU, RAM, ROM, thiết bị lưu trữ",
+        "Bảng mạch chính, RAM, ổ cứng, nguồn điện, loa",
+        "Bảng mạch chính, CPU, hệ điều hành, ổ đĩa CD/DVD",
+        "Bảng mạch chính, CPU, SSD, BIOS, bộ nhớ đệm"
+      ],
+      "correct": 0,
+      "explanation": "Bên trong thân máy tính gồm: Bảng mạch chính (Mainboard), CPU, RAM, ROM, thiết bị lưu trữ (ổ cứng) (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_21",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Điền từ thích hợp vào chỗ trống sau: \"Ngày nay, việc lưu trữ dữ liệu cần đáp ứng nhu cầu tính toán như trong các dữ liệu lớn (...), trí tuệ nhân tạo (..), máy học và Internet vạn vật (...)\"",
+      "options": [
+        "Big Data/ AI/ IoT",
+        "AI/ IoT/ Big Data",
+        "Phần mềm không cần có kết nối internet",
+        "AI/ Big Data/ IoT"
+      ],
+      "correct": 0,
+      "explanation": "Dữ liệu lớn: Big Data, Trí tuệ nhân tạo: AI, Internet vạn vật: IoT. Thứ tự: Big Data/ AI/ IoT (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_22",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Phát biểu nào sau đây đúng khi nói về OneDrive?",
+      "options": [
+        "OneDrive chỉ có thể sử dụng nếu có máy tính.",
+        "Giới hạn lưu trữ miễn phí của OneDrive là 5GB",
+        "OneDrive được phát triển bởi tập đoàn Apple.",
+        "Không thể chia sẻ tài liệu đã lưu trữ trên OneDrive cho người khác."
+      ],
+      "correct": 1,
+      "explanation": "OneDrive của Microsoft cung cấp dung lượng lưu trữ miễn phí mặc định là 5GB (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_23",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Dịch vụ lưu trữ dữ liệu trực tuyến sẽ làm gì khi phát hiện sự thay đổi dữ liệu?",
+      "options": [
+        "Giữ nguyên dữ liệu, không thay đổi",
+        "Tự động thông báo với bạn qua emai",
+        "Tạo một bản sao của dữ liệu",
+        "Tự động đồng bộ"
+      ],
+      "correct": 3,
+      "explanation": "Khi phát hiện tệp hoặc thư mục có thay đổi, dịch vụ đám mây sẽ tự động đồng bộ (Auto Sync) lên máy chủ (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_24",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Biểu tượng hình tam giác ba dải màu đan xen (vàng, lục, lam) là logo của dịch vụ lưu trữ đám mây nào sau đây?",
+      "options": [
+        "Google Drive",
+        "Google Chrome",
+        "Drop Box",
+        "One Drive"
+      ],
+      "correct": 0,
+      "explanation": "Logo hình tam giác 3 dải màu đan xen là biểu tượng nhận diện của Google Drive (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_25",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Giấy phép phần mềm công cộng viết tắt là",
+      "options": [
+        "USB",
+        "GNU GPL/(GPL)",
+        "GCL",
+        "GNP"
+      ],
+      "correct": 1,
+      "explanation": "Giấy phép công cộng GNU (General Public License) viết tắt là GNU GPL hoặc GPL (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_26",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Phần mềm tra cứu bản đồ và chỉ dẫn đường đi maps.google.com được cung cấp dưới dạng",
+      "options": [
+        "miễn phí (bị hạn chế một số tính năng) và có trả phí nếu không muốn bị hạn chế những tính năng phong phú khác",
+        "miễn phí hoàn toàn và không giới hạn tính năng",
+        "có trả phí được cung cấp theo cách linh hoạt, như một dịch vụ, tùy theo nhu cầu của người dùng",
+        "người dùng được tự do khai thác, nghiên cứu, sửa đổi và chia sẻ phần mềm"
+      ],
+      "correct": 0,
+      "explanation": "Theo SGK Tin học 11, maps.google.com cung cấp miễn phí cho người dùng cá nhân (bị hạn chế một số tính năng nâng cao) và có trả phí theo dịch vụ nếu dùng các tính năng phong phú/doanh nghiệp (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_27",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Phần mềm phục vụ học tập như hệ thống lập trình C++ (Dev-C++, Code::Blocks) là phần mềm gì?",
+      "options": [
+        "Phần mềm thương mại",
+        "Phần mềm miễn phí",
+        "Phần mềm nguồn đóng",
+        "Phần mềm trả phí theo tháng"
+      ],
+      "correct": 1,
+      "explanation": "Các môi trường lập trình C++ học tập phổ biến trong trường học là phần mềm miễn phí (Freeware / Open Source) (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_28",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Phần mềm chạy trên Internet là?",
+      "options": [
+        "Phần mềm chỉ sử dụng cho các doanh nghiệp lớn",
+        "Phần mềm cần mua bản quyền để sử dụng",
+        "Phần mềm không cần có kết nối internet",
+        "Phần mềm sử dụng trực tiếp trên internet mà không cần cài đặt vào máy"
+      ],
+      "correct": 3,
+      "explanation": "Phần mềm chạy trên Internet (Web-based software) sử dụng trực tiếp qua trình duyệt web mà không cần cài đặt phần mềm lên máy tính (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_29",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Phát biểu nào sau đây là đúng về lịch sử hệ điều hành?",
+      "options": [
+        "Máy tính thế hệ thứ nhất không có hệ điều hành",
+        "Máy tính thế hệ thứ 2 bắt đầu có hệ điều hành, tại mỗi thời điểm chỉ cho phép thực hiện một chương trình của người dùng",
+        "Hệ điều hành của máy tính thế hệ thứ ba theo chế độ đa nhiệm, cho phép tại mỗi thời điểm có nhiều chương trình được thực hiện",
+        "Tất cả các đáp án trên."
+      ],
+      "correct": 3,
+      "explanation": "Cả ba phát biểu đều mô tả đúng lịch sử phát triển HĐH qua các thế hệ máy tính (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_30",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": ".......... là các phần mềm được tập trung vào các lĩnh vực và nghề nghiệp cụ thể theo yêu cầu riêng?",
+      "options": [
+        "Phần mềm nguồn mở",
+        "Phần mềm đặt hàng",
+        "Phần mềm nguồn đóng",
+        "Phần mềm miễn phí"
+      ],
+      "correct": 1,
+      "explanation": "Phần mềm đặt hàng (Custom software) được xây dựng theo yêu cầu chuyên biệt của từng đơn vị/nghề nghiệp cụ thể (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_31",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Đâu là ví dụ về phần mềm đồ họa nguồn mở?",
+      "options": [
+        "GIMP",
+        "Bee mine",
+        "UNIX",
+        "Linux"
+      ],
+      "correct": 0,
+      "explanation": "GIMP (GNU Image Manipulation Program) là phần mềm xử lý đồ họa nguồn mở tiêu biểu trong SGK Tin học 11 (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_32",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Nếu bạn đang tải một chương trình từ Internet, quá trình nào bạn nên sử dụng trước khi cài đặt chương trình?",
+      "options": [
+        "Mozilla FireFox.",
+        "Lưu các tập tin và tiến hành cài đặt từ trang Web.",
+        "Kiểm tra việc mua phần mềm hoàn tất",
+        "Lưu các tập tin và quét virut/spyware trên tập tin."
+      ],
+      "correct": 3,
+      "explanation": "Trước khi cài đặt tệp tải về từ Internet, cần quét virus/mã độc để bảo vệ an toàn cho hệ thống máy tính (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_33",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Thiết bị nào sau đây là thiết bị thông minh?\n(1) Đồng hồ vạn lịch niên\n(2) Điện thoại di động\n(3) Camera kết nối Internet\n(4) Máy ảnh số",
+      "options": [
+        "(1) (2)",
+        "(3) (4)",
+        "(1) (4)",
+        "(2) (3)"
+      ],
+      "correct": 3,
+      "explanation": "Điện thoại di động thông minh (smartphone) và Camera kết nối Internet là các thiết bị thông minh có vi xử lý và kết nối mạng (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_34",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Em hãy sắp xếp các bước kết nối máy tính với máy in thông qua cổng USB, sau đó in thử một tài liệu.\n(1) Kết nối máy in với máy tính bằng kết nối USB\n(2) Bật nguồn cho máy tính và máy in\n(3) Trên máy tính, tìm cài đặt máy in (Printer settings). Với máy dùng Windows ta chọn Control Panel, với máy dùng MacOS ta chọn System Preferences.\n(4) Mở tài liệu và lựa chọn máy in vừa cài đặt để in thử\n(5) Tìm tùy chọn Add a printer để cài đặt máy in, sau đó làm theo hướng dẫn. Biểu tượng máy in mới xuất hiện",
+      "options": [
+        "(1) - (2) - (3) - (5) - (4)",
+        "(2) - (1) - (3) - (4) - (5)",
+        "(2) - (3) - (1) - (5) - (4)",
+        "(2) - (1) - (3) - (5) - (4)"
+      ],
+      "correct": 3,
+      "explanation": "Thứ tự các bước chuẩn:\n(2) Bật nguồn -> (1) Cắm cáp USB -> (3) Mở cài đặt máy in -> (5) Add a printer -> (4) Mở tài liệu in thử.\nĐáp án: (2) - (1) - (3) - (5) - (4) (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_35",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Ví dụ nào sau đây là phần mềm nguồn mở?",
+      "options": [
+        "OpenOffice",
+        "Microsoft Office",
+        "Adobe Reader",
+        "Microsoft Teams"
+      ],
+      "correct": 0,
+      "explanation": "OpenOffice là bộ ứng dụng văn phòng nguồn mở miễn phí (Đáp án A).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_36",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Phép cộng hai số nhị phân dài nhiều bít thực hiện từ:",
+      "options": [
+        "Từ trái sang phải",
+        "Từ phải sang trái",
+        "Cùng lúc từ hai phía",
+        "Thực hiện ngẫu nhiên"
+      ],
+      "correct": 1,
+      "explanation": "Phép cộng nhị phân thực hiện từ hàng thấp sang hàng cao, tức là từ phải sang trái (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_37",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Facebook cung cấp phương pháp bảo mật nào sau đây giúp bảo vệ tài khoản tốt nhất khi sử dụng máy tính cá nhân?",
+      "options": [
+        "Sử dụng mật khẩu mạnh",
+        "Chỉ đăng nhập khi ở nhà",
+        "Bảo mật hai lớp và sử dụng khóa bảo mật",
+        "Không chia sẻ mật khẩu với bất kỳ ai"
+      ],
+      "correct": 2,
+      "explanation": "Bảo mật hai lớp (2FA) kết hợp khóa bảo mật là biện pháp bảo vệ tài khoản an toàn và hiệu quả nhất (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_38",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Phần mềm nguồn đóng là gì?",
+      "options": [
+        "Phần mềm phải trả tiền mua để sử dụng dù đó là phần mềm ứng dụng hay OS",
+        "Phần mềm mà người dùng không phải trả chi phí và có thể cài đặt trên máy để sử dụng",
+        "Phần mềm được cung cấp dưới dạng các mô đun chương trình viết trên một ngôn ngữ lập trình bậc cao.",
+        "Phần mềm được cung cấp dưới dạng các mô đun chương trình viết trên ngôn ngữ máy"
+      ],
+      "correct": 3,
+      "explanation": "Phần mềm nguồn đóng phát hành dưới dạng mô đun đã dịch sang ngôn ngữ máy (mã máy nhị phân) và không kèm mã nguồn (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_39",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Trong bảng chân lý của cổng OR, đầu ra sẽ là 1 khi nào?",
+      "options": [
+        "Khi cả hai đầu vào đều bằng 0",
+        "Khi cả hai đầu vào đều bằng 1",
+        "Khi ít nhất một đầu vào bằng 1",
+        "Khi chỉ có một đầu vào bằng 0"
+      ],
+      "correct": 2,
+      "explanation": "Cổng OR cho đầu ra là 1 khi ít nhất một đầu vào bằng 1 (Đáp án C).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_40",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Cổng VGA được dùng để",
+      "options": [
+        "kết nối với các loại thiết bị có giao tiếp USB như: chuột, bàn phím, điện thoại....",
+        "kết nối với màn hình, máy chiếu....",
+        "kết nối với các thiết bị âm thanh: loa, tai nghe, micro.",
+        "kết nối với tất cả các thiết bị"
+      ],
+      "correct": 1,
+      "explanation": "Cổng VGA (Video Graphics Array) dùng để kết nối card màn hình với màn hình hoặc máy chiếu (Đáp án B).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_mcq_41",
+      "type": "mcq",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Đâu là những thông số kĩ thuật cần quan tâm của CPU?",
+      "options": [
+        "Tốc độ của CPU",
+        "Số lượng nhân hay lõi (core)",
+        "Dung lượng",
+        "Tốc độ và số lượng nhân hay lõi (core) của CPU"
+      ],
+      "correct": 3,
+      "explanation": "Hai thông số kỹ thuật cốt lõi của CPU là: Tốc độ xung nhịp (GHz) và Số lượng nhân hay lõi (core) (Đáp án D).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_01",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Windows đã được phát minh và cải tiến qua nhiều giai đoạn khác nhau. Sau đây là một số nhận định về sự phát triển của Windows qua các thời kỳ:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Phiên bản 1 của Windows phát hành vào năm 1985 với giao diện đồ họa.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Phiên bản 3 của Windows phát hành vào năm 1990 tuy nhiên không có đặc điểm gì khác biệt so với phiên bản 1.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Windows XP phát hành vào năm 2001 bởi Microsoft với nhiều cải tiến đáng kể về giao diện và hiệu suất làm việc.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Vào năm 2018, Windows sa sút và bị thay thế gần như hoàn toàn bởi những hệ điều hành nổi bật khác khiến thị phần của mình chỉ còn chưa chiếm đến 1%.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Windows 1.0 ra mắt tháng 11/1985 mở đầu giao diện đồ họa GUI cho PC.\nb) SAI: Windows 3.0 (1990) có cải tiến vượt bậc về quản lý bộ nhớ bảo vệ, đồ họa 16 màu và đạt thành công thương mại khổng lồ.\nc) ĐÚNG: Windows XP (2001) dựa trên nhân NT ổn định cao, giao diện Luna mới và cải tiến hiệu suất mạnh mẽ.\nd) SAI: Windows luôn chiếm thị phần thống trị trên 70-80% thị trường máy tính cá nhân toàn cầu.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_02",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "\"Điện thoại thông minh, máy tính bảng (gọi chung là thiết bị di động) thực chất là các máy tính cá nhân. Sự khác nhau giữa hệ điều hành cho thiết bị di động và hệ điều hành của máy tính có nguồn gốc từ sự khác biệt về tính năng, tác dụng của hai loại thiết bị này.\"\\nSau đây là các nhận định được đưa ra về hệ điều hành của các thiết bị di động:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Tính đến tháng 1/2025, Android là hệ điều hành cho thiết bị di động chiếm thị phần cao nhất.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Có một số thiết bị di động có sử dụng hệ điều hành Windows.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Thiết bị di động thường bán với cả bao gồm: bàn phím, màn hình, web cam, loa và người dùng sẽ phải lắp ráp chúng lại với nhau thành thiết bị hoàn chỉnh mới có thể sử dụng được.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Điện thoại thông minh không chỉ dùng để nghe gọi truyền thống mà còn được trang bị nhiều tính năng tiện ích như chụp ảnh, quay phim, ghi nhận tình trạng sức khỏe.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Android dẫn đầu thị phần hệ điều hành di động toàn cầu (~70%).\nb) ĐÚNG: Microsoft từng phát triển Windows Phone/Windows 10 Mobile và một số máy tính bảng lai chạy Windows.\nc) SAI: Thiết bị di động được thiết kế tích hợp nguyên khối All-in-One sẵn sàng sử dụng, không cần người dùng tự lắp ráp.\nd) ĐÚNG: Smartphone tích hợp đa tiện ích: máy ảnh, GPS, cảm biến sức khỏe, kết nối mạng...",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_03",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "Trong một buổi phỏng vấn, bạn Nam được hỏi về một số thiết bị thông minh. Bạn Nam trả lời các thiết bị sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Smart TV.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Ổ cắm điện.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Đèn huỳnh quang.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Loa thông minh.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Smart TV là tivi thông minh chạy hệ điều hành, kết nối Internet và cài được ứng dụng.\nb) SAI: Ổ cắm điện thông thường là thiết bị điện thụ động, không có vi xử lý thông minh.\nc) SAI: Đèn huỳnh quang truyền thống không phải thiết bị thông minh.\nd) ĐÚNG: Loa thông minh (Smart speaker) có trợ lý ảo điều khiển bằng giọng nói và kết nối Wi-Fi.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_04",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s1",
+      "stem": "\"Sau khi hoàn thành giao diện thì bước phát triển tiếp theo của phát triển hệ điều hành là sử dụng giao diện đồ họa với các đối tượng thể hiện bằng hình ảnh\". Một số thành phần cơ bản của giao diện đồ họa có đặc điểm là:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Biểu tượng: dễ gợi nhớ, cho phép quan sát đối tượng dưới dạng đồ họa.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Chuột: là phương tiện chỉ định điểm làm việc trên màn hình thể hiện bởi một con trỏ màn hình.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Cửa sổ: là một vùng hình chữ nhật trên màn hình dành cho một ứng dụng. Cửa sổ đó có thể phóng to, thu nhỏ, ẩn đi hoặc đóng lại.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Bàn phím: là một phần của hệ điều hành, cho phép máy tính tự động nhập và xây dựng hệ điều hành cho bản thân.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Biểu tượng (Icon) trực quan hóa đối tượng, tệp, thư mục và chương trình.\nb) ĐÚNG: Chuột (Mouse) điều khiển con trỏ trỏ điểm làm việc trên màn hình GUI.\nc) ĐÚNG: Cửa sổ (Window) là khung chữ nhật độc lập của từng chương trình đang chạy.\nd) SAI: Bàn phím là thiết bị ngoại vi phần cứng nhập dữ liệu của người dùng, không phải thành phần của hệ điều hành và không tự xây dựng HĐH.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_05",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Khi tìm hiểu về cách chuyển giao phần mềm, Nam nhận thấy rằng có nhiều hình thức khác nhau: từ phần mềm thương mại bán dưới dạng mã máy, đến phần mềm nguồn mở chia sẻ mã nguồn. Em hãy giúp Nam chọn ra những ý đúng về đặc điểm của phần mềm thương mại:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Là phần mềm được bán ra với chi phí cụ thể, thường được cung cấp ở dạng mã máy để tránh bị sửa đổi trái phép.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Người dùng có thể tuỳ ý chia sẻ, chỉnh sửa phần mềm thương mại miễn là không sử dụng vào mục đích kinh doanh.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Một số phần mềm thương mại dạng \"đặt hàng\" được phát triển theo yêu cầu riêng của doanh nghiệp và có bảo hành kỹ thuật.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Tất cả phần mềm thương mại đều bắt buộc phải có tính năng chia sẻ mã nguồn để người dùng sửa lỗi.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Phần mềm thương mại bán dưới dạng mã máy nhị phân đóng để bảo hộ bản quyền.\nb) SAI: Phần mềm thương mại được bảo hộ quyền tác giả nghiêm ngặt, người dùng không được phép chỉnh sửa hoặc tự ý chia sẻ trái phép.\nc) ĐÚNG: Phần mềm đặt hàng phát triển theo hợp đồng riêng của doanh nghiệp có bảo hành kỹ thuật chuyên nghiệp.\nd) SAI: Phần mềm thương mại giữ bí mật mã nguồn (nguồn đóng), không bắt buộc và thường không chia sẻ mã nguồn.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_06",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Lan đang sử dụng phần mềm nguồn mở để thiết kế đồ họa cho một dự án trường học. Cô giáo yêu cầu học sinh trình bày lợi ích của phần mềm nguồn mở đối với cá nhân và cộng đồng. Học sinh đã trình bày một số đáp án của mình như sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Mọi phần mềm nguồn mở đều đi kèm hỗ trợ kỹ thuật chính thức từ nhà phát hành như phần mềm thương mại.",
+          "answer": false
+        },
+        {
+          "label": "b",
+          "text": "Phần mềm nguồn mở khuyến khích cộng đồng cùng phát triển và chia sẻ, tạo môi trường học tập và sáng tạo mở.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Người dùng có thể sử dụng phần mềm nguồn mở miễn phí mà không cần tuân thủ bất kỳ điều kiện bản quyền nào.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Người dùng có thể tiếp cận mã nguồn để hiểu cách hoạt động của phần mềm, từ đó có thể tùy chỉnh phù hợp với nhu cầu riêng.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) SAI: Phần mềm nguồn mở do cộng đồng phát triển nên phần lớn không có cam kết bảo hành hoặc hỗ trợ kỹ thuật chính thức từ một công ty duy nhất.\nb) ĐÚNG: Mã nguồn mở thúc đẩy cộng đồng toàn cầu cùng cộng tác, học tập và cải tiến.\nc) SAI: Phần mềm nguồn mở vẫn phải tuân thủ điều khoản giấy phép (như GNU GPL, MIT, Apache...).\nd) ĐÚNG: Tự do truy cập mã nguồn giúp người dùng tùy biến và học hỏi kiến trúc phần mềm.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_07",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Trong một buổi học nhóm, Bình thắc mắc: \"Nếu sửa đổi một phần mềm nguồn mở thì có phải chia sẻ lại mã nguồn đó không?\". Em hãy giúp Bình xác định những nội dung thể hiện quy định trong giấy phép GNU GPL:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Khi sửa đổi phần mềm nguồn mở theo GPL, người sửa đổi phải công bố mã nguồn đã thay đổi kèm theo giấy phép GPL.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Phần mềm được sửa đổi từ mã nguồn GPL vẫn có thể được phân phối dưới dạng đóng mà không cần chia sẻ mã nguồn.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Các bản sửa đổi phải ghi rõ phần đã thay đổi và vẫn giữ tên tác giả ban đầu, đảm bảo tôn trọng quyền tác giả.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Người dùng có thể sửa đổi phần mềm GPL nhưng không được phép phân phối lại dưới bất kỳ hình thức nào.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Giấy phép GNU GPL áp dụng nguyên tắc Copyleft: bản sửa đổi phân phối lại bắt buộc phải mở mã nguồn dưới cùng giấy phép GPL.\nb) SAI: GPL nghiêm cấm việc biến mã nguồn mở thành phần mềm độc quyền nguồn đóng.\nc) ĐÚNG: GPL yêu cầu giữ thông tin bản quyền và ghi rõ các sửa đổi để tôn trọng tác giả gốc.\nd) SAI: GPL trao quyền tự do phân phối lại phần mềm cho bất kỳ ai.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_08",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Thầy giáo giao cho nhóm Mai tìm hiểu và so sánh phần mềm nguồn mở với phần mềm thương mại trong các yếu tố như chi phí, kỹ thuật, minh bạch. Sau đây là các nhận định của nhóm:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Phần mềm nguồn mở thường miễn phí và không phụ thuộc vào nhà cung cấp cụ thể, giúp người dùng linh hoạt hơn.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Phần mềm thương mại luôn có chi phí cao, kể cả với phần mềm miễn phí của các nhà cung cấp lớn.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Phần mềm thương mại thường có đội ngũ hỗ trợ kỹ thuật chuyên nghiệp hơn phần mềm nguồn mở.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Một ưu điểm của phần mềm nguồn mở là người dùng có thể kiểm tra mã nguồn để phát hiện các rủi ro bảo mật.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Mã nguồn mở giải phóng người dùng khỏi sự phụ thuộc độc quyền vào một nhà cung cấp.\nb) SAI: Nhiều công ty lớn phát hành phần mềm thương mại dưới dạng miễn phí (freeware) không thu phí.\nc) ĐÚNG: Phần mềm thương mại đi kèm cam kết dịch vụ và đội ngũ hỗ trợ kỹ thuật chuyên trách.\nd) ĐÚNG: Tính minh bạch giúp cộng đồng kiểm toán bảo mật, phát hiện lỗ hổng tiềm ẩn.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_09",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c1",
+      "sectionId": "chap_tin11_c1_s2",
+      "stem": "Minh đang dùng Google Slides để làm bài thuyết trình. Em hãy chọn ra những điểm đặc trưng nổi bật của phần mềm chạy trên Internet như Google Slides:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Người dùng có thể truy cập, sử dụng phần mềm này từ bất kỳ máy tính nào có kết nối mạng mà không cần cài đặt.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Dữ liệu được lưu trên ổ cứng cá nhân, không liên quan gì đến bộ nhớ trên Internet.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Người dùng có thể làm việc nhóm dễ dàng nhờ tính năng chia sẻ và chỉnh sửa thời gian thực.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Để sử dụng phần mềm trực tuyến, người dùng bắt buộc phải mua bản quyền sử dụng vĩnh viễn.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Sử dụng trực tiếp trên trình duyệt web từ mọi máy có Internet.\nb) SAI: Tệp thuyết trình được tự động lưu trữ trên đám mây Google Drive.\nc) ĐÚNG: Nhiều người có thể cùng mở và chỉnh sửa đồng thời một slide theo thời gian thực.\nd) SAI: Google Slides hoàn toàn miễn phí cho người dùng cá nhân.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_10",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Mai đang muốn nâng cấp máy tính để chơi game mượt hơn và làm đồ hoạ hoàn hảo hơn. Khi tìm hiểu các linh kiện trong máy, Mai thấy CPU đóng vai trò rất quan trọng. Hãy chọn các nhận định đúng về CPU dưới đây:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "CPU chỉ gồm duy nhất một bộ điều khiển, thực hiện việc truyền tín hiệu giữa các linh kiện.",
+          "answer": false
+        },
+        {
+          "label": "b",
+          "text": "CPU bao gồm bộ số học và logic (ALU), bộ điều khiển, thanh ghi, bộ nhớ đệm.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Tốc độ của CPU được đo bằng tần số xung nhịp (GHz), cho biết khả năng thực hiện các lệnh.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "CPU chỉ có duy nhất một lõi xử lý, vì mỗi chíp chỉ thực hiện được một nhiệm vụ tại một thời điểm.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) SAI: CPU gồm nhiều khối chức năng phức tạp chứ không chỉ có một bộ điều khiển.\nb) ĐÚNG: Cấu trúc cơ bản của CPU gồm ALU, CU (Control Unit), Registers và Cache.\nc) ĐÚNG: Tần số xung nhịp GHz thể hiện số chu kỳ nhịp tính toán mỗi giây của CPU.\nd) SAI: CPU hiện đại đa phần là đa nhân (multi-core: 4, 8, 16 lõi...) xử lý song song đa nhiệm.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_11",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Khi tắt máy tính đột ngột, Nam phát hiện một văn bản quan trọng đang soạn thảo bị mất. Em hãy giúp Nam chọn ra những nhận định đúng về RAM và ROM:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "RAM là bộ nhớ tạm thời, dễ bay mất dữ liệu khi máy tắt nguồn.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "ROM cho phép người dùng tự do ghi, xóa, sửa nội dung lặp trên máy.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "ROM dùng để lưu trữ chương trình khởi động và hệ thống cố định, không bị mất khi tắt máy.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "RAM là bộ nhớ bền vững, được dùng để sao lưu dài hạn các tệp tin hệ thống.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: RAM là bộ nhớ khả biến, mất điện là mất dữ liệu.\nb) SAI: ROM (Read-Only Memory) là bộ nhớ chỉ đọc, người dùng không thể tự do ghi xóa nội dung.\nc) ĐÚNG: ROM chứa vi chương trình khởi động cơ sở (BIOS/UEFI) lưu vĩnh viễn không mất dữ liệu.\nd) SAI: RAM không phải bộ nhớ bền vững và không dùng để sao lưu dài hạn (ổ cứng mới sao lưu dài hạn).",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_12",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Trong máy tính, bộ nhớ ngoài đóng vai trò quan trọng trong việc lưu trữ dữ liệu. Em hãy chọn các phát biểu đúng về bộ nhớ ngoài:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Bộ nhớ ngoài có dạng đĩa từ, đĩa SSD, đĩa quang và thường dùng để lưu trữ lâu dài.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "SSD có tốc độ truy cập nhanh hơn nhiều so với đĩa cứng vì không có bộ phận chuyển động.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Bộ nhớ ngoài có dung lượng rất nhỏ, chỉ vài MB vì chủ yếu dùng để lưu tạm.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Tốc độ truy cập đĩa quang chậm hơn SSD và HDD do sử dụng công nghệ laser.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Bộ nhớ ngoài gồm HDD (đĩa từ), SSD (chip flash), đĩa quang (CD/DVD) lưu trữ dữ liệu dài hạn.\nb) ĐÚNG: SSD đọc ghi dữ liệu điện tử bằng chip nhớ flash không cơ học, nhanh gấp nhiều lần HDD.\nc) SAI: Bộ nhớ ngoài có dung lượng rất lớn từ hàng trăm GB đến nhiều TB.\nd) ĐÚNG: Đĩa quang có tốc độ đọc ghi cơ học bằng tia laser chậm hơn nhiều so với SSD và HDD.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_13",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Khi tìm hiểu về hoạt động xử lý của CPU, Minh nhận ra rằng các máy tính đã được thiết kế dựa trên nguyên lý của các mạch logic. Hãy chọn các nhận định đúng về mạch logic:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Mọi giá trị logic trong máy tính đều được đại diện bởi hai trạng thái: 0 và 1.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Các mạch logic như AND, OR, NOT chỉ hoạt động khi được kết nối với RAM.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Có thể biểu diễn và xây dựng các mạch logic từ các rơ-le điện tử trong thực tế.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Phép XOR chỉ trả về 1 khi và chỉ khi hai giá trị đầu vào giống nhau.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Đại số logic Bool nhị phân dùng 0 (False, mức áp thấp) và 1 (True, mức áp cao).\nb) SAI: Cổng logic là mạch phần cứng điện tử hoạt động độc lập theo điện áp ngõ vào.\nc) ĐÚNG: Mạch logic có thể xây dựng từ các công tắc rơ-le, bóng đèn điện tử hoặc transistor.\nd) SAI: Phép XOR trả về 1 khi hai giá trị đầu vào KHÁC NHAU; hai đầu vào giống nhau thì XOR trả về 0.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_14",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Thầy cô giao bài thực hành cộng hai số trong hệ nhị phân, trong đó các bạn cần lập mạch logic cho phép cộng hai bit. Dựa vào kiến thức đã học, em hãy chọn những đáp án đúng:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Khi cộng hai bit 1 và 1, tổng bằng 0 và phát sinh số nhớ bằng 1.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Có thể xây dựng phép cộng hai bit bằng việc kết hợp các cổng XOR, AND, OR.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Trong mạch cộng, XOR được dùng để xác định số nhớ khi hai bit đầu vào là giống nhau.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Tổng trong phép cộng hai bit được xác định nhờ cổng XOR, còn số nhớ xác định nhờ cổng AND.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: $1 + 1 = 10_2$, tổng $S=0$ và bit nhớ $C=1$.\nb) ĐÚNG: Mạch cộng toàn phần (Full Adder) kết hợp các cổng XOR, AND, OR.\nc) SAI: Cổng XOR dùng để xác định bit TỔNG $S$, còn bit nhớ do cổng AND xác định.\nd) ĐÚNG: Trong mạch nửa bộ cộng: $S = A \\text{ XOR } B$ và $C = A \\text{ AND } B$.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_15",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Các loại cổng kết nối trên máy tính và thiết bị có vai trò rất khác nhau. Dưới đây là một số cổng kết nối thông dụng:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Cổng VGA truyền tín hiệu hình ảnh dạng tương tự và không truyền được âm thanh.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Cổng HDMI có thể truyền đồng thời cả hình ảnh và âm thanh kỹ thuật số.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "USB là giao tiếp truyền dữ liệu song song tốc độ cao giữa máy tính và thiết bị.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Cổng mạng cho phép kết nối máy tính với thiết bị số qua hệ thống mạng nội bộ.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Cổng VGA chỉ truyền tín hiệu video analog, không mang tín hiệu audio.\nb) ĐÚNG: Cổng HDMI truyền đồng thời cả hình ảnh sắc nét và âm thanh đa kênh số hóa.\nc) SAI: USB (Universal Serial Bus) là chuẩn truyền dữ liệu NỐI TIẾP (Serial), không phải song song.\nd) ĐÚNG: Cổng Ethernet LAN RJ45 kết nối mạng nội bộ và Internet.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_16",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Việc kết nối thiết bị số với máy tính ngày càng thuận tiện nhờ công nghệ plug & play. Dưới đây là các nhận định liên quan đến việc kết nối thiết bị số:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Nhiều thiết bị chỉ cần cắm đúng cổng là có thể sử dụng ngay mà không cần cài thêm trình điều khiển.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Một số thiết bị vẫn cần cài driver riêng từ nhà sản xuất để hoạt động ổn định.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Mọi thiết bị khi kết nối đều tự động cập nhật phần mềm điều khiển từ internet.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Kết nối bluetooth cần thực hiện bước ghép đôi trước khi truyền dữ liệu.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Cơ chế Cắm và Chạy (Plug and Play) giúp chuột, bàn phím, USB flash hoạt động ngay.\nb) ĐÚNG: Thiết bị chuyên dụng như card màn hình, máy in chuyên nghiệp cần driver chính hãng.\nc) SAI: Không phải mọi thiết bị đều tự động cập nhật từ Internet (nhiều thiết bị không có driver trên mạng hoặc máy tính không có Internet).\nd) ĐÚNG: Kết nối Bluetooth không dây bắt buộc phải ghép đôi (Pairing) bảo mật trước khi truyền dữ liệu.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_17",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Nhóm học sinh sử dụng Google Drive để lưu trữ và cùng chỉnh sửa bài thuyết trình. Bạn An muốn các thành viên trong nhóm có thể chỉnh sửa tệp, nhưng những người khác chỉ được xem. Hãy xác định tính đúng/sai của các nhận định sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "An có thể phân quyền chỉnh sửa cho các thành viên trong nhóm và quyền xem cho những người khác.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Khi chia sẻ liên kết ở chế độ bất kỳ ai có liên kết đều có thể chỉnh sửa, chỉ những người được An gửi liên kết mới có thể truy cập tệp.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "An nên kiểm tra quyền truy cập trước khi gửi liên kết để tránh chia sẻ nhầm quyền.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Nếu An xóa tệp khỏi Google Drive của mình, tất cả thành viên trong nhóm chắc chắn vẫn truy cập được tệp như trước.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Google Drive cho phép gán quyền Editor riêng cho email nhóm và Viewer cho người khác.\nb) SAI: Khi để link mở công khai, bất kỳ ai có link (kể cả do người khác chuyển tiếp) đều có thể truy cập và sửa tệp.\nc) ĐÚNG: Kiểm tra phân quyền trước khi gửi giúp bảo vệ an toàn thông tin.\nd) SAI: An là chủ sở hữu tệp, khi An xóa tệp thì liên kết chia sẻ của các thành viên cũng bị vô hiệu hóa.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_18",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Bình cần gửi một video dung lượng lớn cho bạn học qua Internet. Bình quyết định tải video lên dịch vụ lưu trữ đám mây rồi chia sẻ liên kết. Hãy xác định tính đúng/sai của các nhận định sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Cách làm này giúp Bình chia sẻ video mà không nhất thiết phải đính kèm toàn bộ tệp vào email.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Người nhận không có quyền truy cập thì chỉ cần có liên kết là chắc chắn tải được video.",
+          "answer": false
+        },
+        {
+          "label": "c",
+          "text": "Bình nên lựa chọn quyền chia sẻ phù hợp và kiểm tra khả năng truy cập của người nhận trước khi gửi liên kết.",
+          "answer": true
+        },
+        {
+          "label": "d",
+          "text": "Lưu trữ video trên đám mây đồng nghĩa với việc video luôn an toàn và không thể bị người khác truy cập trái phép.",
+          "answer": false
+        }
+      ],
+      "explanation": "a) ĐÚNG: Gửi link đám mây giúp vượt qua giới hạn dung lượng đính kèm (thường chỉ 25MB) của email.\nb) SAI: Nếu tệp đặt quyền riêng tư, người có link nhưng không được cấp quyền sẽ bị từ chối truy cập.\nc) ĐÚNG: Cần cấu hình đúng quyền để người nhận tải được thuận lợi.\nd) SAI: Dữ liệu đám mây vẫn có nguy cơ bị lộ nếu mật khẩu yếu, không bật 2FA hoặc đặt quyền chia sẻ link công khai.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_19",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Lan lưu trữ các tài liệu học tập trên dịch vụ lưu trữ trực tuyến và thường xuyên sử dụng máy tính ở trường để tải tài liệu về. Hãy xác định tính đúng/sai của các nhận định sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Lan có thể truy cập tài liệu từ nhiều thiết bị có kết nối Internet khi đăng nhập tài khoản phù hợp.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Sau khi sử dụng máy tính ở trường, Lan nên đăng xuất tài khoản để hạn chế nguy cơ người khác truy cập dữ liệu cá nhân.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Để tiện chia sẻ, Lan nên đặt tất cả tài liệu ở chế độ công khai, kể cả những tài liệu chứa thông tin cá nhân.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Lan nên đặt mật khẩu mạnh và bật xác thực hai yếu tố nếu dịch vụ hỗ trợ để tăng cường bảo vệ tài khoản.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Dịch vụ đám mây cho phép truy cập linh hoạt từ máy tính, điện thoại, máy tính bảng.\nb) ĐÚNG: Trên máy tính công cộng, bắt buộc phải đăng xuất tài khoản để tránh bị người sau xâm nhập.\nc) SAI: Tài liệu cá nhân nhạy cảm tuyệt đối không đặt công khai.\nd) ĐÚNG: Mật khẩu mạnh + xác thực 2 yếu tố (2FA) là biện pháp bảo mật thiết yếu.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_tf_20",
+      "type": "truefalse",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c2",
+      "sectionId": "chap_tin11_c2_s1",
+      "stem": "Một nhóm học sinh cùng thực hiện báo cáo trên nền tảng lưu trữ đám mây. Trong quá trình làm việc, một thành viên vô tình xoá nội dung quan trọng trong tệp dùng chung. Hãy xác định tính đúng/sai của các nhận định sau:",
+      "statements": [
+        {
+          "label": "a",
+          "text": "Nhóm có thể kiểm tra lịch sử phiên bản hoặc thùng rác để tìm cách khôi phục nội dung, tuỳ tính năng của dịch vụ.",
+          "answer": true
+        },
+        {
+          "label": "b",
+          "text": "Nhóm nên phân quyền truy cập phù hợp với nhiệm vụ của từng thành viên để hạn chế thao tác không mong muốn.",
+          "answer": true
+        },
+        {
+          "label": "c",
+          "text": "Khi một tệp được lưu trên đám mây, mọi thay đổi đều có thể khôi phục vô thời hạn mà không cần điều kiện nào.",
+          "answer": false
+        },
+        {
+          "label": "d",
+          "text": "Nhóm nên tạo bản sao lưu định kỳ đối với những tài liệu quan trọng để giảm nguy cơ mất dữ liệu.",
+          "answer": true
+        }
+      ],
+      "explanation": "a) ĐÚNG: Tính năng Lịch sử phiên bản (Version history) cho phép khôi phục lại nội dung ở thời điểm trước khi bị xóa.\nb) ĐÚNG: Phân quyền hợp lý (ai chỉ xem, ai được sửa) giúp tránh sự cố xóa nhầm.\nc) SAI: Dịch vụ đám mây chỉ lưu lịch sử phiên bản hoặc thùng rác trong một khoảng thời gian quy định (thường 30 ngày).\nd) ĐÚNG: Tạo bản sao lưu định kỳ (backup) là nguyên tắc an toàn dữ liệu cơ bản.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_01",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Thực hiện chuyển đổi số sau sang hệ nhị phân tương đương:\\n$$127_{10} = ?_2$$\\n*(Nhập kết quả là dãy các chữ số 0 và 1)*",
+      "correctAnswer": "1111111",
+      "explanation": "Chia liên tiếp 127 cho 2 lấy phần dư theo chiều ngược lại, hoặc nhận thấy:\\n$127 = 2^7 - 1 = 64 + 32 + 16 + 8 + 4 + 2 + 1 = 1111111_2$ (gồm 7 chữ số 1).\\nĐáp án: **1111111**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_02",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Thực hiện chuyển đổi số sau sang hệ nhị phân tương đương:\\n$$234_{10} = ?_2$$\\n*(Nhập kết quả là dãy các chữ số 0 và 1)*",
+      "correctAnswer": "11101010",
+      "explanation": "Phân tích 234 thành tổng các lũy thừa của 2:\\n$234 = 128 + 64 + 32 + 8 + 2 = 2^7 + 2^6 + 2^5 + 2^3 + 2^1$\\n$\\Rightarrow 234_{10} = 11101010_2$.\\nĐáp án: **11101010**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_03",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Thực hiện chuyển đổi số nhị phân sau sang hệ thập phân tương đương:\\n$$110111_2 = ?_{10}$$\\n*(Nhập kết quả dưới dạng số nguyên)*",
+      "correctAnswer": "55",
+      "explanation": "$110111_2 = 1 \\times 2^5 + 1 \\times 2^4 + 0 \\times 2^3 + 1 \\times 2^2 + 1 \\times 2^1 + 1 \\times 2^0$\\n$= 32 + 16 + 0 + 4 + 2 + 1 = 55_{10}$.\\nĐáp án: **55**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_04",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Tính kết quả phép toán cộng 2 số nhị phân sau:\\n$$11011_2 + 10011_2 = ?_2$$\\n*(Nhập kết quả là dãy bit nhị phân)*",
+      "correctAnswer": "101110",
+      "explanation": "Thực hiện cộng từng cột:\\n  11011_2 (27)\\n+ 10011_2 (19)\\n---------\\n 101110_2 (46)\\nĐáp án: **101110**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_05",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Tính kết quả phép toán cộng 2 số nhị phân sau:\\n$$1011_2 + 11101_2 = ?_2$$\\n*(Nhập kết quả là dãy bit nhị phân)*",
+      "correctAnswer": "101000",
+      "explanation": "Thực hiện cộng:\\n  01011_2 (11)\\n+ 11101_2 (29)\\n---------\\n 101000_2 (40)\\nĐáp án: **101000**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_06",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Tính kết quả phép toán cộng 2 số nhị phân sau:\\n$$10100_2 + 11101_2 = ?_2$$\\n*(Nhập kết quả là dãy bit nhị phân)*",
+      "correctAnswer": "110001",
+      "explanation": "Thực hiện cộng:\\n  10100_2 (20)\\n+ 11101_2 (29)\\n---------\\n 110001_2 (49)\\nĐáp án: **110001**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_07",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s2",
+      "stem": "Thực hiện chuyển đổi số nhị phân sau sang hệ thập phân tương đương:\\n$$1110101_2 = ?_{10}$$\\n*(Nhập kết quả dưới dạng số nguyên)*",
+      "correctAnswer": "117",
+      "explanation": "$1110101_2 = 1 \\times 2^6 + 1 \\times 2^5 + 1 \\times 2^4 + 0 \\times 2^3 + 1 \\times 2^2 + 0 \\times 2^1 + 1 \\times 2^0$\\n$= 64 + 32 + 16 + 0 + 4 + 0 + 1 = 117_{10}$.\\nĐáp án: **117**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
+    },
+    {
+      "id": "q_tin11_sa_08",
+      "type": "short_answer",
+      "subjectId": "sub_tinhoc11",
+      "chapterId": "chap_tin11_c3",
+      "sectionId": "chap_tin11_c3_s1",
+      "stem": "Một màn hình máy tính có chiều dài $48.6\\text{ cm}$ và chiều rộng $36.4\\text{ cm}$. Hỏi kích thước màn hình đó xấp xỉ bằng bao nhiêu inch? (Biết $1\\text{ inch} = 2.54\\text{ cm}$, làm tròn kết quả đến hàng đơn vị nguyên).",
+      "correctAnswer": "24",
+      "explanation": "Áp dụng định lý Pytago tính đường chéo màn hình:\\n$$d = \\sqrt{48.6^2 + 36.4^2} = \\sqrt{2361.96 + 1324.96} = \\sqrt{3686.92} \\approx 60.72\\text{ cm}$$\\nQuy đổi sang inch:\\n$$\\text{Kích thước inch} = \\frac{60.72}{2.54} \\approx 23.905\\text{ inch} \\approx 24\\text{ inch}$$\\nĐáp án: **24**.",
+      "tags": [
+        "Tin Học 11",
+        "Đề Cương Giữa HK1",
+        "THPT Nguyễn Trãi"
+      ]
     }
   ],
   "exams": [
@@ -9008,6 +10749,83 @@ export const SEED_DATA = {
         "q_eng_88",
         "q_eng_89",
         "q_eng_90"
+      ]
+    },
+    {
+      "id": "exam_tinhoc11_ghki",
+      "subjectId": "sub_tinhoc11",
+      "name": "Tin Học 11 - Đề Cương Ôn Tập Giữa HKI (THPT Nguyễn Trãi)",
+      "duration": 45,
+      "questionIds": [
+        "q_tin11_mcq_01",
+        "q_tin11_mcq_02",
+        "q_tin11_mcq_03",
+        "q_tin11_mcq_04",
+        "q_tin11_mcq_05",
+        "q_tin11_mcq_06",
+        "q_tin11_mcq_07",
+        "q_tin11_mcq_08",
+        "q_tin11_mcq_09",
+        "q_tin11_mcq_10",
+        "q_tin11_mcq_11",
+        "q_tin11_mcq_12",
+        "q_tin11_mcq_13",
+        "q_tin11_mcq_14",
+        "q_tin11_mcq_15",
+        "q_tin11_mcq_16",
+        "q_tin11_mcq_17",
+        "q_tin11_mcq_18",
+        "q_tin11_mcq_19",
+        "q_tin11_mcq_20",
+        "q_tin11_mcq_21",
+        "q_tin11_mcq_22",
+        "q_tin11_mcq_23",
+        "q_tin11_mcq_24",
+        "q_tin11_mcq_25",
+        "q_tin11_mcq_26",
+        "q_tin11_mcq_27",
+        "q_tin11_mcq_28",
+        "q_tin11_mcq_29",
+        "q_tin11_mcq_30",
+        "q_tin11_mcq_31",
+        "q_tin11_mcq_32",
+        "q_tin11_mcq_33",
+        "q_tin11_mcq_34",
+        "q_tin11_mcq_35",
+        "q_tin11_mcq_36",
+        "q_tin11_mcq_37",
+        "q_tin11_mcq_38",
+        "q_tin11_mcq_39",
+        "q_tin11_mcq_40",
+        "q_tin11_mcq_41",
+        "q_tin11_tf_01",
+        "q_tin11_tf_02",
+        "q_tin11_tf_03",
+        "q_tin11_tf_04",
+        "q_tin11_tf_05",
+        "q_tin11_tf_06",
+        "q_tin11_tf_07",
+        "q_tin11_tf_08",
+        "q_tin11_tf_09",
+        "q_tin11_tf_10",
+        "q_tin11_tf_11",
+        "q_tin11_tf_12",
+        "q_tin11_tf_13",
+        "q_tin11_tf_14",
+        "q_tin11_tf_15",
+        "q_tin11_tf_16",
+        "q_tin11_tf_17",
+        "q_tin11_tf_18",
+        "q_tin11_tf_19",
+        "q_tin11_tf_20",
+        "q_tin11_sa_01",
+        "q_tin11_sa_02",
+        "q_tin11_sa_03",
+        "q_tin11_sa_04",
+        "q_tin11_sa_05",
+        "q_tin11_sa_06",
+        "q_tin11_sa_07",
+        "q_tin11_sa_08"
       ]
     }
   ],

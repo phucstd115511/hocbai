@@ -168,8 +168,25 @@ export function getStoredData() {
         if (updatedAny) needsResave = true;
       }
 
+      // Đảm bảo "Tin Học 11" luôn có mặt trong hệ thống
+      const hasTin11Sub = subjects.some(s => s.id === 'sub_tinhoc11' || s.name === 'Tin Học 11' || s.name === 'Tin học 11');
+      if (!hasTin11Sub) {
+        const tinSubject = SEED_DATA.subjects.find(s => s.id === 'sub_tinhoc11');
+        const tinExam = SEED_DATA.exams.find(e => e.id === 'exam_tinhoc11_ghki');
+        const tinQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_tinhoc11');
+
+        if (tinSubject) subjects = [...subjects, tinSubject];
+        if (tinExam && !exams.some(e => e.id === 'exam_tinhoc11_ghki')) exams = [...exams, tinExam];
+        if (tinQuestions.length > 0) {
+          const existingIds = new Set(questions.map(q => q.id));
+          const newQ = tinQuestions.filter(q => !existingIds.has(q.id));
+          questions = [...questions, ...newQ];
+        }
+        needsResave = true;
+      }
+
       // Xóa bỏ Tin học 12 nếu còn lưu trong localStorage của trình duyệt
-      const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || s.name?.includes('Tin học 12'));
+      const hasTinHoc = subjects.some(s => s.id === 'sub_tinhoc12' || (s.name?.includes('Tin học 12') && s.id !== 'sub_tinhoc11'));
       if (hasTinHoc) {
         subjects = subjects.filter(s => s.id !== 'sub_tinhoc12' && !s.name?.includes('Tin học 12'));
         questions = questions.filter(q => q.subjectId !== 'sub_tinhoc12');

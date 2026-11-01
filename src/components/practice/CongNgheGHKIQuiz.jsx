@@ -25,6 +25,7 @@ import {
   Globe,
   Grid,
   Languages,
+  Monitor,
   ChevronDown,
   AlertTriangle,
   Trophy
@@ -67,8 +68,11 @@ export default function CongNgheGHKIQuiz({
   const isDia = activeSubjectId === 'sub_dia11';
   const isSu = activeSubjectId === 'sub_su11';
   const isEnglish = activeSubjectId === 'sub_tienganh11';
+  const isTinHoc = activeSubjectId === 'sub_tinhoc11';
 
-  const currentSubjectName = isEnglish
+  const currentSubjectName = isTinHoc
+    ? 'Tin Học 11'
+    : isEnglish
     ? 'Tiếng Anh 11 (Global Success)'
     : isGdqp
     ? 'GDQP&AN 11'
@@ -95,6 +99,9 @@ export default function CongNgheGHKIQuiz({
       }
       if (activeSubjectId === 'sub_tienganh11') {
         return q.subjectId === 'sub_tienganh11' || (q.tags || []).includes('Tiếng Anh 11') || (q.id || '').startsWith('q_eng_');
+      }
+      if (activeSubjectId === 'sub_tinhoc11') {
+        return q.subjectId === 'sub_tinhoc11' || (q.tags || []).includes('Tin Học 11') || (q.id || '').startsWith('q_tin11_');
       }
       return q.subjectId === activeSubjectId;
     });
@@ -524,7 +531,7 @@ export default function CongNgheGHKIQuiz({
   return (
     <div className="space-y-6 max-w-4xl mx-auto font-sans text-[#4A5568] dark:text-[#E2E8F0]">
       {/* 1. Thanh chọn Môn học (Neumorphic Segmented Control) */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-1.5 sm:gap-2 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1.5 sm:gap-2 neu-inset p-1.5 sm:p-2 rounded-2xl sm:rounded-[28px]">
         <button
           onClick={() => handleSwitchSubject('sub_congnghe_ghki')}
           className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
@@ -619,6 +626,25 @@ export default function CongNgheGHKIQuiz({
             90<span className="hidden sm:inline"> câu</span>
           </span>
         </button>
+
+        <button
+          onClick={() => handleSwitchSubject('sub_tinhoc11')}
+          className={`flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 py-2 sm:py-3 px-1 sm:px-2.5 rounded-xl sm:rounded-2xl text-[11px] sm:text-sm font-display font-bold transition-all duration-300 cursor-pointer text-center ${
+            isTinHoc
+              ? 'neu-extruded text-[#FF8800] shadow-[3px_3px_8px_rgb(163,177,198,0.7),-3px_-3px_8px_rgba(255,255,255,0.8)] dark:shadow-[3px_3px_8px_rgb(14,17,21,0.85),-3px_-3px_8px_rgba(255,255,255,0.05)]'
+              : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white hover:neu-extruded-sm'
+          }`}
+        >
+          <div className="flex items-center gap-1 sm:gap-1.5 truncate">
+            <Monitor className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 text-[#FF8800]" />
+            <span className="truncate"><span className="hidden md:inline">Môn </span>Tin Học 11</span>
+          </div>
+          <span className={`text-[9px] sm:text-[10px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-full shrink-0 ${
+            isTinHoc ? 'bg-[#FF8800] text-white' : 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]'
+          }`}>
+            69<span className="hidden sm:inline"> câu</span>
+          </span>
+        </button>
       </div>
 
       {/* 2. Top Banner: Đề thi môn học Neumorphic */}
@@ -626,8 +652,10 @@ export default function CongNgheGHKIQuiz({
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full neu-inset-sm text-xs font-display font-bold text-[#FF8800]">
-              {isEnglish ? <Languages className="w-3.5 h-3.5" /> : isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : isSu ? <BookOpen className="w-3.5 h-3.5" /> : <Wrench className="w-3.5 h-3.5" />}
-              {isEnglish
+              {isTinHoc ? <Monitor className="w-3.5 h-3.5" /> : isEnglish ? <Languages className="w-3.5 h-3.5" /> : isGdqp ? <Shield className="w-3.5 h-3.5" /> : isDia ? <Globe className="w-3.5 h-3.5" /> : isSu ? <BookOpen className="w-3.5 h-3.5" /> : <Wrench className="w-3.5 h-3.5" />}
+              {isTinHoc
+                ? 'Tin Học 11 (Tin Học Ứng Dụng) • Giữa Học Kì I (2025-2026)'
+                : isEnglish
                 ? 'Tiếng Anh 11 (Global Success) • Giữa Học Kì I (2026-2027)'
                 : isGdqp 
                 ? 'GDQP&AN 11 • Giữa Học Kì I (2026-2027)' 
@@ -638,7 +666,9 @@ export default function CongNgheGHKIQuiz({
                 : 'Công Nghệ 11 (Cơ Khí) • Giữa Học Kì I (2026-2027)'}
             </div>
             <h1 className="text-2xl sm:text-3xl font-display font-extrabold tracking-tight text-[#2D3748] dark:text-white">
-              {isEnglish
+              {isTinHoc
+                ? 'Bài Làm: Đề Cương Ôn Tập Tin Học 11'
+                : isEnglish
                 ? 'Bài Làm: Đề Cương Ôn Tập Tiếng Anh 11'
                 : isGdqp 
                 ? 'Bài Làm: Đề Cương Ôn Tập GDQP&AN 11' 
@@ -649,7 +679,9 @@ export default function CongNgheGHKIQuiz({
                 : 'Bài Làm: Đề Cương Ôn Tập Công Nghệ 11'}
             </h1>
             <p className="text-xs sm:text-sm text-[#718096] dark:text-[#94A3B8] max-w-xl font-normal leading-relaxed">
-              {isEnglish
+              {isTinHoc
+                ? 'Đề thi trọn bộ 69 câu hỏi (41 câu trắc nghiệm nhiều lựa chọn + 20 câu đúng/sai 4 ý + 8 câu tính toán nhị phân, logic và màn hình). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
+                : isEnglish
                 ? 'Đề thi trọn bộ 90 câu hỏi (Unit 1, 2, 3: Từ vựng, Ngữ pháp, Giao tiếp, Đọc hiểu & Viết câu Global Success). Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
                 : isGdqp
                 ? 'Đề thi trọn bộ 52 câu hỏi trắc nghiệm khách quan. Toàn bộ đáp án được ẩn sẵn để bạn tự làm bài, bấm Nộp bài để xem điểm số cùng lời giải chi tiết.'
