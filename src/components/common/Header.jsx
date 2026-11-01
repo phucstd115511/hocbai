@@ -465,25 +465,26 @@ export default function Header({
         </div>
       </header>
 
-      {/* iOS / Material 3 Style Fixed Bottom Navigation Bar for Mobile mounted directly to document.body */}
+      {/* iOS / Material 3 Style Floating Capsule Dock for Mobile mounted directly to document.body */}
       {mounted && createPortal(
         <nav
           aria-label="Thanh điều hướng dưới"
-          className="neu-mobile-bottom-nav lg:hidden fixed bottom-0 left-0 right-0 w-full bg-[#EBECF0] dark:bg-[#1A1E24] border-t border-white/80 dark:border-white/10 shadow-[0_-8px_24px_rgba(163,177,198,0.5),0_-1px_4px_rgba(163,177,198,0.25)] dark:shadow-[0_-8px_24px_rgba(0,0,0,0.8),0_-1px_4px_rgba(0,0,0,0.6)] pt-2 px-2 transition-colors duration-300"
-          style={{ 
+          className="neu-mobile-bottom-nav lg:hidden fixed z-[99999] rounded-full bg-[#EBECF0] dark:bg-[#1A1E24] border border-white/90 dark:border-white/15 shadow-[0_10px_25px_rgba(163,177,198,0.6),0_4px_10px_rgba(163,177,198,0.25)] dark:shadow-[0_12px_28px_rgba(0,0,0,0.85),0_4px_10px_rgba(0,0,0,0.5)] py-1.5 px-3 transition-colors duration-300"
+          style={{
             position: 'fixed',
-            bottom: 0,
-            left: 0,
-            right: 0,
-            width: '100%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))',
+            width: 'calc(100% - 2rem)',
+            maxWidth: '380px',
+            borderRadius: '9999px',
             zIndex: 99999,
-            WebkitTransform: 'translateZ(0)',
-            transform: 'translateZ(0)',
-            willChange: 'transform',
-            paddingBottom: 'calc(0.6rem + env(safe-area-inset-bottom, 0px))' 
+            WebkitTransform: 'translate3d(-50%, 0, 0)',
+            transform: 'translate3d(-50%, 0, 0)',
+            willChange: 'transform'
           }}
         >
-          <div className="grid grid-cols-4 items-center max-w-lg mx-auto">
+          <div className="grid grid-cols-4 items-center w-full">
             {/* 1. Làm bài */}
             <button
               onClick={() => {
@@ -491,14 +492,14 @@ export default function Header({
                 setIsMoreOpen(false);
               }}
               aria-current={isQuizActive ? 'page' : undefined}
-              className={`flex flex-col items-center justify-center gap-1 py-1 rounded-xl transition-colors duration-150 cursor-pointer ${
+              className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
                 isQuizActive ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
               <div className={`p-1.5 rounded-xl transition-all ${isQuizActive ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
                 <Award className={`w-5 h-5 transition-transform duration-200 ${isQuizActive ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
               </div>
-              <span className={`text-[11px] font-display ${isQuizActive ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
+              <span className={`text-[10px] sm:text-[11px] font-display ${isQuizActive ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Làm bài
               </span>
             </button>
@@ -510,14 +511,14 @@ export default function Header({
                 setIsMoreOpen(false);
               }}
               aria-current={activeTab === 'stats' ? 'page' : undefined}
-              className={`flex flex-col items-center justify-center gap-1 py-1 rounded-xl transition-colors duration-150 cursor-pointer ${
+              className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
                 activeTab === 'stats' ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
               <div className={`p-1.5 rounded-xl transition-all ${activeTab === 'stats' ? 'neu-inset-sm text-[#FF8800]' : ''}`}>
                 <BarChart3 className={`w-5 h-5 transition-transform duration-200 ${activeTab === 'stats' ? 'scale-105 drop-shadow-[0_2px_6px_rgba(255,136,0,0.4)]' : ''}`} />
               </div>
-              <span className={`text-[11px] font-display ${activeTab === 'stats' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
+              <span className={`text-[10px] sm:text-[11px] font-display ${activeTab === 'stats' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Thống kê
               </span>
             </button>
@@ -529,7 +530,7 @@ export default function Header({
                 setIsMoreOpen(false);
               }}
               aria-current={activeTab === 'questions' ? 'page' : undefined}
-              className={`flex flex-col items-center justify-center gap-1 py-1 rounded-xl transition-colors duration-150 cursor-pointer ${
+              className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
                 activeTab === 'questions' ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
@@ -543,7 +544,7 @@ export default function Header({
                   </span>
                 )}
               </div>
-              <span className={`text-[11px] font-display ${activeTab === 'questions' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
+              <span className={`text-[10px] sm:text-[11px] font-display ${activeTab === 'questions' ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Ngân hàng
               </span>
             </button>
@@ -553,7 +554,7 @@ export default function Header({
               onClick={() => setIsMoreOpen(prev => !prev)}
               aria-expanded={isMoreOpen}
               aria-current={isMoreActive ? 'page' : undefined}
-              className={`flex flex-col items-center justify-center gap-1 py-1 rounded-xl transition-colors duration-150 cursor-pointer ${
+              className={`flex flex-col items-center justify-center gap-0.5 py-1 px-1 rounded-2xl transition-all duration-150 cursor-pointer ${
                 isMoreActive || isMoreOpen ? 'text-[#FF8800]' : 'text-[#718096] dark:text-[#94A3B8]'
               }`}
             >
@@ -567,7 +568,7 @@ export default function Header({
                   </span>
                 )}
               </div>
-              <span className={`text-[11px] font-display ${(isMoreActive || isMoreOpen) ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
+              <span className={`text-[10px] sm:text-[11px] font-display ${(isMoreActive || isMoreOpen) ? 'font-bold text-[#FF8800]' : 'font-medium'}`}>
                 Thêm
               </span>
             </button>
@@ -585,7 +586,7 @@ export default function Header({
             onClick={() => setIsMoreOpen(false)}
           />
           <div 
-            className="neu-mobile-bottom-nav fixed bottom-0 left-0 right-0 z-[100001] rounded-t-[32px] p-5 neu-card bg-[#EBECF0] dark:bg-[#1A1E24] shadow-[0_-16px_40px_rgba(0,0,0,0.45)] transition-all duration-200 border-t border-white/80 dark:border-white/10 max-w-lg mx-auto"
+            className="neu-mobile-sheet fixed bottom-0 left-0 right-0 z-[100001] rounded-t-[32px] p-5 neu-card bg-[#EBECF0] dark:bg-[#1A1E24] shadow-[0_-16px_40px_rgba(0,0,0,0.45)] transition-all duration-200 border-t border-white/80 dark:border-white/10 max-w-lg mx-auto"
             style={{ 
               position: 'fixed',
               bottom: 0,
