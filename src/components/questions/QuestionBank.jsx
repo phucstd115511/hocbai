@@ -192,17 +192,17 @@ export default function QuestionBank({
         <div className="space-y-2.5 pb-2 border-b border-black/5 dark:border-white/5">
           <div 
             ref={subjectScrollRef}
-            className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+            className="flex items-center gap-1.5 overflow-x-auto p-1.5 neu-inset rounded-2xl sm:rounded-full no-scrollbar cursor-grab active:cursor-grabbing select-none"
           >
-            <span className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] shrink-0">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] shrink-0 px-2">
               Môn học:
             </span>
             <button
               onClick={() => { setSelectedSubjectId(''); setSelectedChapterId(''); }}
-              className={`px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+              className={`px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                 !selectedSubjectId 
                   ? 'neu-water-surface text-[#FF8800]' 
-                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
+                  : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
               }`}
             >
               Tất cả ({questions.length})
@@ -217,10 +217,10 @@ export default function QuestionBank({
                     setSelectedSubjectId(s.id);
                     setSelectedChapterId('');
                   }}
-                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                     isSelected
                       ? 'neu-water-surface text-[#FF8800]'
-                      : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
+                      : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                   }`}
                 >
                   <span>{s.name}</span>
@@ -238,15 +238,15 @@ export default function QuestionBank({
           {availableChapters.length > 0 && (
             <div 
               ref={chapterScrollRef}
-              className="flex items-center gap-1.5 overflow-x-auto text-xs pt-1 pb-1 no-scrollbar cursor-grab active:cursor-grabbing select-none"
+              className="flex items-center gap-1.5 overflow-x-auto text-xs p-1.5 neu-inset rounded-2xl sm:rounded-full no-scrollbar cursor-grab active:cursor-grabbing select-none"
             >
-              <span className="text-[#718096] dark:text-[#94A3B8] font-bold text-[11px] shrink-0">Chương / Bài:</span>
+              <span className="text-[#718096] dark:text-[#94A3B8] font-bold text-[11px] shrink-0 px-2">Chương / Bài:</span>
               <button
                 onClick={() => setSelectedChapterId('')}
-                className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                className={`px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                   !selectedChapterId
                     ? 'neu-water-surface text-[#FF8800]'
-                    : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                 }`}
               >
                 Tất cả ({questions.filter(q => q.subjectId === selectedSubjectId).length})
@@ -258,10 +258,10 @@ export default function QuestionBank({
                   <button
                     key={c.id}
                     onClick={() => setSelectedChapterId(isChapSelected ? '' : c.id)}
-                    className={`flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
+                    className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
                       isChapSelected
                         ? 'neu-water-surface text-[#FF8800]'
-                        : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
+                        : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white neu-water-hover'
                     }`}
                   >
                     <span>{c.name.split(':')[0]}</span>
