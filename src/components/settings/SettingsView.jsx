@@ -125,28 +125,37 @@ export default function SettingsView({
             <label className="block text-[11px] font-display font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-1.5">
               Chế độ màu hiển thị
             </label>
-            <div className="flex neu-inset p-1 rounded-2xl gap-1">
+            <div className="relative flex neu-inset p-1 rounded-2xl select-none overflow-hidden">
+              {/* Sliding Pill Indicator */}
+              <div 
+                className="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-xl neu-btn neu-water-surface neu-pill-transition pointer-events-none"
+                style={{
+                  transform: `translateX(${theme === 'dark' ? '100%' : '0%'})`,
+                }}
+              />
               <button
                 type="button"
                 onClick={(e) => { if (theme !== 'light') toggleTheme(e); }}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition ${
+                className={`relative z-10 flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition-colors duration-200 ${
                   theme === 'light'
-                    ? 'neu-btn text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
-                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748]'
+                    ? 'text-[#FF8800] font-extrabold'
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
-                <Sun className="w-4 h-4 text-amber-500" /> Sáng (Light)
+                <Sun className={`w-4 h-4 transition-transform duration-300 ${theme === 'light' ? 'text-amber-500 scale-110 drop-shadow-[0_0_8px_rgba(255,136,0,0.5)]' : 'text-amber-500/70'}`} />
+                <span>Sáng (Light)</span>
               </button>
               <button
                 type="button"
                 onClick={(e) => { if (theme !== 'dark') toggleTheme(e); }}
-                className={`flex-1 py-2 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition ${
+                className={`relative z-10 flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition-colors duration-200 ${
                   theme === 'dark'
-                    ? 'neu-btn text-[#FF8800] bg-[#FF8800]/10 border border-[#FF8800]/25'
-                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748]'
+                    ? 'text-[#FF8800] font-extrabold'
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
-                <Moon className="w-4 h-4 text-indigo-400" /> Tối (Dark)
+                <Moon className={`w-4 h-4 transition-transform duration-300 ${theme === 'dark' ? 'text-indigo-400 scale-110 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]' : 'text-indigo-400/70'}`} />
+                <span>Tối (Dark)</span>
               </button>
             </div>
           </div>

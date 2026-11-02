@@ -804,23 +804,30 @@ export default function CongNgheGHKIQuiz({
 
           {/* Row 2 on mobile: View mode & Submit toggle spread out evenly */}
           <div className="flex items-center gap-1.5 sm:gap-3 w-full md:w-auto">
-            <div className="flex neu-inset p-1 rounded-xl text-xs gap-1 shrink-0">
+            <div className="relative flex neu-inset p-1 rounded-xl text-xs shrink-0 select-none overflow-hidden">
+              {/* Sliding Pill Indicator for Display Mode */}
+              <div 
+                className="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-lg neu-btn neu-water-surface neu-pill-transition pointer-events-none"
+                style={{
+                  transform: `translateX(${displayMode === 'single' ? '100%' : '0%'})`,
+                }}
+              />
               <button
                 onClick={() => setDisplayMode('scroll')}
-                className={`flex items-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                className={`relative z-10 flex items-center justify-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition-colors duration-200 cursor-pointer ${
                   displayMode === 'scroll' 
-                    ? 'neu-extruded text-[#FF8800]' 
-                    : 'text-[#718096] dark:text-[#94A3B8]'
+                    ? 'text-[#FF8800] font-extrabold' 
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
                 <LayoutList className="w-3.5 h-3.5" /> <span className="hidden sm:inline">Toàn bộ đề</span><span className="sm:hidden">Tất cả</span>
               </button>
               <button
                 onClick={() => setDisplayMode('single')}
-                className={`flex items-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition duration-200 cursor-pointer ${
+                className={`relative z-10 flex items-center justify-center gap-1 px-2 sm:px-3 py-1 rounded-lg font-bold transition-colors duration-200 cursor-pointer ${
                   displayMode === 'single' 
-                    ? 'neu-extruded text-[#FF8800]' 
-                    : 'text-[#718096] dark:text-[#94A3B8]'
+                    ? 'text-[#FF8800] font-extrabold' 
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
                 <ListOrdered className="w-3.5 h-3.5" /> <span>Từng câu</span>
