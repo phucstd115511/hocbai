@@ -114,29 +114,81 @@ export default function CongNgheGHKIQuiz({
     }
   };
 
-  const scheduleNextQuestion = (delay = 700) => {
-    if (!autoAdvance) return;
-    if (displayMode !== 'single') return;
+  // Kiểm tra xem một câu hỏi đã hoàn thành trọn vẹn hay chưa
+  const isQuestionAnswered = (q, answers = userAnswers) => {
+    if (!q) return false;
+    if (q.type === 'mcq') {
+      return answers[q.id] !== undefined;
+    }
+    if (q.type === 'truefalse') {
+      const tf = answers[q.id] || {};
+      const reqCount = q.statements?.length || 4;
+      return Object.keys(tf).length === reqCount;
+    }
+    if (q.type === 'short_answer') {
+      const val = answers[q.id];
+      return val !== undefined && String(val).trim() !== '';
+    }
+    return false;
+  };
+
+  // Tìm index của câu chưa làm tiếp theo
+  // Ưu tiên: từ (fromIndex + 1) đến cuối đề -> nếu không còn thì vòng lại từ 0 đến fromIndex
+  const findNextUnansweredIndex = (fromIndex = currentIndex, answers = userAnswers) => {
+    if (!questionsToTest || questionsToTest.length === 0) return -1;
+    // 1. Tìm về phía trước (từ fromIndex + 1 đến hết đề)
+    for (let i = fromIndex + 1; i < questionsToTest.length; i++) {
+      if (!isQuestionAnswered(questionsToTest[i], answers)) {
+        return i;
+      }
+    }
+    // 2. Vòng lại tìm từ đầu đề (từ 0 đến fromIndex)
+    for (let i = 0; i < fromIndex; i++) {
+      if (!isQuestionAnswered(questionsToTest[i], answers)) {
+        return i;
+      }
+    }
+    return -1; // Đã làm xong 100% câu hỏi
+  };
+
+  // Tự động nhảy câu hoặc hiện bảng nộp bài khi đã hoàn thành
+  const scheduleNextQuestion = (delay = 700, updatedAnswers = null) => {
+    if (isSubmitted) return;
     clearAutoAdvanceTimer();
+    const answersToCheck = updatedAnswers || userAnswers;
+
+    // 1. Kiểm tra xem toàn bộ câu hỏi trong đề đã được điền hết chưa
+    const nextUnansweredIdx = findNextUnansweredIndex(currentIndex, answersToCheck);
+
+    if (nextUnansweredIdx === -1) {
+      // Toàn bộ câu hỏi đã được điền 100% -> Tự động hiện bảng xác nhận nộp bài!
+      autoAdvanceTimerRef.current = setTimeout(() => {
+        setIsSubmitConfirmOpen(true);
+      }, delay);
+      return;
+    }
+
+    // Nếu không ở chế độ single hoặc tắt autoAdvance thì dừng tại đây
+    if (displayMode !== 'single' || !autoAdvance) return;
+
+    // 2. Nếu còn câu chưa làm:
+    // - Nếu câu kế tiếp (currentIndex + 1) chưa làm thì nhảy sang câu kế tiếp
+    // - Nếu câu kế tiếp đã làm rồi hoặc đang ở câu cuối, tự động nhảy về câu chưa làm tiếp theo
+    const targetIdx = (currentIndex + 1 < questionsToTest.length && !isQuestionAnswered(questionsToTest[currentIndex + 1], answersToCheck))
+      ? currentIndex + 1
+      : nextUnansweredIdx;
 
     autoAdvanceTimerRef.current = setTimeout(() => {
-      // 1. Thu lại mượt mà với GPU composite (card-collapse)
       setCardTransitionState('collapsing');
-
-      // 2. Chuyển sang câu tiếp theo và popup lên (card-popup)
       setTimeout(() => {
-        setCurrentIndex(prev => {
-          if (prev < questionsToTest.length - 1) {
-            return prev + 1;
-          }
-          return prev;
-        });
+        setCurrentIndex(targetIdx);
         setCardTransitionState('idle');
       }, 220);
     }, delay);
   };
 
   const goToQuestion = (idx) => {
+    if (idx < 0 || idx >= questionsToTest.length) return;
     if (idx === currentIndex) return;
     clearAutoAdvanceTimer();
     setCardTransitionState('collapsing');
@@ -222,15 +274,16 @@ export default function CongNgheGHKIQuiz({
   const handleSelectMCQ = (qId, optIdx) => {
     if (isSubmitted) return;
     if (userAnswers[qId] !== undefined) return; // Đã chọn rồi thì khóa không cho chọn lại
-    setUserAnswers(prev => ({
-      ...prev,
+    const nextAnswers = {
+      ...userAnswers,
       [qId]: optIdx
-    }));
+    };
+    setUserAnswers(nextAnswers);
 
     const q = questionsToTest.find(item => item.id === qId);
     const isCorrect = q && optIdx === q.correct;
     // Chạm hiện đáp án ngay, đúng thì 750ms thu lại và popup câu mới, sai thì 1050ms để kịp nhìn đáp án chuẩn
-    scheduleNextQuestion(isCorrect ? 750 : 1050);
+    scheduleNextQuestion(isCorrect ? 750 : 1050, nextAnswers);
   };
 
   // Chọn Đúng / Sai (Khóa từng ý a, b, c, d sau khi đã chọn)
@@ -242,14 +295,16 @@ export default function CongNgheGHKIQuiz({
       ...current,
       [stmtLabel]: value
     };
-    setUserAnswers(prev => ({
-      ...prev,
+    const nextAnswers = {
+      ...userAnswers,
       [qId]: updated
-    }));
+    };
+    setUserAnswers(nextAnswers);
 
     const q = questionsToTest.find(item => item.id === qId);
-    if (q && q.statements && Object.keys(updated).length === q.statements.length) {
-      scheduleNextQuestion(900);
+    const reqCount = q?.statements?.length || 4;
+    if (q && Object.keys(updated).length === reqCount) {
+      scheduleNextQuestion(900, nextAnswers);
     }
   };
 
@@ -269,7 +324,11 @@ export default function CongNgheGHKIQuiz({
     const val = userAnswers[qId];
     if (val !== undefined && String(val).trim() !== '') {
       setLockedShortAnswers(prev => ({ ...prev, [qId]: true }));
-      scheduleNextQuestion(900);
+      const nextAnswers = {
+        ...userAnswers,
+        [qId]: val
+      };
+      scheduleNextQuestion(900, nextAnswers);
     }
   };
 
@@ -277,15 +336,7 @@ export default function CongNgheGHKIQuiz({
   const answeredCount = useMemo(() => {
     let count = 0;
     questionsToTest.forEach(q => {
-      if (q.type === 'mcq') {
-        if (userAnswers[q.id] !== undefined) count++;
-      } else if (q.type === 'truefalse') {
-        const tf = userAnswers[q.id] || {};
-        if (Object.keys(tf).length === 4) count++;
-      } else if (q.type === 'short_answer') {
-        const val = userAnswers[q.id];
-        if (val !== undefined && String(val).trim() !== '') count++;
-      }
+      if (isQuestionAnswered(q, userAnswers)) count++;
     });
     return count;
   }, [questionsToTest, userAnswers]);
@@ -833,18 +884,14 @@ export default function CongNgheGHKIQuiz({
 
           <div className="flex flex-wrap gap-2 max-h-56 overflow-y-auto p-1">
             {questionsToTest.map((item, idx) => {
-              const isDone = item.type === 'mcq'
-                ? userAnswers[item.id] !== undefined
-                : item.type === 'truefalse'
-                ? Object.keys(userAnswers[item.id] || {}).length === 4
-                : userAnswers[item.id] !== undefined && String(userAnswers[item.id]).trim() !== '';
+              const isDone = isQuestionAnswered(item, userAnswers);
 
               return (
                 <button
                   key={item.id}
                   onClick={() => {
                     if (displayMode === 'single') {
-                      setCurrentIndex(idx);
+                      goToQuestion(idx);
                     } else {
                       scrollToQuestion(item.id);
                     }
@@ -1568,25 +1615,103 @@ export default function CongNgheGHKIQuiz({
                     </div>
                   </div>
                 )}
+
+                {/* Single Mode Navigation Toolbar: Câu trước, Câu chưa làm, Câu sau / Nộp bài */}
+                <div className="flex items-center justify-between pt-4 border-t border-black/5 dark:border-white/5 gap-2 flex-wrap">
+                  <button
+                    type="button"
+                    onClick={() => goToQuestion(currentIndex - 1)}
+                    disabled={currentIndex === 0}
+                    className="neu-btn px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer transition"
+                  >
+                    <ChevronLeft className="w-4 h-4" />
+                    <span>Câu trước</span>
+                  </button>
+
+                  {/* Nút nhảy đến câu chưa làm (nếu còn câu chưa làm) */}
+                  {questionsToTest.length - answeredCount > 0 ? (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const target = findNextUnansweredIndex(currentIndex);
+                        if (target !== -1) goToQuestion(target);
+                      }}
+                      className="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl neu-inset-sm text-xs font-bold text-amber-600 dark:text-amber-400 hover:text-amber-700 dark:hover:text-amber-300 flex items-center gap-1.5 cursor-pointer transition"
+                      title="Nhảy nhanh đến câu hỏi chưa trả lời tiếp theo"
+                    >
+                      <AlertTriangle className="w-3.5 h-3.5 text-amber-500" />
+                      <span>Còn {questionsToTest.length - answeredCount} câu chưa làm</span>
+                    </button>
+                  ) : (
+                    <span className="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl neu-inset-sm text-xs font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                      <span>Đã làm xong 100%</span>
+                    </span>
+                  )}
+
+                  {/* Nút Câu sau / Nộp bài */}
+                  {currentIndex < questionsToTest.length - 1 ? (
+                    <button
+                      type="button"
+                      onClick={() => goToQuestion(currentIndex + 1)}
+                      className="neu-btn px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs font-bold text-[#FF8800] hover:text-[#e07700] flex items-center gap-1.5 cursor-pointer transition"
+                    >
+                      <span>Câu tiếp</span>
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const target = findNextUnansweredIndex(currentIndex);
+                        if (target !== -1) {
+                          goToQuestion(target);
+                        } else {
+                          setIsSubmitConfirmOpen(true);
+                        }
+                      }}
+                      className="neu-btn-primary px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs font-bold uppercase tracking-wide flex items-center gap-1.5 shadow-[2px_2px_8px_rgba(255,136,0,0.3)] cursor-pointer"
+                    >
+                      {questionsToTest.length - answeredCount > 0 ? (
+                        <>
+                          <span>Về câu chưa làm</span>
+                          <RotateCcw className="w-3.5 h-3.5" />
+                        </>
+                      ) : (
+                        <>
+                          <span>Nộp Bài</span>
+                          <Send className="w-3.5 h-3.5" />
+                        </>
+                      )}
+                    </button>
+                  )}
+                </div>
               </div>
 
               {/* Bubble Question Palette in Single Mode */}
               <div className="neu-inset p-5 rounded-[28px]">
-                <div className="text-xs font-bold text-[#2D3748] dark:text-white mb-3">
-                  Bảng danh sách câu hỏi:
+                <div className="flex items-center justify-between mb-3 text-xs">
+                  <div className="font-bold text-[#2D3748] dark:text-white">
+                    Bảng danh sách câu hỏi:
+                  </div>
+                  {questionsToTest.length - answeredCount > 0 && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const target = findNextUnansweredIndex(currentIndex);
+                        if (target !== -1) goToQuestion(target);
+                      }}
+                      className="text-[11px] font-bold text-[#FF8800] hover:underline flex items-center gap-1 cursor-pointer"
+                    >
+                      <span>Nhảy tới câu chưa làm</span>
+                      <RotateCcw className="w-3 h-3" />
+                    </button>
+                  )}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {questionsToTest.map((item, idx) => {
                     const isCur = idx === currentIndex;
-                    let isDone = false;
-                    if (item.type === 'mcq') {
-                      isDone = userAnswers[item.id] !== undefined;
-                    } else if (item.type === 'truefalse') {
-                      isDone = Object.keys(userAnswers[item.id] || {}).length === 4;
-                    } else if (item.type === 'short_answer') {
-                      const val = userAnswers[item.id];
-                      isDone = val !== undefined && String(val).trim() !== '';
-                    }
+                    const isDone = isQuestionAnswered(item, userAnswers);
 
                     return (
                       <button
