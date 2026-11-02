@@ -125,11 +125,12 @@ export default function SettingsView({
             <label className="block text-[11px] font-display font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-1.5">
               Chế độ màu hiển thị
             </label>
-            <div className="relative flex neu-inset p-1 rounded-2xl select-none overflow-hidden">
+            <div className="relative flex neu-inset p-1 rounded-2xl select-none">
               {/* Sliding Pill Indicator */}
               <div 
-                className="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-xl neu-btn neu-water-surface neu-pill-transition pointer-events-none"
+                className="!absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-xl neu-btn neu-water-surface neu-pill-transition pointer-events-none"
                 style={{
+                  position: 'absolute',
                   transform: `translateX(${theme === 'dark' ? '100%' : '0%'})`,
                 }}
               />

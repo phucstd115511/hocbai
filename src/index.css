@@ -449,7 +449,6 @@ body {
    ========================================================================== */
 
 .neu-water-surface {
-  position: relative;
   /* 1. Frosted Liquid Glass Body: thấu kính tinh thể trong suốt, khúc xạ nền mềm mại, không bị đục trắng */
   background: linear-gradient(
     180deg,

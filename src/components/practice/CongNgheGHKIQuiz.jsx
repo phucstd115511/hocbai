@@ -804,11 +804,12 @@ export default function CongNgheGHKIQuiz({
 
           {/* Row 2 on mobile: View mode & Submit toggle spread out evenly */}
           <div className="flex items-center gap-1.5 sm:gap-3 w-full md:w-auto">
-            <div className="relative flex neu-inset p-1 rounded-xl text-xs shrink-0 select-none overflow-hidden">
+            <div className="relative flex neu-inset p-1 rounded-xl text-xs shrink-0 select-none">
               {/* Sliding Pill Indicator for Display Mode */}
               <div 
-                className="absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-lg neu-btn neu-water-surface neu-pill-transition pointer-events-none"
+                className="!absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-lg neu-btn neu-water-surface neu-pill-transition pointer-events-none"
                 style={{
+                  position: 'absolute',
                   transform: `translateX(${displayMode === 'single' ? '100%' : '0%'})`,
                 }}
               />
