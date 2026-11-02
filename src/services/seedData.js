@@ -426,2522 +426,2521 @@ export const SEED_DATA = {
   ],
   "questions": [
     {
-      "id": "q_cn11_chap_b1_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo nghiên cứu và thực hiện những quá trình nào?",
-      "options": [
-        "Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Thiết kế, thi công, vận hành, sửa chữa các chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Thiết kế, lắp đặt, sửa chữa, bảo dưỡng các thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-        "Chế tạo, vận hành, bảo dưỡng, sửa chữa các máy móc phục vụ cho sản xuất và cho đời sống của con người."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ sử dụng các kiến thức số liệu của bộ môn nào?",
-      "options": [
-        "Vật lí",
-        "Hóa học",
-        "Toán học",
-        "Công nghệ"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Toán học",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ ứng dụng nguyên lí của bộ môn nào ?",
-      "options": [
-        "Vật lí",
-        "Hóa học",
-        "Toán học",
-        "Công nghệ"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật lí",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Vai trò chủ yếu của cơ khí chế tạo trong sản xuất là gì?",
-      "options": [
-        "Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.",
-        "Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
-        "Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.",
-        "Sản xuất vật liệu phục vụ xây dựng các công trình."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo sử dụng kiến thức và kết quả nghiên cứu nào để thực hiện các nhiệm vụ kĩ thuật?",
-      "options": [
-        "Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
-        "Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.",
-        "Địa lí, nguyên lí Sinh học và công nghệ môi trường.",
-        "Hoá học, nguyên lí Địa lí và công nghệ sinh họ c."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Cơ khí chế tạo góp phần phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ thông qua hoạt động nào?",
-      "options": [
-        "Khai thác nguồn nhiên liệu có sẵn trong tự nhiên.",
-        "Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
-        "Tổ chức vận chuyển và phân phối sản phẩm tiêu dùng.",
-        "Xây dựng các chương trình quảng bá kết quả nghiên cứu."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Việc sử dụng máy giặt giúp con người giảm công sức giặt quần áo và có thêm thời gian nghỉ ngơi. Ví dụ này thể hiện vai trò nào của cơ khí chế tạo trong đời sống?",
-      "options": [
-        "Tạo ra thiết bị phục vụ nghiên cứu và khám phá vũ trụ.",
-        "Tạo ra công cụ giúp nâng cao năng suất trong sản xuất.",
-        "Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
-        "Tạo ra máy móc phục vụ nghiên cứu và chinh phục thiên nhiên."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Các nhà khoa học sử dụng robot thám hiểm để khảo sát bề mặt một hành tinh. Trường hợp này thể hiện vai trò nào của cơ khí chế tạo?",
-      "options": [
-        ". Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
-        "Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.",
-        "Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.",
-        "Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Nhóm nào sau đây thuộc máy, công cụ lao động của ngành cơ khí chế tạo?",
-      "options": [
-        "Máy tiện, máy phay, máy bào, máy hàn.",
-        "Sắt, thép, đồng, nhôm và các hợp kim.",
-        "Bản vẽ, quy trình và hồ sơ kĩ thuật.",
-        "Chi tiết, cụm máy và sản phẩm cơ khí."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Máy tiện, máy phay, máy bào, máy hàn.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Trong chế tạo sản phẩm cơ khí, bản vẽ kĩ thuật và quy trình gia công được sử dụng nhằm mục đích nào?",
-      "options": [
-        "Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.",
-        "Xác định số lượng công nhân và tính tiền công sản xuất.",
-        "Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
-        "Xác định thời gian giao hàng và lựa chọn cách vận chuyển."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Một chi tiết máy đạt yêu cầu về độ bền nhưng có kích thước sai lệch quá mức cho phép. Đánh giá nào sau đây phù hợp?",
-      "options": [
-        "Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thướ c.",
-        "Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
-        "Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.",
-        "Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Đối tượng lao động của ngành cơ khí chế tạo là gì?",
-      "options": [
-        "Vật liệu kim loại và hợp kim",
-        "Vật liệu phi kim loại",
-        "Các vật liệu cơ khí",
-        "Vật liệu kim loại và phi kim loại"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Các vật liệu cơ khí",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_13",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Phương án nào sau đây mô tả đúng trình tự chế tạo một chiếc kìm nguội?  A. Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũ",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "→ Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh. B. Thép (nhiệt luyện) → Phôi kìm (khoan lỗ và dũ",
-          "answer": false
-        },
-        {
-          "id": "a",
-          "label": "a",
-          "text": "→ Hai má kìm (Tán ghép) → Chiếc kìm (rèn hoặc đập) → Chiếc kìm hoàn chỉnh. C. Thép (nhiệt luyện) → Phôi kìm (rèn hoặc đập) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũ",
-          "answer": false
-        },
-        {
-          "id": "a",
-          "label": "a",
-          "text": "→ Chiếc kìm hoàn chỉnh. D. Thép (rèn hoặc dập) → Phôi kìm (Nhiệt luyện) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũ",
-          "answer": false
-        },
-        {
-          "id": "a",
-          "label": "a",
-          "text": "→ Chiếc kìm hoàn chỉnh.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý () Đúng. Ý (a, a, a, a) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Trong quy trình chế tạo cơ khí, công đoạn làm giảm mài mòn cho sản phẩm được thực hiện ở bước nào?",
-      "options": [
-        "Lựa chọn phương pháp và chế tạo phôi.",
-        "Thực hiện gia công các chi tiết máy.",
-        "Xử lí và bảo vệ bề mặt sản phẩm.",
-        "Lắp ráp các chi tiết thành sản phẩm."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Xử lí và bảo vệ bề mặt sản phẩm.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_15",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Việc chọn phương pháp chế tạo phôi và xác định kích thước phôi phù hợp thuộc bước nào trong quy trình chế tạo cơ khí?",
-      "options": [
-        "Chế tạo phôi cho các chi tiết máy.",
-        "Gia công các chi tiết của sản phẩm.",
-        "Xử lí và bảo vệ bề mặt sản phẩm.",
-        "Lắp ráp các chi tiết của sản phẩm."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Chế tạo phôi cho các chi tiết máy.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Bước nào trong quy trình chế tạo cơ khí giúp chi tiết đạt hình dạng, kích thước và độ chính xác theo yêu cầu?",
-      "options": [
-        "Lắp ráp các chi tiết thành sản phẩm.",
-        "Xử lí và bảo vệ bề mặt sản phẩm.",
-        "Lựa chọn phương pháp và chế tạo phôi.",
-        "Thực hiện gia công các chi tiết máy"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Thực hiện gia công các chi tiết máy",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Yếu tố nào là quan trọng nhất để đánh giá chất lượng của một lô vòng bi trước khi xuất xưởng?",
-      "options": [
-        "Bề mặt sản phẩm phải thật sáng bóng, không có bất kì vết trầy xước nào để đảm bảo tính thẩm mĩ khi xuất bán.",
-        "Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
-        "Thời gian kiểm tra chất lượng cần được rút ngắn tối đa để đẩy nhanh tiến độ sản xuất mà không cần quá khắt khe.",
-        "Sản phẩm chỉ cần đạt tiêu chuẩn về kích thước tổng thể bao ngoài, bỏ qua việc đo kiểm chi tiết từng thông số."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_18",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Khi trao đổi về nội dung, mục đích và trình tự các bước trong quy trình chế tạo cơ khí, một nhóm học sinh đưa ra các ý kiến sau:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b1_19",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b1",
-      "sectionId": "chap_b1_sec",
-      "stem": "Một bạn đưa ra nhận định về đặc điểm của ngành cơ khí chế tạo?",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,...",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 1: Khái quát về cơ khí chế tạo.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 1",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của thiết kế sản phẩm cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của bảo dưỡng, sửa chữa thiết bị cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của lắp ráp sản phẩm cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt r a.",
-        "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a..",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a..",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Công việc chính của gia công cơ khí ?",
-      "options": [
-        "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt r a.",
-        "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-        "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề r a.",
-        "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc thiết kế sản phẩm cơ khí??",
-      "options": [
-        "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-        "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
-        "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-        "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc gia công cơ khí ?",
-      "options": [
-        "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
-        "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
-        "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-        "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Người làm công việc bảo dưỡng, sửa chữa thiết bị cơ khí thực hiện nhiệm vụ chính nào sau đây?",
-      "options": [
-        "Lắp ghép các chi tiết thành sản phẩm hoàn chỉnh, bảo đảm yêu cầu kĩ thuật theo bản vẽ lắp.",
-        "Chế tạo các sản phẩm máy móc mới, kiểm tra và thử nghiệm theo yêu cầu của bản thiết kế.",
-        "Phân tích nhu cầu của khách hàng, tư vấn và bán các sản phẩm máy móc phù hợp với nhu cầu.",
-        "Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy mó c."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy mó c.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Nghề nghiệp nào sau đây không thuộc nhóm công việc gia công cơ khí?",
-      "options": [
-        "nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết",
-        "Thợ hàn",
-        ". Thợ mỏ",
-        "Thợ rèn, dập"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: . Thợ mỏ",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Quá trình sử dụng máy móc, công cụ và công nghệ để biến đổi vật liệu ban đầu thành sản phẩm cơ khí được gọi là gì??",
-      "options": [
-        "Quá trình thiết kế sản phẩm cơ khí",
-        "Quá trình gia công cơ khí",
-        "Quá trình lắp ráp sản phẩm cơ khí",
-        "Quá trình bảo dưỡng, sửa chữa thiết bị cơ khí"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Quá trình gia công cơ khí",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Quá trình tạo ra một sản phẩm cơ khí diễn ra theo trình tự?",
-      "options": [
-        "Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
-        "Thiết kế sản phẩm → Gia công cơ khí → Bảo dưỡng thiết bị.",
-        "Gia công cơ khí → Thiết kế sản phẩm → Lắp ráp sản phẩm.",
-        "Thiết kế sản phẩm → Lắp ráp sản phẩm → Gia công cơ khí."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_11",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Môi trường làm việc trong ngành cơ khí có thể khắc nghiệt và tiềm ẩn nguy cơ tai nạn lao động. Khi tìm hiểu những yêu cầu đối với người lao động trong ngành này, một học sinh đưa ra các nhận định sau:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việ",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động..",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a) Đúng. Ý (b, c, c, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b2_12",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b2",
-      "sectionId": "chap_b2_sec",
-      "stem": "Trong giờ học nhóm học sinh trao đổi các ý kiến về các ngành nghề trong lĩnh vực cơ khí chế tạo như sau.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu.",
-          "answer": false
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm.",
-          "answer": true
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (b, d) Đúng. Ý (a, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 2: Ngành nghề trong lĩnh vực cơ khí chế tạo.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 2",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu cơ khí là?",
-      "options": [
-        "Các kim loại được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Vật liệu được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Chất được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-        "Dụng cụ được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Vật liệu được sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu cơ khí cần đáp ứng yêu cầu về?",
-      "options": [
-        "Tính sử dụng, tính công nghệ và tính kinh tế.",
-        "Tính cơ học, tính công nghệ và tính kinh tế.",
-        "Tính lý học, tính công nghệ và tính kinh tế.",
-        "Tính hóa học, tính công nghệ và tính kinh tế."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Tính sử dụng, tính công nghệ và tính kinh tế.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu có tính chất :Cách điện ,cách nhiệt, không bị oxi hóa, ít mài mòn..là nhóm vật liệu ?",
-      "options": [
-        "Phi kim loại.",
-        "Kim loại .",
-        "Hợp kim.",
-        "Kim loại và vật liệu mới."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Phi kim loại.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Căn cứ vào tính chất, vật liệu cơ khí được chia thành?",
-      "options": [
-        "Vật liệu kim loại, vật liệu phi kim loại.",
-        "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
-        "Vật liệu kim loại, vật liệu phi kim loại, vật liệu mới.",
-        "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu đàn hồi, vật liệu mới."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Nhóm vật liệu được dùng chủ yếu trong sản xuất cơ khí ?",
-      "options": [
-        "Vật liệu kim loại và hợp kim.",
-        "Vật liệu phi kim loại.",
-        "Vật liệu mới và hợp kim .",
-        "Kim loại đen và kim loại màu."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu kim loại và hợp kim.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Tính chất nào sau đây thuộc nhóm tính chất cơ học của vật liệu cơ khí?",
-      "options": [
-        "Khả năng chịu nhiệt độ cao mà không bị biến dạng.",
-        "Khả năng chống lại các phản ứng hoá học với môi trường xung quanh.",
-        "Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
-        "Khả năng dẫn điện và dẫn nhiệt hiệu quả."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Vật liệu mới là?",
-      "options": [
-        "hợp kim, polymer nhớ hình, nano, gang, thép, vật liệu có cơ tính biến thiên",
-        "nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
-        "cao su, gỗ, composite, nhựa nhiệt rắn, hợp kim đồng, vật liệu phi kim loại.",
-        "nano, composite, hợp kim, cao su tổng hợp, gốm sứ kĩ thuật, nhựa nhiệt dẻo."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Tại sao trong sản xuất cơ khí phải biết được tính công nghệ của vật liệu?",
-      "options": [
-        "Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
-        "Để xác định và chọn đúng loại vật liệu phù hợp nhất với yêu cầu kĩ thuật đặt r a.",
-        "Để ưu tiên tìm kiếm các vật liệu có giá thành thấp nhằm tối ưu hóa chi phí sản xuất.",
-        "Để tạo ra những chi tiết cơ khí đạt được độ chính xác cao nhất cho quá trình lắp ráp."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b3_09",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b3",
-      "sectionId": "chap_b3_sec",
-      "stem": "Trong một buổi học, học sinh được phát các tấm thẻ ghi tên nhiều loại vật liệu khác nhau như gang, thép, hợp kim đồng, nhựa nhiệt dẻo, cao su, composite,... Giáo viên yêu cầu học sinh phân loại các vật liệu này vào từng nhóm dựa trên các đặc điểm chung. a) Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim  b) Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép.",
-      "statements": [
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép..",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý () Đúng. Ý (c, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 3: Tổng quan về vật liệu cơ khí.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 3",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu kim loại và hợp kim được chia ra thành những loại nào?",
-      "options": [
-        "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
-        "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim đen",
-        "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim màu",
-        "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim đen"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Sắt và hợp kim của sắt gồm những loại nào?",
-      "options": [
-        "Gang, thép carbon, thép hợp kim, nhôm",
-        "Gang, thép carbon, nhôm, nickel",
-        "Thép hợp kim, nhôm và hợp kim của nhôm",
-        "Gang, thép carbon, thép hợp kim"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Gang, thép carbon, thép hợp kim",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu nào sau đây thuộc nhóm kim loại và hợp kim màu?",
-      "options": [
-        "Gang và hợp kim gàn",
-        "Nhôm và hợp kim nhôm",
-        "Sắt và hợp kim sắt",
-        "Thép và hợp kim thép"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Nhôm và hợp kim nhôm",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu nào sau đây thuộc nhóm sắt và hợp kim của sắt",
-      "options": [
-        "Nhôm",
-        "Gang",
-        "Đồng",
-        "Nickel"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Gang",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Đâu là tính chất cơ học của kim loại và hợp kim ?",
-      "options": [
-        "Độ bền, độ dẻo, độ cứng, độ nén",
-        "Tính dẫn điện, tính dẫn nhiệt, tính giãn nở.",
-        "Tính chịu axit, tính chống ăn mòn hóa họ c.",
-        "Tính đúc, tính hàn, tính rèn và khả năng gia công cắt gọt."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Độ bền, độ dẻo, độ cứng, độ nén",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Hợp kim của sắt và carbon được gọi là gang khi có hàm lượng carbon trong khoảng nào?",
-      "options": [
-        "Từ 2,14% đến 4,3%.",
-        "Từ 0,02% đến 2,14%.",
-        "Từ 4,3% đến 6,67%.",
-        "Trên 6,67%."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Từ 2,14% đến 4,3%.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "So với thép carbon, thép hợp kim có ưu điểm nào sau đây về nhiệt luyện và độ bền ở nhiệt độ cao?",
-      "options": [
-        "Có tính nhiệt luyện kém hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
-        "Có tính nhiệt luyện tốt hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
-        "Có tính nhiệt luyện kém hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
-        ". Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Vật liệu hợp kim được ứng dụng làm vỏ máy bay, tên lửa và tàu vũ trụ cần phải đáp ứng trọn vẹn những yêu cầu kỹ thuật nào dưới đây?",
-      "options": [
-        "Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
-        "Kháng oxy hóa tuyệt đối, chống ăn mòn bề mặt và sở hữu tính dẻo dai vượt trội.",
-        "Đạt độ cứng cơ học tối đa, chống mài mòn và chịu lực va đập cường độ cao.",
-        "Sở hữu khả năng truyền dẫn điện năng và tản nhiệt ưu việt trong mọi điều kiện."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_09",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Một cơ sở cơ khí có hai mẫu hợp kim của sắt và carbon: mẫu X chứa 1,0% carbon, mẫu Y chứa 3,0% carbon. Cơ sở đang lựa chọn vật liệu để đúc vỏ máy và chế tạo chi tiết chịu lực ở nhiệt độ cao. a̲) Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt.",
-      "statements": [
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép. c̲) Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt.",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý () Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_10",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Gang và thép là hai hợp kim của sắt với carbon, được dùng rất phổ biến trong ngành cơ khí. Nhận xét về gang, thép và hợp kim nói chung:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim).",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, c, d) Đúng. Ý (b) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b4_11",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b4",
-      "sectionId": "chap_b4_sec",
-      "stem": "Đồng, nhôm và hợp kim của chúng là các kim loại màu được dùng rộng rãi trong đời sống và sản xuất. Nhận xét về việc sử dụng các vật liệu này:",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 4: Vật liệu kim loại và hợp kim.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 4",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại bao gồm?",
-      "options": [
-        "Nhựa nhiệt dẻo, kim loại, cao su, hợp kim nhớ hình",
-        ". Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
-        "Nhựa nhiệt rắn ,vật liệu vô cơ, vật liệu hữu cơ",
-        "Kim loại, vật liệu vô cơ, các vật liệu mới"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Phi kim loại ở thể lỏng ở nhiệt độ phòng ?",
-      "options": [
-        "Thủy ngân",
-        ". Brom",
-        "Nitơ",
-        "Cao su"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Brom",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Tính chất vật lí của vật liệu phi kim loại?",
-      "options": [
-        "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp.",
-        ". Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
-        "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao",
-        "Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại không bị oxi hóa, không bị ăn mòn trong các môi trường acid, muối,. thuộc tính chất?",
-      "options": [
-        "Cơ họ c.",
-        ". Hóa họ c.",
-        "Vật lý.",
-        "Công nghệ."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Hóa họ c.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu phi kim loại được gia công bằng nhiều phương pháp khác nhau như đùn, đúc, phun, thổi, ép…tùy theo từng loại vật liệu thuộc tính chất?",
-      "options": [
-        "Cơ họ c.",
-        "Hóa họ c.",
-        "Vật lý.",
-        ". Công nghệ"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Công nghệ",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Cao su không có tính chất nào sau đây?",
-      "options": [
-        "Tính đàn hồi cao",
-        "Tính cách nhiệt",
-        "Tính cách âm cao",
-        ". Tính dẫn điện"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Tính dẫn điện",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Ưu điểm của vật liệu phi kim loại so với vật liệu kim loại và hợp kim là:",
-      "options": [
-        "Tính dẫn điện, dẫn nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-        "Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-        "Tính cứng, dẻo, dễ rèn dập, dẫn điện, dẫn nhiệt, chịu ăn mòn hóa học tốt",
-        "Tính Tính cơ học, vật lí, hóa học, công nghệ nổi trội hơn"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Vật liệu khi gia nhiệt sẽ rắn cứng, không có khả năng tái chế ?",
-      "options": [
-        "Gang",
-        "Nhựa nhiệt dẻo",
-        ". Nhựa nhiệt rắn",
-        "Cao su"
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: . Nhựa nhiệt rắn",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Cao su được dùng làm săm, lốp xe vì ?",
-      "options": [
-        "Độ cứng cao và chịu được nhiệt độ cao, chống ăn mòn tốt, dẻo.",
-        "Tính dẫn nhiệt, dẫn điện cao, chống ăn mòn tốt, dẻo.",
-        "Độ bền nhiệt, nhẹ, chống ăn mòn, chịu va đập tốt, ma sát tốt.",
-        ". Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Đặc điểm của nhựa nhiệt dẻo?",
-      "options": [
-        "Nhẹ, không dẫn điện, không có khả năng tái sinh",
-        ". Nhẹ, không dẫn điện, có khả năng chế biến lại",
-        "Nhẹ, có nhiệt độ nóng chảy thấp, không có khả năng tái sinh",
-        "Nhẹ, có nhiệt độ nóng chảy cao, có khả năng chế biến lại"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Nhẹ, không dẫn điện, có khả năng chế biến lại",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Nguồn gốc của cao su nhân tạo được chế biến từ ?",
-      "options": [
-        "Than đá",
-        "Dầu mỏ",
-        "Cây cao su và than đá.",
-        ". Than đá và dầu mỏ."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Than đá và dầu mỏ.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Công nghệ đùn thường dùng cho loại vật liệu?",
-      "options": [
-        ". Nhựa nhiệt dẻo, cao su.",
-        "Nhựa nhiệt rắn, cao su",
-        "Nhựa nhiệt dẻo.",
-        "Nhựa nhiệt rắn."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Nhựa nhiệt dẻo, cao su.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_13",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Trong ngành cơ khí, nhựa nhiệt rắn được dùng để làm?",
-      "options": [
-        "Chế tạo bu lông, ốc vít nhựa trong một số máy móc",
-        ". Chế tạo vỏ tàu thuyền, ô tô",
-        "Sản xuất dụng cụ cắt, khuôn dập",
-        "Dùng làm săm lốp, ống dẫn"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: . Chế tạo vỏ tàu thuyền, ô tô",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Sản phẩm nào dưới đây được làm bằng vật liệu nhựa nhiệt dẻo?",
-      "options": [
-        "Vỏ tàu",
-        "Vỏ công tắc điện",
-        "Săm xe đạp",
-        ". Cốc nhựa uống nước"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: . Cốc nhựa uống nước",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_15",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Một cơ sở sản xuất sử dụng nhựa nhiệt dẻo và nhựa nhiệt rắn để chế tạo đồ dùng, đồng thời tìm cách tận dụng vật liệu thừa sau gia công.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới.",
-          "answer": true
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất.",
-          "answer": false
-        }
-      ],
-      "explanation": "Ý (a, c) Đúng. Ý (b, d) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 5: Vật liệu phi kim loại.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_01",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu mới là?",
-      "options": [
-        "Vật liệu không nằm trong danh mục vật liệu truyền thống.",
-        "Vật liệu truyền thống đang được sử dụng để sản xuất.",
-        "Vật liệu thuộc danh mục truyền thống nhưng không còn sử dụng.",
-        "Vật liệu có sẵn trong tự nhiên, chưa qua xử lý công nghiệp"
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu không nằm trong danh mục vật liệu truyền thống.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_02",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu nano là?",
-      "options": [
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ micrômét",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ milimét.",
-        "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ centimét."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_03",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu composite là?",
-      "options": [
-        ". Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
-        "Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần giống nhau, gồm vật liệu cốt và vật liệu nền.",
-        "Vật liệu được tạo thành bằng cách nấu chảy hai hay nhiều loại kim loại hoặc phi kim với nhau.",
-        "Vật liệu được tạo ra từ một loại vật liệu cơ bản duy nhất thông qua các phương pháp xử lý nhiệt."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: . Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_04",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu có cơ tính biến thiên là?",
-      "options": [
-        "Loại vật liệu siêu cấu trúc, có các hạt tinh thể cấu tạo nên vật liệu đạt tới kích thước vô cùng nhỏ ở mức nanomet.",
-        "Là tổ hợp của hai hay nhiểu vật liệu thành phần khác nhau bao gồm vật liệu cốt và vật liệu nền.",
-        "Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
-        "Loại vật liệu thông minh, sở hữu đặc tính cơ học ưu việt là khả năng tự động ghi nhớ và phục hồi lại hình dạng gố c.."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_05",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Nhận định sau đây “ Vật liệu có được chất lượng tốt nhất từ các vật liệu thành phần , tránh được ăn mòn, mỏi, đứt gãy và bong tách do sự chuyển đổi đột ngột về tính chất vật liệu trên bề mặt phân cách giữa các vật liệu khác nhau” là đang chỉ loại vật liệu nào ?",
-      "options": [
-        "Vật liệu nano.",
-        "Vật liệu composite.",
-        "Vật liệu có cơ tính biến thiên.",
-        "Hợp kim nhớ hình."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Vật liệu có cơ tính biến thiên.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_06",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong vật liệu composite thì vật liệu cốt có tác dụng gì ?",
-      "options": [
-        "Liên kết các vật liệu.",
-        "Truyền ứng suất.",
-        "Tăng độ bền.",
-        "Tách điện."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Tăng độ bền.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_07",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong vật liệu composite thì vật liệu nền có tác dụng gì ?",
-      "options": [
-        "Liên kết các vật liệu cốt",
-        "Chịu ứng suất tập trung.",
-        "Truyền nhiệt.",
-        "Kháng hoá chất môi trường và nhiệt độ."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Liên kết các vật liệu cốt",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_08",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu được dùng trong may mặ c. Có khả năng diệt vi khuẩn gây mùi hôi khó chịu ?",
-      "options": [
-        "Vật liệu nano.",
-        "Vật liệu composite.",
-        "Vật liệu có cơ tính biến thiên.",
-        "Hợp kim nhớ hình."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu nano.",
-      "difficulty": "nhan_biet",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_09",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Tính chất của vật liệu nano?",
-      "options": [
-        "Cứng, nặng, cách điện, cách nhiệt và hấp thụ ánh sáng kém.",
-        "Giòn, xốp, cách điện, giữ nhiệt và chống chịu ăn mòn kém.",
-        "Mềm, dẻo, dẫn điện, truyền nhiệt và chống lại mài mòn kém",
-        "Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_10",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu được sử dụng để chế tạo cánh quạt máy bay thông minh?",
-      "options": [
-        "Vật liệu composite.",
-        "Vật liệu có cơ tính biến thiên.",
-        "Hợp kim nhớ hình.",
-        "Vật liệu nano."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Hợp kim nhớ hình.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_11",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Chuồn chuồn robot được dùng bởi vật liệu chế tạo?",
-      "options": [
-        "Vật liệu nano.",
-        "Vật liệu composite.",
-        "Vật liệu có cơ tính biến thiên.",
-        "Hợp kim nhớ hình."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Hợp kim nhớ hình.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_12",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong lĩnh vực điện tử người ta dùng vật liệu nào để chế tạo loại robot mini?",
-      "options": [
-        "Vật liệu nano.",
-        "Vật liệu composite.",
-        "Vật liệu có cơ tính biến thiên.",
-        "Hợp kim nhớ hình."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Vật liệu nano.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_13",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Ưu điểm nào sau đây không phải là đặc tính nổi bật của vật liệu composite được nêu trong bài học?",
-      "options": [
-        "Độ cứng và độ bền cao, chịu nhiệt tốt",
-        "Khả năng chống mài mòn và ăn mòn tốt",
-        "Khối lượng riêng nhỏ (nhẹ)",
-        "Khối lượng riêng rất lớn và nặng"
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Khối lượng riêng rất lớn và nặng",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_14",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu composite được ứng dụng để chế tạo cánh tay robot, cánh quạt tua bin gió nhờ vào tính chất chính nào?",
-      "options": [
-        "Dẫn điện tốt và giá thành rẻ",
-        "Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
-        "Dễ bị nóng chảy để tái chế",
-        "Khả năng phân hủy sinh học nhanh"
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_15",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Vật liệu có cơ tính biến thiên (FGM) còn được gọi bằng tên nào khác?",
-      "options": [
-        "Vật liệu composite thông thường.",
-        "Vật liệu phân lớp chức năng.",
-        "Vật liệu đồng nhất.",
-        "Vật liệu đẳng hướng."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Vật liệu phân lớp chức năng.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong quá trình chế tạo, sự thay đổi tính chất của vật liệu FGM đạt được bằng cách nào?",
-      "options": [
-        "Phủ thêm một lớp vật liệu hoàn toàn khác lên bề mặt.",
-        "Trộn lẫn ngẫu nhiên các loại vật liệu với nhau.",
-        "Nung chảy ở nhiệt độ cao trong thời gian dài.",
-        "Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Các vật liệu cấu thành cho vật liệu có cơ tính biến thiên được chọn dựa trên tiêu chí chính nào?",
-      "options": [
-        "Dựa trên màu sắc và giá thành của vật liệu.",
-        "Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
-        "Dựa trên độ hiếm có của vật liệu trong tự nhiên.",
-        "Dựa trên tính dễ gia công của từng vật liệu độc lập."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_18",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Đặc tính cơ bản làm nên tên gọi của \"hợp kim nhớ hình\" là gì?",
-      "options": [
-        "Khả năng chống ăn mòn cực tốt.",
-        "Khả năng ghi nhớ hình dạng ban đầu.",
-        "Khả năng dẫn điện ở nhiệt độ thấp.",
-        "Khả năng chịu nhiệt độ cao."
-      ],
-      "correct": 1,
-      "explanation": "Đáp án B đúng: Khả năng ghi nhớ hình dạng ban đầu.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_19",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Các chi tiết làm bằng hợp kim nhớ hình thường bị biến dạng do nguyên nhân nào?",
-      "options": [
-        "Tác động của ngoại lự c.",
-        "Tác động của nhiệt độ phòng.",
-        "Phản ứng hóa học với oxy.",
-        "Tác động của từ trường."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Tác động của ngoại lự c.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_20",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Điều kiện nào giúp hợp kim nhớ hình khôi phục lại hình dạng ban đầu sau khi bị biến dạng?",
-      "options": [
-        "Nhúng vào dung dịch axit.",
-        "Làm lạnh đột ngột.",
-        "Quá trình cơ nhiệt thích hợp.",
-        "Phơi dưới ánh sáng Mặt Trời."
-      ],
-      "correct": 2,
-      "explanation": "Đáp án C đúng: Quá trình cơ nhiệt thích hợp.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_21",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Loại hợp kim nhớ hình nào được xem là điển hình và phổ biến nhất hiện nay?",
-      "options": [
-        "Thép không gỉ.",
-        "Hợp kim đồng - kẽm.",
-        "Hợp kim nhôm siêu nhẹ.",
-        "Hợp kim nitinol."
-      ],
-      "correct": 3,
-      "explanation": "Đáp án D đúng: Hợp kim nitinol.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_22",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Nitinol là hợp kim được tạo thành từ hai kim loại nào?",
-      "options": [
-        "Nickel và titanium.",
-        "Sắt và carbon.",
-        "Đồng và thiế c.",
-        "Nhôm và magie."
-      ],
-      "correct": 0,
-      "explanation": "Đáp án A đúng: Nickel và titanium.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Trắc nghiệm"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_23",
-      "type": "truefalse",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Khi tham quan một trung tâm nghiên cứu vật liệu mới, học sinh được giới thiệu về các loại vật liệu tiên tiến đang được ứng dụng trong ngành công nghiệp. Một số vật liệu có thể chịu nhiệt độ cao, một số khác chống ăn mòn tốt hoặc có tính chất vượt trội so với vật liệu truyền thống.",
-      "statements": [
-        {
-          "id": "a",
-          "label": "a",
-          "text": "Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình.",
-          "answer": true
-        },
-        {
-          "id": "b",
-          "label": "b",
-          "text": "Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau.",
-          "answer": false
-        },
-        {
-          "id": "c",
-          "label": "c",
-          "text": "Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại.",
-          "answer": false
-        },
-        {
-          "id": "d",
-          "label": "d",
-          "text": "Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống.",
-          "answer": true
-        }
-      ],
-      "explanation": "Ý (a, d) Đúng. Ý (b, c) Sai theo nội dung đề cương ôn tập Công nghệ 11 - Bài 6: Vật liệu mới.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Đúng sai"
-      ],
-      "favorite": false,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_16",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Khi so sánh giữa nhựa nhiệt dẻo và nhựa nhiệt rắn, điểm khác biệt cơ bản nhất về tính chất công nghệ là gì?",
-      "options": [
-        "Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp và có thể tái chế, trong khi nhựa nhiệt rắn có nhiệt độ nóng chảy cao và không thể tái chế",
-        "Nhựa nhiệt dẻo không dẫn điện, nhựa nhiệt rắn dẫn điện tốt",
-        "Nhựa nhiệt dẻo có khối lượng riêng lớn hơn nhiều so với nhựa nhiệt rắn",
-        "Nhựa nhiệt dẻo cứng và giòn hơn so với nhựa nhiệt rắn"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Giống nhau: Đều là vật liệu cao phân tử, cách điện, cách nhiệt, không bị oxy hóa. Khác nhau: Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp, có thể tái sinh (tái chế); Nhựa nhiệt rắn có nhiệt độ nóng chảy cao, không có khả năng tái sinh.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Vận dụng"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b5_17",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b5",
-      "sectionId": "chap_b5_sec",
-      "stem": "Một cơ sở cần lựa chọn vật liệu làm đệm để giảm rung cho máy khi hoạt động trong ba loại vật liệu: cao su, nhựa nhiệt dẻo và nhựa nhiệt rắn. Lựa chọn nào sau đây là tối ưu nhất và có cơ sở khoa học?",
-      "options": [
-        "Chọn cao su vì có tính đàn hồi cao, biến dạng khi chịu lực, phục hồi hình dạng khi thôi lực và có khả năng tiêu hao năng lượng dao động giúp giảm rung truyền xuống nền",
-        "Chọn nhựa nhiệt dẻo vì giá thành rẻ và dễ dàng nóng chảy để tạo hình đệm máy",
-        "Chọn nhựa nhiệt rắn vì có độ cứng tối đa giúp máy đứng cố định tuyệt đối không dịch chuyển",
-        "Chọn kết hợp nhựa nhiệt dẻo và nhựa nhiệt rắn để tăng độ giòn cho đệm máy"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Chọn cao su vì cao su có tính đàn hồi cao, có thể biến dạng khi chịu lực và phục hồi hình dạng khi thôi tác dụng lực. Ngoài ra, cao su còn có khả năng hấp thụ và tiêu hao một phần năng lượng dao động, giúp giảm rung truyền từ máy xuống nền.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 5",
-        "Vận dụng thực tế"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_24_mcq",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Giải thích nào sau đây là chính xác về tính 'nhớ hình' của hợp kim nhớ hình và ứng dụng tiêu biểu của nó?",
-      "options": [
-        "Khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp (sau khi bị biến dạng trong giới hạn cho phép); ứng dụng chế tạo bộ phận chấp hành điều khiển bằng nhiệt",
-        "Khả năng tự động thay đổi màu sắc và kích thước theo cường độ ánh sáng môi trường; ứng dụng làm kính râm",
-        "Khả năng ghi nhớ và lưu trữ dữ liệu thông tin số như một con chip bán dẫn trong máy tính",
-        "Khả năng tự hàn gắn các vết nứt mà không cần gia nhiệt hay cung cấp năng lượng từ bên ngoài"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: Tính 'nhớ hình' là khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp, sau khi bị biến dạng trong giới hạn cho phép. Ứng dụng: Chế tạo bộ phận chấp hành điều khiển bằng nhiệt. Khi được nung nóng, bộ phận bằng hợp kim nhớ hình khôi phục hình dạng định trước, tạo chuyển động cho cơ cấu.",
-      "difficulty": "thong_hieu",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Vận dụng"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
-      "id": "q_cn11_chap_b6_25",
-      "type": "mcq",
-      "subjectId": "sub_congnghe_ghki",
-      "chapterId": "chap_b6",
-      "sectionId": "chap_b6_sec",
-      "stem": "Trong các động cơ tuabin phản lực hoặc chi tiết chịu nhiệt độ cực cao, việc sử dụng vật liệu nào giúp giải quyết vấn đề chênh lệch ứng suất nhiệt và chống bong tách lớp phủ bề mặt?",
-      "options": [
-        "Vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng FGM)",
-        "Vật liệu nano đơn lớp phủ bề mặt",
-        "Hợp kim nhớ hình Nitinol",
-        "Vật liệu nhựa nhiệt rắn phenolic"
-      ],
-      "correct": 0,
-      "explanation": "Theo đáp án đề cương: FGM có thành phần và cấu trúc biến đổi liên tục trong không gian, do đó tính chất của nó biến đổi liên tục, giúp loại bỏ bề mặt phân cách giữa các lớp, giải quyết sự bất tương thích về ứng suất nhiệt và chống bong tách.",
-      "difficulty": "van_dung",
-      "tags": [
-        "Công Nghệ GHKI",
-        "Bài 6",
-        "Vận dụng thực tế"
-      ],
-      "favorite": true,
-      "createdAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
+          "id": "q_cn11_chap_b1_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Cơ khí chế tạo nghiên cứu và thực hiện những quá trình nào?",
+          "options": [
+                "Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+                "Thiết kế, thi công, vận hành, sửa chữa các chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+                "Thiết kế, lắp đặt, sửa chữa, bảo dưỡng các thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+                "Chế tạo, vận hành, bảo dưỡng, sửa chữa các máy móc phục vụ cho sản xuất và cho đời sống của con người."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Thiết kế, chế tạo, vận hành, bảo dưỡng, sửa chữa các máy, thiết bị, chi tiết phục vụ cho sản xuất và cho đời sống của con người",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_02",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ sử dụng các kiến thức số liệu của bộ môn nào?",
+          "options": [
+                "Vật lí",
+                "Hóa học",
+                "Toán học",
+                "Công nghệ"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Toán học",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Cơ khí chế tạo là ngành kĩ thuật công nghệ ứng dụng nguyên lí của bộ môn nào ?",
+          "options": [
+                "Vật lí",
+                "Hóa học",
+                "Toán học",
+                "Công nghệ"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật lí",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Vai trò chủ yếu của cơ khí chế tạo trong sản xuất là gì?",
+          "options": [
+                "Cung cấp nguyên liệu phục vụ ngành chế biến thực phẩm.",
+                "Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
+                "Cung cấp nhiên liệu phục vụ hoạt động của nhà máy.",
+                "Sản xuất vật liệu phục vụ xây dựng các công trình."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Chế tạo công cụ, máy phục vụ các ngành sản xuất.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Cơ khí chế tạo sử dụng kiến thức và kết quả nghiên cứu nào để thực hiện các nhiệm vụ kĩ thuật?",
+          "options": [
+                "Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
+                "Sinh học, nguyên lí Hoá học và công nghệ thực phẩm.",
+                "Địa lí, nguyên lí Sinh học và công nghệ môi trường.",
+                "Hoá học, nguyên lí Địa lí và công nghệ sinh học."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Toán học, nguyên lí Vật lí và công nghệ vật liệu.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Cơ khí chế tạo góp phần phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ thông qua hoạt động nào?",
+          "options": [
+                "Khai thác nguồn nhiên liệu có sẵn trong tự nhiên.",
+                "Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
+                "Tổ chức vận chuyển và phân phối sản phẩm tiêu dùng.",
+                "Xây dựng các chương trình quảng bá kết quả nghiên cứu."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Chế tạo các thiết bị, máy và công cụ phục vụ nghiên cứu.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Việc sử dụng máy giặt giúp con người giảm công sức giặt quần áo và có thêm thời gian nghỉ ngơi. Ví dụ này thể hiện vai trò nào của cơ khí chế tạo trong đời sống?",
+          "options": [
+                "Tạo ra thiết bị phục vụ nghiên cứu và khám phá vũ trụ.",
+                "Tạo ra công cụ giúp nâng cao năng suất trong sản xuất.",
+                "Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
+                "Tạo ra máy móc phục vụ nghiên cứu và chinh phục thiên nhiên."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Tạo ra đồ dùng giúp cuộc sống tiện nghi, nâng cao chất lượng cuộc sống.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Các nhà khoa học sử dụng robot thám hiểm để khảo sát bề mặt một hành tinh. Trường hợp này thể hiện vai trò nào của cơ khí chế tạo?",
+          "options": [
+                "Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
+                "Tạo ra máy móc phục vụ sản xuất, nâng cao năng suất lao động.",
+                "Tạo ra đồ dùng phục vụ sinh hoạt, nâng cao chất lượng cuộc sống.",
+                "Tạo ra công cụ hỗ trợ lao động, giảm sức lực cho người sản xuất."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Tạo ra thiết bị phục vụ nghiên cứu, chinh phục thiên nhiên và vũ trụ.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_09",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Nhóm nào sau đây thuộc máy, công cụ lao động của ngành cơ khí chế tạo?",
+          "options": [
+                "Máy tiện, máy phay, máy bào, máy hàn.",
+                "Sắt, thép, đồng, nhôm và các hợp kim.",
+                "Bản vẽ, quy trình và hồ sơ kĩ thuật.",
+                "Chi tiết, cụm máy và sản phẩm cơ khí."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Máy tiện, máy phay, máy bào, máy hàn.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_10",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Trong chế tạo sản phẩm cơ khí, bản vẽ kĩ thuật và quy trình gia công được sử dụng nhằm mục đích nào?",
+          "options": [
+                "Xác định giá bán sản phẩm và lựa chọn nơi tiêu thụ.",
+                "Xác định số lượng công nhân và tính tiền công sản xuất.",
+                "Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
+                "Xác định thời gian giao hàng và lựa chọn cách vận chuyển."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Xác định yêu cầu sản phẩm và trình tự thực hiện gia công.",
+          "difficulty": "nhan_biet",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_11",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Một chi tiết máy đạt yêu cầu về độ bền nhưng có kích thước sai lệch quá mức cho phép. Đánh giá nào sau đây phù hợp?",
+          "options": [
+                "Chi tiết đạt yêu cầu vì độ bền có thể bù sai lệch kích thước.",
+                "Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
+                "Chi tiết đạt yêu cầu vì kích thước không ảnh hưởng chất lượng.",
+                "Chi tiết chưa đạt vì sai lệch kích thước chứng tỏ độ bền thấp."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Chi tiết chưa đạt vì độ chính xác cũng là yêu cầu kĩ thuật.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_12",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Đối tượng lao động của ngành cơ khí chế tạo là gì?",
+          "options": [
+                "Vật liệu kim loại và hợp kim",
+                "Vật liệu phi kim loại",
+                "Các vật liệu cơ khí",
+                "Vật liệu kim loại và phi kim loại"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Các vật liệu cơ khí",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_13",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Phương án nào sau đây mô tả đúng trình tự chế tạo một chiếc kìm nguội?",
+          "options": [
+                "Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh.",
+                "Thép (nhiệt luyện) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (rèn hoặc đập) → Chiếc kìm hoàn chỉnh.",
+                "Thép (nhiệt luyện) → Phôi kìm (rèn hoặc đập) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh.",
+                "Thép (rèn hoặc dập) → Phôi kìm (Nhiệt luyện) → Hai má kìm (Tán ghép) → Chiếc kìm (khoan lỗ và dũa) → Chiếc kìm hoàn chỉnh."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Thép (rèn hoặc dập) → Phôi kìm (khoan lỗ và dũa) → Hai má kìm (Tán ghép) → Chiếc kìm (Nhiệt luyện) → Chiếc kìm hoàn chỉnh.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_14",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Trong quy trình chế tạo cơ khí, công đoạn làm giảm mài mòn cho sản phẩm được thực hiện ở bước nào?",
+          "options": [
+                "Lựa chọn phương pháp và chế tạo phôi.",
+                "Thực hiện gia công các chi tiết máy.",
+                "Xử lí và bảo vệ bề mặt sản phẩm.",
+                "Lắp ráp các chi tiết thành sản phẩm."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Xử lí và bảo vệ bề mặt sản phẩm.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_15",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Việc chọn phương pháp chế tạo phôi và xác định kích thước phôi phù hợp thuộc bước nào trong quy trình chế tạo cơ khí?",
+          "options": [
+                "Chế tạo phôi cho các chi tiết máy.",
+                "Gia công các chi tiết của sản phẩm.",
+                "Xử lí và bảo vệ bề mặt sản phẩm.",
+                "Lắp ráp các chi tiết của sản phẩm."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Chế tạo phôi cho các chi tiết máy.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_16",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Bước nào trong quy trình chế tạo cơ khí giúp chi tiết đạt hình dạng, kích thước và độ chính xác theo yêu cầu?",
+          "options": [
+                "Lắp ráp các chi tiết thành sản phẩm.",
+                "Xử lí và bảo vệ bề mặt sản phẩm.",
+                "Lựa chọn phương pháp và chế tạo phôi.",
+                "Thực hiện gia công các chi tiết máy"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Thực hiện gia công các chi tiết máy",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_17",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Yếu tố nào là quan trọng nhất để đánh giá chất lượng của một lô vòng bi trước khi xuất xưởng?",
+          "options": [
+                "Bề mặt sản phẩm phải thật sáng bóng, không có bất kì vết trầy xước nào để đảm bảo tính thẩm mĩ khi xuất bán.",
+                "Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
+                "Thời gian kiểm tra chất lượng cần được rút ngắn tối đa để đẩy nhanh tiến độ sản xuất mà không cần quá khắt khe.",
+                "Sản phẩm chỉ cần đạt tiêu chuẩn về kích thước tổng thể bao ngoài, bỏ qua việc đo kiểm chi tiết từng thông số."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Độ chính xác khi gia công từng chi tiết và khi lắp ráp phải cao để sản phẩm hoạt động đúng yêu cầu kĩ thuật.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_18",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Khi trao đổi về nội dung, mục đích và trình tự các bước trong quy trình chế tạo cơ khí, một nhóm học sinh đưa ra các ý kiến sau:",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Đọc bản vẽ chi tiết giúp tìm hiểu chức năng làm việc và phân loại chi tiết,các yêu cầu kĩ thuật và tính công nghệ khi chế tạo chi tiết. -> ĐÚNG\nb) Chế tạo phôi là bước gia công hoàn thiện, giúp chi tiết đạt kích thước và độ bóng bề mặt theo yêu cầu bản vẽ. -> SAI\nc) Xử lí và bảo vệ bề mặt của sản phẩm nhằm chống gỉ, chống mài mòn hoặc chịu nhiệt cho sản phẩm…bằng công nghệ thích hợp -> ĐÚNG\nd) Lắp ráp và kiểm tra chất lượng được thực hiện trước khi gia công các chi tiết nhằm đánh giá khả năng hoạt động của sản phẩm. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b1_19",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b1",
+          "sectionId": "chap_b1_sec",
+          "stem": "Một bạn đưa ra nhận định về đặc điểm của ngành cơ khí chế tạo?",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,...",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất",
+                      "answer": true
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Đối tượng lao động của ngành cơ khí chế tạo là các vật liệu cơ khí gồm vật liệu kim loại và hợp kim; vật liệu phi kim loại và một số loại vật liệu khác -> ĐÚNG\nb) Phần lớn sản phẩm của ngành cơ khí chế tạo là các chi tiết máy của các máy móc sản xuất. Các sản phẩm này không đòi hỏi yêu cầu kĩ thuật như độ chính xác kích thước, độ bóng bề mặt,... -> SAI\nc) Để sản xuất ra sản phẩm trong ngành cơ khí chế tạo đòi hỏi phải có hồ sơ kĩ thuật gồm các bản vẽ kĩ thuật, quy trình gia công sản phẩm -> ĐÚNG\nd) Các sản phẩm của ngành cơ khí chế tạo rất phổ biến, có mặt trong tất cả các lĩnh vực của đời sống, xã hội cũng như lao động, sản xuất -> ĐÚNG",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 1",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Công việc chính của thiết kế sản phẩm cơ khí ?",
+          "options": [
+                "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+                "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_02",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Công việc chính của bảo dưỡng, sửa chữa thiết bị cơ khí ?",
+          "options": [
+                "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật các thiết bị cơ khí, sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+                "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Công việc chính của lắp ráp sản phẩm cơ khí ?",
+          "options": [
+                "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.",
+                "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+                "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra..",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra..",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Công việc chính của gia công cơ khí ?",
+          "options": [
+                "Nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết kế các chi tiết máy để đảm bảo yêu cầu kinh tế - kỹ thuật đặt ra.",
+                "Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+                "Căn cứ vào bản vẽ lắp, thực hiện lắp ghép các chi tiết thành thiết bị hoặc sản phẩm hoàn chỉnh, bảo đảm các yêu cầu kĩ thuật đề ra.",
+                "Chăm sóc, kiểm tra, chuẩn đoán trạng thái kỹ thuật, theo dõi, ngăn ngừa, xử lý sự cố, sửa chữa sai hỏng nhằm duy trì sự hoạt động ổn định, đảm bảo tin cậy, an toàn của các thiết bị cơ khí."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Sử dụng các máy, công cụ, công nghệ, áp dụng nguyên lý vật lý để tạo ra các thành phẩm từ vật liệu ban đầu.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc thiết kế sản phẩm cơ khí??",
+          "options": [
+                "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+                "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
+                "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+                "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Những nghề nghiệp nào sau đây đảm nhận công việc gia công cơ khí ?",
+          "options": [
+                "Kĩ sư kĩ thuật cơ khí, kĩ sư cơ điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các sản phẩm về cơ khí.",
+                "Kĩ sư kĩ thuật điện - điện tử thường làm việc ở các phòng kĩ thuật của cơ sở sản xuất các thiết bị điện – điện tử.",
+                "Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+                "Kĩ sư, kĩ thuật viên kĩ thuật cơ khí, kĩ thuật viên máy công cụ…thường làm việc ở các phân xưởng lắp ráp sản phẩm về cơ khí."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Thợ cắt gọt kim loại, thợ hàn, thợ rèn dập,…thường làm việc ở các phân xưởng sản xuất về cơ khí.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Người làm công việc bảo dưỡng, sửa chữa thiết bị cơ khí thực hiện nhiệm vụ chính nào sau đây?",
+          "options": [
+                "Lắp ghép các chi tiết thành sản phẩm hoàn chỉnh, bảo đảm yêu cầu kĩ thuật theo bản vẽ lắp.",
+                "Chế tạo các sản phẩm máy móc mới, kiểm tra và thử nghiệm theo yêu cầu của bản thiết kế.",
+                "Phân tích nhu cầu của khách hàng, tư vấn và bán các sản phẩm máy móc phù hợp với nhu cầu.",
+                "Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy móc."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Kiểm tra tình hình vận hành, bảo trì và xử lí hư hỏng để duy trì hoạt động của máy móc.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Nghề nghiệp nào sau đây không thuộc nhóm công việc gia công cơ khí?",
+          "options": [
+                "Thợ cắt gọt kim loại",
+                "Thợ hàn",
+                "Thợ mỏ",
+                "Thợ rèn, dập\nA. nghiên cứu, ứng dụng các kiến thức toán học, khoa học, kỹ thuật vào chọn vật liệu, thiết"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Thợ mỏ",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_09",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Quá trình sử dụng máy móc, công cụ và công nghệ để biến đổi vật liệu ban đầu thành sản phẩm cơ khí được gọi là gì??",
+          "options": [
+                "Quá trình thiết kế sản phẩm cơ khí",
+                "Quá trình gia công cơ khí",
+                "Quá trình lắp ráp sản phẩm cơ khí",
+                "Quá trình bảo dưỡng, sửa chữa thiết bị cơ khí"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Quá trình gia công cơ khí",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_10",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Quá trình tạo ra một sản phẩm cơ khí diễn ra theo trình tự?",
+          "options": [
+                "Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
+                "Thiết kế sản phẩm → Gia công cơ khí → Bảo dưỡng thiết bị.",
+                "Gia công cơ khí → Thiết kế sản phẩm → Lắp ráp sản phẩm.",
+                "Thiết kế sản phẩm → Lắp ráp sản phẩm → Gia công cơ khí."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Thiết kế sản phẩm → Gia công cơ khí → Lắp ráp sản phẩm.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_11",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Môi trường làm việc trong ngành cơ khí có thể khắc nghiệt và tiềm ẩn nguy cơ tai nạn lao động. Khi tìm hiểu những yêu cầu đối với người lao động trong ngành này, một học sinh đưa ra các nhận định sau:",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việc.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động..",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Người lao động cần có sức khỏe tốt, tính cẩn thận, kiên trì và niềm yêu thích máy móc, kĩ thuật. -> ĐÚNG\nb) Người lao động chỉ cần hoàn thành công việc cá nhân, không cần phối hợp với đồng nghiệp khi làm việc. -> SAI\nc) Người lao động cần phản ứng nhanh nhạy khi xử lí tình huống và tuân thủ nghiêm các quy định an toàn lao động.. -> ĐÚNG\nd) Người lao động cần tự vận hành mọi loại máy móc trong xưởng, kể cả khi chưa được đào tạo và giao nhiệm vụ. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b2_12",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b2",
+          "sectionId": "chap_b2_sec",
+          "stem": "Trong giờ học nhóm học sinh trao đổi các ý kiến về các ngành nghề trong lĩnh vực cơ khí chế tạo như sau.",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu.",
+                      "answer": false
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Ngành thiết kế trực tiếp tạo ra sản phẩm cơ khí bằng cách sử dụng máy móc để gia công vật liệu. -> SAI\nb) Ngành gia công cơ khí tạo ra sản phẩm cơ khí bằng nhiều phương pháp khác nhau, tùy theo yêu cầu kĩ thuật của sản phẩm. -> ĐÚNG\nc) Công việc lắp ráp sản phẩm cơ khí chỉ cần ghép các chi tiết với nhau, không cần căn cứ vào bản vẽ lắp -> SAI\nd) Chế tạo bu lông bằng phương pháp đúc thuộc ngành gia công cơ khí vì sử dụng phương pháp gia công để tạo ra sản phẩm từ vật liệu ban đầu. -> ĐÚNG",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 2",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Vật liệu cơ khí là?",
+          "options": [
+                "Các kim loại được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+                "Vật liệu được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+                "Chất được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+                "Dụng cụ được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Vật liệu được  sử dụng trong sản xuất cơ khí để tạo nên các sản phẩm.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_02",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Vật liệu cơ khí cần đáp ứng yêu cầu về?",
+          "options": [
+                "Tính sử dụng, tính công nghệ và tính kinh tế.",
+                "Tính cơ học, tính công nghệ và tính kinh tế.",
+                "Tính lý học, tính công nghệ và tính kinh tế.",
+                "Tính hóa học, tính công nghệ và tính kinh tế."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Tính sử dụng, tính công nghệ và tính kinh tế.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Vật liệu có tính chất :Cách điện ,cách nhiệt, không bị oxi hóa, ít mài mòn..là nhóm vật liệu ?",
+          "options": [
+                "Phi kim loại.",
+                "Kim loại .",
+                "Hợp kim.",
+                "Kim loại và vật liệu mới."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Phi kim loại.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Căn cứ vào  tính chất, vật liệu cơ khí được chia thành?",
+          "options": [
+                "Vật liệu kim loại, vật liệu phi kim loại.",
+                "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
+                "Vật liệu kim loại, vật liệu phi kim loại, vật liệu mới.",
+                "Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu đàn hồi, vật liệu mới."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Vật liệu kim loại và hợp kim, vật liệu phi kim loại, vật liệu mới.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Nhóm vật liệu được dùng chủ yếu trong sản xuất cơ khí ?",
+          "options": [
+                "Vật liệu kim loại và hợp kim.",
+                "Vật liệu phi kim loại.",
+                "Vật liệu mới và hợp kim .",
+                "Kim loại đen và kim loại màu."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu kim loại và hợp kim.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Tính chất nào sau đây thuộc nhóm tính chất cơ học của vật liệu cơ khí?",
+          "options": [
+                "Khả năng chịu nhiệt độ cao mà không bị biến dạng.",
+                "Khả năng chống lại các phản ứng hoá học với môi trường xung quanh.",
+                "Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
+                "Khả năng dẫn điện và dẫn nhiệt hiệu quả."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Khả năng chịu được ngoại lực mà không bị biến dạng hoặc phá huỷ.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Vật liệu mới là?",
+          "options": [
+                "hợp kim, polymer nhớ hình, nano, gang, thép, vật liệu có cơ tính biến thiên",
+                "nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
+                "cao su, gỗ, composite, nhựa nhiệt rắn, hợp kim đồng, vật liệu phi kim loại.",
+                "nano, composite, hợp kim, cao su tổng hợp, gốm sứ kĩ thuật, nhựa nhiệt dẻo."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: nano, composite, hợp kim nhớ hình, vật liệu có cơ tính biến thiên",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Tại sao trong sản xuất cơ khí phải biết được tính công nghệ của vật liệu?",
+          "options": [
+                "Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
+                "Để xác định và chọn đúng loại vật liệu phù hợp nhất với yêu cầu kĩ thuật đặt ra.",
+                "Để ưu tiên tìm kiếm các vật liệu có giá thành thấp nhằm tối ưu hóa chi phí sản xuất.",
+                "Để tạo ra những chi tiết cơ khí đạt được độ chính xác cao nhất cho quá trình lắp ráp."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Để lựa chọn phương pháp gia công hợp lí, đảm bảo năng suất và chất lượng sản phẩm.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b3_09",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b3",
+          "sectionId": "chap_b3_sec",
+          "stem": "Trong một buổi học, học sinh được phát các tấm thẻ ghi tên nhiều loại vật liệu khác nhau như gang, thép, hợp kim đồng, nhựa nhiệt dẻo, cao su, composite,... Giáo viên yêu cầu học sinh phân loại các vật liệu này vào từng nhóm dựa trên các đặc điểm chung.",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép.",
+                      "answer": true
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép..",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Kim loại có tính dẫn điện và dẫn nhiệt tốt hơn hầu hết các vật liệu phi kim -> ĐÚNG\nb) Vật liệu nano mang những tính chất đặc biệt do kích thước hạt rất nhỏ, vì vậy không được phân loại vào nhóm vật liệu cơ khí truyền thống như gang và thép. -> ĐÚNG\nc) Khi lập danh mục vật tư truyền thống để chế tạo bệ máy, học sinh xếp chung vật liệu nano vào cùng nhóm với gang và thép.. -> SAI\nd) Vận dụng đặc tính của hợp chất phi kim ở nhựa nhiệt dẻo (khả năng cách điện, chống ăn mòn) để giải thích lí do lựa chọn vật liệu cho các chi tiết thiết bị điện, gia dụng. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 3",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Vật liệu kim loại và hợp kim được chia ra thành những loại nào?",
+          "options": [
+                "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
+                "Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim đen",
+                "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim màu",
+                "Gồm 2 loại: Thép và hợp kim của thép; kim loại và hợp kim đen"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Gồm 2 loại: Sắt và hợp kim của sắt; kim loại và hợp kim màu",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_02",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Sắt và hợp kim của sắt gồm những loại nào?",
+          "options": [
+                "Gang, thép carbon, thép hợp kim, nhôm",
+                "Gang, thép carbon, nhôm, nickel",
+                "Thép hợp kim, nhôm và hợp kim của nhôm",
+                "Gang, thép carbon, thép hợp kim"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Gang, thép carbon, thép hợp kim",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Vật liệu nào sau đây thuộc nhóm kim loại và hợp kim màu?",
+          "options": [
+                "Gang và hợp kim gàn",
+                "Nhôm và hợp kim nhôm",
+                "Sắt và hợp kim sắt",
+                "Thép và hợp kim thép"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Nhôm và hợp kim nhôm",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Vật liệu nào sau đây thuộc nhóm sắt và hợp kim của sắt",
+          "options": [
+                "Nhôm",
+                "Gang",
+                "Đồng",
+                "Nickel"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Gang",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Đâu là tính chất cơ học của kim loại và hợp kim ?",
+          "options": [
+                "Độ bền, độ dẻo, độ cứng, độ nén",
+                "Tính dẫn điện, tính dẫn nhiệt, tính giãn nở.",
+                "Tính chịu axit, tính chống ăn mòn hóa học.",
+                "Tính đúc, tính hàn, tính rèn và khả năng gia công cắt gọt."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Độ bền, độ dẻo, độ cứng, độ nén",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Hợp kim của sắt và carbon được gọi là gang khi có hàm lượng carbon trong khoảng nào?",
+          "options": [
+                "Từ 2,14% đến 4,3%.",
+                "Từ 0,02% đến 2,14%.",
+                "Từ 4,3% đến 6,67%.",
+                "Trên 6,67%."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Từ 2,14% đến 4,3%.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "So với thép carbon, thép hợp kim có ưu điểm nào sau đây về nhiệt luyện và độ bền ở nhiệt độ cao?",
+          "options": [
+                "Có tính nhiệt luyện kém hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
+                "Có tính nhiệt luyện tốt hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
+                "Có tính nhiệt luyện kém hơn, giữ được độ bền thấp hơn ở nhiệt độ cao.",
+                "Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Có tính nhiệt luyện tốt hơn, giữ được độ bền cao hơn ở nhiệt độ cao.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Vật liệu hợp kim được ứng dụng làm vỏ máy bay, tên lửa và tàu vũ trụ cần phải đáp ứng trọn vẹn những yêu cầu kỹ thuật nào dưới đây?",
+          "options": [
+                "Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
+                "Kháng oxy hóa tuyệt đối, chống ăn mòn bề mặt và sở hữu tính dẻo dai vượt trội.",
+                "Đạt độ cứng cơ học tối đa, chống mài mòn và chịu lực va đập cường độ cao.",
+                "Sở hữu khả năng truyền dẫn điện năng và tản nhiệt ưu việt trong mọi điều kiện."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Nhẹ, siêu bền, duy trì đặc tính cơ học ở nhiệt độ và áp suất khắc nghiệt.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_09",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Một cơ sở cơ khí có hai mẫu hợp kim của sắt và carbon: mẫu X chứa 1,0% carbon, mẫu Y chứa 3,0% carbon. Cơ sở đang lựa chọn vật liệu để đúc vỏ máy và chế tạo chi tiết chịu lực ở nhiệt độ cao.",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Gang và thép carbon đều thuộc nhóm sắt và hợp kim của sắt. -> ĐÚNG\nb) Theo hàm lượng carbon trong bài học, mẫu X là gang, còn mẫu Y là thép. -> SAI\nc) Nếu chỉ xét tính đúc và công dụng được nêu trong bài, mẫu Y phù hợp để đúc vỏ máy vì đây là gang, có tính đúc tốt. -> ĐÚNG\nd) Khi chế tạo chi tiết chịu lực ở nhiệt độ cao, cơ sở nên ưu tiên thép carbon vì vật liệu này giữ độ bền tốt hơn thép hợp kim. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_10",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Gang và thép là hai hợp kim của sắt với carbon, được dùng rất phổ biến trong ngành cơ khí. Nhận xét về gang, thép và hợp kim nói chung:",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim).",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Hợp kim là vật liệu được tạo ra từ kim loại cơ bản kết hợp với các nguyên tố khác (kim loại hoặc phi kim). -> ĐÚNG\nb) Thép có hàm lượng carbon lớn hơn 2,14%, còn gang có hàm lượng carbon nhỏ hơn hoặc bằng 2,14%. -> SAI\nc) Gang cứng và giòn, khó rèn hay dập nhưng dễ đúc nên thường dùng để đúc vỏ máy, bệ máy. -> ĐÚNG\nd) Khi chế tạo trục truyền động chịu va đập mạnh, nên chọn thép thay vì gang vì thép có độ dai tốt hơn. -> ĐÚNG",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b4_11",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b4",
+          "sectionId": "chap_b4_sec",
+          "stem": "Đồng, nhôm và hợp kim của chúng là các kim loại màu được dùng rộng rãi trong đời sống và sản xuất. Nhận xét về việc sử dụng các vật liệu này:",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Nhôm có khối lượng riêng nhỏ và chống ăn mòn tốt nên thích hợp để làm các chi tiết cần nhẹ như khung cửa, vỏ máy bay. -> ĐÚNG\nb) Lưỡi cưa cắt thép nên làm bằng nhôm vì nhôm cứng hơn thép. -> SAI\nc) Lõi dây điện trong nhà thường làm bằng đồng vì đồng dẫn điện tốt và dễ kéo thành sợi. -> ĐÚNG\nd) Một thanh kim loại bị nam châm hút mạnh thì chắc chắn đó là thanh nhôm. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 4",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Vật liệu phi kim loại bao gồm?",
+          "options": [
+                "Nhựa nhiệt dẻo, kim loại, cao su, hợp kim nhớ hình",
+                "Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
+                "Nhựa nhiệt rắn ,vật liệu vô cơ, vật liệu hữu cơ",
+                "Kim loại, vật liệu vô cơ, các vật liệu mới"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Nhựa nhiệt dẻo, nhựa nhiệt rắn, cao su",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_02",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Phi kim loại ở thể lỏng ở nhiệt độ phòng ?",
+          "options": [
+                "Thủy ngân",
+                "Brom",
+                "Nitơ",
+                "Cao su"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Brom",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Tính chất vật lí của vật liệu phi kim loại?",
+          "options": [
+                "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp.",
+                "Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
+                "Khối lượng riêng lớn, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao",
+                "Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ cao."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Khối lượng riêng nhỏ, cách điện, cách nhiệt, nóng chảy ở nhiệt độ thấp",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Vật liệu phi kim loại không bị oxi hóa, không bị ăn mòn trong các môi trường   acid, muối,. thuộc tính chất?",
+          "options": [
+                "Cơ học.",
+                "Hóa học.",
+                "Vật lý.",
+                "Công nghệ."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Hóa học.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Vật liệu phi kim loại được gia công bằng nhiều phương pháp khác nhau như đùn, đúc, phun, thổi, ép…tùy theo từng loại vật liệu thuộc tính chất?",
+          "options": [
+                "Cơ học.",
+                "Hóa học.",
+                "Vật lý.",
+                "Công nghệ"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Công nghệ",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Cao su không có tính chất nào sau đây?",
+          "options": [
+                "Tính đàn hồi cao",
+                "Tính cách nhiệt",
+                "Tính cách âm cao",
+                "Tính dẫn điện"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Tính dẫn điện",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Ưu điểm của vật liệu phi kim loại so với vật liệu kim loại và hợp kim là:",
+          "options": [
+                "Tính dẫn điện, dẫn nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+                "Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+                "Tính cứng, dẻo, dễ rèn dập, dẫn điện, dẫn nhiệt, chịu ăn mòn hóa học tốt",
+                "Tính Tính cơ học, vật lí, hóa học, công nghệ nổi trội hơn"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Tính cách điện, cách nhiệt, nhẹ, chịu ăn mòn hóa học tốt",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Vật liệu khi gia nhiệt sẽ rắn cứng, không có khả năng tái chế ?",
+          "options": [
+                "Gang",
+                "Nhựa nhiệt dẻo",
+                "Nhựa nhiệt rắn",
+                "Cao su"
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Nhựa nhiệt rắn",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_09",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Cao su được dùng làm săm, lốp xe vì ?",
+          "options": [
+                "Độ cứng cao và chịu được nhiệt độ cao, chống ăn mòn tốt, dẻo.",
+                "Tính dẫn nhiệt, dẫn điện cao, chống ăn mòn tốt, dẻo.",
+                "Độ bền nhiệt, nhẹ, chống ăn mòn, chịu va đập tốt, ma sát tốt.",
+                "Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Tính đàn hồi, độ bền, độ dẻo cao, chịu mài mòn, ma sát tốt.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_10",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Đặc điểm của nhựa nhiệt dẻo?",
+          "options": [
+                "Nhẹ, không dẫn điện, không có khả năng tái sinh",
+                "Nhẹ, không dẫn điện, có khả năng chế biến lại",
+                "Nhẹ, có nhiệt độ nóng chảy thấp, không có khả năng tái sinh",
+                "Nhẹ, có nhiệt độ nóng chảy cao, có khả năng chế biến lại"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Nhẹ, không dẫn điện, có khả năng chế biến lại",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_11",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Nguồn gốc của cao su nhân tạo được chế biến từ ?",
+          "options": [
+                "Than đá",
+                "Dầu mỏ",
+                "Cây cao su và than đá.",
+                "Than đá và dầu mỏ."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Than đá và dầu mỏ.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_12",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Công nghệ đùn thường dùng cho loại vật liệu?",
+          "options": [
+                "Nhựa nhiệt dẻo, cao su.",
+                "Nhựa nhiệt rắn, cao su",
+                "Nhựa nhiệt dẻo.",
+                "Nhựa nhiệt rắn."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Nhựa nhiệt dẻo, cao su.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_13",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Trong ngành cơ khí, nhựa nhiệt rắn được dùng để làm?",
+          "options": [
+                "Chế tạo bu lông, ốc vít nhựa trong một số máy móc",
+                "Chế tạo vỏ tàu thuyền, ô tô",
+                "Sản xuất dụng cụ cắt, khuôn dập",
+                "Dùng làm săm lốp, ống dẫn"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Chế tạo vỏ tàu thuyền, ô tô",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_14",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Sản phẩm nào dưới đây được làm bằng vật liệu nhựa nhiệt dẻo?",
+          "options": [
+                "Vỏ tàu",
+                "Vỏ công tắc điện",
+                "Săm xe đạp",
+                "Cốc nhựa uống nước"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Cốc nhựa uống nước",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_15",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Một cơ sở sản xuất sử dụng nhựa nhiệt dẻo và nhựa nhiệt rắn để chế tạo đồ dùng, đồng thời tìm cách tận dụng vật liệu thừa sau gia công.",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới.",
+                      "answer": true
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất.",
+                      "answer": false
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Theo ứng xử với nhiệt, chất dẻo được chia thành hai loại chính là nhựa nhiệt dẻo và nhựa nhiệt rắn -> ĐÚNG\nb) Nhựa nhiệt rắn sau khi đóng rắn vẫn dễ nung chảy vì các chuỗi phân tử có thể trượt tự do lên nhau. -> SAI\nc) Với phần nhựa nhiệt dẻo thừa cùng loại, sạch và chưa bị phân hủy, cơ sở có thể nung nóng ở nhiệt độ phù hợp để tạo hình sản phẩm mới. -> ĐÚNG\nd) Khi thu gom cả nhựa nhiệt dẻo và nhựa nhiệt rắn đã đóng rắn, cơ sở nên trộn chung rồi nung chảy để tái tạo sản phẩm đồng nhất. -> SAI",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_01",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu mới là?",
+          "options": [
+                "Vật liệu không nằm trong danh mục vật liệu truyền thống.",
+                "Vật liệu truyền thống đang được sử dụng để sản xuất.",
+                "Vật liệu thuộc danh mục truyền thống nhưng không còn sử dụng.",
+                "Vật liệu có sẵn trong tự nhiên, chưa qua xử lý công nghiệp"
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu không nằm trong danh mục vật liệu truyền thống.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_03",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu nano là?",
+          "options": [
+                "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
+                "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ micrômét",
+                "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ milimét.",
+                "Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ centimét."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu có cấu trúc hạt tinh thể có kích thước cỡ nanômét.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_04",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu composite là?",
+          "options": [
+                "Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
+                "Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần giống nhau, gồm vật liệu cốt và vật liệu nền.",
+                "Vật liệu được tạo thành bằng cách nấu chảy hai hay nhiều loại kim loại hoặc phi kim với nhau.",
+                "Vật liệu được tạo ra từ một loại vật liệu cơ bản duy nhất thông qua các phương pháp xử lý nhiệt."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu được tổ hợp từ hai hay nhiều loại vật liệu thành phần khác nhau, gồm vật liệu cốt và vật liệu nền.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_05",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu có cơ tính biến thiên là?",
+          "options": [
+                "Loại vật liệu siêu cấu trúc, có các hạt tinh thể cấu tạo nên vật liệu đạt tới kích thước vô cùng nhỏ ở mức nanomet.",
+                "Là tổ hợp của hai hay nhiểu vật liệu thành phần khác nhau bao gồm vật liệu cốt và vật liệu nền.",
+                "Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
+                "Loại vật liệu thông minh, sở hữu đặc tính cơ học ưu việt là khả năng tự động ghi nhớ và phục hồi lại hình dạng gốc.."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Là vật liệu composite tiên tiến gồm hai hay nhiều thành phần vật liệu được thiết kế có sự thay đổi liên tục các tính chất của vật liệu trong không gian.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_06",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Nhận định sau đây “ Vật liệu có được chất lượng tốt nhất từ các vật liệu thành phần , tránh được ăn mòn, mỏi, đứt gãy và bong tách do sự chuyển đổi đột ngột về tính chất vật liệu trên bề mặt phân cách giữa các vật liệu khác nhau” là đang chỉ loại vật liệu nào ?",
+          "options": [
+                "Vật liệu nano.",
+                "Vật liệu composite.",
+                "Vật liệu có cơ tính biến thiên.",
+                "Hợp kim nhớ hình."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Vật liệu có cơ tính biến thiên.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_07",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Trong vật liệu composite thì vật liệu cốt có tác dụng gì ?",
+          "options": [
+                "Liên kết các vật liệu.",
+                "Truyền ứng suất.",
+                "Tăng độ bền.",
+                "Tách điện."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Tăng độ bền.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_08",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Trong vật liệu composite thì vật liệu nền có tác dụng gì ?",
+          "options": [
+                "Liên kết các vật liệu cốt",
+                "Chịu ứng suất tập trung.",
+                "Truyền nhiệt.",
+                "Kháng hoá chất môi trường và nhiệt độ."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Liên kết các vật liệu cốt",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_09",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu được dùng trong may mặc. Có khả năng diệt vi khuẩn gây mùi hôi khó chịu ?",
+          "options": [
+                "Vật liệu nano.",
+                "Vật liệu composite.",
+                "Vật liệu có cơ tính biến thiên.",
+                "Hợp kim nhớ hình."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu nano.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_10",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Tính chất của vật liệu nano?",
+          "options": [
+                "Cứng, nặng, cách điện, cách nhiệt và hấp thụ ánh sáng kém.",
+                "Giòn, xốp, cách điện, giữ nhiệt và chống chịu ăn mòn kém.",
+                "Mềm, dẻo, dẫn điện, truyền nhiệt và chống lại mài mòn kém",
+                "Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Bền, nhẹ, dẫn điện, truyền nhiệt và phản xạ ánh sáng tốt.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_11",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu được sử dụng để chế tạo cánh quạt máy bay thông minh?",
+          "options": [
+                "Vật liệu composite.",
+                "Vật liệu có cơ tính biến thiên.",
+                "Hợp kim nhớ hình.",
+                "Vật liệu nano."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Hợp kim nhớ hình.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_12",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Chuồn chuồn robot được dùng bởi vật liệu chế tạo?",
+          "options": [
+                "Vật liệu nano.",
+                "Vật liệu composite.",
+                "Vật liệu có cơ tính biến thiên.",
+                "Hợp kim nhớ hình."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Hợp kim nhớ hình.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_13",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Trong lĩnh vực điện tử người ta dùng vật liệu nào để chế tạo loại robot mini?",
+          "options": [
+                "Vật liệu nano.",
+                "Vật liệu composite.",
+                "Vật liệu có cơ tính biến thiên.",
+                "Hợp kim nhớ hình."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Vật liệu nano.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_14",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Ưu điểm nào sau đây không phải là đặc tính nổi bật của vật liệu composite được nêu trong bài học?",
+          "options": [
+                "Độ cứng và độ bền cao, chịu nhiệt tốt",
+                "Khả năng chống mài mòn và ăn mòn tốt",
+                "Khối lượng riêng nhỏ (nhẹ)",
+                "Khối lượng riêng rất lớn và nặng"
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Khối lượng riêng rất lớn và nặng",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_15",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu composite được ứng dụng để chế tạo cánh tay robot, cánh quạt tua bin gió nhờ vào tính chất chính nào?",
+          "options": [
+                "Dẫn điện tốt và giá thành rẻ",
+                "Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
+                "Dễ bị nóng chảy để tái chế",
+                "Khả năng phân hủy sinh học nhanh"
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Chịu lực, chịu áp suất tốt và có khối lượng nhẹ",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_16",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Vật liệu có cơ tính biến thiên (FGM) còn được gọi bằng tên nào khác?",
+          "options": [
+                "Vật liệu composite thông thường.",
+                "Vật liệu phân lớp chức năng.",
+                "Vật liệu đồng nhất.",
+                "Vật liệu đẳng hướng."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Vật liệu phân lớp chức năng.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_17",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Trong quá trình chế tạo, sự thay đổi tính chất của vật liệu FGM đạt được bằng cách nào?",
+          "options": [
+                "Phủ thêm một lớp vật liệu hoàn toàn khác lên bề mặt.",
+                "Trộn lẫn ngẫu nhiên các loại vật liệu với nhau.",
+                "Nung chảy ở nhiệt độ cao trong thời gian dài.",
+                "Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Thay đổi dần phần thể tích hoặc cấu trúc vi mô của các vật liệu cấu thành.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_18",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Các vật liệu cấu thành cho vật liệu có cơ tính biến thiên được chọn dựa trên tiêu chí chính nào?",
+          "options": [
+                "Dựa trên màu sắc và giá thành của vật liệu.",
+                "Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
+                "Dựa trên độ hiếm có của vật liệu trong tự nhiên.",
+                "Dựa trên tính dễ gia công của từng vật liệu độc lập."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Dựa trên yêu cầu về tính năng sử dụng của vật liệu.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_19",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Đặc tính cơ bản làm nên tên gọi của \"hợp kim nhớ hình\" là gì?",
+          "options": [
+                "Khả năng chống ăn mòn cực tốt.",
+                "Khả năng ghi nhớ hình dạng ban đầu.",
+                "Khả năng dẫn điện ở nhiệt độ thấp.",
+                "Khả năng chịu nhiệt độ cao."
+          ],
+          "correct": 1,
+          "explanation": "Đáp án B đúng: Khả năng ghi nhớ hình dạng ban đầu.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_20",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Các chi tiết làm bằng hợp kim nhớ hình thường bị biến dạng do nguyên nhân nào?",
+          "options": [
+                "Tác động của ngoại lực.",
+                "Tác động của nhiệt độ phòng.",
+                "Phản ứng hóa học với oxy.",
+                "Tác động của từ trường."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Tác động của ngoại lực.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_21",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Điều kiện nào giúp hợp kim nhớ hình khôi phục lại hình dạng ban đầu sau khi bị biến dạng?",
+          "options": [
+                "Nhúng vào dung dịch axit.",
+                "Làm lạnh đột ngột.",
+                "Quá trình cơ nhiệt thích hợp.",
+                "Phơi dưới ánh sáng Mặt Trời."
+          ],
+          "correct": 2,
+          "explanation": "Đáp án C đúng: Quá trình cơ nhiệt thích hợp.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_22",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Loại hợp kim nhớ hình nào được xem là điển hình và phổ biến nhất hiện nay?",
+          "options": [
+                "Thép không gỉ.",
+                "Hợp kim đồng - kẽm.",
+                "Hợp kim nhôm siêu nhẹ.",
+                "Hợp kim nitinol."
+          ],
+          "correct": 3,
+          "explanation": "Đáp án D đúng: Hợp kim nitinol.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_23",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Nitinol là hợp kim được tạo thành từ hai kim loại nào?",
+          "options": [
+                "Nickel và titanium.",
+                "Sắt và carbon.",
+                "Đồng và thiếc.",
+                "Nhôm và magie."
+          ],
+          "correct": 0,
+          "explanation": "Đáp án A đúng: Nickel và titanium.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Trắc nghiệm"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_24",
+          "type": "truefalse",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Khi tham quan một trung tâm nghiên cứu vật liệu mới, học sinh được giới thiệu về các loại vật liệu tiên tiến đang được ứng dụng trong ngành công nghiệp. Một số vật liệu có thể chịu nhiệt độ cao, một số khác chống ăn mòn tốt hoặc có tính chất vượt trội so với vật liệu truyền thống.",
+          "statements": [
+                {
+                      "id": "a",
+                      "label": "a",
+                      "text": "Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình.",
+                      "answer": true
+                },
+                {
+                      "id": "b",
+                      "label": "b",
+                      "text": "Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau.",
+                      "answer": false
+                },
+                {
+                      "id": "c",
+                      "label": "c",
+                      "text": "Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại.",
+                      "answer": false
+                },
+                {
+                      "id": "d",
+                      "label": "d",
+                      "text": "Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống.",
+                      "answer": true
+                }
+          ],
+          "explanation": "Đáp án theo đề cương:\na) Các loại vật liệu mới được học trong Bài 6 gồm vật liệu nano, vật liệu composite, vật liệu có cơ tính biến thiên và hợp kim nhớ hình. -> ĐÚNG\nb) Tính chất vượt trội của vật liệu mới có được là nhờ nấu chảy rồi trộn ngẫu nhiên các kim loại thông thường với nhau. -> SAI\nc) Vật liệu composite được coi là vật liệu mới vì được tạo từ một loại vật liệu duy nhất có độ bền cao hơn kim loại. -> SAI\nd) Vật liệu mới có thể có tính chất cơ học, vật lí, hoá học vượt trội so với vật liệu truyền thống. -> ĐÚNG",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Đúng sai"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_16",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Khi so sánh giữa nhựa nhiệt dẻo và nhựa nhiệt rắn, điểm khác biệt cơ bản nhất về tính chất công nghệ là gì?",
+          "options": [
+                "Nhựa nhiệt dẻo có nhiệt độ nóng chảy thấp và có thể tái chế; nhựa nhiệt rắn có nhiệt độ nóng chảy cao và không thể tái chế",
+                "Nhựa nhiệt dẻo không dẫn điện, nhựa nhiệt rắn dẫn điện tốt",
+                "Nhựa nhiệt dẻo có khối lượng riêng lớn hơn nhiều so với nhựa nhiệt rắn",
+                "Nhựa nhiệt dẻo cứng và giòn hơn so với nhựa nhiệt rắn"
+          ],
+          "correct": 0,
+          "explanation": "Theo đáp án đề cương:\n* Giống nhau: Đều là vật liệu cao phân tử, cách điện, cách nhiệt, không bị oxy hóa.\n* Khác nhau:\n- Nhựa nhiệt dẻo: nhiệt độ nóng chảy thấp, có thể tái chế.\n- Nhựa nhiệt rắn: nhiệt độ nóng chảy cao, không tái chế.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Tự luận ôn tập"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b5_17",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b5",
+          "sectionId": "chap_b5_sec",
+          "stem": "Một cơ sở cần lựa chọn vật liệu làm đệm để giảm rung cho máy khi hoạt động trong ba loại vật liệu: cao su, nhựa nhiệt dẻo và nhựa nhiệt rắn. Lựa chọn nào sau đây là tối ưu nhất và có cơ sở khoa học?",
+          "options": [
+                "Chọn cao su vì có tính đàn hồi cao, biến dạng khi chịu lực, phục hồi hình dạng khi thôi lực và tiêu hao năng lượng dao động giúp giảm rung truyền xuống nền",
+                "Chọn nhựa nhiệt dẻo vì giá thành rẻ và dễ dàng nóng chảy để tạo hình đệm máy",
+                "Chọn nhựa nhiệt rắn vì có độ cứng tối đa giúp máy đứng cố định tuyệt đối không dịch chuyển",
+                "Chọn kết hợp nhựa nhiệt dẻo và nhựa nhiệt rắn để tăng độ giòn cho đệm máy"
+          ],
+          "correct": 0,
+          "explanation": "Theo đáp án đề cương:\n- Chọn cao su.\n- Cao su có tính đàn hồi cao, có thể biến dạng khi chịu lực và phục hồi hình dạng khi thôi tác dụng lực.\n- Cao su còn có khả năng hấp thụ và tiêu hao một phần năng lượng dao động, giúp giảm rung truyền từ máy xuống nền.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 5",
+                "Vận dụng thực tế"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_24_mcq",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Giải thích nào sau đây là chính xác về tính \"nhớ hình\" của hợp kim nhớ hình và ứng dụng tiêu biểu của nó?",
+          "options": [
+                "Khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp (sau khi bị biến dạng trong giới hạn cho phép); ứng dụng chế tạo bộ phận chấp hành điều khiển bằng nhiệt",
+                "Khả năng tự động thay đổi màu sắc và kích thước theo cường độ ánh sáng môi trường; ứng dụng làm kính râm",
+                "Khả năng ghi nhớ và lưu trữ dữ liệu thông tin số như một con chip bán dẫn trong máy tính",
+                "Khả năng tự hàn gắn các vết nứt mà không cần gia nhiệt hay cung cấp năng lượng từ bên ngoài"
+          ],
+          "correct": 0,
+          "explanation": "Theo đáp án đề cương:\n- Tính “nhớ hình” là khả năng khôi phục hình dạng đã được định trước khi được nung nóng đến nhiệt độ thích hợp, sau khi bị biến dạng trong giới hạn cho phép.\n- Ứng dụng: Chế tạo bộ phận chấp hành điều khiển bằng nhiệt. Khi được nung nóng, bộ phận bằng hợp kim nhớ hình khôi phục hình dạng định trước, tạo chuyển động cho cơ cấu.",
+          "difficulty": "thong_hieu",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Tự luận ôn tập"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+    {
+          "id": "q_cn11_chap_b6_25",
+          "type": "mcq",
+          "subjectId": "sub_congnghe_ghki",
+          "chapterId": "chap_b6",
+          "sectionId": "chap_b6_sec",
+          "stem": "Một chi tiết cần có bề mặt chịu nhiệt tốt, bên trong có độ bền cơ học cao và thành phần vật liệu thay đổi dần từ ngoài vào trong. Lựa chọn loại vật liệu mới nào sau đây là phù hợp nhất?",
+          "options": [
+                "Vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng - FGM)",
+                "Vật liệu nano đơn lớp phủ bề mặt",
+                "Hợp kim nhớ hình Nitinol",
+                "Vật liệu nhựa nhiệt rắn phenolic"
+          ],
+          "correct": 0,
+          "explanation": "Theo đáp án đề cương:\n- Chọn vật liệu có cơ tính biến thiên (vật liệu phân lớp chức năng – FGM).\n- Vật liệu này gồm hai hoặc nhiều thành phần, có tỉ lệ thành phần thay đổi dần theo vị trí, giúp tạo ra tính chất phù hợp tại từng vùng của chi tiết.\n- Để đáp ứng yêu cầu, có thể thiết kế thành phần chịu nhiệt chiếm ưu thế ở bề mặt và thành phần có độ bền cơ học cao chiếm ưu thế ở bên trong.",
+          "difficulty": "van_dung",
+          "tags": [
+                "Công Nghệ GHKI",
+                "Bài 6",
+                "Vận dụng thực tế"
+          ],
+          "favorite": false,
+          "createdAt": "2026-11-02T12:00:00.000Z",
+          "updatedAt": "2026-11-02T12:00:00.000Z"
+    },
+{
       "id": "gdqp11_b1_c01",
       "type": "mcq",
       "subjectId": "sub_gdqp11",
@@ -10019,7 +10018,6 @@ export const SEED_DATA = {
         "q_cn11_chap_b5_14",
         "q_cn11_chap_b5_15",
         "q_cn11_chap_b6_01",
-        "q_cn11_chap_b6_02",
         "q_cn11_chap_b6_03",
         "q_cn11_chap_b6_04",
         "q_cn11_chap_b6_05",
@@ -10041,6 +10039,7 @@ export const SEED_DATA = {
         "q_cn11_chap_b6_21",
         "q_cn11_chap_b6_22",
         "q_cn11_chap_b6_23",
+        "q_cn11_chap_b6_24",
         "q_cn11_chap_b5_16",
         "q_cn11_chap_b5_17",
         "q_cn11_chap_b6_24_mcq",

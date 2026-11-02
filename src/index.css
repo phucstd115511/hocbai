@@ -450,118 +450,90 @@ body {
 
 .neu-water-surface {
   position: relative;
-  /* 1. Translucent Liquid Glass Body (Thấu kính pha lê trong suốt, khúc xạ nhẹ, không bị trắng bệch) */
+  /* 1. Frosted Liquid Glass Body: thấu kính tinh thể trong suốt, khúc xạ nền mềm mại, không bị đục trắng */
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.28) 0%,
-    rgba(255, 255, 255, 0.08) 40%,
-    rgba(74, 85, 104, 0.06) 100%
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.45) 55%,
+    rgba(235, 236, 240, 0.40) 100%
   ) !important;
   
-  /* 2. Optical Refraction & Saturation */
-  -webkit-backdrop-filter: blur(14px) saturate(170%) contrast(104%) !important;
-  backdrop-filter: blur(14px) saturate(170%) contrast(104%) !important;
+  /* 2. Optical Refraction & Frosted Diffusion */
+  -webkit-backdrop-filter: blur(16px) saturate(160%) contrast(102%) !important;
+  backdrop-filter: blur(16px) saturate(160%) contrast(102%) !important;
   
-  /* 3. Defined Water Surface Rim (Viền bắt sáng tinh thể, có gờ sắc nét nhận biết) */
-  border: 1px solid rgba(255, 255, 255, 0.75) !important;
-  border-bottom: 1px solid rgba(74, 85, 104, 0.22) !important;
+  /* 3. Hairline Specular Rim: gờ sáng đỉnh kính, đáy phản xạ tự nhiên */
+  border: 1px solid rgba(255, 255, 255, 0.85) !important;
+  border-bottom: 1px solid rgba(163, 177, 198, 0.35) !important;
   
-  /* 4. Ambient Occlusion Shadow & Double Specular Rim */
+  /* 4. Ambient Contact Shadow & Subtle Specular Highlights */
   box-shadow: 
-    0 8px 24px -3px rgba(74, 85, 104, 0.14),
-    0 2px 6px -1px rgba(74, 85, 104, 0.06),
-    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95), /* Gờ sáng đỉnh kính */
-    inset 0 -1px 1.5px 0 rgba(255, 255, 255, 0.4),  /* Gờ phản quang đáy */
-    inset 0 0 12px 0 rgba(255, 255, 255, 0.15),   /* Quầng sáng pha lê */
-    inset 0 0 12px -2px rgba(255, 136, 0, 0.12) !important; /* Ánh cam ấm nhận diện active */
+    0 4px 14px -2px rgba(74, 85, 104, 0.12),
+    0 2px 5px -1px rgba(74, 85, 104, 0.06),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.95),  /* Gờ sáng đỉnh kính */
+    inset 0 -1px 1px 0 rgba(255, 255, 255, 0.4),   /* Gờ phản quang đáy */
+    inset 0 0 10px -2px rgba(255, 136, 0, 0.16) !important; /* Ánh cam ấm nhận diện active */
 }
 
 .dark .neu-water-surface {
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.12) 0%,
-    rgba(255, 255, 255, 0.02) 40%,
-    rgba(0, 0, 0, 0.35) 100%
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.04) 55%,
+    rgba(0, 0, 0, 0.32) 100%
   ) !important;
   
-  -webkit-backdrop-filter: blur(14px) saturate(170%) contrast(104%) !important;
-  backdrop-filter: blur(14px) saturate(170%) contrast(104%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(160%) contrast(102%) !important;
+  backdrop-filter: blur(16px) saturate(160%) contrast(102%) !important;
   
   border: 1px solid rgba(255, 255, 255, 0.22) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.55) !important;
   
   box-shadow: 
-    0 8px 24px -3px rgba(0, 0, 0, 0.7),
-    0 2px 6px -1px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 1.5px 0 rgba(255, 255, 255, 0.15),
-    inset 0 0 12px -2px rgba(255, 136, 0, 0.18) !important;
+    0 4px 14px -2px rgba(0, 0, 0, 0.65),
+    0 2px 5px -1px rgba(0, 0, 0, 0.45),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 0 10px -2px rgba(255, 136, 0, 0.20) !important;
 }
 
-/* Water Surface Hover for Items / Buttons / Options */
+/* Water Surface Hover for Items / Buttons / Options:
+   Chỉ kích hoạt hiệu ứng hover trên thiết bị có con trỏ chuột (desktop),
+   hoàn toàn triệt tiêu lỗi sticky hover trên thiết bị cảm ứng (mobile/tablet)
+*/
 .neu-water-hover {
   position: relative;
   border: 1px solid transparent !important;
-  transition: all 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.neu-water-hover:hover,
-.neu-water-hover:focus-visible {
-  /* Translucent Water Ripple Sheen: trong suốt dạng màng nước, thấy rõ nền */
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.20) 0%,
-    rgba(255, 255, 255, 0.04) 50%,
-    rgba(74, 85, 104, 0.04) 100%
-  ) !important;
-  
-  -webkit-backdrop-filter: blur(10px) saturate(140%) contrast(102%) !important;
-  backdrop-filter: blur(10px) saturate(140%) contrast(102%) !important;
-  
-  /* Viền hơi đậm nhẹ để nhận biết dạng giọt nước / mặt nước theo ý người dùng */
-  border: 1px solid rgba(74, 85, 104, 0.28) !important;
-  border-top-color: rgba(255, 255, 255, 0.85) !important;
-  
-  box-shadow: 
-    0 4px 12px -2px rgba(74, 85, 104, 0.08),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.8),
-    inset 0 -1px 1px 0 rgba(74, 85, 104, 0.08) !important;
-  transform: translateY(-1px);
+@media (hover: hover) and (pointer: fine) {
+  .neu-water-hover:hover,
+  .neu-water-hover:focus-visible {
+    /* Trong suốt dạng màng nước lỏng, không tạo khối hộp trắng giả lập active */
+    background: rgba(255, 255, 255, 0.22) !important;
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    backdrop-filter: blur(6px) !important;
+    box-shadow: 0 1px 4px 0 rgba(74, 85, 104, 0.05) !important;
+  }
+
+  .dark .neu-water-hover:hover,
+  .dark .neu-water-hover:focus-visible {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2) !important;
+  }
 }
 
 .neu-water-hover:active {
-  transform: translateY(0.5px) scale(0.985);
-  box-shadow: 
-    0 2px 6px -1px rgba(74, 85, 104, 0.06),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.5) !important;
-}
-
-.dark .neu-water-hover:hover,
-.dark .neu-water-hover:focus-visible {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.08) 0%,
-    rgba(255, 255, 255, 0.02) 50%,
-    rgba(0, 0, 0, 0.2) 100%
-  ) !important;
-  
-  -webkit-backdrop-filter: blur(10px) saturate(140%) contrast(102%) !important;
-  backdrop-filter: blur(10px) saturate(140%) contrast(102%) !important;
-  
-  border: 1px solid rgba(255, 255, 255, 0.25) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5) !important;
-  
-  box-shadow: 
-    0 4px 12px -2px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25) !important;
-  transform: translateY(-1px);
+  transform: scale(0.975);
+  background: rgba(255, 255, 255, 0.35) !important;
 }
 
 .dark .neu-water-hover:active {
-  transform: translateY(0.5px) scale(0.985);
-  box-shadow: 
-    0 2px 6px -1px rgba(0, 0, 0, 0.4),
-    inset 0 1px 1px 0 rgba(255, 255, 255, 0.15) !important;
+  transform: scale(0.975);
+  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* ==========================================================================

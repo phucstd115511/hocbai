@@ -51,21 +51,21 @@ export function getStoredData() {
         }
         needsResave = true;
       } else {
-        // Tự động sửa chữa và đồng bộ câu hỏi Môn Công Nghệ GHKI nếu trong storage cũ bị dính chùm đáp án hoặc chứa "Phương án B"
-        const cnSeedQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_congnghe_ghki');
-        const hasCorruptedCN = questions.some(q => 
-          q.subjectId === 'sub_congnghe_ghki' && 
-          q.options && 
-          q.options.some(opt => typeof opt === 'string' && (opt.includes('Phương án B') || /[B-D]\.\s+/.test(opt)))
-        );
-        if (hasCorruptedCN) {
-          const cnSeedMap = new Map(cnSeedQuestions.map(q => [q.id, q]));
-          questions = questions.map(q => {
-            if (q.subjectId === 'sub_congnghe_ghki' && cnSeedMap.has(q.id)) {
-              return cnSeedMap.get(q.id);
-            }
-            return q;
-          });
+        // Tự động thay thế toàn bộ câu hỏi cũ của Công Nghệ GHKI bằng bộ đề cương chính thức mới (93 câu đã kiểm chứng 100%)
+        const CN_DECUONG_SYNC_KEY = 'hocbai_cn11_decuong_ghki_v2';
+        const isCnSynced = localStorage.getItem(CN_DECUONG_SYNC_KEY);
+        if (!isCnSynced) {
+          const cnSeedQuestions = SEED_DATA.questions.filter(q => q.subjectId === 'sub_congnghe_ghki');
+          // Xóa bỏ tất cả câu hỏi cũ của Công Nghệ 11
+          questions = questions.filter(q => q.subjectId !== 'sub_congnghe_ghki' && !(q.tags || []).includes('Công Nghệ GHKI'));
+          // Nạp mới toàn bộ 93 câu hỏi chuẩn từ đề cương mới
+          questions = [...cnSeedQuestions, ...questions];
+          // Cập nhật lại exam_congnghe_ghki nếu có
+          const cnExam = SEED_DATA.exams.find(e => e.id === 'exam_congnghe_ghki');
+          if (cnExam) {
+            exams = exams.map(e => e.id === 'exam_congnghe_ghki' ? cnExam : e);
+          }
+          localStorage.setItem(CN_DECUONG_SYNC_KEY, 'true');
           needsResave = true;
         }
       }
