@@ -902,56 +902,45 @@ export default function CongNgheGHKIQuiz({
             </p>
           </div>
 
-          {/* Action Toolbar: Thanh công cụ riêng biệt không cạnh tranh chiều rộng với tiêu đề */}
-          <div className="flex flex-wrap items-center justify-between gap-2.5 pt-3 border-t border-black/5 dark:border-white/5">
-            {/* Nhóm điều khiển Trộn đề ngẫu nhiên */}
-            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
+          {/* Action Toolbar: Các nút xếp liền kề nhau tự nhiên, không bị khoảng trống ở giữa */}
+          <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 pt-3 border-t border-black/5 dark:border-white/5">
+            {/* Nút Bật / Tắt Trộn đề */}
+            <button
+              type="button"
+              onClick={handleToggleRandom}
+              className={`px-3 sm:px-3.5 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer transition select-none ${
+                isRandom
+                  ? 'neu-inset text-[#FF8800] ring-1 ring-[#FF8800]/35 font-extrabold'
+                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+              }`}
+              title={isRandom ? 'Đang bật trộn ngẫu nhiên. Bấm để chuyển về thứ tự đề cương chuẩn' : 'Đang tắt trộn ngẫu nhiên. Bấm để bật trộn câu hỏi'}
+            >
+              <Shuffle className={`w-3.5 h-3.5 ${isRandom ? 'text-[#FF8800]' : ''}`} />
+              <span>{isRandom ? 'Trộn đề: BẬT' : 'Trộn đề: TẮT'}</span>
+            </button>
+
+            {/* Nút Trộn Lại Đề Mới (khi đang bật Random) */}
+            {isRandom && (
               <button
                 type="button"
-                onClick={handleToggleRandom}
-                className={`px-3 sm:px-3.5 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer transition select-none ${
-                  isRandom
-                    ? 'neu-inset text-[#FF8800] ring-1 ring-[#FF8800]/35 font-extrabold'
-                    : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
-                }`}
-                title={isRandom ? 'Đang bật trộn ngẫu nhiên. Bấm để chuyển về thứ tự đề cương chuẩn' : 'Đang tắt trộn ngẫu nhiên. Bấm để bật trộn câu hỏi'}
+                onClick={() => handleReshuffle(false)}
+                className="neu-btn px-3 sm:px-3.5 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] transition select-none"
+                title="Tạo lượt làm bài mới với thứ tự câu hỏi ngẫu nhiên khác"
               >
-                <Shuffle className={`w-3.5 h-3.5 ${isRandom ? 'text-[#FF8800]' : ''}`} />
-                <span>{isRandom ? 'Trộn đề: BẬT' : 'Trộn đề: TẮT'}</span>
+                <RotateCcw className="w-3.5 h-3.5 text-[#FF8800]" />
+                <span>Trộn lại đề</span>
               </button>
+            )}
 
-              {isRandom && (
-                <button
-                  type="button"
-                  onClick={() => handleReshuffle(false)}
-                  className="neu-btn px-3 sm:px-3.5 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] transition select-none"
-                  title="Tạo lượt làm bài mới với thứ tự câu hỏi ngẫu nhiên khác"
-                >
-                  <RotateCcw className="w-3.5 h-3.5 text-[#FF8800]" />
-                  <span>Trộn lại đề</span>
-                </button>
-              )}
-            </div>
-
-            {/* Nhóm tiện ích: In đề & Làm lại */}
-            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
-              <button
-                onClick={() => setIsPrinting(true)}
-                className="neu-btn px-3.5 sm:px-4 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] transition select-none"
-                title="In đề thi giấy A4 để làm bài hoặc phát cho học sinh"
-              >
-                <Printer className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FF8800]" />
-                <span>In Đề A4</span>
-              </button>
-              <button
-                onClick={handleReset}
-                className="neu-btn px-3.5 sm:px-4 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#FF8800] hover:text-[#e07700] transition select-none"
-                title="Đặt lại bài làm"
-              >
-                <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span>Làm Lại</span>
-              </button>
-            </div>
+            {/* Nút Làm Lại */}
+            <button
+              onClick={handleReset}
+              className="neu-btn px-3.5 sm:px-4 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#FF8800] hover:text-[#e07700] transition select-none"
+              title="Đặt lại bài làm"
+            >
+              <RotateCcw className="w-3.5 h-3.5" />
+              <span>Làm Lại</span>
+            </button>
           </div>
         </div>
       </div>
