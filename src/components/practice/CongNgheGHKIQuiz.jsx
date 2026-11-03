@@ -28,7 +28,8 @@ import {
   Monitor,
   ChevronDown,
   AlertTriangle,
-  Trophy
+  Trophy,
+  Shuffle
 } from 'lucide-react';
 
 export default function CongNgheGHKIQuiz({
@@ -59,6 +60,26 @@ export default function CongNgheGHKIQuiz({
   const [cardTransitionState, setCardTransitionState] = useState('idle'); // 'idle' | 'collapsing'
   const [autoAdvance, setAutoAdvance] = useState(true);
 
+  // Chế độ xáo trộn câu hỏi ngẫu nhiên (Mặc định BẬT để mỗi lần chọn môn là câu hỏi được random)
+  const [isRandom, setIsRandom] = useState(() => {
+    try {
+      const saved = localStorage.getItem('hocbai_quiz_random_enabled');
+      return saved === null ? true : saved === 'true';
+    } catch {
+      return true;
+    }
+  });
+  const [shuffleSeed, setShuffleSeed] = useState(() => Date.now());
+  const [shuffleNotice, setShuffleNotice] = useState('');
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('hocbai_quiz_random_enabled', String(isRandom));
+    } catch (e) {
+      console.error(e);
+    }
+  }, [isRandom]);
+
   const stickyRef = useRef(null);
   const autoAdvanceTimerRef = useRef(null);
   const timerRef = useRef(null);
@@ -83,8 +104,9 @@ export default function CongNgheGHKIQuiz({
     : 'Công Nghệ 11';
 
   // Lọc toàn bộ câu hỏi của môn đã chọn (Gộp lại trọn vẹn, không chia vụn vặt)
+  // Nếu bật chế độ random, xáo trộn thứ tự các câu hỏi theo từng phần đề thi
   const questionsToTest = useMemo(() => {
-    return allQuestions.filter(q => {
+    const base = allQuestions.filter(q => {
       if (activeSubjectId === 'sub_congnghe_ghki') {
         return q.subjectId === 'sub_congnghe_ghki' || (q.tags || []).includes('Công Nghệ GHKI');
       }
@@ -105,7 +127,41 @@ export default function CongNgheGHKIQuiz({
       }
       return q.subjectId === activeSubjectId;
     });
-  }, [allQuestions, activeSubjectId]);
+
+    if (!isRandom) {
+      return base;
+    }
+
+    // Tách theo dạng câu hỏi để xáo trộn trong từng phần (giữ nguyên cấu trúc Phần I, II, III chuẩn GDPT)
+    const mcqs = base.filter(q => q.type === 'mcq');
+    const tfs = base.filter(q => q.type === 'truefalse');
+    const sas = base.filter(q => q.type === 'short_answer');
+    const others = base.filter(q => q.type !== 'mcq' && q.type !== 'truefalse' && q.type !== 'short_answer');
+
+    // Mulberry32 deterministic Fisher-Yates shuffle
+    const shuffle = (array, seedVal) => {
+      const copy = [...array];
+      let s = Math.abs(seedVal) % 2147483647 || 1;
+      const nextRandom = () => {
+        let t = (s += 0x6d2b79f5);
+        t = Math.imul(t ^ (t >>> 15), t | 1);
+        t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+      };
+      for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(nextRandom() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    };
+
+    return [
+      ...shuffle(mcqs, shuffleSeed),
+      ...shuffle(tfs, shuffleSeed + 10007),
+      ...shuffle(sas, shuffleSeed + 20011),
+      ...others
+    ];
+  }, [allQuestions, activeSubjectId, isRandom, shuffleSeed]);
 
   const clearAutoAdvanceTimer = () => {
     if (autoAdvanceTimerRef.current) {
@@ -217,15 +273,21 @@ export default function CongNgheGHKIQuiz({
   // Đồng bộ khi prop initialSubjectId thay đổi từ Header
   useEffect(() => {
     if (initialSubjectId && initialSubjectId !== activeSubjectId) {
+      clearAutoAdvanceTimer();
       setActiveSubjectId(initialSubjectId);
+      if (isRandom) {
+        setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+      }
       setUserAnswers({});
       setLockedShortAnswers({});
       setIsSubmitted(false);
+      setIsScoreReportOpen(false);
       setRevealedSingleQuestions({});
       setSeconds(0);
       setCurrentIndex(0);
       setIsTimerActive(true);
       setShowPalette(false);
+      hasSavedAttemptRef.current = false;
     }
   }, [initialSubjectId]);
 
@@ -251,7 +313,18 @@ export default function CongNgheGHKIQuiz({
 
   // Chuyển đổi giữa các môn học
   const handleSwitchSubject = (newSubId) => {
-    if (newSubId === activeSubjectId) return;
+    // Nếu chọn lại chính môn đang làm: nếu đang bật random thì cho phép xáo trộn đề mới ngay
+    if (newSubId === activeSubjectId) {
+      if (isRandom) {
+        if (answeredCount > 0 && !isSubmitted) {
+          if (!confirm(`Bạn có muốn xáo trộn lại câu hỏi môn ${currentSubjectName} để làm đề mới không?`)) {
+            return;
+          }
+        }
+        handleReshuffle();
+      }
+      return;
+    }
     if (answeredCount > 0 && !isSubmitted) {
       if (!confirm('Bạn đang làm dở bài tập này. Bạn có muốn đổi sang môn học khác không?')) {
         return;
@@ -259,15 +332,79 @@ export default function CongNgheGHKIQuiz({
     }
     clearAutoAdvanceTimer();
     setActiveSubjectId(newSubId);
+    if (isRandom) {
+      setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+      const newSubjectName = newSubId === 'sub_tinhoc11'
+        ? 'Tin Học 11'
+        : newSubId === 'sub_tienganh11'
+        ? 'Tiếng Anh 11'
+        : newSubId === 'sub_gdqp11'
+        ? 'GDQP&AN 11'
+        : newSubId === 'sub_dia11'
+        ? 'Địa Lí 11'
+        : newSubId === 'sub_su11'
+        ? 'Lịch Sử 11'
+        : 'Công Nghệ 11';
+      setShuffleNotice(`Đã xáo trộn ngẫu nhiên toàn bộ câu hỏi môn ${newSubjectName}`);
+      setTimeout(() => setShuffleNotice(''), 2500);
+    }
     setUserAnswers({});
     setLockedShortAnswers({});
     setIsSubmitted(false);
+    setIsScoreReportOpen(false);
     setRevealedSingleQuestions({});
     setSeconds(0);
     setCurrentIndex(0);
     setIsTimerActive(true);
     hasSavedAttemptRef.current = false;
     onSwitchSubject?.(newSubId);
+  };
+
+  // Xáo trộn lại toàn bộ câu hỏi của môn hiện tại
+  const handleReshuffle = (silent = false) => {
+    clearAutoAdvanceTimer();
+    setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+    setUserAnswers({});
+    setLockedShortAnswers({});
+    setIsSubmitted(false);
+    setIsScoreReportOpen(false);
+    setRevealedSingleQuestions({});
+    setSeconds(0);
+    setCurrentIndex(0);
+    setIsTimerActive(true);
+    hasSavedAttemptRef.current = false;
+    if (!silent) {
+      setShuffleNotice(`Đã xáo trộn ngẫu nhiên đề thi môn ${currentSubjectName}`);
+      setTimeout(() => setShuffleNotice(''), 2500);
+    }
+  };
+
+  // Bật / Tắt chế độ random câu hỏi
+  const handleToggleRandom = () => {
+    if (answeredCount > 0 && !isSubmitted) {
+      if (!confirm('Thay đổi chế độ trộn đề sẽ sắp xếp lại câu hỏi và đặt lại bài làm. Bạn có muốn tiếp tục?')) {
+        return;
+      }
+    }
+    clearAutoAdvanceTimer();
+    const nextRandom = !isRandom;
+    setIsRandom(nextRandom);
+    if (nextRandom) {
+      setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+      setShuffleNotice(`Đã bật trộn ngẫu nhiên câu hỏi môn ${currentSubjectName}`);
+    } else {
+      setShuffleNotice(`Đã chuyển về thứ tự đề cương chuẩn môn ${currentSubjectName}`);
+    }
+    setTimeout(() => setShuffleNotice(''), 2500);
+    setUserAnswers({});
+    setLockedShortAnswers({});
+    setIsSubmitted(false);
+    setIsScoreReportOpen(false);
+    setRevealedSingleQuestions({});
+    setSeconds(0);
+    setCurrentIndex(0);
+    setIsTimerActive(true);
+    hasSavedAttemptRef.current = false;
   };
 
   // Chọn phương án MCQ (Khóa đáp án sau khi đã chọn, hiện kết quả ngay, sau đó thu lại và nhảy popup câu tiếp theo)
@@ -359,6 +496,12 @@ export default function CongNgheGHKIQuiz({
   // Làm lại đề thủ công (từ thanh công cụ hoặc nút trên trang)
   const handleReset = () => {
     if (confirm('Làm lại từ đầu? Tất cả các đáp án bạn vừa chọn sẽ được đặt lại.')) {
+      clearAutoAdvanceTimer();
+      if (isRandom) {
+        setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+        setShuffleNotice(`Đã làm lại & xáo trộn đề mới môn ${currentSubjectName}`);
+        setTimeout(() => setShuffleNotice(''), 2500);
+      }
       setUserAnswers({});
       setLockedShortAnswers({});
       setIsSubmitted(false);
@@ -374,6 +517,12 @@ export default function CongNgheGHKIQuiz({
 
   // Làm lại trực tiếp từ Modal Báo Điểm (không cần confirm lần 2)
   const handleRestartFromModal = () => {
+    clearAutoAdvanceTimer();
+    if (isRandom) {
+      setShuffleSeed(Date.now() + Math.floor(Math.random() * 10000));
+      setShuffleNotice(`Đã làm lại & xáo trộn đề mới môn ${currentSubjectName}`);
+      setTimeout(() => setShuffleNotice(''), 2500);
+    }
     setUserAnswers({});
     setLockedShortAnswers({});
     setIsSubmitted(false);
@@ -698,6 +847,14 @@ export default function CongNgheGHKIQuiz({
         </button>
       </div>
 
+      {/* Thông báo xáo trộn ngẫu nhiên đề thi */}
+      {shuffleNotice && (
+        <div className="flex items-center justify-center gap-2 py-2.5 px-4 rounded-2xl neu-inset text-xs font-display font-bold text-[#FF8800] ring-1 ring-[#FF8800]/30 shadow-sm animate-in fade-in slide-in-from-top-1 duration-200 select-none">
+          <Shuffle className="w-4 h-4 text-[#FF8800] animate-spin" />
+          <span>{shuffleNotice}</span>
+        </div>
+      )}
+
       {/* 2. Top Banner: Đề thi môn học Neumorphic */}
       <div className="p-6 sm:p-8 rounded-[32px] neu-extruded bg-[#EBECF0] dark:bg-[#1A1E24] relative overflow-hidden transition-all duration-300">
         <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
@@ -744,20 +901,48 @@ export default function CongNgheGHKIQuiz({
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3 shrink-0">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 shrink-0">
+            {/* Nút Bật / Tắt Trộn đề */}
+            <button
+              type="button"
+              onClick={handleToggleRandom}
+              className={`px-3 sm:px-3.5 py-2 sm:py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer transition select-none ${
+                isRandom
+                  ? 'neu-inset text-[#FF8800] ring-1 ring-[#FF8800]/35 font-extrabold'
+                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+              }`}
+              title={isRandom ? 'Đang bật trộn ngẫu nhiên. Bấm để chuyển về thứ tự đề cương chuẩn' : 'Đang tắt trộn ngẫu nhiên. Bấm để bật trộn câu hỏi'}
+            >
+              <Shuffle className={`w-3.5 h-3.5 ${isRandom ? 'text-[#FF8800]' : ''}`} />
+              <span>{isRandom ? 'Trộn đề: BẬT' : 'Trộn đề: TẮT'}</span>
+            </button>
+
+            {/* Nút Trộn Lại Đề Mới (khi đang bật Random) */}
+            {isRandom && (
+              <button
+                type="button"
+                onClick={() => handleReshuffle(false)}
+                className="neu-btn px-3 sm:px-3.5 py-2 sm:py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] transition select-none"
+                title="Tạo lượt làm bài mới với thứ tự câu hỏi ngẫu nhiên khác"
+              >
+                <RotateCcw className="w-3.5 h-3.5 text-[#FF8800]" />
+                <span>Trộn lại đề</span>
+              </button>
+            )}
+
             <button
               onClick={() => setIsPrinting(true)}
-              className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0]"
+              className="neu-btn px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#4A5568] dark:text-[#E2E8F0]"
               title="In đề thi giấy A4 để làm bài hoặc phát cho học sinh"
             >
-              <Printer className="w-4 h-4 text-[#FF8800]" /> In Đề A4
+              <Printer className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#FF8800]" /> In Đề A4
             </button>
             <button
               onClick={handleReset}
-              className="neu-btn px-4 py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#FF8800]"
+              className="neu-btn px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer text-[#FF8800]"
               title="Đặt lại bài làm"
             >
-              <RotateCcw className="w-4 h-4" /> Làm Lại
+              <RotateCcw className="w-3.5 h-3.5 sm:w-4 sm:h-4" /> Làm Lại
             </button>
           </div>
         </div>
@@ -782,9 +967,19 @@ export default function CongNgheGHKIQuiz({
             </div>
 
             {/* Progress */}
-            <div className="neu-inset-sm px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] shrink-0">
-              <span className="hidden sm:inline">Tiến độ: </span>
-              <span className="text-[#FF8800] font-extrabold">{answeredCount}</span>/{questionsToTest.length} <span className="hidden sm:inline">câu</span>
+            <div className="neu-inset-sm px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#4A5568] dark:text-[#E2E8F0] shrink-0 flex items-center gap-1.5 select-none">
+              <span>
+                <span className="hidden sm:inline">Tiến độ: </span>
+                <span className="text-[#FF8800] font-extrabold">{answeredCount}</span>/{questionsToTest.length} <span className="hidden sm:inline">câu</span>
+              </span>
+              {isRandom && (
+                <span 
+                  title="Đang bật trộn ngẫu nhiên đề thi" 
+                  className="hidden md:inline-flex items-center gap-0.5 text-[10px] font-extrabold text-[#FF8800] bg-[#FF8800]/10 px-1.5 py-0.5 rounded-md"
+                >
+                  <Shuffle className="w-2.5 h-2.5" /> Random
+                </span>
+              )}
             </div>
 
             {/* Question Palette Button: expands to fill all remaining right space smoothly */}
@@ -1383,7 +1578,21 @@ export default function CongNgheGHKIQuiz({
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+                    <button
+                      type="button"
+                      onClick={handleToggleRandom}
+                      title={isRandom ? 'Đang bật trộn ngẫu nhiên. Bấm để chuyển về thứ tự chuẩn' : 'Đang tắt trộn ngẫu nhiên. Bấm để bật trộn câu hỏi'}
+                      className={`px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 sm:gap-1.5 transition cursor-pointer select-none ${
+                        isRandom 
+                          ? 'neu-inset-sm text-[#FF8800]' 
+                          : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
+                      }`}
+                    >
+                      <Shuffle className="w-3.5 h-3.5 text-[#FF8800]" />
+                      <span className="text-[11px] hidden xs:inline">{isRandom ? 'Trộn: BẬT' : 'Trộn: TẮT'}</span>
+                    </button>
+
                     <button
                       type="button"
                       onClick={() => {
@@ -1391,14 +1600,14 @@ export default function CongNgheGHKIQuiz({
                         clearAutoAdvanceTimer();
                       }}
                       title={autoAdvance ? 'Đang bật tự động nhảy câu tiếp theo sau khi chọn' : 'Đang tắt tự động nhảy câu'}
-                      className={`px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1.5 transition cursor-pointer ${
+                      className={`px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 sm:gap-1.5 transition cursor-pointer select-none ${
                         autoAdvance 
                           ? 'neu-inset-sm text-[#FF8800]' 
                           : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
                       }`}
                     >
                       <Sparkles className="w-3.5 h-3.5 text-[#FF8800]" />
-                      <span className="text-[11px] hidden xs:inline">{autoAdvance ? 'Tự nhảy câu: BẬT' : 'Tự nhảy câu: TẮT'}</span>
+                      <span className="text-[11px] hidden xs:inline">{autoAdvance ? 'Tự nhảy: BẬT' : 'Tự nhảy: TẮT'}</span>
                     </button>
 
                     {!isSubmitted && (
@@ -1407,10 +1616,10 @@ export default function CongNgheGHKIQuiz({
                           clearAutoAdvanceTimer();
                           setRevealedSingleQuestions(prev => ({ ...prev, [q.id]: !prev[q.id] }));
                         }}
-                        className="neu-btn px-3 py-1.5 rounded-xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 cursor-pointer"
+                        className="neu-btn px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-bold text-[#718096] dark:text-[#94A3B8] hover:text-[#FF8800] flex items-center gap-1 cursor-pointer select-none"
                       >
                         {isRevealed ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5 text-[#FF8800]" />}
-                        {isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}
+                        <span className="text-[11px]">{isRevealed ? 'Ẩn đáp án' : 'Xem đáp án'}</span>
                       </button>
                     )}
                   </div>
