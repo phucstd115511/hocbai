@@ -4,7 +4,7 @@
  * Hoạt động hoàn toàn ngầm trong nền, không gây ảnh hưởng đến trải nghiệm người dùng.
  */
 
-import { getActiveTelemetryConfig } from './telemetryConfig.js';
+import { getActiveTelemetryConfig, getGatewayEndpoint } from './telemetryConfig.js';
 
 const STORAGE_LOGS_KEY = 'hocbai_admin_visitor_logs';
 const SESSION_VAR_KEY = 'hocbai_var_session_recorded';
@@ -223,6 +223,17 @@ export function clearVisitorLogs() {
 }
 
 /**
+ * Thoát các ký tự HTML đặc biệt để tránh lỗi 400 Bad Request của Telegram API
+ */
+function escapeHtml(text) {
+  if (!text) return '';
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+/**
  * Gửi thông báo Check Var tới Telegram Bot của Admin
  */
 export async function sendTelegramNotification(payload, isTest = false) {
@@ -252,25 +263,40 @@ export async function sendTelegramNotification(payload, isTest = false) {
     ? '🔔 <b>[TEST KẾT NỐI] Cấu hình Check Var thành công!</b>'
     : '🎯 <b>[CHECK VAR HỌC BÀI] Có lượt truy cập mới!</b>';
 
+  const cleanIp = escapeHtml(payload.ip || 'Không xác định');
+  const cleanCity = escapeHtml(payload.city || 'Việt Nam');
+  const cleanRegion = escapeHtml(payload.region || '');
+  const cleanCountry = escapeHtml(payload.country || 'Việt Nam');
+  const cleanFlag = payload.flag || '🇻🇳';
+  const cleanIsp = escapeHtml(payload.isp || 'Không rõ');
+  const cleanDevice = escapeHtml(payload.deviceType || 'Thiết bị di động');
+  const cleanOs = escapeHtml(payload.os || 'Không rõ OS');
+  const cleanBrowser = escapeHtml(payload.browser || 'Trình duyệt web');
+  const cleanScreen = escapeHtml(payload.screen || 'Không rõ');
+  const cleanConn = escapeHtml(payload.connectionType || 'Tự động');
+  const cleanSubject = escapeHtml(payload.subject || 'Trang ôn tập');
+  const cleanReferrer = escapeHtml(payload.referrer || 'Trực tiếp');
+  const cleanTime = escapeHtml(timeFormatted);
+
   const messageText = `${headerTitle}
 ━━━━━━━━━━━━━━━━━━
-📍 <b>Địa chỉ IP:</b> <code>${payload.ip}</code>
-🌍 <b>Vị trí:</b> ${payload.city}${payload.region ? `, ${payload.region}` : ''}, ${payload.country} ${payload.flag || '🇻🇳'}
-🏢 <b>Nhà mạng:</b> ${payload.isp || 'Không rõ'}
-📱 <b>Thiết bị:</b> ${payload.deviceType} (${payload.os})
-🌐 <b>Trình duyệt:</b> ${payload.browser}
-📐 <b>Độ phân giải:</b> ${payload.screen}
-📶 <b>Tốc độ mạng:</b> ${payload.connectionType || 'Tự động'}
-📚 <b>Đang xem:</b> ${payload.subject || 'Trang ôn tập'}
-🔗 <b>Nguồn truy cập:</b> ${payload.referrer}
-⏱️ <b>Thời gian:</b> <code>${timeFormatted}</code> (Giờ VN)
+📍 <b>Địa chỉ IP:</b> <code>${cleanIp}</code>
+🌍 <b>Vị trí:</b> ${cleanCity}${cleanRegion ? `, ${cleanRegion}` : ''}, ${cleanCountry} ${cleanFlag}
+🏢 <b>Nhà mạng:</b> ${cleanIsp}
+📱 <b>Thiết bị:</b> ${cleanDevice} (${cleanOs})
+🌐 <b>Trình duyệt:</b> ${cleanBrowser}
+📐 <b>Độ phân giải:</b> ${cleanScreen}
+📶 <b>Mạng kết nối:</b> ${cleanConn}
+📚 <b>Đang xem:</b> ${cleanSubject}
+🔗 <b>Nguồn truy cập:</b> ${cleanReferrer}
+⏱️ <b>Thời gian:</b> <code>${cleanTime}</code> (Giờ VN)
 ━━━━━━━━━━━━━━━━━━
 🛡️ <i>Thông báo riêng tư chỉ dành cho Quản trị viên HọcBài</i>`;
 
-  const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+  const url = getGatewayEndpoint(botToken);
 
   try {
-    const response = await fetch(url, {
+    let response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -284,7 +310,24 @@ export async function sendTelegramNotification(payload, isTest = false) {
       keepalive: true
     });
 
-    const resJson = await response.json();
+    let resJson = await response.json();
+
+    // Fallback: Nếu Telegram từ chối định dạng HTML vì ký tự đặc biệt, gửi lại dạng plain text
+    if (!resJson.ok && resJson.description?.includes('parse entities')) {
+      const plainText = messageText.replace(/<[^>]*>/g, '');
+      response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chatId,
+          text: plainText,
+          disable_web_page_preview: true
+        }),
+        keepalive: true
+      });
+      resJson = await response.json();
+    }
+
     return {
       success: resJson.ok === true,
       data: resJson,

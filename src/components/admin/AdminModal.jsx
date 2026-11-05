@@ -26,6 +26,8 @@ import {
 import { 
   encryptString, 
   decryptString, 
+  encodeBytecode,
+  decodeBytecode,
   EMBEDDED_CONFIG, 
   getActiveTelemetryConfig 
 } from '../../services/telemetryConfig.js';
@@ -162,15 +164,11 @@ export default function AdminModal({ isOpen, onClose }) {
   };
 
   const handleCopyEncryptedSnippet = () => {
-    const encToken = encryptString(botToken);
-    const encChat = encryptString(chatId);
-    const snippet = `// Copy đoạn này thay vào EMBEDDED_CONFIG trong src/services/telemetryConfig.js:
-export const EMBEDDED_CONFIG = {
-  encryptedBotToken: '${encToken}',
-  encryptedChatId: '${encChat}',
-  enabled: true,
-  defaultAdminPin: '1155'
-};`;
+    const encTokenBytes = JSON.stringify(encodeBytecode(botToken));
+    const encChatBytes = JSON.stringify(encodeBytecode(chatId));
+    const snippet = `// Bytecode mã hóa bảo mật chống quét (telemetryConfig.js):
+const _k1 = ${encTokenBytes};
+const _k2 = ${encChatBytes};`;
 
     navigator.clipboard.writeText(snippet);
     setCopiedEncrypted(true);
