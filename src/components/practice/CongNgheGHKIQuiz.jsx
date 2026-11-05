@@ -3,6 +3,7 @@ import MathRenderer from '../common/MathRenderer.jsx';
 import PrintView from '../print/PrintView.jsx';
 import Modal from '../common/Modal.jsx';
 import { scoreTrueFalseQuestion } from '../../services/practiceService.js';
+import { initTelemetry } from '../../services/telemetryService.js';
 import { 
   CheckCircle2, 
   XCircle, 
@@ -347,6 +348,20 @@ export default function CongNgheGHKIQuiz({
         : 'Công Nghệ 11';
       setShuffleNotice(`Đã xáo trộn ngẫu nhiên toàn bộ câu hỏi môn ${newSubjectName}`);
       setTimeout(() => setShuffleNotice(''), 2500);
+      initTelemetry(`Môn ${newSubjectName}`);
+    } else {
+      const subjectNameOnly = newSubId === 'sub_tinhoc11'
+        ? 'Tin Học 11'
+        : newSubId === 'sub_tienganh11'
+        ? 'Tiếng Anh 11'
+        : newSubId === 'sub_gdqp11'
+        ? 'GDQP&AN 11'
+        : newSubId === 'sub_dia11'
+        ? 'Địa Lí 11'
+        : newSubId === 'sub_su11'
+        ? 'Lịch Sử 11'
+        : 'Công Nghệ 11';
+      initTelemetry(`Môn ${subjectNameOnly}`);
     }
     setUserAnswers({});
     setLockedShortAnswers({});

@@ -278,11 +278,31 @@ export default function Header({
   theme, 
   toggleTheme, 
   questionCount = 0, 
-  examCount = 0 
+  examCount = 0,
+  onOpenAdmin
 }) {
   const [mounted, setMounted] = useState(false);
   const [isMoreMounted, setIsMoreMounted] = useState(false);
   const [isMoreAnimatingOut, setIsMoreAnimatingOut] = useState(false);
+
+  // Kích hoạt cổng Admin bí mật khi nhấp 5 lần liên tiếp vào Logo
+  const logoClickCountRef = useRef(0);
+  const logoClickTimerRef = useRef(null);
+
+  const handleLogoClick = () => {
+    setActiveTab('quiz');
+    logoClickCountRef.current += 1;
+    if (logoClickTimerRef.current) clearTimeout(logoClickTimerRef.current);
+
+    if (logoClickCountRef.current >= 5) {
+      logoClickCountRef.current = 0;
+      onOpenAdmin?.();
+    } else {
+      logoClickTimerRef.current = setTimeout(() => {
+        logoClickCountRef.current = 0;
+      }, 2500);
+    }
+  };
 
   const openMore = () => {
     setIsMoreAnimatingOut(false);
@@ -389,7 +409,7 @@ export default function Header({
             {/* Neumorphic Brand Logo */}
             <div 
               className="flex items-center gap-3 cursor-pointer select-none group" 
-              onClick={() => setActiveTab('quiz')}
+              onClick={handleLogoClick}
             >
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl neu-inset flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
                 <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-[#FF8800] fill-[#FF8800] drop-shadow-[0_2px_8px_rgba(255,136,0,0.4)]" />

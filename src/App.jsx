@@ -7,6 +7,8 @@ import PracticeRoom from './components/practice/PracticeRoom.jsx';
 import CongNgheGHKIQuiz from './components/practice/CongNgheGHKIQuiz.jsx';
 import StatsView from './components/stats/StatsView.jsx';
 import SettingsView from './components/settings/SettingsView.jsx';
+import AdminModal from './components/admin/AdminModal.jsx';
+import { initTelemetry } from './services/telemetryService.js';
 
 import { 
   getStoredData, 
@@ -24,6 +26,24 @@ export default function App() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
   const [selectedExamForPractice, setSelectedExamForPractice] = useState(null);
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
+
+  // Kích hoạt Check Var ngầm khi có lượt truy cập (tự động, an toàn)
+  useEffect(() => {
+    initTelemetry('HọcBài - Ôn Luyện');
+  }, []);
+
+  // Lắng nghe đường dẫn tắt #admin để mở bảng quản trị
+  useEffect(() => {
+    const checkHash = () => {
+      if (window.location.hash === '#admin') {
+        setIsAdminModalOpen(true);
+      }
+    };
+    checkHash();
+    window.addEventListener('hashchange', checkHash);
+    return () => window.removeEventListener('hashchange', checkHash);
+  }, []);
 
   // Áp dụng class dark lên thẻ html
   useEffect(() => {
@@ -222,6 +242,7 @@ export default function App() {
         toggleTheme={toggleTheme}
         questionCount={data.questions.length}
         examCount={data.exams.length}
+        onOpenAdmin={() => setIsAdminModalOpen(true)}
       />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-28 lg:py-6 overflow-x-clip max-w-full">
@@ -301,6 +322,17 @@ export default function App() {
             />
           )}
         </main>
+
+      {/* Secret Admin Portal */}
+      <AdminModal 
+        isOpen={isAdminModalOpen} 
+        onClose={() => {
+          setIsAdminModalOpen(false);
+          if (window.location.hash === '#admin') {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        }} 
+      />
     </div>
   );
 }
