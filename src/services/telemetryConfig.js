@@ -89,6 +89,16 @@ const _k1 = [124, 60, 246, 121, 44, 9, 39, 194, 197, 189, 124, 137, 212, 246, 23
 // Bytecode đã mã hóa ngầm của Chat ID
 const _k2 = [114, 53, 248, 119, 44, 14, 46, 193, 202, 176];
 
+// Bytecode đã mã hóa ngầm của mã PIN quản trị
+const _p0 = [116, 61, 251, 117];
+
+/**
+ * Lấy mã PIN quản trị mặc định (giải mã động trong RAM)
+ */
+export function getDefaultAdminPin() {
+  return decodeBytecode(_p0);
+}
+
 /**
  * Tái tạo URL endpoint khi gửi tin (hoàn toàn không có chuỗi URL lộ diện trong bundle)
  */
@@ -99,7 +109,9 @@ export function getGatewayEndpoint(token) {
 
 export const EMBEDDED_CONFIG = {
   enabled: true,
-  defaultAdminPin: '1155',
+  get defaultAdminPin() {
+    return decodeBytecode(_p0);
+  },
   // Helper giải mã trực tiếp khi cần
   getBakedCredentials: () => ({
     token: decodeBytecode(_k1),

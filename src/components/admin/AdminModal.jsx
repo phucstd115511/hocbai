@@ -49,6 +49,7 @@ export default function AdminModal({ isOpen, onClose }) {
   const [botToken, setBotToken] = useState('');
   const [chatId, setChatId] = useState('');
   const [showToken, setShowToken] = useState(false);
+  const [newPin, setNewPin] = useState('');
   const [isTrackingEnabled, setIsTrackingEnabled] = useState(true);
   const [testStatus, setTestStatus] = useState(null); // { type: 'success' | 'error', message: string }
   const [isTesting, setIsTesting] = useState(false);
@@ -100,6 +101,11 @@ export default function AdminModal({ isOpen, onClose }) {
       localStorage.setItem('hocbai_tele_enc_token', encToken);
       localStorage.setItem('hocbai_tele_enc_chat', encChat);
       localStorage.setItem('hocbai_tele_enabled', String(isTrackingEnabled));
+
+      if (newPin.trim()) {
+        localStorage.setItem('hocbai_admin_pin', newPin.trim());
+        setNewPin('');
+      }
 
       setTestStatus({
         type: 'success',
@@ -248,10 +254,10 @@ const _k2 = ${encChatBytes};`;
                 <input
                   type="password"
                   inputMode="numeric"
-                  maxLength={6}
+                  maxLength={10}
                   value={pin}
                   onChange={(e) => setPin(e.target.value)}
-                  placeholder="Nhập mã PIN (Mặc định: 1155)"
+                  placeholder="Nhập mã PIN bảo mật"
                   className="w-full text-center text-lg tracking-widest font-mono font-bold rounded-2xl neu-inset bg-transparent px-4 py-3 text-[#2D3748] dark:text-white focus:outline-none focus:ring-2 focus:ring-[#FF8800]/50 placeholder:text-xs placeholder:tracking-normal placeholder:font-sans"
                   autoFocus
                 />
@@ -349,6 +355,22 @@ const _k2 = ${encChatBytes};`;
                       value={chatId}
                       onChange={(e) => setChatId(e.target.value)}
                       placeholder="Ví dụ: 624891234 hoặc -100..."
+                      className="w-full text-xs font-mono font-medium rounded-2xl neu-inset bg-transparent px-3.5 py-2.5 text-[#2D3748] dark:text-white focus:outline-none focus:ring-1 focus:ring-[#FF8800]/50"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-[11px] font-display font-bold uppercase tracking-wider text-[#718096] dark:text-[#94A3B8] mb-1.5 flex items-center justify-between">
+                      <span>Đổi mã PIN Quản Trị</span>
+                      <span className="text-[10px] text-[#718096] dark:text-[#94A3B8]">Để trống nếu giữ nguyên</span>
+                    </label>
+                    <input
+                      type="password"
+                      inputMode="numeric"
+                      maxLength={10}
+                      value={newPin}
+                      onChange={(e) => setNewPin(e.target.value)}
+                      placeholder="Nhập mã PIN mới (nếu muốn đổi)"
                       className="w-full text-xs font-mono font-medium rounded-2xl neu-inset bg-transparent px-3.5 py-2.5 text-[#2D3748] dark:text-white focus:outline-none focus:ring-1 focus:ring-[#FF8800]/50"
                     />
                   </div>
