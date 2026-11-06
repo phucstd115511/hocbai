@@ -36,6 +36,7 @@ import {
   getVisitorLogs, 
   clearVisitorLogs, 
   getDeviceDetails, 
+  getFullDeviceDetails,
   fetchIPDetails 
 } from '../../services/telemetryService.js';
 
@@ -137,7 +138,7 @@ export default function AdminModal({ isOpen, onClose }) {
     localStorage.setItem('hocbai_tele_enc_chat', encryptString(chatId));
 
     try {
-      const deviceDetails = getDeviceDetails();
+      const deviceDetails = await getFullDeviceDetails();
       const ipDetails = await fetchIPDetails();
 
       const testPayload = {
