@@ -737,3 +737,136 @@ body {
 .neu-popup-exit {
   animation: popup-spring-exit 240ms cubic-bezier(0.4, 0, 1, 1) forwards;
 }
+
+
+/* ==========================================================================
+   QUIZIZZ THEME & VIBRANT GAMEPLAY STYLES
+   Mô phỏng màu tím huyền ảo và cảm giác tương tác tactile sống động của Quizizz
+   ========================================================================== */
+
+html.quizizz body {
+  background-color: #24041e !important;
+  background-image: 
+    radial-gradient(circle at 50% 10%, #4a0937 0%, #2b0422 50%, #170114 100%),
+    radial-gradient(circle at 10% 85%, rgba(155, 101, 195, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 90% 65%, rgba(236, 98, 25, 0.08) 0%, transparent 45%) !important;
+  background-attachment: fixed !important;
+  color: #f1e9f8 !important;
+}
+
+html.quizizz .bg-\[\#EBECF0\],
+html.quizizz .dark\:bg-\[\#1A1E24\],
+html.quizizz .neu-flat {
+  background-color: #24041e !important;
+}
+
+html.quizizz .neu-card {
+  background-color: rgba(43, 7, 36, 0.85) !important;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+html.quizizz .neu-card:hover {
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.75), 0 0 25px rgba(168, 85, 247, 0.22) !important;
+}
+
+html.quizizz .neu-inset {
+  background-color: #190215 !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.75), inset -2px -2px 6px rgba(255, 255, 255, 0.03) !important;
+}
+
+html.quizizz .neu-inset-sm {
+  background-color: #190215 !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.65) !important;
+}
+
+html.quizizz .neu-extruded,
+html.quizizz .neu-extruded-sm,
+html.quizizz .neu-extruded-lg {
+  background-color: #35082e !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+html.quizizz .neu-btn {
+  background-color: #35082e !important;
+  color: #f5d0fe !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+html.quizizz .neu-btn:hover {
+  background-color: #4b0d41 !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55), 0 0 16px rgba(192, 132, 252, 0.35) !important;
+  border-color: rgba(192, 132, 252, 0.4) !important;
+}
+
+html.quizizz .neu-btn:active {
+  background-color: #22031c !important;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+html.quizizz .neu-btn-active {
+  background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
+  border: 1px solid rgba(216, 180, 254, 0.5) !important;
+}
+
+html.quizizz .neu-btn-primary {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.45) !important;
+  border: none !important;
+}
+
+html.quizizz header,
+html.quizizz nav.neu-mobile-bottom-nav {
+  background-color: rgba(36, 4, 30, 0.9) !important;
+  backdrop-filter: blur(20px);
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+html.quizizz .neu-mobile-popup {
+  background-color: rgba(36, 4, 30, 0.95) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+html.quizizz ::-webkit-scrollbar-track {
+  background: #190215;
+}
+html.quizizz ::-webkit-scrollbar-thumb {
+  background: #4b0d41;
+  border: 2px solid #190215;
+}
+html.quizizz ::-webkit-scrollbar-thumb:hover {
+  background: #731564;
+}
+
+/* Quizizz 3D Tactile Option Cards */
+.quizizz-option-card {
+  position: relative;
+  transition: transform 0.15s cubic-bezier(0.2, 0, 0.2, 1),
+              box-shadow 0.15s cubic-bezier(0.2, 0, 0.2, 1),
+              filter 0.15s ease,
+              border-bottom-width 0.1s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.quizizz-option-card:hover:not(:disabled) {
+  filter: brightness(1.06);
+  transform: translateY(-2px);
+}
+
+.quizizz-option-card:active:not(:disabled) {
+  transform: translateY(3px) !important;
+  border-bottom-width: 2px !important;
+  margin-top: 3px;
+  filter: brightness(0.96);
+}

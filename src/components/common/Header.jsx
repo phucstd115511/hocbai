@@ -14,6 +14,7 @@ import {
   Shield,
   Wrench,
   Sparkles,
+  Gamepad2,
   Menu,
   X
 } from 'lucide-react';
@@ -501,13 +502,21 @@ export default function Header({
             <div className="flex items-center gap-3">
               <button
                 onClick={toggleTheme}
-                title={theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối'}
-                className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl neu-btn flex items-center justify-center text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] dark:hover:text-[#FF8800] active:scale-95 transition-all duration-200 cursor-pointer group"
+                title={
+                  theme === 'quizizz'
+                    ? 'Chế độ Quizizz (Game) • Bấm để chuyển sang chế độ Sáng'
+                    : theme === 'dark'
+                    ? 'Chế độ Tối • Bấm để chuyển sang chế độ Quizizz (Game)'
+                    : 'Chế độ Sáng • Bấm để chuyển sang chế độ Tối'
+                }
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl neu-btn flex items-center justify-center text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] dark:hover:text-[#FF8800] active:scale-95 transition-all duration-200 cursor-pointer group relative overflow-hidden"
               >
-                {theme === 'dark' ? (
-                  <Sun className="w-5 h-5 text-[#FF8800] drop-shadow-[0_0_8px_rgba(255,136,0,0.5)] transition-transform duration-300 group-hover:rotate-45" />
+                {theme === 'quizizz' ? (
+                  <Gamepad2 className="w-5 h-5 text-[#C084FC] drop-shadow-[0_0_10px_rgba(192,132,252,0.85)] transition-transform duration-300 group-hover:scale-110" />
+                ) : theme === 'dark' ? (
+                  <Moon className="w-5 h-5 text-indigo-400 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)] transition-transform duration-300 group-hover:-rotate-12" />
                 ) : (
-                  <Moon className="w-5 h-5 text-[#4A5568] transition-transform duration-300 group-hover:-rotate-12" />
+                  <Sun className="w-5 h-5 text-[#FF8800] drop-shadow-[0_0_8px_rgba(255,136,0,0.5)] transition-transform duration-300 group-hover:rotate-45" />
                 )}
               </button>
             </div>

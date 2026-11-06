@@ -45,17 +45,25 @@ export default function App() {
     return () => window.removeEventListener('hashchange', checkHash);
   }, []);
 
-  // Áp dụng class dark lên thẻ html
+  // Áp dụng class theme (light / dark / quizizz) lên thẻ html
   useEffect(() => {
+    document.documentElement.classList.remove('dark', 'quizizz');
     if (theme === 'dark') {
       document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    } else if (theme === 'quizizz') {
+      document.documentElement.classList.add('dark', 'quizizz');
     }
   }, [theme]);
 
-  const toggleTheme = (event) => {
-    const next = theme === 'dark' ? 'light' : 'dark';
+  const toggleTheme = (event, targetTheme = null) => {
+    let next = 'light';
+    if (targetTheme) {
+      next = targetTheme;
+    } else {
+      if (theme === 'light') next = 'dark';
+      else if (theme === 'dark') next = 'quizizz';
+      else next = 'light';
+    }
 
     // Tính toán tọa độ tâm xuất phát từ icon/nút click
     let x = window.innerWidth - 40;
@@ -85,10 +93,11 @@ export default function App() {
         const updatedSettings = { ...data.settings, theme: next };
         saveSettings(updatedSettings);
         setData(prev => ({ ...prev, settings: updatedSettings }));
+        document.documentElement.classList.remove('dark', 'quizizz');
         if (next === 'dark') {
           document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
+        } else if (next === 'quizizz') {
+          document.documentElement.classList.add('dark', 'quizizz');
         }
       });
 
@@ -252,6 +261,7 @@ export default function App() {
               allQuestions={data.questions}
               subjects={data.subjects}
               onSaveAttempt={handleSaveAttempt}
+              theme={theme}
             />
           )}
 

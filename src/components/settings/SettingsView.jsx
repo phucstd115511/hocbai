@@ -14,6 +14,7 @@ import {
   AlertCircle, 
   Sun, 
   Moon, 
+  Gamepad2,
   ShieldCheck,
   Cpu
 } from 'lucide-react';
@@ -128,35 +129,47 @@ export default function SettingsView({
             <div className="relative flex neu-inset p-1 rounded-2xl select-none">
               {/* Sliding Pill Indicator */}
               <div 
-                className="!absolute top-1 bottom-1 left-1 w-[calc(50%-4px)] rounded-xl neu-btn neu-water-surface neu-pill-transition pointer-events-none"
+                className="!absolute top-1 bottom-1 left-1 w-[calc(33.333%-3px)] rounded-xl neu-btn neu-water-surface neu-pill-transition pointer-events-none"
                 style={{
                   position: 'absolute',
-                  transform: `translateX(${theme === 'dark' ? '100%' : '0%'})`,
+                  transform: `translateX(${theme === 'light' ? '0%' : theme === 'dark' ? '100%' : '200%'})`,
                 }}
               />
               <button
                 type="button"
-                onClick={(e) => { if (theme !== 'light') toggleTheme(e); }}
-                className={`relative z-10 flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition-colors duration-200 ${
+                onClick={(e) => { if (theme !== 'light') toggleTheme(e, 'light'); }}
+                className={`relative z-10 flex-1 py-2 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs font-display font-bold flex items-center justify-center gap-1.5 cursor-pointer transition-colors duration-200 ${
                   theme === 'light'
                     ? 'text-[#FF8800] font-extrabold'
                     : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
-                <Sun className={`w-4 h-4 transition-transform duration-300 ${theme === 'light' ? 'text-amber-500 scale-110 drop-shadow-[0_0_8px_rgba(255,136,0,0.5)]' : 'text-amber-500/70'}`} />
-                <span>Sáng (Light)</span>
+                <Sun className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 ${theme === 'light' ? 'text-amber-500 scale-110 drop-shadow-[0_0_8px_rgba(255,136,0,0.5)]' : 'text-amber-500/70'}`} />
+                <span>Sáng</span>
               </button>
               <button
                 type="button"
-                onClick={(e) => { if (theme !== 'dark') toggleTheme(e); }}
-                className={`relative z-10 flex-1 py-2.5 px-3 rounded-xl text-xs font-display font-bold flex items-center justify-center gap-2 cursor-pointer transition-colors duration-200 ${
+                onClick={(e) => { if (theme !== 'dark') toggleTheme(e, 'dark'); }}
+                className={`relative z-10 flex-1 py-2 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs font-display font-bold flex items-center justify-center gap-1.5 cursor-pointer transition-colors duration-200 ${
                   theme === 'dark'
                     ? 'text-[#FF8800] font-extrabold'
                     : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
                 }`}
               >
-                <Moon className={`w-4 h-4 transition-transform duration-300 ${theme === 'dark' ? 'text-indigo-400 scale-110 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]' : 'text-indigo-400/70'}`} />
-                <span>Tối (Dark)</span>
+                <Moon className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 ${theme === 'dark' ? 'text-indigo-400 scale-110 drop-shadow-[0_0_8px_rgba(99,102,241,0.5)]' : 'text-indigo-400/70'}`} />
+                <span>Tối</span>
+              </button>
+              <button
+                type="button"
+                onClick={(e) => { if (theme !== 'quizizz') toggleTheme(e, 'quizizz'); }}
+                className={`relative z-10 flex-1 py-2 px-1.5 sm:px-2 rounded-xl text-[11px] sm:text-xs font-display font-bold flex items-center justify-center gap-1.5 cursor-pointer transition-colors duration-200 ${
+                  theme === 'quizizz'
+                    ? 'text-[#C084FC] font-extrabold'
+                    : 'text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+                }`}
+              >
+                <Gamepad2 className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300 ${theme === 'quizizz' ? 'text-[#C084FC] scale-110 drop-shadow-[0_0_8px_rgba(192,132,252,0.8)]' : 'text-[#C084FC]/70'}`} />
+                <span>Quizizz</span>
               </button>
             </div>
           </div>

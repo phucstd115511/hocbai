@@ -4,6 +4,7 @@ import PrintView from '../print/PrintView.jsx';
 import Modal from '../common/Modal.jsx';
 import { scoreTrueFalseQuestion } from '../../services/practiceService.js';
 import { initTelemetry } from '../../services/telemetryService.js';
+import { getQuestionQuizizzColors } from '../../utils/quizizzColors.js';
 import { 
   CheckCircle2, 
   XCircle, 
@@ -17,20 +18,22 @@ import {
   EyeOff, 
   BookOpen, 
   ChevronLeft, 
-  ChevronRight,
-  ListOrdered,
-  LayoutList,
-  Sparkles,
-  Shield,
-  Wrench,
-  Globe,
-  Grid,
-  Languages,
-  Monitor,
-  ChevronDown,
-  AlertTriangle,
-  Trophy,
-  Shuffle
+  ChevronRight, 
+  ListOrdered, 
+  LayoutList, 
+  Sparkles, 
+  Shield, 
+  Wrench, 
+  Globe, 
+  Grid, 
+  Languages, 
+  Monitor, 
+  ChevronDown, 
+  AlertTriangle, 
+  Trophy, 
+  Shuffle,
+  Palette,
+  Gamepad2
 } from 'lucide-react';
 
 export default function CongNgheGHKIQuiz({
@@ -38,11 +41,22 @@ export default function CongNgheGHKIQuiz({
   subjects = [],
   onSaveAttempt,
   initialSubjectId = 'sub_congnghe_ghki',
-  onSwitchSubject
+  onSwitchSubject,
+  theme = 'light'
 }) {
   const [activeSubjectId, setActiveSubjectId] = useState(initialSubjectId);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [displayMode, setDisplayMode] = useState(() => (typeof window !== 'undefined' && window.innerWidth < 768 ? 'single' : 'scroll'));
+  const [quizizzColorMode, setQuizizzColorMode] = useState(() => {
+    try {
+      const saved = localStorage.getItem('hocbai_quizizz_color_mode');
+      return saved === null ? true : saved === 'true';
+    } catch {
+      return true;
+    }
+  });
+
+  const isQuizizzActive = theme === 'quizizz' || quizizzColorMode;
   const [showPalette, setShowPalette] = useState(false);
   const [userAnswers, setUserAnswers] = useState({});
   const [lockedShortAnswers, setLockedShortAnswers] = useState({});
@@ -956,6 +970,27 @@ export default function CongNgheGHKIQuiz({
               <RotateCcw className="w-3.5 h-3.5" />
               <span>Làm Lại</span>
             </button>
+
+            {/* Nút Bật / Tắt Màu Quizizz Ngẫu Nhiên */}
+            <button
+              type="button"
+              onClick={() => {
+                const next = !quizizzColorMode;
+                setQuizizzColorMode(next);
+                try {
+                  localStorage.setItem('hocbai_quizizz_color_mode', String(next));
+                } catch {}
+              }}
+              className={`px-3 sm:px-3.5 py-2 rounded-2xl text-xs font-display font-bold flex items-center gap-1.5 cursor-pointer transition select-none ${
+                isQuizizzActive
+                  ? 'neu-inset text-[#C084FC] ring-1 ring-[#C084FC]/40 font-extrabold'
+                  : 'neu-btn text-[#718096] dark:text-[#94A3B8] hover:text-[#2D3748] dark:hover:text-white'
+              }`}
+              title={isQuizizzActive ? 'Đang bật màu sắc Quizizz ngẫu nhiên mỗi câu hỏi. Bấm để tắt' : 'Đang tắt màu sắc Quizizz. Bấm để bật'}
+            >
+              <Palette className={`w-3.5 h-3.5 ${isQuizizzActive ? 'text-[#C084FC]' : ''}`} />
+              <span>{isQuizizzActive ? 'Màu Quizizz: BẬT' : 'Màu Quizizz: TẮT'}</span>
+            </button>
           </div>
         </div>
       </div>
@@ -1197,68 +1232,142 @@ export default function CongNgheGHKIQuiz({
                     </div>
 
                     {/* Options */}
-                    <div className="space-y-3">
-                      {q.options.map((opt, optIdx) => {
-                        const letter = ['A', 'B', 'C', 'D'][optIdx];
-                        const isChosen = userAnswers[q.id] === optIdx;
-                        const isCorrect = optIdx === q.correct;
+                    {isQuizizzActive ? (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+                        {q.options.map((opt, optIdx) => {
+                          const letter = ['A', 'B', 'C', 'D'][optIdx];
+                          const isChosen = userAnswers[q.id] === optIdx;
+                          const isCorrect = optIdx === q.correct;
+                          const isLocked = userAnswers[q.id] !== undefined;
+                          const qColors = getQuestionQuizizzColors(q.id, shuffleSeed);
+                          const palette = qColors[optIdx % qColors.length];
 
-                        let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] neu-water-hover active:neu-inset';
-                        let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
+                          let ringAndEffects = '';
+                          let statusBadge = null;
 
-                        if (isChosen) {
-                          if (isCorrect) {
+                          if (isChosen) {
+                            if (isCorrect) {
+                              ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_20px_rgba(52,211,153,0.7)] z-10 scale-[1.01]';
+                              statusBadge = (
+                                <span className="text-[10px] font-display font-black bg-emerald-500 text-white px-2 py-0.5 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider shrink-0 animate-bounce">
+                                  <CheckCircle2 className="w-3 h-3" /> Đúng (+1đ)
+                                </span>
+                              );
+                            } else {
+                              ringAndEffects = 'ring-4 ring-rose-400 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] shadow-[0_0_20px_rgba(244,63,94,0.7)] z-10';
+                              statusBadge = (
+                                <span className="text-[10px] font-display font-black bg-rose-500 text-white px-2 py-0.5 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider shrink-0">
+                                  <XCircle className="w-3 h-3" /> Sai rồi
+                                </span>
+                              );
+                            }
+                          } else if (isRevealed && isCorrect) {
+                            ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_20px_rgba(52,211,153,0.7)] z-10';
+                            statusBadge = (
+                              <span className="text-[10px] font-display font-black bg-emerald-500 text-white px-2 py-0.5 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider shrink-0">
+                                <CheckCircle2 className="w-3 h-3" /> Đáp án đúng
+                              </span>
+                            );
+                          } else if (isLocked && isCorrect) {
+                            ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_20px_rgba(52,211,153,0.7)] z-10';
+                            statusBadge = (
+                              <span className="text-[10px] font-display font-black bg-emerald-500 text-white px-2 py-0.5 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider shrink-0">
+                                <CheckCircle2 className="w-3 h-3" /> Đáp án đúng
+                              </span>
+                            );
+                          } else if (isLocked) {
+                            ringAndEffects = 'opacity-65 filter saturate-75';
+                          }
+
+                          return (
+                            <button
+                              key={optIdx}
+                              type="button"
+                              disabled={isLocked}
+                              onClick={() => handleSelectMCQ(q.id, optIdx)}
+                              style={{
+                                backgroundColor: palette.bg,
+                                borderBottomColor: palette.border,
+                              }}
+                              className={`quizizz-option-card w-full flex items-start gap-3 p-3.5 sm:p-4 rounded-2xl border-b-[4px] sm:border-b-[5px] text-left text-white transition-all duration-200 min-h-[58px] shadow-md ${
+                                isLocked ? 'cursor-not-allowed' : 'cursor-pointer active:scale-[0.99]'
+                              } ${isChosen ? 'neu-option-pop ' : ''}${ringAndEffects}`}
+                            >
+                              <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-black/25 backdrop-blur-sm flex items-center justify-center font-display font-black text-white text-xs shrink-0 mt-0.5 shadow-inner">
+                                {letter}
+                              </span>
+                              <span className="flex-1 mt-0.5 text-xs sm:text-sm font-bold text-white leading-relaxed drop-shadow-sm">
+                                <MathRenderer text={opt} />
+                              </span>
+                              {statusBadge}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="space-y-3">
+                        {q.options.map((opt, optIdx) => {
+                          const letter = ['A', 'B', 'C', 'D'][optIdx];
+                          const isChosen = userAnswers[q.id] === optIdx;
+                          const isCorrect = optIdx === q.correct;
+
+                          let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] neu-water-hover active:neu-inset';
+                          let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
+
+                          if (isChosen) {
+                            if (isCorrect) {
+                              itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
+                              badgeStyle = 'bg-emerald-500 text-white';
+                            } else {
+                              itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24]';
+                              badgeStyle = 'bg-rose-500 text-white';
+                            }
+                          } else if (isRevealed && isCorrect) {
                             itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
                             badgeStyle = 'bg-emerald-500 text-white';
-                          } else {
-                            itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24]';
-                            badgeStyle = 'bg-rose-500 text-white';
+                          } else if (userAnswers[q.id] !== undefined && isCorrect) {
+                            itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
+                            badgeStyle = 'bg-emerald-500 text-white';
                           }
-                        } else if (isRevealed && isCorrect) {
-                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
-                          badgeStyle = 'bg-emerald-500 text-white';
-                        } else if (userAnswers[q.id] !== undefined && isCorrect) {
-                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-bold';
-                          badgeStyle = 'bg-emerald-500 text-white';
-                        }
 
-                        const isLocked = userAnswers[q.id] !== undefined;
+                          const isLocked = userAnswers[q.id] !== undefined;
 
-                        return (
-                          <button
-                            key={optIdx}
-                            type="button"
-                            disabled={isLocked}
-                            onClick={() => handleSelectMCQ(q.id, optIdx)}
-                            className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
-                              isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
-                            } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
-                          >
-                            <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
-                              {letter}
-                            </span>
-                            <span className="flex-1 mt-1 leading-relaxed">
-                              <MathRenderer text={opt} />
-                            </span>
-                            {isChosen && isCorrect && (
-                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                                <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
+                          return (
+                            <button
+                              key={optIdx}
+                              type="button"
+                              disabled={isLocked}
+                              onClick={() => handleSelectMCQ(q.id, optIdx)}
+                              className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
+                                isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
+                              } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
+                            >
+                              <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
+                                {letter}
                               </span>
-                            )}
-                            {isChosen && !isCorrect && (
-                              <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                                <XCircle className="w-4 h-4" /> Sai rồi
+                              <span className="flex-1 mt-1 leading-relaxed">
+                                <MathRenderer text={opt} />
                               </span>
-                            )}
-                            {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
-                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                                <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
-                              </span>
-                            )}
-                          </button>
-                        );
-                      })}
-                    </div>
+                              {isChosen && isCorrect && (
+                                <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                  <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
+                                </span>
+                              )}
+                              {isChosen && !isCorrect && (
+                                <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                  <XCircle className="w-4 h-4" /> Sai rồi
+                                </span>
+                              )}
+                              {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
+                                <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                  <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
+                                </span>
+                              )}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
 
                     {/* Explanation */}
                     {(isRevealed || userAnswers[q.id] !== undefined) && q.explanation && (
@@ -1622,6 +1731,27 @@ export default function CongNgheGHKIQuiz({
                       <span className="text-[11px] hidden xs:inline">{autoAdvance ? 'Tự nhảy: BẬT' : 'Tự nhảy: TẮT'}</span>
                     </button>
 
+                    {/* Nút Toggle Màu Quizizz Trong Single Mode */}
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const next = !quizizzColorMode;
+                        setQuizizzColorMode(next);
+                        try {
+                          localStorage.setItem('hocbai_quizizz_color_mode', String(next));
+                        } catch {}
+                      }}
+                      title={isQuizizzActive ? 'Đang bật màu sắc Quizizz ngẫu nhiên. Bấm để tắt' : 'Đang tắt màu sắc Quizizz. Bấm để bật'}
+                      className={`px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-bold flex items-center gap-1 sm:gap-1.5 transition cursor-pointer select-none ${
+                        isQuizizzActive 
+                          ? 'neu-inset-sm text-[#C084FC] ring-1 ring-[#C084FC]/40' 
+                          : 'neu-btn text-[#718096] dark:text-[#94A3B8]'
+                      }`}
+                    >
+                      <Palette className="w-3.5 h-3.5 text-[#C084FC]" />
+                      <span className="text-[11px] hidden xs:inline">{isQuizizzActive ? 'Màu: BẬT' : 'Màu: TẮT'}</span>
+                    </button>
+
                     {!isSubmitted && (
                       <button
                         onClick={() => {
@@ -1638,72 +1768,152 @@ export default function CongNgheGHKIQuiz({
                 </div>
 
                 {/* Stem */}
-                <div className="text-sm sm:text-base font-medium text-[#2D3748] dark:text-white leading-relaxed">
+                <div className={`p-5 sm:p-6 rounded-2xl text-sm sm:text-base lg:text-lg font-medium leading-relaxed ${
+                  isQuizizzActive 
+                    ? 'bg-black/35 border border-white/10 text-white shadow-inner' 
+                    : 'text-[#2D3748] dark:text-white'
+                }`}>
                   <MathRenderer text={q.stem} />
                 </div>
 
                 {/* Options / Inputs */}
                 {q.type === 'mcq' ? (
-                  <div className="space-y-3">
-                    {q.options.map((opt, optIdx) => {
-                      const letter = ['A', 'B', 'C', 'D'][optIdx];
-                      const isChosen = userAnswers[q.id] === optIdx;
-                      const isCorrect = optIdx === q.correct;
+                  isQuizizzActive ? (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
+                      {q.options.map((opt, optIdx) => {
+                        const letter = ['A', 'B', 'C', 'D'][optIdx];
+                        const isChosen = userAnswers[q.id] === optIdx;
+                        const isCorrect = optIdx === q.correct;
+                        const isLocked = userAnswers[q.id] !== undefined;
+                        const qColors = getQuestionQuizizzColors(q.id, shuffleSeed);
+                        const palette = qColors[optIdx % qColors.length];
 
-                      let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] neu-water-hover active:neu-inset';
-                      let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
+                        let ringAndEffects = '';
+                        let statusBadge = null;
 
-                      if (isChosen) {
-                        if (isCorrect) {
+                        if (isChosen) {
+                          if (isCorrect) {
+                            ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_25px_rgba(52,211,153,0.8)] z-10 scale-[1.02]';
+                            statusBadge = (
+                              <span className="text-[10px] sm:text-[11px] font-display font-black bg-emerald-500 text-white px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider animate-bounce">
+                                <CheckCircle2 className="w-3.5 h-3.5" /> Đúng (+1đ)
+                              </span>
+                            );
+                          } else {
+                            ringAndEffects = 'ring-4 ring-rose-400 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] shadow-[0_0_25px_rgba(244,63,94,0.8)] z-10';
+                            statusBadge = (
+                              <span className="text-[10px] sm:text-[11px] font-display font-black bg-rose-500 text-white px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider">
+                                <XCircle className="w-3.5 h-3.5" /> Sai rồi
+                              </span>
+                            );
+                          }
+                        } else if (isRevealed && isCorrect) {
+                          ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_25px_rgba(52,211,153,0.8)] z-10';
+                          statusBadge = (
+                            <span className="text-[10px] sm:text-[11px] font-display font-black bg-emerald-500 text-white px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider">
+                              <CheckCircle2 className="w-3.5 h-3.5" /> Đáp án đúng
+                            </span>
+                          );
+                        } else if (isLocked && isCorrect) {
+                          ringAndEffects = 'ring-4 ring-emerald-300 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] font-extrabold shadow-[0_0_25px_rgba(52,211,153,0.8)] z-10';
+                          statusBadge = (
+                            <span className="text-[10px] sm:text-[11px] font-display font-black bg-emerald-500 text-white px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full shadow-md flex items-center gap-1 uppercase tracking-wider">
+                              <CheckCircle2 className="w-3.5 h-3.5" /> Đáp án đúng
+                            </span>
+                          );
+                        } else if (isLocked) {
+                          ringAndEffects = 'opacity-60 saturate-75';
+                        }
+
+                        return (
+                          <button
+                            key={optIdx}
+                            type="button"
+                            disabled={isLocked}
+                            onClick={() => handleSelectMCQ(q.id, optIdx)}
+                            style={{
+                              backgroundColor: palette.bg,
+                              borderBottomColor: palette.border,
+                            }}
+                            className={`quizizz-option-card w-full flex flex-col justify-between p-4 sm:p-5 lg:p-6 rounded-2xl sm:rounded-3xl border-b-[5px] sm:border-b-[6px] text-left text-white transition-all duration-200 min-h-[120px] sm:min-h-[160px] lg:min-h-[200px] shadow-lg ${
+                              isLocked ? 'cursor-not-allowed' : 'cursor-pointer active:scale-[0.99]'
+                            } ${isChosen ? 'neu-option-pop ' : ''}${ringAndEffects}`}
+                          >
+                            <div className="flex items-center justify-between w-full mb-3">
+                              <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-black/25 backdrop-blur-sm flex items-center justify-center font-display font-black text-white text-xs sm:text-sm shrink-0 shadow-inner">
+                                {letter}
+                              </span>
+                              {statusBadge}
+                            </div>
+                            <div className="flex-1 flex items-center justify-start text-xs sm:text-sm lg:text-base font-bold text-white leading-relaxed drop-shadow-sm">
+                              <MathRenderer text={opt} />
+                            </div>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div className="space-y-3">
+                      {q.options.map((opt, optIdx) => {
+                        const letter = ['A', 'B', 'C', 'D'][optIdx];
+                        const isChosen = userAnswers[q.id] === optIdx;
+                        const isCorrect = optIdx === q.correct;
+
+                        let itemStyle = 'neu-extruded text-[#4A5568] dark:text-[#E2E8F0] neu-water-hover active:neu-inset';
+                        let badgeStyle = 'neu-inset-sm text-[#718096] dark:text-[#94A3B8]';
+
+                        if (isChosen) {
+                          if (isCorrect) {
+                            itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold';
+                            badgeStyle = 'bg-emerald-500 text-white';
+                          } else {
+                            itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500';
+                            badgeStyle = 'bg-rose-500 text-white';
+                          }
+                        } else if (isRevealed && isCorrect) {
                           itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold';
                           badgeStyle = 'bg-emerald-500 text-white';
-                        } else {
-                          itemStyle = 'neu-inset text-rose-800 dark:text-rose-300 ring-2 ring-rose-500';
-                          badgeStyle = 'bg-rose-500 text-white';
+                        } else if (userAnswers[q.id] !== undefined && isCorrect) {
+                          itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 font-bold';
+                          badgeStyle = 'bg-emerald-500 text-white';
                         }
-                      } else if (isRevealed && isCorrect) {
-                        itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500 font-bold';
-                        badgeStyle = 'bg-emerald-500 text-white';
-                      } else if (userAnswers[q.id] !== undefined && isCorrect) {
-                        itemStyle = 'neu-inset text-emerald-800 dark:text-emerald-300 ring-2 ring-emerald-500/70 font-bold';
-                        badgeStyle = 'bg-emerald-500 text-white';
-                      }
 
-                      const isLocked = userAnswers[q.id] !== undefined;
+                        const isLocked = userAnswers[q.id] !== undefined;
 
-                      return (
-                        <button
-                          key={optIdx}
-                          type="button"
-                          disabled={isLocked}
-                          onClick={() => handleSelectMCQ(q.id, optIdx)}
-                          className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
-                            isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
-                          } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
-                        >
-                          <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
-                            {letter}
-                          </span>
-                          <span className="flex-1 mt-1 leading-relaxed"><MathRenderer text={opt} /></span>
-                          {isChosen && isCorrect && (
-                            <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                              <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
+                        return (
+                          <button
+                            key={optIdx}
+                            type="button"
+                            disabled={isLocked}
+                            onClick={() => handleSelectMCQ(q.id, optIdx)}
+                            className={`w-full flex items-start gap-3.5 p-4 rounded-2xl text-xs sm:text-sm text-left transition-[transform,background-color,border-color,box-shadow] duration-200 ${
+                              isLocked ? 'cursor-not-allowed opacity-95' : 'cursor-pointer active:scale-[0.99]'
+                            } ${isChosen ? 'neu-option-pop ' : ''}${itemStyle}`}
+                          >
+                            <span className={`w-8 h-8 rounded-xl flex items-center justify-center font-display font-extrabold text-xs shrink-0 mt-0.5 ${badgeStyle}`}>
+                              {letter}
                             </span>
-                          )}
-                          {isChosen && !isCorrect && (
-                            <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                              <XCircle className="w-4 h-4" /> Sai rồi
-                            </span>
-                          )}
-                          {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
-                            <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
-                              <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
-                            </span>
-                          )}
-                        </button>
-                      );
-                    })}
-                  </div>
+                            <span className="flex-1 mt-1 leading-relaxed"><MathRenderer text={opt} /></span>
+                            {isChosen && isCorrect && (
+                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                <CheckCircle2 className="w-4 h-4" /> Đúng (+1đ)
+                              </span>
+                            )}
+                            {isChosen && !isCorrect && (
+                              <span className="text-[11px] font-display font-extrabold text-rose-600 dark:text-rose-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                <XCircle className="w-4 h-4" /> Sai rồi
+                              </span>
+                            )}
+                            {!isChosen && userAnswers[q.id] !== undefined && isCorrect && (
+                              <span className="text-[11px] font-display font-extrabold text-emerald-700 dark:text-emerald-400 shrink-0 mt-1 flex items-center gap-1 uppercase">
+                                <CheckCircle2 className="w-4 h-4" /> Đáp án đúng
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )
                 ) : q.type === 'truefalse' ? (
                   <div className="space-y-3">
                     {q.statements.map(stmt => {
