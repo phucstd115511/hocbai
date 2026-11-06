@@ -757,6 +757,119 @@ export default function CongNgheGHKIQuiz({
     }
   };
 
+  // Render phát biểu a, b, c, d của câu hỏi Đúng/Sai với hiệu ứng phóng to đáp án đúng trực quan, loại bỏ rối mắt
+  const renderTFStatement = (q, stmt, isRevealed) => {
+    const userVal = userAnswers[q.id]?.[stmt.label];
+    const isAnsweredThisStmt = userVal !== undefined;
+    const isCorrect = isAnsweredThisStmt ? userVal === stmt.answer : null;
+    const showFeedback = isSubmitted || isRevealed || isAnsweredThisStmt;
+
+    // Render nút Đúng hoặc Sai
+    const renderTFBtn = (isTrueBtn) => {
+      const isThisCorrect = stmt.answer === isTrueBtn;
+      const isThisUserChoice = userVal === isTrueBtn;
+      const label = isTrueBtn ? 'Đúng' : 'Sai';
+
+      // 1. Khi chưa làm: Nút to, sạch sẽ, hover chuyển màu mượt mà
+      if (!showFeedback) {
+        return (
+          <button
+            key={isTrueBtn ? 'btn-true' : 'btn-false'}
+            type="button"
+            onClick={() => handleSelectTF(q.id, stmt.label, isTrueBtn)}
+            className="min-w-[76px] sm:min-w-[88px] px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-2xl text-xs sm:text-sm font-display font-extrabold transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer neu-btn text-[#4A5568] dark:text-[#E2E8F0] hover:text-[#FF8800] dark:hover:text-[#FF8800] hover:scale-105 active:scale-95 shadow-sm"
+          >
+            {isTrueBtn ? (
+              <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+            ) : (
+              <XCircle className="w-4 h-4 text-rose-500 shrink-0" />
+            )}
+            <span>{label}</span>
+          </button>
+        );
+      }
+
+      // 2. ĐÃ CHỌN - ĐÂY LÀ ĐÁP ÁN ĐÚNG CHÍNH XÁC: PHÓNG TO RỰC RỠ (SCALE UP / GLOW)
+      if (isThisCorrect) {
+        return (
+          <button
+            key={isTrueBtn ? 'btn-true' : 'btn-false'}
+            type="button"
+            disabled
+            className="min-w-[100px] sm:min-w-[118px] px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl text-xs sm:text-sm font-display font-black bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 text-white shadow-[0_8px_25px_rgba(16,185,129,0.55)] ring-4 ring-emerald-300 dark:ring-emerald-400 ring-offset-2 ring-offset-[#EBECF0] dark:ring-offset-[#1A1E24] transform scale-110 sm:scale-115 z-20 flex items-center justify-center gap-1.5 sm:gap-2 transition-all duration-300 animate-pulse"
+          >
+            <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-white shrink-0 drop-shadow" />
+            <span className="tracking-wide uppercase whitespace-nowrap">
+              {label} {isThisUserChoice ? '✓ (+0.25đ)' : '★ ĐÚNG'}
+            </span>
+          </button>
+        );
+      }
+
+      // 3. ĐÃ CHỌN - ĐÂY LÀ LỰA CHỌN CỦA HỌC SINH NHƯNG BỊ SAI:
+      if (isThisUserChoice) {
+        return (
+          <button
+            key={isTrueBtn ? 'btn-true' : 'btn-false'}
+            type="button"
+            disabled
+            className="min-w-[74px] sm:min-w-[84px] px-3 py-1.5 sm:py-2 rounded-2xl text-[11px] sm:text-xs font-display font-bold bg-rose-500 text-white ring-2 ring-rose-400 opacity-80 line-through transform scale-90 sm:scale-95 z-10 flex items-center justify-center gap-1 transition-all duration-300 shadow-sm"
+          >
+            <XCircle className="w-3.5 h-3.5 text-white shrink-0" />
+            <span className="whitespace-nowrap">{label} (Sai)</span>
+          </button>
+        );
+      }
+
+      // 4. PHƯƠNG ÁN CÒN LẠI (Không phải đáp án đúng, người dùng cũng không chọn):
+      return (
+        <button
+          key={isTrueBtn ? 'btn-true' : 'btn-false'}
+          type="button"
+          disabled
+          className="min-w-[60px] sm:min-w-[68px] px-2.5 py-1.5 rounded-2xl text-[11px] font-display font-medium neu-inset opacity-25 filter grayscale transform scale-85 pointer-events-none transition-all duration-300"
+        >
+          <span>{label}</span>
+        </button>
+      );
+    };
+
+    return (
+      <div
+        key={stmt.label}
+        className={`p-4 sm:p-5 rounded-2xl neu-inset-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm transition-all duration-300 ${
+          showFeedback
+            ? isCorrect
+              ? 'border border-emerald-500/50 bg-emerald-500/[0.04] dark:bg-emerald-500/[0.08]'
+              : 'border border-rose-500/50 bg-rose-500/[0.04] dark:bg-rose-500/[0.08]'
+            : 'border border-transparent'
+        }`}
+      >
+        <div className="flex items-start gap-3 flex-1">
+          <span
+            className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl font-display font-black flex items-center justify-center shrink-0 mt-0.5 text-xs sm:text-sm shadow-sm transition-all duration-200 ${
+              showFeedback
+                ? isCorrect
+                  ? 'bg-emerald-500 text-white'
+                  : 'bg-rose-500 text-white'
+                : 'neu-inset text-[#2D3748] dark:text-white'
+            }`}
+          >
+            {stmt.label}
+          </span>
+          <div className="leading-relaxed pt-0.5 text-[#2D3748] dark:text-white font-medium">
+            <MathRenderer text={stmt.text} />
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 shrink-0 justify-end flex-wrap py-1.5">
+          {renderTFBtn(true)}
+          {renderTFBtn(false)}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="space-y-6 max-w-4xl mx-auto font-sans text-[#4A5568] dark:text-[#E2E8F0]">
       {/* 1. Thanh chọn Môn học (Neumorphic Segmented Control) */}
@@ -1446,74 +1559,7 @@ export default function CongNgheGHKIQuiz({
                       <p className="text-[11px] text-[#718096] dark:text-[#94A3B8] italic mb-1">
                         * Đánh dấu ĐÚNG hoặc SAI cho từng ý a, b, c, d dưới đây:
                       </p>
-                      {q.statements.map(stmt => {
-                        const userVal = userAnswers[q.id]?.[stmt.label];
-                        const isAnsweredThisStmt = userVal !== undefined;
-                        const isCorrect = isAnsweredThisStmt ? userVal === stmt.answer : null;
-                        const showFeedback = isRevealed || isAnsweredThisStmt;
-
-                        return (
-                          <div
-                            key={stmt.label}
-                            className={`p-4 rounded-2xl neu-inset-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm transition ${
-                              showFeedback
-                                ? isCorrect
-                                  ? 'ring-2 ring-emerald-500/60'
-                                  : 'ring-2 ring-rose-500/60'
-                                : ''
-                            }`}
-                          >
-                            <div className="flex items-start gap-2.5 flex-1">
-                              <span className="font-display font-extrabold text-[#2D3748] dark:text-white shrink-0 mt-0.5">{stmt.label})</span>
-                              <span className="leading-relaxed"><MathRenderer text={stmt.text} /></span>
-                            </div>
-
-                            <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
-                              <button
-                                type="button"
-                                disabled={isAnsweredThisStmt}
-                                onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                                className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
-                                  isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                                } ${
-                                  userVal === true
-                                    ? isCorrect
-                                      ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
-                                      : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
-                                    : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
-                                }`}
-                              >
-                                <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
-                              </button>
-
-                              <button
-                                type="button"
-                                disabled={isAnsweredThisStmt}
-                                onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                                className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
-                                  isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                                } ${
-                                  userVal === false
-                                    ? isCorrect
-                                      ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
-                                      : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
-                                    : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
-                                }`}
-                              >
-                                <XCircle className="w-3.5 h-3.5" /> Sai
-                              </button>
-
-                              {showFeedback && (
-                                <span className={`font-display font-bold text-xs px-3 py-1 rounded-full neu-inset-sm ${
-                                  stmt.answer ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
-                                }`}>
-                                  {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                        );
-                      })}
+                      {q.statements.map(stmt => renderTFStatement(q, stmt, isRevealed))}
                     </div>
 
                     {/* Explanation */}
@@ -1916,72 +1962,7 @@ export default function CongNgheGHKIQuiz({
                   )
                 ) : q.type === 'truefalse' ? (
                   <div className="space-y-3">
-                    {q.statements.map(stmt => {
-                      const userVal = userAnswers[q.id]?.[stmt.label];
-                      const isAnsweredThisStmt = userVal !== undefined;
-                      const isCorrect = isAnsweredThisStmt ? userVal === stmt.answer : null;
-                      const showFeedback = isRevealed || isAnsweredThisStmt;
-
-                      return (
-                        <div
-                          key={stmt.label}
-                          className={`p-4 rounded-2xl neu-inset-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs sm:text-sm transition ${
-                            showFeedback
-                              ? isCorrect
-                                ? 'ring-2 ring-emerald-500/60'
-                                : 'ring-2 ring-rose-500/60'
-                              : ''
-                          }`}
-                        >
-                          <div className="flex items-start gap-2.5 flex-1">
-                            <span className="font-display font-extrabold text-[#2D3748] dark:text-white shrink-0 mt-0.5">{stmt.label})</span>
-                            <span className="leading-relaxed"><MathRenderer text={stmt.text} /></span>
-                          </div>
-
-                          <div className="flex items-center gap-2 shrink-0 justify-end flex-wrap">
-                            <button
-                              type="button"
-                              disabled={isAnsweredThisStmt}
-                              onClick={() => handleSelectTF(q.id, stmt.label, true)}
-                              className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
-                                isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                              } ${
-                                userVal === true
-                                  ? isCorrect
-                                    ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
-                                    : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
-                                  : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
-                              }`}
-                            >
-                              <CheckCircle2 className="w-3.5 h-3.5" /> Đúng
-                            </button>
-                            <button
-                              type="button"
-                              disabled={isAnsweredThisStmt}
-                              onClick={() => handleSelectTF(q.id, stmt.label, false)}
-                              className={`px-3.5 py-1.5 rounded-xl text-xs font-display font-bold transition flex items-center gap-1.5 ${
-                                isAnsweredThisStmt ? 'cursor-not-allowed opacity-95' : 'cursor-pointer'
-                              } ${
-                                userVal === false
-                                  ? isCorrect
-                                    ? 'neu-inset text-emerald-700 dark:text-emerald-300 ring-2 ring-emerald-500'
-                                    : 'neu-inset text-rose-700 dark:text-rose-300 ring-2 ring-rose-500'
-                                  : 'neu-btn text-[#4A5568] dark:text-[#E2E8F0]'
-                              }`}
-                            >
-                              <XCircle className="w-3.5 h-3.5" /> Sai
-                            </button>
-                            {showFeedback && (
-                              <span className={`font-display font-bold text-xs px-3 py-1 rounded-full neu-inset-sm ${
-                                stmt.answer ? 'text-emerald-700 dark:text-emerald-300' : 'text-rose-700 dark:text-rose-300'
-                              }`}>
-                                {isCorrect ? '✓ Đúng' : `✗ Sai (Đáp án: ${stmt.answer ? 'ĐÚNG' : 'SAI'})`}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      );
-                    })}
+                    {q.statements.map(stmt => renderTFStatement(q, stmt, isRevealed))}
                   </div>
                 ) : (
                   /* Short answer in single mode */
